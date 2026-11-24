@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032030Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:31.6355931+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.88741,151.22917\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Newcombe St, Paddington NSW 2021, Australia",
+          "id": "here:af:streetsection:ID8OSithHrQ4Ak1FfdROsA",
+          "resultType": "street",
+          "address": {
+            "label": "Newcombe St, Paddington NSW 2021, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Paddington",
+            "street": "Newcombe St",
+            "postalCode": "2021"
+          },
+          "position": {
+            "lat": -33.88741,
+            "lng": 151.22917
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.22917,
+            "south": -33.88741,
+            "east": 151.22989,
+            "north": -33.88679
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

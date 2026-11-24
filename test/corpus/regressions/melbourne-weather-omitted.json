@@ -1,0 +1,1556 @@
+{
+  "Label": "melbourne-weather-omitted",
+  "Reason": "Weather selected and fetched (drizzle 14C 82% rain) but generated 30s bulletin contained zero weather - traffic-heavy slot dropped it",
+  "SourceJobId": "27199fa5326f49338ab39724e98bd380",
+  "OriginalScript": "The Calder Freeway’s the big one, with a breakdown and lane blocks between Sunshine Avenue and Keilor Park Drive, and it’s backed up for about 26 kays. Greensborough Bypass southbound’s shut at the ramp to the M80 Metropolitan Ring Road. Over on the West Gate eastbound, there’s heavy congestion at Power Street, plus roadworks between 8 Mile Bridge and Todd Road, with a few minutes lost. The M1 citybound and Bulleen Road outbound are both only copping minor construction delays.",
+  "CapturedAtUtc": "2026-06-30T00:04:08Z",
+  "Snapshot": {
+    "TargetDurationSeconds": 30,
+    "Location": "Melbourne Drive Traffic",
+    "City": null,
+    "MarketId": "Melbourne Drive Traffic",
+    "Content": {
+      "Traffic": true,
+      "Weather": true,
+      "Fuel": false,
+      "HasAnySource": true
+    },
+    "Corridors": [
+      {
+        "RoadName": "Calder Freeway",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 26418,
+        "ImpactScore": 239.82892142331042,
+        "PrimaryType": "disabledVehicle",
+        "Description": "2 incidents including breakdown",
+        "Incidents": [
+          {
+            "Id": "1562563317255203093",
+            "Description": "Between Sunshine Avenue and Keilor Park Drive - Lane blocked",
+            "Severity": 1,
+            "Location": "Calder Fwy",
+            "Type": "construction",
+            "LengthMeters": 22563,
+            "FunctionalClass": 1,
+            "Latitude": -37.57194,
+            "Longitude": 144.67614,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365127496:$1:216413284#-0..1",
+              "$0:365127496:$1:221799882#+0..1",
+              "$0:365127490:$1:221132588#+0..1",
+              "$0:365127489:$1:216754820#-0..1",
+              "$0:365127489:$1:220769988#+0..1",
+              "$0:365127489:$1:219397781#-0..1",
+              "$0:365127150:$1:221729756#-0..1",
+              "$0:365127150:$1:476716642#-0..1",
+              "$0:365127150:$1:220769960#+0..1",
+              "$0:365127150:$1:781502795#-0..1",
+              "$0:365127150:$1:781502944#+0..1",
+              "$0:365127149:$1:221653556#-0..1",
+              "$0:365127143:$1:221582005#-0..1",
+              "$0:365127143:$1:220613242#+0..1",
+              "$0:365127154:$1:884339163#-0..1",
+              "$0:365127154:$1:884339162#+0..1",
+              "$0:365127154:$1:225826923#-0..1",
+              "$0:365127154:$1:215264296#-0..1",
+              "$0:365127154:$1:878013519#-0..1",
+              "$0:365127154:$1:878014072#+0..1",
+              "$0:365127154:$1:878013810#+0..1",
+              "$0:365127153:$1:777059327#+0..1",
+              "$0:365127156:$1:226357816#-0..1",
+              "$0:365127156:$1:767676346#-0..1",
+              "$0:365127156:$1:846107361#-0..1",
+              "$0:365127156:$1:218647757#+0..1",
+              "$0:365127135:$1:224254857#-0..1",
+              "$0:365127135:$1:218796800#-0..1",
+              "$0:365127135:$1:220759956#-0..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.57194,
+                "Lng": 144.67614
+              },
+              {
+                "Lat": -37.58212,
+                "Lng": 144.68392
+              },
+              {
+                "Lat": -37.60836,
+                "Lng": 144.70412
+              },
+              {
+                "Lat": -37.618,
+                "Lng": 144.71305
+              },
+              {
+                "Lat": -37.6249,
+                "Lng": 144.72276
+              },
+              {
+                "Lat": -37.63899,
+                "Lng": 144.73229
+              },
+              {
+                "Lat": -37.65989,
+                "Lng": 144.74345
+              },
+              {
+                "Lat": -37.66716,
+                "Lng": 144.75576
+              },
+              {
+                "Lat": -37.67151,
+                "Lng": 144.76421
+              },
+              {
+                "Lat": -37.67786,
+                "Lng": 144.77371
+              },
+              {
+                "Lat": -37.68761,
+                "Lng": 144.78948
+              },
+              {
+                "Lat": -37.69624,
+                "Lng": 144.80343
+              },
+              {
+                "Lat": -37.70605,
+                "Lng": 144.81727
+              },
+              {
+                "Lat": -37.71054,
+                "Lng": 144.8272
+              },
+              {
+                "Lat": -37.71549,
+                "Lng": 144.83602
+              },
+              {
+                "Lat": -37.72174,
+                "Lng": 144.84188
+              }
+            ]
+          },
+          {
+            "Id": "1919748821251451149",
+            "Description": "Between Green Gully Road and Keilor Park Drive - Lane blocked",
+            "Severity": 1,
+            "Location": "Calder Fwy",
+            "Type": "construction",
+            "LengthMeters": 3356,
+            "FunctionalClass": 1,
+            "Latitude": -37.72616,
+            "Longitude": 144.85332,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129866:$1:221802591#-0.94149..1",
+              "$0:365129866:$1:220689141#-0..1",
+              "$0:365129865:$1:226510124#-0..1",
+              "$0:365129865:$1:220463324#-0..1",
+              "$0:365129865:$1:220838897#-0..1",
+              "$0:365129865:$1:220921372#-0..1",
+              "$0:365129865:$1:220994284#+0..1",
+              "$0:365129868:$1:218272119#-0..0.44144"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.72616,
+                "Lng": 144.85332
+              },
+              {
+                "Lat": -37.72639,
+                "Lng": 144.85522
+              },
+              {
+                "Lat": -37.72672,
+                "Lng": 144.85698
+              },
+              {
+                "Lat": -37.72714,
+                "Lng": 144.85908
+              },
+              {
+                "Lat": -37.72777,
+                "Lng": 144.86229
+              },
+              {
+                "Lat": -37.7282,
+                "Lng": 144.8644
+              },
+              {
+                "Lat": -37.72878,
+                "Lng": 144.86712
+              },
+              {
+                "Lat": -37.72914,
+                "Lng": 144.86906
+              },
+              {
+                "Lat": -37.72991,
+                "Lng": 144.87246
+              },
+              {
+                "Lat": -37.7305,
+                "Lng": 144.87481
+              },
+              {
+                "Lat": -37.73151,
+                "Lng": 144.87765
+              },
+              {
+                "Lat": -37.73226,
+                "Lng": 144.87959
+              },
+              {
+                "Lat": -37.73313,
+                "Lng": 144.88218
+              },
+              {
+                "Lat": -37.73346,
+                "Lng": 144.8835
+              },
+              {
+                "Lat": -37.73394,
+                "Lng": 144.88673
+              },
+              {
+                "Lat": -37.73431,
+                "Lng": 144.8903
+              }
+            ]
+          },
+          {
+            "Id": "51006881773353788",
+            "Description": "Road construction",
+            "Severity": 1,
+            "Location": "Calder Fwy",
+            "Type": "construction",
+            "LengthMeters": 373,
+            "FunctionalClass": 1,
+            "Latitude": -37.72441,
+            "Longitude": 144.84562,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129866:$1:221215297#-0..1",
+              "$0:365129866:$1:216613590#-0..1",
+              "$0:365129866:$1:215242162#-0..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.72441,
+                "Lng": 144.84562
+              },
+              {
+                "Lat": -37.72454,
+                "Lng": 144.84611
+              },
+              {
+                "Lat": -37.72475,
+                "Lng": 144.84671
+              },
+              {
+                "Lat": -37.72475,
+                "Lng": 144.84671
+              },
+              {
+                "Lat": -37.72493,
+                "Lng": 144.8473
+              },
+              {
+                "Lat": -37.72505,
+                "Lng": 144.84778
+              },
+              {
+                "Lat": -37.72505,
+                "Lng": 144.84778
+              },
+              {
+                "Lat": -37.72516,
+                "Lng": 144.84837
+              },
+              {
+                "Lat": -37.72516,
+                "Lng": 144.84837
+              },
+              {
+                "Lat": -37.72523,
+                "Lng": 144.84876
+              },
+              {
+                "Lat": -37.72523,
+                "Lng": 144.84876
+              },
+              {
+                "Lat": -37.72526,
+                "Lng": 144.84894
+              },
+              {
+                "Lat": -37.72526,
+                "Lng": 144.84894
+              },
+              {
+                "Lat": -37.72535,
+                "Lng": 144.84953
+              },
+              {
+                "Lat": -37.72535,
+                "Lng": 144.84953
+              },
+              {
+                "Lat": -37.72539,
+                "Lng": 144.84971
+              }
+            ]
+          },
+          {
+            "Id": "2370370971613353133",
+            "Description": "At Keilor Park Drive - Broken-down vehicle",
+            "Severity": 1,
+            "Location": "Calder Fwy",
+            "Type": "disabledVehicle",
+            "LengthMeters": 67,
+            "FunctionalClass": 1,
+            "Latitude": -37.7251,
+            "Longitude": 144.84731,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129866:$1:221802591#-0.21872..0.29899"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.7251,
+                "Lng": 144.84731
+              },
+              {
+                "Lat": -37.72522,
+                "Lng": 144.84765
+              },
+              {
+                "Lat": -37.72533,
+                "Lng": 144.84802
+              }
+            ]
+          },
+          {
+            "Id": "1105919208690438168",
+            "Description": "At Keilor Park Drive - Maintenance work",
+            "Severity": 1,
+            "Location": "Calder Fwy",
+            "Type": "construction",
+            "LengthMeters": 59,
+            "FunctionalClass": 1,
+            "Latitude": -37.72638,
+            "Longitude": 144.85333,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129865:$1:218423031#+0.87822..0.91845"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.72638,
+                "Lng": 144.85333
+              },
+              {
+                "Lat": -37.72632,
+                "Lng": 144.85266
+              }
+            ]
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": 7,
+        "NormalDriveTimeMinutes": 7,
+        "Latitude": -37.7251,
+        "Longitude": 144.84731,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 0
+      },
+      {
+        "RoadName": "Greensborough Bypass",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 728,
+        "ImpactScore": 205,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure southbound",
+        "Incidents": [
+          {
+            "Id": "1224271433909844757",
+            "Description": "Ramp to M80 Metropolitan Ring Road (Southbound) - Closed",
+            "Severity": 1,
+            "Location": "Greensborough Byp",
+            "Type": "roadClosure",
+            "LengthMeters": 728,
+            "FunctionalClass": 1,
+            "Latitude": -37.69512,
+            "Longitude": 145.09253,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "northbound",
+            "Summary": null,
+            "JunctionTraversability": "intermediateClosedEdgeOpen",
+            "SegmentRefs": [
+              "$0:365129957:$1:215872857#-0..1",
+              "$0:365129957:$1:914412966#-0..1",
+              "$0:365129957:$1:914412842#+0..1",
+              "$0:365129957:$1:914412924#-0..1",
+              "$0:365129957:$1:914413067#+0..1",
+              "$0:365129957:$1:914413052#+0..0.97416"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.69512,
+                "Lng": 145.09253
+              },
+              {
+                "Lat": -37.69522,
+                "Lng": 145.09233
+              },
+              {
+                "Lat": -37.69524,
+                "Lng": 145.09215
+              },
+              {
+                "Lat": -37.69519,
+                "Lng": 145.09195
+              },
+              {
+                "Lat": -37.69504,
+                "Lng": 145.09179
+              },
+              {
+                "Lat": -37.69485,
+                "Lng": 145.09168
+              },
+              {
+                "Lat": -37.69475,
+                "Lng": 145.09164
+              },
+              {
+                "Lat": -37.6946,
+                "Lng": 145.09164
+              },
+              {
+                "Lat": -37.69419,
+                "Lng": 145.09159
+              },
+              {
+                "Lat": -37.6938,
+                "Lng": 145.09155
+              },
+              {
+                "Lat": -37.69312,
+                "Lng": 145.0913
+              },
+              {
+                "Lat": -37.69277,
+                "Lng": 145.09108
+              },
+              {
+                "Lat": -37.69195,
+                "Lng": 145.09019
+              },
+              {
+                "Lat": -37.69134,
+                "Lng": 145.08933
+              },
+              {
+                "Lat": -37.6909,
+                "Lng": 145.08844
+              },
+              {
+                "Lat": -37.6906,
+                "Lng": 145.08768
+              }
+            ]
+          }
+        ],
+        "Suburb": null,
+        "Direction": "southbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -37.69512,
+        "Longitude": 145.09253,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "West Gate",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 866,
+        "ImpactScore": 199.50977500432694,
+        "PrimaryType": "construction",
+        "Description": "heavy congestion eastbound",
+        "Incidents": [
+          {
+            "Id": "1511227907248814931",
+            "Description": "At Power Street - Traffic congestion",
+            "Severity": 1,
+            "Location": "West Gate Fwy",
+            "Type": "congestion",
+            "LengthMeters": 453,
+            "FunctionalClass": 1,
+            "Latitude": -37.82828,
+            "Longitude": 144.9579,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "eastbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129785:$1:220615093#-0.53171..0.99483"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.82828,
+                "Lng": 144.9579
+              },
+              {
+                "Lat": -37.82827,
+                "Lng": 144.95845
+              },
+              {
+                "Lat": -37.82822,
+                "Lng": 144.95909
+              },
+              {
+                "Lat": -37.82822,
+                "Lng": 144.95909
+              },
+              {
+                "Lat": -37.82815,
+                "Lng": 144.95954
+              },
+              {
+                "Lat": -37.82815,
+                "Lng": 144.95954
+              },
+              {
+                "Lat": -37.82803,
+                "Lng": 144.96007
+              },
+              {
+                "Lat": -37.82788,
+                "Lng": 144.96065
+              },
+              {
+                "Lat": -37.82788,
+                "Lng": 144.96065
+              },
+              {
+                "Lat": -37.82778,
+                "Lng": 144.96099
+              },
+              {
+                "Lat": -37.82778,
+                "Lng": 144.96099
+              },
+              {
+                "Lat": -37.82761,
+                "Lng": 144.96158
+              },
+              {
+                "Lat": -37.82761,
+                "Lng": 144.96158
+              },
+              {
+                "Lat": -37.82738,
+                "Lng": 144.96227
+              },
+              {
+                "Lat": -37.82738,
+                "Lng": 144.96227
+              },
+              {
+                "Lat": -37.82722,
+                "Lng": 144.96288
+              }
+            ]
+          },
+          {
+            "Id": "3714069036631007488",
+            "Description": "Between 8 Mile Bridge and Todd Road / Cook Street - Road construction",
+            "Severity": 1,
+            "Location": "West Gate Brg",
+            "Type": "construction",
+            "LengthMeters": 391,
+            "FunctionalClass": 1,
+            "Latitude": -37.82836,
+            "Longitude": 144.89643,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129773:$1:853070174#-0.32385..0.46838"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.82836,
+                "Lng": 144.89643
+              },
+              {
+                "Lat": -37.82863,
+                "Lng": 144.89688
+              },
+              {
+                "Lat": -37.82863,
+                "Lng": 144.89688
+              },
+              {
+                "Lat": -37.82867,
+                "Lng": 144.89695
+              },
+              {
+                "Lat": -37.82926,
+                "Lng": 144.89795
+              },
+              {
+                "Lat": -37.82926,
+                "Lng": 144.89795
+              },
+              {
+                "Lat": -37.82936,
+                "Lng": 144.89812
+              },
+              {
+                "Lat": -37.82936,
+                "Lng": 144.89812
+              },
+              {
+                "Lat": -37.82947,
+                "Lng": 144.89831
+              },
+              {
+                "Lat": -37.82947,
+                "Lng": 144.89831
+              },
+              {
+                "Lat": -37.8296,
+                "Lng": 144.89854
+              },
+              {
+                "Lat": -37.8296,
+                "Lng": 144.89854
+              },
+              {
+                "Lat": -37.82997,
+                "Lng": 144.89916
+              },
+              {
+                "Lat": -37.83033,
+                "Lng": 144.89977
+              },
+              {
+                "Lat": -37.83033,
+                "Lng": 144.89977
+              },
+              {
+                "Lat": -37.83048,
+                "Lng": 144.90002
+              }
+            ]
+          },
+          {
+            "Id": "1400580284632616074",
+            "Description": "At West Gate Freeway - Maintenance work",
+            "Severity": 1,
+            "Location": "West Gate Fwy",
+            "Type": "construction",
+            "LengthMeters": 22,
+            "FunctionalClass": 1,
+            "Latitude": -37.82505,
+            "Longitude": 144.82286,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365127037:$1:873637240#+0.06329..0.08165"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.82505,
+                "Lng": 144.82286
+              },
+              {
+                "Lat": -37.8252,
+                "Lng": 144.8227
+              }
+            ]
+          }
+        ],
+        "Suburb": null,
+        "Direction": "eastbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -37.82828,
+        "Longitude": 144.9579,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 6,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 6
+      },
+      {
+        "RoadName": "M1",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 3104,
+        "ImpactScore": 199.50977500432694,
+        "PrimaryType": "construction",
+        "Description": "heavy congestion citybound",
+        "Incidents": [
+          {
+            "Id": "3747328204480438099",
+            "Description": "Between Stud Road and Heatherton Road - Lane blocked",
+            "Severity": 1,
+            "Location": "M1",
+            "Type": "construction",
+            "LengthMeters": 2698,
+            "FunctionalClass": 1,
+            "Latitude": -37.95699,
+            "Longitude": 145.22147,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "outbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129985:$1:235203107#-0..1",
+              "$0:365129985:$1:773478044#-0..1",
+              "$0:365124523:$1:220920796#-0..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.95699,
+                "Lng": 145.22147
+              },
+              {
+                "Lat": -37.95833,
+                "Lng": 145.22336
+              },
+              {
+                "Lat": -37.9614,
+                "Lng": 145.2277
+              },
+              {
+                "Lat": -37.96176,
+                "Lng": 145.22821
+              },
+              {
+                "Lat": -37.96278,
+                "Lng": 145.22966
+              },
+              {
+                "Lat": -37.96379,
+                "Lng": 145.23108
+              },
+              {
+                "Lat": -37.96491,
+                "Lng": 145.23267
+              },
+              {
+                "Lat": -37.96547,
+                "Lng": 145.23341
+              },
+              {
+                "Lat": -37.96649,
+                "Lng": 145.23451
+              },
+              {
+                "Lat": -37.96742,
+                "Lng": 145.23531
+              },
+              {
+                "Lat": -37.96872,
+                "Lng": 145.23617
+              },
+              {
+                "Lat": -37.96989,
+                "Lng": 145.23672
+              },
+              {
+                "Lat": -37.97246,
+                "Lng": 145.2374
+              },
+              {
+                "Lat": -37.97306,
+                "Lng": 145.23757
+              },
+              {
+                "Lat": -37.97461,
+                "Lng": 145.23822
+              },
+              {
+                "Lat": -37.97604,
+                "Lng": 145.23914
+              }
+            ]
+          },
+          {
+            "Id": "4078919489002571060",
+            "Description": "At Huntingdale Road - Traffic congestion",
+            "Severity": 1,
+            "Location": "M1",
+            "Type": "congestion",
+            "LengthMeters": 302,
+            "FunctionalClass": 1,
+            "Latitude": -37.8892,
+            "Longitude": 145.1148,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129818:$1:916714479#+0.77854..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.8892,
+                "Lng": 145.1148
+              },
+              {
+                "Lat": -37.88906,
+                "Lng": 145.11459
+              },
+              {
+                "Lat": -37.88887,
+                "Lng": 145.11425
+              },
+              {
+                "Lat": -37.88887,
+                "Lng": 145.11425
+              },
+              {
+                "Lat": -37.88873,
+                "Lng": 145.11401
+              },
+              {
+                "Lat": -37.88873,
+                "Lng": 145.11401
+              },
+              {
+                "Lat": -37.88841,
+                "Lng": 145.11339
+              },
+              {
+                "Lat": -37.88841,
+                "Lng": 145.11339
+              },
+              {
+                "Lat": -37.88815,
+                "Lng": 145.11287
+              },
+              {
+                "Lat": -37.8879,
+                "Lng": 145.11229
+              },
+              {
+                "Lat": -37.88774,
+                "Lng": 145.11188
+              }
+            ]
+          },
+          {
+            "Id": "473728327784192463",
+            "Description": "At Blackburn Road - Backed-up traffic. Approach with care",
+            "Severity": 1,
+            "Location": "M1",
+            "Type": "congestion",
+            "LengthMeters": 104,
+            "FunctionalClass": 1,
+            "Latitude": -37.89409,
+            "Longitude": 145.14117,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129819:$1:478116187#-0.86554..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.89409,
+                "Lng": 145.14117
+              },
+              {
+                "Lat": -37.89396,
+                "Lng": 145.13998
+              }
+            ]
+          }
+        ],
+        "Suburb": null,
+        "Direction": "citybound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -37.8892,
+        "Longitude": 145.1148,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 2
+      },
+      {
+        "RoadName": "Bulleen Road",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 1495,
+        "ImpactScore": 199.50977500432694,
+        "PrimaryType": "construction",
+        "Description": "roadworks outbound",
+        "Incidents": [
+          {
+            "Id": "1536064010820923626",
+            "Description": "Between Eastern Freeway and Bridge Street - Construction work",
+            "Severity": 1,
+            "Location": "Bulleen Rd",
+            "Type": "construction",
+            "LengthMeters": 917,
+            "FunctionalClass": 1,
+            "Latitude": -37.76769,
+            "Longitude": 145.07976,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "outbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129926:$1:220906174#-0.93761..1",
+              "$0:365129926:$1:215462240#+0..1",
+              "$0:365129926:$1:503574065#+0..1",
+              "$0:365129926:$1:216630206#+0..1",
+              "$0:365129926:$1:503574470#+0..1",
+              "$0:365129926:$1:912106636#-0..1",
+              "$0:365129926:$1:912106308#-0..1",
+              "$0:365129926:$1:916817764#-0..1",
+              "$0:365129926:$1:916818199#+0..1",
+              "$0:365129926:$1:912150310#+0..1",
+              "$0:365129926:$1:912207072#-0..1",
+              "$0:365129926:$1:912150858#+0..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.76769,
+                "Lng": 145.07976
+              },
+              {
+                "Lat": -37.76736,
+                "Lng": 145.08004
+              },
+              {
+                "Lat": -37.7666,
+                "Lng": 145.08084
+              },
+              {
+                "Lat": -37.76596,
+                "Lng": 145.08152
+              },
+              {
+                "Lat": -37.76543,
+                "Lng": 145.08209
+              },
+              {
+                "Lat": -37.76507,
+                "Lng": 145.08242
+              },
+              {
+                "Lat": -37.76478,
+                "Lng": 145.0826
+              },
+              {
+                "Lat": -37.76413,
+                "Lng": 145.08281
+              },
+              {
+                "Lat": -37.76375,
+                "Lng": 145.08287
+              },
+              {
+                "Lat": -37.76317,
+                "Lng": 145.08299
+              },
+              {
+                "Lat": -37.76227,
+                "Lng": 145.08317
+              },
+              {
+                "Lat": -37.76207,
+                "Lng": 145.08321
+              },
+              {
+                "Lat": -37.76165,
+                "Lng": 145.08329
+              },
+              {
+                "Lat": -37.76129,
+                "Lng": 145.08336
+              },
+              {
+                "Lat": -37.76052,
+                "Lng": 145.08363
+              },
+              {
+                "Lat": -37.76037,
+                "Lng": 145.08381
+              }
+            ]
+          },
+          {
+            "Id": "2868946039160487663",
+            "Description": "Ramp to Eastern Freeway (Westbound) - Road construction",
+            "Severity": 1,
+            "Location": "Bulleen Rd",
+            "Type": "construction",
+            "LengthMeters": 515,
+            "FunctionalClass": 1,
+            "Latitude": -37.781,
+            "Longitude": 145.07826,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129924:$1:221214358#-0..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.781,
+                "Lng": 145.07826
+              },
+              {
+                "Lat": -37.78103,
+                "Lng": 145.07803
+              },
+              {
+                "Lat": -37.78105,
+                "Lng": 145.07751
+              },
+              {
+                "Lat": -37.78108,
+                "Lng": 145.07723
+              },
+              {
+                "Lat": -37.78108,
+                "Lng": 145.07723
+              },
+              {
+                "Lat": -37.78121,
+                "Lng": 145.07675
+              },
+              {
+                "Lat": -37.78142,
+                "Lng": 145.0762
+              },
+              {
+                "Lat": -37.78142,
+                "Lng": 145.0762
+              },
+              {
+                "Lat": -37.78172,
+                "Lng": 145.07554
+              },
+              {
+                "Lat": -37.78172,
+                "Lng": 145.07554
+              },
+              {
+                "Lat": -37.7823,
+                "Lng": 145.07426
+              },
+              {
+                "Lat": -37.78244,
+                "Lng": 145.0739
+              },
+              {
+                "Lat": -37.7828,
+                "Lng": 145.07287
+              }
+            ]
+          },
+          {
+            "Id": "1361624270233012858",
+            "Description": "At Eastern Freeway - Road construction",
+            "Severity": 1,
+            "Location": "Bulleen Rd",
+            "Type": "construction",
+            "LengthMeters": 63,
+            "FunctionalClass": 1,
+            "Latitude": -37.7744,
+            "Longitude": 145.07763,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129924:$1:915827369#+0.75227..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.7744,
+                "Lng": 145.07763
+              },
+              {
+                "Lat": -37.77469,
+                "Lng": 145.07756
+              },
+              {
+                "Lat": -37.77496,
+                "Lng": 145.07752
+              }
+            ]
+          }
+        ],
+        "Suburb": null,
+        "Direction": "outbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -37.76769,
+        "Longitude": 145.07976,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 2
+      },
+      {
+        "RoadName": "Footscray Road",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 166,
+        "ImpactScore": 194.88043235216023,
+        "PrimaryType": "construction",
+        "Description": "2 incidents including roadworks",
+        "Incidents": [
+          {
+            "Id": "6176729434369294",
+            "Description": "At CityLink Tollway - Lane blocked",
+            "Severity": 1,
+            "Location": "Footscray Rd",
+            "Type": "construction",
+            "LengthMeters": 117,
+            "FunctionalClass": 1,
+            "Latitude": -37.8096,
+            "Longitude": 144.93463,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129786:$1:916006170#-0.96696..1",
+              "$0:365129786:$1:215815095#+0..1",
+              "$0:365129786:$1:215631703#+0..0.9661"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.8096,
+                "Lng": 144.93463
+              },
+              {
+                "Lat": -37.80959,
+                "Lng": 144.93455
+              },
+              {
+                "Lat": -37.80959,
+                "Lng": 144.93455
+              },
+              {
+                "Lat": -37.80951,
+                "Lng": 144.93397
+              },
+              {
+                "Lat": -37.80951,
+                "Lng": 144.93397
+              },
+              {
+                "Lat": -37.80943,
+                "Lng": 144.9333
+              }
+            ]
+          },
+          {
+            "Id": "644733982304992904",
+            "Description": "At CityLink Tollway - Maintenance work",
+            "Severity": 1,
+            "Location": "Footscray Rd",
+            "Type": "construction",
+            "LengthMeters": 49,
+            "FunctionalClass": 1,
+            "Latitude": -37.80989,
+            "Longitude": 144.93647,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129786:$1:789957389#+0..0.81633"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.80989,
+                "Lng": 144.93647
+              },
+              {
+                "Lat": -37.80978,
+                "Lng": 144.93593
+              }
+            ]
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": 2,
+        "NormalDriveTimeMinutes": 3,
+        "Latitude": -37.8096,
+        "Longitude": 144.93463,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": -1
+      }
+    ],
+    "MonitoredRoutes": [],
+    "GoodRunRoads": [],
+    "FlowPool": [
+      {
+        "RoadName": "EastLink",
+        "JamFactor": 3.4,
+        "LengthMeters": 41728,
+        "IsWeighted": false,
+        "FunctionalClass": 1,
+        "Score": 62.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Springvale Road",
+        "JamFactor": 3.6,
+        "LengthMeters": 33844,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Wellington Road",
+        "JamFactor": 3.6,
+        "LengthMeters": 33403,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "North Road",
+        "JamFactor": 3.3,
+        "LengthMeters": 32501,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Burwood Highway",
+        "JamFactor": 3.9,
+        "LengthMeters": 26497,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Centre Road",
+        "JamFactor": 3.7,
+        "LengthMeters": 26148,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Thompson Road",
+        "JamFactor": 2.7,
+        "LengthMeters": 24034,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Frankston-Dandenong Road",
+        "JamFactor": 3.8,
+        "LengthMeters": 24001,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Kangaroo Ground-St Andrews Road",
+        "JamFactor": 0.8,
+        "LengthMeters": 22682,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Heatherton Road",
+        "JamFactor": 3.1,
+        "LengthMeters": 22089,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Ballarto Road",
+        "JamFactor": 3.7,
+        "LengthMeters": 20306,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Manor Lakes Drive",
+        "JamFactor": 0.4,
+        "LengthMeters": 19970,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Ferntree Gully Road",
+        "JamFactor": 3.5,
+        "LengthMeters": 19964,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Melton Highway",
+        "JamFactor": 2.2,
+        "LengthMeters": 19909,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Bacchus Marsh-Geelong Road",
+        "JamFactor": 0.7,
+        "LengthMeters": 19446,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Williamstown Road",
+        "JamFactor": 3.8,
+        "LengthMeters": 19391,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Thompsons Road",
+        "JamFactor": 3.7,
+        "LengthMeters": 18337,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Cooper Street",
+        "JamFactor": 3.6,
+        "LengthMeters": 18306,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      }
+    ],
+    "Weather": {
+      "Conditions": "Drizzle. Overcast. Cool.",
+      "TemperatureC": 14.5,
+      "WindDescription": "fresh North wind",
+      "PrecipitationProbabilityPercent": 82,
+      "Alerts": [],
+      "Outlook": "reaching 16 degrees later today; tomorrow sprinkles late. overcast. cool, around 17 degrees",
+      "HasMajorAlert": false
+    },
+    "Fuel": null,
+    "ConfiguredGoodRunRoads": [],
+    "IncidentChanges": null,
+    "Guidance": {
+      "Entries": [
+        {
+          "Id": "7b012b9381e04e72be8211133f224188",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 4,
+          "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "Australian English with natural spoken contractions. Round the figures — say 'about ten minutes', never '10.3 minutes'. No police codes or insider jargon.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover only the three or four most significant items for a 30-second read. Close with a short safety sign-off.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 3,
+          "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "f5e76bd5993c41edb637a7302f7d7479",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 2,
+          "Text": "Use common road names with the definite article: 'the M1', 'the M4', 'the CBD'. Use 'citybound' and 'outbound' for direction of travel.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        }
+      ],
+      "DroppedCount": 0,
+      "Count": 5,
+      "HasEntries": true
+    },
+    "MarketFeedback": [
+      {
+        "Market": "melbourne drive traffic",
+        "JobId": "c808423c820248ad8e343f8a8e119bdf",
+        "Category": "revision",
+        "Feedback": "Revision requested from review",
+        "CreatedAtUtc": "2026-06-23T05:55:00.7215257Z"
+      },
+      {
+        "Market": "melbourne drive traffic",
+        "JobId": "ab0faa9815674b7dba1419d0d8126cbc",
+        "Category": "QA",
+        "Feedback": "Punchier please, QA test.",
+        "CreatedAtUtc": "2026-06-22T12:30:43.7533804Z"
+      }
+    ]
+  }
+}

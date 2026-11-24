@@ -1,0 +1,15 @@
+# Build output and generated harness artifacts. Without these, `npm run format`
+# rewrites 440 files (audit/ 280, dist-mock/ 135, perf/ 12) instead of the
+# handful of real sources — which is why formatting drift accumulated in src/
+# unnoticed. Keep this list in step with `ignorePatterns` in .oxlintrc.json.
+dist
+dist-mock
+coverage
+audit
+perf
+# Generated HERE traffic snapshot — emitted as JSON by scripts/fetch-here-traffic.mjs.
+# Editing/formatting by hand is pointless; it is overwritten on every regen.
+src/lib/api/mock/live-traffic.ts
+# Generated UI inventory — emitted by scripts/ui-inventory.mjs on every run.
+docs/UI-INVENTORY.md
+docs/ui-inventory.json

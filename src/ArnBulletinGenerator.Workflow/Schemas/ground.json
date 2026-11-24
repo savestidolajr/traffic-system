@@ -1,0 +1,29 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["claims"],
+  "properties": {
+    "claims": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["sentenceOrder", "claim", "support", "status", "note"],
+        "properties": {
+          "sentenceOrder": { "type": "integer" },
+          "claim": { "type": "string" },
+          "support": {
+            "type": "array",
+            "items": { "type": "string" }
+          },
+          "status": {
+            "type": "string",
+            "enum": ["SUPPORTED", "NOT_SUPPORTED", "CONTRADICTED"]
+          },
+          "note": { "type": ["string", "null"] }
+        }
+      }
+    }
+  }
+}

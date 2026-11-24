@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032044Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:46.4159285+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.84159,151.21055\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Warringah Fwy, North Sydney NSW 2060, Australia",
+          "id": "here:af:streetsection:41X4O9aSknS3hN7002EVZA",
+          "resultType": "street",
+          "address": {
+            "label": "Warringah Fwy, North Sydney NSW 2060, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "North Sydney",
+            "street": "Warringah Fwy",
+            "postalCode": "2060"
+          },
+          "position": {
+            "lat": -33.84159,
+            "lng": 151.21055
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.20987,
+            "south": -33.84371,
+            "east": 151.2147,
+            "north": -33.82966
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

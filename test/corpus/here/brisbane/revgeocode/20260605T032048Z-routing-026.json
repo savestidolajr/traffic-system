@@ -1,0 +1,47 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032048Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:49.5659426+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.32929,153.05104\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Gateway Mtwy, Deagon QLD 4017, Australia",
+          "id": "here:af:streetsection:WdwiTxbAa27E6bLZwvAspB",
+          "resultType": "street",
+          "address": {
+            "label": "Gateway Mtwy, Deagon QLD 4017, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Deagon",
+            "street": "Gateway Mtwy",
+            "postalCode": "4017"
+          },
+          "position": {
+            "lat": -27.32929,
+            "lng": 153.05104
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 153.05011,
+            "south": -27.33314,
+            "east": 153.05146,
+            "north": -27.32069
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

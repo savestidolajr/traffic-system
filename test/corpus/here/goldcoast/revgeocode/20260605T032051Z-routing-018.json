@@ -1,0 +1,47 @@
+{
+  "Market": "goldcoast",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032051Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:52.5166703+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.14681,153.27124\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "99, Springbrook QLD 4213, Australia",
+          "id": "here:af:streetsection:.NeU-AUOvsgx4tCTgGHgfC",
+          "resultType": "street",
+          "address": {
+            "label": "99, Springbrook QLD 4213, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Gold Coast",
+            "district": "Springbrook",
+            "street": "99",
+            "postalCode": "4213"
+          },
+          "position": {
+            "lat": -28.14681,
+            "lng": 153.27124
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 153.26789,
+            "south": -28.15226,
+            "east": 153.28451,
+            "north": -28.13632
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

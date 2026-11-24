@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="NetArchTest.Rules" />
+    <PackageReference Include="Shouldly" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ArnBulletinGenerator.Application\ArnBulletinGenerator.Application.csproj" />
+    <ProjectReference Include="..\..\src\ArnBulletinGenerator.Domain\ArnBulletinGenerator.Domain.csproj" />
+    <ProjectReference Include="..\..\src\ArnBulletinGenerator.Functions\ArnBulletinGenerator.Functions.csproj" />
+    <ProjectReference Include="..\..\src\ArnBulletinGenerator.Infrastructure\ArnBulletinGenerator.Infrastructure.csproj" />
+  </ItemGroup>
+
+</Project>

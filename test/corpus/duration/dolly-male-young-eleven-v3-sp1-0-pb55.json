@@ -1,0 +1,1026 @@
+{
+ "voiceId": "EF2rFRNHqbfaMctIvS2k",
+ "voiceName": "Dolly Male Young",
+ "modelId": "eleven_v3",
+ "stability": 0.5,
+ "similarityBoost": 0.75,
+ "style": 0.0,
+ "speed": 1.0,
+ "paceBoostWpm": 55.0,
+ "total": 3,
+ "clean": 2,
+ "tokens": 188,
+ "bulletins": [
+  {
+   "jobId": "071b8cb44bd34846b48a00d90e8ca122",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 27.8,
+   "fittedSec": 22,
+   "stretch": 1.26364,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Crawling at the Greensborough Bypass southbound, closed between Diamond Creek Road and the Northern Ring Road, and closed on the M80 ramp. Point Cook Road's closed westbound at the West Gate Freeway ramp. Finlayson Street's closed eastbound at the Eastern Freeway ramp. The Tulla's a bit slow citybound from Melbourne Airport to Mickleham Road. Showers, 13 degrees. [brightly] Unleaded's TWO dollars in Richmond!",
+   "features": {
+    "syl": 94,
+    "words": 62,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Crawling",
+     "s": 0,
+     "e": 0.317
+    },
+    {
+     "w": "at",
+     "s": 0.338,
+     "e": 0.38
+    },
+    {
+     "w": "the",
+     "s": 0.396,
+     "e": 0.444
+    },
+    {
+     "w": "Greensborough",
+     "s": 0.489,
+     "e": 0.888
+    },
+    {
+     "w": "Bypass",
+     "s": 0.919,
+     "e": 1.268
+    },
+    {
+     "w": "southbound,",
+     "s": 1.331,
+     "e": 2.156
+    },
+    {
+     "w": "closed",
+     "s": 2.21,
+     "e": 2.536
+    },
+    {
+     "w": "between",
+     "s": 2.576,
+     "e": 2.853
+    },
+    {
+     "w": "Diamond",
+     "s": 2.893,
+     "e": 3.17
+    },
+    {
+     "w": "Creek",
+     "s": 3.223,
+     "e": 3.487
+    },
+    {
+     "w": "Road",
+     "s": 3.563,
+     "e": 3.867
+    },
+    {
+     "w": "and",
+     "s": 3.899,
+     "e": 3.994
+    },
+    {
+     "w": "the",
+     "s": 4.01,
+     "e": 4.058
+    },
+    {
+     "w": "Northern",
+     "s": 4.092,
+     "e": 4.375
+    },
+    {
+     "w": "Ring",
+     "s": 4.413,
+     "e": 4.565
+    },
+    {
+     "w": "Road,",
+     "s": 4.628,
+     "e": 5.072
+    },
+    {
+     "w": "and",
+     "s": 5.12,
+     "e": 5.262
+    },
+    {
+     "w": "closed",
+     "s": 5.317,
+     "e": 5.643
+    },
+    {
+     "w": "on",
+     "s": 5.706,
+     "e": 5.833
+    },
+    {
+     "w": "the",
+     "s": 5.849,
+     "e": 5.896
+    },
+    {
+     "w": "M",
+     "s": 6.023,
+     "e": 6.15
+    },
+    {
+     "w": "80",
+     "s": 6.168,
+     "e": 6.277
+    },
+    {
+     "w": "ramp.",
+     "s": 6.353,
+     "e": 6.72
+    },
+    {
+     "w": "Point",
+     "s": 6.805,
+     "e": 7.228
+    },
+    {
+     "w": "Cook",
+     "s": 7.266,
+     "e": 7.418
+    },
+    {
+     "w": "Road's",
+     "s": 7.468,
+     "e": 7.735
+    },
+    {
+     "w": "closed",
+     "s": 7.78,
+     "e": 8.052
+    },
+    {
+     "w": "westbound",
+     "s": 8.115,
+     "e": 8.686
+    },
+    {
+     "w": "at",
+     "s": 8.728,
+     "e": 8.813
+    },
+    {
+     "w": "the",
+     "s": 8.828,
+     "e": 8.876
+    },
+    {
+     "w": "West",
+     "s": 8.927,
+     "e": 9.13
+    },
+    {
+     "w": "Gate",
+     "s": 9.168,
+     "e": 9.32
+    },
+    {
+     "w": "Freeway",
+     "s": 9.367,
+     "e": 9.7
+    },
+    {
+     "w": "ramp.",
+     "s": 9.789,
+     "e": 10.207
+    },
+    {
+     "w": "Finlayson",
+     "s": 10.334,
+     "e": 10.968
+    },
+    {
+     "w": "Street's",
+     "s": 11.013,
+     "e": 11.349
+    },
+    {
+     "w": "closed",
+     "s": 11.403,
+     "e": 11.729
+    },
+    {
+     "w": "eastbound",
+     "s": 11.792,
+     "e": 12.3
+    },
+    {
+     "w": "at",
+     "s": 12.384,
+     "e": 12.553
+    },
+    {
+     "w": "the",
+     "s": 12.585,
+     "e": 12.68
+    },
+    {
+     "w": "Eastern",
+     "s": 12.72,
+     "e": 12.997
+    },
+    {
+     "w": "Freeway",
+     "s": 13.044,
+     "e": 13.377
+    },
+    {
+     "w": "ramp.",
+     "s": 13.466,
+     "e": 13.885
+    },
+    {
+     "w": "The",
+     "s": 13.964,
+     "e": 14.202
+    },
+    {
+     "w": "Tulla's",
+     "s": 14.265,
+     "e": 14.519
+    },
+    {
+     "w": "a",
+     "s": 14.55,
+     "e": 14.582
+    },
+    {
+     "w": "bit",
+     "s": 14.614,
+     "e": 14.709
+    },
+    {
+     "w": "slow",
+     "s": 14.772,
+     "e": 15.026
+    },
+    {
+     "w": "citybound",
+     "s": 15.089,
+     "e": 15.596
+    },
+    {
+     "w": "from",
+     "s": 15.66,
+     "e": 15.913
+    },
+    {
+     "w": "Melbourne",
+     "s": 15.945,
+     "e": 16.23
+    },
+    {
+     "w": "Airport",
+     "s": 16.286,
+     "e": 16.674
+    },
+    {
+     "w": "to",
+     "s": 16.716,
+     "e": 16.801
+    },
+    {
+     "w": "Mickleham",
+     "s": 16.848,
+     "e": 17.181
+    },
+    {
+     "w": "Road.",
+     "s": 17.257,
+     "e": 17.625
+    },
+    {
+     "w": "Showers,",
+     "s": 17.727,
+     "e": 18.513
+    },
+    {
+     "w": "13",
+     "s": 18.548,
+     "e": 18.83
+    },
+    {
+     "w": "degrees.",
+     "s": 18.909,
+     "e": 19.527
+    },
+    {
+     "w": "Unleaded's",
+     "s": 19.939,
+     "e": 20.351
+    },
+    {
+     "w": "TWO",
+     "s": 20.431,
+     "e": 20.668
+    },
+    {
+     "w": "dollars",
+     "s": 20.724,
+     "e": 21.112
+    },
+    {
+     "w": "in",
+     "s": 21.197,
+     "e": 21.366
+    },
+    {
+     "w": "Richmond!",
+     "s": 21.415,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "30602fc3e4534993a9f302b59b3a4444",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 29.5,
+   "fittedSec": 21.821,
+   "stretch": 1.35191,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Southbound at the Greensborough Bypass, the M80 Metropolitan Ring Road ramp and the stretch between Diamond Creek Road and the Northern Ring Road are CLOSED. Point Cook Road's closed westbound at the West Gate Freeway ramp, and Finlayson Street's blocked eastbound. The Tulla's slow citybound between Melbourne Airport and Mickleham Road. Frankston Freeway's a bit slow outbound. Showery, 13 degrees. [brightly] Unleaded's two dollars in Richmond!",
+   "features": {
+    "syl": 102,
+    "words": 65,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Southbound",
+     "s": 0,
+     "e": 0.417
+    },
+    {
+     "w": "at",
+     "s": 0.437,
+     "e": 0.477
+    },
+    {
+     "w": "the",
+     "s": 0.492,
+     "e": 0.537
+    },
+    {
+     "w": "Greensborough",
+     "s": 0.579,
+     "e": 0.954
+    },
+    {
+     "w": "Bypass,",
+     "s": 1.014,
+     "e": 1.61
+    },
+    {
+     "w": "the",
+     "s": 1.625,
+     "e": 1.669
+    },
+    {
+     "w": "M",
+     "s": 1.759,
+     "e": 1.848
+    },
+    {
+     "w": "80",
+     "s": 1.891,
+     "e": 2.146
+    },
+    {
+     "w": "Metropolitan",
+     "s": 2.197,
+     "e": 2.802
+    },
+    {
+     "w": "Ring",
+     "s": 2.838,
+     "e": 2.981
+    },
+    {
+     "w": "Road",
+     "s": 3.029,
+     "e": 3.22
+    },
+    {
+     "w": "ramp",
+     "s": 3.279,
+     "e": 3.518
+    },
+    {
+     "w": "and",
+     "s": 3.592,
+     "e": 3.816
+    },
+    {
+     "w": "the",
+     "s": 3.831,
+     "e": 3.875
+    },
+    {
+     "w": "stretch",
+     "s": 3.913,
+     "e": 4.173
+    },
+    {
+     "w": "between",
+     "s": 4.211,
+     "e": 4.472
+    },
+    {
+     "w": "Diamond",
+     "s": 4.516,
+     "e": 4.829
+    },
+    {
+     "w": "Creek",
+     "s": 4.869,
+     "e": 5.068
+    },
+    {
+     "w": "Road",
+     "s": 5.127,
+     "e": 5.366
+    },
+    {
+     "w": "and",
+     "s": 5.44,
+     "e": 5.664
+    },
+    {
+     "w": "the",
+     "s": 5.679,
+     "e": 5.724
+    },
+    {
+     "w": "Northern",
+     "s": 5.756,
+     "e": 6.022
+    },
+    {
+     "w": "Ring",
+     "s": 6.057,
+     "e": 6.201
+    },
+    {
+     "w": "Road",
+     "s": 6.26,
+     "e": 6.499
+    },
+    {
+     "w": "are",
+     "s": 6.558,
+     "e": 6.737
+    },
+    {
+     "w": "CLOSED.",
+     "s": 6.797,
+     "e": 7.214
+    },
+    {
+     "w": "Point",
+     "s": 7.283,
+     "e": 7.631
+    },
+    {
+     "w": "Cook",
+     "s": 7.667,
+     "e": 7.81
+    },
+    {
+     "w": "Road's",
+     "s": 7.858,
+     "e": 8.108
+    },
+    {
+     "w": "closed",
+     "s": 8.16,
+     "e": 8.466
+    },
+    {
+     "w": "westbound",
+     "s": 8.526,
+     "e": 9.003
+    },
+    {
+     "w": "at",
+     "s": 9.102,
+     "e": 9.301
+    },
+    {
+     "w": "the",
+     "s": 9.316,
+     "e": 9.36
+    },
+    {
+     "w": "West",
+     "s": 9.396,
+     "e": 9.539
+    },
+    {
+     "w": "Gate",
+     "s": 9.575,
+     "e": 9.718
+    },
+    {
+     "w": "Freeway",
+     "s": 9.763,
+     "e": 10.136
+    },
+    {
+     "w": "ramp,",
+     "s": 10.195,
+     "e": 10.612
+    },
+    {
+     "w": "and",
+     "s": 10.642,
+     "e": 10.732
+    },
+    {
+     "w": "Finlayson",
+     "s": 10.791,
+     "e": 11.268
+    },
+    {
+     "w": "Street's",
+     "s": 11.311,
+     "e": 11.775
+    },
+    {
+     "w": "blocked",
+     "s": 11.801,
+     "e": 11.984
+    },
+    {
+     "w": "eastbound.",
+     "s": 12.031,
+     "e": 12.58
+    },
+    {
+     "w": "The",
+     "s": 12.654,
+     "e": 12.878
+    },
+    {
+     "w": "Tulla's",
+     "s": 12.938,
+     "e": 13.295
+    },
+    {
+     "w": "slow",
+     "s": 13.355,
+     "e": 13.593
+    },
+    {
+     "w": "citybound",
+     "s": 13.665,
+     "e": 14.19
+    },
+    {
+     "w": "between",
+     "s": 14.249,
+     "e": 14.667
+    },
+    {
+     "w": "Melbourne",
+     "s": 14.696,
+     "e": 14.965
+    },
+    {
+     "w": "Airport",
+     "s": 15.009,
+     "e": 15.322
+    },
+    {
+     "w": "and",
+     "s": 15.367,
+     "e": 15.501
+    },
+    {
+     "w": "Mickleham",
+     "s": 15.546,
+     "e": 16.038
+    },
+    {
+     "w": "Road.",
+     "s": 16.098,
+     "e": 16.396
+    },
+    {
+     "w": "Frankston",
+     "s": 16.446,
+     "e": 16.813
+    },
+    {
+     "w": "Freeway's",
+     "s": 16.858,
+     "e": 17.23
+    },
+    {
+     "w": "a",
+     "s": 17.26,
+     "e": 17.29
+    },
+    {
+     "w": "bit",
+     "s": 17.335,
+     "e": 17.469
+    },
+    {
+     "w": "slow",
+     "s": 17.528,
+     "e": 17.767
+    },
+    {
+     "w": "outbound.",
+     "s": 17.827,
+     "e": 18.363
+    },
+    {
+     "w": "Showery,",
+     "s": 18.459,
+     "e": 19.228
+    },
+    {
+     "w": "13",
+     "s": 19.251,
+     "e": 19.436
+    },
+    {
+     "w": "degrees.",
+     "s": 19.496,
+     "e": 19.973
+    },
+    {
+     "w": "Unleaded's",
+     "s": 20.311,
+     "e": 20.688
+    },
+    {
+     "w": "two",
+     "s": 20.718,
+     "e": 20.808
+    },
+    {
+     "w": "dollars",
+     "s": 20.837,
+     "e": 21.046
+    },
+    {
+     "w": "in",
+     "s": 21.086,
+     "e": 21.165
+    },
+    {
+     "w": "Richmond!",
+     "s": 21.212,
+     "e": 21.821
+    }
+   ]
+  },
+  {
+   "jobId": "83980a98b0294edf8e756c2b18236dd3",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 27.5,
+   "fittedSec": 22,
+   "stretch": 1.25,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Point Cook Road's CLOSED westbound at the West Gate Freeway turn-off. Finlayson Street's blocked eastbound at the Eastern Freeway turn-off. Greensborough Bypass is closed southbound between Diamond Creek Road and Northern Ring Road, and at the M80 entry. The Tulla's busy citybound with roadworks between Melbourne Airport and Mickleham Road. Showery, 13 degrees. [delighted]Unleaded's TWO dollars in Richmond!",
+   "features": {
+    "syl": 95,
+    "words": 58,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Point",
+     "s": 0,
+     "e": 0.128
+    },
+    {
+     "w": "Cook",
+     "s": 0.179,
+     "e": 0.384
+    },
+    {
+     "w": "Road's",
+     "s": 0.435,
+     "e": 0.703
+    },
+    {
+     "w": "CLOSED",
+     "s": 0.767,
+     "e": 1.151
+    },
+    {
+     "w": "westbound",
+     "s": 1.202,
+     "e": 1.663
+    },
+    {
+     "w": "at",
+     "s": 1.705,
+     "e": 1.791
+    },
+    {
+     "w": "the",
+     "s": 1.807,
+     "e": 1.855
+    },
+    {
+     "w": "West",
+     "s": 1.893,
+     "e": 2.047
+    },
+    {
+     "w": "Gate",
+     "s": 2.085,
+     "e": 2.238
+    },
+    {
+     "w": "Freeway",
+     "s": 2.286,
+     "e": 2.622
+    },
+    {
+     "w": "turn-off.",
+     "s": 2.673,
+     "e": 3.453
+    },
+    {
+     "w": "Finlayson",
+     "s": 3.517,
+     "e": 4.029
+    },
+    {
+     "w": "Street's",
+     "s": 4.066,
+     "e": 4.349
+    },
+    {
+     "w": "blocked",
+     "s": 4.389,
+     "e": 4.669
+    },
+    {
+     "w": "eastbound",
+     "s": 4.72,
+     "e": 5.18
+    },
+    {
+     "w": "at",
+     "s": 5.266,
+     "e": 5.436
+    },
+    {
+     "w": "the",
+     "s": 5.452,
+     "e": 5.5
+    },
+    {
+     "w": "Eastern",
+     "s": 5.548,
+     "e": 5.884
+    },
+    {
+     "w": "Freeway",
+     "s": 5.932,
+     "e": 6.331
+    },
+    {
+     "w": "turn-off.",
+     "s": 6.383,
+     "e": 7.195
+    },
+    {
+     "w": "Greensborough",
+     "s": 7.236,
+     "e": 7.61
+    },
+    {
+     "w": "Bypass",
+     "s": 7.674,
+     "e": 8.186
+    },
+    {
+     "w": "is",
+     "s": 8.228,
+     "e": 8.314
+    },
+    {
+     "w": "closed",
+     "s": 8.378,
+     "e": 8.762
+    },
+    {
+     "w": "southbound",
+     "s": 8.804,
+     "e": 9.273
+    },
+    {
+     "w": "between",
+     "s": 9.329,
+     "e": 9.721
+    },
+    {
+     "w": "Diamond",
+     "s": 9.761,
+     "e": 10.041
+    },
+    {
+     "w": "Creek",
+     "s": 10.083,
+     "e": 10.297
+    },
+    {
+     "w": "Road",
+     "s": 10.36,
+     "e": 10.616
+    },
+    {
+     "w": "and",
+     "s": 10.648,
+     "e": 10.744
+    },
+    {
+     "w": "Northern",
+     "s": 10.787,
+     "e": 11.128
+    },
+    {
+     "w": "Ring",
+     "s": 11.166,
+     "e": 11.32
+    },
+    {
+     "w": "Road,",
+     "s": 11.371,
+     "e": 11.831
+    },
+    {
+     "w": "and",
+     "s": 11.879,
+     "e": 12.023
+    },
+    {
+     "w": "at",
+     "s": 12.066,
+     "e": 12.151
+    },
+    {
+     "w": "the",
+     "s": 12.183,
+     "e": 12.279
+    },
+    {
+     "w": "M",
+     "s": 12.407,
+     "e": 12.535
+    },
+    {
+     "w": "80",
+     "s": 12.562,
+     "e": 12.727
+    },
+    {
+     "w": "entry.",
+     "s": 12.812,
+     "e": 13.302
+    },
+    {
+     "w": "The",
+     "s": 13.398,
+     "e": 13.686
+    },
+    {
+     "w": "Tulla's",
+     "s": 13.75,
+     "e": 14.134
+    },
+    {
+     "w": "busy",
+     "s": 14.185,
+     "e": 14.39
+    },
+    {
+     "w": "citybound",
+     "s": 14.453,
+     "e": 14.965
+    },
+    {
+     "w": "with",
+     "s": 15.016,
+     "e": 15.221
+    },
+    {
+     "w": "roadworks",
+     "s": 15.285,
+     "e": 15.797
+    },
+    {
+     "w": "between",
+     "s": 15.836,
+     "e": 16.116
+    },
+    {
+     "w": "Melbourne",
+     "s": 16.148,
+     "e": 16.436
+    },
+    {
+     "w": "Airport",
+     "s": 16.484,
+     "e": 16.82
+    },
+    {
+     "w": "and",
+     "s": 16.884,
+     "e": 17.076
+    },
+    {
+     "w": "Mickleham",
+     "s": 17.124,
+     "e": 17.587
+    },
+    {
+     "w": "Road.",
+     "s": 17.664,
+     "e": 18.259
+    },
+    {
+     "w": "Showery,",
+     "s": 18.316,
+     "e": 18.93
+    },
+    {
+     "w": "13",
+     "s": 18.965,
+     "e": 19.25
+    },
+    {
+     "w": "degrees.",
+     "s": 19.322,
+     "e": 19.89
+    },
+    {
+     "w": "Unleaded's",
+     "s": 20.273,
+     "e": 20.721
+    },
+    {
+     "w": "TWO",
+     "s": 20.753,
+     "e": 20.849
+    },
+    {
+     "w": "dollars",
+     "s": 20.897,
+     "e": 21.233
+    },
+    {
+     "w": "in",
+     "s": 21.275,
+     "e": 21.36
+    },
+    {
+     "w": "Richmond!",
+     "s": 21.417,
+     "e": 22
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,793 @@
+{
+  "Label": "melbourne-drivetime-comparison",
+  "Reason": "luna reverify",
+  "SourceJobId": "1c0206da7d574cc4bb1ba1ed22cf3f77",
+  "OriginalScript": "High Street\u0027s at a standstill. The Monash citybound from EastLink is running about thirty-six minutes, with the twenty-five-kay trip taking six minutes longer than usual. Linlithgow Avenue, St Kilda Road, Victoria Parade and City Link are all a touch slow. There\u0027s construction at the CityLink Tollway on Footscray Road, and works on West Melbourne outbound. The West Gate Freeway\u0027s moving nicely. Cloudy and twelve degrees. Unleaded\u0027s cheapest at a dollar sixty in Collingwood, with diesel at a dollar ninety-three in Fitzroy North.",
+  "CapturedAtUtc": "2026-07-16T03:33:30.701678+00:00",
+  "Snapshot": {
+    "TargetDurationSeconds": 30,
+    "Location": "melbourne",
+    "City": null,
+    "MarketId": "melbourne",
+    "Content": {
+      "Traffic": true,
+      "Weather": true,
+      "Fuel": true,
+      "HasAnySource": true
+    },
+    "Corridors": [
+      {
+        "RoadName": "Footscray Road",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 166,
+        "ImpactScore": 194.88043235216023,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "741843487864047174",
+            "Description": "At CityLink Tollway - Lane blocked",
+            "Severity": 1,
+            "Location": "Footscray Rd",
+            "Type": "construction",
+            "LengthMeters": 117,
+            "FunctionalClass": 1,
+            "Latitude": -37.8096,
+            "Longitude": 144.93463,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129786:$1:916006170#-0.96696..1",
+              "$0:365129786:$1:215815095#\u002B0..1",
+              "$0:365129786:$1:215631703#\u002B0..0.9661"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.8096,
+                "Lng": 144.93463
+              },
+              {
+                "Lat": -37.80959,
+                "Lng": 144.93455
+              },
+              {
+                "Lat": -37.80959,
+                "Lng": 144.93455
+              },
+              {
+                "Lat": -37.80951,
+                "Lng": 144.93397
+              },
+              {
+                "Lat": -37.80951,
+                "Lng": 144.93397
+              },
+              {
+                "Lat": -37.80943,
+                "Lng": 144.9333
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:57:15+00:00"
+          },
+          {
+            "Id": "1303204396851879631",
+            "Description": "At CityLink Tollway - Maintenance work",
+            "Severity": 1,
+            "Location": "Footscray Rd",
+            "Type": "construction",
+            "LengthMeters": 49,
+            "FunctionalClass": 1,
+            "Latitude": -37.80989,
+            "Longitude": 144.93647,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129786:$1:789957389#\u002B0..0.81633"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.80989,
+                "Lng": 144.93647
+              },
+              {
+                "Lat": -37.80978,
+                "Lng": 144.93593
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:49:42+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": 3,
+        "NormalDriveTimeMinutes": 3,
+        "Latitude": -37.8096,
+        "Longitude": 144.93463,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 4,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 0
+      },
+      {
+        "RoadName": "CityLink",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 337,
+        "ImpactScore": 188.5,
+        "PrimaryType": "congestion",
+        "Description": "heavy congestion",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": true,
+        "Detour": null,
+        "DelayMinutes": null
+      },
+      {
+        "RoadName": "West Melbourne",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 169,
+        "ImpactScore": 168.9115468184547,
+        "PrimaryType": "construction",
+        "Description": "roadworks outbound",
+        "Incidents": [
+          {
+            "Id": "2855513497938054666",
+            "Description": "Maintenance work",
+            "Severity": 1,
+            "Location": "West Melbourne",
+            "Type": "construction",
+            "LengthMeters": 169,
+            "FunctionalClass": 2,
+            "Latitude": -37.81061,
+            "Longitude": 144.93226,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "outbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365129786:$1:221201445#\u002B0.82749..1",
+              "$0:365129786:$1:215495090#\u002B0..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -37.81061,
+                "Lng": 144.93226
+              },
+              {
+                "Lat": -37.81044,
+                "Lng": 144.93208
+              },
+              {
+                "Lat": -37.81027,
+                "Lng": 144.93196
+              },
+              {
+                "Lat": -37.81014,
+                "Lng": 144.93191
+              },
+              {
+                "Lat": -37.81005,
+                "Lng": 144.93189
+              },
+              {
+                "Lat": -37.80983,
+                "Lng": 144.93188
+              },
+              {
+                "Lat": -37.80983,
+                "Lng": 144.93188
+              },
+              {
+                "Lat": -37.8095,
+                "Lng": 144.93184
+              },
+              {
+                "Lat": -37.80943,
+                "Lng": 144.93182
+              },
+              {
+                "Lat": -37.80929,
+                "Lng": 144.93168
+              },
+              {
+                "Lat": -37.80929,
+                "Lng": 144.93168
+              },
+              {
+                "Lat": -37.80924,
+                "Lng": 144.93161
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:43:42+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": "outbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -37.81061,
+        "Longitude": 144.93226,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": null
+      },
+      {
+        "RoadName": "High Street",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 1175,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 6,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 6
+      },
+      {
+        "RoadName": "Linlithgow Avenue",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 327,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 4,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 4
+      },
+      {
+        "RoadName": "St Kilda Road",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 1146,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 4,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 4
+      },
+      {
+        "RoadName": "Victoria Parade",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 612,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 2
+      },
+      {
+        "RoadName": "City Link",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 515,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      }
+    ],
+    "MonitoredRoutes": [
+      {
+        "Name": "the Monash citybound from EastLink",
+        "Origin": {
+          "Lat": -37.91,
+          "Lng": 145.18
+        },
+        "Destination": {
+          "Lat": -37.8136,
+          "Lng": 144.9631
+        },
+        "DriveTimeMinutes": 36,
+        "NormalDriveTimeMinutes": 30,
+        "DistanceKm": 25.369,
+        "DelayMinutes": 6
+      },
+      {
+        "Name": "the West Gate citybound",
+        "Origin": {
+          "Lat": -37.83,
+          "Lng": 144.89
+        },
+        "Destination": {
+          "Lat": -37.82,
+          "Lng": 144.95
+        },
+        "DriveTimeMinutes": 14,
+        "NormalDriveTimeMinutes": 13,
+        "DistanceKm": 8.439,
+        "DelayMinutes": 1
+      }
+    ],
+    "GoodRunRoads": [
+      "WEST GATE FREEWAY (EASTBOUND)",
+      "WEST GATE FREEWAY (WESTBOUND)",
+      "Monash Freeway",
+      "Tullamarine Freeway",
+      "Eastern Freeway",
+      "Hoddle Street"
+    ],
+    "FlowPool": [
+      {
+        "RoadName": "WEST GATE FREEWAY (EASTBOUND)",
+        "JamFactor": 0,
+        "LengthMeters": 4177,
+        "IsWeighted": true,
+        "FunctionalClass": 1,
+        "Score": 172.5,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "WEST GATE FREEWAY (WESTBOUND)",
+        "JamFactor": 1.4,
+        "LengthMeters": 3008,
+        "IsWeighted": true,
+        "FunctionalClass": 1,
+        "Score": 172.5,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Monash Freeway",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 140,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Tullamarine Freeway",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 140,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Eastern Freeway",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 80,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Hoddle Street",
+        "JamFactor": 3.8,
+        "LengthMeters": 7474,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 57.5,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Princes Highway",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 45,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Racecourse Road",
+        "JamFactor": 3.2,
+        "LengthMeters": 5356,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Park Street",
+        "JamFactor": 3.7,
+        "LengthMeters": 5035,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Power Street",
+        "JamFactor": 3.9,
+        "LengthMeters": 4616,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Graham Street",
+        "JamFactor": 3.6,
+        "LengthMeters": 4309,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Yarra Boulevard",
+        "JamFactor": 3,
+        "LengthMeters": 4010,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Dynon Road",
+        "JamFactor": 1.9,
+        "LengthMeters": 3959,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "St Georges Road",
+        "JamFactor": 3,
+        "LengthMeters": 3954,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Clarendon Street",
+        "JamFactor": 3.1,
+        "LengthMeters": 3782,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "City Road",
+        "JamFactor": 3.2,
+        "LengthMeters": 3526,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Docklands",
+        "JamFactor": 1.8,
+        "LengthMeters": 3465,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Kings Way",
+        "JamFactor": 3.9,
+        "LengthMeters": 3252,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Queensberry Street",
+        "JamFactor": 3.5,
+        "LengthMeters": 3233,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Salmon Street",
+        "JamFactor": 2.1,
+        "LengthMeters": 3195,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      }
+    ],
+    "Weather": {
+      "Conditions": "Overcast. Cool.",
+      "TemperatureC": 12,
+      "WindDescription": null,
+      "PrecipitationProbabilityPercent": 0,
+      "Alerts": [],
+      "Outlook": "reaching 15 degrees later today; tomorrow afternoon clouds. cool, around 16 degrees",
+      "IsForecast": false,
+      "HasMajorAlert": false
+    },
+    "Fuel": {
+      "Summaries": [
+        {
+          "FuelType": "Unleaded 91",
+          "MinPrice": 1.598,
+          "AveragePrice": 1.715,
+          "StationCount": 46,
+          "LatestModifiedUtc": "2026-07-16T00:32:30+00:00",
+          "CheapestStationSuburb": "Collingwood"
+        },
+        {
+          "FuelType": "Diesel",
+          "MinPrice": 1.929,
+          "AveragePrice": 2.078,
+          "StationCount": 18,
+          "LatestModifiedUtc": "2026-07-16T00:32:35+00:00",
+          "CheapestStationSuburb": "Fitzroy North"
+        }
+      ],
+      "HasPrices": true
+    },
+    "IncidentChanges": null,
+    "Guidance": {
+      "Entries": [
+        {
+          "Id": "e6df16adaeca4db18e98a8b18def21bf",
+          "Scope": 1,
+          "ScopeId": "melbourne",
+          "Type": 2,
+          "Text": "Melbourne names: \u0027the Monash\u0027, \u0027the West Gate\u0027, \u0027the Tulla\u0027, \u0027the Bolte\u0027, \u0027CityLink\u0027, \u0027the Eastern Freeway\u0027, \u0027the Ring Road\u0027. Use \u0027inbound\u0027 and \u0027outbound\u0027.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for \u2014 a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "UpdatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "645e52b90299493a8dbde1205c6c657e",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "75fe175d471144b38bf23c24966dfb6f",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "7b012b9381e04e72be8211133f224188",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 4,
+          "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "Australian English with natural spoken contractions. Round the figures \u2014 say \u0027about ten minutes\u0027, never \u002710.3 minutes\u0027. No police codes or insider jargon.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 3,
+          "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "f5e76bd5993c41edb637a7302f7d7479",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 2,
+          "Text": "Use common road names with the definite article: \u0027the M1\u0027, \u0027the M4\u0027, \u0027the CBD\u0027. Use \u0027citybound\u0027 and \u0027outbound\u0027 for direction of travel.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        }
+      ],
+      "DroppedCount": 0,
+      "Count": 8,
+      "HasEntries": true
+    },
+    "MarketFeedback": [
+      {
+        "Market": "melbourne",
+        "JobId": "66607b0decdd43eda99d29613a85e0b4",
+        "Category": "revision",
+        "Feedback": "Revision requested from review",
+        "CreatedAtUtc": "2026-07-01T11:46:42.5724035Z"
+      },
+      {
+        "Market": "melbourne",
+        "JobId": "e1e4ce30ed304f5ba904279931af078a",
+        "Category": "revision",
+        "Feedback": "Script edited and re-voiced",
+        "CreatedAtUtc": "2026-07-01T05:05:36.5900182Z"
+      },
+      {
+        "Market": "melbourne",
+        "JobId": "1912a04dd83c48879179f950ae0f36a9",
+        "Category": "revision",
+        "Feedback": "Script edited and re-voiced",
+        "CreatedAtUtc": "2026-07-01T02:34:00.5353396Z"
+      },
+      {
+        "Market": "melbourne",
+        "JobId": "0a3e318207524cacb16f9e4686e05647",
+        "Category": "revision",
+        "Feedback": "Script edited and re-voiced",
+        "CreatedAtUtc": "2026-07-01T01:18:02.9781603Z"
+      },
+      {
+        "Market": "melbourne",
+        "JobId": "d9a694e6aa994c12ba09d376deb1f000",
+        "Category": "revision",
+        "Feedback": "Revision requested from review",
+        "CreatedAtUtc": "2026-07-01T01:16:51.75083Z"
+      },
+      {
+        "Market": "melbourne",
+        "JobId": "6944a37459924c54be593493287ddaf1",
+        "Category": "revision",
+        "Feedback": "Script edited and re-voiced",
+        "CreatedAtUtc": "2026-07-01T00:30:40.9896696Z"
+      },
+      {
+        "Market": "melbourne",
+        "JobId": "6944a37459924c54be593493287ddaf1",
+        "Category": "revision",
+        "Feedback": "Script edited and re-voiced",
+        "CreatedAtUtc": "2026-07-01T00:21:35.0469188Z"
+      },
+      {
+        "Market": "melbourne",
+        "JobId": "6944a37459924c54be593493287ddaf1",
+        "Category": "revision",
+        "Feedback": "didn\u0027t talk about the weather properly",
+        "CreatedAtUtc": "2026-07-01T00:19:13.4142996Z"
+      }
+    ]
+  }
+}

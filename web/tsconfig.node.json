@@ -1,0 +1,15 @@
+{
+  "compilerOptions": {
+    "composite": true,
+    /* Composite projects must emit; send it to a throwaway dir so a stale
+       vite.config.js can never shadow vite.config.ts (Vite prefers .js). */
+    "outDir": "./node_modules/.tmp/tsconfig-node",
+    "emitDeclarationOnly": true,
+    "tsBuildInfoFile": "./node_modules/.tmp/tsconfig.node.tsbuildinfo",
+    "skipLibCheck": true,
+    "module": "ESNext",
+    "moduleResolution": "bundler",
+    "allowSyntheticDefaultImports": true
+  },
+  "include": ["vite.config.ts"]
+}

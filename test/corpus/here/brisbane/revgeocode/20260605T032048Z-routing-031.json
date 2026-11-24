@@ -1,0 +1,55 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032048Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:49.7188778+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.59219,152.84394\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "50 Riverview Rd, Riverview QLD 4303, Australia",
+          "id": "here:af:streetsection:PesVjdqTrb4rYOdjS3qraA:CggIBCCKooifARABGgI1MA",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "50 Riverview Rd, Riverview QLD 4303, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Riverview",
+            "street": "Riverview Rd",
+            "postalCode": "4303",
+            "houseNumber": "50"
+          },
+          "position": {
+            "lat": -27.59244,
+            "lng": 152.84397
+          },
+          "access": [
+            {
+              "lat": -27.5922,
+              "lng": 152.84401
+            }
+          ],
+          "distance": 7,
+          "mapView": {
+            "west": 152.8335,
+            "south": -27.59294,
+            "east": 152.84917,
+            "north": -27.58971
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

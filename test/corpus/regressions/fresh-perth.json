@@ -1,0 +1,1366 @@
+{
+  "Label": "fresh-perth",
+  "Reason": "true sample wave 2: traffic\u002Bweather\u002Bfuel, 03:53",
+  "SourceJobId": "32d505fe33924513b8ecc6a79ab89ca3",
+  "OriginalScript": "Reid Highway is closed at Altone Road and at Lord Street for construction. Canning Highway is closed at Queen Victoria Street for construction. Stirling Highway is closed at Leura Avenue and at Glyde Street for construction. Anketell Road and Thomas Road are at a standstill. Tonkin Highway is under speed through roadworks at Rowley Road, and Stock Road has moderate delays at Phoenix Road. Mostly cloudy and 17 degrees. Unleaded 91 is cheapest at Beckenham, and diesel is cheaper there too.",
+  "CapturedAtUtc": "2026-07-10T03:53:28.288166+00:00",
+  "Snapshot": {
+    "TargetDurationSeconds": 30,
+    "Location": "perth",
+    "City": null,
+    "MarketId": "perth",
+    "Content": {
+      "Traffic": true,
+      "Weather": true,
+      "Fuel": true,
+      "HasAnySource": true
+    },
+    "Corridors": [
+      {
+        "RoadName": "Reid Highway",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 1019,
+        "ImpactScore": 250,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure and roadworks",
+        "Incidents": [
+          {
+            "Id": "2949085142542942784",
+            "Description": "Closed",
+            "Severity": 1,
+            "Location": "Reid Hwy",
+            "Type": "roadClosure",
+            "LengthMeters": 249,
+            "FunctionalClass": 1,
+            "Latitude": -31.86092,
+            "Longitude": 115.94748,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": "intermediateClosedEdgeOpen",
+            "SegmentRefs": [
+              "$0:362308466:$1:919018678#-0.90233..1",
+              "$0:362308466:$1:919019524#-0..1",
+              "$0:362308466:$1:919019927#-0..1",
+              "$0:362308466:$1:919019414#-0..0.04404"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -31.86092,
+                "Lng": 115.94748
+              },
+              {
+                "Lat": -31.86093,
+                "Lng": 115.94722
+              },
+              {
+                "Lat": -31.8609,
+                "Lng": 115.94672
+              },
+              {
+                "Lat": -31.86091,
+                "Lng": 115.94652
+              },
+              {
+                "Lat": -31.86097,
+                "Lng": 115.94602
+              },
+              {
+                "Lat": -31.86104,
+                "Lng": 115.94578
+              },
+              {
+                "Lat": -31.86104,
+                "Lng": 115.94578
+              },
+              {
+                "Lat": -31.86109,
+                "Lng": 115.94575
+              },
+              {
+                "Lat": -31.86109,
+                "Lng": 115.94575
+              },
+              {
+                "Lat": -31.86114,
+                "Lng": 115.94576
+              },
+              {
+                "Lat": -31.86133,
+                "Lng": 115.94576
+              },
+              {
+                "Lat": -31.86158,
+                "Lng": 115.94574
+              },
+              {
+                "Lat": -31.86158,
+                "Lng": 115.94574
+              },
+              {
+                "Lat": -31.86182,
+                "Lng": 115.9457
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-07-08T00:13:05+00:00"
+          },
+          {
+            "Id": "835692638456694825",
+            "Description": "At Altone Road - Road construction",
+            "Severity": 1,
+            "Location": "Reid Hwy",
+            "Type": "construction",
+            "LengthMeters": 223,
+            "FunctionalClass": 1,
+            "Latitude": -31.86065,
+            "Longitude": 115.95505,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "westbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:362308466:$1:919018678#-0.43656..0.58071"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -31.86065,
+                "Lng": 115.95505
+              },
+              {
+                "Lat": -31.86063,
+                "Lng": 115.95451
+              },
+              {
+                "Lat": -31.86064,
+                "Lng": 115.95393
+              },
+              {
+                "Lat": -31.8607,
+                "Lng": 115.95267
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:10:56+00:00"
+          },
+          {
+            "Id": "1806829324291568349",
+            "Description": "At Altone Road - Closed due to road construction",
+            "Severity": 1,
+            "Location": "Reid Hwy",
+            "Type": "construction",
+            "LengthMeters": 202,
+            "FunctionalClass": 1,
+            "Latitude": -31.86092,
+            "Longitude": 115.94748,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "westbound",
+            "Summary": null,
+            "JunctionTraversability": "intermediateClosedEdgeOpen",
+            "SegmentRefs": [
+              "$0:362308466:$1:919018678#-0.89586..1",
+              "$0:362308466:$1:919019524#-0..1",
+              "$0:362308466:$1:919018546#-0..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -31.86092,
+                "Lng": 115.94748
+              },
+              {
+                "Lat": -31.86093,
+                "Lng": 115.94722
+              },
+              {
+                "Lat": -31.8609,
+                "Lng": 115.94672
+              },
+              {
+                "Lat": -31.86091,
+                "Lng": 115.94652
+              },
+              {
+                "Lat": -31.86097,
+                "Lng": 115.94602
+              },
+              {
+                "Lat": -31.86104,
+                "Lng": 115.94578
+              },
+              {
+                "Lat": -31.86104,
+                "Lng": 115.94578
+              },
+              {
+                "Lat": -31.86109,
+                "Lng": 115.94575
+              },
+              {
+                "Lat": -31.86109,
+                "Lng": 115.94575
+              },
+              {
+                "Lat": -31.86116,
+                "Lng": 115.94564
+              },
+              {
+                "Lat": -31.86118,
+                "Lng": 115.94554
+              },
+              {
+                "Lat": -31.86118,
+                "Lng": 115.94541
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-07-10T01:10:55+00:00"
+          },
+          {
+            "Id": "1961014250724270942",
+            "Description": "At Altone Road - Closed",
+            "Severity": 1,
+            "Location": "Reid Hwy",
+            "Type": "roadClosure",
+            "LengthMeters": 85,
+            "FunctionalClass": 1,
+            "Latitude": -31.86085,
+            "Longitude": 115.9451,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": "intermediateClosedEdgeOpen",
+            "SegmentRefs": [
+              "$0:362308466:$1:919018326#\u002B0..1",
+              "$0:362308466:$1:919019472#\u002B0..1",
+              "$0:362308466:$1:919018499#-0..0.44444"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -31.86085,
+                "Lng": 115.9451
+              },
+              {
+                "Lat": -31.86074,
+                "Lng": 115.94515
+              },
+              {
+                "Lat": -31.86061,
+                "Lng": 115.94528
+              },
+              {
+                "Lat": -31.86061,
+                "Lng": 115.94528
+              },
+              {
+                "Lat": -31.86058,
+                "Lng": 115.94539
+              },
+              {
+                "Lat": -31.86057,
+                "Lng": 115.94548
+              },
+              {
+                "Lat": -31.86061,
+                "Lng": 115.94564
+              },
+              {
+                "Lat": -31.86061,
+                "Lng": 115.94564
+              },
+              {
+                "Lat": -31.86067,
+                "Lng": 115.94573
+              },
+              {
+                "Lat": -31.86073,
+                "Lng": 115.94577
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-07-09T22:39:09+00:00"
+          },
+          {
+            "Id": "1555164964483773932",
+            "Description": "Closed",
+            "Severity": 1,
+            "Location": "Reid Hwy",
+            "Type": "roadClosure",
+            "LengthMeters": 81,
+            "FunctionalClass": 1,
+            "Latitude": -31.86163,
+            "Longitude": 115.96323,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": "intermediateClosedEdgeOpen",
+            "SegmentRefs": [
+              "$0:362308467:$1:917604088#\u002B0.03093..0.05903"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -31.86163,
+                "Lng": 115.96323
+              },
+              {
+                "Lat": -31.86189,
+                "Lng": 115.96404
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-07-07T16:43:05+00:00"
+          },
+          {
+            "Id": "4493147689715821819",
+            "Description": "At Lord Street - Road construction",
+            "Severity": 1,
+            "Location": "Reid Hwy",
+            "Type": "construction",
+            "LengthMeters": 81,
+            "FunctionalClass": 1,
+            "Latitude": -31.86163,
+            "Longitude": 115.96323,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:362308467:$1:917604088#\u002B0.02642..0.06298"
+            ],
+            "Comment": "Reid Hwy at Drumpellier Dr, Dayton - Upgrades 24/7 Various closures, speed reductions and detours in place",
+            "Shape": [
+              {
+                "Lat": -31.86163,
+                "Lng": 115.96323
+              },
+              {
+                "Lat": -31.86189,
+                "Lng": 115.96404
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:48:31+00:00"
+          },
+          {
+            "Id": "2785802760701463739",
+            "Description": "Closed",
+            "Severity": 1,
+            "Location": "Reid Hwy",
+            "Type": "roadClosure",
+            "LengthMeters": 68,
+            "FunctionalClass": 1,
+            "Latitude": -31.86213,
+            "Longitude": 115.96484,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": "intermediateClosedEdgeOpen",
+            "SegmentRefs": [
+              "$0:362308467:$1:917609080#-0.90818..0.92964"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -31.86213,
+                "Lng": 115.96484
+              },
+              {
+                "Lat": -31.86207,
+                "Lng": 115.96448
+              },
+              {
+                "Lat": -31.86207,
+                "Lng": 115.96448
+              },
+              {
+                "Lat": -31.86199,
+                "Lng": 115.96413
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-07-08T09:53:06+00:00"
+          },
+          {
+            "Id": "4308658884875918584",
+            "Description": "At Reid Highway - Road construction",
+            "Severity": 1,
+            "Location": "Reid Hwy",
+            "Type": "construction",
+            "LengthMeters": 30,
+            "FunctionalClass": 1,
+            "Latitude": -31.86278,
+            "Longitude": 115.96859,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:362308467:$1:917604088#\u002B0.26289..0.26862"
+            ],
+            "Comment": "Grandis Rd underpass - Upgrades Closed for Ramp construction and underpass extensions from November 2025 to July 2027",
+            "Shape": [
+              {
+                "Lat": -31.86278,
+                "Lng": 115.96859
+              },
+              {
+                "Lat": -31.86284,
+                "Lng": 115.9689
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:48:31+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": 3,
+        "NormalDriveTimeMinutes": 3,
+        "Latitude": -31.86085,
+        "Longitude": 115.9451,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 8,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 0
+      },
+      {
+        "RoadName": "Tonkin Highway",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 23,
+        "ImpactScore": 215.0809847472915,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "2328231882414253178",
+            "Description": "At Thomas Road - Road construction",
+            "Severity": 1,
+            "Location": "Tonkin Hwy",
+            "Type": "construction",
+            "LengthMeters": 23,
+            "FunctionalClass": 2,
+            "Latitude": -32.17982,
+            "Longitude": 115.9621,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:362307963:$1:216028361#-0..1"
+            ],
+            "Comment": "Tonkin Hwy at Rowley Rd, Hilbert - Maintenance 9am to 3pm Low traffic impact",
+            "Shape": [
+              {
+                "Lat": -32.17982,
+                "Lng": 115.9621
+              },
+              {
+                "Lat": -32.18003,
+                "Lng": 115.96212
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T01:00:30+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -32.17982,
+        "Longitude": 115.9621,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 15,
+        "PriorityBoosted": true,
+        "Detour": null,
+        "DelayMinutes": 15
+      },
+      {
+        "RoadName": "Mitchell Freeway",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 1223,
+        "ImpactScore": 214.5,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": true,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "Stirling Highway",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 122,
+        "ImpactScore": 204.63803581756483,
+        "PrimaryType": "roadClosure",
+        "Description": "roadworks and road closure",
+        "Incidents": [
+          {
+            "Id": "3187307585870798356",
+            "Description": "At Leura Avenue - Road construction",
+            "Severity": 1,
+            "Location": "Stirling Hwy",
+            "Type": "construction",
+            "LengthMeters": 49,
+            "FunctionalClass": 2,
+            "Latitude": -31.98219,
+            "Longitude": 115.78632,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:362308369:$1:914748939#-0.78571..1",
+              "$0:362308369:$1:914749227#-0..0.91429"
+            ],
+            "Comment": "Stirling Hwy at Vaucluse Av, Claremont - Maintenance 7am to 5pm Lane closures and speed reduction in place",
+            "Shape": [
+              {
+                "Lat": -31.98219,
+                "Lng": 115.78632
+              },
+              {
+                "Lat": -31.98221,
+                "Lng": 115.78617
+              },
+              {
+                "Lat": -31.98221,
+                "Lng": 115.78617
+              },
+              {
+                "Lat": -31.98226,
+                "Lng": 115.7858
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-09T23:00:31+00:00"
+          },
+          {
+            "Id": "4670990497237757088",
+            "Description": "At Glyde Street - Road construction",
+            "Severity": 1,
+            "Location": "Stirling Hwy",
+            "Type": "construction",
+            "LengthMeters": 39,
+            "FunctionalClass": 2,
+            "Latitude": -32.00764,
+            "Longitude": 115.75732,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:362308026:$1:912150954#\u002B0.31093..1"
+            ],
+            "Comment": "Stirling Hwy at Glyde St, Mosman Park - Maintenance 7am to 5pm Various closures, detour and speed reduction in place",
+            "Shape": [
+              {
+                "Lat": -32.00764,
+                "Lng": 115.75732
+              },
+              {
+                "Lat": -32.00733,
+                "Lng": 115.75752
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-09T23:00:31+00:00"
+          },
+          {
+            "Id": "1216859322369344404",
+            "Description": "Closed",
+            "Severity": 2,
+            "Location": "Stirling Hwy",
+            "Type": "roadClosure",
+            "LengthMeters": 34,
+            "FunctionalClass": 3,
+            "Latitude": -32.03628,
+            "Longitude": 115.75583,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": "intermediateClosedEdgeOpen",
+            "SegmentRefs": [
+              "$0:362308018:$1:216650272#-0.29412..0.79239"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -32.03628,
+                "Lng": 115.75583
+              },
+              {
+                "Lat": -32.0364,
+                "Lng": 115.75572
+              },
+              {
+                "Lat": -32.0365,
+                "Lng": 115.75558
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-07-08T10:16:08+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": 11,
+        "NormalDriveTimeMinutes": 11,
+        "Latitude": -31.98219,
+        "Longitude": 115.78632,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 4,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 0
+      },
+      {
+        "RoadName": "Canning Highway",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 86,
+        "ImpactScore": 194.34498451243567,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure and roadworks",
+        "Incidents": [
+          {
+            "Id": "1199985233916150239",
+            "Description": "Closed",
+            "Severity": 1,
+            "Location": "Canning Hwy",
+            "Type": "roadClosure",
+            "LengthMeters": 45,
+            "FunctionalClass": 2,
+            "Latitude": -32.03007,
+            "Longitude": 115.81958,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": "intermediateClosedEdgeOpen",
+            "SegmentRefs": [
+              "$0:362308029:$1:860055372#\u002B0.22222..0.82716"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -32.03007,
+                "Lng": 115.81958
+              },
+              {
+                "Lat": -32.03006,
+                "Lng": 115.81945
+              },
+              {
+                "Lat": -32.03009,
+                "Lng": 115.81926
+              },
+              {
+                "Lat": -32.03007,
+                "Lng": 115.8191
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-07-10T00:50:11+00:00"
+          },
+          {
+            "Id": "3452872328976242218",
+            "Description": "At Queen Victoria Street - Road construction",
+            "Severity": 2,
+            "Location": "Canning Hwy",
+            "Type": "construction",
+            "LengthMeters": 41,
+            "FunctionalClass": 3,
+            "Latitude": -32.04271,
+            "Longitude": 115.75531,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:362308018:$1:221205890#-0.69742..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -32.04271,
+                "Lng": 115.75531
+              },
+              {
+                "Lat": -32.0428,
+                "Lng": 115.7551
+              },
+              {
+                "Lat": -32.04289,
+                "Lng": 115.75493
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:48:31+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": 14,
+        "NormalDriveTimeMinutes": 13,
+        "Latitude": -32.03007,
+        "Longitude": 115.81958,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "Karrinyup Road",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 318,
+        "ImpactScore": 179.50977500432694,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "576210191513195925",
+            "Description": "At Gwelup Street - Road construction",
+            "Severity": 1,
+            "Location": "Karrinyup Rd",
+            "Type": "construction",
+            "LengthMeters": 224,
+            "FunctionalClass": 2,
+            "Latitude": -31.88162,
+            "Longitude": 115.78482,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "outbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:362308403:$1:220603811#-0.25252..0.99666"
+            ],
+            "Comment": "Karrinyup Rd at Coleman Wy, Karrinyup - Maintenance Lane closures and speed reduction in place",
+            "Shape": [
+              {
+                "Lat": -31.88162,
+                "Lng": 115.78482
+              },
+              {
+                "Lat": -31.88142,
+                "Lng": 115.78459
+              },
+              {
+                "Lat": -31.88119,
+                "Lng": 115.78436
+              },
+              {
+                "Lat": -31.88002,
+                "Lng": 115.78337
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:48:31+00:00"
+          },
+          {
+            "Id": "3383960030469649201",
+            "Description": "At Jones Street - Road construction",
+            "Severity": 1,
+            "Location": "Karrinyup Rd",
+            "Type": "construction",
+            "LengthMeters": 61,
+            "FunctionalClass": 2,
+            "Latitude": -31.89034,
+            "Longitude": 115.81843,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:362308404:$1:236476774#-0.43919..0.64751"
+            ],
+            "Comment": "Karrinyup Rd and Morley Dr between Marmion Av and Camboon Rd, Various suburbs - Maintenance 9am to 2pm Lane closures in place",
+            "Shape": [
+              {
+                "Lat": -31.89034,
+                "Lng": 115.81843
+              },
+              {
+                "Lat": -31.89031,
+                "Lng": 115.81778
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T01:00:30+00:00"
+          },
+          {
+            "Id": "824225438754187777",
+            "Description": "At Jones Street - Road construction",
+            "Severity": 1,
+            "Location": "Karrinyup Rd",
+            "Type": "construction",
+            "LengthMeters": 33,
+            "FunctionalClass": 2,
+            "Latitude": -31.88774,
+            "Longitude": 115.81296,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:362308404:$1:215985499#-0..1"
+            ],
+            "Comment": "Karrinyup Rd at Jones St, Stirling - Maintenance 9am-2pm Lane closure and speed reduction in place",
+            "Shape": [
+              {
+                "Lat": -31.88774,
+                "Lng": 115.81296
+              },
+              {
+                "Lat": -31.8879,
+                "Lng": 115.81326
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:48:31+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": 3,
+        "NormalDriveTimeMinutes": 3,
+        "Latitude": -31.89034,
+        "Longitude": 115.81843,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 3,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 0
+      },
+      {
+        "RoadName": "Armadale Road",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 78,
+        "ImpactScore": 167.5683784107619,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "281527418499393499",
+            "Description": "At Anstey Road - Road construction",
+            "Severity": 1,
+            "Location": "Armadale Rd",
+            "Type": "construction",
+            "LengthMeters": 78,
+            "FunctionalClass": 2,
+            "Latitude": -32.14773,
+            "Longitude": 115.93496,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:362308048:$1:812150115#\u002B0.76782..0.86864"
+            ],
+            "Comment": "Armadale Rd at Weld St, Forrestdale - Maintenance 7am to 5pm Low traffic impact",
+            "Shape": [
+              {
+                "Lat": -32.14773,
+                "Lng": 115.93496
+              },
+              {
+                "Lat": -32.14773,
+                "Lng": 115.93579
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-09T23:00:31+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -32.14773,
+        "Longitude": 115.93496,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 2
+      },
+      {
+        "RoadName": "Stock Road",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 21,
+        "ImpactScore": 165.28887717893568,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "3484139112555078056",
+            "Description": "At Phoenix Road - Road construction",
+            "Severity": 1,
+            "Location": "Stock Rd",
+            "Type": "construction",
+            "LengthMeters": 21,
+            "FunctionalClass": 2,
+            "Latitude": -32.09373,
+            "Longitude": 115.79852,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:362307998:$1:216724694#\u002B0.09524..1"
+            ],
+            "Comment": "Stock Rd and Phoenix Rd, Bibra Lake - Upgrades 24/7 Various closures, speed reductions and detours in place",
+            "Shape": [
+              {
+                "Lat": -32.09373,
+                "Lng": 115.79852
+              },
+              {
+                "Lat": -32.09355,
+                "Lng": 115.79847
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:48:31+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -32.09373,
+        "Longitude": 115.79852,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 7,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 7
+      },
+      {
+        "RoadName": "Thomas Road",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 2653,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 3,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 3
+      },
+      {
+        "RoadName": "Anketell Road",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 2397,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 4,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 4
+      }
+    ],
+    "MonitoredRoutes": [],
+    "GoodRunRoads": [
+      "Kwinana Freeway",
+      "Graham Farmer Freeway",
+      "Great Eastern Highway",
+      "South Western Highway"
+    ],
+    "FlowPool": [
+      {
+        "RoadName": "Kwinana Freeway",
+        "JamFactor": 3.9,
+        "LengthMeters": 22295,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 152.5,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Graham Farmer Freeway",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 80,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Great Eastern Highway",
+        "JamFactor": 3.7,
+        "LengthMeters": 14868,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 57.5,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "South Western Highway",
+        "JamFactor": 1.9,
+        "LengthMeters": 32094,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Roe Highway",
+        "JamFactor": 3.8,
+        "LengthMeters": 26176,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Randall Road",
+        "JamFactor": 0.9,
+        "LengthMeters": 26054,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Alexander Drive",
+        "JamFactor": 3.6,
+        "LengthMeters": 23740,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Albany Highway",
+        "JamFactor": 3.1,
+        "LengthMeters": 23671,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Nicholson Road",
+        "JamFactor": 2.8,
+        "LengthMeters": 23164,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Railway crossing",
+        "JamFactor": 2.3,
+        "LengthMeters": 20133,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Safety Bay Road",
+        "JamFactor": 2.2,
+        "LengthMeters": 20024,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Kalamunda Road",
+        "JamFactor": 3.5,
+        "LengthMeters": 18482,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Hepburn Avenue",
+        "JamFactor": 3.1,
+        "LengthMeters": 18191,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Abernethy Road",
+        "JamFactor": 3.8,
+        "LengthMeters": 16362,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Ranford Road",
+        "JamFactor": 2.5,
+        "LengthMeters": 16249,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Wanneroo Road",
+        "JamFactor": 3.5,
+        "LengthMeters": 15279,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Beechboro Road N",
+        "JamFactor": 3.2,
+        "LengthMeters": 14427,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Ennis Avenue",
+        "JamFactor": 3.1,
+        "LengthMeters": 14016,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      }
+    ],
+    "Weather": {
+      "Conditions": "Mostly cloudy. Mild.",
+      "TemperatureC": 17,
+      "WindDescription": null,
+      "PrecipitationProbabilityPercent": 49,
+      "Alerts": [],
+      "Outlook": "reaching 19 degrees later today; tomorrow sunny. mild, around 18 degrees",
+      "HasMajorAlert": false
+    },
+    "Fuel": {
+      "Summaries": [
+        {
+          "FuelType": "Unleaded 91",
+          "MinPrice": 1.513,
+          "AveragePrice": 1.673,
+          "StationCount": 49,
+          "LatestModifiedUtc": "2026-07-10T03:06:45+00:00",
+          "CheapestStationSuburb": "Beckenham"
+        },
+        {
+          "FuelType": "Diesel",
+          "MinPrice": 1.673,
+          "AveragePrice": 1.845,
+          "StationCount": 26,
+          "LatestModifiedUtc": "2026-07-10T03:06:45+00:00",
+          "CheapestStationSuburb": "Beckenham"
+        }
+      ],
+      "HasPrices": true
+    },
+    "IncidentChanges": null,
+    "Guidance": {
+      "Entries": [
+        {
+          "Id": "dbe77f50c60647d2bdee3cc1cfaea48e",
+          "Scope": 1,
+          "ScopeId": "perth",
+          "Type": 2,
+          "Text": "Perth names: \u0027the Mitchell Freeway\u0027, \u0027the Kwinana Freeway\u0027, \u0027the Graham Farmer Freeway\u0027, \u0027the Tonkin Highway\u0027, \u0027Reid Highway\u0027, \u0027Roe Highway\u0027.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for \u2014 a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "UpdatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "645e52b90299493a8dbde1205c6c657e",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "75fe175d471144b38bf23c24966dfb6f",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "7b012b9381e04e72be8211133f224188",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 4,
+          "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "Australian English with natural spoken contractions. Round the figures \u2014 say \u0027about ten minutes\u0027, never \u002710.3 minutes\u0027. No police codes or insider jargon.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 3,
+          "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "f5e76bd5993c41edb637a7302f7d7479",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 2,
+          "Text": "Use common road names with the definite article: \u0027the M1\u0027, \u0027the M4\u0027, \u0027the CBD\u0027. Use \u0027citybound\u0027 and \u0027outbound\u0027 for direction of travel.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        }
+      ],
+      "DroppedCount": 0,
+      "Count": 8,
+      "HasEntries": true
+    },
+    "MarketFeedback": []
+  }
+}

@@ -1,0 +1,4327 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "traffic-incidents",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:35.5204928+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-37.8136,144.9631;r=12000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "sourceUpdated": "2026-06-05T03:18:13Z",
+      "results": [
+        {
+          "location": {
+            "length": 149.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.7664,
+                      "lng": 145.08125
+                    },
+                    {
+                      "lat": -37.76688,
+                      "lng": 145.08072
+                    }
+                  ],
+                  "length": 71.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76688,
+                      "lng": 145.08072
+                    },
+                    {
+                      "lat": -37.76708,
+                      "lng": 145.0805
+                    }
+                  ],
+                  "length": 29.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76708,
+                      "lng": 145.0805
+                    },
+                    {
+                      "lat": -37.76742,
+                      "lng": 145.08015
+                    }
+                  ],
+                  "length": 49.0,
+                  "functionalClass": 2
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "745101234680945829",
+            "hrn": "here:traffic:incident:745101234680945829",
+            "originalId": "745101234680945829",
+            "originalHrn": "here:traffic:incident:745101234680945829",
+            "startTime": "2025-04-09T18:31:00Z",
+            "endTime": "2026-07-17T15:00:00Z",
+            "entryTime": "2026-05-24T16:07:03Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              803
+            ],
+            "description": {
+              "value": "At Eastern Freeway - Construction work",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Construction work",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 81.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.80239,
+                      "lng": 144.94871
+                    },
+                    {
+                      "lat": -37.80244,
+                      "lng": 144.94909
+                    }
+                  ],
+                  "length": 34.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.80244,
+                      "lng": 144.94909
+                    },
+                    {
+                      "lat": -37.80248,
+                      "lng": 144.94935
+                    },
+                    {
+                      "lat": -37.80227,
+                      "lng": 144.94941
+                    }
+                  ],
+                  "length": 47.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "364006792080492357",
+            "hrn": "here:traffic:incident:364006792080492357",
+            "originalId": "915994298279149489",
+            "originalHrn": "here:traffic:incident:915994298279149489",
+            "startTime": "2026-05-21T18:09:00Z",
+            "endTime": "2026-06-18T21:00:00Z",
+            "entryTime": "2026-05-21T19:34:38Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 13.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.80115,
+                      "lng": 144.98861
+                    },
+                    {
+                      "lat": -37.80123,
+                      "lng": 144.98862
+                    },
+                    {
+                      "lat": -37.80126,
+                      "lng": 144.98865
+                    }
+                  ],
+                  "length": 13.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "4004072974040953848",
+            "hrn": "here:traffic:incident:4004072974040953848",
+            "originalId": "2890950950461319112",
+            "originalHrn": "here:traffic:incident:2890950950461319112",
+            "startTime": "2026-05-09T02:32:00Z",
+            "endTime": "2026-06-09T04:59:00Z",
+            "entryTime": "2026-05-20T15:23:53Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 36.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.81039,
+                      "lng": 144.96887
+                    },
+                    {
+                      "lat": -37.81069,
+                      "lng": 144.96901
+                    }
+                  ],
+                  "length": 36.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "2823542412545993114",
+            "hrn": "here:traffic:incident:2823542412545993114",
+            "originalId": "2823542412545993114",
+            "originalHrn": "here:traffic:incident:2823542412545993114",
+            "startTime": "2026-05-10T07:26:00Z",
+            "endTime": "2026-06-18T05:00:00Z",
+            "entryTime": "2026-05-29T10:58:47Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 29.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.81688,
+                      "lng": 144.9665
+                    },
+                    {
+                      "lat": -37.81663,
+                      "lng": 144.96639
+                    }
+                  ],
+                  "length": 29.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "3248032977073531194",
+            "hrn": "here:traffic:incident:3248032977073531194",
+            "originalId": "3248032977073531194",
+            "originalHrn": "here:traffic:incident:3248032977073531194",
+            "startTime": "2026-01-29T06:00:00Z",
+            "endTime": "2026-06-29T14:59:00Z",
+            "entryTime": "2026-05-20T15:23:35Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              735
+            ],
+            "description": {
+              "value": "Closed due to road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed due to road construction",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 227.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.81679,
+                      "lng": 144.96996
+                    },
+                    {
+                      "lat": -37.81682,
+                      "lng": 144.96984
+                    }
+                  ],
+                  "length": 11.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81682,
+                      "lng": 144.96984
+                    },
+                    {
+                      "lat": -37.8169,
+                      "lng": 144.96955
+                    }
+                  ],
+                  "length": 27.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.8169,
+                      "lng": 144.96955
+                    },
+                    {
+                      "lat": -37.81696,
+                      "lng": 144.96933
+                    }
+                  ],
+                  "length": 20.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81696,
+                      "lng": 144.96933
+                    },
+                    {
+                      "lat": -37.817,
+                      "lng": 144.9692
+                    }
+                  ],
+                  "length": 12.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.817,
+                      "lng": 144.9692
+                    },
+                    {
+                      "lat": -37.81703,
+                      "lng": 144.96909
+                    }
+                  ],
+                  "length": 10.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81703,
+                      "lng": 144.96909
+                    },
+                    {
+                      "lat": -37.81706,
+                      "lng": 144.96899
+                    }
+                  ],
+                  "length": 9.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81706,
+                      "lng": 144.96899
+                    },
+                    {
+                      "lat": -37.81714,
+                      "lng": 144.96872
+                    }
+                  ],
+                  "length": 25.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81714,
+                      "lng": 144.96872
+                    },
+                    {
+                      "lat": -37.81721,
+                      "lng": 144.96848
+                    }
+                  ],
+                  "length": 22.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81721,
+                      "lng": 144.96848
+                    },
+                    {
+                      "lat": -37.81725,
+                      "lng": 144.96834
+                    }
+                  ],
+                  "length": 13.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81725,
+                      "lng": 144.96834
+                    },
+                    {
+                      "lat": -37.81728,
+                      "lng": 144.96824
+                    }
+                  ],
+                  "length": 9.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81728,
+                      "lng": 144.96824
+                    },
+                    {
+                      "lat": -37.81744,
+                      "lng": 144.96773
+                    }
+                  ],
+                  "length": 48.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81744,
+                      "lng": 144.96773
+                    },
+                    {
+                      "lat": -37.81747,
+                      "lng": 144.96764
+                    }
+                  ],
+                  "length": 9.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81747,
+                      "lng": 144.96764
+                    },
+                    {
+                      "lat": -37.81751,
+                      "lng": 144.96751
+                    }
+                  ],
+                  "length": 12.0,
+                  "functionalClass": 3
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "111228012191286710",
+            "hrn": "here:traffic:incident:111228012191286710",
+            "originalId": "111228012191286710",
+            "originalHrn": "here:traffic:incident:111228012191286710",
+            "startTime": "2025-12-17T22:09:00Z",
+            "endTime": "2026-09-29T13:00:00Z",
+            "entryTime": "2026-05-20T15:23:53Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              701
+            ],
+            "description": {
+              "value": "At St Kilda Road - Road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Road construction",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 36.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.73827,
+                      "lng": 144.93806
+                    },
+                    {
+                      "lat": -37.73859,
+                      "lng": 144.93801
+                    }
+                  ],
+                  "length": 36.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "1868774788607666339",
+            "hrn": "here:traffic:incident:1868774788607666339",
+            "originalId": "1868774788607666339",
+            "originalHrn": "here:traffic:incident:1868774788607666339",
+            "startTime": "2026-05-20T05:54:00Z",
+            "endTime": "2026-06-16T05:00:00Z",
+            "entryTime": "2026-05-20T16:19:22Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 173.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.74385,
+                      "lng": 144.93555
+                    },
+                    {
+                      "lat": -37.74425,
+                      "lng": 144.93548
+                    }
+                  ],
+                  "length": 45.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74425,
+                      "lng": 144.93548
+                    },
+                    {
+                      "lat": -37.7444,
+                      "lng": 144.93544
+                    }
+                  ],
+                  "length": 17.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.7444,
+                      "lng": 144.93544
+                    },
+                    {
+                      "lat": -37.74539,
+                      "lng": 144.9353
+                    }
+                  ],
+                  "length": 111.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "895829993533392211",
+            "hrn": "here:traffic:incident:895829993533392211",
+            "originalId": "895829993533392201",
+            "originalHrn": "here:traffic:incident:895829993533392201",
+            "startTime": "2026-06-02T10:48:04Z",
+            "endTime": "2026-06-05T22:48:04Z",
+            "entryTime": "2026-06-02T10:48:04Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 266.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.74539,
+                      "lng": 144.9353
+                    },
+                    {
+                      "lat": -37.7444,
+                      "lng": 144.93544
+                    }
+                  ],
+                  "length": 111.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.7444,
+                      "lng": 144.93544
+                    },
+                    {
+                      "lat": -37.74425,
+                      "lng": 144.93548
+                    }
+                  ],
+                  "length": 17.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74425,
+                      "lng": 144.93548
+                    },
+                    {
+                      "lat": -37.74385,
+                      "lng": 144.93555
+                    }
+                  ],
+                  "length": 45.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74385,
+                      "lng": 144.93555
+                    },
+                    {
+                      "lat": -37.74334,
+                      "lng": 144.93564
+                    }
+                  ],
+                  "length": 57.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74334,
+                      "lng": 144.93564
+                    },
+                    {
+                      "lat": -37.74318,
+                      "lng": 144.93567
+                    }
+                  ],
+                  "length": 18.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74318,
+                      "lng": 144.93567
+                    },
+                    {
+                      "lat": -37.74302,
+                      "lng": 144.93571
+                    }
+                  ],
+                  "length": 18.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "3828846225601951231",
+            "hrn": "here:traffic:incident:3828846225601951231",
+            "originalId": "3828846225601951207",
+            "originalHrn": "here:traffic:incident:3828846225601951207",
+            "startTime": "2026-05-30T01:23:06Z",
+            "endTime": "2026-06-06T01:23:06Z",
+            "entryTime": "2026-05-30T01:23:06Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 85.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.7877,
+                      "lng": 144.83062
+                    },
+                    {
+                      "lat": -37.78727,
+                      "lng": 144.83143
+                    }
+                  ],
+                  "length": 85.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "2497499163407526272",
+            "hrn": "here:traffic:incident:2497499163407526272",
+            "originalId": "2497499163407526272",
+            "originalHrn": "here:traffic:incident:2497499163407526272",
+            "startTime": "2026-05-11T21:00:00Z",
+            "endTime": "2026-06-30T13:59:00Z",
+            "entryTime": "2026-05-20T15:23:35Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              701,
+              520
+            ],
+            "description": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Road construction",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 445.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.81029,
+                      "lng": 144.83374
+                    },
+                    {
+                      "lat": -37.81072,
+                      "lng": 144.83777
+                    }
+                  ],
+                  "length": 354.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81072,
+                      "lng": 144.83777
+                    },
+                    {
+                      "lat": -37.81075,
+                      "lng": 144.83801
+                    }
+                  ],
+                  "length": 21.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81075,
+                      "lng": 144.83801
+                    },
+                    {
+                      "lat": -37.81086,
+                      "lng": 144.8388
+                    }
+                  ],
+                  "length": 70.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "994275616279110913",
+            "hrn": "here:traffic:incident:994275616279110913",
+            "originalId": "994275616279110898",
+            "originalHrn": "here:traffic:incident:994275616279110898",
+            "startTime": "2026-06-01T03:38:03Z",
+            "endTime": "2026-06-05T21:38:03Z",
+            "entryTime": "2026-06-01T03:38:03Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 92.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.83395,
+                      "lng": 144.96838
+                    },
+                    {
+                      "lat": -37.83434,
+                      "lng": 144.96793
+                    },
+                    {
+                      "lat": -37.83455,
+                      "lng": 144.96765
+                    }
+                  ],
+                  "length": 92.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "4635094019832426839",
+            "hrn": "here:traffic:incident:4635094019832426839",
+            "originalId": "4635094019832426839",
+            "originalHrn": "here:traffic:incident:4635094019832426839",
+            "startTime": "2026-05-10T04:45:00Z",
+            "endTime": "2026-06-18T05:00:00Z",
+            "entryTime": "2026-05-29T11:04:52Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 92.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.83455,
+                      "lng": 144.96765
+                    },
+                    {
+                      "lat": -37.83434,
+                      "lng": 144.96793
+                    },
+                    {
+                      "lat": -37.83395,
+                      "lng": 144.96838
+                    }
+                  ],
+                  "length": 92.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "4577165619827374211",
+            "hrn": "here:traffic:incident:4577165619827374211",
+            "originalId": "4577165619827374211",
+            "originalHrn": "here:traffic:incident:4577165619827374211",
+            "startTime": "2026-05-10T04:44:00Z",
+            "endTime": "2026-06-18T05:00:00Z",
+            "entryTime": "2026-05-28T10:37:42Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 152.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.79197,
+                      "lng": 144.99034
+                    },
+                    {
+                      "lat": -37.79189,
+                      "lng": 144.98956
+                    }
+                  ],
+                  "length": 68.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.79189,
+                      "lng": 144.98956
+                    },
+                    {
+                      "lat": -37.79187,
+                      "lng": 144.98935
+                    }
+                  ],
+                  "length": 18.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.79187,
+                      "lng": 144.98935
+                    },
+                    {
+                      "lat": -37.7918,
+                      "lng": 144.9886
+                    }
+                  ],
+                  "length": 66.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "2938715440156447562",
+            "hrn": "here:traffic:incident:2938715440156447562",
+            "originalId": "2938715440156447557",
+            "originalHrn": "here:traffic:incident:2938715440156447557",
+            "startTime": "2026-05-01T06:17:00Z",
+            "endTime": "2026-06-09T21:00:00Z",
+            "entryTime": "2026-05-20T15:23:53Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 79.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.801,
+                      "lng": 144.98702
+                    },
+                    {
+                      "lat": -37.80105,
+                      "lng": 144.98793
+                    }
+                  ],
+                  "length": 79.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "4001498394243965176",
+            "hrn": "here:traffic:incident:4001498394243965176",
+            "originalId": "4001498394243965176",
+            "originalHrn": "here:traffic:incident:4001498394243965176",
+            "startTime": "2026-05-11T02:33:00Z",
+            "endTime": "2026-06-18T05:00:00Z",
+            "entryTime": "2026-05-29T11:04:02Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 119.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.81713,
+                      "lng": 144.95319
+                    },
+                    {
+                      "lat": -37.81683,
+                      "lng": 144.95306
+                    }
+                  ],
+                  "length": 35.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81683,
+                      "lng": 144.95306
+                    },
+                    {
+                      "lat": -37.81612,
+                      "lng": 144.95272
+                    }
+                  ],
+                  "length": 84.0,
+                  "functionalClass": 3
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "3180232668709076410",
+            "hrn": "here:traffic:incident:3180232668709076410",
+            "originalId": "3180232668709076410",
+            "originalHrn": "here:traffic:incident:3180232668709076410",
+            "startTime": "2026-01-19T13:00:00Z",
+            "endTime": "2026-12-30T13:00:00Z",
+            "entryTime": "2026-05-30T23:33:38Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "plannedEvent",
+            "typeDescription": {
+              "value": "Planned event",
+              "language": "en-US"
+            },
+            "codes": [
+              1541
+            ],
+            "description": {
+              "value": "At Little Bourke Street - Closed due to sports event",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed due to sports event",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 58.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.81629,
+                      "lng": 144.95297
+                    },
+                    {
+                      "lat": -37.81678,
+                      "lng": 144.95321
+                    }
+                  ],
+                  "length": 58.0,
+                  "functionalClass": 3
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "4633912385220580033",
+            "hrn": "here:traffic:incident:4633912385220580033",
+            "originalId": "1393167545379767113",
+            "originalHrn": "here:traffic:incident:1393167545379767113",
+            "startTime": "2026-01-19T13:00:00Z",
+            "endTime": "2026-12-30T13:00:00Z",
+            "entryTime": "2026-06-05T03:17:08Z",
+            "roadClosed": false,
+            "criticality": "critical",
+            "type": "plannedEvent",
+            "typeDescription": {
+              "value": "Planned event",
+              "language": "en-US"
+            },
+            "codes": [
+              1502
+            ],
+            "description": {
+              "value": "At Bourke Street - Sports event",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Sports event",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 36.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.81069,
+                      "lng": 144.96901
+                    },
+                    {
+                      "lat": -37.81039,
+                      "lng": 144.96887
+                    }
+                  ],
+                  "length": 36.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "2793179671586528716",
+            "hrn": "here:traffic:incident:2793179671586528716",
+            "originalId": "2793179671586528716",
+            "originalHrn": "here:traffic:incident:2793179671586528716",
+            "startTime": "2026-05-10T07:26:00Z",
+            "endTime": "2026-06-18T05:00:00Z",
+            "entryTime": "2026-05-28T10:45:42Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 109.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.81533,
+                      "lng": 144.95964
+                    },
+                    {
+                      "lat": -37.81573,
+                      "lng": 144.95984
+                    },
+                    {
+                      "lat": -37.81625,
+                      "lng": 144.96006
+                    }
+                  ],
+                  "length": 109.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "1942191367525341005",
+            "hrn": "here:traffic:incident:1942191367525341005",
+            "originalId": "1942191367525341005",
+            "originalHrn": "here:traffic:incident:1942191367525341005",
+            "startTime": "2026-05-10T08:12:00Z",
+            "endTime": "2026-06-18T05:00:00Z",
+            "entryTime": "2026-05-29T11:05:56Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 109.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.81533,
+                      "lng": 144.95964
+                    },
+                    {
+                      "lat": -37.81573,
+                      "lng": 144.95984
+                    },
+                    {
+                      "lat": -37.81625,
+                      "lng": 144.96006
+                    }
+                  ],
+                  "length": 109.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "916753828941773259",
+            "hrn": "here:traffic:incident:916753828941773259",
+            "originalId": "916753828941773259",
+            "originalHrn": "here:traffic:incident:916753828941773259",
+            "startTime": "2026-05-10T08:12:00Z",
+            "endTime": "2026-06-18T05:00:00Z",
+            "entryTime": "2026-05-29T10:56:44Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 109.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.81533,
+                      "lng": 144.95964
+                    },
+                    {
+                      "lat": -37.81573,
+                      "lng": 144.95984
+                    },
+                    {
+                      "lat": -37.81625,
+                      "lng": 144.96006
+                    }
+                  ],
+                  "length": 109.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "2248992820016163783",
+            "hrn": "here:traffic:incident:2248992820016163783",
+            "originalId": "2248992820016163783",
+            "originalHrn": "here:traffic:incident:2248992820016163783",
+            "startTime": "2026-05-10T08:12:00Z",
+            "endTime": "2026-06-18T05:00:00Z",
+            "entryTime": "2026-05-28T10:37:42Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 92.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.78733,
+                      "lng": 145.00296
+                    },
+                    {
+                      "lat": -37.78723,
+                      "lng": 145.00336
+                    },
+                    {
+                      "lat": -37.78723,
+                      "lng": 145.00341
+                    },
+                    {
+                      "lat": -37.78725,
+                      "lng": 145.00347
+                    },
+                    {
+                      "lat": -37.78728,
+                      "lng": 145.00352
+                    },
+                    {
+                      "lat": -37.78732,
+                      "lng": 145.00355
+                    },
+                    {
+                      "lat": -37.78761,
+                      "lng": 145.0037
+                    }
+                  ],
+                  "length": 92.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "4262255105692598222",
+            "hrn": "here:traffic:incident:4262255105692598222",
+            "originalId": "4262255105692598222",
+            "originalHrn": "here:traffic:incident:4262255105692598222",
+            "startTime": "2026-05-09T02:37:00Z",
+            "endTime": "2026-06-09T04:59:00Z",
+            "entryTime": "2026-05-20T15:23:53Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 134.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.77798,
+                      "lng": 145.08435
+                    },
+                    {
+                      "lat": -37.77786,
+                      "lng": 145.08455
+                    }
+                  ],
+                  "length": 22.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.77786,
+                      "lng": 145.08455
+                    },
+                    {
+                      "lat": -37.7773,
+                      "lng": 145.08562
+                    }
+                  ],
+                  "length": 112.0,
+                  "functionalClass": 3
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "1783422672835292778",
+            "hrn": "here:traffic:incident:1783422672835292778",
+            "originalId": "1783422672835292778",
+            "originalHrn": "here:traffic:incident:1783422672835292778",
+            "startTime": "2024-07-23T14:00:00Z",
+            "endTime": "2028-01-31T12:59:00Z",
+            "entryTime": "2026-05-20T15:23:35Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              701,
+              520
+            ],
+            "description": {
+              "value": "At Manningham Road - Road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Road construction",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 26.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.76257,
+                      "lng": 145.08351
+                    },
+                    {
+                      "lat": -37.7624,
+                      "lng": 145.0833
+                    }
+                  ],
+                  "length": 26.0,
+                  "functionalClass": 3
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "1748403124420793005",
+            "hrn": "here:traffic:incident:1748403124420793005",
+            "originalId": "1748403124420793005",
+            "originalHrn": "here:traffic:incident:1748403124420793005",
+            "startTime": "2026-06-01T09:00:00Z",
+            "endTime": "2026-06-05T20:00:00Z",
+            "entryTime": "2026-06-01T09:09:43Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              701,
+              520
+            ],
+            "description": {
+              "value": "At Bulleen Road - Road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Road construction",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 372.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.76487,
+                      "lng": 145.08229
+                    },
+                    {
+                      "lat": -37.76481,
+                      "lng": 145.08213
+                    },
+                    {
+                      "lat": -37.76477,
+                      "lng": 145.0821
+                    },
+                    {
+                      "lat": -37.76463,
+                      "lng": 145.08204
+                    },
+                    {
+                      "lat": -37.76453,
+                      "lng": 145.08204
+                    },
+                    {
+                      "lat": -37.76419,
+                      "lng": 145.08212
+                    },
+                    {
+                      "lat": -37.76391,
+                      "lng": 145.08211
+                    },
+                    {
+                      "lat": -37.76384,
+                      "lng": 145.08213
+                    },
+                    {
+                      "lat": -37.76323,
+                      "lng": 145.08239
+                    },
+                    {
+                      "lat": -37.76289,
+                      "lng": 145.08252
+                    },
+                    {
+                      "lat": -37.76283,
+                      "lng": 145.08251
+                    },
+                    {
+                      "lat": -37.76279,
+                      "lng": 145.08247
+                    },
+                    {
+                      "lat": -37.76275,
+                      "lng": 145.08226
+                    },
+                    {
+                      "lat": -37.76272,
+                      "lng": 145.08219
+                    },
+                    {
+                      "lat": -37.76264,
+                      "lng": 145.08217
+                    },
+                    {
+                      "lat": -37.76187,
+                      "lng": 145.08243
+                    }
+                  ],
+                  "length": 372.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "361982662188515763",
+            "hrn": "here:traffic:incident:361982662188515763",
+            "originalId": "1694417834492645434",
+            "originalHrn": "here:traffic:incident:1694417834492645434",
+            "startTime": "2024-10-11T08:00:00Z",
+            "endTime": "2028-12-30T19:00:00Z",
+            "entryTime": "2026-05-21T03:09:45Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              701,
+              520
+            ],
+            "description": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Road construction",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 19.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.76028,
+                      "lng": 145.07514
+                    },
+                    {
+                      "lat": -37.76011,
+                      "lng": 145.07515
+                    }
+                  ],
+                  "length": 19.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "1147357888889095006",
+            "hrn": "here:traffic:incident:1147357888889095006",
+            "originalId": "1147357888889095006",
+            "originalHrn": "here:traffic:incident:1147357888889095006",
+            "startTime": "2026-06-01T09:00:00Z",
+            "endTime": "2026-06-06T20:00:00Z",
+            "entryTime": "2026-06-01T09:09:43Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              701,
+              520
+            ],
+            "description": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Road construction",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 85.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.83931,
+                      "lng": 144.99821
+                    },
+                    {
+                      "lat": -37.83921,
+                      "lng": 144.99724
+                    }
+                  ],
+                  "length": 85.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "3616258771135985502",
+            "hrn": "here:traffic:incident:3616258771135985502",
+            "originalId": "3616258771135985502",
+            "originalHrn": "here:traffic:incident:3616258771135985502",
+            "startTime": "2026-05-10T01:55:00Z",
+            "endTime": "2026-06-18T05:00:00Z",
+            "entryTime": "2026-05-28T10:46:40Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 82.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.84917,
+                      "lng": 144.87025
+                    },
+                    {
+                      "lat": -37.84906,
+                      "lng": 144.86932
+                    }
+                  ],
+                  "length": 82.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "1904144894992997978",
+            "hrn": "here:traffic:incident:1904144894992997978",
+            "originalId": "1904144894992997978",
+            "originalHrn": "here:traffic:incident:1904144894992997978",
+            "startTime": "2026-03-05T13:00:00Z",
+            "endTime": "2026-12-31T12:59:00Z",
+            "entryTime": "2026-05-20T15:23:35Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              701,
+              520
+            ],
+            "description": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Road construction",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 342.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.87807,
+                      "lng": 145.00357
+                    },
+                    {
+                      "lat": -37.8782,
+                      "lng": 145.00358
+                    },
+                    {
+                      "lat": -37.8789,
+                      "lng": 145.00344
+                    },
+                    {
+                      "lat": -37.87921,
+                      "lng": 145.00339
+                    },
+                    {
+                      "lat": -37.87939,
+                      "lng": 145.00333
+                    },
+                    {
+                      "lat": -37.87988,
+                      "lng": 145.00325
+                    },
+                    {
+                      "lat": -37.88064,
+                      "lng": 145.0031
+                    },
+                    {
+                      "lat": -37.88111,
+                      "lng": 145.00299
+                    }
+                  ],
+                  "length": 342.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "821483828094376341",
+            "hrn": "here:traffic:incident:821483828094376341",
+            "originalId": "821483828094376341",
+            "originalHrn": "here:traffic:incident:821483828094376341",
+            "startTime": "2026-05-15T19:50:00Z",
+            "endTime": "2026-06-12T21:00:00Z",
+            "entryTime": "2026-05-20T16:34:23Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 299.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.77056,
+                      "lng": 145.07912
+                    },
+                    {
+                      "lat": -37.76877,
+                      "lng": 145.07933
+                    },
+                    {
+                      "lat": -37.76837,
+                      "lng": 145.07942
+                    },
+                    {
+                      "lat": -37.76812,
+                      "lng": 145.07952
+                    },
+                    {
+                      "lat": -37.76791,
+                      "lng": 145.07962
+                    }
+                  ],
+                  "length": 299.0,
+                  "functionalClass": 2
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "3851468697721319615",
+            "hrn": "here:traffic:incident:3851468697721319615",
+            "originalId": "3851468697721319615",
+            "originalHrn": "here:traffic:incident:3851468697721319615",
+            "startTime": "2024-10-11T08:00:00Z",
+            "endTime": "2029-01-30T13:59:00Z",
+            "entryTime": "2026-05-20T15:23:35Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              701,
+              520
+            ],
+            "description": {
+              "value": "At Manningham Road - Road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Road construction",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 42.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.77959,
+                      "lng": 145.07892
+                    },
+                    {
+                      "lat": -37.77964,
+                      "lng": 145.07868
+                    }
+                  ],
+                  "length": 22.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.77964,
+                      "lng": 145.07868
+                    },
+                    {
+                      "lat": -37.77966,
+                      "lng": 145.07852
+                    },
+                    {
+                      "lat": -37.77963,
+                      "lng": 145.07847
+                    }
+                  ],
+                  "length": 20.0,
+                  "functionalClass": 2
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "3369742908795049822",
+            "hrn": "here:traffic:incident:3369742908795049822",
+            "originalId": "3369742908795049822",
+            "originalHrn": "here:traffic:incident:3369742908795049822",
+            "startTime": "2026-01-19T12:59:00Z",
+            "endTime": "2026-10-31T12:59:00Z",
+            "entryTime": "2026-05-20T15:23:35Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              701,
+              520
+            ],
+            "description": {
+              "value": "At Eastern Freeway - Road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Road construction",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 23.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.77524,
+                      "lng": 145.07899
+                    },
+                    {
+                      "lat": -37.77503,
+                      "lng": 145.07898
+                    }
+                  ],
+                  "length": 23.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "2137153973391503350",
+            "hrn": "here:traffic:incident:2137153973391503350",
+            "originalId": "2137153973391503350",
+            "originalHrn": "here:traffic:incident:2137153973391503350",
+            "startTime": "2025-12-02T00:38:55Z",
+            "endTime": "2028-12-31T12:59:00Z",
+            "entryTime": "2026-05-20T15:23:35Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              701,
+              520
+            ],
+            "description": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Road construction",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 63.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.7744,
+                      "lng": 145.07763
+                    },
+                    {
+                      "lat": -37.77469,
+                      "lng": 145.07756
+                    },
+                    {
+                      "lat": -37.77496,
+                      "lng": 145.07752
+                    }
+                  ],
+                  "length": 63.0,
+                  "functionalClass": 2
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "1361624270233012858",
+            "hrn": "here:traffic:incident:1361624270233012858",
+            "originalId": "1361624270233012858",
+            "originalHrn": "here:traffic:incident:1361624270233012858",
+            "startTime": "2025-06-16T12:00:00Z",
+            "endTime": "2026-12-18T18:30:00Z",
+            "entryTime": "2026-05-20T15:23:35Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              701,
+              520
+            ],
+            "description": {
+              "value": "At Eastern Freeway - Road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Road construction",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 917.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.76769,
+                      "lng": 145.07976
+                    },
+                    {
+                      "lat": -37.7675,
+                      "lng": 145.07991
+                    },
+                    {
+                      "lat": -37.76736,
+                      "lng": 145.08004
+                    }
+                  ],
+                  "length": 44.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76736,
+                      "lng": 145.08004
+                    },
+                    {
+                      "lat": -37.76681,
+                      "lng": 145.08061
+                    }
+                  ],
+                  "length": 79.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76681,
+                      "lng": 145.08061
+                    },
+                    {
+                      "lat": -37.7666,
+                      "lng": 145.08084
+                    }
+                  ],
+                  "length": 31.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.7666,
+                      "lng": 145.08084
+                    },
+                    {
+                      "lat": -37.76632,
+                      "lng": 145.08114
+                    }
+                  ],
+                  "length": 41.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76632,
+                      "lng": 145.08114
+                    },
+                    {
+                      "lat": -37.76596,
+                      "lng": 145.08152
+                    }
+                  ],
+                  "length": 52.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76596,
+                      "lng": 145.08152
+                    },
+                    {
+                      "lat": -37.76543,
+                      "lng": 145.08209
+                    }
+                  ],
+                  "length": 77.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76543,
+                      "lng": 145.08209
+                    },
+                    {
+                      "lat": -37.76528,
+                      "lng": 145.08224
+                    }
+                  ],
+                  "length": 21.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76528,
+                      "lng": 145.08224
+                    },
+                    {
+                      "lat": -37.76507,
+                      "lng": 145.08242
+                    },
+                    {
+                      "lat": -37.76494,
+                      "lng": 145.08251
+                    }
+                  ],
+                  "length": 45.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76494,
+                      "lng": 145.08251
+                    },
+                    {
+                      "lat": -37.76478,
+                      "lng": 145.0826
+                    },
+                    {
+                      "lat": -37.76461,
+                      "lng": 145.08267
+                    }
+                  ],
+                  "length": 39.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76461,
+                      "lng": 145.08267
+                    },
+                    {
+                      "lat": -37.76413,
+                      "lng": 145.08281
+                    }
+                  ],
+                  "length": 55.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76413,
+                      "lng": 145.08281
+                    },
+                    {
+                      "lat": -37.76393,
+                      "lng": 145.08285
+                    }
+                  ],
+                  "length": 23.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76393,
+                      "lng": 145.08285
+                    },
+                    {
+                      "lat": -37.76375,
+                      "lng": 145.08287
+                    }
+                  ],
+                  "length": 20.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76375,
+                      "lng": 145.08287
+                    },
+                    {
+                      "lat": -37.76317,
+                      "lng": 145.08299
+                    }
+                  ],
+                  "length": 65.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76317,
+                      "lng": 145.08299
+                    },
+                    {
+                      "lat": -37.76259,
+                      "lng": 145.08311
+                    }
+                  ],
+                  "length": 65.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76259,
+                      "lng": 145.08311
+                    },
+                    {
+                      "lat": -37.76227,
+                      "lng": 145.08317
+                    }
+                  ],
+                  "length": 36.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76227,
+                      "lng": 145.08317
+                    },
+                    {
+                      "lat": -37.76207,
+                      "lng": 145.08321
+                    }
+                  ],
+                  "length": 23.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76207,
+                      "lng": 145.08321
+                    },
+                    {
+                      "lat": -37.76186,
+                      "lng": 145.08325
+                    }
+                  ],
+                  "length": 24.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76186,
+                      "lng": 145.08325
+                    },
+                    {
+                      "lat": -37.76165,
+                      "lng": 145.08329
+                    }
+                  ],
+                  "length": 24.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76165,
+                      "lng": 145.08329
+                    },
+                    {
+                      "lat": -37.76149,
+                      "lng": 145.08332
+                    }
+                  ],
+                  "length": 18.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76149,
+                      "lng": 145.08332
+                    },
+                    {
+                      "lat": -37.76129,
+                      "lng": 145.08336
+                    }
+                  ],
+                  "length": 23.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76129,
+                      "lng": 145.08336
+                    },
+                    {
+                      "lat": -37.76084,
+                      "lng": 145.08349
+                    },
+                    {
+                      "lat": -37.76052,
+                      "lng": 145.08363
+                    }
+                  ],
+                  "length": 89.0,
+                  "functionalClass": 2
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.76052,
+                      "lng": 145.08363
+                    },
+                    {
+                      "lat": -37.76045,
+                      "lng": 145.08369
+                    },
+                    {
+                      "lat": -37.76037,
+                      "lng": 145.08381
+                    }
+                  ],
+                  "length": 23.0,
+                  "functionalClass": 2
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "602609154513835093",
+            "hrn": "here:traffic:incident:602609154513835093",
+            "originalId": "602609154513835093",
+            "originalHrn": "here:traffic:incident:602609154513835093",
+            "startTime": "2025-04-09T18:29:00Z",
+            "endTime": "2026-07-17T15:00:00Z",
+            "entryTime": "2026-05-20T15:23:53Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              803
+            ],
+            "description": {
+              "value": "Between Eastern Freeway and Bridge Street - Construction work",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Construction work",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 29.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.76004,
+                      "lng": 145.07726
+                    },
+                    {
+                      "lat": -37.76003,
+                      "lng": 145.07759
+                    }
+                  ],
+                  "length": 29.0,
+                  "functionalClass": 2
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "702155644335452709",
+            "hrn": "here:traffic:incident:702155644335452709",
+            "originalId": "702155644335452709",
+            "originalHrn": "here:traffic:incident:702155644335452709",
+            "startTime": "2026-06-01T09:00:00Z",
+            "endTime": "2026-06-05T20:00:00Z",
+            "entryTime": "2026-06-01T09:09:43Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              701,
+              520
+            ],
+            "description": {
+              "value": "At Bridge Street - Road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Road construction",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 79.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.80105,
+                      "lng": 144.98793
+                    },
+                    {
+                      "lat": -37.801,
+                      "lng": 144.98702
+                    }
+                  ],
+                  "length": 79.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "3923212902242387650",
+            "hrn": "here:traffic:incident:3923212902242387650",
+            "originalId": "3923212902242387650",
+            "originalHrn": "here:traffic:incident:3923212902242387650",
+            "startTime": "2026-05-11T02:33:00Z",
+            "endTime": "2026-06-18T05:00:00Z",
+            "entryTime": "2026-05-28T10:46:40Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 152.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.7918,
+                      "lng": 144.9886
+                    },
+                    {
+                      "lat": -37.79187,
+                      "lng": 144.98935
+                    }
+                  ],
+                  "length": 66.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.79187,
+                      "lng": 144.98935
+                    },
+                    {
+                      "lat": -37.79189,
+                      "lng": 144.98956
+                    }
+                  ],
+                  "length": 18.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.79189,
+                      "lng": 144.98956
+                    },
+                    {
+                      "lat": -37.79197,
+                      "lng": 144.99034
+                    }
+                  ],
+                  "length": 68.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "2397613193967050143",
+            "hrn": "here:traffic:incident:2397613193967050143",
+            "originalId": "2273284555534794543",
+            "originalHrn": "here:traffic:incident:2273284555534794543",
+            "startTime": "2026-04-28T14:27:00Z",
+            "endTime": "2026-06-09T21:00:00Z",
+            "entryTime": "2026-05-20T15:23:53Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 92.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.78761,
+                      "lng": 145.0037
+                    },
+                    {
+                      "lat": -37.78732,
+                      "lng": 145.00355
+                    },
+                    {
+                      "lat": -37.78728,
+                      "lng": 145.00352
+                    },
+                    {
+                      "lat": -37.78725,
+                      "lng": 145.00347
+                    },
+                    {
+                      "lat": -37.78723,
+                      "lng": 145.00341
+                    },
+                    {
+                      "lat": -37.78723,
+                      "lng": 145.00336
+                    },
+                    {
+                      "lat": -37.78733,
+                      "lng": 145.00296
+                    }
+                  ],
+                  "length": 92.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "3775437763849756731",
+            "hrn": "here:traffic:incident:3775437763849756731",
+            "originalId": "3775437763849756731",
+            "originalHrn": "here:traffic:incident:3775437763849756731",
+            "startTime": "2026-05-09T02:42:00Z",
+            "endTime": "2026-06-08T05:00:00Z",
+            "entryTime": "2026-05-20T15:23:53Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 96.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.81801,
+                      "lng": 144.96536
+                    },
+                    {
+                      "lat": -37.81783,
+                      "lng": 144.96601
+                    }
+                  ],
+                  "length": 60.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81783,
+                      "lng": 144.96601
+                    },
+                    {
+                      "lat": -37.81771,
+                      "lng": 144.9664
+                    }
+                  ],
+                  "length": 36.0,
+                  "functionalClass": 3
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "143665862989569422",
+            "hrn": "here:traffic:incident:143665862989569422",
+            "originalId": "143665862989569422",
+            "originalHrn": "here:traffic:incident:143665862989569422",
+            "startTime": "2025-01-29T10:00:00Z",
+            "endTime": "2026-09-30T13:59:00Z",
+            "entryTime": "2026-05-20T15:23:35Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "construction",
+            "typeDescription": {
+              "value": "Road construction",
+              "language": "en-US"
+            },
+            "codes": [
+              735
+            ],
+            "description": {
+              "value": "At St Kilda Road - Closed due to road construction",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed due to road construction",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 81.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.80227,
+                      "lng": 144.94941
+                    },
+                    {
+                      "lat": -37.80248,
+                      "lng": 144.94935
+                    },
+                    {
+                      "lat": -37.80244,
+                      "lng": 144.94909
+                    }
+                  ],
+                  "length": 47.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.80244,
+                      "lng": 144.94909
+                    },
+                    {
+                      "lat": -37.80239,
+                      "lng": 144.94871
+                    }
+                  ],
+                  "length": 34.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "2437829954248747968",
+            "hrn": "here:traffic:incident:2437829954248747968",
+            "originalId": "1609812286517112157",
+            "originalHrn": "here:traffic:incident:1609812286517112157",
+            "startTime": "2026-05-21T18:18:00Z",
+            "endTime": "2026-06-18T21:00:00Z",
+            "entryTime": "2026-05-21T19:33:39Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 63.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.7367,
+                      "lng": 144.9565
+                    },
+                    {
+                      "lat": -37.73672,
+                      "lng": 144.95667
+                    }
+                  ],
+                  "length": 15.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.73672,
+                      "lng": 144.95667
+                    },
+                    {
+                      "lat": -37.73675,
+                      "lng": 144.957
+                    }
+                  ],
+                  "length": 29.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.73675,
+                      "lng": 144.957
+                    },
+                    {
+                      "lat": -37.73677,
+                      "lng": 144.95722
+                    }
+                  ],
+                  "length": 19.0,
+                  "functionalClass": 4
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "611532703971578178",
+            "hrn": "here:traffic:incident:611532703971578178",
+            "originalId": "1763812434832376084",
+            "originalHrn": "here:traffic:incident:1763812434832376084",
+            "startTime": "2026-06-02T02:45:03Z",
+            "endTime": "2026-06-06T02:45:03Z",
+            "entryTime": "2026-06-03T08:00:05Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 60.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.81529,
+                      "lng": 144.90857
+                    },
+                    {
+                      "lat": -37.81531,
+                      "lng": 144.90868
+                    },
+                    {
+                      "lat": -37.81537,
+                      "lng": 144.90876
+                    },
+                    {
+                      "lat": -37.81546,
+                      "lng": 144.90879
+                    }
+                  ],
+                  "length": 30.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.81546,
+                      "lng": 144.90879
+                    },
+                    {
+                      "lat": -37.81555,
+                      "lng": 144.90876
+                    },
+                    {
+                      "lat": -37.81561,
+                      "lng": 144.90868
+                    },
+                    {
+                      "lat": -37.81563,
+                      "lng": 144.90857
+                    }
+                  ],
+                  "length": 30.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "2375756038082416219",
+            "hrn": "here:traffic:incident:2375756038082416219",
+            "originalId": "2375756038082416216",
+            "originalHrn": "here:traffic:incident:2375756038082416216",
+            "startTime": "2026-06-04T06:20:09Z",
+            "endTime": "2026-06-06T00:20:09Z",
+            "entryTime": "2026-06-04T06:20:09Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 10.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.81964,
+                      "lng": 145.01002
+                    },
+                    {
+                      "lat": -37.81963,
+                      "lng": 145.00991
+                    }
+                  ],
+                  "length": 10.0,
+                  "functionalClass": 3
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "2727118826281717449",
+            "hrn": "here:traffic:incident:2727118826281717449",
+            "originalId": "2727118826281717449",
+            "originalHrn": "here:traffic:incident:2727118826281717449",
+            "startTime": "2026-06-05T00:00:56Z",
+            "endTime": "2026-06-05T04:00:56Z",
+            "entryTime": "2026-06-05T00:00:56Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "disabledVehicle",
+            "typeDescription": {
+              "value": "Stalled vehicle",
+              "language": "en-US"
+            },
+            "codes": [
+              211
+            ],
+            "description": {
+              "value": "At Burnley Street - Broken-down vehicle",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Broken-down vehicle",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 391.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.80804,
+                      "lng": 145.07112
+                    },
+                    {
+                      "lat": -37.80962,
+                      "lng": 145.07078
+                    }
+                  ],
+                  "length": 178.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.80962,
+                      "lng": 145.07078
+                    },
+                    {
+                      "lat": -37.81152,
+                      "lng": 145.07043
+                    }
+                  ],
+                  "length": 213.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "2721865294948866579",
+            "hrn": "here:traffic:incident:2721865294948866579",
+            "originalId": "2721865294948866579",
+            "originalHrn": "here:traffic:incident:2721865294948866579",
+            "startTime": "2026-06-05T01:58:05Z",
+            "endTime": "2026-06-06T01:58:05Z",
+            "entryTime": "2026-06-05T01:58:05Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 297.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.7162,
+                      "lng": 144.93361
+                    },
+                    {
+                      "lat": -37.71648,
+                      "lng": 144.93357
+                    }
+                  ],
+                  "length": 31.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.71648,
+                      "lng": 144.93357
+                    },
+                    {
+                      "lat": -37.71716,
+                      "lng": 144.93347
+                    }
+                  ],
+                  "length": 76.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.71716,
+                      "lng": 144.93347
+                    },
+                    {
+                      "lat": -37.71733,
+                      "lng": 144.93344
+                    }
+                  ],
+                  "length": 19.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.71733,
+                      "lng": 144.93344
+                    },
+                    {
+                      "lat": -37.71757,
+                      "lng": 144.9334
+                    }
+                  ],
+                  "length": 27.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.71757,
+                      "lng": 144.9334
+                    },
+                    {
+                      "lat": -37.71802,
+                      "lng": 144.93333
+                    }
+                  ],
+                  "length": 50.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.71802,
+                      "lng": 144.93333
+                    },
+                    {
+                      "lat": -37.71831,
+                      "lng": 144.93328
+                    }
+                  ],
+                  "length": 33.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.71831,
+                      "lng": 144.93328
+                    },
+                    {
+                      "lat": -37.71885,
+                      "lng": 144.93319
+                    }
+                  ],
+                  "length": 61.0,
+                  "functionalClass": 4
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "3919402700945093201",
+            "hrn": "here:traffic:incident:3919402700945093201",
+            "originalId": "1891923693890960793",
+            "originalHrn": "here:traffic:incident:1891923693890960793",
+            "startTime": "2026-06-05T02:22:05Z",
+            "endTime": "2026-06-06T02:22:05Z",
+            "entryTime": "2026-06-05T02:42:05Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 126.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.71733,
+                      "lng": 144.93344
+                    },
+                    {
+                      "lat": -37.71716,
+                      "lng": 144.93347
+                    }
+                  ],
+                  "length": 19.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.71716,
+                      "lng": 144.93347
+                    },
+                    {
+                      "lat": -37.71648,
+                      "lng": 144.93357
+                    }
+                  ],
+                  "length": 76.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.71648,
+                      "lng": 144.93357
+                    },
+                    {
+                      "lat": -37.7162,
+                      "lng": 144.93361
+                    }
+                  ],
+                  "length": 31.0,
+                  "functionalClass": 4
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "1346023511099728099",
+            "hrn": "here:traffic:incident:1346023511099728099",
+            "originalId": "34691639180607606",
+            "originalHrn": "here:traffic:incident:34691639180607606",
+            "startTime": "2026-06-04T06:52:05Z",
+            "endTime": "2026-06-06T00:52:05Z",
+            "entryTime": "2026-06-04T23:27:04Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 10.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.83264,
+                      "lng": 144.93246
+                    },
+                    {
+                      "lat": -37.83255,
+                      "lng": 144.93243
+                    }
+                  ],
+                  "length": 10.0,
+                  "functionalClass": 3
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "1162236218296715115",
+            "hrn": "here:traffic:incident:1162236218296715115",
+            "originalId": "1162236218296715115",
+            "originalHrn": "here:traffic:incident:1162236218296715115",
+            "startTime": "2026-06-05T03:12:56Z",
+            "endTime": "2026-06-05T07:12:56Z",
+            "entryTime": "2026-06-05T03:12:56Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "disabledVehicle",
+            "typeDescription": {
+              "value": "Stalled vehicle",
+              "language": "en-US"
+            },
+            "codes": [
+              211
+            ],
+            "description": {
+              "value": "At Plummer Street - Broken-down vehicle",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Broken-down vehicle",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 154.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.85484,
+                      "lng": 144.96279
+                    },
+                    {
+                      "lat": -37.85467,
+                      "lng": 144.96293
+                    }
+                  ],
+                  "length": 22.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.85467,
+                      "lng": 144.96293
+                    },
+                    {
+                      "lat": -37.85451,
+                      "lng": 144.96306
+                    }
+                  ],
+                  "length": 21.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.85451,
+                      "lng": 144.96306
+                    },
+                    {
+                      "lat": -37.85421,
+                      "lng": 144.96331
+                    }
+                  ],
+                  "length": 40.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.85421,
+                      "lng": 144.96331
+                    },
+                    {
+                      "lat": -37.85367,
+                      "lng": 144.96375
+                    }
+                  ],
+                  "length": 71.0,
+                  "functionalClass": 4
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "2935508555262069572",
+            "hrn": "here:traffic:incident:2935508555262069572",
+            "originalId": "4061519746276096607",
+            "originalHrn": "here:traffic:incident:4061519746276096607",
+            "startTime": "2026-06-03T22:23:04Z",
+            "endTime": "2026-06-05T22:23:04Z",
+            "entryTime": "2026-06-05T03:13:03Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 75.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.80219,
+                      "lng": 144.94876
+                    },
+                    {
+                      "lat": -37.80216,
+                      "lng": 144.94844
+                    }
+                  ],
+                  "length": 28.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.80216,
+                      "lng": 144.94844
+                    },
+                    {
+                      "lat": -37.80214,
+                      "lng": 144.94826
+                    }
+                  ],
+                  "length": 16.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.80214,
+                      "lng": 144.94826
+                    },
+                    {
+                      "lat": -37.80209,
+                      "lng": 144.94797
+                    }
+                  ],
+                  "length": 26.0,
+                  "functionalClass": 5
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.80209,
+                      "lng": 144.94797
+                    },
+                    {
+                      "lat": -37.80208,
+                      "lng": 144.94791
+                    }
+                  ],
+                  "length": 5.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "1853701139172072444",
+            "hrn": "here:traffic:incident:1853701139172072444",
+            "originalId": "1853701139172072444",
+            "originalHrn": "here:traffic:incident:1853701139172072444",
+            "startTime": "2026-06-04T22:30:00Z",
+            "endTime": "2026-06-05T06:00:00Z",
+            "entryTime": "2026-06-04T22:30:46Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 0.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.79896,
+                      "lng": 144.91043
+                    },
+                    {
+                      "lat": -37.79896,
+                      "lng": 144.91043
+                    }
+                  ],
+                  "length": 0.0,
+                  "functionalClass": 5
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "2858800383350029560",
+            "hrn": "here:traffic:incident:2858800383350029560",
+            "originalId": "2858800383350029560",
+            "originalHrn": "here:traffic:incident:2858800383350029560",
+            "startTime": "2026-06-05T02:58:56Z",
+            "endTime": "2026-06-05T06:58:56Z",
+            "entryTime": "2026-06-05T02:58:56Z",
+            "roadClosed": false,
+            "criticality": "minor",
+            "type": "disabledVehicle",
+            "typeDescription": {
+              "value": "Stalled vehicle",
+              "language": "en-US"
+            },
+            "codes": [
+              211
+            ],
+            "description": {
+              "value": "Broken-down vehicle",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Broken-down vehicle",
+              "language": "en-US"
+            }
+          }
+        },
+        {
+          "location": {
+            "length": 156.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.73677,
+                      "lng": 144.95722
+                    },
+                    {
+                      "lat": -37.73675,
+                      "lng": 144.957
+                    }
+                  ],
+                  "length": 19.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.73675,
+                      "lng": 144.957
+                    },
+                    {
+                      "lat": -37.73672,
+                      "lng": 144.95667
+                    }
+                  ],
+                  "length": 29.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.73672,
+                      "lng": 144.95667
+                    },
+                    {
+                      "lat": -37.7367,
+                      "lng": 144.9565
+                    }
+                  ],
+                  "length": 15.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.7367,
+                      "lng": 144.9565
+                    },
+                    {
+                      "lat": -37.73667,
+                      "lng": 144.95627
+                    }
+                  ],
+                  "length": 20.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.73667,
+                      "lng": 144.95627
+                    },
+                    {
+                      "lat": -37.73661,
+                      "lng": 144.95564
+                    }
+                  ],
+                  "length": 55.0,
+                  "functionalClass": 4
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.73661,
+                      "lng": 144.95564
+                    },
+                    {
+                      "lat": -37.73659,
+                      "lng": 144.95543
+                    }
+                  ],
+                  "length": 18.0,
+                  "functionalClass": 4
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "4333805281383112176",
+            "hrn": "here:traffic:incident:4333805281383112176",
+            "originalId": "4076066042039038242",
+            "originalHrn": "here:traffic:incident:4076066042039038242",
+            "startTime": "2026-06-04T09:33:04Z",
+            "endTime": "2026-06-05T21:33:04Z",
+            "entryTime": "2026-06-05T02:53:10Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 678.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.74144,
+                      "lng": 144.90988
+                    },
+                    {
+                      "lat": -37.74147,
+                      "lng": 144.91022
+                    }
+                  ],
+                  "length": 30.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74147,
+                      "lng": 144.91022
+                    },
+                    {
+                      "lat": -37.74145,
+                      "lng": 144.91025
+                    },
+                    {
+                      "lat": -37.74144,
+                      "lng": 144.91033
+                    }
+                  ],
+                  "length": 10.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74144,
+                      "lng": 144.91033
+                    },
+                    {
+                      "lat": -37.74147,
+                      "lng": 144.9104
+                    },
+                    {
+                      "lat": -37.7415,
+                      "lng": 144.91042
+                    }
+                  ],
+                  "length": 11.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.7415,
+                      "lng": 144.91042
+                    },
+                    {
+                      "lat": -37.74155,
+                      "lng": 144.91084
+                    }
+                  ],
+                  "length": 37.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74155,
+                      "lng": 144.91084
+                    },
+                    {
+                      "lat": -37.74163,
+                      "lng": 144.91157
+                    }
+                  ],
+                  "length": 64.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74163,
+                      "lng": 144.91157
+                    },
+                    {
+                      "lat": -37.74174,
+                      "lng": 144.9126
+                    }
+                  ],
+                  "length": 90.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74174,
+                      "lng": 144.9126
+                    },
+                    {
+                      "lat": -37.74178,
+                      "lng": 144.913
+                    }
+                  ],
+                  "length": 35.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74178,
+                      "lng": 144.913
+                    },
+                    {
+                      "lat": -37.74188,
+                      "lng": 144.91393
+                    }
+                  ],
+                  "length": 82.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74188,
+                      "lng": 144.91393
+                    },
+                    {
+                      "lat": -37.74193,
+                      "lng": 144.91445
+                    }
+                  ],
+                  "length": 46.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74193,
+                      "lng": 144.91445
+                    },
+                    {
+                      "lat": -37.7421,
+                      "lng": 144.916
+                    }
+                  ],
+                  "length": 136.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.7421,
+                      "lng": 144.916
+                    },
+                    {
+                      "lat": -37.74218,
+                      "lng": 144.91669
+                    }
+                  ],
+                  "length": 61.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74218,
+                      "lng": 144.91669
+                    },
+                    {
+                      "lat": -37.74228,
+                      "lng": 144.91756
+                    }
+                  ],
+                  "length": 76.0,
+                  "functionalClass": 3
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "4041496439111908036",
+            "hrn": "here:traffic:incident:4041496439111908036",
+            "originalId": "2246715053816912190",
+            "originalHrn": "here:traffic:incident:2246715053816912190",
+            "startTime": "2026-06-05T01:47:08Z",
+            "endTime": "2026-06-06T01:47:08Z",
+            "entryTime": "2026-06-05T02:32:08Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "At Pascoe Avenue - Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        },
+        {
+          "location": {
+            "length": 788.0,
+            "shape": {
+              "links": [
+                {
+                  "points": [
+                    {
+                      "lat": -37.74252,
+                      "lng": 144.91938
+                    },
+                    {
+                      "lat": -37.74254,
+                      "lng": 144.91929
+                    },
+                    {
+                      "lat": -37.74254,
+                      "lng": 144.91921
+                    },
+                    {
+                      "lat": -37.74248,
+                      "lng": 144.91866
+                    }
+                  ],
+                  "length": 63.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74248,
+                      "lng": 144.91866
+                    },
+                    {
+                      "lat": -37.74245,
+                      "lng": 144.9184
+                    }
+                  ],
+                  "length": 23.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74245,
+                      "lng": 144.9184
+                    },
+                    {
+                      "lat": -37.74236,
+                      "lng": 144.91759
+                    }
+                  ],
+                  "length": 71.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74236,
+                      "lng": 144.91759
+                    },
+                    {
+                      "lat": -37.74226,
+                      "lng": 144.91667
+                    }
+                  ],
+                  "length": 81.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74226,
+                      "lng": 144.91667
+                    },
+                    {
+                      "lat": -37.74218,
+                      "lng": 144.916
+                    }
+                  ],
+                  "length": 59.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74218,
+                      "lng": 144.916
+                    },
+                    {
+                      "lat": -37.74201,
+                      "lng": 144.91445
+                    }
+                  ],
+                  "length": 136.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74201,
+                      "lng": 144.91445
+                    },
+                    {
+                      "lat": -37.74195,
+                      "lng": 144.91393
+                    }
+                  ],
+                  "length": 46.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74195,
+                      "lng": 144.91393
+                    },
+                    {
+                      "lat": -37.74185,
+                      "lng": 144.91302
+                    }
+                  ],
+                  "length": 80.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74185,
+                      "lng": 144.91302
+                    },
+                    {
+                      "lat": -37.74181,
+                      "lng": 144.9126
+                    }
+                  ],
+                  "length": 37.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74181,
+                      "lng": 144.9126
+                    },
+                    {
+                      "lat": -37.74171,
+                      "lng": 144.91163
+                    }
+                  ],
+                  "length": 85.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74171,
+                      "lng": 144.91163
+                    },
+                    {
+                      "lat": -37.74163,
+                      "lng": 144.91086
+                    }
+                  ],
+                  "length": 68.0,
+                  "functionalClass": 3
+                },
+                {
+                  "points": [
+                    {
+                      "lat": -37.74163,
+                      "lng": 144.91086
+                    },
+                    {
+                      "lat": -37.74157,
+                      "lng": 144.91042
+                    }
+                  ],
+                  "length": 39.0,
+                  "functionalClass": 3
+                }
+              ]
+            }
+          },
+          "incidentDetails": {
+            "id": "3513030731779990397",
+            "hrn": "here:traffic:incident:3513030731779990397",
+            "originalId": "1001910595152959092",
+            "originalHrn": "here:traffic:incident:1001910595152959092",
+            "startTime": "2026-06-05T00:55:04Z",
+            "endTime": "2026-06-06T00:55:04Z",
+            "entryTime": "2026-06-05T01:45:05Z",
+            "roadClosed": true,
+            "criticality": "critical",
+            "type": "roadClosure",
+            "typeDescription": {
+              "value": "Road closure",
+              "language": "en-US"
+            },
+            "codes": [
+              401
+            ],
+            "description": {
+              "value": "At Bulla Road - Closed",
+              "language": "en-US"
+            },
+            "summary": {
+              "value": "Closed",
+              "language": "en-US"
+            },
+            "junctionTraversability": "intermediateClosedEdgeOpen"
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

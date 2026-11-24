@@ -1,0 +1,1484 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "title": "Arn configuration bundle",
+  "description": "The full editable configuration of the Arn AI traffic bulletin platform as one document. Export from GET /api/config/export, edit (by hand or with an AI assistant), then validate with POST /api/config/import (dry-run by default; ?dryRun=false applies). Imports are UPSERT-ONLY: entities missing from the bundle are never deleted. Omit any top-level section to leave that area untouched. Property names are PascalCase; the importer parses case-insensitively. SOURCE OF TRUTH: this schema is hand-maintained and must match the export DTOs in Application/ConfigTransfer/ConfigTransferContracts.cs (ConfigBundleDto and the Config*Dto records it composes) plus the wire DTOs it references (ScheduleContracts.cs, OperatorContracts.cs, AudioContracts.cs). When a bundle contract changes, update the DTOs AND this schema in the same change \u2014 the regression test ConfigExportSchemaTests validates a full-surface export bundle against this file. The export serializes every property, including nulls, so nullable properties are typed [\"\u2026\", \"null\"].",
+  "type": "object",
+  "properties": {
+    "Schema": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "URL of this schema. Informational."
+    },
+    "SchemaVersion": {
+      "type": "integer",
+      "const": 1
+    },
+    "ExportedAtUtc": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "format": "date-time",
+      "description": "When the bundle was exported. Informational."
+    },
+    "Source": {
+      "type": [
+        "string",
+        "null"
+      ],
+      "description": "Environment the bundle was exported from. Informational."
+    },
+    "VoiceProfiles": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "The shared voice library: named tunings of a base ElevenLabs voice. Referenced from Schedules by VoiceProfileId and from VoiceRotation members.",
+      "items": {
+        "$ref": "#/$defs/VoiceProfile"
+      }
+    },
+    "DeliveryStyles": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Named ElevenLabs v3 audio-tag delivery policies. Referenced from Schedules by DeliveryStyleId. A style only steers HOW a bulletin is read; words are never changed.",
+      "items": {
+        "$ref": "#/$defs/DeliveryStyle"
+      }
+    },
+    "PronunciationDictionaries": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Named ElevenLabs pronunciation dictionaries (suburb/road respellings). Referenced from Schedules by PronunciationDictionaryId.",
+      "items": {
+        "$ref": "#/$defs/PronunciationDictionary"
+      }
+    },
+    "SafetyTerms": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Content-safety terms: banned words and allowed exceptions, global or per market.",
+      "items": {
+        "$ref": "#/$defs/SafetyTerm"
+      }
+    },
+    "Guidance": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Standing editorial directives, scoped Global, Market, or Station.",
+      "items": {
+        "$ref": "#/$defs/Guidance"
+      }
+    },
+    "PriorityRoads": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Per-market priority roads. Each entry REPLACES that market's whole list on import.",
+      "items": {
+        "$ref": "#/$defs/PriorityRoadsMarket"
+      }
+    },
+    "VerifiedPronunciations": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Per-market operator-verified pronunciation verdicts. Each entry replaces that market's whole list on import.",
+      "items": {
+        "$ref": "#/$defs/VerifiedPronunciationsMarket"
+      }
+    },
+    "OperatorAssignments": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Global operator-to-market security assignments.",
+      "items": {
+        "$ref": "#/$defs/OperatorAssignment"
+      }
+    },
+    "VoiceCalibrations": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Global persisted voice/settings speech-rate calibration metrics.",
+      "items": {
+        "$ref": "#/$defs/VoiceCalibration"
+      }
+    },
+    "FillerStatements": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Per-market evergreen filler sentences used to fill remaining slot time. Each entry REPLACES that market's whole list on import.",
+      "items": {
+        "$ref": "#/$defs/FillerStatementsMarket"
+      }
+    },
+    "Bookends": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "The shared bookend library: authored intro/outro pairs. Referenced from Schedules by BookendId and from BookendRotation members.",
+      "items": {
+        "$ref": "#/$defs/Bookend"
+      }
+    },
+    "Schedules": {
+      "type": [
+        "array",
+        "null"
+      ],
+      "description": "Station schedules (bulletin rules), keyed by MarketId. Library references (VoiceProfileId, DeliveryStyleId, PronunciationDictionaryId) must exist \u2014 either already on the server or created earlier in this same bundle.",
+      "items": {
+        "$ref": "#/$defs/Schedule"
+      }
+    }
+  },
+  "$defs": {
+    "VoiceProfile": {
+      "type": "object",
+      "required": [
+        "Name",
+        "BaseVoiceId",
+        "Model",
+        "Settings"
+      ],
+      "properties": {
+        "Id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Stable library id (vp-\u2026). Keep it to update an existing profile; omit to match by Name, else create."
+        },
+        "Name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "BaseVoiceId": {
+          "type": "string",
+          "minLength": 1,
+          "description": "ElevenLabs voice id this profile is a tuning of."
+        },
+        "BaseVoiceName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Model": {
+          "type": "string",
+          "description": "ElevenLabs TTS model id, e.g. 'eleven_v3' or 'eleven_multilingual_v2'. Voice clones degrade on eleven_v3 \u2014 prefer eleven_multilingual_v2 for cloned voices."
+        },
+        "Settings": {
+          "$ref": "#/$defs/VoiceSettings"
+        },
+        "PaceBoostWpm": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 40,
+          "description": "Additive words-per-minute boost applied to pre-synthesis script sizing (works on every model, unlike Settings.Speed which eleven_v3 ignores). 0 = off."
+        },
+        "ChangeNote": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Version note recorded when this import changes the profile."
+        }
+      },
+      "additionalProperties": false
+    },
+    "VoiceSettings": {
+      "type": "object",
+      "properties": {
+        "Speed": {
+          "type": "number",
+          "minimum": 0.7,
+          "maximum": 1.2,
+          "description": "Native ElevenLabs speed. Ignored by eleven_v3 voices \u2014 use PaceBoostWpm for pace."
+        },
+        "Stability": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "SimilarityBoost": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "Style": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "UseSpeakerBoost": {
+          "type": "boolean"
+        }
+      },
+      "additionalProperties": false
+    },
+    "DeliveryStyle": {
+      "type": "object",
+      "required": [
+        "Name",
+        "Policy"
+      ],
+      "properties": {
+        "Id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Stable library id (ds-\u2026). Keep it to update; omit to match by Name, else create."
+        },
+        "Name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Policy": {
+          "type": "object",
+          "properties": {
+            "ToneDescription": {
+              "type": "string",
+              "description": "Plain-language tone direction, e.g. 'Warm, unhurried breakfast read.'"
+            },
+            "AllowedTags": {
+              "type": "array",
+              "items": {
+                "type": "string"
+              },
+              "description": "Curated ElevenLabs v3 audio tags the director may use, e.g. \"[calm]\", \"[urgent]\". Empty = neutral no-op."
+            },
+            "Intensity": {
+              "type": "integer",
+              "minimum": 0,
+              "description": "How strongly to apply tags. 0 = neutral no-op."
+            }
+          },
+          "additionalProperties": false
+        },
+        "ChangeNote": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "PronunciationDictionary": {
+      "type": "object",
+      "required": [
+        "Name"
+      ],
+      "properties": {
+        "Id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Stable library id (pd-\u2026). Keep it to update; omit to match by Name, else create."
+        },
+        "Name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Rules": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "object",
+            "required": [
+              "StringToReplace",
+              "Replacement"
+            ],
+            "properties": {
+              "Type": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "alias",
+                  "phoneme",
+                  null
+                ],
+                "description": "alias = respelling (works on every model); phoneme = IPA/CMU (v2-family models only, eleven_v3 skips it). Default alias."
+              },
+              "StringToReplace": {
+                "type": "string",
+                "minLength": 1,
+                "description": "The word as written, e.g. 'Bourke'."
+              },
+              "Replacement": {
+                "type": "string",
+                "minLength": 1,
+                "description": "For alias: the respelling, e.g. 'Burk'. For phoneme: the IPA/CMU string."
+              },
+              "Alphabet": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "enum": [
+                  "ipa",
+                  "cmu",
+                  null
+                ],
+                "description": "Phoneme rules only."
+              },
+              "CaseSensitive": {
+                "type": "boolean",
+                "default": false
+              },
+              "WordBoundaries": {
+                "type": "boolean",
+                "default": true
+              },
+              "AppliesOnAllModels": {
+                "type": "boolean",
+                "default": false
+              }
+            },
+            "additionalProperties": false
+          }
+        },
+        "ChangeNote": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Scope": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "Station",
+            "Global",
+            null
+          ],
+          "description": "Station = assigned to a single station via Schedules.PronunciationDictionaryId; Global = platform-wide, applies to every station and cannot be assigned. Absent = Station."
+        }
+      },
+      "additionalProperties": false
+    },
+    "Bookend": {
+      "type": "object",
+      "required": [
+        "Name"
+      ],
+      "properties": {
+        "Id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Stable library id (bk-\u2026). Keep it to update; omit to match by Name, else create."
+        },
+        "Name": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Description": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "IntroText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Opening line; may contain {token} placeholders. Empty is allowed \u2014 a closer-only pair."
+        },
+        "OutroText": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Closing line; may contain {token} placeholders. Empty is allowed \u2014 an intro-only pair."
+        },
+        "ChangeNote": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "SafetyTerm": {
+      "type": "object",
+      "required": [
+        "Kind",
+        "Scope",
+        "Term"
+      ],
+      "properties": {
+        "Id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Keep to update an existing term; omit to match by kind/scope/term, else create. Kind/Scope of an existing Id cannot be changed by import."
+        },
+        "Kind": {
+          "type": "string",
+          "enum": [
+            "Banned",
+            "Allowed"
+          ]
+        },
+        "Scope": {
+          "type": "string",
+          "enum": [
+            "Global",
+            "Market"
+          ]
+        },
+        "ScopeId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Market id when Scope is Market; null for Global."
+        },
+        "Term": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 120
+        },
+        "Note": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": true
+        }
+      },
+      "additionalProperties": false
+    },
+    "Guidance": {
+      "type": "object",
+      "required": [
+        "Scope",
+        "Type",
+        "Text"
+      ],
+      "properties": {
+        "Id": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Keep to update an existing directive in the same scope; omit to match by type+text, else create."
+        },
+        "Scope": {
+          "type": "string",
+          "enum": [
+            "Global",
+            "Market",
+            "Station"
+          ]
+        },
+        "ScopeId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Market id or station name when scoped; null for Global."
+        },
+        "Type": {
+          "type": "string",
+          "enum": [
+            "Style",
+            "Editorial",
+            "Lexicon",
+            "Prohibition",
+            "HouseStyle"
+          ]
+        },
+        "Text": {
+          "type": "string",
+          "minLength": 1,
+          "maxLength": 600
+        },
+        "Enabled": {
+          "type": "boolean",
+          "default": true
+        },
+        "ReviewAfterUtc": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        }
+      },
+      "additionalProperties": false
+    },
+    "PriorityRoadsMarket": {
+      "type": "object",
+      "required": [
+        "Market",
+        "Roads"
+      ],
+      "properties": {
+        "Market": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Roads": {
+          "type": "array",
+          "maxItems": 50,
+          "items": {
+            "type": "object",
+            "required": [
+              "Name"
+            ],
+            "properties": {
+              "Name": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "BoostIncidents": {
+                "type": "boolean",
+                "default": true,
+                "description": "Boost incidents on this road when ranking what makes the bulletin."
+              },
+              "FlowTier": {
+                "type": "string",
+                "enum": [
+                  "none",
+                  "normal",
+                  "high",
+                  "critical"
+                ],
+                "default": "high",
+                "description": "How competitive this road's congestion/good-run status is for slot time."
+              },
+              "Enabled": {
+                "type": "boolean",
+                "default": true
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "VerifiedPronunciationsMarket": {
+      "type": "object",
+      "required": [
+        "Market",
+        "Words"
+      ],
+      "properties": {
+        "Market": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Words": {
+          "type": "array",
+          "maxItems": 200,
+          "items": {
+            "type": "object",
+            "required": [
+              "Word"
+            ],
+            "properties": {
+              "Word": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 80
+              },
+              "Note": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "maxLength": 200
+              },
+              "Enabled": {
+                "type": "boolean",
+                "default": true
+              },
+              "VerifiedBy": {
+                "type": [
+                  "string",
+                  "null"
+                ]
+              },
+              "VerifiedAt": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "format": "date-time"
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "OperatorAssignment": {
+      "type": "object",
+      "required": [
+        "ObjectId",
+        "Markets"
+      ],
+      "properties": {
+        "ObjectId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "DisplayName": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "Markets": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          }
+        },
+        "UpdatedAtUtc": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "UpdatedBy": {
+          "type": [
+            "string",
+            "null"
+          ]
+        }
+      },
+      "additionalProperties": false
+    },
+    "VoiceCalibration": {
+      "type": "object",
+      "required": [
+        "ConfigurationKey",
+        "VoiceId",
+        "Settings"
+      ],
+      "properties": {
+        "ConfigurationKey": {
+          "type": "string",
+          "minLength": 1
+        },
+        "VoiceId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Settings": {
+          "$ref": "#/$defs/VoiceSettings"
+        },
+        "Provider": {
+          "type": [
+            "string",
+            "null"
+          ]
+        },
+        "SyllablesPerSecond": {
+          "type": "number",
+          "minimum": 0
+        },
+        "SyllablesPerWord": {
+          "type": "number",
+          "minimum": 0
+        },
+        "WordsPerMinute": {
+          "type": "number",
+          "minimum": 0
+        },
+        "SyllablesPerMinute": {
+          "type": "number",
+          "minimum": 0
+        },
+        "RunCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ReferenceSyllableCount": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "ReferenceDurationSeconds": {
+          "type": "number",
+          "minimum": 0
+        },
+        "CalibratedAt": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "format": "date-time"
+        },
+        "ValidForDays": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        }
+      },
+      "additionalProperties": false
+    },
+    "FillerStatementsMarket": {
+      "type": "object",
+      "required": [
+        "Market",
+        "Statements"
+      ],
+      "properties": {
+        "Market": {
+          "type": "string",
+          "minLength": 1
+        },
+        "Statements": {
+          "type": "array",
+          "maxItems": 50,
+          "items": {
+            "type": "object",
+            "required": [
+              "Text"
+            ],
+            "properties": {
+              "Id": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Keep existing ids when editing; omit for new statements."
+              },
+              "Text": {
+                "type": "string",
+                "minLength": 1,
+                "maxLength": 500
+              },
+              "Enabled": {
+                "type": "boolean",
+                "default": true
+              },
+              "Availability": {
+                "type": [
+                  "object",
+                  "null"
+                ],
+                "description": "Optional station-local eligibility window; any omitted part is unconstrained (null or absent = always eligible). Dates are yyyy-MM-dd, times HH:mm, days the .NET day names Sunday..Saturday. A time window with EndLocal <= StartLocal wraps past midnight.",
+                "properties": {
+                  "StartDate": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                    "description": "Inclusive first eligible local calendar date (yyyy-MM-dd)."
+                  },
+                  "EndDate": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$",
+                    "description": "Inclusive last eligible local calendar date (yyyy-MM-dd); must not be before StartDate."
+                  },
+                  "Days": {
+                    "type": [
+                      "array",
+                      "null"
+                    ],
+                    "items": {
+                      "type": "string",
+                      "enum": [
+                        "Sunday",
+                        "Monday",
+                        "Tuesday",
+                        "Wednesday",
+                        "Thursday",
+                        "Friday",
+                        "Saturday"
+                      ]
+                    },
+                    "description": "Eligible days of week in station-local time; empty or null = every day."
+                  },
+                  "StartLocal": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "pattern": "^\\d{2}:\\d{2}$",
+                    "description": "Window start in station-local time (HH:mm). A window with EndLocal <= StartLocal wraps past midnight (e.g. 22:00-06:00)."
+                  },
+                  "EndLocal": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "pattern": "^\\d{2}:\\d{2}$",
+                    "description": "Half-open window end in station-local time (HH:mm)."
+                  }
+                },
+                "additionalProperties": false
+              }
+            },
+            "additionalProperties": false
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Schedule": {
+      "type": "object",
+      "required": [
+        "MarketId"
+      ],
+      "description": "Existing markets: only supplied fields change (omitted fields keep their current value). New markets additionally require Name, Station, Timezone, CronExpression, Coverage and TargetDurationSeconds.",
+      "properties": {
+        "MarketId": {
+          "type": "string",
+          "minLength": 1,
+          "description": "The stable market key, e.g. 'sydney'. No / \\ # ? characters."
+        },
+        "Name": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Display name, e.g. 'Sydney Breakfast'."
+        },
+        "Station": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Station name, e.g. 'KIIS 106.5'."
+        },
+        "Timezone": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "IANA timezone id, e.g. 'Australia/Sydney'."
+        },
+        "CronExpression": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Five-field cron (minutes hours day-of-month month day-of-week) in the schedule's timezone, e.g. '*/30 6-9 * * 1-5' = every 30 min, 6-9am, weekdays. A seconds field is rejected. Newline-separated lines are unioned, for mixed-minute schedules."
+        },
+        "Enabled": {
+          "type": [
+            "boolean",
+            "null"
+          ]
+        },
+        "CurationEnabled": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "Opt in to the five-minute operator curation window before draft generation."
+        },
+        "PlayoutEnabled": {
+          "type": [
+            "boolean",
+            "null"
+          ],
+          "description": "Whether this station is armed for playout delivery in the target environment. True (default) delivers on publish; false generates, reviews and publishes normally but writes nothing to the playout share. Omit to leave the target environment's arming untouched — arming is deliberately allowed to differ between environments, so a promoted bundle should not carry it."
+        },
+        "TargetDurationSeconds": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0,
+          "description": "Exact on-air slot length, e.g. 30."
+        },
+        "NotifyBeforePlayoutMinutes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "Minutes before playout for the first approval reminder. MUST be greater than EscalationBeforePlayoutMinutes: the two alert tiers cannot collapse onto one lead time. JSON Schema cannot express a cross-field comparison, so the import enforces it and rejects the bundle."
+        },
+        "EscalationBeforePlayoutMinutes": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0,
+          "description": "Minutes before playout for the urgent escalation. MUST be less than NotifyBeforePlayoutMinutes, so escalation fires closer to playout than the reminder."
+        },
+        "VoiceProfileId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Primary voice (VoiceProfiles id). Must exist."
+        },
+        "OutputPath": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Playout delivery path prefix, e.g. 'sydney/traffic/'."
+        },
+        "Coverage": {
+          "$ref": "#/$defs/Coverage"
+        },
+        "Content": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "Content sources. At least one must be enabled. WeatherRequired/FuelRequired make the matching source a fixture: when its data was fetched it must air. A required source must also be selected.",
+          "properties": {
+            "Traffic": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "Weather": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "Fuel": {
+              "type": [
+                "boolean",
+                "null"
+              ]
+            },
+            "WeatherRequired": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "Weather is a fixture: when fetched it must air."
+            },
+            "FuelRequired": {
+              "type": [
+                "boolean",
+                "null"
+              ],
+              "description": "Fuel is a fixture: when fetched it must air."
+            },
+            "SegmentOrder": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "enum": [
+                  "Traffic",
+                  "Weather",
+                  "Fuel"
+                ]
+              },
+              "description": "Running order of the enabled segments, enforced on every bulletin. Must be a permutation of the enabled sources. Null = Traffic, Weather, Fuel."
+            },
+            "TrafficOrder": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "WorstFirst",
+                "WorstLast",
+                null
+              ],
+              "description": "Order of traffic stories within their segment. Null = WorstFirst."
+            }
+          },
+          "additionalProperties": false
+        },
+        "DeliveryStyleId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "DeliveryStyles id. Must exist. Null/empty = neutral."
+        },
+        "PlaybookId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "BulletinPlaybooks id. Must exist. Null/empty = the shipped default instructions, unedited."
+        },
+        "PronunciationDictionaryId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "PronunciationDictionaries id. Must exist. Null/empty = none."
+        },
+        "VoiceRotation": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "Voice selection policy. Null = single voice (VoiceProfileId).",
+          "properties": {
+            "Mode": {
+              "type": "string",
+              "enum": [
+                "single",
+                "roundRobin",
+                "timeOfDay"
+              ]
+            },
+            "VoiceProfileIds": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "type": "string"
+              },
+              "description": "Round-robin voice set. Every id must exist."
+            },
+            "Windows": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "type": "object",
+                "required": [
+                  "Start",
+                  "End",
+                  "VoiceProfileIds"
+                ],
+                "properties": {
+                  "Start": {
+                    "type": "string",
+                    "pattern": "^\\d{2}:\\d{2}$",
+                    "description": "Local time HH:mm."
+                  },
+                  "End": {
+                    "type": "string",
+                    "pattern": "^\\d{2}:\\d{2}$"
+                  },
+                  "VoiceProfileIds": {
+                    "type": "array",
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "FillOrder": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "items": {
+            "type": "string",
+            "enum": [
+              "weather",
+              "fuel",
+              "minorTraffic",
+              "filler"
+            ]
+          },
+          "description": "Order remaining-slot fill sources are tried once traffic alone can't reach the target duration."
+        },
+        "BookendId": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "description": "Primary bookend pair id (Bookends). Must exist. Null/empty = none."
+        },
+        "BookendRotation": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "Bookend selection policy. Null = single pair (BookendId).",
+          "properties": {
+            "Mode": {
+              "type": "string",
+              "enum": [
+                "single",
+                "roundRobin",
+                "timeOfDay"
+              ]
+            },
+            "BookendIds": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "type": "string"
+              },
+              "description": "Round-robin bookend set. Every id must exist."
+            },
+            "Windows": {
+              "type": [
+                "array",
+                "null"
+              ],
+              "items": {
+                "type": "object",
+                "required": [
+                  "Start",
+                  "End"
+                ],
+                "properties": {
+                  "Start": {
+                    "type": "string",
+                    "pattern": "^\\d{2}:\\d{2}$",
+                    "description": "Local time HH:mm."
+                  },
+                  "End": {
+                    "type": "string",
+                    "pattern": "^\\d{2}:\\d{2}$"
+                  },
+                  "BookendIds": {
+                    "type": [
+                      "array",
+                      "null"
+                    ],
+                    "items": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "additionalProperties": false
+              }
+            }
+          },
+          "additionalProperties": false
+        },
+        "BookendTokens": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "additionalProperties": {
+            "type": "string"
+          },
+          "description": "Token overrides ({token} placeholders) substituted into the assigned bookend lines."
+        },
+        "Calendar": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "description": "Year calendar: named day-type clocks plus the station-local dates that run them instead of the weekly CronExpression. Null or absent leaves the calendar unchanged on import, so bundles exported before calendars existed still apply cleanly.",
+          "required": [
+            "Patterns",
+            "Assignments"
+          ],
+          "additionalProperties": false,
+          "properties": {
+            "Patterns": {
+              "type": "array",
+              "maxItems": 24,
+              "description": "Reusable day-type clocks. Ids are unique case-insensitively.",
+              "items": {
+                "type": "object",
+                "required": [
+                  "Id",
+                  "Name",
+                  "CronExpression"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "Id": {
+                    "type": "string",
+                    "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]*$"
+                  },
+                  "Name": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "CronExpression": {
+                    "type": "string",
+                    "minLength": 1,
+                    "description": "Same compound (newline-separated) cron form as the weekly clock. Validated by the same parser and minimum-interval rule."
+                  }
+                }
+              }
+            },
+            "Assignments": {
+              "type": "array",
+              "maxItems": 400,
+              "description": "Inclusive station-local date ranges. Overlaps resolve deterministically: the shortest window wins, and an exact tie goes to the later entry.",
+              "items": {
+                "type": "object",
+                "required": [
+                  "StartDate",
+                  "EndDate"
+                ],
+                "additionalProperties": false,
+                "properties": {
+                  "StartDate": {
+                    "type": "string",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                  },
+                  "EndDate": {
+                    "type": "string",
+                    "pattern": "^\\d{4}-\\d{2}-\\d{2}$"
+                  },
+                  "PatternId": {
+                    "type": [
+                      "string",
+                      "null"
+                    ],
+                    "description": "The day type these dates run. Must name a Patterns entry. Null only when Suppress is true."
+                  },
+                  "Suppress": {
+                    "type": [
+                      "boolean",
+                      "null"
+                    ],
+                    "description": "True = no bulletins at all on these dates."
+                  },
+                  "Note": {
+                    "type": [
+                      "string",
+                      "null"
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "Coverage": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "description": "Broadcast coverage geometry. Latitude/Longitude/RadiusKm always carry the enclosing circle; ShapeType selects the real shape. A drawn shape's extent may span at most 5 degrees per side.",
+      "required": [
+        "Latitude",
+        "Longitude",
+        "RadiusKm"
+      ],
+      "properties": {
+        "Latitude": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "Longitude": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        },
+        "RadiusKm": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "ShapeType": {
+          "type": [
+            "string",
+            "null"
+          ],
+          "enum": [
+            "circle",
+            "bbox",
+            "corridor",
+            "polygon",
+            null
+          ],
+          "description": "Omitted/null = circle."
+        },
+        "West": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "South": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "East": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "North": {
+          "type": [
+            "number",
+            "null"
+          ]
+        },
+        "CorridorPoints": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "maxItems": 100,
+          "items": {
+            "$ref": "#/$defs/Point"
+          }
+        },
+        "CorridorRadiusMeters": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 1,
+          "maximum": 5000
+        },
+        "PolygonPoints": {
+          "type": [
+            "array",
+            "null"
+          ],
+          "maxItems": 100,
+          "items": {
+            "$ref": "#/$defs/Point"
+          }
+        },
+        "WeatherCoverage": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/SourceCoverage"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Optional circle used for HERE weather. Null/omitted inherits the outer coverage."
+        },
+        "FuelCoverage": {
+          "oneOf": [
+            {
+              "$ref": "#/$defs/SourceCoverage"
+            },
+            {
+              "type": "null"
+            }
+          ],
+          "description": "Optional circle used for HERE fuel. Null/omitted inherits the outer coverage."
+        }
+      },
+      "additionalProperties": false
+    },
+    "SourceCoverage": {
+      "allOf": [
+        {
+          "$ref": "#/$defs/Coverage"
+        },
+        {
+          "type": "object",
+          "properties": {
+            "ShapeType": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "circle",
+                null
+              ]
+            },
+            "WeatherCoverage": {
+              "type": "null"
+            },
+            "FuelCoverage": {
+              "type": "null"
+            }
+          }
+        }
+      ],
+      "description": "Circle-only coverage override for a single HERE weather or fuel location."
+    },
+    "Point": {
+      "type": "object",
+      "required": [
+        "Lat",
+        "Lng"
+      ],
+      "properties": {
+        "Lat": {
+          "type": "number",
+          "minimum": -90,
+          "maximum": 90
+        },
+        "Lng": {
+          "type": "number",
+          "minimum": -180,
+          "maximum": 180
+        }
+      },
+      "additionalProperties": false
+    }
+  }
+}

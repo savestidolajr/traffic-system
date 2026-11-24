@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.5176505+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.78945,145.10577\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "2A Finlayson St, Doncaster VIC 3108, Australia",
+          "id": "here:af:streetsection:bdQ4O9c-lA0DveYD-lmb5C:CggIBCCtoIboAxABGgIyQQ",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "2A Finlayson St, Doncaster VIC 3108, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Doncaster",
+            "street": "Finlayson St",
+            "postalCode": "3108",
+            "houseNumber": "2A"
+          },
+          "position": {
+            "lat": -37.78934,
+            "lng": 145.10537
+          },
+          "access": [
+            {
+              "lat": -37.78924,
+              "lng": 145.10547
+            }
+          ],
+          "distance": 35,
+          "mapView": {
+            "west": 145.1062,
+            "south": -37.7891,
+            "east": 145.11335,
+            "north": -37.78839
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

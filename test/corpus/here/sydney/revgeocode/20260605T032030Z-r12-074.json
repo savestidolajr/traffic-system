@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032030Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:31.7427578+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.85668,151.15206\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Broughton Ln, Drummoyne NSW 2047, Australia",
+          "id": "here:af:streetsection:cOvN2b6xdhQ91CSEEjdOwA",
+          "resultType": "street",
+          "address": {
+            "label": "Broughton Ln, Drummoyne NSW 2047, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Drummoyne",
+            "street": "Broughton Ln",
+            "postalCode": "2047"
+          },
+          "position": {
+            "lat": -33.85668,
+            "lng": 151.15206
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.15202,
+            "south": -33.85705,
+            "east": 151.15242,
+            "north": -33.85664
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

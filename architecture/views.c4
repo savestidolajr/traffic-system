@@ -1,0 +1,263 @@
+views {
+
+  // ══════════════════════════════════════════════════════════════
+  // System Context — for business owners at SG2
+  // ══════════════════════════════════════════════════════════════
+
+  view system-context {
+    title "System Context"
+    description "Actors, platform, and external integrations"
+
+    include *
+    // CI/CD delivery is its own view; keep the business-owner context clean
+    exclude devops
+
+    autoLayout TopBottom 110 90
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // Platform Architecture — SDD centrepiece
+  // ══════════════════════════════════════════════════════════════
+
+  view platform-architecture {
+    title "Platform Architecture"
+    description "Internal components, data flows, and security boundaries"
+
+    include
+      operator,
+      admin,
+      entra,
+      arn.dashboard,
+      arn.functions,
+      arn.logicApp,
+      arn.storageAccount,
+      arn.keyVault,
+      arn.aiServices,
+      arn.aiServices.rawModel,
+      arn.aiServices.fallbackModel,
+      arn.aiServices.foundryProject,
+      arn.aiServices.foundryProject.workflowAgents,
+      arn.aiServices.foundryProject.fallbackWorkflowAgents,
+      here,
+      elevenlabs,
+      teams,
+      zetta,
+      arn.playoutDrop
+
+    include arn.dashboard -> arn.functions
+    include arn.functions -> arn.storageAccount with { multiple true }
+    include arn.functions -> arn.keyVault
+    include arn.functions -> arn.aiServices.rawModel
+    include arn.functions -> arn.aiServices.foundryProject.workflowAgents
+    include arn.functions -> arn.aiServices.fallbackModel
+    include arn.functions -> arn.aiServices.foundryProject.fallbackWorkflowAgents
+    include arn.aiServices.foundryProject -> arn.appInsights
+    include arn.functions -> here
+    include arn.dashboard -> here
+    include arn.functions -> elevenlabs
+    include arn.functions -> arn.logicApp
+    include arn.logicApp -> teams
+    include arn.functions -> arn.playoutDrop
+    include zetta -> arn.playoutDrop
+    include entra -> arn.dashboard
+    include entra -> arn.functions
+    include operator -> arn.dashboard
+    include admin -> arn.dashboard
+    include arn.functions -> arn.appInsights
+
+    // Translucent system boundary so internal components stand out
+    style arn { opacity 25% }
+
+    // Pin actors at the start, terminal externals at the end
+    rank source { operator, admin, entra }
+    rank sink { zetta, teams, here, elevenlabs }
+
+    autoLayout TopBottom 140 90
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // Bulletin Lifecycle — step-by-step sequence
+  // ══════════════════════════════════════════════════════════════
+
+  dynamic view bulletin-lifecycle {
+    title "Bulletin Lifecycle"
+    description "End-to-end flow from scheduled trigger to playout delivery, target under 4 minutes"
+
+    // Pipeline phase (synchronous calls show the response)
+    arn.functions.poller -> arn.storageAccount.queues "Enqueue broadcast"
+    arn.storageAccount.queues -> arn.functions.orchestrator "Trigger pipeline"
+    arn.functions.orchestrator -> here "Fetch traffic"
+    arn.functions.orchestrator <- here "Incidents"
+    arn.functions.orchestrator -> arn.aiServices.rawModel "Generate script (raw model; default)"
+    arn.functions.orchestrator <- arn.aiServices.rawModel "Timed script (raw model)"
+    arn.functions.orchestrator -> arn.functions.contentSafety "Safety check"
+    arn.functions.orchestrator <- arn.functions.contentSafety "Cleared"
+    arn.functions.orchestrator -> elevenlabs "Synthesise audio"
+    arn.functions.orchestrator <- elevenlabs "Audio"
+    arn.functions.orchestrator -> arn.storageAccount.blobs "Save audio"
+
+    // Notification
+    arn.functions.orchestrator -> arn.logicApp "Notify"
+    arn.logicApp -> teams "Adaptive Card"
+
+    // Operator review
+    operator -> arn.dashboard "Review bulletin"
+    arn.dashboard -> arn.functions.jobService "Approve"
+
+    // Delivery
+    arn.functions.jobService -> arn.playoutDrop "Deliver to playout"
+    zetta -> arn.playoutDrop "Autoload, then delete"
+
+    autoLayout TopBottom
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // Security Architecture
+  // ══════════════════════════════════════════════════════════════
+
+  view security-overview {
+    title "Security Architecture"
+    description "Authentication, authorisation, secrets, network boundaries"
+
+    include
+      operator,
+      admin,
+      entra,
+      arn.dashboard,
+      arn.functions,
+      arn.functions.authMiddleware,
+      arn.functions.contentSafety,
+      arn.functions.httpApi,
+      arn.functions.jobService,
+      arn.keyVault,
+      arn.aiServices,
+      arn.aiServices.rawModel,
+      arn.aiServices.fallbackModel,
+      arn.aiServices.foundryProject.workflowAgents,
+      arn.aiServices.foundryProject.fallbackWorkflowAgents
+
+    // Auth chain — the primary story
+    include entra -> arn.dashboard
+    include entra -> arn.functions
+    include arn.functions.authMiddleware -> arn.functions.httpApi
+    include arn.functions.authMiddleware -> arn.functions.jobService
+    include operator -> arn.dashboard
+    include admin -> arn.dashboard
+    include arn.dashboard -> arn.functions.httpApi
+
+    // Secrets hub
+    include arn.functions -> arn.keyVault
+
+    // Managed Identity access paths
+    include arn.functions -> arn.storageAccount
+    include arn.functions -> arn.aiServices.rawModel
+    include arn.functions -> arn.aiServices.foundryProject.workflowAgents
+    include arn.functions -> arn.aiServices.fallbackModel
+    include arn.functions -> arn.aiServices.foundryProject.fallbackWorkflowAgents
+
+    exclude arn.functions.jobService -> arn.storageAccount
+
+    // Translucent boundaries so the auth components stand out
+    style arn, arn.functions { opacity 25% }
+    // De-emphasise the data services in the security story
+    style arn.aiServices, arn.storageAccount { color secondary }
+
+    autoLayout TopBottom 110 90
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // CI/CD Pipeline — Azure DevOps multi-stage delivery
+  // ══════════════════════════════════════════════════════════════
+
+  view cicd-pipeline {
+    title "CI/CD Pipeline"
+    description "Azure DevOps multi-stage delivery: parallel build+package, a blocking golden eval gate, Dev -> Test -> Prod promotion through a second eval gate, ADO environment approvals, scheduled drift watch, and failure notification"
+
+    include
+      devops,
+      devops.repo,
+      devops.buildTest,
+      devops.package,
+      devops.evalGateGolden,
+      devops.deployDev,
+      devops.deployTest,
+      devops.evalGateTest,
+      devops.deployProd,
+      devops.notifyOnFailure,
+      devops.evalDrift,
+      arn.functions,
+      arn.dashboard
+
+    // Translucent pipeline boundary so the stages stand out
+    style devops { opacity 25% }
+    style arn { opacity 25% }
+    // De-emphasise the deploy targets
+    style arn.functions, arn.dashboard { color secondary }
+
+    autoLayout TopBottom 90 80
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // Network & Deployment Topology — VNet, subnets, private endpoints
+  // ══════════════════════════════════════════════════════════════
+
+  deployment view network-topology {
+    title "Network & Deployment Topology"
+    description "Topology overview only: dedicated subscription, Azure Australia East region, platform VNet, compute subnet, private-endpoint data subnet, public SaaS dependencies, and ARN's separate Servers network. Detailed access paths are shown in the focused data-plane and delivery-path views."
+
+    include
+      platformSub, platformSub.**,
+      arnServers, arnServers.**,
+      saas, saas.**
+
+    // Keep the topology overview readable. Deployment views inherit every
+    // logical relationship between included instances, which turns the central
+    // Function App into a spider diagram. The focused companion views carry
+    // those data/delivery paths instead.
+    exclude * -> *
+
+    // Keep only the cross-boundary paths that explain the network posture.
+    // Detailed SaaS and private data-plane fan-out stays in the focused views.
+    include saas.entraNode -> platformSub.aue.dashboardNode
+    include platformSub.aue.dashboardNode -> platformSub.aue.platformVnet.snetFunc.funcNode
+    include platformSub.aue.platformVnet.snetFunc.funcNode -> platformSub.aue.platformVnet.snetPe.playoutDropNode
+    include arnServers.zettaNode -> platformSub.aue.platformVnet.snetPe.playoutDropNode
+
+    style platformSub.aue.platformVnet.snetFunc.* { color green }
+    style platformSub.aue.platformVnet.snetPe.* { color dataviolet }
+    style saas.* { color amber }
+    style saas.entraNode { color red }
+    style arnServers.* { color gray }
+
+    autoLayout TopBottom 160 110
+  }
+
+  // ── Focused: private data plane (Functions ↔ private endpoints) ──
+  deployment view data-plane {
+    title "Data Plane — private endpoints"
+    description "How the Function App reaches its data services privately: Storage, Key Vault, and AI Services via private endpoints in snet-pe. Nothing public."
+
+    include platformSub.aue.platformVnet.**
+
+    style platformSub.aue.platformVnet.snetFunc.* { color green }
+    style platformSub.aue.platformVnet.snetPe.* { color dataviolet }
+
+    autoLayout LeftRight 120 90
+  }
+
+  // ── Focused: delivery path (Functions → Zetta, via a drop account) ──
+  deployment view delivery-path {
+    title "Delivery Path — Functions to Zetta"
+    description "The Function App writes approved audio into an Azure-side drop account (managed identity, Files REST over OAuth on 443 — no SMB from our side and no on-prem network hop). Zetta's autoloader mounts the same Files share over AD DS-authenticated SMB with its own on-prem identity, ingests each file, deletes it, and stamps its own date and expiry. ARN confirmed 2026-07-30 that this share IS the production playout folder feeding the live KIIS 90s and Star 102.7 libraries, and witnessed both pilot stations ingest. There is ONE drop account (in the TEST storage RG): prod reaches it cross-RG over its own file private endpoint, while TEST writes to a separate share the autoloader does not watch, so UAT can never put audio on a station. BlobDrop (SFTP pull) and direct Smb to Zetta's own server stay implemented but unused."
+
+    include
+      platformSub.aue.platformVnet.snetFunc.funcNode,
+      platformSub.aue.platformVnet.snetPe.playoutDropNode,
+      arnServers, arnServers.zettaNode
+
+    style platformSub.aue.platformVnet.snetFunc.* { color green }
+    style arnServers.* { color gray }
+
+    autoLayout LeftRight 120 90
+  }
+}

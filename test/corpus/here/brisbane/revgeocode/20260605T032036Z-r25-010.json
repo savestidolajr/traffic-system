@@ -1,0 +1,55 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032036Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:37.3419745+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.6001,153.13366\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "9 Green Way, Rochedale South QLD 4123, Australia",
+          "id": "here:af:streetsection:GLYjZ4K51q3by7AfhWzVkA:CggIBCCJ-6yfARABGgE5",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "9 Green Way, Rochedale South QLD 4123, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Rochedale South",
+            "street": "Green Way",
+            "postalCode": "4123",
+            "houseNumber": "9"
+          },
+          "position": {
+            "lat": -27.60003,
+            "lng": 153.13342
+          },
+          "access": [
+            {
+              "lat": -27.60005,
+              "lng": 153.13367
+            }
+          ],
+          "distance": 6,
+          "mapView": {
+            "west": 153.13348,
+            "south": -27.60112,
+            "east": 153.13385,
+            "north": -27.59891
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

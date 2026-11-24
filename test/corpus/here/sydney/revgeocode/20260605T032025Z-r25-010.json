@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:28.8854687+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.84356,151.06954\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Grand Pde, Sydney Olympic Park NSW 2127, Australia",
+          "id": "here:af:streetsection:Qpn-bXGzE.7F71t-DYANpD",
+          "resultType": "street",
+          "address": {
+            "label": "Grand Pde, Sydney Olympic Park NSW 2127, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Sydney Olympic Park",
+            "street": "Grand Pde",
+            "postalCode": "2127"
+          },
+          "position": {
+            "lat": -33.84356,
+            "lng": 151.06954
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.06469,
+            "south": -33.84534,
+            "east": 151.07036,
+            "north": -33.84326
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.5865783+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86588,151.12082\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "William St, Five Dock NSW 2046, Australia",
+          "id": "here:af:streetsection:Z-hwDPUNYEQUxivULSc5kD",
+          "resultType": "street",
+          "address": {
+            "label": "William St, Five Dock NSW 2046, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Five Dock",
+            "street": "William St",
+            "postalCode": "2046"
+          },
+          "position": {
+            "lat": -33.86588,
+            "lng": 151.12082
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.11852,
+            "south": -33.8708,
+            "east": 151.12172,
+            "north": -33.86443
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

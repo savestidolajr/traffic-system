@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.6873096+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.04086,115.73906\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "North Mole Dr, North Fremantle WA 6159, Australia",
+          "id": "here:af:streetsection:EoWKAqTsl8I6Cm1iAAXCdC",
+          "resultType": "street",
+          "address": {
+            "label": "North Mole Dr, North Fremantle WA 6159, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "North Fremantle",
+            "street": "North Mole Dr",
+            "postalCode": "6159"
+          },
+          "position": {
+            "lat": -32.04086,
+            "lng": 115.73906
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.72452,
+            "south": -32.05385,
+            "east": 115.74049,
+            "north": -32.04075
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

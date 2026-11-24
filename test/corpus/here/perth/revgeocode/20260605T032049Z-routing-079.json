@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032049Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:50.5715671+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.03704,115.75386\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Queen Victoria St, North Fremantle WA 6159, Australia",
+          "id": "here:af:streetsection:MiHM5ZkF7RqPqeo-zrIo9A",
+          "resultType": "street",
+          "address": {
+            "label": "Queen Victoria St, North Fremantle WA 6159, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "North Fremantle",
+            "street": "Queen Victoria St",
+            "postalCode": "6159"
+          },
+          "position": {
+            "lat": -32.03704,
+            "lng": 115.75386
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.7531,
+            "south": -32.03944,
+            "east": 115.75429,
+            "north": -32.03355
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

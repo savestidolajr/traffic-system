@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:33.5733713+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.79648,145.11836\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Elgar Rd, Mont Albert North VIC 3129, Australia",
+          "id": "here:af:streetsection:158uTQ3m.Br3QG8n0yWWLC",
+          "resultType": "street",
+          "address": {
+            "label": "Elgar Rd, Mont Albert North VIC 3129, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Mont Albert North",
+            "street": "Elgar Rd",
+            "postalCode": "3129"
+          },
+          "position": {
+            "lat": -37.79648,
+            "lng": 145.11836
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 145.1158,
+            "south": -37.8126,
+            "east": 145.1187,
+            "north": -37.79609
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

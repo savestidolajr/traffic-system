@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.5175662+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.62582,145.02865\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Legend Dr, Epping VIC 3076, Australia",
+          "id": "here:af:streetsection:boN4iQonrCqUHh5V-C3bkC",
+          "resultType": "street",
+          "address": {
+            "label": "Legend Dr, Epping VIC 3076, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Epping",
+            "street": "Legend Dr",
+            "postalCode": "3076"
+          },
+          "position": {
+            "lat": -37.62582,
+            "lng": 145.02865
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 145.02865,
+            "south": -37.62606,
+            "east": 145.03055,
+            "north": -37.62575
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

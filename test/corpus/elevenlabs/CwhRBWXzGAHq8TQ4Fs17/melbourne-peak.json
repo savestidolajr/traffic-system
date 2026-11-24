@@ -1,0 +1,10 @@
+{
+  "slug": "melbourne-peak",
+  "voiceId": "CwhRBWXzGAHq8TQ4Fs17",
+  "modelId": "eleven_v3",
+  "outputFormat": "pcm_24000",
+  "durationSeconds": 25.993,
+  "charCount": 387,
+  "script": "Heads up, the biggest problem\u0027s the M80 \u2014 a southbound closure with a queue around seven hundred metres back, so heavy delays there. The Ring Road\u0027s crawling too, short queues building through the usual spots. If you\u0027re on the Princes Freeway it\u0027s slow going with congestion the whole way. And the Mordialloc Freeway is tied up with a breakdown, so a rough run across the main corridors.",
+  "audioFile": "melbourne-peak.wav"
+}

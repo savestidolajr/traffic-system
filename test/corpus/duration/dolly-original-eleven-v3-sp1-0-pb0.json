@@ -1,0 +1,8869 @@
+{
+ "voiceId": "081vkDcbgbIsSiFEYxT0",
+ "voiceName": "Dolly (original)",
+ "modelId": "eleven_v3",
+ "stability": 0.5,
+ "similarityBoost": 0.7,
+ "style": 0.0,
+ "speed": 1.0,
+ "paceBoostWpm": 0.0,
+ "total": 25,
+ "clean": 12,
+ "tokens": 1650,
+ "bulletins": [
+  {
+   "jobId": "19be05d7dffa43c1a6204cd1d5a1e2c8",
+   "market": "adelaide",
+   "targetSec": 30.0,
+   "naturalSec": 33.2,
+   "fittedSec": 30,
+   "stretch": 1.10667,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "James Congdon Drive is closed citybound between South Road and Sir Donald Bradman Drive. South Road's closed for construction between James Congdon Drive and Tennyson Street, with more roadworks at Sir Donald Bradman Drive. Barwell Avenue's also blocked citybound. Port Wakefield Road and Anzac Highway have slow patches at Martins Road and Morphett Road. There are works on Dry Creek and Portrush Road at Marian Road, with minor works also on Stuart Road and Dunstan Road at Cavan Road.",
+   "features": {
+    "syl": 118,
+    "words": 79,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "James",
+     "s": 0,
+     "e": 0.217
+    },
+    {
+     "w": "Congdon",
+     "s": 0.26,
+     "e": 0.651
+    },
+    {
+     "w": "Drive",
+     "s": 0.711,
+     "e": 1.012
+    },
+    {
+     "w": "is",
+     "s": 1.06,
+     "e": 1.157
+    },
+    {
+     "w": "closed",
+     "s": 1.229,
+     "e": 1.663
+    },
+    {
+     "w": "citybound",
+     "s": 1.735,
+     "e": 2.313
+    },
+    {
+     "w": "between",
+     "s": 2.358,
+     "e": 2.675
+    },
+    {
+     "w": "South",
+     "s": 2.735,
+     "e": 3.036
+    },
+    {
+     "w": "Road",
+     "s": 3.108,
+     "e": 3.398
+    },
+    {
+     "w": "and",
+     "s": 3.434,
+     "e": 3.542
+    },
+    {
+     "w": "Sir",
+     "s": 3.614,
+     "e": 3.831
+    },
+    {
+     "w": "Donald",
+     "s": 3.873,
+     "e": 4.12
+    },
+    {
+     "w": "Bradman",
+     "s": 4.178,
+     "e": 4.482
+    },
+    {
+     "w": "Drive.",
+     "s": 4.579,
+     "e": 5.458
+    },
+    {
+     "w": "South",
+     "s": 5.524,
+     "e": 5.855
+    },
+    {
+     "w": "Road's",
+     "s": 5.899,
+     "e": 6.145
+    },
+    {
+     "w": "closed",
+     "s": 6.186,
+     "e": 6.434
+    },
+    {
+     "w": "for",
+     "s": 6.47,
+     "e": 6.578
+    },
+    {
+     "w": "construction",
+     "s": 6.628,
+     "e": 7.229
+    },
+    {
+     "w": "between",
+     "s": 7.274,
+     "e": 7.59
+    },
+    {
+     "w": "James",
+     "s": 7.651,
+     "e": 7.952
+    },
+    {
+     "w": "Congdon",
+     "s": 7.995,
+     "e": 8.313
+    },
+    {
+     "w": "Drive",
+     "s": 8.374,
+     "e": 8.675
+    },
+    {
+     "w": "and",
+     "s": 8.729,
+     "e": 8.892
+    },
+    {
+     "w": "Tennyson",
+     "s": 8.964,
+     "e": 9.325
+    },
+    {
+     "w": "Street,",
+     "s": 9.377,
+     "e": 9.759
+    },
+    {
+     "w": "with",
+     "s": 9.846,
+     "e": 10.193
+    },
+    {
+     "w": "more",
+     "s": 10.236,
+     "e": 10.41
+    },
+    {
+     "w": "roadworks",
+     "s": 10.482,
+     "e": 10.988
+    },
+    {
+     "w": "at",
+     "s": 11.06,
+     "e": 11.205
+    },
+    {
+     "w": "Sir",
+     "s": 11.259,
+     "e": 11.422
+    },
+    {
+     "w": "Donald",
+     "s": 11.463,
+     "e": 11.711
+    },
+    {
+     "w": "Bradman",
+     "s": 11.769,
+     "e": 12.145
+    },
+    {
+     "w": "Drive.",
+     "s": 12.241,
+     "e": 12.795
+    },
+    {
+     "w": "Barwell",
+     "s": 12.994,
+     "e": 13.735
+    },
+    {
+     "w": "Avenue's",
+     "s": 13.797,
+     "e": 14.241
+    },
+    {
+     "w": "also",
+     "s": 14.313,
+     "e": 14.602
+    },
+    {
+     "w": "blocked",
+     "s": 14.639,
+     "e": 14.892
+    },
+    {
+     "w": "citybound.",
+     "s": 14.949,
+     "e": 15.94
+    },
+    {
+     "w": "Port",
+     "s": 16.005,
+     "e": 16.265
+    },
+    {
+     "w": "Wakefield",
+     "s": 16.323,
+     "e": 16.771
+    },
+    {
+     "w": "Road",
+     "s": 16.843,
+     "e": 17.133
+    },
+    {
+     "w": "and",
+     "s": 17.169,
+     "e": 17.277
+    },
+    {
+     "w": "Anzac",
+     "s": 17.374,
+     "e": 17.783
+    },
+    {
+     "w": "Highway",
+     "s": 17.837,
+     "e": 18.217
+    },
+    {
+     "w": "have",
+     "s": 18.26,
+     "e": 18.434
+    },
+    {
+     "w": "slow",
+     "s": 18.506,
+     "e": 18.795
+    },
+    {
+     "w": "patches",
+     "s": 18.858,
+     "e": 19.301
+    },
+    {
+     "w": "at",
+     "s": 19.373,
+     "e": 19.518
+    },
+    {
+     "w": "Martins",
+     "s": 19.572,
+     "e": 19.952
+    },
+    {
+     "w": "Road",
+     "s": 20.024,
+     "e": 20.313
+    },
+    {
+     "w": "and",
+     "s": 20.349,
+     "e": 20.458
+    },
+    {
+     "w": "Morphett",
+     "s": 20.512,
+     "e": 20.964
+    },
+    {
+     "w": "Road.",
+     "s": 21.036,
+     "e": 21.398
+    },
+    {
+     "w": "There",
+     "s": 21.518,
+     "e": 22.12
+    },
+    {
+     "w": "are",
+     "s": 22.157,
+     "e": 22.265
+    },
+    {
+     "w": "works",
+     "s": 22.326,
+     "e": 22.627
+    },
+    {
+     "w": "on",
+     "s": 22.651,
+     "e": 22.699
+    },
+    {
+     "w": "Dry",
+     "s": 22.789,
+     "e": 23.06
+    },
+    {
+     "w": "Creek",
+     "s": 23.121,
+     "e": 23.422
+    },
+    {
+     "w": "and",
+     "s": 23.458,
+     "e": 23.566
+    },
+    {
+     "w": "Portrush",
+     "s": 23.624,
+     "e": 24.072
+    },
+    {
+     "w": "Road",
+     "s": 24.13,
+     "e": 24.361
+    },
+    {
+     "w": "at",
+     "s": 24.409,
+     "e": 24.506
+    },
+    {
+     "w": "Marian",
+     "s": 24.568,
+     "e": 24.94
+    },
+    {
+     "w": "Road,",
+     "s": 25.012,
+     "e": 25.59
+    },
+    {
+     "w": "with",
+     "s": 25.634,
+     "e": 25.807
+    },
+    {
+     "w": "minor",
+     "s": 25.843,
+     "e": 26.024
+    },
+    {
+     "w": "works",
+     "s": 26.096,
+     "e": 26.458
+    },
+    {
+     "w": "also",
+     "s": 26.53,
+     "e": 26.819
+    },
+    {
+     "w": "on",
+     "s": 26.892,
+     "e": 27.036
+    },
+    {
+     "w": "Stuart",
+     "s": 27.098,
+     "e": 27.47
+    },
+    {
+     "w": "Road",
+     "s": 27.528,
+     "e": 27.759
+    },
+    {
+     "w": "and",
+     "s": 27.813,
+     "e": 27.976
+    },
+    {
+     "w": "Dunstan",
+     "s": 28.048,
+     "e": 28.482
+    },
+    {
+     "w": "Road",
+     "s": 28.54,
+     "e": 28.771
+    },
+    {
+     "w": "at",
+     "s": 28.819,
+     "e": 28.916
+    },
+    {
+     "w": "Cavan",
+     "s": 29.024,
+     "e": 29.422
+    },
+    {
+     "w": "Road.",
+     "s": 29.508,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "a41ed02d02384766a3ec07c4300336f9",
+   "market": "adelaide",
+   "targetSec": 30.0,
+   "naturalSec": 32.5,
+   "fittedSec": 30,
+   "stretch": 1.08333,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Salisbury Highway's closed citybound, while Deacon Avenue's closed at Sir Donald Bradman Drive. South Road's a slow patch at Sir Donald Bradman Drive, with Cross Road busy at East Avenue and Portrush Road feeling the pinch at Marian Road. There are also roadworks on Dry Creek, Marion Road at Raglan Avenue, Anzac Highway at Morphett Road, High Street at William Street and Stuart Road at Sir Donald Bradman Drive. Partly sunny, 13 degrees. Unleaded's a dollar ninety-three in Kilburn.",
+   "features": {
+    "syl": 120,
+    "words": 79,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 6,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "Salisbury",
+     "s": 0,
+     "e": 0.369
+    },
+    {
+     "w": "Highway's",
+     "s": 0.424,
+     "e": 0.959
+    },
+    {
+     "w": "closed",
+     "s": 1.023,
+     "e": 1.402
+    },
+    {
+     "w": "citybound,",
+     "s": 1.461,
+     "e": 2.066
+    },
+    {
+     "w": "while",
+     "s": 2.078,
+     "e": 2.14
+    },
+    {
+     "w": "Deacon",
+     "s": 2.189,
+     "e": 2.435
+    },
+    {
+     "w": "Avenue's",
+     "s": 2.488,
+     "e": 2.878
+    },
+    {
+     "w": "closed",
+     "s": 2.941,
+     "e": 3.321
+    },
+    {
+     "w": "at",
+     "s": 3.369,
+     "e": 3.468
+    },
+    {
+     "w": "Sir",
+     "s": 3.524,
+     "e": 3.69
+    },
+    {
+     "w": "Donald",
+     "s": 3.742,
+     "e": 4.058
+    },
+    {
+     "w": "Bradman",
+     "s": 4.118,
+     "e": 4.427
+    },
+    {
+     "w": "Drive.",
+     "s": 4.513,
+     "e": 5.018
+    },
+    {
+     "w": "South",
+     "s": 5.14,
+     "e": 5.756
+    },
+    {
+     "w": "Road's",
+     "s": 5.815,
+     "e": 6.125
+    },
+    {
+     "w": "a",
+     "s": 6.198,
+     "e": 6.272
+    },
+    {
+     "w": "slow",
+     "s": 6.316,
+     "e": 6.494
+    },
+    {
+     "w": "patch",
+     "s": 6.567,
+     "e": 6.936
+    },
+    {
+     "w": "at",
+     "s": 6.985,
+     "e": 7.084
+    },
+    {
+     "w": "Sir",
+     "s": 7.139,
+     "e": 7.305
+    },
+    {
+     "w": "Donald",
+     "s": 7.348,
+     "e": 7.6
+    },
+    {
+     "w": "Bradman",
+     "s": 7.659,
+     "e": 8.043
+    },
+    {
+     "w": "Drive,",
+     "s": 8.105,
+     "e": 8.634
+    },
+    {
+     "w": "with",
+     "s": 8.663,
+     "e": 8.781
+    },
+    {
+     "w": "Cross",
+     "s": 8.843,
+     "e": 9.15
+    },
+    {
+     "w": "Road",
+     "s": 9.209,
+     "e": 9.445
+    },
+    {
+     "w": "busy",
+     "s": 9.519,
+     "e": 9.814
+    },
+    {
+     "w": "at",
+     "s": 9.863,
+     "e": 9.962
+    },
+    {
+     "w": "East",
+     "s": 10.021,
+     "e": 10.257
+    },
+    {
+     "w": "Avenue",
+     "s": 10.321,
+     "e": 10.7
+    },
+    {
+     "w": "and",
+     "s": 10.792,
+     "e": 11.069
+    },
+    {
+     "w": "Portrush",
+     "s": 11.128,
+     "e": 11.585
+    },
+    {
+     "w": "Road",
+     "s": 11.644,
+     "e": 11.88
+    },
+    {
+     "w": "feeling",
+     "s": 11.926,
+     "e": 12.249
+    },
+    {
+     "w": "the",
+     "s": 12.268,
+     "e": 12.323
+    },
+    {
+     "w": "pinch",
+     "s": 12.385,
+     "e": 12.692
+    },
+    {
+     "w": "at",
+     "s": 12.741,
+     "e": 12.84
+    },
+    {
+     "w": "Marian",
+     "s": 12.903,
+     "e": 13.282
+    },
+    {
+     "w": "Road.",
+     "s": 13.356,
+     "e": 14.094
+    },
+    {
+     "w": "There",
+     "s": 14.156,
+     "e": 14.463
+    },
+    {
+     "w": "are",
+     "s": 14.481,
+     "e": 14.537
+    },
+    {
+     "w": "also",
+     "s": 14.611,
+     "e": 14.906
+    },
+    {
+     "w": "roadworks",
+     "s": 14.98,
+     "e": 15.496
+    },
+    {
+     "w": "on",
+     "s": 15.545,
+     "e": 15.644
+    },
+    {
+     "w": "Dry",
+     "s": 15.717,
+     "e": 15.939
+    },
+    {
+     "w": "Creek,",
+     "s": 16.001,
+     "e": 16.382
+    },
+    {
+     "w": "Marion",
+     "s": 16.487,
+     "e": 17.119
+    },
+    {
+     "w": "Road",
+     "s": 17.164,
+     "e": 17.341
+    },
+    {
+     "w": "at",
+     "s": 17.366,
+     "e": 17.415
+    },
+    {
+     "w": "Raglan",
+     "s": 17.488,
+     "e": 17.857
+    },
+    {
+     "w": "Avenue,",
+     "s": 17.921,
+     "e": 18.374
+    },
+    {
+     "w": "Anzac",
+     "s": 18.57,
+     "e": 19.186
+    },
+    {
+     "w": "Highway",
+     "s": 19.232,
+     "e": 19.555
+    },
+    {
+     "w": "at",
+     "s": 19.603,
+     "e": 19.702
+    },
+    {
+     "w": "Morphett",
+     "s": 19.776,
+     "e": 20.219
+    },
+    {
+     "w": "Road,",
+     "s": 20.292,
+     "e": 20.661
+    },
+    {
+     "w": "High",
+     "s": 20.75,
+     "e": 21.104
+    },
+    {
+     "w": "Street",
+     "s": 21.157,
+     "e": 21.473
+    },
+    {
+     "w": "at",
+     "s": 21.522,
+     "e": 21.621
+    },
+    {
+     "w": "William",
+     "s": 21.667,
+     "e": 21.99
+    },
+    {
+     "w": "Street",
+     "s": 22.042,
+     "e": 22.359
+    },
+    {
+     "w": "and",
+     "s": 22.414,
+     "e": 22.58
+    },
+    {
+     "w": "Stuart",
+     "s": 22.644,
+     "e": 23.023
+    },
+    {
+     "w": "Road",
+     "s": 23.082,
+     "e": 23.318
+    },
+    {
+     "w": "at",
+     "s": 23.367,
+     "e": 23.465
+    },
+    {
+     "w": "Sir",
+     "s": 23.539,
+     "e": 23.761
+    },
+    {
+     "w": "Donald",
+     "s": 23.803,
+     "e": 24.056
+    },
+    {
+     "w": "Bradman",
+     "s": 24.115,
+     "e": 24.499
+    },
+    {
+     "w": "Drive.",
+     "s": 24.572,
+     "e": 25.089
+    },
+    {
+     "w": "Partly",
+     "s": 25.192,
+     "e": 25.753
+    },
+    {
+     "w": "sunny,",
+     "s": 25.815,
+     "e": 26.269
+    },
+    {
+     "w": "13",
+     "s": 26.31,
+     "e": 26.638
+    },
+    {
+     "w": "degrees.",
+     "s": 26.712,
+     "e": 27.303
+    },
+    {
+     "w": "Unleaded's",
+     "s": 27.475,
+     "e": 28.114
+    },
+    {
+     "w": "a",
+     "s": 28.151,
+     "e": 28.188
+    },
+    {
+     "w": "dollar",
+     "s": 28.219,
+     "e": 28.409
+    },
+    {
+     "w": "ninety-three",
+     "s": 28.452,
+     "e": 29
+    },
+    {
+     "w": "in",
+     "s": 29.098,
+     "e": 29.295
+    },
+    {
+     "w": "Kilburn.",
+     "s": 29.369,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "0bb35fef24e842de8f0e8dba06b8e73c",
+   "market": "brisbane",
+   "targetSec": 30.0,
+   "naturalSec": 30.0,
+   "fittedSec": 30,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Bicentennial Road's closed. The Pacific Motorway into the city is about five minutes slower than usual, with construction at Beenleigh \u2014 traffic's under the pump. There's a breakdown on the Gateway Motorway between Sandgate Road and the Bruce Highway, plus works near Dohles Rocks Road. Passing clouds, sixteen degrees. [brightly] Unleaded's CHEAPEST at a dollar ninety-eight in Chermside West; diesel two forty-four in Grange! Please stay alert out there and stick to the speed limit.",
+   "features": {
+    "syl": 120,
+    "words": 74,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 3,
+    "dash": 1,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Bicentennial",
+     "s": 0,
+     "e": 0.716
+    },
+    {
+     "w": "Road's",
+     "s": 0.795,
+     "e": 1.193
+    },
+    {
+     "w": "closed.",
+     "s": 1.262,
+     "e": 1.75
+    },
+    {
+     "w": "The",
+     "s": 1.83,
+     "e": 2.068
+    },
+    {
+     "w": "Pacific",
+     "s": 2.128,
+     "e": 2.545
+    },
+    {
+     "w": "Motorway",
+     "s": 2.598,
+     "e": 3.102
+    },
+    {
+     "w": "into",
+     "s": 3.15,
+     "e": 3.341
+    },
+    {
+     "w": "the",
+     "s": 3.361,
+     "e": 3.42
+    },
+    {
+     "w": "city",
+     "s": 3.5,
+     "e": 3.818
+    },
+    {
+     "w": "is",
+     "s": 3.845,
+     "e": 3.898
+    },
+    {
+     "w": "about",
+     "s": 3.964,
+     "e": 4.295
+    },
+    {
+     "w": "five",
+     "s": 4.359,
+     "e": 4.614
+    },
+    {
+     "w": "minutes",
+     "s": 4.663,
+     "e": 5.011
+    },
+    {
+     "w": "slower",
+     "s": 5.057,
+     "e": 5.329
+    },
+    {
+     "w": "than",
+     "s": 5.361,
+     "e": 5.489
+    },
+    {
+     "w": "usual,",
+     "s": 5.568,
+     "e": 6.364
+    },
+    {
+     "w": "with",
+     "s": 6.395,
+     "e": 6.523
+    },
+    {
+     "w": "construction",
+     "s": 6.571,
+     "e": 7.159
+    },
+    {
+     "w": "at",
+     "s": 7.186,
+     "e": 7.239
+    },
+    {
+     "w": "Beenleigh",
+     "s": 7.302,
+     "e": 7.795
+    },
+    {
+     "w": "\u2014",
+     "s": 7.954,
+     "e": 8.113
+    },
+    {
+     "w": "traffic's",
+     "s": 8.163,
+     "e": 8.591
+    },
+    {
+     "w": "under",
+     "s": 8.643,
+     "e": 8.909
+    },
+    {
+     "w": "the",
+     "s": 8.929,
+     "e": 8.988
+    },
+    {
+     "w": "pump.",
+     "s": 9.084,
+     "e": 9.466
+    },
+    {
+     "w": "There's",
+     "s": 9.572,
+     "e": 10.182
+    },
+    {
+     "w": "a",
+     "s": 10.221,
+     "e": 10.261
+    },
+    {
+     "w": "breakdown",
+     "s": 10.309,
+     "e": 10.738
+    },
+    {
+     "w": "on",
+     "s": 10.791,
+     "e": 10.898
+    },
+    {
+     "w": "the",
+     "s": 10.917,
+     "e": 10.977
+    },
+    {
+     "w": "Gateway",
+     "s": 11.027,
+     "e": 11.375
+    },
+    {
+     "w": "Motorway",
+     "s": 11.441,
+     "e": 11.932
+    },
+    {
+     "w": "between",
+     "s": 11.991,
+     "e": 12.409
+    },
+    {
+     "w": "Sandgate",
+     "s": 12.488,
+     "e": 12.966
+    },
+    {
+     "w": "Road",
+     "s": 13.045,
+     "e": 13.363
+    },
+    {
+     "w": "and",
+     "s": 13.383,
+     "e": 13.443
+    },
+    {
+     "w": "the",
+     "s": 13.463,
+     "e": 13.522
+    },
+    {
+     "w": "Bruce",
+     "s": 13.589,
+     "e": 13.92
+    },
+    {
+     "w": "Highway,",
+     "s": 13.98,
+     "e": 14.795
+    },
+    {
+     "w": "plus",
+     "s": 14.875,
+     "e": 15.193
+    },
+    {
+     "w": "works",
+     "s": 15.272,
+     "e": 15.67
+    },
+    {
+     "w": "near",
+     "s": 15.702,
+     "e": 15.829
+    },
+    {
+     "w": "Dohles",
+     "s": 15.909,
+     "e": 16.147
+    },
+    {
+     "w": "Rocks",
+     "s": 16.2,
+     "e": 16.466
+    },
+    {
+     "w": "Road.",
+     "s": 16.561,
+     "e": 16.943
+    },
+    {
+     "w": "Passing",
+     "s": 17.042,
+     "e": 17.738
+    },
+    {
+     "w": "clouds,",
+     "s": 17.818,
+     "e": 18.375
+    },
+    {
+     "w": "sixteen",
+     "s": 18.444,
+     "e": 18.931
+    },
+    {
+     "w": "degrees.",
+     "s": 19.011,
+     "e": 20.203
+    },
+    {
+     "w": "Unleaded's",
+     "s": 20.319,
+     "e": 20.769
+    },
+    {
+     "w": "CHEAPEST",
+     "s": 20.809,
+     "e": 21.246
+    },
+    {
+     "w": "at",
+     "s": 21.299,
+     "e": 21.405
+    },
+    {
+     "w": "a",
+     "s": 21.445,
+     "e": 21.485
+    },
+    {
+     "w": "dollar",
+     "s": 21.519,
+     "e": 21.723
+    },
+    {
+     "w": "ninety-eight",
+     "s": 21.78,
+     "e": 22.28
+    },
+    {
+     "w": "in",
+     "s": 22.36,
+     "e": 22.519
+    },
+    {
+     "w": "Chermside",
+     "s": 22.572,
+     "e": 23.076
+    },
+    {
+     "w": "West;",
+     "s": 23.155,
+     "e": 23.553
+    },
+    {
+     "w": "diesel",
+     "s": 23.666,
+     "e": 24.348
+    },
+    {
+     "w": "two",
+     "s": 24.428,
+     "e": 24.667
+    },
+    {
+     "w": "forty-four",
+     "s": 24.706,
+     "e": 25.303
+    },
+    {
+     "w": "in",
+     "s": 25.409,
+     "e": 25.621
+    },
+    {
+     "w": "Grange!",
+     "s": 25.674,
+     "e": 26.417
+    },
+    {
+     "w": "Please",
+     "s": 26.714,
+     "e": 27.06
+    },
+    {
+     "w": "stay",
+     "s": 27.095,
+     "e": 27.233
+    },
+    {
+     "w": "alert",
+     "s": 27.29,
+     "e": 27.579
+    },
+    {
+     "w": "out",
+     "s": 27.644,
+     "e": 27.838
+    },
+    {
+     "w": "there",
+     "s": 27.881,
+     "e": 28.098
+    },
+    {
+     "w": "and",
+     "s": 28.163,
+     "e": 28.357
+    },
+    {
+     "w": "stick",
+     "s": 28.444,
+     "e": 28.876
+    },
+    {
+     "w": "to",
+     "s": 28.933,
+     "e": 29.049
+    },
+    {
+     "w": "the",
+     "s": 29.07,
+     "e": 29.135
+    },
+    {
+     "w": "speed",
+     "s": 29.193,
+     "e": 29.481
+    },
+    {
+     "w": "limit.",
+     "s": 29.538,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "b890c7c31eba439487d6e83229168a57",
+   "market": "brisbane",
+   "targetSec": 30.0,
+   "naturalSec": 30.5,
+   "fittedSec": 30,
+   "stretch": 1.01667,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "South Pine Road and Bicentennial Road are both closed. The Logan Motorway's slow-moving with minor delays. Boundary Road and Old Northern Road are a bit slow. Cruise Terminal Drive's closed outbound, and Herston Road's also closed outbound. Pacific Motorway M1 and Gateway Motorway are both moving nicely. Passing clouds, 13 degrees. Unleaded's cheapest at a dollar sixty-nine in Chermside West. Diesel's cheapest at two dollars nine in Kedron.",
+   "features": {
+    "syl": 115,
+    "words": 68,
+    "ellipsis": 0,
+    "period": 8,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "South",
+     "s": 0,
+     "e": 0.236
+    },
+    {
+     "w": "Pine",
+     "s": 0.299,
+     "e": 0.551
+    },
+    {
+     "w": "Road",
+     "s": 0.646,
+     "e": 1.024
+    },
+    {
+     "w": "and",
+     "s": 1.063,
+     "e": 1.181
+    },
+    {
+     "w": "Bicentennial",
+     "s": 1.26,
+     "e": 1.969
+    },
+    {
+     "w": "Road",
+     "s": 2.047,
+     "e": 2.362
+    },
+    {
+     "w": "are",
+     "s": 2.402,
+     "e": 2.52
+    },
+    {
+     "w": "both",
+     "s": 2.567,
+     "e": 2.756
+    },
+    {
+     "w": "closed.",
+     "s": 2.835,
+     "e": 3.386
+    },
+    {
+     "w": "The",
+     "s": 3.504,
+     "e": 3.858
+    },
+    {
+     "w": "Logan",
+     "s": 3.91,
+     "e": 4.173
+    },
+    {
+     "w": "Motorway's",
+     "s": 4.225,
+     "e": 4.724
+    },
+    {
+     "w": "slow-moving",
+     "s": 4.787,
+     "e": 5.433
+    },
+    {
+     "w": "with",
+     "s": 5.48,
+     "e": 5.669
+    },
+    {
+     "w": "minor",
+     "s": 5.721,
+     "e": 5.984
+    },
+    {
+     "w": "delays.",
+     "s": 6.074,
+     "e": 7.008
+    },
+    {
+     "w": "Boundary",
+     "s": 7.06,
+     "e": 7.48
+    },
+    {
+     "w": "Road",
+     "s": 7.543,
+     "e": 7.795
+    },
+    {
+     "w": "and",
+     "s": 7.874,
+     "e": 8.11
+    },
+    {
+     "w": "Old",
+     "s": 8.189,
+     "e": 8.425
+    },
+    {
+     "w": "Northern",
+     "s": 8.469,
+     "e": 8.819
+    },
+    {
+     "w": "Road",
+     "s": 8.882,
+     "e": 9.134
+    },
+    {
+     "w": "are",
+     "s": 9.173,
+     "e": 9.291
+    },
+    {
+     "w": "a",
+     "s": 9.331,
+     "e": 9.37
+    },
+    {
+     "w": "bit",
+     "s": 9.429,
+     "e": 9.606
+    },
+    {
+     "w": "slow.",
+     "s": 9.701,
+     "e": 10.236
+    },
+    {
+     "w": "Cruise",
+     "s": 10.36,
+     "e": 11.102
+    },
+    {
+     "w": "Terminal",
+     "s": 11.138,
+     "e": 11.417
+    },
+    {
+     "w": "Drive's",
+     "s": 11.483,
+     "e": 11.89
+    },
+    {
+     "w": "closed",
+     "s": 11.958,
+     "e": 12.362
+    },
+    {
+     "w": "outbound,",
+     "s": 12.423,
+     "e": 12.992
+    },
+    {
+     "w": "and",
+     "s": 13.031,
+     "e": 13.15
+    },
+    {
+     "w": "Herston",
+     "s": 13.228,
+     "e": 13.622
+    },
+    {
+     "w": "Road's",
+     "s": 13.685,
+     "e": 14.016
+    },
+    {
+     "w": "also",
+     "s": 14.094,
+     "e": 14.409
+    },
+    {
+     "w": "closed",
+     "s": 14.466,
+     "e": 14.803
+    },
+    {
+     "w": "outbound.",
+     "s": 14.873,
+     "e": 15.512
+    },
+    {
+     "w": "Pacific",
+     "s": 15.64,
+     "e": 16.535
+    },
+    {
+     "w": "Motorway",
+     "s": 16.588,
+     "e": 17.008
+    },
+    {
+     "w": "M",
+     "s": 17.126,
+     "e": 17.244
+    },
+    {
+     "w": "1",
+     "s": 17.323,
+     "e": 17.559
+    },
+    {
+     "w": "and",
+     "s": 17.618,
+     "e": 17.795
+    },
+    {
+     "w": "Gateway",
+     "s": 17.854,
+     "e": 18.268
+    },
+    {
+     "w": "Motorway",
+     "s": 18.32,
+     "e": 18.819
+    },
+    {
+     "w": "are",
+     "s": 18.858,
+     "e": 18.976
+    },
+    {
+     "w": "both",
+     "s": 19.039,
+     "e": 19.291
+    },
+    {
+     "w": "moving",
+     "s": 19.337,
+     "e": 19.606
+    },
+    {
+     "w": "nicely.",
+     "s": 19.685,
+     "e": 20.315
+    },
+    {
+     "w": "Passing",
+     "s": 20.453,
+     "e": 21.417
+    },
+    {
+     "w": "clouds,",
+     "s": 21.485,
+     "e": 21.969
+    },
+    {
+     "w": "13",
+     "s": 22.021,
+     "e": 22.441
+    },
+    {
+     "w": "degrees.",
+     "s": 22.52,
+     "e": 23.15
+    },
+    {
+     "w": "Unleaded's",
+     "s": 23.307,
+     "e": 23.937
+    },
+    {
+     "w": "cheapest",
+     "s": 23.989,
+     "e": 24.409
+    },
+    {
+     "w": "at",
+     "s": 24.462,
+     "e": 24.567
+    },
+    {
+     "w": "a",
+     "s": 24.606,
+     "e": 24.646
+    },
+    {
+     "w": "dollar",
+     "s": 24.679,
+     "e": 24.882
+    },
+    {
+     "w": "sixty-nine",
+     "s": 24.934,
+     "e": 25.512
+    },
+    {
+     "w": "in",
+     "s": 25.591,
+     "e": 25.748
+    },
+    {
+     "w": "Chermside",
+     "s": 25.8,
+     "e": 26.299
+    },
+    {
+     "w": "West.",
+     "s": 26.378,
+     "e": 26.772
+    },
+    {
+     "w": "Diesel's",
+     "s": 26.861,
+     "e": 27.48
+    },
+    {
+     "w": "cheapest",
+     "s": 27.541,
+     "e": 28.031
+    },
+    {
+     "w": "at",
+     "s": 28.11,
+     "e": 28.268
+    },
+    {
+     "w": "two",
+     "s": 28.287,
+     "e": 28.346
+    },
+    {
+     "w": "dollars",
+     "s": 28.386,
+     "e": 28.661
+    },
+    {
+     "w": "nine",
+     "s": 28.724,
+     "e": 28.976
+    },
+    {
+     "w": "in",
+     "s": 29.082,
+     "e": 29.291
+    },
+    {
+     "w": "Kedron.",
+     "s": 29.331,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "c9beb7c03ba64d3e9e9602da221de7bb",
+   "market": "brisbane",
+   "targetSec": 30.0,
+   "naturalSec": 31.0,
+   "fittedSec": 30,
+   "stretch": 1.03333,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Pacific Motorway into the city is running about nine minutes behind, with queues near Loganholme at Stanley Street. Hale Street northbound near Paddington's heavy at Caxton Street. There's a short queue past a broken-down vehicle on the M1 near Rochedale. The Gateway's got a lane blocked near Bald Hills, with an extended work zone. Weather's passing clouds, 18 degrees. [brightly]Unleaded's a dollar ninety-six in Windsor, diesel two dollars thirty-seven in Grange!",
+   "features": {
+    "syl": 117,
+    "words": 72,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.077
+    },
+    {
+     "w": "Pacific",
+     "s": 0.135,
+     "e": 0.541
+    },
+    {
+     "w": "Motorway",
+     "s": 0.606,
+     "e": 1.083
+    },
+    {
+     "w": "into",
+     "s": 1.145,
+     "e": 1.392
+    },
+    {
+     "w": "the",
+     "s": 1.412,
+     "e": 1.47
+    },
+    {
+     "w": "city",
+     "s": 1.562,
+     "e": 1.934
+    },
+    {
+     "w": "is",
+     "s": 2.011,
+     "e": 2.166
+    },
+    {
+     "w": "running",
+     "s": 2.204,
+     "e": 2.475
+    },
+    {
+     "w": "about",
+     "s": 2.526,
+     "e": 2.785
+    },
+    {
+     "w": "nine",
+     "s": 2.877,
+     "e": 3.249
+    },
+    {
+     "w": "minutes",
+     "s": 3.287,
+     "e": 3.558
+    },
+    {
+     "w": "behind,",
+     "s": 3.635,
+     "e": 4.409
+    },
+    {
+     "w": "with",
+     "s": 4.44,
+     "e": 4.564
+    },
+    {
+     "w": "queues",
+     "s": 4.63,
+     "e": 5.028
+    },
+    {
+     "w": "near",
+     "s": 5.059,
+     "e": 5.182
+    },
+    {
+     "w": "Loganholme",
+     "s": 5.26,
+     "e": 5.956
+    },
+    {
+     "w": "at",
+     "s": 6.007,
+     "e": 6.111
+    },
+    {
+     "w": "Stanley",
+     "s": 6.169,
+     "e": 6.575
+    },
+    {
+     "w": "Street.",
+     "s": 6.641,
+     "e": 7.039
+    },
+    {
+     "w": "Hale",
+     "s": 7.209,
+     "e": 7.89
+    },
+    {
+     "w": "Street",
+     "s": 7.934,
+     "e": 8.199
+    },
+    {
+     "w": "northbound",
+     "s": 8.264,
+     "e": 8.895
+    },
+    {
+     "w": "near",
+     "s": 8.941,
+     "e": 9.127
+    },
+    {
+     "w": "Paddington's",
+     "s": 9.185,
+     "e": 9.823
+    },
+    {
+     "w": "heavy",
+     "s": 9.901,
+     "e": 10.287
+    },
+    {
+     "w": "at",
+     "s": 10.339,
+     "e": 10.442
+    },
+    {
+     "w": "Caxton",
+     "s": 10.519,
+     "e": 10.906
+    },
+    {
+     "w": "Street.",
+     "s": 10.961,
+     "e": 11.448
+    },
+    {
+     "w": "There's",
+     "s": 11.537,
+     "e": 12.028
+    },
+    {
+     "w": "a",
+     "s": 12.047,
+     "e": 12.066
+    },
+    {
+     "w": "short",
+     "s": 12.118,
+     "e": 12.376
+    },
+    {
+     "w": "queue",
+     "s": 12.427,
+     "e": 12.685
+    },
+    {
+     "w": "past",
+     "s": 12.747,
+     "e": 12.995
+    },
+    {
+     "w": "a",
+     "s": 13.033,
+     "e": 13.072
+    },
+    {
+     "w": "broken-down",
+     "s": 13.127,
+     "e": 13.691
+    },
+    {
+     "w": "vehicle",
+     "s": 13.758,
+     "e": 14.232
+    },
+    {
+     "w": "on",
+     "s": 14.258,
+     "e": 14.309
+    },
+    {
+     "w": "the",
+     "s": 14.348,
+     "e": 14.464
+    },
+    {
+     "w": "M",
+     "s": 14.619,
+     "e": 14.774
+    },
+    {
+     "w": "1",
+     "s": 14.832,
+     "e": 15.006
+    },
+    {
+     "w": "near",
+     "s": 15.067,
+     "e": 15.315
+    },
+    {
+     "w": "Rochedale.",
+     "s": 15.366,
+     "e": 16.166
+    },
+    {
+     "w": "The",
+     "s": 16.379,
+     "e": 17.017
+    },
+    {
+     "w": "Gateway's",
+     "s": 17.075,
+     "e": 17.558
+    },
+    {
+     "w": "got",
+     "s": 17.597,
+     "e": 17.713
+    },
+    {
+     "w": "a",
+     "s": 17.79,
+     "e": 17.868
+    },
+    {
+     "w": "lane",
+     "s": 17.898,
+     "e": 18.022
+    },
+    {
+     "w": "blocked",
+     "s": 18.071,
+     "e": 18.409
+    },
+    {
+     "w": "near",
+     "s": 18.455,
+     "e": 18.641
+    },
+    {
+     "w": "Bald",
+     "s": 18.703,
+     "e": 18.95
+    },
+    {
+     "w": "Hills,",
+     "s": 19.015,
+     "e": 19.569
+    },
+    {
+     "w": "with",
+     "s": 19.6,
+     "e": 19.724
+    },
+    {
+     "w": "an",
+     "s": 19.75,
+     "e": 19.801
+    },
+    {
+     "w": "extended",
+     "s": 19.861,
+     "e": 20.343
+    },
+    {
+     "w": "work",
+     "s": 20.42,
+     "e": 20.729
+    },
+    {
+     "w": "zone.",
+     "s": 20.807,
+     "e": 21.271
+    },
+    {
+     "w": "Weather's",
+     "s": 21.377,
+     "e": 22.199
+    },
+    {
+     "w": "passing",
+     "s": 22.257,
+     "e": 22.663
+    },
+    {
+     "w": "clouds,",
+     "s": 22.74,
+     "e": 23.282
+    },
+    {
+     "w": "18",
+     "s": 23.333,
+     "e": 23.746
+    },
+    {
+     "w": "degrees.",
+     "s": 23.823,
+     "e": 24.442
+    },
+    {
+     "w": "Unleaded's",
+     "s": 24.868,
+     "e": 25.216
+    },
+    {
+     "w": "a",
+     "s": 25.254,
+     "e": 25.293
+    },
+    {
+     "w": "dollar",
+     "s": 25.337,
+     "e": 25.602
+    },
+    {
+     "w": "ninety-six",
+     "s": 25.647,
+     "e": 26.221
+    },
+    {
+     "w": "in",
+     "s": 26.272,
+     "e": 26.376
+    },
+    {
+     "w": "Windsor,",
+     "s": 26.434,
+     "e": 27.304
+    },
+    {
+     "w": "diesel",
+     "s": 27.359,
+     "e": 27.691
+    },
+    {
+     "w": "two",
+     "s": 27.768,
+     "e": 28
+    },
+    {
+     "w": "dollars",
+     "s": 28.039,
+     "e": 28.31
+    },
+    {
+     "w": "thirty-seven",
+     "s": 28.354,
+     "e": 29.006
+    },
+    {
+     "w": "in",
+     "s": 29.109,
+     "e": 29.315
+    },
+    {
+     "w": "Grange!",
+     "s": 29.392,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "d09ce906760843569029bb3cdfe6827d",
+   "market": "brisbane",
+   "targetSec": 30.0,
+   "naturalSec": 32.5,
+   "fittedSec": 30,
+   "stretch": 1.08333,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Pacific Motorway near Loganholme's under the pump with works at Beenleigh-Redland Bay Road. Milton Road near Toowong's got a lane blocked at Sylvan Road and is running a touch slow. Hale Street northbound near Paddington's heavy at Caxton Street. Bruce Highway northbound near Murrumba Downs's a bit behind near Anzac Avenue with roadworks. Ipswich Motorway's got a slight hold-up near Riverview. [brightly] Partly sunny, 20 degrees. Unleaded's a dollar ninety-six in Windsor, diesel two dollars thirty-seven in Grange.",
+   "features": {
+    "syl": 128,
+    "words": 78,
+    "ellipsis": 0,
+    "period": 7,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.074
+    },
+    {
+     "w": "Pacific",
+     "s": 0.12,
+     "e": 0.443
+    },
+    {
+     "w": "Motorway",
+     "s": 0.504,
+     "e": 0.959
+    },
+    {
+     "w": "near",
+     "s": 1.003,
+     "e": 1.18
+    },
+    {
+     "w": "Loganholme's",
+     "s": 1.254,
+     "e": 1.918
+    },
+    {
+     "w": "under",
+     "s": 1.955,
+     "e": 2.139
+    },
+    {
+     "w": "the",
+     "s": 2.158,
+     "e": 2.213
+    },
+    {
+     "w": "pump",
+     "s": 2.287,
+     "e": 2.582
+    },
+    {
+     "w": "with",
+     "s": 2.685,
+     "e": 3.098
+    },
+    {
+     "w": "works",
+     "s": 3.16,
+     "e": 3.467
+    },
+    {
+     "w": "at",
+     "s": 3.492,
+     "e": 3.541
+    },
+    {
+     "w": "Beenleigh-Redland",
+     "s": 3.6,
+     "e": 4.426
+    },
+    {
+     "w": "Bay",
+     "s": 4.463,
+     "e": 4.573
+    },
+    {
+     "w": "Road.",
+     "s": 4.662,
+     "e": 5.09
+    },
+    {
+     "w": "Milton",
+     "s": 5.206,
+     "e": 5.901
+    },
+    {
+     "w": "Road",
+     "s": 5.945,
+     "e": 6.122
+    },
+    {
+     "w": "near",
+     "s": 6.167,
+     "e": 6.344
+    },
+    {
+     "w": "Toowong's",
+     "s": 6.369,
+     "e": 6.786
+    },
+    {
+     "w": "got",
+     "s": 6.823,
+     "e": 6.934
+    },
+    {
+     "w": "a",
+     "s": 7.008,
+     "e": 7.081
+    },
+    {
+     "w": "lane",
+     "s": 7.111,
+     "e": 7.229
+    },
+    {
+     "w": "blocked",
+     "s": 7.275,
+     "e": 7.598
+    },
+    {
+     "w": "at",
+     "s": 7.647,
+     "e": 7.745
+    },
+    {
+     "w": "Sylvan",
+     "s": 7.804,
+     "e": 8.188
+    },
+    {
+     "w": "Road",
+     "s": 8.247,
+     "e": 8.483
+    },
+    {
+     "w": "and",
+     "s": 8.52,
+     "e": 8.63
+    },
+    {
+     "w": "is",
+     "s": 8.679,
+     "e": 8.778
+    },
+    {
+     "w": "running",
+     "s": 8.806,
+     "e": 8.999
+    },
+    {
+     "w": "a",
+     "s": 9.036,
+     "e": 9.073
+    },
+    {
+     "w": "touch",
+     "s": 9.122,
+     "e": 9.368
+    },
+    {
+     "w": "slow.",
+     "s": 9.442,
+     "e": 10.18
+    },
+    {
+     "w": "Hale",
+     "s": 10.268,
+     "e": 10.622
+    },
+    {
+     "w": "Street",
+     "s": 10.665,
+     "e": 10.917
+    },
+    {
+     "w": "northbound",
+     "s": 10.979,
+     "e": 11.507
+    },
+    {
+     "w": "near",
+     "s": 11.537,
+     "e": 11.655
+    },
+    {
+     "w": "Paddington's",
+     "s": 11.701,
+     "e": 12.245
+    },
+    {
+     "w": "heavy",
+     "s": 12.294,
+     "e": 12.54
+    },
+    {
+     "w": "at",
+     "s": 12.589,
+     "e": 12.688
+    },
+    {
+     "w": "Caxton",
+     "s": 12.761,
+     "e": 13.204
+    },
+    {
+     "w": "Street.",
+     "s": 13.256,
+     "e": 13.647
+    },
+    {
+     "w": "Bruce",
+     "s": 13.794,
+     "e": 14.532
+    },
+    {
+     "w": "Highway",
+     "s": 14.578,
+     "e": 14.901
+    },
+    {
+     "w": "northbound",
+     "s": 14.962,
+     "e": 15.491
+    },
+    {
+     "w": "near",
+     "s": 15.52,
+     "e": 15.638
+    },
+    {
+     "w": "Murrumba",
+     "s": 15.675,
+     "e": 16.081
+    },
+    {
+     "w": "Downs's",
+     "s": 16.143,
+     "e": 16.597
+    },
+    {
+     "w": "a",
+     "s": 16.634,
+     "e": 16.671
+    },
+    {
+     "w": "bit",
+     "s": 16.726,
+     "e": 16.892
+    },
+    {
+     "w": "behind",
+     "s": 16.956,
+     "e": 17.335
+    },
+    {
+     "w": "near",
+     "s": 17.379,
+     "e": 17.556
+    },
+    {
+     "w": "Anzac",
+     "s": 17.63,
+     "e": 17.999
+    },
+    {
+     "w": "Avenue",
+     "s": 18.051,
+     "e": 18.367
+    },
+    {
+     "w": "with",
+     "s": 18.397,
+     "e": 18.515
+    },
+    {
+     "w": "roadworks.",
+     "s": 18.574,
+     "e": 19.253
+    },
+    {
+     "w": "Ipswich",
+     "s": 19.492,
+     "e": 20.359
+    },
+    {
+     "w": "Motorway's",
+     "s": 20.408,
+     "e": 20.875
+    },
+    {
+     "w": "got",
+     "s": 20.894,
+     "e": 20.949
+    },
+    {
+     "w": "a",
+     "s": 21.023,
+     "e": 21.097
+    },
+    {
+     "w": "slight",
+     "s": 21.139,
+     "e": 21.392
+    },
+    {
+     "w": "hold-up",
+     "s": 21.436,
+     "e": 21.761
+    },
+    {
+     "w": "near",
+     "s": 21.805,
+     "e": 21.982
+    },
+    {
+     "w": "Riverview.",
+     "s": 22.019,
+     "e": 22.572
+    },
+    {
+     "w": "Partly",
+     "s": 23.404,
+     "e": 23.61
+    },
+    {
+     "w": "sunny,",
+     "s": 23.672,
+     "e": 24.2
+    },
+    {
+     "w": "20",
+     "s": 24.232,
+     "e": 24.422
+    },
+    {
+     "w": "degrees.",
+     "s": 24.495,
+     "e": 25.307
+    },
+    {
+     "w": "Unleaded's",
+     "s": 25.406,
+     "e": 25.897
+    },
+    {
+     "w": "a",
+     "s": 25.934,
+     "e": 25.971
+    },
+    {
+     "w": "dollar",
+     "s": 26.002,
+     "e": 26.192
+    },
+    {
+     "w": "ninety-six",
+     "s": 26.234,
+     "e": 26.782
+    },
+    {
+     "w": "in",
+     "s": 26.831,
+     "e": 26.93
+    },
+    {
+     "w": "Windsor,",
+     "s": 26.985,
+     "e": 27.741
+    },
+    {
+     "w": "diesel",
+     "s": 27.794,
+     "e": 28.11
+    },
+    {
+     "w": "two",
+     "s": 28.165,
+     "e": 28.331
+    },
+    {
+     "w": "dollars",
+     "s": 28.377,
+     "e": 28.7
+    },
+    {
+     "w": "thirty-seven",
+     "s": 28.731,
+     "e": 29.216
+    },
+    {
+     "w": "in",
+     "s": 29.29,
+     "e": 29.438
+    },
+    {
+     "w": "Grange.",
+     "s": 29.487,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "8d8e5ec1680b48488028d30fc91ed43b",
+   "market": "darwin",
+   "targetSec": 22.0,
+   "naturalSec": 24.1,
+   "fittedSec": 22,
+   "stretch": 1.09545,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Fog Bay Road's slow going eastbound, with construction across about fifteen kays between Charles Point Road and Railway Alice Springs. Cox Peninsula Road's got construction across about fifteen kays citybound from Railway Alice Springs. McMillans Road's a bit slow westbound with construction. [brightly] Unleaded's CHEAPEST at two-oh-four in Belyuen, diesel two-forty-three there too!",
+   "features": {
+    "syl": 88,
+    "words": 52,
+    "ellipsis": 0,
+    "period": 4,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Fog",
+     "s": 0,
+     "e": 0.219
+    },
+    {
+     "w": "Bay",
+     "s": 0.256,
+     "e": 0.366
+    },
+    {
+     "w": "Road's",
+     "s": 0.424,
+     "e": 0.804
+    },
+    {
+     "w": "slow",
+     "s": 0.834,
+     "e": 0.95
+    },
+    {
+     "w": "going",
+     "s": 1.012,
+     "e": 1.316
+    },
+    {
+     "w": "eastbound,",
+     "s": 1.389,
+     "e": 2.12
+    },
+    {
+     "w": "with",
+     "s": 2.15,
+     "e": 2.267
+    },
+    {
+     "w": "construction",
+     "s": 2.306,
+     "e": 2.778
+    },
+    {
+     "w": "across",
+     "s": 2.83,
+     "e": 3.144
+    },
+    {
+     "w": "about",
+     "s": 3.192,
+     "e": 3.436
+    },
+    {
+     "w": "fifteen",
+     "s": 3.491,
+     "e": 3.875
+    },
+    {
+     "w": "kays",
+     "s": 3.985,
+     "e": 4.387
+    },
+    {
+     "w": "between",
+     "s": 4.423,
+     "e": 4.679
+    },
+    {
+     "w": "Charles",
+     "s": 4.716,
+     "e": 4.972
+    },
+    {
+     "w": "Point",
+     "s": 5.02,
+     "e": 5.264
+    },
+    {
+     "w": "Road",
+     "s": 5.323,
+     "e": 5.557
+    },
+    {
+     "w": "and",
+     "s": 5.648,
+     "e": 5.922
+    },
+    {
+     "w": "Railway",
+     "s": 5.968,
+     "e": 6.288
+    },
+    {
+     "w": "Alice",
+     "s": 6.349,
+     "e": 6.653
+    },
+    {
+     "w": "Springs.",
+     "s": 6.717,
+     "e": 7.312
+    },
+    {
+     "w": "Cox",
+     "s": 7.494,
+     "e": 8.043
+    },
+    {
+     "w": "Peninsula",
+     "s": 8.087,
+     "e": 8.481
+    },
+    {
+     "w": "Road's",
+     "s": 8.54,
+     "e": 8.847
+    },
+    {
+     "w": "got",
+     "s": 8.865,
+     "e": 8.92
+    },
+    {
+     "w": "construction",
+     "s": 8.965,
+     "e": 9.505
+    },
+    {
+     "w": "across",
+     "s": 9.547,
+     "e": 9.797
+    },
+    {
+     "w": "about",
+     "s": 9.834,
+     "e": 10.017
+    },
+    {
+     "w": "fifteen",
+     "s": 10.072,
+     "e": 10.455
+    },
+    {
+     "w": "kays",
+     "s": 10.565,
+     "e": 10.894
+    },
+    {
+     "w": "citybound",
+     "s": 10.953,
+     "e": 11.406
+    },
+    {
+     "w": "from",
+     "s": 11.494,
+     "e": 11.845
+    },
+    {
+     "w": "Railway",
+     "s": 11.9,
+     "e": 12.283
+    },
+    {
+     "w": "Alice",
+     "s": 12.345,
+     "e": 12.649
+    },
+    {
+     "w": "Springs.",
+     "s": 12.713,
+     "e": 13.636
+    },
+    {
+     "w": "McMillans",
+     "s": 13.755,
+     "e": 14.404
+    },
+    {
+     "w": "Road's",
+     "s": 14.462,
+     "e": 14.733
+    },
+    {
+     "w": "a",
+     "s": 14.751,
+     "e": 14.769
+    },
+    {
+     "w": "bit",
+     "s": 14.824,
+     "e": 14.989
+    },
+    {
+     "w": "slow",
+     "s": 15.047,
+     "e": 15.281
+    },
+    {
+     "w": "westbound",
+     "s": 15.34,
+     "e": 15.793
+    },
+    {
+     "w": "with",
+     "s": 15.822,
+     "e": 15.939
+    },
+    {
+     "w": "construction.",
+     "s": 15.996,
+     "e": 17.036
+    },
+    {
+     "w": "Unleaded's",
+     "s": 17.456,
+     "e": 17.847
+    },
+    {
+     "w": "CHEAPEST",
+     "s": 17.901,
+     "e": 18.431
+    },
+    {
+     "w": "at",
+     "s": 18.48,
+     "e": 18.578
+    },
+    {
+     "w": "two-oh-four",
+     "s": 18.614,
+     "e": 19.089
+    },
+    {
+     "w": "in",
+     "s": 19.163,
+     "e": 19.309
+    },
+    {
+     "w": "Belyuen,",
+     "s": 19.345,
+     "e": 19.894
+    },
+    {
+     "w": "diesel",
+     "s": 19.977,
+     "e": 20.479
+    },
+    {
+     "w": "two-forty-three",
+     "s": 20.534,
+     "e": 21.21
+    },
+    {
+     "w": "there",
+     "s": 21.258,
+     "e": 21.502
+    },
+    {
+     "w": "too!",
+     "s": 21.594,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "07fc3761503f4272ab8f6a745c68e196",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 22.4,
+   "fittedSec": 22,
+   "stretch": 1.01818,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Looking across Sydney. The Warringah Freeway's CLOSED southbound at the Alfred Street North ramp, and again at Brook Street. Mitchell Road's closed northbound between Sydney Park Road and Maddox Street. The South Western Motorway's heavy at Henry Lawson Drive. [brightly] Weather's passing clouds, fourteen degrees! That's KIIS traffic and weather together.",
+   "features": {
+    "syl": 80,
+    "words": 50,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Looking",
+     "s": 0,
+     "e": 0.236
+    },
+    {
+     "w": "across",
+     "s": 0.292,
+     "e": 0.629
+    },
+    {
+     "w": "Sydney.",
+     "s": 0.685,
+     "e": 1.1
+    },
+    {
+     "w": "The",
+     "s": 1.179,
+     "e": 1.415
+    },
+    {
+     "w": "Warringah",
+     "s": 1.494,
+     "e": 1.965
+    },
+    {
+     "w": "Freeway's",
+     "s": 2.024,
+     "e": 2.515
+    },
+    {
+     "w": "CLOSED",
+     "s": 2.594,
+     "e": 3.066
+    },
+    {
+     "w": "southbound",
+     "s": 3.144,
+     "e": 3.852
+    },
+    {
+     "w": "at",
+     "s": 3.878,
+     "e": 3.93
+    },
+    {
+     "w": "the",
+     "s": 3.97,
+     "e": 4.088
+    },
+    {
+     "w": "Alfred",
+     "s": 4.144,
+     "e": 4.481
+    },
+    {
+     "w": "Street",
+     "s": 4.537,
+     "e": 4.874
+    },
+    {
+     "w": "North",
+     "s": 4.926,
+     "e": 5.188
+    },
+    {
+     "w": "ramp,",
+     "s": 5.267,
+     "e": 5.895
+    },
+    {
+     "w": "and",
+     "s": 5.935,
+     "e": 6.053
+    },
+    {
+     "w": "again",
+     "s": 6.105,
+     "e": 6.367
+    },
+    {
+     "w": "at",
+     "s": 6.419,
+     "e": 6.524
+    },
+    {
+     "w": "Brook",
+     "s": 6.576,
+     "e": 6.839
+    },
+    {
+     "w": "Street.",
+     "s": 6.907,
+     "e": 7.389
+    },
+    {
+     "w": "Mitchell",
+     "s": 7.468,
+     "e": 8.096
+    },
+    {
+     "w": "Road's",
+     "s": 8.159,
+     "e": 8.489
+    },
+    {
+     "w": "closed",
+     "s": 8.535,
+     "e": 8.804
+    },
+    {
+     "w": "northbound",
+     "s": 8.87,
+     "e": 9.433
+    },
+    {
+     "w": "between",
+     "s": 9.482,
+     "e": 9.826
+    },
+    {
+     "w": "Sydney",
+     "s": 9.871,
+     "e": 10.14
+    },
+    {
+     "w": "Park",
+     "s": 10.203,
+     "e": 10.455
+    },
+    {
+     "w": "Road",
+     "s": 10.533,
+     "e": 10.848
+    },
+    {
+     "w": "and",
+     "s": 10.867,
+     "e": 10.926
+    },
+    {
+     "w": "Maddox",
+     "s": 10.973,
+     "e": 11.319
+    },
+    {
+     "w": "Street.",
+     "s": 11.387,
+     "e": 11.87
+    },
+    {
+     "w": "The",
+     "s": 12.027,
+     "e": 12.498
+    },
+    {
+     "w": "South",
+     "s": 12.538,
+     "e": 12.734
+    },
+    {
+     "w": "Western",
+     "s": 12.783,
+     "e": 13.127
+    },
+    {
+     "w": "Motorway's",
+     "s": 13.179,
+     "e": 13.677
+    },
+    {
+     "w": "heavy",
+     "s": 13.73,
+     "e": 13.992
+    },
+    {
+     "w": "at",
+     "s": 14.044,
+     "e": 14.149
+    },
+    {
+     "w": "Henry",
+     "s": 14.215,
+     "e": 14.542
+    },
+    {
+     "w": "Lawson",
+     "s": 14.61,
+     "e": 15.014
+    },
+    {
+     "w": "Drive.",
+     "s": 15.105,
+     "e": 15.643
+    },
+    {
+     "w": "Weather's",
+     "s": 16.316,
+     "e": 16.429
+    },
+    {
+     "w": "passing",
+     "s": 16.488,
+     "e": 16.9
+    },
+    {
+     "w": "clouds,",
+     "s": 16.979,
+     "e": 17.608
+    },
+    {
+     "w": "fourteen",
+     "s": 17.651,
+     "e": 18.001
+    },
+    {
+     "w": "degrees!",
+     "s": 18.089,
+     "e": 18.787
+    },
+    {
+     "w": "That's",
+     "s": 18.913,
+     "e": 19.534
+    },
+    {
+     "w": "KIIS",
+     "s": 19.593,
+     "e": 20.28
+    },
+    {
+     "w": "traffic",
+     "s": 20.33,
+     "e": 20.673
+    },
+    {
+     "w": "and",
+     "s": 20.732,
+     "e": 20.909
+    },
+    {
+     "w": "weather",
+     "s": 20.949,
+     "e": 21.224
+    },
+    {
+     "w": "together.",
+     "s": 21.293,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "4cdf1b45e8a04565b506e68c8beab12a",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 24.0,
+   "fittedSec": 22,
+   "stretch": 1.09091,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Henry Lawson Drive's at a standstill. The Warringah Freeway's closed citybound at Brook Street for construction. South Western Motorway's heavy at Heathcote Road with moderate delays. Paddys Market Sydney, Arthur Street and Parramatta Road have minor delays. Passing clouds, 14 degrees. Unleaded's cheapest at a dollar ninety-two in Merrylands West.",
+   "features": {
+    "syl": 90,
+    "words": 50,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "Henry",
+     "s": 0,
+     "e": 0.22
+    },
+    {
+     "w": "Lawson",
+     "s": 0.272,
+     "e": 0.587
+    },
+    {
+     "w": "Drive's",
+     "s": 0.66,
+     "e": 1.1
+    },
+    {
+     "w": "at",
+     "s": 1.173,
+     "e": 1.32
+    },
+    {
+     "w": "a",
+     "s": 1.43,
+     "e": 1.54
+    },
+    {
+     "w": "standstill.",
+     "s": 1.577,
+     "e": 2.347
+    },
+    {
+     "w": "The",
+     "s": 2.402,
+     "e": 2.567
+    },
+    {
+     "w": "Warringah",
+     "s": 2.603,
+     "e": 2.933
+    },
+    {
+     "w": "Freeway's",
+     "s": 2.97,
+     "e": 3.447
+    },
+    {
+     "w": "closed",
+     "s": 3.51,
+     "e": 3.887
+    },
+    {
+     "w": "citybound",
+     "s": 3.96,
+     "e": 4.547
+    },
+    {
+     "w": "at",
+     "s": 4.595,
+     "e": 4.693
+    },
+    {
+     "w": "Brook",
+     "s": 4.742,
+     "e": 4.987
+    },
+    {
+     "w": "Street",
+     "s": 5.029,
+     "e": 5.28
+    },
+    {
+     "w": "for",
+     "s": 5.317,
+     "e": 5.427
+    },
+    {
+     "w": "construction.",
+     "s": 5.484,
+     "e": 6.233
+    },
+    {
+     "w": "South",
+     "s": 6.368,
+     "e": 7.04
+    },
+    {
+     "w": "Western",
+     "s": 7.077,
+     "e": 7.333
+    },
+    {
+     "w": "Motorway's",
+     "s": 7.395,
+     "e": 7.92
+    },
+    {
+     "w": "heavy",
+     "s": 7.981,
+     "e": 8.287
+    },
+    {
+     "w": "at",
+     "s": 8.335,
+     "e": 8.433
+    },
+    {
+     "w": "Heathcote",
+     "s": 8.482,
+     "e": 8.947
+    },
+    {
+     "w": "Road",
+     "s": 9.02,
+     "e": 9.313
+    },
+    {
+     "w": "with",
+     "s": 9.372,
+     "e": 9.607
+    },
+    {
+     "w": "moderate",
+     "s": 9.647,
+     "e": 9.973
+    },
+    {
+     "w": "delays.",
+     "s": 10.057,
+     "e": 10.633
+    },
+    {
+     "w": "Paddys",
+     "s": 10.89,
+     "e": 11.367
+    },
+    {
+     "w": "Market",
+     "s": 11.419,
+     "e": 11.733
+    },
+    {
+     "w": "Sydney,",
+     "s": 11.797,
+     "e": 12.247
+    },
+    {
+     "w": "Arthur",
+     "s": 12.299,
+     "e": 12.613
+    },
+    {
+     "w": "Street",
+     "s": 12.677,
+     "e": 13.053
+    },
+    {
+     "w": "and",
+     "s": 13.09,
+     "e": 13.2
+    },
+    {
+     "w": "Parramatta",
+     "s": 13.259,
+     "e": 13.787
+    },
+    {
+     "w": "Road",
+     "s": 13.845,
+     "e": 14.08
+    },
+    {
+     "w": "have",
+     "s": 14.183,
+     "e": 14.593
+    },
+    {
+     "w": "minor",
+     "s": 14.642,
+     "e": 14.887
+    },
+    {
+     "w": "delays.",
+     "s": 14.96,
+     "e": 15.473
+    },
+    {
+     "w": "Passing",
+     "s": 15.583,
+     "e": 16.353
+    },
+    {
+     "w": "clouds,",
+     "s": 16.427,
+     "e": 17.013
+    },
+    {
+     "w": "14",
+     "s": 17.054,
+     "e": 17.38
+    },
+    {
+     "w": "degrees.",
+     "s": 17.453,
+     "e": 18.04
+    },
+    {
+     "w": "Unleaded's",
+     "s": 18.211,
+     "e": 18.847
+    },
+    {
+     "w": "cheapest",
+     "s": 18.912,
+     "e": 19.433
+    },
+    {
+     "w": "at",
+     "s": 19.458,
+     "e": 19.507
+    },
+    {
+     "w": "a",
+     "s": 19.543,
+     "e": 19.58
+    },
+    {
+     "w": "dollar",
+     "s": 19.611,
+     "e": 19.8
+    },
+    {
+     "w": "ninety-two",
+     "s": 19.852,
+     "e": 20.46
+    },
+    {
+     "w": "in",
+     "s": 20.582,
+     "e": 20.827
+    },
+    {
+     "w": "Merrylands",
+     "s": 20.875,
+     "e": 21.34
+    },
+    {
+     "w": "West.",
+     "s": 21.443,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "50fd80e3216f45f780c677f701655583",
+   "market": "sydney",
+   "targetSec": 30.0,
+   "naturalSec": 30.3,
+   "fittedSec": 30,
+   "stretch": 1.01,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Warringah Freeway's closed citybound at Brook Street, with construction on the ramp to Falcon Street as well. Rooty Hill Road and Schofields Road are both at a standstill. Parramatta Road's stopped solid. Camden Valley Way's got works and minor delays at Beech Road, while Narellan, Showground and Wallgrove Roads are a bit slow. Construction affects about two kays on the Sydney Harbour Tunnel southbound from the toll plaza. Sunny, 10 degrees. Unleaded's cheapest at a dollar seventy in Auburn.",
+   "features": {
+    "syl": 123,
+    "words": 80,
+    "ellipsis": 0,
+    "period": 7,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.079
+    },
+    {
+     "w": "Warringah",
+     "s": 0.119,
+     "e": 0.554
+    },
+    {
+     "w": "Freeway's",
+     "s": 0.594,
+     "e": 1.108
+    },
+    {
+     "w": "closed",
+     "s": 1.154,
+     "e": 1.425
+    },
+    {
+     "w": "citybound",
+     "s": 1.488,
+     "e": 1.979
+    },
+    {
+     "w": "at",
+     "s": 2.006,
+     "e": 2.058
+    },
+    {
+     "w": "Brook",
+     "s": 2.098,
+     "e": 2.296
+    },
+    {
+     "w": "Street,",
+     "s": 2.352,
+     "e": 3.008
+    },
+    {
+     "w": "with",
+     "s": 3.04,
+     "e": 3.166
+    },
+    {
+     "w": "construction",
+     "s": 3.209,
+     "e": 3.72
+    },
+    {
+     "w": "on",
+     "s": 3.747,
+     "e": 3.799
+    },
+    {
+     "w": "the",
+     "s": 3.819,
+     "e": 3.879
+    },
+    {
+     "w": "ramp",
+     "s": 3.942,
+     "e": 4.195
+    },
+    {
+     "w": "to",
+     "s": 4.248,
+     "e": 4.354
+    },
+    {
+     "w": "Falcon",
+     "s": 4.41,
+     "e": 4.749
+    },
+    {
+     "w": "Street",
+     "s": 4.795,
+     "e": 5.066
+    },
+    {
+     "w": "as",
+     "s": 5.118,
+     "e": 5.224
+    },
+    {
+     "w": "well.",
+     "s": 5.303,
+     "e": 5.699
+    },
+    {
+     "w": "Rooty",
+     "s": 5.826,
+     "e": 6.412
+    },
+    {
+     "w": "Hill",
+     "s": 6.443,
+     "e": 6.57
+    },
+    {
+     "w": "Road",
+     "s": 6.649,
+     "e": 6.966
+    },
+    {
+     "w": "and",
+     "s": 7.005,
+     "e": 7.124
+    },
+    {
+     "w": "Schofields",
+     "s": 7.219,
+     "e": 7.836
+    },
+    {
+     "w": "Road",
+     "s": 7.9,
+     "e": 8.153
+    },
+    {
+     "w": "are",
+     "s": 8.193,
+     "e": 8.311
+    },
+    {
+     "w": "both",
+     "s": 8.359,
+     "e": 8.549
+    },
+    {
+     "w": "at",
+     "s": 8.601,
+     "e": 8.707
+    },
+    {
+     "w": "a",
+     "s": 8.747,
+     "e": 8.786
+    },
+    {
+     "w": "standstill.",
+     "s": 8.853,
+     "e": 9.657
+    },
+    {
+     "w": "Parramatta",
+     "s": 9.768,
+     "e": 10.449
+    },
+    {
+     "w": "Road's",
+     "s": 10.512,
+     "e": 10.844
+    },
+    {
+     "w": "stopped",
+     "s": 10.884,
+     "e": 11.161
+    },
+    {
+     "w": "solid.",
+     "s": 11.253,
+     "e": 11.794
+    },
+    {
+     "w": "Camden",
+     "s": 11.896,
+     "e": 12.507
+    },
+    {
+     "w": "Valley",
+     "s": 12.54,
+     "e": 12.744
+    },
+    {
+     "w": "Way's",
+     "s": 12.803,
+     "e": 13.061
+    },
+    {
+     "w": "got",
+     "s": 13.1,
+     "e": 13.219
+    },
+    {
+     "w": "works",
+     "s": 13.298,
+     "e": 13.694
+    },
+    {
+     "w": "and",
+     "s": 13.734,
+     "e": 13.852
+    },
+    {
+     "w": "minor",
+     "s": 13.905,
+     "e": 14.169
+    },
+    {
+     "w": "delays",
+     "s": 14.225,
+     "e": 14.565
+    },
+    {
+     "w": "at",
+     "s": 14.591,
+     "e": 14.644
+    },
+    {
+     "w": "Beech",
+     "s": 14.723,
+     "e": 15.04
+    },
+    {
+     "w": "Road,",
+     "s": 15.103,
+     "e": 15.594
+    },
+    {
+     "w": "while",
+     "s": 15.62,
+     "e": 15.752
+    },
+    {
+     "w": "Narellan,",
+     "s": 15.792,
+     "e": 16.385
+    },
+    {
+     "w": "Showground",
+     "s": 16.464,
+     "e": 17.018
+    },
+    {
+     "w": "and",
+     "s": 17.058,
+     "e": 17.177
+    },
+    {
+     "w": "Wallgrove",
+     "s": 17.256,
+     "e": 17.81
+    },
+    {
+     "w": "Roads",
+     "s": 17.876,
+     "e": 18.206
+    },
+    {
+     "w": "are",
+     "s": 18.245,
+     "e": 18.364
+    },
+    {
+     "w": "a",
+     "s": 18.404,
+     "e": 18.443
+    },
+    {
+     "w": "bit",
+     "s": 18.503,
+     "e": 18.681
+    },
+    {
+     "w": "slow.",
+     "s": 18.776,
+     "e": 19.235
+    },
+    {
+     "w": "Construction",
+     "s": 19.314,
+     "e": 20.264
+    },
+    {
+     "w": "affects",
+     "s": 20.303,
+     "e": 20.58
+    },
+    {
+     "w": "about",
+     "s": 20.633,
+     "e": 20.897
+    },
+    {
+     "w": "two",
+     "s": 20.956,
+     "e": 21.135
+    },
+    {
+     "w": "kays",
+     "s": 21.214,
+     "e": 21.53
+    },
+    {
+     "w": "on",
+     "s": 21.557,
+     "e": 21.609
+    },
+    {
+     "w": "the",
+     "s": 21.629,
+     "e": 21.689
+    },
+    {
+     "w": "Sydney",
+     "s": 21.734,
+     "e": 22.005
+    },
+    {
+     "w": "Harbour",
+     "s": 22.045,
+     "e": 22.322
+    },
+    {
+     "w": "Tunnel",
+     "s": 22.378,
+     "e": 22.718
+    },
+    {
+     "w": "southbound",
+     "s": 22.836,
+     "e": 23.668
+    },
+    {
+     "w": "from",
+     "s": 23.699,
+     "e": 23.826
+    },
+    {
+     "w": "the",
+     "s": 23.846,
+     "e": 23.905
+    },
+    {
+     "w": "toll",
+     "s": 23.953,
+     "e": 24.142
+    },
+    {
+     "w": "plaza.",
+     "s": 24.234,
+     "e": 24.776
+    },
+    {
+     "w": "Sunny,",
+     "s": 24.947,
+     "e": 25.884
+    },
+    {
+     "w": "10",
+     "s": 25.963,
+     "e": 26.201
+    },
+    {
+     "w": "degrees.",
+     "s": 26.28,
+     "e": 26.913
+    },
+    {
+     "w": "Unleaded's",
+     "s": 27.045,
+     "e": 27.625
+    },
+    {
+     "w": "cheapest",
+     "s": 27.678,
+     "e": 28.1
+    },
+    {
+     "w": "at",
+     "s": 28.153,
+     "e": 28.259
+    },
+    {
+     "w": "a",
+     "s": 28.298,
+     "e": 28.338
+    },
+    {
+     "w": "dollar",
+     "s": 28.371,
+     "e": 28.575
+    },
+    {
+     "w": "seventy",
+     "s": 28.635,
+     "e": 29.05
+    },
+    {
+     "w": "in",
+     "s": 29.156,
+     "e": 29.367
+    },
+    {
+     "w": "Auburn.",
+     "s": 29.446,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "61fc047762c242858222bd490c3ebcc9",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 25.3,
+   "fittedSec": 22,
+   "stretch": 1.15,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The South Western Motorway's chockers westbound at Horsley Road, with heavy delays. The Warringah Freeway's closed southbound at the Alfred Street North ramp, and Mitchell Road's closed northbound between Sydney Park Road and Maddox Street. The M7's busy northbound at Rooty Hill Road. Roadworks and minor delays on Dreadnought Road at Frenchs Forest Road. Passing clouds, 14 degrees.",
+   "features": {
+    "syl": 88,
+    "words": 58,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.139
+    },
+    {
+     "w": "South",
+     "s": 0.185,
+     "e": 0.418
+    },
+    {
+     "w": "Western",
+     "s": 0.461,
+     "e": 0.766
+    },
+    {
+     "w": "Motorway's",
+     "s": 0.824,
+     "e": 1.323
+    },
+    {
+     "w": "chockers",
+     "s": 1.393,
+     "e": 1.881
+    },
+    {
+     "w": "westbound",
+     "s": 1.936,
+     "e": 2.438
+    },
+    {
+     "w": "at",
+     "s": 2.461,
+     "e": 2.507
+    },
+    {
+     "w": "Horsley",
+     "s": 2.542,
+     "e": 2.925
+    },
+    {
+     "w": "Road,",
+     "s": 2.981,
+     "e": 3.274
+    },
+    {
+     "w": "with",
+     "s": 3.301,
+     "e": 3.413
+    },
+    {
+     "w": "heavy",
+     "s": 3.471,
+     "e": 3.761
+    },
+    {
+     "w": "delays.",
+     "s": 3.84,
+     "e": 4.388
+    },
+    {
+     "w": "The",
+     "s": 4.492,
+     "e": 4.806
+    },
+    {
+     "w": "Warringah",
+     "s": 4.841,
+     "e": 5.224
+    },
+    {
+     "w": "Freeway's",
+     "s": 5.259,
+     "e": 5.711
+    },
+    {
+     "w": "closed",
+     "s": 5.761,
+     "e": 6.06
+    },
+    {
+     "w": "southbound",
+     "s": 6.118,
+     "e": 6.617
+    },
+    {
+     "w": "at",
+     "s": 6.64,
+     "e": 6.686
+    },
+    {
+     "w": "the",
+     "s": 6.704,
+     "e": 6.756
+    },
+    {
+     "w": "Alfred",
+     "s": 6.816,
+     "e": 7.174
+    },
+    {
+     "w": "Street",
+     "s": 7.214,
+     "e": 7.453
+    },
+    {
+     "w": "North",
+     "s": 7.499,
+     "e": 7.731
+    },
+    {
+     "w": "ramp,",
+     "s": 7.787,
+     "e": 8.288
+    },
+    {
+     "w": "and",
+     "s": 8.323,
+     "e": 8.428
+    },
+    {
+     "w": "Mitchell",
+     "s": 8.466,
+     "e": 8.776
+    },
+    {
+     "w": "Road's",
+     "s": 8.832,
+     "e": 9.124
+    },
+    {
+     "w": "closed",
+     "s": 9.164,
+     "e": 9.403
+    },
+    {
+     "w": "northbound",
+     "s": 9.461,
+     "e": 9.96
+    },
+    {
+     "w": "between",
+     "s": 10.004,
+     "e": 10.308
+    },
+    {
+     "w": "Sydney",
+     "s": 10.358,
+     "e": 10.657
+    },
+    {
+     "w": "Park",
+     "s": 10.712,
+     "e": 10.935
+    },
+    {
+     "w": "Road",
+     "s": 11.005,
+     "e": 11.283
+    },
+    {
+     "w": "and",
+     "s": 11.301,
+     "e": 11.353
+    },
+    {
+     "w": "Maddox",
+     "s": 11.409,
+     "e": 11.771
+    },
+    {
+     "w": "Street.",
+     "s": 11.841,
+     "e": 12.328
+    },
+    {
+     "w": "The",
+     "s": 12.45,
+     "e": 12.816
+    },
+    {
+     "w": "M7's",
+     "s": 12.92,
+     "e": 13.373
+    },
+    {
+     "w": "busy",
+     "s": 13.429,
+     "e": 13.652
+    },
+    {
+     "w": "northbound",
+     "s": 13.71,
+     "e": 14.209
+    },
+    {
+     "w": "at",
+     "s": 14.255,
+     "e": 14.348
+    },
+    {
+     "w": "Rooty",
+     "s": 14.39,
+     "e": 14.627
+    },
+    {
+     "w": "Hill",
+     "s": 14.668,
+     "e": 14.836
+    },
+    {
+     "w": "Road.",
+     "s": 14.919,
+     "e": 15.323
+    },
+    {
+     "w": "Roadworks",
+     "s": 15.462,
+     "e": 16.298
+    },
+    {
+     "w": "and",
+     "s": 16.316,
+     "e": 16.368
+    },
+    {
+     "w": "minor",
+     "s": 16.426,
+     "e": 16.716
+    },
+    {
+     "w": "delays",
+     "s": 16.776,
+     "e": 17.134
+    },
+    {
+     "w": "on",
+     "s": 17.158,
+     "e": 17.204
+    },
+    {
+     "w": "Dreadnought",
+     "s": 17.262,
+     "e": 17.761
+    },
+    {
+     "w": "Road",
+     "s": 17.817,
+     "e": 18.04
+    },
+    {
+     "w": "at",
+     "s": 18.063,
+     "e": 18.109
+    },
+    {
+     "w": "Frenchs",
+     "s": 18.169,
+     "e": 18.597
+    },
+    {
+     "w": "Forest",
+     "s": 18.657,
+     "e": 19.015
+    },
+    {
+     "w": "Road.",
+     "s": 19.084,
+     "e": 19.433
+    },
+    {
+     "w": "Passing",
+     "s": 19.528,
+     "e": 20.199
+    },
+    {
+     "w": "clouds,",
+     "s": 20.268,
+     "e": 20.965
+    },
+    {
+     "w": "14",
+     "s": 20.996,
+     "e": 21.243
+    },
+    {
+     "w": "degrees.",
+     "s": 21.322,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "6303533d4de14e75831ce9f43a1b07b5",
+   "market": "sydney",
+   "targetSec": 30.0,
+   "naturalSec": 33.6,
+   "fittedSec": 30,
+   "stretch": 1.12,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Warringah Freeway's BLOCKED northbound at Brook Street, with the ramp to Falcon Street closed as well. Mitchell Road's closed at Sydney Park Road, with roadworks also at Huntley Street. The South Western Motorway's chockers at Henry Lawson Drive, with heavy traffic again at The River Road. Railway Terrace is closed citybound. Botany Road's under the pump at Hale Street, and the M5 has a slow patch at King Georges Road. [brightly]It's SUNNY, 12 degrees, and unleaded's cheapest at a dollar eighty-nine in Greystanes!",
+   "features": {
+    "syl": 126,
+    "words": 84,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 6,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.143
+    },
+    {
+     "w": "Warringah",
+     "s": 0.214,
+     "e": 0.976
+    },
+    {
+     "w": "Freeway's",
+     "s": 1,
+     "e": 1.357
+    },
+    {
+     "w": "BLOCKED",
+     "s": 1.429,
+     "e": 1.857
+    },
+    {
+     "w": "northbound",
+     "s": 1.929,
+     "e": 2.5
+    },
+    {
+     "w": "at",
+     "s": 2.547,
+     "e": 2.643
+    },
+    {
+     "w": "Brook",
+     "s": 2.679,
+     "e": 2.857
+    },
+    {
+     "w": "Street,",
+     "s": 2.898,
+     "e": 3.214
+    },
+    {
+     "w": "with",
+     "s": 3.286,
+     "e": 3.571
+    },
+    {
+     "w": "the",
+     "s": 3.589,
+     "e": 3.643
+    },
+    {
+     "w": "ramp",
+     "s": 3.7,
+     "e": 3.929
+    },
+    {
+     "w": "to",
+     "s": 3.953,
+     "e": 4
+    },
+    {
+     "w": "Falcon",
+     "s": 4.051,
+     "e": 4.357
+    },
+    {
+     "w": "Street",
+     "s": 4.398,
+     "e": 4.643
+    },
+    {
+     "w": "closed",
+     "s": 4.694,
+     "e": 5
+    },
+    {
+     "w": "as",
+     "s": 5.071,
+     "e": 5.214
+    },
+    {
+     "w": "well.",
+     "s": 5.271,
+     "e": 5.643
+    },
+    {
+     "w": "Mitchell",
+     "s": 5.714,
+     "e": 6.286
+    },
+    {
+     "w": "Road's",
+     "s": 6.357,
+     "e": 6.714
+    },
+    {
+     "w": "closed",
+     "s": 6.765,
+     "e": 7.071
+    },
+    {
+     "w": "at",
+     "s": 7.096,
+     "e": 7.143
+    },
+    {
+     "w": "Sydney",
+     "s": 7.184,
+     "e": 7.429
+    },
+    {
+     "w": "Park",
+     "s": 7.486,
+     "e": 7.714
+    },
+    {
+     "w": "Road,",
+     "s": 7.786,
+     "e": 8.143
+    },
+    {
+     "w": "with",
+     "s": 8.214,
+     "e": 8.5
+    },
+    {
+     "w": "roadworks",
+     "s": 8.557,
+     "e": 9
+    },
+    {
+     "w": "also",
+     "s": 9.086,
+     "e": 9.429
+    },
+    {
+     "w": "at",
+     "s": 9.453,
+     "e": 9.5
+    },
+    {
+     "w": "Huntley",
+     "s": 9.543,
+     "e": 9.857
+    },
+    {
+     "w": "Street.",
+     "s": 9.908,
+     "e": 10.286
+    },
+    {
+     "w": "The",
+     "s": 10.411,
+     "e": 10.786
+    },
+    {
+     "w": "South",
+     "s": 10.833,
+     "e": 11.071
+    },
+    {
+     "w": "Western",
+     "s": 11.107,
+     "e": 11.357
+    },
+    {
+     "w": "Motorway's",
+     "s": 11.417,
+     "e": 12
+    },
+    {
+     "w": "chockers",
+     "s": 12.047,
+     "e": 12.5
+    },
+    {
+     "w": "at",
+     "s": 12.524,
+     "e": 12.571
+    },
+    {
+     "w": "Henry",
+     "s": 12.619,
+     "e": 12.857
+    },
+    {
+     "w": "Lawson",
+     "s": 12.908,
+     "e": 13.214
+    },
+    {
+     "w": "Drive,",
+     "s": 13.297,
+     "e": 13.893
+    },
+    {
+     "w": "with",
+     "s": 13.929,
+     "e": 14.071
+    },
+    {
+     "w": "heavy",
+     "s": 14.119,
+     "e": 14.357
+    },
+    {
+     "w": "traffic",
+     "s": 14.402,
+     "e": 14.714
+    },
+    {
+     "w": "again",
+     "s": 14.797,
+     "e": 15.214
+    },
+    {
+     "w": "at",
+     "s": 15.262,
+     "e": 15.357
+    },
+    {
+     "w": "The",
+     "s": 15.375,
+     "e": 15.429
+    },
+    {
+     "w": "River",
+     "s": 15.476,
+     "e": 15.714
+    },
+    {
+     "w": "Road.",
+     "s": 15.8,
+     "e": 16.214
+    },
+    {
+     "w": "Railway",
+     "s": 16.312,
+     "e": 17
+    },
+    {
+     "w": "Terrace",
+     "s": 17.054,
+     "e": 17.429
+    },
+    {
+     "w": "is",
+     "s": 17.476,
+     "e": 17.571
+    },
+    {
+     "w": "closed",
+     "s": 17.633,
+     "e": 18
+    },
+    {
+     "w": "citybound.",
+     "s": 18.071,
+     "e": 18.786
+    },
+    {
+     "w": "Botany",
+     "s": 18.929,
+     "e": 19.5
+    },
+    {
+     "w": "Road's",
+     "s": 19.557,
+     "e": 19.857
+    },
+    {
+     "w": "under",
+     "s": 19.893,
+     "e": 20.071
+    },
+    {
+     "w": "the",
+     "s": 20.089,
+     "e": 20.143
+    },
+    {
+     "w": "pump",
+     "s": 20.2,
+     "e": 20.429
+    },
+    {
+     "w": "at",
+     "s": 20.453,
+     "e": 20.5
+    },
+    {
+     "w": "Hale",
+     "s": 20.571,
+     "e": 20.857
+    },
+    {
+     "w": "Street,",
+     "s": 20.908,
+     "e": 21.5
+    },
+    {
+     "w": "and",
+     "s": 21.518,
+     "e": 21.571
+    },
+    {
+     "w": "the",
+     "s": 21.607,
+     "e": 21.714
+    },
+    {
+     "w": "M",
+     "s": 21.821,
+     "e": 21.929
+    },
+    {
+     "w": "5",
+     "s": 22,
+     "e": 22.286
+    },
+    {
+     "w": "has",
+     "s": 22.321,
+     "e": 22.429
+    },
+    {
+     "w": "a",
+     "s": 22.464,
+     "e": 22.5
+    },
+    {
+     "w": "slow",
+     "s": 22.557,
+     "e": 22.786
+    },
+    {
+     "w": "patch",
+     "s": 22.846,
+     "e": 23.143
+    },
+    {
+     "w": "at",
+     "s": 23.19,
+     "e": 23.286
+    },
+    {
+     "w": "King",
+     "s": 23.343,
+     "e": 23.571
+    },
+    {
+     "w": "Georges",
+     "s": 23.625,
+     "e": 24
+    },
+    {
+     "w": "Road.",
+     "s": 24.086,
+     "e": 24.714
+    },
+    {
+     "w": "It's",
+     "s": 25.054,
+     "e": 25.214
+    },
+    {
+     "w": "SUNNY,",
+     "s": 25.268,
+     "e": 25.643
+    },
+    {
+     "w": "12",
+     "s": 25.684,
+     "e": 25.929
+    },
+    {
+     "w": "degrees,",
+     "s": 26.009,
+     "e": 26.75
+    },
+    {
+     "w": "and",
+     "s": 26.795,
+     "e": 26.929
+    },
+    {
+     "w": "unleaded's",
+     "s": 27,
+     "e": 27.429
+    },
+    {
+     "w": "cheapest",
+     "s": 27.484,
+     "e": 27.929
+    },
+    {
+     "w": "at",
+     "s": 27.976,
+     "e": 28.071
+    },
+    {
+     "w": "a",
+     "s": 28.107,
+     "e": 28.143
+    },
+    {
+     "w": "dollar",
+     "s": 28.173,
+     "e": 28.357
+    },
+    {
+     "w": "eighty-nine",
+     "s": 28.388,
+     "e": 28.857
+    },
+    {
+     "w": "in",
+     "s": 28.929,
+     "e": 29.071
+    },
+    {
+     "w": "Greystanes!",
+     "s": 29.125,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "7409b1b2ea5b4d968f413be0f4f9a2a8",
+   "market": "sydney",
+   "targetSec": 30.0,
+   "naturalSec": 30.2,
+   "fittedSec": 29.682,
+   "stretch": 1.01745,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Haig Avenue's at a standstill, and Caroline Chisholm Drive's stopped solid. Hartill Law Avenue's a bit slow. The Warringah Freeway has construction at Brook Street, with a slow run. Parramatta Road and the Hume Highway are not looking good. Southern Cross Drive citybound's held up at Botany Road. Hermitage Road, Macquarie Street and Smithfield Road are running slowly. Passing clouds, 14 degrees. [brightly]Unleaded's CHEAPEST at a dollar ninety-two in Merrylands West!",
+   "features": {
+    "syl": 115,
+    "words": 71,
+    "ellipsis": 0,
+    "period": 8,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Haig",
+     "s": 0,
+     "e": 0.318
+    },
+    {
+     "w": "Avenue's",
+     "s": 0.375,
+     "e": 0.875
+    },
+    {
+     "w": "at",
+     "s": 0.928,
+     "e": 1.034
+    },
+    {
+     "w": "a",
+     "s": 1.074,
+     "e": 1.114
+    },
+    {
+     "w": "standstill,",
+     "s": 1.194,
+     "e": 1.989
+    },
+    {
+     "w": "and",
+     "s": 2.009,
+     "e": 2.069
+    },
+    {
+     "w": "Caroline",
+     "s": 2.131,
+     "e": 2.626
+    },
+    {
+     "w": "Chisholm",
+     "s": 2.679,
+     "e": 3.024
+    },
+    {
+     "w": "Drive's",
+     "s": 3.091,
+     "e": 3.581
+    },
+    {
+     "w": "stopped",
+     "s": 3.651,
+     "e": 4.138
+    },
+    {
+     "w": "solid.",
+     "s": 4.244,
+     "e": 4.854
+    },
+    {
+     "w": "Hartill",
+     "s": 4.95,
+     "e": 5.411
+    },
+    {
+     "w": "Law",
+     "s": 5.471,
+     "e": 5.65
+    },
+    {
+     "w": "Avenue's",
+     "s": 5.707,
+     "e": 6.127
+    },
+    {
+     "w": "a",
+     "s": 6.167,
+     "e": 6.207
+    },
+    {
+     "w": "bit",
+     "s": 6.267,
+     "e": 6.446
+    },
+    {
+     "w": "slow.",
+     "s": 6.525,
+     "e": 6.923
+    },
+    {
+     "w": "The",
+     "s": 7.003,
+     "e": 7.241
+    },
+    {
+     "w": "Warringah",
+     "s": 7.281,
+     "e": 7.878
+    },
+    {
+     "w": "Freeway",
+     "s": 7.938,
+     "e": 8.435
+    },
+    {
+     "w": "has",
+     "s": 8.495,
+     "e": 8.674
+    },
+    {
+     "w": "construction",
+     "s": 8.717,
+     "e": 9.231
+    },
+    {
+     "w": "at",
+     "s": 9.258,
+     "e": 9.31
+    },
+    {
+     "w": "Brook",
+     "s": 9.363,
+     "e": 9.629
+    },
+    {
+     "w": "Street,",
+     "s": 9.674,
+     "e": 10.027
+    },
+    {
+     "w": "with",
+     "s": 10.042,
+     "e": 10.106
+    },
+    {
+     "w": "a",
+     "s": 10.146,
+     "e": 10.186
+    },
+    {
+     "w": "slow",
+     "s": 10.265,
+     "e": 10.584
+    },
+    {
+     "w": "run.",
+     "s": 10.683,
+     "e": 11.061
+    },
+    {
+     "w": "Parramatta",
+     "s": 11.204,
+     "e": 12.016
+    },
+    {
+     "w": "Road",
+     "s": 12.08,
+     "e": 12.334
+    },
+    {
+     "w": "and",
+     "s": 12.374,
+     "e": 12.493
+    },
+    {
+     "w": "the",
+     "s": 12.513,
+     "e": 12.573
+    },
+    {
+     "w": "Hume",
+     "s": 12.653,
+     "e": 12.891
+    },
+    {
+     "w": "Highway",
+     "s": 12.951,
+     "e": 13.369
+    },
+    {
+     "w": "are",
+     "s": 13.408,
+     "e": 13.528
+    },
+    {
+     "w": "not",
+     "s": 13.588,
+     "e": 13.767
+    },
+    {
+     "w": "looking",
+     "s": 13.806,
+     "e": 14.085
+    },
+    {
+     "w": "good.",
+     "s": 14.164,
+     "e": 14.562
+    },
+    {
+     "w": "Southern",
+     "s": 14.633,
+     "e": 15.199
+    },
+    {
+     "w": "Cross",
+     "s": 15.239,
+     "e": 15.438
+    },
+    {
+     "w": "Drive",
+     "s": 15.504,
+     "e": 15.836
+    },
+    {
+     "w": "citybound's",
+     "s": 15.899,
+     "e": 16.552
+    },
+    {
+     "w": "held",
+     "s": 16.599,
+     "e": 16.79
+    },
+    {
+     "w": "up",
+     "s": 16.843,
+     "e": 16.95
+    },
+    {
+     "w": "at",
+     "s": 16.976,
+     "e": 17.029
+    },
+    {
+     "w": "Botany",
+     "s": 17.089,
+     "e": 17.427
+    },
+    {
+     "w": "Road.",
+     "s": 17.523,
+     "e": 17.984
+    },
+    {
+     "w": "Hermitage",
+     "s": 18.143,
+     "e": 18.939
+    },
+    {
+     "w": "Road,",
+     "s": 19.003,
+     "e": 19.337
+    },
+    {
+     "w": "Macquarie",
+     "s": 19.377,
+     "e": 19.814
+    },
+    {
+     "w": "Street",
+     "s": 19.86,
+     "e": 20.133
+    },
+    {
+     "w": "and",
+     "s": 20.192,
+     "e": 20.371
+    },
+    {
+     "w": "Smithfield",
+     "s": 20.478,
+     "e": 21.167
+    },
+    {
+     "w": "Road",
+     "s": 21.231,
+     "e": 21.485
+    },
+    {
+     "w": "are",
+     "s": 21.525,
+     "e": 21.645
+    },
+    {
+     "w": "running",
+     "s": 21.684,
+     "e": 21.963
+    },
+    {
+     "w": "slowly.",
+     "s": 22.053,
+     "e": 22.679
+    },
+    {
+     "w": "Passing",
+     "s": 22.779,
+     "e": 23.475
+    },
+    {
+     "w": "clouds,",
+     "s": 23.554,
+     "e": 24.111
+    },
+    {
+     "w": "14",
+     "s": 24.173,
+     "e": 24.668
+    },
+    {
+     "w": "degrees.",
+     "s": 24.758,
+     "e": 25.464
+    },
+    {
+     "w": "Unleaded's",
+     "s": 25.981,
+     "e": 26.419
+    },
+    {
+     "w": "CHEAPEST",
+     "s": 26.479,
+     "e": 27.056
+    },
+    {
+     "w": "at",
+     "s": 27.108,
+     "e": 27.215
+    },
+    {
+     "w": "a",
+     "s": 27.255,
+     "e": 27.294
+    },
+    {
+     "w": "dollar",
+     "s": 27.328,
+     "e": 27.533
+    },
+    {
+     "w": "ninety-two",
+     "s": 27.59,
+     "e": 28.249
+    },
+    {
+     "w": "in",
+     "s": 28.356,
+     "e": 28.568
+    },
+    {
+     "w": "Merrylands",
+     "s": 28.62,
+     "e": 29.125
+    },
+    {
+     "w": "West!",
+     "s": 29.22,
+     "e": 29.682
+    }
+   ]
+  },
+  {
+   "jobId": "74989e0d889e4e65999df01064738f4f",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 23.0,
+   "fittedSec": 22,
+   "stretch": 1.04545,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Henry Lawson Drive\u2019s stopped solid at a standstill. The Warringah Freeway\u2019s closed citybound for construction at Brook Street. South Western Motorway\u2019s heavy at Heathcote Road, with delays. Paddys Market Sydney is also stopped solid. Passing clouds, 14 degrees. Unleaded\u2019s cheapest at a dollar ninety-two in Merrylands West.",
+   "features": {
+    "syl": 84,
+    "words": 47,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "Henry",
+     "s": 0,
+     "e": 0.23
+    },
+    {
+     "w": "Lawson",
+     "s": 0.307,
+     "e": 0.767
+    },
+    {
+     "w": "Drive\u2019s",
+     "s": 0.831,
+     "e": 1.303
+    },
+    {
+     "w": "stopped",
+     "s": 1.351,
+     "e": 1.686
+    },
+    {
+     "w": "solid",
+     "s": 1.789,
+     "e": 2.3
+    },
+    {
+     "w": "at",
+     "s": 2.326,
+     "e": 2.376
+    },
+    {
+     "w": "a",
+     "s": 2.453,
+     "e": 2.53
+    },
+    {
+     "w": "standstill.",
+     "s": 2.594,
+     "e": 3.756
+    },
+    {
+     "w": "The",
+     "s": 3.775,
+     "e": 3.833
+    },
+    {
+     "w": "Warringah",
+     "s": 3.871,
+     "e": 4.293
+    },
+    {
+     "w": "Freeway\u2019s",
+     "s": 4.35,
+     "e": 4.906
+    },
+    {
+     "w": "closed",
+     "s": 4.961,
+     "e": 5.289
+    },
+    {
+     "w": "citybound",
+     "s": 5.366,
+     "e": 5.902
+    },
+    {
+     "w": "for",
+     "s": 5.922,
+     "e": 5.979
+    },
+    {
+     "w": "construction",
+     "s": 6.026,
+     "e": 6.592
+    },
+    {
+     "w": "at",
+     "s": 6.643,
+     "e": 6.746
+    },
+    {
+     "w": "Brook",
+     "s": 6.784,
+     "e": 6.976
+    },
+    {
+     "w": "Street.",
+     "s": 7.03,
+     "e": 7.972
+    },
+    {
+     "w": "South",
+     "s": 8.01,
+     "e": 8.202
+    },
+    {
+     "w": "Western",
+     "s": 8.25,
+     "e": 8.585
+    },
+    {
+     "w": "Motorway\u2019s",
+     "s": 8.636,
+     "e": 9.199
+    },
+    {
+     "w": "heavy",
+     "s": 9.263,
+     "e": 9.582
+    },
+    {
+     "w": "at",
+     "s": 9.608,
+     "e": 9.659
+    },
+    {
+     "w": "Heathcote",
+     "s": 9.709,
+     "e": 10.118
+    },
+    {
+     "w": "Road,",
+     "s": 10.195,
+     "e": 10.578
+    },
+    {
+     "w": "with",
+     "s": 10.594,
+     "e": 10.655
+    },
+    {
+     "w": "delays.",
+     "s": 10.742,
+     "e": 11.958
+    },
+    {
+     "w": "Paddys",
+     "s": 11.997,
+     "e": 12.341
+    },
+    {
+     "w": "Market",
+     "s": 12.396,
+     "e": 12.725
+    },
+    {
+     "w": "Sydney",
+     "s": 12.791,
+     "e": 13.185
+    },
+    {
+     "w": "is",
+     "s": 13.261,
+     "e": 13.415
+    },
+    {
+     "w": "also",
+     "s": 13.491,
+     "e": 13.798
+    },
+    {
+     "w": "stopped",
+     "s": 13.846,
+     "e": 14.181
+    },
+    {
+     "w": "solid.",
+     "s": 14.258,
+     "e": 14.794
+    },
+    {
+     "w": "Passing",
+     "s": 14.929,
+     "e": 15.868
+    },
+    {
+     "w": "clouds,",
+     "s": 15.944,
+     "e": 16.557
+    },
+    {
+     "w": "14",
+     "s": 16.6,
+     "e": 16.941
+    },
+    {
+     "w": "degrees.",
+     "s": 17.017,
+     "e": 17.707
+    },
+    {
+     "w": "Unleaded\u2019s",
+     "s": 17.963,
+     "e": 18.857
+    },
+    {
+     "w": "cheapest",
+     "s": 18.917,
+     "e": 19.394
+    },
+    {
+     "w": "at",
+     "s": 19.444,
+     "e": 19.547
+    },
+    {
+     "w": "a",
+     "s": 19.585,
+     "e": 19.624
+    },
+    {
+     "w": "dollar",
+     "s": 19.656,
+     "e": 19.854
+    },
+    {
+     "w": "ninety-two",
+     "s": 19.92,
+     "e": 20.544
+    },
+    {
+     "w": "in",
+     "s": 20.62,
+     "e": 20.773
+    },
+    {
+     "w": "Merrylands",
+     "s": 20.824,
+     "e": 21.387
+    },
+    {
+     "w": "West.",
+     "s": 21.479,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "9c4a2636f9ac44648ded45df63cc5e4a",
+   "market": "sydney",
+   "targetSec": 30.0,
+   "naturalSec": 33.2,
+   "fittedSec": 29.934,
+   "stretch": 1.10911,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Henry Lawson Drive's at a standstill. The Warringah Freeway's CLOSED citybound at Brook Street for construction. South Western Motorway's heavy at Heathcote Road, with traffic under the pump. There are minor delays around Paddys Market Sydney, Arthur Street and Dacey Avenue. Parramatta Road, Evaline Street and Maddox Street are a bit slow. Sydney Park Road's also carrying minor delays. Passing clouds, 14 degrees. [brightly] Unleaded's cheapest at a dollar ninety-two in Merrylands West!",
+   "features": {
+    "syl": 122,
+    "words": 72,
+    "ellipsis": 0,
+    "period": 8,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Henry",
+     "s": 0,
+     "e": 0.217
+    },
+    {
+     "w": "Lawson",
+     "s": 0.268,
+     "e": 0.578
+    },
+    {
+     "w": "Drive's",
+     "s": 0.651,
+     "e": 1.084
+    },
+    {
+     "w": "at",
+     "s": 1.132,
+     "e": 1.229
+    },
+    {
+     "w": "a",
+     "s": 1.265,
+     "e": 1.301
+    },
+    {
+     "w": "standstill.",
+     "s": 1.373,
+     "e": 2.096
+    },
+    {
+     "w": "The",
+     "s": 2.187,
+     "e": 2.458
+    },
+    {
+     "w": "Warringah",
+     "s": 2.494,
+     "e": 2.964
+    },
+    {
+     "w": "Freeway's",
+     "s": 3.018,
+     "e": 3.542
+    },
+    {
+     "w": "CLOSED",
+     "s": 3.624,
+     "e": 4.12
+    },
+    {
+     "w": "citybound",
+     "s": 4.193,
+     "e": 4.771
+    },
+    {
+     "w": "at",
+     "s": 4.795,
+     "e": 4.843
+    },
+    {
+     "w": "Brook",
+     "s": 4.891,
+     "e": 5.133
+    },
+    {
+     "w": "Street",
+     "s": 5.184,
+     "e": 5.494
+    },
+    {
+     "w": "for",
+     "s": 5.53,
+     "e": 5.639
+    },
+    {
+     "w": "construction.",
+     "s": 5.695,
+     "e": 6.434
+    },
+    {
+     "w": "South",
+     "s": 6.567,
+     "e": 7.229
+    },
+    {
+     "w": "Western",
+     "s": 7.274,
+     "e": 7.59
+    },
+    {
+     "w": "Motorway's",
+     "s": 7.638,
+     "e": 8.096
+    },
+    {
+     "w": "heavy",
+     "s": 8.169,
+     "e": 8.53
+    },
+    {
+     "w": "at",
+     "s": 8.578,
+     "e": 8.675
+    },
+    {
+     "w": "Heathcote",
+     "s": 8.723,
+     "e": 9.108
+    },
+    {
+     "w": "Road,",
+     "s": 9.181,
+     "e": 9.651
+    },
+    {
+     "w": "with",
+     "s": 9.687,
+     "e": 9.831
+    },
+    {
+     "w": "traffic",
+     "s": 9.886,
+     "e": 10.265
+    },
+    {
+     "w": "under",
+     "s": 10.313,
+     "e": 10.554
+    },
+    {
+     "w": "the",
+     "s": 10.572,
+     "e": 10.627
+    },
+    {
+     "w": "pump.",
+     "s": 10.699,
+     "e": 11.06
+    },
+    {
+     "w": "There",
+     "s": 11.157,
+     "e": 11.639
+    },
+    {
+     "w": "are",
+     "s": 11.675,
+     "e": 11.783
+    },
+    {
+     "w": "minor",
+     "s": 11.831,
+     "e": 12.072
+    },
+    {
+     "w": "delays",
+     "s": 12.135,
+     "e": 12.506
+    },
+    {
+     "w": "around",
+     "s": 12.537,
+     "e": 12.723
+    },
+    {
+     "w": "Paddys",
+     "s": 12.795,
+     "e": 13.084
+    },
+    {
+     "w": "Market",
+     "s": 13.136,
+     "e": 13.446
+    },
+    {
+     "w": "Sydney,",
+     "s": 13.508,
+     "e": 13.952
+    },
+    {
+     "w": "Arthur",
+     "s": 14.024,
+     "e": 14.458
+    },
+    {
+     "w": "Street",
+     "s": 14.509,
+     "e": 14.819
+    },
+    {
+     "w": "and",
+     "s": 14.873,
+     "e": 15.036
+    },
+    {
+     "w": "Dacey",
+     "s": 15.072,
+     "e": 15.398
+    },
+    {
+     "w": "Avenue.",
+     "s": 15.47,
+     "e": 15.976
+    },
+    {
+     "w": "Parramatta",
+     "s": 16.106,
+     "e": 16.843
+    },
+    {
+     "w": "Road,",
+     "s": 16.916,
+     "e": 17.277
+    },
+    {
+     "w": "Evaline",
+     "s": 17.364,
+     "e": 17.928
+    },
+    {
+     "w": "Street",
+     "s": 17.969,
+     "e": 18.217
+    },
+    {
+     "w": "and",
+     "s": 18.271,
+     "e": 18.434
+    },
+    {
+     "w": "Maddox",
+     "s": 18.477,
+     "e": 18.795
+    },
+    {
+     "w": "Street",
+     "s": 18.847,
+     "e": 19.157
+    },
+    {
+     "w": "are",
+     "s": 19.193,
+     "e": 19.301
+    },
+    {
+     "w": "a",
+     "s": 19.337,
+     "e": 19.373
+    },
+    {
+     "w": "bit",
+     "s": 19.428,
+     "e": 19.59
+    },
+    {
+     "w": "slow.",
+     "s": 19.677,
+     "e": 20.096
+    },
+    {
+     "w": "Sydney",
+     "s": 20.21,
+     "e": 20.892
+    },
+    {
+     "w": "Park",
+     "s": 20.949,
+     "e": 21.181
+    },
+    {
+     "w": "Road's",
+     "s": 21.239,
+     "e": 21.542
+    },
+    {
+     "w": "also",
+     "s": 21.614,
+     "e": 21.904
+    },
+    {
+     "w": "carrying",
+     "s": 21.96,
+     "e": 22.41
+    },
+    {
+     "w": "minor",
+     "s": 22.458,
+     "e": 22.699
+    },
+    {
+     "w": "delays.",
+     "s": 22.781,
+     "e": 23.422
+    },
+    {
+     "w": "Passing",
+     "s": 23.521,
+     "e": 24.217
+    },
+    {
+     "w": "clouds,",
+     "s": 24.279,
+     "e": 24.867
+    },
+    {
+     "w": "14",
+     "s": 24.915,
+     "e": 25.301
+    },
+    {
+     "w": "degrees.",
+     "s": 25.373,
+     "e": 25.952
+    },
+    {
+     "w": "Unleaded's",
+     "s": 26.633,
+     "e": 26.97
+    },
+    {
+     "w": "cheapest",
+     "s": 27.026,
+     "e": 27.476
+    },
+    {
+     "w": "at",
+     "s": 27.524,
+     "e": 27.621
+    },
+    {
+     "w": "a",
+     "s": 27.657,
+     "e": 27.693
+    },
+    {
+     "w": "dollar",
+     "s": 27.724,
+     "e": 27.91
+    },
+    {
+     "w": "ninety-two",
+     "s": 27.952,
+     "e": 28.488
+    },
+    {
+     "w": "in",
+     "s": 28.585,
+     "e": 28.777
+    },
+    {
+     "w": "Merrylands",
+     "s": 28.825,
+     "e": 29.356
+    },
+    {
+     "w": "West!",
+     "s": 29.457,
+     "e": 29.934
+    }
+   ]
+  },
+  {
+   "jobId": "9e0c09e850a14488a575e47af332e776",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 25.0,
+   "fittedSec": 22,
+   "stretch": 1.13636,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The South Western Motorway's chockers at Bexley Road, with heavy delays. The Warringah Freeway's closed southbound at the Alfred Street North ramp and Brook Street. Mitchell Road's closed northbound between Sydney Park Road and Maddox Street. The M7's heavy at Power Street, and Southern Cross Drive's a bit slow citybound at Botany Road. Passing clouds, fourteen degrees.",
+   "features": {
+    "syl": 87,
+    "words": 57,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "South",
+     "s": 0.105,
+     "e": 0.281
+    },
+    {
+     "w": "Western",
+     "s": 0.325,
+     "e": 0.633
+    },
+    {
+     "w": "Motorway's",
+     "s": 0.691,
+     "e": 1.265
+    },
+    {
+     "w": "chockers",
+     "s": 1.312,
+     "e": 1.687
+    },
+    {
+     "w": "at",
+     "s": 1.733,
+     "e": 1.827
+    },
+    {
+     "w": "Bexley",
+     "s": 1.863,
+     "e": 2.249
+    },
+    {
+     "w": "Road,",
+     "s": 2.305,
+     "e": 2.741
+    },
+    {
+     "w": "with",
+     "s": 2.783,
+     "e": 2.952
+    },
+    {
+     "w": "heavy",
+     "s": 2.999,
+     "e": 3.233
+    },
+    {
+     "w": "delays.",
+     "s": 3.313,
+     "e": 3.866
+    },
+    {
+     "w": "The",
+     "s": 3.971,
+     "e": 4.288
+    },
+    {
+     "w": "Warringah",
+     "s": 4.323,
+     "e": 4.709
+    },
+    {
+     "w": "Freeway's",
+     "s": 4.744,
+     "e": 5.201
+    },
+    {
+     "w": "closed",
+     "s": 5.251,
+     "e": 5.553
+    },
+    {
+     "w": "southbound",
+     "s": 5.612,
+     "e": 6.185
+    },
+    {
+     "w": "at",
+     "s": 6.209,
+     "e": 6.256
+    },
+    {
+     "w": "the",
+     "s": 6.273,
+     "e": 6.326
+    },
+    {
+     "w": "Alfred",
+     "s": 6.396,
+     "e": 6.818
+    },
+    {
+     "w": "Street",
+     "s": 6.858,
+     "e": 7.099
+    },
+    {
+     "w": "North",
+     "s": 7.158,
+     "e": 7.45
+    },
+    {
+     "w": "ramp",
+     "s": 7.521,
+     "e": 7.802
+    },
+    {
+     "w": "and",
+     "s": 7.872,
+     "e": 8.083
+    },
+    {
+     "w": "Brook",
+     "s": 8.13,
+     "e": 8.364
+    },
+    {
+     "w": "Street.",
+     "s": 8.425,
+     "e": 8.927
+    },
+    {
+     "w": "Mitchell",
+     "s": 8.997,
+     "e": 9.559
+    },
+    {
+     "w": "Road's",
+     "s": 9.615,
+     "e": 9.911
+    },
+    {
+     "w": "closed",
+     "s": 9.961,
+     "e": 10.262
+    },
+    {
+     "w": "northbound",
+     "s": 10.321,
+     "e": 10.895
+    },
+    {
+     "w": "between",
+     "s": 10.93,
+     "e": 11.176
+    },
+    {
+     "w": "Sydney",
+     "s": 11.226,
+     "e": 11.527
+    },
+    {
+     "w": "Park",
+     "s": 11.583,
+     "e": 11.808
+    },
+    {
+     "w": "Road",
+     "s": 11.879,
+     "e": 12.16
+    },
+    {
+     "w": "and",
+     "s": 12.23,
+     "e": 12.441
+    },
+    {
+     "w": "Maddox",
+     "s": 12.483,
+     "e": 12.863
+    },
+    {
+     "w": "Street.",
+     "s": 12.913,
+     "e": 13.355
+    },
+    {
+     "w": "The",
+     "s": 13.495,
+     "e": 13.917
+    },
+    {
+     "w": "M7's",
+     "s": 14.057,
+     "e": 14.55
+    },
+    {
+     "w": "heavy",
+     "s": 14.596,
+     "e": 14.831
+    },
+    {
+     "w": "at",
+     "s": 14.854,
+     "e": 14.901
+    },
+    {
+     "w": "Power",
+     "s": 14.96,
+     "e": 15.252
+    },
+    {
+     "w": "Street,",
+     "s": 15.313,
+     "e": 15.885
+    },
+    {
+     "w": "and",
+     "s": 15.903,
+     "e": 15.955
+    },
+    {
+     "w": "Southern",
+     "s": 15.994,
+     "e": 16.307
+    },
+    {
+     "w": "Cross",
+     "s": 16.353,
+     "e": 16.588
+    },
+    {
+     "w": "Drive's",
+     "s": 16.647,
+     "e": 17.01
+    },
+    {
+     "w": "a",
+     "s": 17.045,
+     "e": 17.08
+    },
+    {
+     "w": "bit",
+     "s": 17.133,
+     "e": 17.291
+    },
+    {
+     "w": "slow",
+     "s": 17.347,
+     "e": 17.572
+    },
+    {
+     "w": "citybound",
+     "s": 17.656,
+     "e": 18.275
+    },
+    {
+     "w": "at",
+     "s": 18.392,
+     "e": 18.626
+    },
+    {
+     "w": "Botany",
+     "s": 18.679,
+     "e": 18.978
+    },
+    {
+     "w": "Road.",
+     "s": 19.062,
+     "e": 19.47
+    },
+    {
+     "w": "Passing",
+     "s": 19.575,
+     "e": 20.313
+    },
+    {
+     "w": "clouds,",
+     "s": 20.374,
+     "e": 20.946
+    },
+    {
+     "w": "fourteen",
+     "s": 20.984,
+     "e": 21.297
+    },
+    {
+     "w": "degrees.",
+     "s": 21.367,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "a205def27ed5475b9eda876bf2b2caca",
+   "market": "sydney",
+   "targetSec": 30.0,
+   "naturalSec": 30.7,
+   "fittedSec": 30,
+   "stretch": 1.02333,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The River Road's at a standstill. The Warringah Freeway's closed northbound at Brook Street, with construction also closing the ramp to Falcon Street. South Western Motorway's got an eastbound lane closed and is under the pump. Toll Plaza and Caroline Chisholm Drive are both stopped solid. There's a slow patch on the Cahill Expressway, General Holmes Drive at Foreshore Road and Newbridge Road. [brightly] Sunny, twelve degrees. Unleaded's CHEAPEST at a dollar eighty-nine in Greystanes!",
+   "features": {
+    "syl": 118,
+    "words": 74,
+    "ellipsis": 0,
+    "period": 7,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.117
+    },
+    {
+     "w": "River",
+     "s": 0.137,
+     "e": 0.234
+    },
+    {
+     "w": "Road's",
+     "s": 0.312,
+     "e": 0.703
+    },
+    {
+     "w": "at",
+     "s": 0.755,
+     "e": 0.859
+    },
+    {
+     "w": "a",
+     "s": 0.898,
+     "e": 0.938
+    },
+    {
+     "w": "standstill.",
+     "s": 1.028,
+     "e": 1.953
+    },
+    {
+     "w": "The",
+     "s": 2.07,
+     "e": 2.422
+    },
+    {
+     "w": "Warringah",
+     "s": 2.539,
+     "e": 3.281
+    },
+    {
+     "w": "Freeway's",
+     "s": 3.34,
+     "e": 3.828
+    },
+    {
+     "w": "closed",
+     "s": 3.884,
+     "e": 4.219
+    },
+    {
+     "w": "northbound",
+     "s": 4.297,
+     "e": 5
+    },
+    {
+     "w": "at",
+     "s": 5.026,
+     "e": 5.078
+    },
+    {
+     "w": "Brook",
+     "s": 5.13,
+     "e": 5.391
+    },
+    {
+     "w": "Street,",
+     "s": 5.446,
+     "e": 5.859
+    },
+    {
+     "w": "with",
+     "s": 5.953,
+     "e": 6.328
+    },
+    {
+     "w": "construction",
+     "s": 6.37,
+     "e": 6.875
+    },
+    {
+     "w": "also",
+     "s": 6.969,
+     "e": 7.344
+    },
+    {
+     "w": "closing",
+     "s": 7.393,
+     "e": 7.734
+    },
+    {
+     "w": "the",
+     "s": 7.754,
+     "e": 7.812
+    },
+    {
+     "w": "ramp",
+     "s": 7.875,
+     "e": 8.125
+    },
+    {
+     "w": "to",
+     "s": 8.151,
+     "e": 8.203
+    },
+    {
+     "w": "Falcon",
+     "s": 8.271,
+     "e": 8.672
+    },
+    {
+     "w": "Street.",
+     "s": 8.728,
+     "e": 9.531
+    },
+    {
+     "w": "South",
+     "s": 9.597,
+     "e": 9.922
+    },
+    {
+     "w": "Western",
+     "s": 9.971,
+     "e": 10.312
+    },
+    {
+     "w": "Motorway's",
+     "s": 10.352,
+     "e": 10.781
+    },
+    {
+     "w": "got",
+     "s": 10.82,
+     "e": 10.938
+    },
+    {
+     "w": "an",
+     "s": 10.964,
+     "e": 11.016
+    },
+    {
+     "w": "eastbound",
+     "s": 11.094,
+     "e": 11.641
+    },
+    {
+     "w": "lane",
+     "s": 11.688,
+     "e": 11.875
+    },
+    {
+     "w": "closed",
+     "s": 11.953,
+     "e": 12.422
+    },
+    {
+     "w": "and",
+     "s": 12.48,
+     "e": 12.656
+    },
+    {
+     "w": "is",
+     "s": 12.708,
+     "e": 12.812
+    },
+    {
+     "w": "under",
+     "s": 12.864,
+     "e": 13.125
+    },
+    {
+     "w": "the",
+     "s": 13.145,
+     "e": 13.203
+    },
+    {
+     "w": "pump.",
+     "s": 13.297,
+     "e": 13.984
+    },
+    {
+     "w": "Toll",
+     "s": 14.047,
+     "e": 14.297
+    },
+    {
+     "w": "Plaza",
+     "s": 14.375,
+     "e": 14.766
+    },
+    {
+     "w": "and",
+     "s": 14.805,
+     "e": 14.922
+    },
+    {
+     "w": "Caroline",
+     "s": 14.974,
+     "e": 15.391
+    },
+    {
+     "w": "Chisholm",
+     "s": 15.417,
+     "e": 15.703
+    },
+    {
+     "w": "Drive",
+     "s": 15.769,
+     "e": 16.094
+    },
+    {
+     "w": "are",
+     "s": 16.133,
+     "e": 16.25
+    },
+    {
+     "w": "both",
+     "s": 16.312,
+     "e": 16.562
+    },
+    {
+     "w": "stopped",
+     "s": 16.611,
+     "e": 16.953
+    },
+    {
+     "w": "solid.",
+     "s": 17.031,
+     "e": 17.5
+    },
+    {
+     "w": "There's",
+     "s": 17.604,
+     "e": 18.164
+    },
+    {
+     "w": "a",
+     "s": 18.184,
+     "e": 18.203
+    },
+    {
+     "w": "slow",
+     "s": 18.25,
+     "e": 18.438
+    },
+    {
+     "w": "patch",
+     "s": 18.503,
+     "e": 18.828
+    },
+    {
+     "w": "on",
+     "s": 18.854,
+     "e": 18.906
+    },
+    {
+     "w": "the",
+     "s": 18.926,
+     "e": 18.984
+    },
+    {
+     "w": "Cahill",
+     "s": 19.082,
+     "e": 19.531
+    },
+    {
+     "w": "Expressway,",
+     "s": 19.59,
+     "e": 20.625
+    },
+    {
+     "w": "General",
+     "s": 20.654,
+     "e": 20.859
+    },
+    {
+     "w": "Holmes",
+     "s": 20.915,
+     "e": 21.25
+    },
+    {
+     "w": "Drive",
+     "s": 21.315,
+     "e": 21.641
+    },
+    {
+     "w": "at",
+     "s": 21.692,
+     "e": 21.797
+    },
+    {
+     "w": "Foreshore",
+     "s": 21.875,
+     "e": 22.344
+    },
+    {
+     "w": "Road",
+     "s": 22.438,
+     "e": 22.812
+    },
+    {
+     "w": "and",
+     "s": 22.832,
+     "e": 22.891
+    },
+    {
+     "w": "Newbridge",
+     "s": 22.969,
+     "e": 23.438
+    },
+    {
+     "w": "Road.",
+     "s": 23.516,
+     "e": 23.984
+    },
+    {
+     "w": "Sunny,",
+     "s": 24.856,
+     "e": 25
+    },
+    {
+     "w": "twelve",
+     "s": 25.045,
+     "e": 25.312
+    },
+    {
+     "w": "degrees.",
+     "s": 25.4,
+     "e": 26.094
+    },
+    {
+     "w": "Unleaded's",
+     "s": 26.276,
+     "e": 26.953
+    },
+    {
+     "w": "CHEAPEST",
+     "s": 27.012,
+     "e": 27.578
+    },
+    {
+     "w": "at",
+     "s": 27.604,
+     "e": 27.656
+    },
+    {
+     "w": "a",
+     "s": 27.695,
+     "e": 27.734
+    },
+    {
+     "w": "dollar",
+     "s": 27.779,
+     "e": 28.047
+    },
+    {
+     "w": "eighty-nine",
+     "s": 28.08,
+     "e": 28.672
+    },
+    {
+     "w": "in",
+     "s": 28.724,
+     "e": 28.828
+    },
+    {
+     "w": "Greystanes!",
+     "s": 28.887,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "a955979bc3ce46d0991cedc8076dd0ba",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 23.8,
+   "fittedSec": 22,
+   "stretch": 1.08182,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Looking across Sydney. The South Western Motorway's chockers at Henry Lawson Drive with heavy congestion. The Warringah Freeway's closed southbound at the ramp to Alfred Street North. Mitchell Road's closed northbound between Sydney Park Road and Maddox Street. The M7's under the pump outbound at Power Street. That's KIIS traffic and weather together.",
+   "features": {
+    "syl": 84,
+    "words": 53,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 0,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "Looking",
+     "s": 0,
+     "e": 0.222
+    },
+    {
+     "w": "across",
+     "s": 0.264,
+     "e": 0.517
+    },
+    {
+     "w": "Sydney.",
+     "s": 0.581,
+     "e": 1.108
+    },
+    {
+     "w": "The",
+     "s": 1.145,
+     "e": 1.256
+    },
+    {
+     "w": "South",
+     "s": 1.293,
+     "e": 1.478
+    },
+    {
+     "w": "Western",
+     "s": 1.515,
+     "e": 1.773
+    },
+    {
+     "w": "Motorway's",
+     "s": 1.835,
+     "e": 2.365
+    },
+    {
+     "w": "chockers",
+     "s": 2.414,
+     "e": 2.808
+    },
+    {
+     "w": "at",
+     "s": 2.833,
+     "e": 2.882
+    },
+    {
+     "w": "Henry",
+     "s": 2.931,
+     "e": 3.177
+    },
+    {
+     "w": "Lawson",
+     "s": 3.241,
+     "e": 3.621
+    },
+    {
+     "w": "Drive",
+     "s": 3.683,
+     "e": 3.99
+    },
+    {
+     "w": "with",
+     "s": 4.079,
+     "e": 4.434
+    },
+    {
+     "w": "heavy",
+     "s": 4.483,
+     "e": 4.729
+    },
+    {
+     "w": "congestion.",
+     "s": 4.797,
+     "e": 5.764
+    },
+    {
+     "w": "The",
+     "s": 5.838,
+     "e": 6.059
+    },
+    {
+     "w": "Warringah",
+     "s": 6.096,
+     "e": 6.613
+    },
+    {
+     "w": "Freeway's",
+     "s": 6.641,
+     "e": 7.02
+    },
+    {
+     "w": "closed",
+     "s": 7.084,
+     "e": 7.463
+    },
+    {
+     "w": "southbound",
+     "s": 7.525,
+     "e": 8.128
+    },
+    {
+     "w": "at",
+     "s": 8.177,
+     "e": 8.276
+    },
+    {
+     "w": "the",
+     "s": 8.295,
+     "e": 8.35
+    },
+    {
+     "w": "ramp",
+     "s": 8.424,
+     "e": 8.719
+    },
+    {
+     "w": "to",
+     "s": 8.744,
+     "e": 8.793
+    },
+    {
+     "w": "Alfred",
+     "s": 8.857,
+     "e": 9.237
+    },
+    {
+     "w": "Street",
+     "s": 9.279,
+     "e": 9.532
+    },
+    {
+     "w": "North.",
+     "s": 9.606,
+     "e": 10.123
+    },
+    {
+     "w": "Mitchell",
+     "s": 10.206,
+     "e": 10.862
+    },
+    {
+     "w": "Road's",
+     "s": 10.921,
+     "e": 11.232
+    },
+    {
+     "w": "closed",
+     "s": 11.274,
+     "e": 11.527
+    },
+    {
+     "w": "northbound",
+     "s": 11.601,
+     "e": 12.266
+    },
+    {
+     "w": "between",
+     "s": 12.313,
+     "e": 12.636
+    },
+    {
+     "w": "Sydney",
+     "s": 12.688,
+     "e": 13.005
+    },
+    {
+     "w": "Park",
+     "s": 13.064,
+     "e": 13.301
+    },
+    {
+     "w": "Road",
+     "s": 13.375,
+     "e": 13.67
+    },
+    {
+     "w": "and",
+     "s": 13.707,
+     "e": 13.818
+    },
+    {
+     "w": "Maddox",
+     "s": 13.862,
+     "e": 14.188
+    },
+    {
+     "w": "Street.",
+     "s": 14.251,
+     "e": 14.705
+    },
+    {
+     "w": "The",
+     "s": 14.89,
+     "e": 15.444
+    },
+    {
+     "w": "M7's",
+     "s": 15.555,
+     "e": 16.035
+    },
+    {
+     "w": "under",
+     "s": 16.084,
+     "e": 16.33
+    },
+    {
+     "w": "the",
+     "s": 16.349,
+     "e": 16.404
+    },
+    {
+     "w": "pump",
+     "s": 16.478,
+     "e": 16.774
+    },
+    {
+     "w": "outbound",
+     "s": 16.831,
+     "e": 17.291
+    },
+    {
+     "w": "at",
+     "s": 17.316,
+     "e": 17.365
+    },
+    {
+     "w": "Power",
+     "s": 17.427,
+     "e": 17.734
+    },
+    {
+     "w": "Street.",
+     "s": 17.787,
+     "e": 18.178
+    },
+    {
+     "w": "That's",
+     "s": 18.252,
+     "e": 18.621
+    },
+    {
+     "w": "KIIS",
+     "s": 18.806,
+     "e": 20.099
+    },
+    {
+     "w": "traffic",
+     "s": 20.21,
+     "e": 20.986
+    },
+    {
+     "w": "and",
+     "s": 21.004,
+     "e": 21.06
+    },
+    {
+     "w": "weather",
+     "s": 21.106,
+     "e": 21.429
+    },
+    {
+     "w": "together.",
+     "s": 21.486,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "acdfbe7fe12748c581efbc28e8a764e8",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 24.4,
+   "fittedSec": 22,
+   "stretch": 1.10909,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Looking across Sydney. [brightly]Chockers with closures, the Warringah Freeway's closed southbound at the Alfred Street North ramp and Brook Street. Mitchell Road's closed northbound between Sydney Park Road and Maddox Street. The M7's heavy at Power Street. King Street's a bit slow at Wentworth Avenue, with works and minor delays on Dreadnought Road at Frenchs Forest Road. That's KIIS traffic and weather together.",
+   "features": {
+    "syl": 93,
+    "words": 63,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Looking",
+     "s": 0,
+     "e": 0.216
+    },
+    {
+     "w": "across",
+     "s": 0.268,
+     "e": 0.577
+    },
+    {
+     "w": "Sydney.",
+     "s": 0.618,
+     "e": 1.009
+    },
+    {
+     "w": "Chockers",
+     "s": 1.067,
+     "e": 1.37
+    },
+    {
+     "w": "with",
+     "s": 1.399,
+     "e": 1.514
+    },
+    {
+     "w": "closures,",
+     "s": 1.586,
+     "e": 2.379
+    },
+    {
+     "w": "the",
+     "s": 2.415,
+     "e": 2.524
+    },
+    {
+     "w": "Warringah",
+     "s": 2.56,
+     "e": 2.956
+    },
+    {
+     "w": "Freeway's",
+     "s": 2.992,
+     "e": 3.461
+    },
+    {
+     "w": "closed",
+     "s": 3.512,
+     "e": 3.822
+    },
+    {
+     "w": "southbound",
+     "s": 3.882,
+     "e": 4.47
+    },
+    {
+     "w": "at",
+     "s": 4.518,
+     "e": 4.615
+    },
+    {
+     "w": "the",
+     "s": 4.633,
+     "e": 4.687
+    },
+    {
+     "w": "Alfred",
+     "s": 4.738,
+     "e": 5.047
+    },
+    {
+     "w": "Street",
+     "s": 5.089,
+     "e": 5.336
+    },
+    {
+     "w": "North",
+     "s": 5.396,
+     "e": 5.696
+    },
+    {
+     "w": "ramp",
+     "s": 5.768,
+     "e": 6.057
+    },
+    {
+     "w": "and",
+     "s": 6.111,
+     "e": 6.273
+    },
+    {
+     "w": "Brook",
+     "s": 6.309,
+     "e": 6.489
+    },
+    {
+     "w": "Street.",
+     "s": 6.552,
+     "e": 6.994
+    },
+    {
+     "w": "Mitchell",
+     "s": 7.058,
+     "e": 7.571
+    },
+    {
+     "w": "Road's",
+     "s": 7.629,
+     "e": 7.931
+    },
+    {
+     "w": "closed",
+     "s": 7.973,
+     "e": 8.22
+    },
+    {
+     "w": "northbound",
+     "s": 8.28,
+     "e": 8.869
+    },
+    {
+     "w": "between",
+     "s": 8.914,
+     "e": 9.229
+    },
+    {
+     "w": "Sydney",
+     "s": 9.271,
+     "e": 9.518
+    },
+    {
+     "w": "Park",
+     "s": 9.575,
+     "e": 9.806
+    },
+    {
+     "w": "Road",
+     "s": 9.864,
+     "e": 10.095
+    },
+    {
+     "w": "and",
+     "s": 10.131,
+     "e": 10.239
+    },
+    {
+     "w": "Maddox",
+     "s": 10.296,
+     "e": 10.599
+    },
+    {
+     "w": "Street.",
+     "s": 10.662,
+     "e": 11.104
+    },
+    {
+     "w": "The",
+     "s": 11.212,
+     "e": 11.537
+    },
+    {
+     "w": "M7's",
+     "s": 11.645,
+     "e": 12.114
+    },
+    {
+     "w": "heavy",
+     "s": 12.15,
+     "e": 12.33
+    },
+    {
+     "w": "at",
+     "s": 12.354,
+     "e": 12.402
+    },
+    {
+     "w": "Power",
+     "s": 12.462,
+     "e": 12.762
+    },
+    {
+     "w": "Street.",
+     "s": 12.814,
+     "e": 13.195
+    },
+    {
+     "w": "King",
+     "s": 13.282,
+     "e": 13.628
+    },
+    {
+     "w": "Street's",
+     "s": 13.658,
+     "e": 13.916
+    },
+    {
+     "w": "a",
+     "s": 13.952,
+     "e": 13.988
+    },
+    {
+     "w": "bit",
+     "s": 14.042,
+     "e": 14.205
+    },
+    {
+     "w": "slow",
+     "s": 14.262,
+     "e": 14.493
+    },
+    {
+     "w": "at",
+     "s": 14.517,
+     "e": 14.565
+    },
+    {
+     "w": "Wentworth",
+     "s": 14.608,
+     "e": 14.998
+    },
+    {
+     "w": "Avenue,",
+     "s": 15.049,
+     "e": 15.43
+    },
+    {
+     "w": "with",
+     "s": 15.502,
+     "e": 15.791
+    },
+    {
+     "w": "works",
+     "s": 15.851,
+     "e": 16.151
+    },
+    {
+     "w": "and",
+     "s": 16.187,
+     "e": 16.296
+    },
+    {
+     "w": "minor",
+     "s": 16.343,
+     "e": 16.584
+    },
+    {
+     "w": "delays",
+     "s": 16.646,
+     "e": 17.017
+    },
+    {
+     "w": "on",
+     "s": 17.064,
+     "e": 17.161
+    },
+    {
+     "w": "Dreadnought",
+     "s": 17.209,
+     "e": 17.666
+    },
+    {
+     "w": "Road",
+     "s": 17.723,
+     "e": 17.954
+    },
+    {
+     "w": "at",
+     "s": 18.002,
+     "e": 18.098
+    },
+    {
+     "w": "Frenchs",
+     "s": 18.15,
+     "e": 18.531
+    },
+    {
+     "w": "Forest",
+     "s": 18.582,
+     "e": 18.891
+    },
+    {
+     "w": "Road.",
+     "s": 18.963,
+     "e": 19.324
+    },
+    {
+     "w": "That's",
+     "s": 19.41,
+     "e": 19.829
+    },
+    {
+     "w": "KIIS",
+     "s": 19.937,
+     "e": 20.622
+    },
+    {
+     "w": "traffic",
+     "s": 20.667,
+     "e": 20.982
+    },
+    {
+     "w": "and",
+     "s": 21.018,
+     "e": 21.127
+    },
+    {
+     "w": "weather",
+     "s": 21.163,
+     "e": 21.415
+    },
+    {
+     "w": "together.",
+     "s": 21.471,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "c56d03f1f6a3440e93cd16ef981b200f",
+   "market": "sydney",
+   "targetSec": 30.0,
+   "naturalSec": 31.8,
+   "fittedSec": 30,
+   "stretch": 1.06,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Warringah Freeway's CLOSED citybound at Brook Street and the ramp to Falcon Street. Mitchell Road's also blocked at Sydney Park Road and Huntley Street. Woodville Road's at a standstill, and the M5 westbound's heavy at King Georges Road. Railway Terrace is blocked citybound. There's roadworks on Botany Road at Hale Street with traffic under the pump, while Dreadnought Road's a bit slow at Frenchs Forest Road. [warmly] The M4 from Parramatta to the city is about six minutes slower than usual.",
+   "features": {
+    "syl": 120,
+    "words": 81,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.151
+    },
+    {
+     "w": "Warringah",
+     "s": 0.227,
+     "e": 0.831
+    },
+    {
+     "w": "Freeway's",
+     "s": 0.888,
+     "e": 1.436
+    },
+    {
+     "w": "CLOSED",
+     "s": 1.501,
+     "e": 1.889
+    },
+    {
+     "w": "citybound",
+     "s": 1.965,
+     "e": 2.494
+    },
+    {
+     "w": "at",
+     "s": 2.544,
+     "e": 2.645
+    },
+    {
+     "w": "Brook",
+     "s": 2.683,
+     "e": 2.872
+    },
+    {
+     "w": "Street",
+     "s": 2.925,
+     "e": 3.249
+    },
+    {
+     "w": "and",
+     "s": 3.344,
+     "e": 3.627
+    },
+    {
+     "w": "the",
+     "s": 3.646,
+     "e": 3.703
+    },
+    {
+     "w": "ramp",
+     "s": 3.778,
+     "e": 4.081
+    },
+    {
+     "w": "to",
+     "s": 4.106,
+     "e": 4.156
+    },
+    {
+     "w": "Falcon",
+     "s": 4.221,
+     "e": 4.61
+    },
+    {
+     "w": "Street.",
+     "s": 4.685,
+     "e": 5.554
+    },
+    {
+     "w": "Mitchell",
+     "s": 5.6,
+     "e": 5.97
+    },
+    {
+     "w": "Road's",
+     "s": 6.03,
+     "e": 6.423
+    },
+    {
+     "w": "also",
+     "s": 6.484,
+     "e": 6.725
+    },
+    {
+     "w": "blocked",
+     "s": 6.773,
+     "e": 7.103
+    },
+    {
+     "w": "at",
+     "s": 7.129,
+     "e": 7.179
+    },
+    {
+     "w": "Sydney",
+     "s": 7.222,
+     "e": 7.481
+    },
+    {
+     "w": "Park",
+     "s": 7.557,
+     "e": 7.859
+    },
+    {
+     "w": "Road",
+     "s": 7.919,
+     "e": 8.161
+    },
+    {
+     "w": "and",
+     "s": 8.18,
+     "e": 8.237
+    },
+    {
+     "w": "Huntley",
+     "s": 8.297,
+     "e": 8.615
+    },
+    {
+     "w": "Street.",
+     "s": 8.68,
+     "e": 9.144
+    },
+    {
+     "w": "Woodville",
+     "s": 9.264,
+     "e": 9.975
+    },
+    {
+     "w": "Road's",
+     "s": 10.02,
+     "e": 10.277
+    },
+    {
+     "w": "at",
+     "s": 10.303,
+     "e": 10.353
+    },
+    {
+     "w": "a",
+     "s": 10.39,
+     "e": 10.428
+    },
+    {
+     "w": "standstill,",
+     "s": 10.491,
+     "e": 11.184
+    },
+    {
+     "w": "and",
+     "s": 11.259,
+     "e": 11.486
+    },
+    {
+     "w": "the",
+     "s": 11.524,
+     "e": 11.637
+    },
+    {
+     "w": "M",
+     "s": 11.788,
+     "e": 11.94
+    },
+    {
+     "w": "5",
+     "s": 11.985,
+     "e": 12.166
+    },
+    {
+     "w": "westbound's",
+     "s": 12.227,
+     "e": 12.771
+    },
+    {
+     "w": "heavy",
+     "s": 12.821,
+     "e": 13.073
+    },
+    {
+     "w": "at",
+     "s": 13.149,
+     "e": 13.3
+    },
+    {
+     "w": "King",
+     "s": 13.345,
+     "e": 13.526
+    },
+    {
+     "w": "Georges",
+     "s": 13.583,
+     "e": 13.98
+    },
+    {
+     "w": "Road.",
+     "s": 14.071,
+     "e": 14.887
+    },
+    {
+     "w": "Railway",
+     "s": 14.943,
+     "e": 15.34
+    },
+    {
+     "w": "Terrace",
+     "s": 15.397,
+     "e": 15.793
+    },
+    {
+     "w": "is",
+     "s": 15.819,
+     "e": 15.869
+    },
+    {
+     "w": "blocked",
+     "s": 15.926,
+     "e": 16.322
+    },
+    {
+     "w": "citybound.",
+     "s": 16.383,
+     "e": 17.418
+    },
+    {
+     "w": "There's",
+     "s": 17.475,
+     "e": 17.834
+    },
+    {
+     "w": "roadworks",
+     "s": 17.894,
+     "e": 18.438
+    },
+    {
+     "w": "on",
+     "s": 18.464,
+     "e": 18.514
+    },
+    {
+     "w": "Botany",
+     "s": 18.571,
+     "e": 18.892
+    },
+    {
+     "w": "Road",
+     "s": 18.937,
+     "e": 19.118
+    },
+    {
+     "w": "at",
+     "s": 19.168,
+     "e": 19.27
+    },
+    {
+     "w": "Hale",
+     "s": 19.33,
+     "e": 19.572
+    },
+    {
+     "w": "Street",
+     "s": 19.637,
+     "e": 20.025
+    },
+    {
+     "w": "with",
+     "s": 20.086,
+     "e": 20.327
+    },
+    {
+     "w": "traffic",
+     "s": 20.384,
+     "e": 20.781
+    },
+    {
+     "w": "under",
+     "s": 20.819,
+     "e": 21.008
+    },
+    {
+     "w": "the",
+     "s": 21.026,
+     "e": 21.083
+    },
+    {
+     "w": "pump,",
+     "s": 21.159,
+     "e": 21.839
+    },
+    {
+     "w": "while",
+     "s": 21.864,
+     "e": 21.99
+    },
+    {
+     "w": "Dreadnought",
+     "s": 22.04,
+     "e": 22.443
+    },
+    {
+     "w": "Road's",
+     "s": 22.504,
+     "e": 22.783
+    },
+    {
+     "w": "a",
+     "s": 22.802,
+     "e": 22.821
+    },
+    {
+     "w": "bit",
+     "s": 22.878,
+     "e": 23.048
+    },
+    {
+     "w": "slow",
+     "s": 23.123,
+     "e": 23.426
+    },
+    {
+     "w": "at",
+     "s": 23.476,
+     "e": 23.577
+    },
+    {
+     "w": "Frenchs",
+     "s": 23.631,
+     "e": 24.03
+    },
+    {
+     "w": "Forest",
+     "s": 24.084,
+     "e": 24.408
+    },
+    {
+     "w": "Road.",
+     "s": 24.499,
+     "e": 25.164
+    },
+    {
+     "w": "The",
+     "s": 25.527,
+     "e": 25.542
+    },
+    {
+     "w": "M",
+     "s": 25.693,
+     "e": 25.844
+    },
+    {
+     "w": "4",
+     "s": 25.889,
+     "e": 26.071
+    },
+    {
+     "w": "from",
+     "s": 26.116,
+     "e": 26.297
+    },
+    {
+     "w": "Parramatta",
+     "s": 26.343,
+     "e": 26.826
+    },
+    {
+     "w": "to",
+     "s": 26.876,
+     "e": 26.977
+    },
+    {
+     "w": "the",
+     "s": 26.996,
+     "e": 27.053
+    },
+    {
+     "w": "city",
+     "s": 27.128,
+     "e": 27.431
+    },
+    {
+     "w": "is",
+     "s": 27.582,
+     "e": 27.884
+    },
+    {
+     "w": "about",
+     "s": 27.934,
+     "e": 28.186
+    },
+    {
+     "w": "six",
+     "s": 28.281,
+     "e": 28.564
+    },
+    {
+     "w": "minutes",
+     "s": 28.611,
+     "e": 28.942
+    },
+    {
+     "w": "slower",
+     "s": 28.986,
+     "e": 29.244
+    },
+    {
+     "w": "than",
+     "s": 29.29,
+     "e": 29.471
+    },
+    {
+     "w": "usual.",
+     "s": 29.547,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "c62b8610f6ec4500aba6920b7b23dfb5",
+   "market": "sydney",
+   "targetSec": 30.0,
+   "naturalSec": 31.8,
+   "fittedSec": 30,
+   "stretch": 1.06,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Warringah Freeway's CLOSED northbound between Miller Street and the Harbour Tunnel Toll Plaza, with the Falcon Street ramp BLOCKED as well. The Eastern Distributor's CLOSED northbound near the Harbour Tunnel Toll Plaza. Sydney Harbour Bridge is BLOCKED southbound between the tolls and Observatory Tunnel, and Gore Hill Freeway's SEALED citybound. The M4's a bit slow, with short queues. Clear skies, 11 degrees. Unleaded's CHEAPEST at a dollar eighty-nine in Lidcombe!",
+   "features": {
+    "syl": 114,
+    "words": 71,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.075
+    },
+    {
+     "w": "Warringah",
+     "s": 0.151,
+     "e": 0.905
+    },
+    {
+     "w": "Freeway's",
+     "s": 0.961,
+     "e": 1.508
+    },
+    {
+     "w": "CLOSED",
+     "s": 1.573,
+     "e": 1.96
+    },
+    {
+     "w": "northbound",
+     "s": 2.035,
+     "e": 2.638
+    },
+    {
+     "w": "between",
+     "s": 2.685,
+     "e": 3.015
+    },
+    {
+     "w": "Miller",
+     "s": 3.058,
+     "e": 3.317
+    },
+    {
+     "w": "Street",
+     "s": 3.37,
+     "e": 3.693
+    },
+    {
+     "w": "and",
+     "s": 3.788,
+     "e": 4.07
+    },
+    {
+     "w": "the",
+     "s": 4.089,
+     "e": 4.146
+    },
+    {
+     "w": "Harbour",
+     "s": 4.183,
+     "e": 4.447
+    },
+    {
+     "w": "Tunnel",
+     "s": 4.491,
+     "e": 4.749
+    },
+    {
+     "w": "Toll",
+     "s": 4.809,
+     "e": 5.05
+    },
+    {
+     "w": "Plaza,",
+     "s": 5.126,
+     "e": 5.804
+    },
+    {
+     "w": "with",
+     "s": 5.834,
+     "e": 5.955
+    },
+    {
+     "w": "the",
+     "s": 5.974,
+     "e": 6.03
+    },
+    {
+     "w": "Falcon",
+     "s": 6.084,
+     "e": 6.407
+    },
+    {
+     "w": "Street",
+     "s": 6.45,
+     "e": 6.709
+    },
+    {
+     "w": "ramp",
+     "s": 6.769,
+     "e": 7.01
+    },
+    {
+     "w": "BLOCKED",
+     "s": 7.085,
+     "e": 7.538
+    },
+    {
+     "w": "as",
+     "s": 7.613,
+     "e": 7.764
+    },
+    {
+     "w": "well.",
+     "s": 7.839,
+     "e": 8.291
+    },
+    {
+     "w": "The",
+     "s": 8.423,
+     "e": 8.819
+    },
+    {
+     "w": "Eastern",
+     "s": 8.866,
+     "e": 9.196
+    },
+    {
+     "w": "Distributor's",
+     "s": 9.243,
+     "e": 9.874
+    },
+    {
+     "w": "CLOSED",
+     "s": 9.95,
+     "e": 10.402
+    },
+    {
+     "w": "northbound",
+     "s": 10.465,
+     "e": 11.08
+    },
+    {
+     "w": "near",
+     "s": 11.126,
+     "e": 11.307
+    },
+    {
+     "w": "the",
+     "s": 11.325,
+     "e": 11.382
+    },
+    {
+     "w": "Harbour",
+     "s": 11.429,
+     "e": 11.759
+    },
+    {
+     "w": "Tunnel",
+     "s": 11.802,
+     "e": 12.06
+    },
+    {
+     "w": "Toll",
+     "s": 12.121,
+     "e": 12.362
+    },
+    {
+     "w": "Plaza.",
+     "s": 12.449,
+     "e": 12.965
+    },
+    {
+     "w": "Sydney",
+     "s": 13.084,
+     "e": 13.794
+    },
+    {
+     "w": "Harbour",
+     "s": 13.832,
+     "e": 14.095
+    },
+    {
+     "w": "Bridge",
+     "s": 14.149,
+     "e": 14.472
+    },
+    {
+     "w": "is",
+     "s": 14.548,
+     "e": 14.698
+    },
+    {
+     "w": "BLOCKED",
+     "s": 14.774,
+     "e": 15.301
+    },
+    {
+     "w": "southbound",
+     "s": 15.377,
+     "e": 16.055
+    },
+    {
+     "w": "between",
+     "s": 16.093,
+     "e": 16.357
+    },
+    {
+     "w": "the",
+     "s": 16.376,
+     "e": 16.432
+    },
+    {
+     "w": "tolls",
+     "s": 16.508,
+     "e": 16.884
+    },
+    {
+     "w": "and",
+     "s": 16.941,
+     "e": 17.111
+    },
+    {
+     "w": "Observatory",
+     "s": 17.155,
+     "e": 17.638
+    },
+    {
+     "w": "Tunnel,",
+     "s": 17.692,
+     "e": 18.467
+    },
+    {
+     "w": "and",
+     "s": 18.524,
+     "e": 18.693
+    },
+    {
+     "w": "Gore",
+     "s": 18.754,
+     "e": 18.995
+    },
+    {
+     "w": "Hill",
+     "s": 19.04,
+     "e": 19.221
+    },
+    {
+     "w": "Freeway's",
+     "s": 19.278,
+     "e": 19.899
+    },
+    {
+     "w": "SEALED",
+     "s": 19.994,
+     "e": 20.502
+    },
+    {
+     "w": "citybound.",
+     "s": 20.578,
+     "e": 21.407
+    },
+    {
+     "w": "The",
+     "s": 21.539,
+     "e": 21.935
+    },
+    {
+     "w": "M4's",
+     "s": 22.048,
+     "e": 22.538
+    },
+    {
+     "w": "a",
+     "s": 22.613,
+     "e": 22.688
+    },
+    {
+     "w": "bit",
+     "s": 22.745,
+     "e": 22.915
+    },
+    {
+     "w": "slow,",
+     "s": 22.99,
+     "e": 23.367
+    },
+    {
+     "w": "with",
+     "s": 23.397,
+     "e": 23.518
+    },
+    {
+     "w": "short",
+     "s": 23.581,
+     "e": 23.894
+    },
+    {
+     "w": "queues.",
+     "s": 23.97,
+     "e": 24.497
+    },
+    {
+     "w": "Clear",
+     "s": 24.585,
+     "e": 25.025
+    },
+    {
+     "w": "skies,",
+     "s": 25.1,
+     "e": 25.553
+    },
+    {
+     "w": "11",
+     "s": 25.596,
+     "e": 25.854
+    },
+    {
+     "w": "degrees.",
+     "s": 25.93,
+     "e": 26.533
+    },
+    {
+     "w": "Unleaded's",
+     "s": 26.683,
+     "e": 27.362
+    },
+    {
+     "w": "CHEAPEST",
+     "s": 27.418,
+     "e": 27.889
+    },
+    {
+     "w": "at",
+     "s": 27.939,
+     "e": 28.04
+    },
+    {
+     "w": "a",
+     "s": 28.116,
+     "e": 28.191
+    },
+    {
+     "w": "dollar",
+     "s": 28.223,
+     "e": 28.417
+    },
+    {
+     "w": "eighty-nine",
+     "s": 28.449,
+     "e": 28.869
+    },
+    {
+     "w": "in",
+     "s": 28.945,
+     "e": 29.095
+    },
+    {
+     "w": "Lidcombe!",
+     "s": 29.152,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "c7f1620192cb40539fc511b420f943b2",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 22.9,
+   "fittedSec": 22,
+   "stretch": 1.04091,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Looking across Sydney. [brightly] Warringah Freeway's closed southbound at the Alfred Street North ramp and Brook Street. Mitchell Road's closed northbound between Sydney Park Road and Maddox Street. The M7's chockers at Power Street. King Street's slow southbound at Wentworth Avenue, with works on Dreadnought Road at Frenchs Forest Road. That's KIIS traffic and weather together.",
+   "features": {
+    "syl": 81,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 1,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Looking",
+     "s": 0,
+     "e": 0.231
+    },
+    {
+     "w": "across",
+     "s": 0.285,
+     "e": 0.615
+    },
+    {
+     "w": "Sydney.",
+     "s": 0.681,
+     "e": 1.307
+    },
+    {
+     "w": "Warringah",
+     "s": 1.376,
+     "e": 1.999
+    },
+    {
+     "w": "Freeway's",
+     "s": 2.076,
+     "e": 2.614
+    },
+    {
+     "w": "closed",
+     "s": 2.669,
+     "e": 2.999
+    },
+    {
+     "w": "southbound",
+     "s": 3.05,
+     "e": 3.614
+    },
+    {
+     "w": "at",
+     "s": 3.64,
+     "e": 3.691
+    },
+    {
+     "w": "the",
+     "s": 3.71,
+     "e": 3.768
+    },
+    {
+     "w": "Alfred",
+     "s": 3.823,
+     "e": 4.152
+    },
+    {
+     "w": "Street",
+     "s": 4.207,
+     "e": 4.537
+    },
+    {
+     "w": "North",
+     "s": 4.588,
+     "e": 4.844
+    },
+    {
+     "w": "ramp",
+     "s": 4.921,
+     "e": 5.229
+    },
+    {
+     "w": "and",
+     "s": 5.248,
+     "e": 5.306
+    },
+    {
+     "w": "Brook",
+     "s": 5.357,
+     "e": 5.613
+    },
+    {
+     "w": "Street.",
+     "s": 5.668,
+     "e": 6.075
+    },
+    {
+     "w": "Mitchell",
+     "s": 6.151,
+     "e": 6.767
+    },
+    {
+     "w": "Road's",
+     "s": 6.813,
+     "e": 7.074
+    },
+    {
+     "w": "closed",
+     "s": 7.118,
+     "e": 7.382
+    },
+    {
+     "w": "northbound",
+     "s": 7.433,
+     "e": 7.997
+    },
+    {
+     "w": "between",
+     "s": 8.045,
+     "e": 8.381
+    },
+    {
+     "w": "Sydney",
+     "s": 8.426,
+     "e": 8.689
+    },
+    {
+     "w": "Park",
+     "s": 8.75,
+     "e": 8.997
+    },
+    {
+     "w": "Road",
+     "s": 9.058,
+     "e": 9.304
+    },
+    {
+     "w": "and",
+     "s": 9.343,
+     "e": 9.458
+    },
+    {
+     "w": "Maddox",
+     "s": 9.504,
+     "e": 9.842
+    },
+    {
+     "w": "Street.",
+     "s": 9.897,
+     "e": 10.304
+    },
+    {
+     "w": "The",
+     "s": 10.419,
+     "e": 10.765
+    },
+    {
+     "w": "M7's",
+     "s": 10.88,
+     "e": 11.457
+    },
+    {
+     "w": "chockers",
+     "s": 11.534,
+     "e": 11.918
+    },
+    {
+     "w": "at",
+     "s": 11.969,
+     "e": 12.072
+    },
+    {
+     "w": "Power",
+     "s": 12.123,
+     "e": 12.38
+    },
+    {
+     "w": "Street.",
+     "s": 12.446,
+     "e": 13.11
+    },
+    {
+     "w": "King",
+     "s": 13.164,
+     "e": 13.379
+    },
+    {
+     "w": "Street's",
+     "s": 13.424,
+     "e": 13.764
+    },
+    {
+     "w": "slow",
+     "s": 13.825,
+     "e": 14.071
+    },
+    {
+     "w": "southbound",
+     "s": 14.136,
+     "e": 14.764
+    },
+    {
+     "w": "at",
+     "s": 14.789,
+     "e": 14.84
+    },
+    {
+     "w": "Wentworth",
+     "s": 14.887,
+     "e": 15.302
+    },
+    {
+     "w": "Avenue,",
+     "s": 15.368,
+     "e": 15.84
+    },
+    {
+     "w": "with",
+     "s": 15.917,
+     "e": 16.224
+    },
+    {
+     "w": "works",
+     "s": 16.289,
+     "e": 16.609
+    },
+    {
+     "w": "on",
+     "s": 16.635,
+     "e": 16.686
+    },
+    {
+     "w": "Dreadnought",
+     "s": 16.75,
+     "e": 17.224
+    },
+    {
+     "w": "Road",
+     "s": 17.301,
+     "e": 17.609
+    },
+    {
+     "w": "at",
+     "s": 17.66,
+     "e": 17.762
+    },
+    {
+     "w": "Frenchs",
+     "s": 17.807,
+     "e": 18.224
+    },
+    {
+     "w": "Forest",
+     "s": 18.278,
+     "e": 18.608
+    },
+    {
+     "w": "Road.",
+     "s": 18.67,
+     "e": 18.993
+    },
+    {
+     "w": "That's",
+     "s": 19.085,
+     "e": 19.531
+    },
+    {
+     "w": "KIIS",
+     "s": 19.646,
+     "e": 20.377
+    },
+    {
+     "w": "traffic",
+     "s": 20.434,
+     "e": 20.838
+    },
+    {
+     "w": "and",
+     "s": 20.896,
+     "e": 21.069
+    },
+    {
+     "w": "weather",
+     "s": 21.107,
+     "e": 21.376
+    },
+    {
+     "w": "together.",
+     "s": 21.445,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "cff3773e66d4470383933bf539d1b247",
+   "market": "sydney",
+   "targetSec": 30.0,
+   "naturalSec": 31.1,
+   "fittedSec": 30,
+   "stretch": 1.03667,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Warringah Freeway's closed northbound at Brook Street and the ramp to Falcon Street for construction. The M7's also closed outbound from the Westlink M7 to Kellogg Road. Shiers Avenue and Smithfield Road are both at a standstill. There's a slow patch on Joyce Drive, the Domestic Terminal and Seventh Street, with minor delays on Robey Street too. Camden Valley Way has works at Beech Road, and the Eastern Distributor's a touch slow. Clear skies, 13 degrees.",
+   "features": {
+    "syl": 109,
+    "words": 77,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.074
+    },
+    {
+     "w": "Warringah",
+     "s": 0.149,
+     "e": 0.744
+    },
+    {
+     "w": "Freeway's",
+     "s": 0.8,
+     "e": 1.34
+    },
+    {
+     "w": "closed",
+     "s": 1.393,
+     "e": 1.712
+    },
+    {
+     "w": "northbound",
+     "s": 1.787,
+     "e": 2.457
+    },
+    {
+     "w": "at",
+     "s": 2.506,
+     "e": 2.605
+    },
+    {
+     "w": "Brook",
+     "s": 2.655,
+     "e": 2.903
+    },
+    {
+     "w": "Street",
+     "s": 2.956,
+     "e": 3.275
+    },
+    {
+     "w": "and",
+     "s": 3.387,
+     "e": 3.722
+    },
+    {
+     "w": "the",
+     "s": 3.741,
+     "e": 3.797
+    },
+    {
+     "w": "ramp",
+     "s": 3.856,
+     "e": 4.094
+    },
+    {
+     "w": "to",
+     "s": 4.119,
+     "e": 4.169
+    },
+    {
+     "w": "Falcon",
+     "s": 4.233,
+     "e": 4.615
+    },
+    {
+     "w": "Street",
+     "s": 4.658,
+     "e": 4.913
+    },
+    {
+     "w": "for",
+     "s": 4.95,
+     "e": 5.062
+    },
+    {
+     "w": "construction.",
+     "s": 5.125,
+     "e": 6.216
+    },
+    {
+     "w": "The",
+     "s": 6.3,
+     "e": 6.551
+    },
+    {
+     "w": "M7's",
+     "s": 6.663,
+     "e": 7.221
+    },
+    {
+     "w": "also",
+     "s": 7.28,
+     "e": 7.519
+    },
+    {
+     "w": "closed",
+     "s": 7.583,
+     "e": 7.965
+    },
+    {
+     "w": "outbound",
+     "s": 8.031,
+     "e": 8.561
+    },
+    {
+     "w": "from",
+     "s": 8.591,
+     "e": 8.71
+    },
+    {
+     "w": "the",
+     "s": 8.728,
+     "e": 8.784
+    },
+    {
+     "w": "Westlink",
+     "s": 8.844,
+     "e": 9.305
+    },
+    {
+     "w": "M",
+     "s": 9.38,
+     "e": 9.454
+    },
+    {
+     "w": "7",
+     "s": 9.503,
+     "e": 9.752
+    },
+    {
+     "w": "to",
+     "s": 9.826,
+     "e": 9.975
+    },
+    {
+     "w": "Kellogg",
+     "s": 10.031,
+     "e": 10.422
+    },
+    {
+     "w": "Road.",
+     "s": 10.496,
+     "e": 10.868
+    },
+    {
+     "w": "Shiers",
+     "s": 11.092,
+     "e": 11.762
+    },
+    {
+     "w": "Avenue",
+     "s": 11.826,
+     "e": 12.208
+    },
+    {
+     "w": "and",
+     "s": 12.246,
+     "e": 12.357
+    },
+    {
+     "w": "Smithfield",
+     "s": 12.432,
+     "e": 12.953
+    },
+    {
+     "w": "Road",
+     "s": 13.027,
+     "e": 13.325
+    },
+    {
+     "w": "are",
+     "s": 13.381,
+     "e": 13.548
+    },
+    {
+     "w": "both",
+     "s": 13.608,
+     "e": 13.846
+    },
+    {
+     "w": "at",
+     "s": 13.895,
+     "e": 13.995
+    },
+    {
+     "w": "a",
+     "s": 14.032,
+     "e": 14.069
+    },
+    {
+     "w": "standstill.",
+     "s": 14.132,
+     "e": 14.888
+    },
+    {
+     "w": "There's",
+     "s": 15,
+     "e": 15.633
+    },
+    {
+     "w": "a",
+     "s": 15.707,
+     "e": 15.782
+    },
+    {
+     "w": "slow",
+     "s": 15.811,
+     "e": 15.931
+    },
+    {
+     "w": "patch",
+     "s": 15.993,
+     "e": 16.303
+    },
+    {
+     "w": "on",
+     "s": 16.352,
+     "e": 16.452
+    },
+    {
+     "w": "Joyce",
+     "s": 16.501,
+     "e": 16.749
+    },
+    {
+     "w": "Drive,",
+     "s": 16.824,
+     "e": 17.419
+    },
+    {
+     "w": "the",
+     "s": 17.438,
+     "e": 17.494
+    },
+    {
+     "w": "Domestic",
+     "s": 17.543,
+     "e": 17.94
+    },
+    {
+     "w": "Terminal",
+     "s": 17.99,
+     "e": 18.387
+    },
+    {
+     "w": "and",
+     "s": 18.462,
+     "e": 18.685
+    },
+    {
+     "w": "Seventh",
+     "s": 18.731,
+     "e": 19.057
+    },
+    {
+     "w": "Street,",
+     "s": 19.11,
+     "e": 19.504
+    },
+    {
+     "w": "with",
+     "s": 19.578,
+     "e": 19.876
+    },
+    {
+     "w": "minor",
+     "s": 19.925,
+     "e": 20.174
+    },
+    {
+     "w": "delays",
+     "s": 20.238,
+     "e": 20.62
+    },
+    {
+     "w": "on",
+     "s": 20.67,
+     "e": 20.769
+    },
+    {
+     "w": "Robey",
+     "s": 20.844,
+     "e": 21.141
+    },
+    {
+     "w": "Street",
+     "s": 21.184,
+     "e": 21.439
+    },
+    {
+     "w": "too.",
+     "s": 21.551,
+     "e": 22.035
+    },
+    {
+     "w": "Camden",
+     "s": 22.162,
+     "e": 22.928
+    },
+    {
+     "w": "Valley",
+     "s": 22.971,
+     "e": 23.226
+    },
+    {
+     "w": "Way",
+     "s": 23.282,
+     "e": 23.449
+    },
+    {
+     "w": "has",
+     "s": 23.505,
+     "e": 23.672
+    },
+    {
+     "w": "works",
+     "s": 23.735,
+     "e": 24.045
+    },
+    {
+     "w": "at",
+     "s": 24.07,
+     "e": 24.119
+    },
+    {
+     "w": "Beech",
+     "s": 24.194,
+     "e": 24.491
+    },
+    {
+     "w": "Road,",
+     "s": 24.551,
+     "e": 25.087
+    },
+    {
+     "w": "and",
+     "s": 25.105,
+     "e": 25.161
+    },
+    {
+     "w": "the",
+     "s": 25.199,
+     "e": 25.31
+    },
+    {
+     "w": "Eastern",
+     "s": 25.357,
+     "e": 25.682
+    },
+    {
+     "w": "Distributor's",
+     "s": 25.729,
+     "e": 26.278
+    },
+    {
+     "w": "a",
+     "s": 26.352,
+     "e": 26.427
+    },
+    {
+     "w": "touch",
+     "s": 26.489,
+     "e": 26.799
+    },
+    {
+     "w": "slow.",
+     "s": 26.888,
+     "e": 27.32
+    },
+    {
+     "w": "Clear",
+     "s": 27.457,
+     "e": 28.139
+    },
+    {
+     "w": "skies,",
+     "s": 28.213,
+     "e": 28.809
+    },
+    {
+     "w": "13",
+     "s": 28.85,
+     "e": 29.181
+    },
+    {
+     "w": "degrees.",
+     "s": 29.256,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "d10f39b8764b40ea8d91ed56d995e10b",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 22.0,
+   "fittedSec": 22,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Looking across Sydney. The Warringah Freeway's closed southbound at the Alfred Street North ramp and Brook Street. Mitchell Road's closed northbound between Sydney Park Road and Maddox Street. The M7's heavy northbound at Rooty Hill Road. Wentworth Avenue's a bit slow citybound between Gardeners Road and Botany Road. That's KIIS traffic and weather together.",
+   "features": {
+    "syl": 86,
+    "words": 54,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 0,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "Looking",
+     "s": 0,
+     "e": 0.24
+    },
+    {
+     "w": "across",
+     "s": 0.297,
+     "e": 0.64
+    },
+    {
+     "w": "Sydney.",
+     "s": 0.709,
+     "e": 1.28
+    },
+    {
+     "w": "The",
+     "s": 1.3,
+     "e": 1.36
+    },
+    {
+     "w": "Warringah",
+     "s": 1.44,
+     "e": 2.08
+    },
+    {
+     "w": "Freeway's",
+     "s": 2.14,
+     "e": 2.64
+    },
+    {
+     "w": "closed",
+     "s": 2.697,
+     "e": 3.04
+    },
+    {
+     "w": "southbound",
+     "s": 3.093,
+     "e": 3.68
+    },
+    {
+     "w": "at",
+     "s": 3.733,
+     "e": 3.84
+    },
+    {
+     "w": "the",
+     "s": 3.86,
+     "e": 3.92
+    },
+    {
+     "w": "Alfred",
+     "s": 3.977,
+     "e": 4.32
+    },
+    {
+     "w": "Street",
+     "s": 4.366,
+     "e": 4.64
+    },
+    {
+     "w": "North",
+     "s": 4.693,
+     "e": 4.96
+    },
+    {
+     "w": "ramp",
+     "s": 5.024,
+     "e": 5.28
+    },
+    {
+     "w": "and",
+     "s": 5.34,
+     "e": 5.52
+    },
+    {
+     "w": "Brook",
+     "s": 5.573,
+     "e": 5.84
+    },
+    {
+     "w": "Street.",
+     "s": 5.909,
+     "e": 6.4
+    },
+    {
+     "w": "Mitchell",
+     "s": 6.48,
+     "e": 7.12
+    },
+    {
+     "w": "Road's",
+     "s": 7.168,
+     "e": 7.52
+    },
+    {
+     "w": "closed",
+     "s": 7.566,
+     "e": 7.84
+    },
+    {
+     "w": "northbound",
+     "s": 7.893,
+     "e": 8.4
+    },
+    {
+     "w": "between",
+     "s": 8.45,
+     "e": 8.8
+    },
+    {
+     "w": "Sydney",
+     "s": 8.846,
+     "e": 9.12
+    },
+    {
+     "w": "Park",
+     "s": 9.184,
+     "e": 9.44
+    },
+    {
+     "w": "Road",
+     "s": 9.504,
+     "e": 9.76
+    },
+    {
+     "w": "and",
+     "s": 9.8,
+     "e": 9.92
+    },
+    {
+     "w": "Maddox",
+     "s": 9.968,
+     "e": 10.32
+    },
+    {
+     "w": "Street.",
+     "s": 10.389,
+     "e": 10.96
+    },
+    {
+     "w": "The",
+     "s": 11.08,
+     "e": 11.44
+    },
+    {
+     "w": "M7's",
+     "s": 11.56,
+     "e": 12.08
+    },
+    {
+     "w": "heavy",
+     "s": 12.107,
+     "e": 12.24
+    },
+    {
+     "w": "northbound",
+     "s": 12.307,
+     "e": 12.88
+    },
+    {
+     "w": "at",
+     "s": 12.907,
+     "e": 12.96
+    },
+    {
+     "w": "Rooty",
+     "s": 13.008,
+     "e": 13.28
+    },
+    {
+     "w": "Hill",
+     "s": 13.328,
+     "e": 13.52
+    },
+    {
+     "w": "Road.",
+     "s": 13.6,
+     "e": 14
+    },
+    {
+     "w": "Wentworth",
+     "s": 14.112,
+     "e": 14.72
+    },
+    {
+     "w": "Avenue's",
+     "s": 14.777,
+     "e": 15.2
+    },
+    {
+     "w": "a",
+     "s": 15.24,
+     "e": 15.28
+    },
+    {
+     "w": "bit",
+     "s": 15.32,
+     "e": 15.44
+    },
+    {
+     "w": "slow",
+     "s": 15.504,
+     "e": 15.76
+    },
+    {
+     "w": "citybound",
+     "s": 15.84,
+     "e": 16.4
+    },
+    {
+     "w": "between",
+     "s": 16.45,
+     "e": 16.8
+    },
+    {
+     "w": "Gardeners",
+     "s": 16.857,
+     "e": 17.28
+    },
+    {
+     "w": "Road",
+     "s": 17.36,
+     "e": 17.68
+    },
+    {
+     "w": "and",
+     "s": 17.72,
+     "e": 17.84
+    },
+    {
+     "w": "Botany",
+     "s": 17.9,
+     "e": 18.24
+    },
+    {
+     "w": "Road.",
+     "s": 18.32,
+     "e": 18.72
+    },
+    {
+     "w": "That's",
+     "s": 18.832,
+     "e": 19.44
+    },
+    {
+     "w": "KIIS",
+     "s": 19.52,
+     "e": 20.24
+    },
+    {
+     "w": "traffic",
+     "s": 20.3,
+     "e": 20.72
+    },
+    {
+     "w": "and",
+     "s": 20.78,
+     "e": 20.96
+    },
+    {
+     "w": "weather",
+     "s": 21,
+     "e": 21.28
+    },
+    {
+     "w": "together.",
+     "s": 21.351,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "d994276512b44c6ab8c697cab28dfc9c",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 22.1,
+   "fittedSec": 22,
+   "stretch": 1.00455,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Henry Lawson Drive's at a standstill. The Warringah Freeway's closed citybound at Brook Street for construction. South Western Motorway's heavily congested at Heathcote Road, with moderate delays. Paddys Market Sydney's also stopped solid. Passing clouds, 14 degrees. Unleaded's cheapest at one ninety-two in Merrylands West.",
+   "features": {
+    "syl": 84,
+    "words": 45,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "Henry",
+     "s": 0,
+     "e": 0.239
+    },
+    {
+     "w": "Lawson",
+     "s": 0.296,
+     "e": 0.638
+    },
+    {
+     "w": "Drive's",
+     "s": 0.717,
+     "e": 1.196
+    },
+    {
+     "w": "at",
+     "s": 1.275,
+     "e": 1.435
+    },
+    {
+     "w": "a",
+     "s": 1.554,
+     "e": 1.674
+    },
+    {
+     "w": "standstill.",
+     "s": 1.714,
+     "e": 2.71
+    },
+    {
+     "w": "The",
+     "s": 2.73,
+     "e": 2.79
+    },
+    {
+     "w": "Warringah",
+     "s": 2.83,
+     "e": 3.268
+    },
+    {
+     "w": "Freeway's",
+     "s": 3.308,
+     "e": 3.826
+    },
+    {
+     "w": "closed",
+     "s": 3.895,
+     "e": 4.304
+    },
+    {
+     "w": "citybound",
+     "s": 4.368,
+     "e": 4.942
+    },
+    {
+     "w": "at",
+     "s": 4.995,
+     "e": 5.101
+    },
+    {
+     "w": "Brook",
+     "s": 5.154,
+     "e": 5.42
+    },
+    {
+     "w": "Street",
+     "s": 5.466,
+     "e": 5.739
+    },
+    {
+     "w": "for",
+     "s": 5.779,
+     "e": 5.899
+    },
+    {
+     "w": "construction.",
+     "s": 5.96,
+     "e": 7.333
+    },
+    {
+     "w": "South",
+     "s": 7.386,
+     "e": 7.652
+    },
+    {
+     "w": "Western",
+     "s": 7.692,
+     "e": 7.971
+    },
+    {
+     "w": "Motorway's",
+     "s": 8.024,
+     "e": 8.529
+    },
+    {
+     "w": "heavily",
+     "s": 8.579,
+     "e": 8.928
+    },
+    {
+     "w": "congested",
+     "s": 8.987,
+     "e": 9.486
+    },
+    {
+     "w": "at",
+     "s": 9.538,
+     "e": 9.645
+    },
+    {
+     "w": "Heathcote",
+     "s": 9.698,
+     "e": 10.123
+    },
+    {
+     "w": "Road,",
+     "s": 10.203,
+     "e": 10.761
+    },
+    {
+     "w": "with",
+     "s": 10.793,
+     "e": 10.92
+    },
+    {
+     "w": "moderate",
+     "s": 10.964,
+     "e": 11.319
+    },
+    {
+     "w": "delays.",
+     "s": 11.421,
+     "e": 12.315
+    },
+    {
+     "w": "Paddys",
+     "s": 12.455,
+     "e": 12.833
+    },
+    {
+     "w": "Market",
+     "s": 12.89,
+     "e": 13.232
+    },
+    {
+     "w": "Sydney's",
+     "s": 13.289,
+     "e": 13.79
+    },
+    {
+     "w": "also",
+     "s": 13.87,
+     "e": 14.188
+    },
+    {
+     "w": "stopped",
+     "s": 14.238,
+     "e": 14.587
+    },
+    {
+     "w": "solid.",
+     "s": 14.667,
+     "e": 15.145
+    },
+    {
+     "w": "Passing",
+     "s": 15.245,
+     "e": 15.942
+    },
+    {
+     "w": "clouds,",
+     "s": 16.011,
+     "e": 16.58
+    },
+    {
+     "w": "14",
+     "s": 16.624,
+     "e": 16.978
+    },
+    {
+     "w": "degrees.",
+     "s": 17.058,
+     "e": 17.696
+    },
+    {
+     "w": "Unleaded's",
+     "s": 17.882,
+     "e": 18.572
+    },
+    {
+     "w": "cheapest",
+     "s": 18.634,
+     "e": 19.13
+    },
+    {
+     "w": "at",
+     "s": 19.183,
+     "e": 19.29
+    },
+    {
+     "w": "one",
+     "s": 19.35,
+     "e": 19.529
+    },
+    {
+     "w": "ninety-two",
+     "s": 19.586,
+     "e": 20.167
+    },
+    {
+     "w": "in",
+     "s": 20.273,
+     "e": 20.486
+    },
+    {
+     "w": "Merrylands",
+     "s": 20.538,
+     "e": 21.123
+    },
+    {
+     "w": "West.",
+     "s": 21.203,
+     "e": 22
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,54 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:28.7641911+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.84473,151.06638\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Sydney Showground-Giants Stadium",
+          "id": "here:pds:place:036r3grm-26c87e70c31207d577dd10e40b3db039",
+          "resultType": "place",
+          "address": {
+            "label": "Sydney Showground-Giants Stadium, Grand Pde, Sydney Olympic Park NSW 2127, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Sydney Olympic Park",
+            "street": "Grand Pde",
+            "postalCode": "2127"
+          },
+          "position": {
+            "lat": -33.84465,
+            "lng": 151.06635
+          },
+          "access": [
+            {
+              "lat": -33.84473,
+              "lng": 151.06638
+            }
+          ],
+          "distance": 0,
+          "categories": [
+            {
+              "id": "800-8600-0180",
+              "name": "Sports Complex/Stadium",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:38.9735603+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.7335,115.82902\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Caporn St, Mariginiup WA 6078, Australia",
+          "id": "here:af:streetsection:9SBmadWrXLo1jHGA9KS3ZC",
+          "resultType": "street",
+          "address": {
+            "label": "Caporn St, Mariginiup WA 6078, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Mariginiup",
+            "street": "Caporn St",
+            "postalCode": "6078"
+          },
+          "position": {
+            "lat": -31.7335,
+            "lng": 115.82902
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.80446,
+            "south": -31.73359,
+            "east": 115.82918,
+            "north": -31.733
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

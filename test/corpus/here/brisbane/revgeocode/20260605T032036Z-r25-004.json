@@ -1,0 +1,47 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032036Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:37.230047+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.61303,153.12296\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Pacific Mtwy, Springwood QLD 4127, Australia",
+          "id": "here:af:streetsection:NAu8fO8j2yV9HyHjdaJpKC",
+          "resultType": "street",
+          "address": {
+            "label": "Pacific Mtwy, Springwood QLD 4127, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Springwood",
+            "street": "Pacific Mtwy",
+            "postalCode": "4127"
+          },
+          "position": {
+            "lat": -27.61303,
+            "lng": 153.12296
+          },
+          "distance": 1,
+          "mapView": {
+            "west": 153.12262,
+            "south": -27.63342,
+            "east": 153.13345,
+            "north": -27.6123
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

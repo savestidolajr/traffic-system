@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032030Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:31.6345225+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.87037,151.2209\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Maclean St, Woolloomooloo NSW 2011, Australia",
+          "id": "here:af:streetsection:IHlh.ZdEJPvg4YeOwQ.sRD",
+          "resultType": "street",
+          "address": {
+            "label": "Maclean St, Woolloomooloo NSW 2011, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Woolloomooloo",
+            "street": "Maclean St",
+            "postalCode": "2011"
+          },
+          "position": {
+            "lat": -33.87037,
+            "lng": 151.2209
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.2209,
+            "south": -33.87037,
+            "east": 151.22096,
+            "north": -33.87004
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

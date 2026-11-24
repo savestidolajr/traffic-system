@@ -1,0 +1,13 @@
+{
+  "$schema": "https://likec4.dev/schemas/config.json",
+  "name": "arn-traffic",
+  "title": "ARN AI Traffic Bulletin Platform",
+  "styles": {
+    "defaults": {
+      "group": {
+        "opacity": 20,
+        "border": "solid"
+      }
+    }
+  }
+}

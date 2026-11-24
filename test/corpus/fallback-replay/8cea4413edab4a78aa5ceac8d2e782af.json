@@ -1,0 +1,1146 @@
+{
+ "JobId": "8cea4413edab4a78aa5ceac8d2e782af",
+ "Market": "mildura",
+ "Station": "River 1467",
+ "CapturedAtUtc": "2026-08-10T07:55:02.0875141Z",
+ "DevOutcome": {
+  "Status": "Published",
+  "FallbackKind": null,
+  "Attempts": 2,
+  "TargetWordsSeq": [
+   81,
+   67
+  ],
+  "SynthWordsSeq": [
+   67,
+   67
+  ],
+  "NaturalSecSeq": [
+   30.0,
+   30.0
+  ],
+  "BestNaturalSec": 30.0,
+  "ReviewFeedbackCount": 1,
+  "SynthFailures": []
+ },
+ "Fidelity": {
+  "IncidentsRecovered": 4,
+  "IncidentsSynthesized": 0,
+  "WeatherSource": "job",
+  "FuelSource": "job",
+  "GoodRunsAndFlowPoolLost": false,
+  "StationConfigSource": "none"
+ },
+ "VoiceConfig": {
+  "Provider": "",
+  "VoiceId": "EF2rFRNHqbfaMctIvS2k",
+  "VoiceName": "Dolly Male Young",
+  "Model": "eleven_v3",
+  "Settings": {
+   "Stability": 0.5,
+   "SimilarityBoost": 0.75,
+   "Style": 0,
+   "UseSpeakerBoost": false,
+   "Speed": 1
+  },
+  "PaceBoostWpm": 40
+ },
+ "Snapshot": {
+  "TargetDurationSeconds": 30,
+  "Location": "mildura",
+  "City": null,
+  "MarketId": "mildura",
+  "Content": {
+   "Traffic": true,
+   "Weather": true,
+   "Fuel": true,
+   "WeatherRequired": true,
+   "FuelRequired": false,
+   "HasAnySource": true,
+   "RequiresWeather": true,
+   "RequiresFuel": false
+  },
+  "FillOrder": [
+   "Weather",
+   "Fuel",
+   "MinorTraffic",
+   "Filler"
+  ],
+  "Corridors": [
+   {
+    "RoadName": "Walker Road",
+    "Severity": 3,
+    "FunctionalClass": 5,
+    "TotalLengthMeters": 7010,
+    "ImpactScore": 195.00000000000003,
+    "PrimaryType": "roadClosure",
+    "Description": "road closure outbound",
+    "Incidents": [
+     {
+      "Id": "4582107454787213543",
+      "Description": "Closed",
+      "Severity": 3,
+      "Location": "Walker Rd",
+      "Type": "roadClosure",
+      "LengthMeters": 3505,
+      "FunctionalClass": 5,
+      "Latitude": -34.18493,
+      "Longitude": 141.95585,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "outbound",
+      "Summary": null,
+      "JunctionTraversability": "intermediateClosedEdgeOpen",
+      "SegmentRefs": [
+       "$0:365145551:$1:216034517#-0.00285..0.98606"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -34.18493,
+        "Lng": 141.95585
+       },
+       {
+        "Lat": -34.1881,
+        "Lng": 141.95213
+       },
+       {
+        "Lat": -34.20731,
+        "Lng": 141.92945
+       },
+       {
+        "Lat": -34.20746,
+        "Lng": 141.92927
+       },
+       {
+        "Lat": -34.20751,
+        "Lng": 141.92909
+       }
+      ],
+      "RoadClosed": true,
+      "EntryTimeUtc": "2026-07-07T16:43:22+00:00"
+     },
+     {
+      "Id": "4078239842755471508",
+      "Description": "Closed",
+      "Severity": 3,
+      "Location": "Walker Rd",
+      "Type": "roadClosure",
+      "LengthMeters": 3505,
+      "FunctionalClass": 5,
+      "Latitude": -34.20751,
+      "Longitude": 141.92909,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "citybound",
+      "Summary": null,
+      "JunctionTraversability": "intermediateClosedEdgeOpen",
+      "SegmentRefs": [
+       "$0:365145551:$1:216034517#+0.01398..0.99719"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -34.20751,
+        "Lng": 141.92909
+       },
+       {
+        "Lat": -34.20746,
+        "Lng": 141.92927
+       },
+       {
+        "Lat": -34.20731,
+        "Lng": 141.92945
+       },
+       {
+        "Lat": -34.1881,
+        "Lng": 141.95213
+       },
+       {
+        "Lat": -34.18493,
+        "Lng": 141.95585
+       }
+      ],
+      "RoadClosed": true,
+      "EntryTimeUtc": "2026-07-07T16:43:21+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "outbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -34.18493,
+    "Longitude": 141.95585,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   },
+   {
+    "RoadName": "Lock 10 Road",
+    "Severity": 3,
+    "FunctionalClass": 5,
+    "TotalLengthMeters": 26520,
+    "ImpactScore": 165.75000000000003,
+    "PrimaryType": "roadClosure",
+    "Description": "road closure outbound",
+    "Incidents": [
+     {
+      "Id": "3835975733308523597",
+      "Description": "Closed",
+      "Severity": 3,
+      "Location": "Lock 10 Rd",
+      "Type": "roadClosure",
+      "LengthMeters": 26520,
+      "FunctionalClass": 5,
+      "Latitude": -34.15688,
+      "Longitude": 141.9221,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "outbound",
+      "Summary": null,
+      "JunctionTraversability": "intermediateClosedEdgeOpen",
+      "SegmentRefs": [
+       "$0:365145574:$1:215734929#-0.04444..1",
+       "$0:365145574:$1:216219937#+0..1",
+       "$0:365145571:$1:860443193#-0..1",
+       "$0:365145571:$1:860444713#-0..1",
+       "$0:365145571:$1:916420040#+0..1",
+       "$0:365145570:$1:216219926#-0..1",
+       "$0:365145570:$1:916420456#+0..1",
+       "$0:365145524:$1:916443876#-0..1",
+       "$0:365145524:$1:916466375#+0..1",
+       "$0:365145520:$1:860441363#-0..1",
+       "$0:365145520:$1:487250516#-0..1",
+       "$0:365145509:$1:860588950#-0..1",
+       "$0:365145509:$1:860588538#-0..1",
+       "$0:365145483:$1:860442954#-0..1",
+       "$0:365145483:$1:882290465#+0..1",
+       "$0:365145482:$1:882290490#+0..1",
+       "$0:365145310:$1:860445624#-0..0.99576"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -34.15688,
+        "Lng": 141.9221
+       },
+       {
+        "Lat": -34.15687,
+        "Lng": 141.88778
+       },
+       {
+        "Lat": -34.15942,
+        "Lng": 141.88368
+       },
+       {
+        "Lat": -34.15982,
+        "Lng": 141.87292
+       },
+       {
+        "Lat": -34.16685,
+        "Lng": 141.84906
+       },
+       {
+        "Lat": -34.1729,
+        "Lng": 141.83715
+       },
+       {
+        "Lat": -34.17469,
+        "Lng": 141.83247
+       },
+       {
+        "Lat": -34.17754,
+        "Lng": 141.82208
+       },
+       {
+        "Lat": -34.1775,
+        "Lng": 141.81282
+       },
+       {
+        "Lat": -34.17443,
+        "Lng": 141.80755
+       },
+       {
+        "Lat": -34.18088,
+        "Lng": 141.779
+       },
+       {
+        "Lat": -34.18553,
+        "Lng": 141.76379
+       },
+       {
+        "Lat": -34.19236,
+        "Lng": 141.73706
+       },
+       {
+        "Lat": -34.19328,
+        "Lng": 141.71574
+       },
+       {
+        "Lat": -34.19257,
+        "Lng": 141.69683
+       },
+       {
+        "Lat": -34.19993,
+        "Lng": 141.64659
+       }
+      ],
+      "RoadClosed": true,
+      "EntryTimeUtc": "2026-07-22T21:53:05+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "outbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -34.15688,
+    "Longitude": 141.9221,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   },
+   {
+    "RoadName": "Old Mail Road",
+    "Severity": 3,
+    "FunctionalClass": 5,
+    "TotalLengthMeters": 26520,
+    "ImpactScore": 127.5,
+    "PrimaryType": "roadClosure",
+    "Description": "road closure citybound",
+    "Incidents": [
+     {
+      "Id": "867098763209416303",
+      "Description": "Closed",
+      "Severity": 3,
+      "Location": "Old Mail Rd",
+      "Type": "roadClosure",
+      "LengthMeters": 26520,
+      "FunctionalClass": 5,
+      "Latitude": -34.19993,
+      "Longitude": 141.64659,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "citybound",
+      "Summary": null,
+      "JunctionTraversability": "intermediateClosedEdgeOpen",
+      "SegmentRefs": [
+       "$0:365145310:$1:860445624#+0.00424..1",
+       "$0:365145482:$1:882290490#-0..1",
+       "$0:365145483:$1:882290465#-0..1",
+       "$0:365145483:$1:860442954#+0..1",
+       "$0:365145509:$1:860588538#+0..1",
+       "$0:365145509:$1:860588950#+0..1",
+       "$0:365145520:$1:487250516#+0..1",
+       "$0:365145520:$1:860441363#+0..1",
+       "$0:365145524:$1:916466375#-0..1",
+       "$0:365145524:$1:916443876#+0..1",
+       "$0:365145570:$1:916420456#-0..1",
+       "$0:365145570:$1:216219926#+0..1",
+       "$0:365145571:$1:916420040#-0..1",
+       "$0:365145571:$1:860444713#+0..1",
+       "$0:365145571:$1:860443193#+0..1",
+       "$0:365145574:$1:216219937#-0..1",
+       "$0:365145574:$1:215734929#+0..0.94222"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -34.19993,
+        "Lng": 141.64659
+       },
+       {
+        "Lat": -34.19257,
+        "Lng": 141.69683
+       },
+       {
+        "Lat": -34.19328,
+        "Lng": 141.71574
+       },
+       {
+        "Lat": -34.19236,
+        "Lng": 141.73706
+       },
+       {
+        "Lat": -34.18553,
+        "Lng": 141.76379
+       },
+       {
+        "Lat": -34.18088,
+        "Lng": 141.779
+       },
+       {
+        "Lat": -34.17443,
+        "Lng": 141.80755
+       },
+       {
+        "Lat": -34.1775,
+        "Lng": 141.81282
+       },
+       {
+        "Lat": -34.17754,
+        "Lng": 141.82208
+       },
+       {
+        "Lat": -34.17469,
+        "Lng": 141.83247
+       },
+       {
+        "Lat": -34.1729,
+        "Lng": 141.83715
+       },
+       {
+        "Lat": -34.16685,
+        "Lng": 141.84906
+       },
+       {
+        "Lat": -34.15982,
+        "Lng": 141.87292
+       },
+       {
+        "Lat": -34.15942,
+        "Lng": 141.88368
+       },
+       {
+        "Lat": -34.15687,
+        "Lng": 141.88778
+       },
+       {
+        "Lat": -34.15688,
+        "Lng": 141.9221
+       }
+      ],
+      "RoadClosed": true,
+      "EntryTimeUtc": "2026-07-22T21:53:05+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "citybound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -34.19993,
+    "Longitude": 141.64659,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   }
+  ],
+  "MonitoredRoutes": [],
+  "GoodRunRoads": [
+   "Werrimull North Road",
+   "Tapaulin Road",
+   "Fletchers Lake Road",
+   "Benetook Avenue",
+   "Paschendael Avenue",
+   "Brownport Road"
+  ],
+  "FlowPool": [
+   {
+    "RoadName": "Werrimull North Road",
+    "JamFactor": 0.5,
+    "LengthMeters": 82560,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Tapaulin Road",
+    "JamFactor": 0.4,
+    "LengthMeters": 77997,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Fletchers Lake Road",
+    "JamFactor": 0.4,
+    "LengthMeters": 77029,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Benetook Avenue",
+    "JamFactor": 1.7,
+    "LengthMeters": 55804,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Paschendael Avenue",
+    "JamFactor": 0.7,
+    "LengthMeters": 53678,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Brownport Road",
+    "JamFactor": 1,
+    "LengthMeters": 52681,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Silver City Highway",
+    "JamFactor": 1.7,
+    "LengthMeters": 52287,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Wentworth Street",
+    "JamFactor": 0.5,
+    "LengthMeters": 51168,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Boonoonar Road",
+    "JamFactor": 1.1,
+    "LengthMeters": 46819,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Calder Highway",
+    "JamFactor": 2.2,
+    "LengthMeters": 40762,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Wamberra Road",
+    "JamFactor": 0.6,
+    "LengthMeters": 34533,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Murray Valley Highway",
+    "JamFactor": 0.2,
+    "LengthMeters": 33530,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Kulkyne Way",
+    "JamFactor": 0.8,
+    "LengthMeters": 30626,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Tooperoopna Road",
+    "JamFactor": 0.6,
+    "LengthMeters": 25767,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Hattah-Robinvale Road",
+    "JamFactor": 0.4,
+    "LengthMeters": 25670,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Woomera Avenue",
+    "JamFactor": 0.3,
+    "LengthMeters": 22970,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Sturt Highway",
+    "JamFactor": 0.7,
+    "LengthMeters": 19841,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "River Avenue",
+    "JamFactor": 0.3,
+    "LengthMeters": 15683,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   }
+  ],
+  "Weather": {
+   "Conditions": "Passing clouds. Cool.",
+   "TemperatureC": 15.78,
+   "WindDescription": "blustery Southwest wind",
+   "PrecipitationProbabilityPercent": 99,
+   "Alerts": [],
+   "Outlook": "reaching 16 degrees later today; tomorrow sprinkles. decreasing cloudiness. cool, around 15 degrees",
+   "IsForecast": false,
+   "HasMajorAlert": false
+  },
+  "Fuel": {
+   "Summaries": [
+    {
+     "FuelType": "Unleaded 91",
+     "MinPrice": 2.015,
+     "AveragePrice": 2.071,
+     "StationCount": 24,
+     "LatestModifiedUtc": "2026-08-10T07:31:05+00:00",
+     "CheapestStationSuburb": "Mildura"
+    },
+    {
+     "FuelType": "Diesel",
+     "MinPrice": 2.455,
+     "AveragePrice": 2.509,
+     "StationCount": 18,
+     "LatestModifiedUtc": "2026-08-10T07:31:05+00:00",
+     "CheapestStationSuburb": "Mildura"
+    }
+   ],
+   "HasPrices": true
+  },
+  "IncidentChanges": null,
+  "Guidance": {
+   "Entries": [
+    {
+     "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for — a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+     "UpdatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "645e52b90299493a8dbde1205c6c657e",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "75fe175d471144b38bf23c24966dfb6f",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "7b012b9381e04e72be8211133f224188",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 4,
+     "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "Australian English with natural spoken contractions. Round the figures — say 'about ten minutes', never '10.3 minutes'. No police codes or insider jargon.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 3,
+     "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "f5e76bd5993c41edb637a7302f7d7479",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 2,
+     "Text": "Use common road names with the definite article: 'the M1', 'the M4', 'the CBD'. Use 'citybound' and 'outbound' for direction of travel.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    }
+   ],
+   "DroppedCount": 0,
+   "Count": 7,
+   "HasEntries": true
+  },
+  "FutureLessons": [],
+  "Bookends": null,
+  "FillerStatements": [],
+  "SharedRules": null,
+  "RoadFeelPalette": null,
+  "EditorialSettings": {
+   "Scope": 0,
+   "ScopeId": ""
+  },
+  "CuratedCorridorRoads": null,
+  "CuratedGoodRunRoads": null,
+  "ExcludedIncidentKeys": null,
+  "WriterPrompt": null,
+  "EditedIncidents": []
+ },
+ "Coverage": {
+  "Latitude": -34.1855,
+  "Longitude": 142.1625,
+  "RadiusKm": 40,
+  "ShapeType": "circle",
+  "West": null,
+  "South": null,
+  "East": null,
+  "North": null,
+  "CorridorPoints": null,
+  "CorridorRadiusMeters": null,
+  "PolygonPoints": null
+ },
+ "FullCorridorPool": [
+  {
+   "RoadName": "Walker Road",
+   "Severity": 3,
+   "FunctionalClass": 5,
+   "TotalLengthMeters": 7010,
+   "ImpactScore": 195.00000000000003,
+   "PrimaryType": "roadClosure",
+   "Description": "road closure outbound",
+   "Incidents": [
+    {
+     "Id": "4582107454787213543",
+     "Description": "Closed",
+     "Severity": 3,
+     "Location": "Walker Rd",
+     "Type": "roadClosure",
+     "LengthMeters": 3505,
+     "FunctionalClass": 5,
+     "Latitude": -34.18493,
+     "Longitude": 141.95585,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "outbound",
+     "Summary": null,
+     "JunctionTraversability": "intermediateClosedEdgeOpen",
+     "SegmentRefs": [
+      "$0:365145551:$1:216034517#-0.00285..0.98606"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -34.18493,
+       "Lng": 141.95585
+      },
+      {
+       "Lat": -34.1881,
+       "Lng": 141.95213
+      },
+      {
+       "Lat": -34.20731,
+       "Lng": 141.92945
+      },
+      {
+       "Lat": -34.20746,
+       "Lng": 141.92927
+      },
+      {
+       "Lat": -34.20751,
+       "Lng": 141.92909
+      }
+     ],
+     "RoadClosed": true,
+     "EntryTimeUtc": "2026-07-07T16:43:22+00:00"
+    },
+    {
+     "Id": "4078239842755471508",
+     "Description": "Closed",
+     "Severity": 3,
+     "Location": "Walker Rd",
+     "Type": "roadClosure",
+     "LengthMeters": 3505,
+     "FunctionalClass": 5,
+     "Latitude": -34.20751,
+     "Longitude": 141.92909,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "citybound",
+     "Summary": null,
+     "JunctionTraversability": "intermediateClosedEdgeOpen",
+     "SegmentRefs": [
+      "$0:365145551:$1:216034517#+0.01398..0.99719"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -34.20751,
+       "Lng": 141.92909
+      },
+      {
+       "Lat": -34.20746,
+       "Lng": 141.92927
+      },
+      {
+       "Lat": -34.20731,
+       "Lng": 141.92945
+      },
+      {
+       "Lat": -34.1881,
+       "Lng": 141.95213
+      },
+      {
+       "Lat": -34.18493,
+       "Lng": 141.95585
+      }
+     ],
+     "RoadClosed": true,
+     "EntryTimeUtc": "2026-07-07T16:43:21+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "outbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -34.18493,
+   "Longitude": 141.95585,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  },
+  {
+   "RoadName": "Lock 10 Road",
+   "Severity": 3,
+   "FunctionalClass": 5,
+   "TotalLengthMeters": 26520,
+   "ImpactScore": 165.75000000000003,
+   "PrimaryType": "roadClosure",
+   "Description": "road closure outbound",
+   "Incidents": [
+    {
+     "Id": "3835975733308523597",
+     "Description": "Closed",
+     "Severity": 3,
+     "Location": "Lock 10 Rd",
+     "Type": "roadClosure",
+     "LengthMeters": 26520,
+     "FunctionalClass": 5,
+     "Latitude": -34.15688,
+     "Longitude": 141.9221,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "outbound",
+     "Summary": null,
+     "JunctionTraversability": "intermediateClosedEdgeOpen",
+     "SegmentRefs": [
+      "$0:365145574:$1:215734929#-0.04444..1",
+      "$0:365145574:$1:216219937#+0..1",
+      "$0:365145571:$1:860443193#-0..1",
+      "$0:365145571:$1:860444713#-0..1",
+      "$0:365145571:$1:916420040#+0..1",
+      "$0:365145570:$1:216219926#-0..1",
+      "$0:365145570:$1:916420456#+0..1",
+      "$0:365145524:$1:916443876#-0..1",
+      "$0:365145524:$1:916466375#+0..1",
+      "$0:365145520:$1:860441363#-0..1",
+      "$0:365145520:$1:487250516#-0..1",
+      "$0:365145509:$1:860588950#-0..1",
+      "$0:365145509:$1:860588538#-0..1",
+      "$0:365145483:$1:860442954#-0..1",
+      "$0:365145483:$1:882290465#+0..1",
+      "$0:365145482:$1:882290490#+0..1",
+      "$0:365145310:$1:860445624#-0..0.99576"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -34.15688,
+       "Lng": 141.9221
+      },
+      {
+       "Lat": -34.15687,
+       "Lng": 141.88778
+      },
+      {
+       "Lat": -34.15942,
+       "Lng": 141.88368
+      },
+      {
+       "Lat": -34.15982,
+       "Lng": 141.87292
+      },
+      {
+       "Lat": -34.16685,
+       "Lng": 141.84906
+      },
+      {
+       "Lat": -34.1729,
+       "Lng": 141.83715
+      },
+      {
+       "Lat": -34.17469,
+       "Lng": 141.83247
+      },
+      {
+       "Lat": -34.17754,
+       "Lng": 141.82208
+      },
+      {
+       "Lat": -34.1775,
+       "Lng": 141.81282
+      },
+      {
+       "Lat": -34.17443,
+       "Lng": 141.80755
+      },
+      {
+       "Lat": -34.18088,
+       "Lng": 141.779
+      },
+      {
+       "Lat": -34.18553,
+       "Lng": 141.76379
+      },
+      {
+       "Lat": -34.19236,
+       "Lng": 141.73706
+      },
+      {
+       "Lat": -34.19328,
+       "Lng": 141.71574
+      },
+      {
+       "Lat": -34.19257,
+       "Lng": 141.69683
+      },
+      {
+       "Lat": -34.19993,
+       "Lng": 141.64659
+      }
+     ],
+     "RoadClosed": true,
+     "EntryTimeUtc": "2026-07-22T21:53:05+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "outbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -34.15688,
+   "Longitude": 141.9221,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  },
+  {
+   "RoadName": "Old Mail Road",
+   "Severity": 3,
+   "FunctionalClass": 5,
+   "TotalLengthMeters": 26520,
+   "ImpactScore": 127.5,
+   "PrimaryType": "roadClosure",
+   "Description": "road closure citybound",
+   "Incidents": [
+    {
+     "Id": "867098763209416303",
+     "Description": "Closed",
+     "Severity": 3,
+     "Location": "Old Mail Rd",
+     "Type": "roadClosure",
+     "LengthMeters": 26520,
+     "FunctionalClass": 5,
+     "Latitude": -34.19993,
+     "Longitude": 141.64659,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "citybound",
+     "Summary": null,
+     "JunctionTraversability": "intermediateClosedEdgeOpen",
+     "SegmentRefs": [
+      "$0:365145310:$1:860445624#+0.00424..1",
+      "$0:365145482:$1:882290490#-0..1",
+      "$0:365145483:$1:882290465#-0..1",
+      "$0:365145483:$1:860442954#+0..1",
+      "$0:365145509:$1:860588538#+0..1",
+      "$0:365145509:$1:860588950#+0..1",
+      "$0:365145520:$1:487250516#+0..1",
+      "$0:365145520:$1:860441363#+0..1",
+      "$0:365145524:$1:916466375#-0..1",
+      "$0:365145524:$1:916443876#+0..1",
+      "$0:365145570:$1:916420456#-0..1",
+      "$0:365145570:$1:216219926#+0..1",
+      "$0:365145571:$1:916420040#-0..1",
+      "$0:365145571:$1:860444713#+0..1",
+      "$0:365145571:$1:860443193#+0..1",
+      "$0:365145574:$1:216219937#-0..1",
+      "$0:365145574:$1:215734929#+0..0.94222"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -34.19993,
+       "Lng": 141.64659
+      },
+      {
+       "Lat": -34.19257,
+       "Lng": 141.69683
+      },
+      {
+       "Lat": -34.19328,
+       "Lng": 141.71574
+      },
+      {
+       "Lat": -34.19236,
+       "Lng": 141.73706
+      },
+      {
+       "Lat": -34.18553,
+       "Lng": 141.76379
+      },
+      {
+       "Lat": -34.18088,
+       "Lng": 141.779
+      },
+      {
+       "Lat": -34.17443,
+       "Lng": 141.80755
+      },
+      {
+       "Lat": -34.1775,
+       "Lng": 141.81282
+      },
+      {
+       "Lat": -34.17754,
+       "Lng": 141.82208
+      },
+      {
+       "Lat": -34.17469,
+       "Lng": 141.83247
+      },
+      {
+       "Lat": -34.1729,
+       "Lng": 141.83715
+      },
+      {
+       "Lat": -34.16685,
+       "Lng": 141.84906
+      },
+      {
+       "Lat": -34.15982,
+       "Lng": 141.87292
+      },
+      {
+       "Lat": -34.15942,
+       "Lng": 141.88368
+      },
+      {
+       "Lat": -34.15687,
+       "Lng": 141.88778
+      },
+      {
+       "Lat": -34.15688,
+       "Lng": 141.9221
+      }
+     ],
+     "RoadClosed": true,
+     "EntryTimeUtc": "2026-07-22T21:53:05+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "citybound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -34.19993,
+   "Longitude": 141.64659,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  }
+ ]
+}

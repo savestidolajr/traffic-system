@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:33.3682624+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.99916,145.12321\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Mordialloc Fwy, Braeside VIC 3195, Australia",
+          "id": "here:af:streetsection:UpXdjDA4q8qchOBqma3V0A",
+          "resultType": "street",
+          "address": {
+            "label": "Mordialloc Fwy, Braeside VIC 3195, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Braeside",
+            "street": "Mordialloc Fwy",
+            "postalCode": "3195"
+          },
+          "position": {
+            "lat": -37.99916,
+            "lng": 145.12321
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 145.11816,
+            "south": -38.00957,
+            "east": 145.12332,
+            "north": -37.98783
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

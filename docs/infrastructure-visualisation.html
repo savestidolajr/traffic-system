@@ -1,0 +1,1529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ARN Traffic Bulletin — Azure Infrastructure</title>
+<style>
+  /* ─── Reset & Base ─── */
+  *,
+  *::before,
+  *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+  :root {
+    --bg-deep: #0a0e1a;
+    --bg-surface: #111827;
+    --bg-card: #1a2035;
+    --bg-card-alt: #1e2640;
+    --bg-elevated: #232b45;
+    --border: #2a3456;
+    --border-light: #38436a;
+    --text-primary: #e8edf5;
+    --text-secondary: #94a3b8;
+    --text-muted: #64748b;
+    --accent-blue: #3b82f6;
+    --accent-cyan: #06b6d4;
+    --accent-purple: #8b5cf6;
+    --accent-green: #22c55e;
+    --accent-amber: #f59e0b;
+    --accent-red: #ef4444;
+    --accent-orange: #f97316;
+    --accent-emerald: #10b981;
+    --glow-blue: rgba(59,130,246,0.15);
+    --glow-cyan: rgba(6,182,212,0.12);
+    --glow-green: rgba(34,197,94,0.10);
+    --radius-sm: 6px;
+    --radius-md: 10px;
+    --radius-lg: 14px;
+    --shadow-card: 0 1px 3px rgba(0,0,0,0.4), 0 4px 12px rgba(0,0,0,0.3);
+    --shadow-elevated: 0 8px 30px rgba(0,0,0,0.5);
+  }
+
+  html { font-size: 15px; scroll-behavior: smooth; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+    background: var(--bg-deep);
+    color: var(--text-primary);
+    line-height: 1.6;
+    min-height: 100vh;
+    -webkit-font-smoothing: antialiased;
+  }
+
+  /* ─── Scrollbar ─── */
+  ::-webkit-scrollbar { width: 6px; height: 6px; }
+  ::-webkit-scrollbar-track { background: var(--bg-deep); }
+  ::-webkit-scrollbar-thumb { background: var(--border); border-radius: 3px; }
+  ::-webkit-scrollbar-thumb:hover { background: var(--border-light); }
+
+  /* ─── Layout ─── */
+  .container { max-width: 1340px; margin: 0 auto; padding: 0 24px; }
+
+  /* ─── Header ─── */
+  .header {
+    background: linear-gradient(135deg, #0f1424 0%, #161e36 50%, #0f1424 100%);
+    border-bottom: 1px solid var(--border);
+    padding: 28px 0 24px;
+    position: sticky;
+    top: 0;
+    z-index: 50;
+    backdrop-filter: blur(12px);
+  }
+  .header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  .header h1 {
+    font-size: 1.55rem;
+    font-weight: 700;
+    letter-spacing: -0.02em;
+    background: linear-gradient(135deg, var(--text-primary), var(--accent-blue));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+  .header .subtitle {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    margin-top: 2px;
+  }
+  .header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .header-actions .meta {
+    font-size: 0.75rem;
+    color: var(--text-muted);
+    text-align: right;
+    line-height: 1.4;
+  }
+
+  /* ─── Legend ─── */
+  .legend-bar {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+    padding: 10px 0 6px;
+    border-top: 1px solid var(--border);
+    margin-top: 14px;
+  }
+  .legend-item {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 0.75rem;
+    color: var(--text-secondary);
+  }
+  .legend-swatch {
+    width: 12px;
+    height: 12px;
+    border-radius: 3px;
+    flex-shrink: 0;
+  }
+  .legend-swatch.green { background: var(--accent-green); }
+  .legend-swatch.amber { background: var(--accent-amber); }
+  .legend-swatch.red { background: var(--accent-red); }
+  .legend-swatch.blue { background: var(--accent-blue); }
+  .legend-swatch.purple { background: var(--accent-purple); }
+
+  /* ─── Environment Tabs ─── */
+  .env-tabs {
+    display: flex;
+    gap: 4px;
+    background: var(--bg-surface);
+    padding: 4px;
+    border-radius: var(--radius-md);
+    margin: 28px 0 20px;
+    border: 1px solid var(--border);
+  }
+  .env-tab {
+    flex: 1;
+    padding: 10px 16px;
+    border: none;
+    background: transparent;
+    color: var(--text-muted);
+    font-size: 0.82rem;
+    font-weight: 600;
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: all 0.2s;
+    text-align: center;
+    font-family: inherit;
+    letter-spacing: 0.01em;
+  }
+  .env-tab:hover { color: var(--text-secondary); background: rgba(255,255,255,0.03); }
+  .env-tab.active {
+    background: var(--bg-elevated);
+    color: var(--text-primary);
+    box-shadow: 0 1px 8px rgba(0,0,0,0.3);
+  }
+  .env-tab .env-badge {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    padding: 1px 7px;
+    border-radius: 10px;
+    vertical-align: middle;
+    margin-left: 6px;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+  }
+  .env-tab .env-badge.dev { background: rgba(59,130,246,0.18); color: var(--accent-blue); }
+  .env-tab .env-badge.test { background: rgba(245,158,11,0.18); color: var(--accent-amber); }
+  .env-tab .env-badge.prod { background: rgba(239,68,68,0.18); color: var(--accent-red); }
+
+  .env-pane { display: none; }
+  .env-pane.active { display: block; }
+
+  .env-summary {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-bottom: 22px;
+  }
+  .env-summary-item {
+    background: var(--bg-surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    padding: 8px 14px;
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+  }
+  .env-summary-item strong {
+    color: var(--text-primary);
+    font-weight: 600;
+  }
+
+  /* ─── Section ─── */
+  .section-title {
+    font-size: 1rem;
+    font-weight: 700;
+    color: var(--text-primary);
+    margin: 28px 0 14px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  .section-title .icon { font-size: 1.15rem; }
+  .section-title .count {
+    font-size: 0.7rem;
+    font-weight: 500;
+    color: var(--text-muted);
+    background: var(--bg-card);
+    padding: 1px 8px;
+    border-radius: 8px;
+    margin-left: 4px;
+  }
+
+  /* ─── Resource Grid ─── */
+  .resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 14px;
+  }
+
+  /* ─── Resource Card ─── */
+  .resource-card {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-card);
+    transition: border-color 0.2s, box-shadow 0.2s, transform 0.2s;
+    overflow: hidden;
+    position: relative;
+  }
+  .resource-card:hover {
+    border-color: var(--border-light);
+    box-shadow: var(--shadow-elevated);
+    transform: translateY(-2px);
+  }
+
+  .resource-card .card-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 14px 16px;
+    background: var(--bg-card-alt);
+    border-bottom: 1px solid var(--border);
+  }
+  .resource-card .card-icon {
+    width: 34px;
+    height: 34px;
+    border-radius: var(--radius-sm);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.1rem;
+    flex-shrink: 0;
+  }
+  .resource-card .card-icon.blue { background: rgba(59,130,246,0.15); }
+  .resource-card .card-icon.cyan { background: rgba(6,182,212,0.15); }
+  .resource-card .card-icon.purple { background: rgba(139,92,246,0.15); }
+  .resource-card .card-icon.green { background: rgba(34,197,94,0.15); }
+  .resource-card .card-icon.amber { background: rgba(245,158,11,0.15); }
+  .resource-card .card-icon.red { background: rgba(239,68,68,0.15); }
+  .resource-card .card-icon.orange { background: rgba(249,115,22,0.15); }
+  .resource-card .card-icon.emerald { background: rgba(16,185,129,0.15); }
+
+  .resource-card .card-title {
+    font-size: 0.88rem;
+    font-weight: 600;
+    color: var(--text-primary);
+  }
+  .resource-card .card-subtitle {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+    font-weight: 400;
+  }
+  .resource-card .card-body { padding: 14px 16px; }
+  .resource-card .card-body p {
+    font-size: 0.78rem;
+    color: var(--text-secondary);
+    margin-bottom: 6px;
+    display: flex;
+    gap: 6px;
+  }
+  .resource-card .card-body p .label {
+    color: var(--text-muted);
+    min-width: 82px;
+    flex-shrink: 0;
+  }
+  .resource-card .card-body p .value { color: var(--text-primary); word-break: break-all; }
+  .resource-card .card-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    padding: 8px 16px 12px;
+  }
+  .resource-card .card-tag {
+    font-size: 0.64rem;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--bg-elevated);
+    color: var(--text-secondary);
+    border: 1px solid var(--border);
+  }
+  .resource-card .card-tag.green { background: rgba(34,197,94,0.1); border-color: rgba(34,197,94,0.25); color: var(--accent-green); }
+  .resource-card .card-tag.amber { background: rgba(245,158,11,0.1); border-color: rgba(245,158,11,0.25); color: var(--accent-amber); }
+  .resource-card .card-tag.red { background: rgba(239,68,68,0.1); border-color: rgba(239,68,68,0.25); color: var(--accent-red); }
+
+  /* ─── Data Flow ─── */
+  .flow-container {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 24px 20px;
+    overflow-x: auto;
+    margin: 22px 0;
+  }
+  .flow-row {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: nowrap;
+    min-width: max-content;
+  }
+  .flow-step {
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-light);
+    border-radius: var(--radius-sm);
+    padding: 6px 10px;
+    font-size: 0.65rem;
+    font-weight: 500;
+    color: var(--text-secondary);
+    text-align: center;
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: all 0.15s;
+    position: relative;
+  }
+  .flow-step:hover {
+    border-color: var(--accent-blue);
+    color: var(--text-primary);
+    background: rgba(59,130,246,0.08);
+  }
+  .flow-step.highlight {
+    border-color: var(--accent-cyan);
+    color: var(--accent-cyan);
+    background: rgba(6,182,212,0.08);
+  }
+  .flow-step.queue {
+    border-color: var(--accent-amber);
+    color: var(--accent-amber);
+  }
+  .flow-step.storage {
+    border-color: var(--accent-green);
+    color: var(--accent-green);
+  }
+  .flow-step.llm {
+    border-color: var(--accent-purple);
+    color: var(--accent-purple);
+  }
+  .flow-step.tts {
+    border-color: var(--accent-emerald);
+    color: var(--accent-emerald);
+  }
+  .flow-arrow {
+    color: var(--border-light);
+    font-size: 0.7rem;
+    flex-shrink: 0;
+    padding: 0 1px;
+  }
+  .flow-label {
+    font-size: 0.65rem;
+    color: var(--text-muted);
+    text-align: center;
+    margin-top: 10px;
+    letter-spacing: 0.02em;
+  }
+
+  /* ─── Security Posture ─── */
+  .security-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 10px;
+    margin: 18px 0;
+  }
+  .security-item {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    padding: 12px 14px;
+    border-radius: var(--radius-sm);
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    font-size: 0.78rem;
+    transition: border-color 0.15s;
+  }
+  .security-item .status-icon { font-size: 1rem; flex-shrink: 0; margin-top: 1px; }
+  .security-item .sec-text { color: var(--text-secondary); }
+  .security-item .sec-text strong { color: var(--text-primary); font-weight: 600; }
+  .security-item.pass { border-left: 3px solid var(--accent-green); }
+  .security-item.warn { border-left: 3px solid var(--accent-amber); }
+  .security-item.fail { border-left: 3px solid var(--accent-red); }
+
+  /* ─── CI/CD Pipeline ─── */
+  .pipeline {
+    background: var(--bg-card);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    padding: 20px 24px;
+    margin: 22px 0;
+    overflow-x: auto;
+  }
+  .pipeline-steps {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    min-width: max-content;
+  }
+  .pipeline-step {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    background: var(--bg-elevated);
+    border: 1px solid var(--border-light);
+    border-radius: 20px;
+    padding: 7px 14px;
+    font-size: 0.72rem;
+    color: var(--text-secondary);
+    white-space: nowrap;
+    flex-shrink: 0;
+    transition: all 0.15s;
+  }
+  .pipeline-step:hover {
+    border-color: var(--accent-blue);
+    color: var(--text-primary);
+  }
+  .pipeline-step .step-icon { font-size: 0.85rem; }
+  .pipeline-step.success { border-color: var(--accent-green); color: var(--accent-green); }
+  .pipeline-arrow { color: var(--border-light); font-size: 0.8rem; flex-shrink: 0; }
+
+  /* ─── Concerns ─── */
+  .concerns-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+    gap: 14px;
+    margin: 18px 0;
+  }
+  .concern-card {
+    border-radius: var(--radius-md);
+    padding: 18px 20px;
+    border: 1px solid;
+    box-shadow: var(--shadow-card);
+  }
+  .concern-card.critical {
+    background: rgba(239,68,68,0.06);
+    border-color: rgba(239,68,68,0.25);
+  }
+  .concern-card.warning {
+    background: rgba(245,158,11,0.06);
+    border-color: rgba(245,158,11,0.25);
+  }
+  .concern-card .concern-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+  }
+  .concern-card .concern-icon {
+    font-size: 1.3rem;
+  }
+  .concern-card .concern-title {
+    font-size: 0.92rem;
+    font-weight: 700;
+  }
+  .concern-card.critical .concern-title { color: var(--accent-red); }
+  .concern-card.warning .concern-title { color: var(--accent-amber); }
+  .concern-card .concern-body {
+    font-size: 0.82rem;
+    color: var(--text-secondary);
+    line-height: 1.65;
+  }
+  .concern-card .concern-tag {
+    display: inline-block;
+    font-size: 0.6rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+    padding: 2px 8px;
+    border-radius: 4px;
+    margin-top: 8px;
+  }
+  .concern-card.critical .concern-tag {
+    background: rgba(239,68,68,0.12);
+    color: var(--accent-red);
+  }
+  .concern-card.warning .concern-tag {
+    background: rgba(245,158,11,0.12);
+    color: var(--accent-amber);
+  }
+
+  /* ─── Footer ─── */
+  .footer {
+    text-align: center;
+    padding: 32px 0 24px;
+    border-top: 1px solid var(--border);
+    margin-top: 40px;
+  }
+  .footer p {
+    font-size: 0.72rem;
+    color: var(--text-muted);
+  }
+
+  /* ─── Responsive ─── */
+  @media (max-width: 768px) {
+    .container { padding: 0 14px; }
+    .header-inner { flex-direction: column; align-items: flex-start; }
+    .header-actions .meta { text-align: left; }
+    .env-tabs { flex-direction: column; }
+    .resource-grid { grid-template-columns: 1fr; }
+    .security-grid { grid-template-columns: 1fr; }
+    .concerns-grid { grid-template-columns: 1fr; }
+    .resource-card .card-body p { flex-wrap: wrap; }
+    .resource-card .card-body p .label { min-width: 70px; }
+    .flow-container { padding: 14px 12px; }
+    .pipeline { padding: 14px 16px; }
+  }
+
+  @media (max-width: 480px) {
+    html { font-size: 14px; }
+    .header h1 { font-size: 1.3rem; }
+  }
+
+  /* ─── Print ─── */
+  @media print {
+    .header { position: static; }
+    .resource-card:hover { transform: none; }
+  }
+
+  /* ─── Animations ─── */
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(8px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  .env-pane.active .resource-card,
+  .env-pane.active .security-item,
+  .env-pane.active .concern-card {
+    animation: fadeIn 0.35s ease-out both;
+  }
+  .env-pane.active .resource-card:nth-child(1) { animation-delay: 0.02s; }
+  .env-pane.active .resource-card:nth-child(2) { animation-delay: 0.04s; }
+  .env-pane.active .resource-card:nth-child(3) { animation-delay: 0.06s; }
+  .env-pane.active .resource-card:nth-child(4) { animation-delay: 0.08s; }
+  .env-pane.active .resource-card:nth-child(5) { animation-delay: 0.10s; }
+  .env-pane.active .resource-card:nth-child(6) { animation-delay: 0.12s; }
+  .env-pane.active .resource-card:nth-child(7) { animation-delay: 0.14s; }
+  .env-pane.active .resource-card:nth-child(8) { animation-delay: 0.16s; }
+  .env-pane.active .resource-card:nth-child(9) { animation-delay: 0.18s; }
+
+  /* ─── Badge dot for env names ─── */
+  .env-dot {
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+  .env-dot.dev { background: var(--accent-blue); }
+  .env-dot.test { background: var(--accent-amber); }
+  .env-dot.prod { background: var(--accent-red); }
+
+  /* ─── Tooltip helper ─── */
+  .info-hint {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: var(--bg-elevated);
+    color: var(--text-muted);
+    font-size: 0.55rem;
+    text-align: center;
+    line-height: 14px;
+    cursor: help;
+    vertical-align: middle;
+    margin-left: 4px;
+    border: 1px solid var(--border);
+  }
+</style>
+</head>
+<body>
+
+<!-- ═══ HEADER ═══ -->
+<header class="header">
+  <div class="container header-inner">
+    <div>
+      <h1>☁️ ARN Traffic Bulletin — Azure Infrastructure</h1>
+      <div class="subtitle">Complete resource topology, data flow, and deployment posture</div>
+    </div>
+    <div class="header-actions">
+      <div class="meta">
+        <div>Infrastructure-as-Code · Bicep</div>
+        <div>v1.0 · <span style="color:var(--accent-amber)">⚠ Subscription disabled</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="container">
+    <div class="legend-bar">
+      <span class="legend-item"><span class="legend-swatch green"></span> Secure / Resolved</span>
+      <span class="legend-item"><span class="legend-swatch amber"></span> Advisory / Warning</span>
+      <span class="legend-item"><span class="legend-swatch red"></span> Critical / Missing</span>
+      <span class="legend-item"><span class="legend-swatch blue"></span> Azure Service</span>
+      <span class="legend-item"><span class="legend-swatch purple"></span> AI / ML Component</span>
+    </div>
+  </div>
+</header>
+
+<!-- ═══ MAIN ═══ -->
+<main class="container">
+
+  <!-- ─── Environment Tabs ─── -->
+  <div class="env-tabs" role="tablist">
+    <button class="env-tab active" data-env="dev" role="tab" aria-selected="true">
+      <span class="env-dot dev"></span>Development
+      <span class="env-badge dev">DEV</span>
+    </button>
+    <button class="env-tab" data-env="test" role="tab" aria-selected="false">
+      <span class="env-dot test"></span>Test
+      <span class="env-badge test">TEST</span>
+    </button>
+    <button class="env-tab" data-env="prod" role="tab" aria-selected="false">
+      <span class="env-dot prod"></span>Production
+      <span class="env-badge prod">PROD</span>
+    </button>
+  </div>
+
+  <!-- ════════════════ DEV ════════════════ -->
+  <div class="env-pane active" id="env-dev" role="tabpanel">
+    <div class="env-summary">
+      <div class="env-summary-item"><strong>Resource Group:</strong> rg-arn-traffic-dev</div>
+      <div class="env-summary-item"><strong>Region:</strong> australiasoutheast</div>
+      <div class="env-summary-item"><strong>Tier:</strong> <span style="color:var(--accent-blue)">Minimal / POC</span></div>
+    </div>
+
+    <div class="section-title">
+      <span class="icon">📦</span> Resources <span class="count">9</span>
+    </div>
+    <div class="resource-grid">
+
+      <!-- Storage Account -->
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon blue">🗄️</div>
+          <div>
+            <div class="card-title">Storage Account</div>
+            <div class="card-subtitle">Microsoft.Storage/storageAccounts</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">starnldev</span></p>
+          <p><span class="label">SKU</span><span class="value">Standard_LRS</span></p>
+          <p><span class="label">Network</span><span class="value">defaultAction 'Deny', bypass AzureServices</span></p>
+          <p><span class="label">TLS</span><span class="value">1.2 enforced, HTTPS only</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag green">Blob: deployment</span>
+          <span class="card-tag green">Blob: broadcasts</span>
+          <span class="card-tag green">Blob: synthesis-history</span>
+          <span class="card-tag green">Table: radioJobs</span>
+          <span class="card-tag green">Table: radioSchedules</span>
+          <span class="card-tag green">Table: voiceCalibrations</span>
+          <span class="card-tag green">Table: radioIncidentState</span>
+          <span class="card-tag green">Table: synthesisHistory</span>
+          <span class="card-tag amber">Queue: broadcast-queue</span>
+          <span class="card-tag amber">Queue: regeneration-queue</span>
+          <span class="card-tag amber">allowSharedKeyAccess: true</span>
+          <span class="card-tag green">defaultToOAuth: true</span>
+        </div>
+      </div>
+
+      <!-- App Service Plan -->
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon cyan">⚙️</div>
+          <div>
+            <div class="card-title">App Service Plan</div>
+            <div class="card-subtitle">Microsoft.Web/serverfarms</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">asp-arn-traffic-dev</span></p>
+          <p><span class="label">SKU</span><span class="value">PremiumV3 P0v3 (Linux)</span></p>
+          <p><span class="label">Always On</span><span class="value">Enabled</span></p>
+          <p><span class="label">Autoscale</span><span class="value">min 1 / max 6</span></p>
+          <p><span class="label">Trigger</span><span class="value">Queue depth</span></p>
+        </div>
+      </div>
+
+      <!-- Function App -->
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon cyan">⚡</div>
+          <div>
+            <div class="card-title">Function App</div>
+            <div class="card-subtitle">Microsoft.Web/sites</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">func-arn-traffic-dev</span></p>
+          <p><span class="label">Runtime</span><span class="value">.NET 10 isolated</span></p>
+          <p><span class="label">Identity</span><span class="value">SystemAssigned managed identity</span></p>
+          <p><span class="label">Slot</span><span class="value">Staging (managed identity, Easy Auth)</span></p>
+          <p><span class="label">VNet</span><span class="value">Integration (config-driven)</span></p>
+          <p><span class="label">Secrets</span><span class="value">All via Key Vault references</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag green">AuthorizationMiddleware</span>
+          <span class="card-tag green">Easy Auth (AAD)</span>
+        </div>
+      </div>
+
+      <!-- Key Vault -->
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon amber">🔑</div>
+          <div>
+            <div class="card-title">Key Vault</div>
+            <div class="card-subtitle">Microsoft.KeyVault/vaults</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">kv-arn-traffic-dev</span></p>
+          <p><span class="label">RBAC</span><span class="value">Enabled</span></p>
+          <p><span class="label">Network</span><span class="value">defaultAction 'Deny'</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag amber">Azure OpenAI key</span>
+          <span class="card-tag amber">ElevenLabs key</span>
+          <span class="card-tag amber">HERE key</span>
+          <span class="card-tag amber">Zetta credentials</span>
+          <span class="card-tag amber">AAD client secret</span>
+          <span class="card-tag amber">Webhook URL</span>
+        </div>
+      </div>
+
+      <!-- Azure AI Services -->
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon purple">🧠</div>
+          <div>
+            <div class="card-title">Azure AI Services</div>
+            <div class="card-subtitle">Microsoft.CognitiveServices/accounts</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">ais-arn-traffic-dev</span></p>
+          <p><span class="label">SKU</span><span class="value">S0</span></p>
+          <p><span class="label">Model</span><span class="value">gpt-5.6-luna (80K TPM)</span></p>
+          <p><span class="label">Network</span><span class="value">Public (key auth)</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag red">Public endpoint — no private access</span>
+        </div>
+      </div>
+
+      <!-- AI Search -->
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon purple">🔍</div>
+          <div>
+            <div class="card-title">AI Search</div>
+            <div class="card-subtitle">Microsoft.Search/searchServices</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">src-arn-traffic-dev</span></p>
+          <p><span class="label">SKU</span><span class="value">Free</span></p>
+          <p><span class="label">Network</span><span class="value">Public</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag red">Free SKU — not production-grade</span>
+          <span class="card-tag red">No HA, 10K doc limit</span>
+        </div>
+      </div>
+
+      <!-- Static Web App -->
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon emerald">🌐</div>
+          <div>
+            <div class="card-title">Static Web App</div>
+            <div class="card-subtitle">Microsoft.Web/staticSites</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">swa-arn-traffic-dev</span></p>
+          <p><span class="label">SKU</span><span class="value">Free</span></p>
+          <p><span class="label">Location</span><span class="value">eastasia</span></p>
+          <p><span class="label">Auth</span><span class="value">AAD (configured manually)</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag green">Free tier (Standard when needed)</span>
+        </div>
+      </div>
+
+      <!-- App Insights + Log Analytics -->
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon orange">📊</div>
+          <div>
+            <div class="card-title">Application Insights &amp; Log Analytics</div>
+            <div class="card-subtitle">Microsoft.Insights</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">appi-arn-traffic-dev</span></p>
+          <p><span class="label">Workspace</span><span class="value">log-arn-traffic-dev</span></p>
+          <p><span class="label">Telemetry</span><span class="value">Full request telemetry</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag green">StorageRead/Write/Transaction diag</span>
+          <span class="card-tag green">KeyVault AuditEvent diag</span>
+        </div>
+      </div>
+
+      <!-- Alerts -->
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon red">🔔</div>
+          <div>
+            <div class="card-title">Alerts</div>
+            <div class="card-subtitle">Microsoft.Insights/metricAlerts</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">5xx Errors</span><span class="value">≥ 1</span></p>
+          <p><span class="label">Poison Queue</span><span class="value">&gt; 0 messages</span></p>
+          <p><span class="label">Job Duration</span><span class="value">&gt; 300s</span></p>
+          <p><span class="label">Daily Broadcasts</span><span class="value">Count threshold</span></p>
+        </div>
+      </div>
+
+    </div><!-- /resource-grid -->
+  </div><!-- /env-dev -->
+
+  <!-- ════════════════ TEST ════════════════ -->
+  <div class="env-pane" id="env-test" role="tabpanel">
+    <div class="env-summary">
+      <div class="env-summary-item"><strong>Resource Group:</strong> rg-arn-traffic-test</div>
+      <div class="env-summary-item"><strong>Region:</strong> australiaeast</div>
+      <div class="env-summary-item"><strong>Tier:</strong> <span style="color:var(--accent-amber)">Matches production config</span></div>
+    </div>
+
+    <div class="section-title">
+      <span class="icon">📦</span> Resources <span class="count">9</span>
+    </div>
+    <div class="resource-grid">
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon blue">🗄️</div>
+          <div>
+            <div class="card-title">Storage Account</div>
+            <div class="card-subtitle">Microsoft.Storage/storageAccounts</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">starnltest</span></p>
+          <p><span class="label">SKU</span><span class="value">Standard_LRS</span></p>
+          <p><span class="label">Network</span><span class="value">defaultAction 'Deny', bypass AzureServices</span></p>
+          <p><span class="label">TLS</span><span class="value">1.2 enforced, HTTPS only</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag green">5 tables · 3 blob containers</span>
+          <span class="card-tag green">2 queues</span>
+          <span class="card-tag amber">allowSharedKeyAccess: true</span>
+          <span class="card-tag green">defaultToOAuth: true</span>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon cyan">⚙️</div>
+          <div>
+            <div class="card-title">App Service Plan</div>
+            <div class="card-subtitle">Microsoft.Web/serverfarms</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">asp-arn-traffic-test</span></p>
+          <p><span class="label">SKU</span><span class="value">PremiumV3 P0v3 (Linux)</span></p>
+          <p><span class="label">Always On</span><span class="value">Enabled</span></p>
+          <p><span class="label">Autoscale</span><span class="value">min 1 / max 6</span></p>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon cyan">⚡</div>
+          <div>
+            <div class="card-title">Function App</div>
+            <div class="card-subtitle">Microsoft.Web/sites</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">func-arn-traffic-test</span></p>
+          <p><span class="label">Runtime</span><span class="value">.NET 10 isolated</span></p>
+          <p><span class="label">Identity</span><span class="value">SystemAssigned managed identity</span></p>
+          <p><span class="label">Slot</span><span class="value">Staging (managed identity, Easy Auth)</span></p>
+          <p><span class="label">Secrets</span><span class="value">All via Key Vault references</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag green">AuthorizationMiddleware</span>
+          <span class="card-tag green">Easy Auth (AAD)</span>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon amber">🔑</div>
+          <div>
+            <div class="card-title">Key Vault</div>
+            <div class="card-subtitle">Microsoft.KeyVault/vaults</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">kv-arn-traffic-test</span></p>
+          <p><span class="label">RBAC</span><span class="value">Enabled</span></p>
+          <p><span class="label">Network</span><span class="value">defaultAction 'Deny'</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag amber">All shared secrets</span>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon purple">🧠</div>
+          <div>
+            <div class="card-title">Azure AI Services</div>
+            <div class="card-subtitle">Microsoft.CognitiveServices/accounts</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">ais-arn-traffic-test</span></p>
+          <p><span class="label">SKU</span><span class="value">S0</span></p>
+          <p><span class="label">Model</span><span class="value">gpt-5.6-luna (80K TPM)</span></p>
+          <p><span class="label">Network</span><span class="value">Public (key auth)</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag red">Public endpoint — no private access</span>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon purple">🔍</div>
+          <div>
+            <div class="card-title">AI Search</div>
+            <div class="card-subtitle">Microsoft.Search/searchServices</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">src-arn-traffic-test</span></p>
+          <p><span class="label">SKU</span><span class="value">Free</span></p>
+          <p><span class="label">Network</span><span class="value">Public</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag red">Free SKU — not production-grade</span>
+          <span class="card-tag red">10K doc limit, no HA</span>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon emerald">🌐</div>
+          <div>
+            <div class="card-title">Static Web App</div>
+            <div class="card-subtitle">Microsoft.Web/staticSites</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">swa-arn-traffic-test</span></p>
+          <p><span class="label">SKU</span><span class="value">Free</span></p>
+          <p><span class="label">Location</span><span class="value">eastasia</span></p>
+          <p><span class="label">Auth</span><span class="value">AAD (configured manually)</span></p>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon orange">📊</div>
+          <div>
+            <div class="card-title">App Insights &amp; Log Analytics</div>
+            <div class="card-subtitle">Microsoft.Insights</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">appi-arn-traffic-test</span></p>
+          <p><span class="label">Workspace</span><span class="value">log-arn-traffic-test</span></p>
+          <p><span class="label">Telemetry</span><span class="value">Full request telemetry</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag green">Diag: Storage + Key Vault</span>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon red">🔔</div>
+          <div>
+            <div class="card-title">Alerts</div>
+            <div class="card-subtitle">Microsoft.Insights/metricAlerts</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">5xx Errors</span><span class="value">≥ 1</span></p>
+          <p><span class="label">Poison Queue</span><span class="value">&gt; 0 messages</span></p>
+          <p><span class="label">Job Duration</span><span class="value">&gt; 300s</span></p>
+          <p><span class="label">Daily Broadcasts</span><span class="value">Count threshold</span></p>
+        </div>
+      </div>
+
+    </div><!-- /resource-grid -->
+  </div><!-- /env-test -->
+
+  <!-- ════════════════ PROD ════════════════ -->
+  <div class="env-pane" id="env-prod" role="tabpanel">
+    <div class="env-summary">
+      <div class="env-summary-item"><strong>Resource Group:</strong> rg-arn-traffic-prod</div>
+      <div class="env-summary-item"><strong>Region:</strong> australiaeast</div>
+      <div class="env-summary-item"><strong>Tier:</strong> <span style="color:var(--accent-red)">Full production configuration</span></div>
+    </div>
+
+    <div class="section-title">
+      <span class="icon">📦</span> Resources <span class="count">9</span>
+    </div>
+    <div class="resource-grid">
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon blue">🗄️</div>
+          <div>
+            <div class="card-title">Storage Account</div>
+            <div class="card-subtitle">Microsoft.Storage/storageAccounts</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">starnlprod</span></p>
+          <p><span class="label">SKU</span><span class="value">Standard_LRS</span></p>
+          <p><span class="label">Network</span><span class="value">defaultAction 'Deny', bypass AzureServices</span></p>
+          <p><span class="label">TLS</span><span class="value">1.2 enforced, HTTPS only</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag green">5 tables · 3 blob containers</span>
+          <span class="card-tag green">2 queues</span>
+          <span class="card-tag amber">allowSharedKeyAccess: true</span>
+          <span class="card-tag green">defaultToOAuth: true</span>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon cyan">⚙️</div>
+          <div>
+            <div class="card-title">App Service Plan</div>
+            <div class="card-subtitle">Microsoft.Web/serverfarms</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">asp-arn-traffic-prod</span></p>
+          <p><span class="label">SKU</span><span class="value">PremiumV3 P0v3 (Linux)</span></p>
+          <p><span class="label">Always On</span><span class="value">Enabled</span></p>
+          <p><span class="label">Autoscale</span><span class="value">min 1 / max 6</span></p>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon cyan">⚡</div>
+          <div>
+            <div class="card-title">Function App</div>
+            <div class="card-subtitle">Microsoft.Web/sites</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">func-arn-traffic-prod</span></p>
+          <p><span class="label">Runtime</span><span class="value">.NET 10 isolated</span></p>
+          <p><span class="label">Identity</span><span class="value">SystemAssigned managed identity</span></p>
+          <p><span class="label">Slot</span><span class="value">Staging (managed identity, Easy Auth)</span></p>
+          <p><span class="label">Secrets</span><span class="value">All via Key Vault references</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag green">AuthorizationMiddleware</span>
+          <span class="card-tag green">Easy Auth (AAD)</span>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon amber">🔑</div>
+          <div>
+            <div class="card-title">Key Vault</div>
+            <div class="card-subtitle">Microsoft.KeyVault/vaults</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">kv-arn-traffic-prod</span></p>
+          <p><span class="label">RBAC</span><span class="value">Enabled</span></p>
+          <p><span class="label">Network</span><span class="value">defaultAction 'Deny'</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag amber">All shared secrets</span>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon purple">🧠</div>
+          <div>
+            <div class="card-title">Azure AI Services</div>
+            <div class="card-subtitle">Microsoft.CognitiveServices/accounts</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">ais-arn-traffic-prod</span></p>
+          <p><span class="label">SKU</span><span class="value">S0</span></p>
+          <p><span class="label">Model</span><span class="value">gpt-5.6-luna (80K TPM)</span></p>
+          <p><span class="label">Network</span><span class="value">Public (key auth)</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag red">Public endpoint — no private access</span>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon purple">🔍</div>
+          <div>
+            <div class="card-title">AI Search</div>
+            <div class="card-subtitle">Microsoft.Search/searchServices</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">src-arn-traffic-prod</span></p>
+          <p><span class="label">SKU</span><span class="value">Free</span></p>
+          <p><span class="label">Network</span><span class="value">Public</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag red">Free SKU — not production-grade</span>
+          <span class="card-tag red">10K doc limit, no HA</span>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon emerald">🌐</div>
+          <div>
+            <div class="card-title">Static Web App</div>
+            <div class="card-subtitle">Microsoft.Web/staticSites</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">swa-arn-traffic-prod</span></p>
+          <p><span class="label">SKU</span><span class="value">Free (Standard when needed)</span></p>
+          <p><span class="label">Location</span><span class="value">eastasia</span></p>
+          <p><span class="label">Auth</span><span class="value">AAD (configured manually)</span></p>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon orange">📊</div>
+          <div>
+            <div class="card-title">App Insights &amp; Log Analytics</div>
+            <div class="card-subtitle">Microsoft.Insights</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">Name</span><span class="value">appi-arn-traffic-prod</span></p>
+          <p><span class="label">Workspace</span><span class="value">log-arn-traffic-prod</span></p>
+          <p><span class="label">Telemetry</span><span class="value">Full request telemetry</span></p>
+        </div>
+        <div class="card-tags">
+          <span class="card-tag green">Diag: Storage + Key Vault</span>
+        </div>
+      </div>
+
+      <div class="resource-card">
+        <div class="card-header">
+          <div class="card-icon red">🔔</div>
+          <div>
+            <div class="card-title">Alerts</div>
+            <div class="card-subtitle">Microsoft.Insights/metricAlerts</div>
+          </div>
+        </div>
+        <div class="card-body">
+          <p><span class="label">5xx Errors</span><span class="value">≥ 1</span></p>
+          <p><span class="label">Poison Queue</span><span class="value">&gt; 0 messages</span></p>
+          <p><span class="label">Job Duration</span><span class="value">&gt; 300s</span></p>
+          <p><span class="label">Daily Broadcasts</span><span class="value">Count threshold</span></p>
+        </div>
+      </div>
+
+    </div><!-- /resource-grid -->
+  </div><!-- /env-prod -->
+
+  <!-- ════════════════ DATA FLOW ════════════════ -->
+  <div class="section-title" style="margin-top:40px"><span class="icon">🔄</span> Data Flow — Broadcast Pipeline</div>
+
+  <div class="flow-container">
+    <div class="flow-row">
+      <span class="flow-step highlight">📅 SchedulePoller</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step queue">📬 Queue</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step highlight">⚡ BroadcastQueueTrigger</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step highlight">🧩 Orchestrator</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">🚦 TrafficProvider</span>
+      <span class="flow-arrow">→</span>
+    </div>
+    <div class="flow-row" style="margin-top:6px">
+      <span class="flow-step llm">📝 LLM Script Gen</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step llm" style="font-size:0.6rem;padding:4px 8px">Draft</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step llm" style="font-size:0.6rem;padding:4px 8px">Review</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step llm" style="font-size:0.6rem;padding:4px 8px">Refine</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step tts">🔊 ElevenLabs TTS</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step tts" style="font-size:0.6rem;padding:4px 8px">Duration Targeting</span>
+      <span class="flow-arrow">→</span>
+    </div>
+    <div class="flow-row" style="margin-top:6px">
+      <span class="flow-step storage">☁️ Blob Storage</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step highlight">🔔 Notification</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step highlight">👁️ Human Review</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step highlight">✅ Publish</span>
+      <span class="flow-arrow">→</span>
+      <span class="flow-step">📡 Playout drop share</span>
+    </div>
+    <div class="flow-label">Draft → Review → Refine loop retries up to MaxGenerationRetries on review failure</div>
+  </div>
+
+  <!-- ════════════════ SECURITY POSTURE ════════════════ -->
+  <div class="section-title"><span class="icon">🛡️</span> Security Posture Summary</div>
+
+  <div class="security-grid">
+
+    <div class="security-item pass">
+      <span class="status-icon">✅</span>
+      <div class="sec-text">
+        <strong>Staging slot managed identity</strong><br>
+        No key exposure — identity flows through slot
+      </div>
+    </div>
+
+    <div class="security-item pass">
+      <span class="status-icon">✅</span>
+      <div class="sec-text">
+        <strong>AuthorizationMiddleware</strong><br>
+        Blocks unauthenticated requests at middleware level
+      </div>
+    </div>
+
+    <div class="security-item pass">
+      <span class="status-icon">✅</span>
+      <div class="sec-text">
+        <strong>Audit trail</strong><br>
+        ApprovedBy / PublishedBy populated on all operations
+      </div>
+    </div>
+
+    <div class="security-item pass">
+      <span class="status-icon">✅</span>
+      <div class="sec-text">
+        <strong>Easy Auth (AAD)</strong><br>
+        Azure AD authentication on Function App
+      </div>
+    </div>
+
+    <div class="security-item pass">
+      <span class="status-icon">✅</span>
+      <div class="sec-text">
+        <strong>Storage defaultAction 'Deny'</strong><br>
+        Public network access blocked by default
+      </div>
+    </div>
+
+    <div class="security-item pass">
+      <span class="status-icon">✅</span>
+      <div class="sec-text">
+        <strong>Key Vault defaultAction 'Deny'</strong><br>
+        No public network access to secrets
+      </div>
+    </div>
+
+    <div class="security-item pass">
+      <span class="status-icon">✅</span>
+      <div class="sec-text">
+        <strong>TLS 1.2 enforced</strong><br>
+        Minimum TLS version enforced across all services
+      </div>
+    </div>
+
+    <div class="security-item warn">
+      <span class="status-icon">⚠️</span>
+      <div class="sec-text">
+        <strong>Webhook URL in Key Vault</strong><br>
+        Stored as secret — review rotation policy
+      </div>
+    </div>
+
+    <div class="security-item warn">
+      <span class="status-icon">⚠️</span>
+      <div class="sec-text">
+        <strong>allowSharedKeyAccess: true</strong><br>
+        Shared key still permitted; plan migration to RBAC-only
+      </div>
+    </div>
+
+    <div class="security-item fail">
+      <span class="status-icon">❌</span>
+      <div class="sec-text">
+        <strong>AI Services public endpoint</strong><br>
+        No private endpoint configured — key auth only
+      </div>
+    </div>
+
+    <div class="security-item fail">
+      <span class="status-icon">❌</span>
+      <div class="sec-text">
+        <strong>AI Search Free SKU</strong><br>
+        Not production-grade; no HA, 10K doc limit
+      </div>
+    </div>
+
+    <div class="security-item fail">
+      <span class="status-icon">❌</span>
+      <div class="sec-text">
+        <strong>Blob soft delete not configured</strong><br>
+        No recovery mechanism for accidental deletion
+      </div>
+    </div>
+
+  </div>
+
+  <!-- ════════════════ CI/CD PIPELINE ════════════════ -->
+  <div class="section-title"><span class="icon">🚀</span> CI/CD Deployment Pipeline</div>
+
+  <div class="pipeline">
+    <div class="pipeline-steps">
+      <span class="pipeline-step"><span class="step-icon">🔀</span> PR</span>
+      <span class="pipeline-arrow">→</span>
+      <span class="pipeline-step success"><span class="step-icon">🔨</span> Build + Test</span>
+      <span class="pipeline-arrow">→</span>
+      <span class="pipeline-step"><span class="step-icon">🔮</span> What-If Preview</span>
+      <span class="pipeline-arrow">→</span>
+      <span class="pipeline-step"><span class="step-icon">🏗️</span> Deploy Infrastructure</span>
+      <span class="pipeline-arrow">→</span>
+      <span class="pipeline-step"><span class="step-icon">📤</span> Deploy to Staging</span>
+      <span class="pipeline-arrow">→</span>
+      <span class="pipeline-step"><span class="step-icon">🌡️</span> Warmup</span>
+      <span class="pipeline-arrow">→</span>
+      <span class="pipeline-step"><span class="step-icon">🔄</span> Slot Swap</span>
+      <span class="pipeline-arrow">→</span>
+      <span class="pipeline-step"><span class="step-icon">🏥</span> Health Check</span>
+    </div>
+  </div>
+
+  <!-- ════════════════ KEY CONCERNS ════════════════ -->
+  <div class="section-title"><span class="icon">⚠️</span> Key Concerns</div>
+
+  <div class="concerns-grid">
+
+    <div class="concern-card critical">
+      <div class="concern-header">
+        <span class="concern-icon">🔴</span>
+        <span class="concern-title">Subscription Disabled</span>
+      </div>
+      <div class="concern-body">
+        The Azure subscription is currently disabled and cannot be deployed to. No infrastructure can be provisioned until the subscription is re-enabled by <strong>Microsoft Support</strong> or the billing issue is resolved.
+      </div>
+      <span class="concern-tag">Critical — Blocking</span>
+    </div>
+
+    <div class="concern-card warning">
+      <div class="concern-header">
+        <span class="concern-icon">🟡</span>
+        <span class="concern-title">Single-Region Deployment</span>
+      </div>
+      <div class="concern-body">
+        All resources are deployed to <strong>australiaeast</strong> only. A regional outage would result in complete service unavailability. Consider a secondary region for disaster recovery and failover capacity.
+      </div>
+      <span class="concern-tag">Warning — Availability Risk</span>
+    </div>
+
+    <div class="concern-card critical">
+      <div class="concern-header">
+        <span class="concern-icon">🔴</span>
+        <span class="concern-title">AI Search Free SKU</span>
+      </div>
+      <div class="concern-body">
+        Uses the <strong>Free SKU</strong> for Azure AI Search, which is not suitable for production. It lacks high availability, has a <strong>10,000 document limit</strong>, no SLA, and limited indexing throughput. Upgrade to at least Standard S1 before production go-live.
+      </div>
+      <span class="concern-tag">Critical — Not Production-Grade</span>
+    </div>
+
+  </div>
+
+</main>
+
+<!-- ═══ FOOTER ═══ -->
+<footer class="footer">
+  <div class="container">
+    <p>
+      ARN Traffic Bulletin — Azure Infrastructure Visualisation &middot; Generated from Bicep definitions &middot;
+      <span style="color:var(--accent-amber)">⚠ Subscription disabled — deployment blocked</span>
+    </p>
+  </div>
+</footer>
+
+<!-- ════════════════ JAVASCRIPT ════════════════ -->
+<script>
+(function() {
+  'use strict';
+
+  const tabs = document.querySelectorAll('.env-tab');
+  const panes = document.querySelectorAll('.env-pane');
+
+  // ── Tab switching ──
+  function activateTab(envId) {
+    // Deactivate all
+    tabs.forEach(t => {
+      t.classList.remove('active');
+      t.setAttribute('aria-selected', 'false');
+    });
+    panes.forEach(p => {
+      p.classList.remove('active');
+      p.style.display = 'none';
+    });
+
+    // Activate target
+    const activeTab = document.querySelector(`.env-tab[data-env="${envId}"]`);
+    const activePane = document.getElementById('env-' + envId);
+    if (activeTab && activePane) {
+      activeTab.classList.add('active');
+      activeTab.setAttribute('aria-selected', 'true');
+      activePane.style.display = 'block';
+      // Force reflow then add class for animation
+      void activePane.offsetWidth;
+      activePane.classList.add('active');
+    }
+  }
+
+  // Tab click handlers
+  tabs.forEach(tab => {
+    tab.addEventListener('click', function(e) {
+      const envId = this.getAttribute('data-env');
+      activateTab(envId);
+      // Update URL hash without scroll jump
+      history.replaceState(null, '', '#' + envId);
+    });
+  });
+
+  // ── Keyboard navigation ──
+  tabs.forEach((tab, index) => {
+    tab.addEventListener('keydown', function(e) {
+      const tabsArray = Array.from(tabs);
+      const currentIndex = tabsArray.indexOf(this);
+      let targetIndex = currentIndex;
+
+      if (e.key === 'ArrowRight' || e.key === 'ArrowDown') {
+        e.preventDefault();
+        targetIndex = (currentIndex + 1) % tabsArray.length;
+      } else if (e.key === 'ArrowLeft' || e.key === 'ArrowUp') {
+        e.preventDefault();
+        targetIndex = (currentIndex - 1 + tabsArray.length) % tabsArray.length;
+      } else if (e.key === 'Home') {
+        e.preventDefault();
+        targetIndex = 0;
+      } else if (e.key === 'End') {
+        e.preventDefault();
+        targetIndex = tabsArray.length - 1;
+      } else {
+        return;
+      }
+
+      tabsArray[targetIndex].focus();
+      tabsArray[targetIndex].click();
+    });
+  });
+
+  // ── Restore tab from hash or default ──
+  const initialHash = window.location.hash.replace('#', '');
+  if (initialHash && ['dev', 'test', 'prod'].includes(initialHash)) {
+    activateTab(initialHash);
+  } else {
+    // Default to DEV
+    activateTab('dev');
+  }
+
+  // ── Set tabindex for keyboard users ──
+  tabs.forEach((tab, i) => {
+    tab.setAttribute('role', 'tab');
+    tab.setAttribute('tabindex', i === 0 ? '0' : '-1');
+  });
+
+  // When a tab gets focus, set tabindex properly
+  tabs.forEach(tab => {
+    tab.addEventListener('focus', function() {
+      tabs.forEach(t => t.setAttribute('tabindex', '-1'));
+      this.setAttribute('tabindex', '0');
+    });
+  });
+
+})();
+</script>
+</body>
+</html>

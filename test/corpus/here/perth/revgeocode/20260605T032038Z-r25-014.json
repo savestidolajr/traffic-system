@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.1020953+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.86199,115.94535\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Altone Rd, Beechboro WA 6063, Australia",
+          "id": "here:af:streetsection:xLCFvFWmzOli6zfpqKF.yD",
+          "resultType": "street",
+          "address": {
+            "label": "Altone Rd, Beechboro WA 6063, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Beechboro",
+            "street": "Altone Rd",
+            "postalCode": "6063"
+          },
+          "position": {
+            "lat": -31.86201,
+            "lng": 115.9455
+          },
+          "distance": 14,
+          "mapView": {
+            "west": 115.94462,
+            "south": -31.87558,
+            "east": 115.94568,
+            "north": -31.86158
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

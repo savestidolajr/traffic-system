@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:28.7642743+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.82696,151.01198\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Western Mtwy, Harris Park NSW 2150, Australia",
+          "id": "here:af:streetsection:baIvq6QohXsz6dTBmF9zSA",
+          "resultType": "street",
+          "address": {
+            "label": "Western Mtwy, Harris Park NSW 2150, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Harris Park",
+            "street": "Western Mtwy",
+            "postalCode": "2150"
+          },
+          "position": {
+            "lat": -33.82696,
+            "lng": 151.01198
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.00737,
+            "south": -33.82722,
+            "east": 151.01298,
+            "north": -33.82684
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

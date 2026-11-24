@@ -1,0 +1,24 @@
+<Project>
+  <PropertyGroup>
+    <!-- Disable workload resolver for environments missing workload SDK folders. -->
+    <MSBuildEnableWorkloadResolver>false</MSBuildEnableWorkloadResolver>
+    <!-- Disabled locally for constrained dev environments; keep default SDK behavior in CI for faster builds. -->
+    <UseSharedCompilation Condition="'$(CI)' != 'true' and '$(TF_BUILD)' != 'True'">false</UseSharedCompilation>
+    <!-- Disabled locally for constrained dev environments; keep default SDK behavior in CI for faster builds. -->
+    <BuildInParallel Condition="'$(CI)' != 'true' and '$(TF_BUILD)' != 'True'">false</BuildInParallel>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <EnablePreviewFeatures>true</EnablePreviewFeatures>
+    <!-- Enable NuGet vulnerability auditing. For offline builds, pass no-restore flag or set NuGetAudit=false locally. -->
+    <NuGetAudit>true</NuGetAudit>
+    <!-- Treat all warnings as errors. Suppress via NoWarn or NuGetAuditSuppress where deliberate. -->
+    <TreatWarningsAsErrors>true</TreatWarningsAsErrors>
+  </PropertyGroup>
+
+  <!-- Scriban.Signed 7.2.0 is a deliberate security pin (see Directory.Packages.props);
+       suppress the known moderate-severity advisories since we cannot move past the pin. -->
+  <ItemGroup>
+    <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-6q7j-xr26-3h2c" />
+    <NuGetAuditSuppress Include="https://github.com/advisories/GHSA-q6rr-fm2g-g5x8" />
+  </ItemGroup>
+</Project>

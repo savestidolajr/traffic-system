@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.0679916+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.67968,151.29833\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Vineyard St, Mona Vale NSW 2103, Australia",
+          "id": "here:af:streetsection:OHVqf4e-mWDgSYsgshQsuC",
+          "resultType": "street",
+          "address": {
+            "label": "Vineyard St, Mona Vale NSW 2103, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Mona Vale",
+            "street": "Vineyard St",
+            "postalCode": "2103"
+          },
+          "position": {
+            "lat": -33.67968,
+            "lng": 151.29833
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.29235,
+            "south": -33.6802,
+            "east": 151.30263,
+            "north": -33.67898
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

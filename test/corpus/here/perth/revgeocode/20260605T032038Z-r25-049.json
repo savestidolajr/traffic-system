@@ -1,0 +1,54 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.9060064+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.05697,115.98015\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Burslem Dr Before Olga Rd",
+          "id": "here:pds:place:036qd63x-7d8f0f49f9c186664ee3c8e4df724d75",
+          "resultType": "place",
+          "address": {
+            "label": "Burslem Dr Before Olga Rd, Burslem Dr, Maddington WA 6109, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Maddington",
+            "street": "Burslem Dr",
+            "postalCode": "6109"
+          },
+          "position": {
+            "lat": -32.05696,
+            "lng": 115.9798
+          },
+          "access": [
+            {
+              "lat": -32.05698,
+              "lng": 115.97997
+            }
+          ],
+          "distance": 17,
+          "categories": [
+            {
+              "id": "400-4100-0042",
+              "name": "Bus Stop",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

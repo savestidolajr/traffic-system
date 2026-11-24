@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032047Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:48.4285776+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.9573,145.10071\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "193 Old Dandenong Rd, Heatherton VIC 3202, Australia",
+          "id": "here:af:streetsection:66P.KDv4QNFFmtboXKgovD:CggIBCD0truuARABGgMxOTM",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "193 Old Dandenong Rd, Heatherton VIC 3202, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Heatherton",
+            "street": "Old Dandenong Rd",
+            "postalCode": "3202",
+            "houseNumber": "193"
+          },
+          "position": {
+            "lat": -37.95761,
+            "lng": 145.09992
+          },
+          "access": [
+            {
+              "lat": -37.95741,
+              "lng": 145.10075
+            }
+          ],
+          "distance": 13,
+          "mapView": {
+            "west": 145.09674,
+            "south": -37.96627,
+            "east": 145.11045,
+            "north": -37.94707
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

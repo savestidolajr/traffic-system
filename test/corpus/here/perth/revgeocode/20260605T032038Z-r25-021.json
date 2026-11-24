@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.3590675+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.97978,115.7828\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Shenton Rd, Claremont WA 6010, Australia",
+          "id": "here:af:streetsection:NleF78I00e3iVQtMIdAsQC",
+          "resultType": "street",
+          "address": {
+            "label": "Shenton Rd, Claremont WA 6010, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Claremont",
+            "street": "Shenton Rd",
+            "postalCode": "6010"
+          },
+          "position": {
+            "lat": -31.97978,
+            "lng": 115.7828
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.77724,
+            "south": -31.98042,
+            "east": 115.78677,
+            "north": -31.97788
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

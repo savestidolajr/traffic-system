@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.6957915+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.03666,151.07147\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "1 Cedar Pl, Kirrawee NSW 2232, Australia",
+          "id": "here:af:streetsection:IC9z1QukD.1CwCjvSOIcsC:CggIBCD5-8KeARABGgEx",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "1 Cedar Pl, Kirrawee NSW 2232, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Kirrawee",
+            "street": "Cedar Pl",
+            "postalCode": "2232",
+            "houseNumber": "1"
+          },
+          "position": {
+            "lat": -34.03667,
+            "lng": 151.07165
+          },
+          "access": [
+            {
+              "lat": -34.03666,
+              "lng": 151.07147
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 151.07062,
+            "south": -34.03666,
+            "east": 151.07147,
+            "north": -34.03655
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

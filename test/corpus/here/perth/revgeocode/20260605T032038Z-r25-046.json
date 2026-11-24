@@ -1,0 +1,56 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.9022265+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.83454,115.78303\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Glengarry Shopping Centre, 59 Arnisdale Rd, Duncraig WA 6023, Australia",
+          "id": "here:af:streetsection:z3vicmKdmZkgvdBCKgI80B:CggIBCDLweHTAhABGgI1OQ",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "Glengarry Shopping Centre, 59 Arnisdale Rd, Duncraig WA 6023, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Duncraig",
+            "street": "Arnisdale Rd",
+            "postalCode": "6023",
+            "houseNumber": "59",
+            "building": "Glengarry Shopping Centre"
+          },
+          "position": {
+            "lat": -31.83426,
+            "lng": 115.78334
+          },
+          "access": [
+            {
+              "lat": -31.83454,
+              "lng": 115.78334
+            }
+          ],
+          "distance": 29,
+          "mapView": {
+            "west": 115.78242,
+            "south": -31.83505,
+            "east": 115.79074,
+            "north": -31.83465
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

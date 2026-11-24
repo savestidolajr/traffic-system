@@ -1,0 +1,168 @@
+# Network & Deployment Topology — presentation render.
+#
+# Companion to the `network-topology` LikeC4 deployment view (views.c4).
+# All ids are deployment FQNs from deployment.c4; render.py validates them
+# against the model export and fails on drift.
+#
+# Layout invariants (keep when editing):
+#   * Entra and Dashboard share y=222  -> straight Easy Auth line
+#   * Dashboard and Func share x=850   -> straight API line
+#   * Playout Drop Share is the 4th icon in the snet-pe data row (x=632/780/
+#     900/1060 for storage/keyVault/ai/playoutDrop); Func drops straight down
+#     to it (x=1060) exactly like the other 3 private-endpoint verticals.
+#   * Zetta -> Playout Drop is a single-L route: left out of Zetta's left
+#     border at y=438 (clear of Zetta's own label band, y476-490), straight
+#     across, then straight down onto the drop icon's LEFT border at
+#     x=1028 (offset from Func's write corridor at x=1060 so the two
+#     drop-class edges never run collinear) -- the only edge crossing from
+#     the ARN Servers box into the platform VNet.
+#   * Edges are straight or single-L; no crossings anywhere
+
+output: network-topology
+canvas: [1640, 970]
+
+texts:
+  - { text: "Network & Deployment Topology", at: [40, 38], size: 20, weight: "700", anchor: start }
+  - { text: "Arn AI Traffic Bulletin Platform — test and prod topology; dev runs the same services on a public data plane (no VNet)",
+      at: [40, 60], size: 12, color: "#64748B", anchor: start }
+  - { text: "PaaS — outside VNet, AAD-protected", at: [412, 812], size: 11,
+      color: "#64748B", anchor: start, style: italic }
+containers:
+  - id: saas
+    style: saas
+    rect: [60, 150, 200, 720]
+    labels:
+      - { text: "Internet / SaaS", at: [160, 176], size: 14, weight: "700" }
+      - { text: "public endpoints", at: [160, 858], size: 11, color: "#92400E", style: italic }
+
+  - id: platformSub
+    style: subscription
+    rect: [340, 70, 1000, 830]
+    labels:
+      - { text: "Platform Subscription", at: [360, 100], size: 16, weight: "700", anchor: start }
+      - { text: "IBP", at: [575, 100], size: 12, color: "#64748B", anchor: start, font: mono }
+
+  - id: platformSub.aue
+    style: region
+    rect: [370, 125, 940, 745]
+    labels:
+      - { text: "Azure Australia East", at: [388, 150], size: 13, color: "#475569", anchor: start, weight: "600" }
+
+  - id: platformSub.aue.platformVnet
+    style: vnet
+    rect: [400, 310, 900, 400]
+    labels:
+      - { text: "Platform VNet", at: [418, 338], size: 14, color: "#1E3A8A", anchor: start, weight: "700" }
+      - { text: "test 10.241.91.0/24 · prod 10.61.0.0/24", at: [418, 356], size: 11, color: "#64748B", anchor: start, font: mono }
+
+  - id: platformSub.aue.platformVnet.snetFunc
+    style: subnet-compute
+    rect: [460, 360, 780, 145]
+    labels:
+      - { text: "Compute Subnet", at: [476, 384], size: 13, color: "#166534", anchor: start, weight: "600" }
+      - { text: "snet-func · delegated Microsoft.Web", at: [600, 384], size: 11, color: "#64748B", anchor: start }
+
+  - id: platformSub.aue.platformVnet.snetPe
+    style: subnet-data
+    rect: [460, 545, 780, 148]
+    labels:
+      - { text: "Data Subnet", at: [476, 568], size: 13, color: "#5B21B6", anchor: start, weight: "600" }
+      - { text: "snet-pe · PE + DNS", at: [476, 584], size: 11, color: "#64748B", anchor: start }
+
+  - id: arnServers
+    style: external
+    rect: [1400, 330, 200, 200]
+    labels:
+      - { text: "ARN Servers Network", at: [1500, 358], size: 13, weight: "700" }
+      - { text: "separate VNet", at: [1500, 374], size: 11, color: "#64748B", style: italic }
+
+edges:
+  # primary cross-boundary paths (mirrors the LikeC4 network-topology view)
+  - from: saas.entraNode
+    to: platformSub.aue.dashboardNode
+    class: auth
+    points: [[192, 222], [812, 222]]
+    label: { text: "Easy Auth · OIDC", at: [505, 210] }
+
+  - from: platformSub.aue.dashboardNode
+    to: platformSub.aue.platformVnet.snetFunc.funcNode
+    class: api
+    points: [[850, 254], [850, 392]]
+    label: { text: "API calls · HTTPS", at: [862, 330], anchor: start }
+
+  # private endpoints + playout drop write — why the data subnet exists
+  - from: platformSub.aue.platformVnet.snetFunc.funcNode
+    to: platformSub.aue.platformVnet.snetPe.storageNode
+    class: pe
+    points: [[632, 505], [632, 577]]
+    label: { text: "private endpoints", at: [624, 541], anchor: end }
+  - from: platformSub.aue.platformVnet.snetFunc.funcNode
+    to: platformSub.aue.platformVnet.snetPe.keyVaultNode
+    class: pe
+    points: [[780, 505], [780, 577]]
+  - from: platformSub.aue.platformVnet.snetFunc.funcNode
+    to: platformSub.aue.platformVnet.snetPe.aiNode
+    class: pe
+    points: [[900, 505], [900, 577]]
+  - from: platformSub.aue.platformVnet.snetFunc.funcNode
+    to: platformSub.aue.platformVnet.snetPe.playoutDropNode
+    class: drop
+    points: [[1060, 505], [1060, 577]]
+    label: { text: "Files REST write · MI · 443", at: [1068, 541], anchor: start }
+
+  # Zetta autoload — the one edge that crosses into ARN's network
+  - from: arnServers.zettaNode
+    to: platformSub.aue.platformVnet.snetPe.playoutDropNode
+    class: drop
+    points: [[1468, 438], [1028, 438], [1028, 615]]
+    label: { text: "AD DS SMB · autoload + delete", at: [1036, 470], anchor: start }
+
+  # SaaS egress
+  - from: platformSub.aue.platformVnet.snetFunc.funcNode
+    to: saas.hereNode
+    class: muted
+    points: [[818, 425], [198, 425]]
+  - from: platformSub.aue.platformVnet.snetFunc.funcNode
+    to: saas.elevenNode
+    class: muted
+    points: [[818, 448], [310, 448], [310, 575], [198, 575]]
+  - from: platformSub.aue.logicNode
+    to: saas.teamsNode
+    class: muted
+    points: [[668, 782], [198, 782]]
+    label: { text: "Adaptive Cards", at: [420, 770], size: 11 }
+
+nodes:
+  - { id: saas.entraNode, at: [160, 222], icon: entra }
+  - { id: saas.hereNode, at: [160, 425], icon: here }
+  - { id: saas.elevenNode, at: [160, 575], icon: eleven }
+  - { id: saas.teamsNode, at: [160, 782], icon: teams, label: "Teams" }
+
+  - { id: platformSub.aue.dashboardNode, at: [850, 222], icon: dashboard,
+      sublabel: "Static Web App", label_pos: right }
+  - { id: platformSub.aue.platformVnet.snetFunc.funcNode, at: [850, 430], icon: function-app,
+      label: "Function App", sublabel: "platform compute" }
+  - { id: platformSub.aue.platformVnet.snetPe.storageNode, at: [632, 615], icon: storage,
+      label: "Storage Account", sublabel: "ZRS · tables/blobs/queues" }
+  - { id: platformSub.aue.platformVnet.snetPe.keyVaultNode, at: [780, 615], icon: keyvault,
+      sublabel: "secrets · RBAC" }
+  - { id: platformSub.aue.platformVnet.snetPe.aiNode, at: [900, 615], icon: ai,
+      label: "AI Services", sublabel: "Azure OpenAI" }
+  - { id: platformSub.aue.platformVnet.snetPe.playoutDropNode, at: [1060, 615], icon: storage,
+      sublabel: "share: informationbulletins" }
+
+  - { id: platformSub.aue.logicNode, at: [700, 782], icon: logic-app,
+      label: "Logic App", sublabel: "Teams notify" }
+  - { id: platformSub.aue.monitoringNode, at: [940, 782], icon: app-insights,
+      label: "App Insights", sublabel: "9 alerts · 1 dashboard" }
+
+  - { id: arnServers.zettaNode, at: [1500, 438], icon: zetta, label: "Zetta Playout" }
+
+legend:
+  at: [340, 935]
+  items:
+    - ["Easy Auth", auth]
+    - ["API", api]
+    - ["playout drop share", drop]
+    - ["private endpoint", pe]
+    - ["HTTPS egress", muted]

@@ -1,0 +1,10 @@
+{
+  "slug": "goldcoast-arvo",
+  "voiceId": "CwhRBWXzGAHq8TQ4Fs17",
+  "modelId": "eleven_v3",
+  "outputFormat": "pcm_24000",
+  "durationSeconds": 22.164,
+  "charCount": 345,
+  "script": "Heads up Gold Coast \u2014 Smith Street is a mess this arvo, heavy congestion right through the middle. Over on the Pacific Motorway there\u0027s a closure with about a kilometre of queuing. Morala Avenue is shut too, short queues but still slow. And the Coast Highway has a closure as well, only minor delays but worth knowing if you\u0027re heading that way.",
+  "audioFile": "goldcoast-arvo.wav"
+}

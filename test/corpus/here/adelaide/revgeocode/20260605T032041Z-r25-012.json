@@ -1,0 +1,55 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032041Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:41.8266512+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.95971,138.5977\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "36 Wood St, Millswood SA 5034, Australia",
+          "id": "here:af:streetsection:miPqxEOJ9DilCg9qveVipC:CggIBCDfqaWhARABGgIzNg",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "36 Wood St, Millswood SA 5034, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "SA",
+            "state": "South Australia",
+            "city": "Adelaide",
+            "district": "Millswood",
+            "street": "Wood St",
+            "postalCode": "5034",
+            "houseNumber": "36"
+          },
+          "position": {
+            "lat": -34.95965,
+            "lng": 138.59724
+          },
+          "access": [
+            {
+              "lat": -34.95962,
+              "lng": 138.59769
+            }
+          ],
+          "distance": 10,
+          "mapView": {
+            "west": 138.59739,
+            "south": -34.95971,
+            "east": 138.5977,
+            "north": -34.95536
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

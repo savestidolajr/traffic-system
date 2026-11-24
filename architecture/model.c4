@@ -1,0 +1,262 @@
+model {
+
+  // ══════════════════════════════════════════════════════════════
+  // Actors
+  // ══════════════════════════════════════════════════════════════
+
+  operator = actor "Operator" {
+    #hitl
+    summary "Reviews and approves bulletins before broadcast"
+    description "ARN content team member who reviews generated bulletins, listens to audio, and approves or rejects before delivery to playout"
+  }
+
+  admin = actor "Admin" {
+    summary "Manages schedules and triggers manual broadcasts"
+    description "System administrator with elevated permissions: manages broadcast schedules, triggers ad-hoc bulletins, configures market settings"
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // ARN Traffic Bulletin Platform
+  // ══════════════════════════════════════════════════════════════
+
+  arn = system "ARN Traffic Bulletin Platform" {
+    #critical
+    summary "AI-powered traffic bulletins for Australian commercial radio"
+    description "Fetches live traffic data, generates scripts via AI, synthesises broadcast audio, and delivers to playout after human approval"
+
+    // ── Operator Dashboard ──
+    dashboard = webapp "Operator Dashboard" {
+      technology "React 19 / Vite / shadcn"
+      summary "Review, approve, reject, regenerate bulletins"
+      description "Azure Static Web App with a linked backend to Functions for API proxy"
+      icon tech:react
+    }
+
+    // ── Functions App ──
+    functions = container "Azure Functions" {
+      #critical
+      technology ".NET 10 Isolated Worker"
+      summary "Core processing and API"
+      icon azure:function-apps
+
+      authMiddleware = gateway "Auth Middleware" {
+        #security
+        summary "Fail-closed AAD validation + RBAC"
+        description "
+          Rejects any request without a valid X-MS-CLIENT-PRINCIPAL. The dev-only
+          Auth__DevFallbackRole bypass synthesizes an Admin identity when the header is
+          absent; since 2026-07-29 the host REFUSES TO START if that setting carries a
+          value on a TST/PRD site (StartupSafety.IsUnsafeAuthBypass, keyed on
+          WEBSITE_SITE_NAME), and main.bicep forces the setting empty outside dev/sbx.
+        "
+      }
+
+      poller = service "Schedule Poller" {
+        summary "1-min timer, enqueues due bulletins"
+      }
+
+      orchestrator = service "Broadcast Orchestrator" {
+        #critical
+        summary "End-to-end bulletin pipeline"
+        description "Traffic fetch → incident selection → script generation (raw model or versioned Foundry agents) → content safety → audio synthesis → duration targeting (±0.15s)"
+      }
+
+      contentSafety = gateway "Content Safety" {
+        #security
+        summary "Banned words + substitution check"
+      }
+
+      jobService = service "Job Service" {
+        summary "Approve, reject, publish, regenerate"
+      }
+
+      httpApi = service "HTTP API" {
+        summary "REST endpoints for jobs, schedules, health"
+      }
+    }
+
+    // ── Logic App ──
+    logicApp = container "Logic App" {
+      summary "Posts Adaptive Cards to Teams"
+      technology "Consumption"
+      icon azure:logic-apps
+    }
+
+    // ── Storage ──
+    storageAccount = storage "Azure Storage" {
+      summary "Tables, Blobs, Queues, identity-based access"
+      icon azure:storage-accounts
+
+      tables = storage "Table Storage" {
+        summary "Jobs, job index, job work index, job claims, schedules, incidents, calibrations, activity log"
+      }
+
+      blobs = storage "Blob Storage" {
+        summary "Audio files (WAV), soft delete + PITR"
+      }
+
+      queues = queue "Queues" {
+        summary "Broadcast, regeneration, lesson learning, activity audit, poison"
+      }
+    }
+
+    // ── Playout drop (ARN-provisioned, shared by every environment) ──
+    playoutDrop = storage "Playout Drop Share" {
+      summary "Azure Files share Zetta autoloads bulletins from"
+      technology "Azure Files · AD DS SMB read · Files REST write"
+      description "ONE ARN-built storage account (ibpauetststaftp01), outside main.bicep and delete-locked. `informationbulletins` is the PRODUCTION playout folder feeding the live KIIS 90s and Star 102.7 libraries (ARN confirmed 2026-07-30). Since 2026-08-20 BOTH test and production write it — the sibling `informationbulletins-test` share still exists and the autoloader still ignores it, but nothing writes there. Environment separation is gone by design: which environment airs a station is the per-station `MarketSchedule.PlayoutEnabled` switch, and only one may be armed at a time because the file name is identical in both."
+      icon azure:storage-accounts
+    }
+
+    // ── Key Vault ──
+    keyVault = container "Key Vault" {
+      #security
+      summary "All API keys, credentials, webhook URLs"
+      technology "RBAC + soft delete"
+      icon azure:key-vaults
+      style { color red }
+    }
+
+    // Azure AI Foundry serves the raw model route and the versioned workflow,
+    // Safety, and Director agents. Agent routing is disabled by default.
+    aiServices = container "Azure AI Foundry" {
+      summary "Raw model and versioned agent routes"
+      icon azure:cognitive-services
+
+      rawModel = service "Raw model endpoint" {
+        summary "Direct Azure OpenAI Responses API"
+      }
+      fallbackModel = service "Alternate model deployment" {
+        summary "gpt-5.6-terra fallback for raw calls"
+      }
+
+      foundryProject = service "Foundry project" {
+        summary "Project hosting ten reproducibly provisioned agents"
+
+        workflowAgents = service "Versioned Foundry agents" {
+          summary "Six gpt-5.6-luna primary agents"
+        }
+
+        fallbackWorkflowAgents = service "Terra sibling agents" {
+          summary "Four gpt-5.6-terra fallback agents"
+        }
+      }
+    }
+
+    // ── Monitoring ──
+    appInsights = monitoring "Monitoring" {
+      summary "9 alerts, 1 dashboard, custom metrics"
+      technology "App Insights + Log Analytics"
+      icon azure:application-insights
+    }
+
+  }
+
+  // ══════════════════════════════════════════════════════════════
+  // Relationships
+  // ══════════════════════════════════════════════════════════════
+
+  // ── Operator flows ──
+  operator -> arn.dashboard "reviews and approves bulletins"
+
+  // ── Admin flows ──
+  admin -> arn.dashboard "manages schedules"
+
+  // ── Dashboard → Functions ──
+  arn.dashboard -> arn.functions.httpApi "API calls" {
+    technology "HTTPS via linked backend"
+  }
+
+  // ── Dashboard → HERE (browser) ──
+  arn.dashboard -> here "basemap tiles, evidence map, address search" {
+    technology "HTTPS + browser map key (GET /api/map-config)"
+  }
+
+  // ── Auth flows ──
+  entra -[auth]-> arn.dashboard "Easy Auth"
+  entra -[auth]-> arn.functions.authMiddleware "Easy Auth"
+  arn.functions -[data]-> entra "reads role holders live" {
+    description "Function App system-assigned managed identity calls Microsoft Graph; no directory principals are mirrored into storage"
+    technology "Managed Identity · Microsoft Graph Directory.Read.All"
+  }
+  arn.functions.authMiddleware -> arn.functions.httpApi "validated request"
+  arn.functions.authMiddleware -> arn.functions.jobService "validated request"
+
+  // ── Schedule poller ──
+  arn.functions.poller -[data]-> arn.storageAccount.tables "reads schedules"
+  arn.functions.poller -[async]-> arn.storageAccount.queues "enqueues broadcast"
+
+  // ── Queue → Orchestrator ──
+  arn.storageAccount.queues -[async]-> arn.functions.orchestrator "triggers pipeline"
+
+  // ── Orchestrator pipeline ──
+  arn.functions.orchestrator -> here "fetches traffic" {
+    technology "API Key (KV)"
+  }
+  arn.functions.orchestrator -> arn.aiServices.rawModel "generates script (raw model)" {
+    technology "Managed Identity"
+  }
+  arn.functions.orchestrator -> arn.aiServices.foundryProject.workflowAgents "generates script (agent route)" {
+    description "Default OFF via enableWorkflowAgents; system and user prompts travel in the agent input"
+    technology "Managed Identity · Foundry Responses API"
+  }
+  arn.functions.orchestrator -> arn.aiServices.fallbackModel "fallback script generation (raw model)" {
+    description "At most once, immediately and without backoff on 429, transient 5xx, or stall exhaustion; the throttle ladder stays on the fallback"
+    technology "Managed Identity"
+  }
+  arn.functions.orchestrator -> arn.aiServices.foundryProject.fallbackWorkflowAgents "fallback script generation (agent route)" {
+    description "At most once, immediately and without backoff; selects a -terra sibling because the agent endpoint rejects request-side model selection"
+    technology "Managed Identity · Foundry Responses API"
+  }
+  arn.aiServices.foundryProject -> arn.appInsights "connected for Foundry tracing" {
+    description "Project App Insights connection declared in IaC"
+    technology "IaC · AAD"
+  }
+  arn.functions.orchestrator -> arn.functions.contentSafety "checks script"
+  arn.functions.orchestrator -> elevenlabs "synthesises audio" {
+    technology "API Key (KV)"
+  }
+  arn.functions.orchestrator -[data]-> arn.storageAccount.blobs "saves audio" {
+    technology "Managed Identity"
+  }
+  arn.functions.orchestrator -[data]-> arn.storageAccount.tables "updates job state" {
+    technology "Managed Identity"
+  }
+
+  // ── Notifications ──
+  arn.functions.orchestrator -> arn.logicApp "webhook"
+  arn.logicApp -> teams "Adaptive Card"
+
+  // ── Delivery ──
+  // The live path is a drop share, not a hop into ARN's network: we write, Zetta
+  // autoloads. Proven both directions 2026-07-30 (ARN witnessed the ingest).
+  arn.functions.jobService -[delivers]-> arn.playoutDrop "writes approved audio" {
+    description "Files REST over OAuth (443), managed identity, exact ARN file name, overwrite in place. Only ever called from PublishJobAsync, so nothing lands without an operator publishing."
+  }
+  zetta -> arn.playoutDrop "autoloads and deletes" {
+    description "AD DS-authenticated SMB mount with Zetta's own on-prem identity; wildcard-matches per market, stamps its own date and expiry, deletes the file on ingest."
+  }
+
+  // ── Reject → Regeneration ──
+  arn.functions.jobService -[async]-> arn.storageAccount.queues "enqueues regeneration"
+
+  // ── Published edit → Lesson learning ──
+  // Delivery-gated: only an operator edit whose revised bulletin actually reached the
+  // playout drop is enqueued; the consumer is best-effort (no poison queue).
+  arn.functions.jobService -[async]-> arn.storageAccount.queues "enqueues published edit for lesson learning"
+
+  // Default-off (Audit:Queue:Enabled): successful mutations enqueue their audit record and
+  // ActivityAuditQueueProcessor writes it idempotently; inline Table write otherwise.
+  arn.functions -[async]-> arn.storageAccount.queues "enqueues activity audit records (flagged)"
+
+  // ── Key Vault ──
+  arn.functions -> arn.keyVault "reads secrets" {
+    #security
+    technology "Managed Identity"
+  }
+
+  // ── Monitoring ──
+  arn.functions -[monitors]-> arn.appInsights "metrics + gen_ai telemetry" {
+    description "Unsampled DependencyTelemetry per LLM HTTP attempt with gen_ai.* dimensions, response id, and operation_Id correlation"
+  }
+}

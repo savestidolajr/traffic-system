@@ -1,0 +1,323 @@
+{
+ "voiceId": "XGZ4jNfM7INNpwHL5r87",
+ "voiceName": "Older Female Matt - AM - Gold/Regional AH",
+ "modelId": "eleven_v3",
+ "stability": 0.7,
+ "similarityBoost": 0.7,
+ "style": 0.0,
+ "speed": 0.97,
+ "paceBoostWpm": 0.0,
+ "total": 1,
+ "clean": 1,
+ "tokens": 57,
+ "bulletins": [
+  {
+   "jobId": "ea5a8c2621eb43999046bec0c19c1812",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 21.8,
+   "fittedSec": 21.846,
+   "stretch": 0.99789,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Warringah Freeway's still closed citybound at Brook Street for construction. Banks Drive, Brighton Avenue and Parramatta Road are a bit slow. Maddox Street, Sydney Park Road and Huntley Street have a few brake lights. The Harbour Bridge and M4 are moving nicely, with the M5 and Anzac Bridge [brightly] looking GOOD! Partly sunny, 13 degrees.",
+   "features": {
+    "syl": 80,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.08
+    },
+    {
+     "w": "Warringah",
+     "s": 0.12,
+     "e": 0.48
+    },
+    {
+     "w": "Freeway's",
+     "s": 0.52,
+     "e": 1.04
+    },
+    {
+     "w": "still",
+     "s": 1.08,
+     "e": 1.28
+    },
+    {
+     "w": "closed",
+     "s": 1.337,
+     "e": 1.68
+    },
+    {
+     "w": "citybound",
+     "s": 1.744,
+     "e": 2.32
+    },
+    {
+     "w": "at",
+     "s": 2.347,
+     "e": 2.4
+    },
+    {
+     "w": "Brook",
+     "s": 2.44,
+     "e": 2.64
+    },
+    {
+     "w": "Street",
+     "s": 2.697,
+     "e": 3.04
+    },
+    {
+     "w": "for",
+     "s": 3.06,
+     "e": 3.12
+    },
+    {
+     "w": "construction.",
+     "s": 3.182,
+     "e": 4
+    },
+    {
+     "w": "Banks",
+     "s": 4.12,
+     "e": 4.72
+    },
+    {
+     "w": "Drive,",
+     "s": 4.8,
+     "e": 5.4
+    },
+    {
+     "w": "Brighton",
+     "s": 5.422,
+     "e": 5.6
+    },
+    {
+     "w": "Avenue",
+     "s": 5.669,
+     "e": 6.08
+    },
+    {
+     "w": "and",
+     "s": 6.12,
+     "e": 6.24
+    },
+    {
+     "w": "Parramatta",
+     "s": 6.304,
+     "e": 6.88
+    },
+    {
+     "w": "Road",
+     "s": 6.944,
+     "e": 7.2
+    },
+    {
+     "w": "are",
+     "s": 7.24,
+     "e": 7.36
+    },
+    {
+     "w": "a",
+     "s": 7.4,
+     "e": 7.44
+    },
+    {
+     "w": "bit",
+     "s": 7.5,
+     "e": 7.68
+    },
+    {
+     "w": "slow.",
+     "s": 7.76,
+     "e": 8.16
+    },
+    {
+     "w": "Maddox",
+     "s": 8.272,
+     "e": 8.88
+    },
+    {
+     "w": "Street,",
+     "s": 8.926,
+     "e": 9.36
+    },
+    {
+     "w": "Sydney",
+     "s": 9.413,
+     "e": 9.76
+    },
+    {
+     "w": "Park",
+     "s": 9.824,
+     "e": 10.08
+    },
+    {
+     "w": "Road",
+     "s": 10.144,
+     "e": 10.4
+    },
+    {
+     "w": "and",
+     "s": 10.46,
+     "e": 10.64
+    },
+    {
+     "w": "Huntley",
+     "s": 10.704,
+     "e": 11.04
+    },
+    {
+     "w": "Street",
+     "s": 11.097,
+     "e": 11.44
+    },
+    {
+     "w": "have",
+     "s": 11.472,
+     "e": 11.6
+    },
+    {
+     "w": "a",
+     "s": 11.64,
+     "e": 11.68
+    },
+    {
+     "w": "few",
+     "s": 11.74,
+     "e": 11.92
+    },
+    {
+     "w": "brake",
+     "s": 11.973,
+     "e": 12.24
+    },
+    {
+     "w": "lights.",
+     "s": 12.309,
+     "e": 13
+    },
+    {
+     "w": "The",
+     "s": 13.07,
+     "e": 13.28
+    },
+    {
+     "w": "Harbour",
+     "s": 13.32,
+     "e": 13.6
+    },
+    {
+     "w": "Bridge",
+     "s": 13.646,
+     "e": 13.92
+    },
+    {
+     "w": "and",
+     "s": 13.98,
+     "e": 14.16
+    },
+    {
+     "w": "M",
+     "s": 14.28,
+     "e": 14.4
+    },
+    {
+     "w": "4",
+     "s": 14.464,
+     "e": 14.72
+    },
+    {
+     "w": "are",
+     "s": 14.76,
+     "e": 14.88
+    },
+    {
+     "w": "moving",
+     "s": 14.937,
+     "e": 15.28
+    },
+    {
+     "w": "nicely,",
+     "s": 15.349,
+     "e": 15.84
+    },
+    {
+     "w": "with",
+     "s": 15.936,
+     "e": 16.32
+    },
+    {
+     "w": "the",
+     "s": 16.34,
+     "e": 16.4
+    },
+    {
+     "w": "M",
+     "s": 16.52,
+     "e": 16.64
+    },
+    {
+     "w": "5",
+     "s": 16.72,
+     "e": 17.04
+    },
+    {
+     "w": "and",
+     "s": 17.1,
+     "e": 17.28
+    },
+    {
+     "w": "Anzac",
+     "s": 17.36,
+     "e": 17.76
+    },
+    {
+     "w": "Bridge",
+     "s": 17.817,
+     "e": 18.16
+    },
+    {
+     "w": "looking",
+     "s": 18.586,
+     "e": 18.726
+    },
+    {
+     "w": "GOOD!",
+     "s": 18.838,
+     "e": 19.366
+    },
+    {
+     "w": "Partly",
+     "s": 19.494,
+     "e": 20.166
+    },
+    {
+     "w": "sunny,",
+     "s": 20.233,
+     "e": 20.646
+    },
+    {
+     "w": "13",
+     "s": 20.69,
+     "e": 21.046
+    },
+    {
+     "w": "degrees.",
+     "s": 21.126,
+     "e": 21.846
+    }
+   ]
+  }
+ ]
+}

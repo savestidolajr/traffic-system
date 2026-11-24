@@ -1,0 +1,54 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032040Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:40.6390069+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.00811,115.90042\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Curtin Film Society",
+          "id": "here:pds:place:036qd63v-5f5522f160b6f276cc6b39765518df4a",
+          "resultType": "place",
+          "address": {
+            "label": "Curtin Film Society, Hayman Rd, Bentley WA 6102, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Bentley",
+            "street": "Hayman Rd",
+            "postalCode": "6102"
+          },
+          "position": {
+            "lat": -32.0082,
+            "lng": 115.90031
+          },
+          "access": [
+            {
+              "lat": -32.00811,
+              "lng": 115.90042
+            }
+          ],
+          "distance": 0,
+          "categories": [
+            {
+              "id": "700-7100-0000",
+              "name": "Communication/Media",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

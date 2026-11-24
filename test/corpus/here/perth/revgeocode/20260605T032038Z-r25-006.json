@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:38.9735603+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94993,115.97527\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Affleck Rd, Perth Airport WA 6105, Australia",
+          "id": "here:af:streetsection:goPW8w4BwsFbKgt6ictG2D",
+          "resultType": "street",
+          "address": {
+            "label": "Affleck Rd, Perth Airport WA 6105, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Perth Airport",
+            "street": "Affleck Rd",
+            "postalCode": "6105"
+          },
+          "position": {
+            "lat": -31.94993,
+            "lng": 115.97527
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.97527,
+            "south": -31.94993,
+            "east": 115.97741,
+            "north": -31.94119
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

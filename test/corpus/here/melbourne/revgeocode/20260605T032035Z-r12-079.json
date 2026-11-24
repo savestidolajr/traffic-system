@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.3450913+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81529,144.90857\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "54 MacKenzie Rd, West Melbourne VIC 3003, Australia",
+          "id": "here:af:streetsection:thsw2x4ZOJxFfbS4ozv01A:EAIaAjU0",
+          "resultType": "houseNumber",
+          "houseNumberType": "interpolated",
+          "address": {
+            "label": "54 MacKenzie Rd, West Melbourne VIC 3003, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "West Melbourne",
+            "street": "MacKenzie Rd",
+            "postalCode": "3003",
+            "houseNumber": "54"
+          },
+          "position": {
+            "lat": -37.81515,
+            "lng": 144.90841
+          },
+          "access": [
+            {
+              "lat": -37.81516,
+              "lng": 144.90858
+            }
+          ],
+          "distance": 14,
+          "mapView": {
+            "west": 144.90617,
+            "south": -37.8191,
+            "east": 144.90868,
+            "north": -37.80702
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

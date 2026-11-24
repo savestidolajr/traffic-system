@@ -1,0 +1,1036 @@
+{
+ "JobId": "c5b3bf0ad6874bb8ac3df785dbae81e3",
+ "Market": "sydney",
+ "Station": "KIIS 90s",
+ "CapturedAtUtc": "2026-08-13T13:57:02.2038730Z",
+ "DevOutcome": {
+  "Status": "Published",
+  "FallbackKind": "missed-window",
+  "Attempts": 1,
+  "TargetWordsSeq": [
+   44
+  ],
+  "SynthWordsSeq": [
+   60
+  ],
+  "NaturalSecSeq": [
+   21.8
+  ],
+  "BestNaturalSec": 21.8,
+  "ReviewFeedbackCount": 0,
+  "SynthFailures": []
+ },
+ "Fidelity": {
+  "IncidentsRecovered": 1,
+  "IncidentsSynthesized": 0,
+  "WeatherSource": "job",
+  "FuelSource": "off",
+  "GoodRunsAndFlowPoolLost": false,
+  "StationConfigSource": "live-station-config"
+ },
+ "VoiceConfig": {
+  "Provider": "",
+  "VoiceId": "EF2rFRNHqbfaMctIvS2k",
+  "VoiceName": "Male Sarah - AM - KIIS/Regional HOT AC",
+  "Model": "eleven_v3",
+  "Settings": {
+   "Stability": 0.7,
+   "SimilarityBoost": 0.7,
+   "Style": 0,
+   "UseSpeakerBoost": false,
+   "Speed": 0.97
+  },
+  "PaceBoostWpm": 0
+ },
+ "Snapshot": {
+  "TargetDurationSeconds": 22,
+  "Location": "sydney",
+  "City": null,
+  "MarketId": "sydney",
+  "Content": {
+   "Traffic": true,
+   "Weather": true,
+   "Fuel": false,
+   "WeatherRequired": true,
+   "FuelRequired": false,
+   "HasAnySource": true,
+   "RequiresWeather": true,
+   "RequiresFuel": false
+  },
+  "FillOrder": [
+   "Weather",
+   "Fuel",
+   "MinorTraffic",
+   "Filler"
+  ],
+  "Corridors": [
+   {
+    "RoadName": "Sydney Harbour Tunnel",
+    "Severity": 1,
+    "FunctionalClass": 1,
+    "TotalLengthMeters": 557,
+    "ImpactScore": 205,
+    "PrimaryType": "roadClosure",
+    "Description": "road closure southbound",
+    "Incidents": [
+     {
+      "Id": "3853722649066483244",
+      "Description": "Closed",
+      "Severity": 1,
+      "Location": "Sydney Harbour Tunnel",
+      "Type": "roadClosure",
+      "LengthMeters": 557,
+      "FunctionalClass": 1,
+      "Latitude": -33.84157,
+      "Longitude": 151.21075,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "southbound",
+      "Summary": null,
+      "JunctionTraversability": "intermediateClosedEdgeOpen",
+      "SegmentRefs": [
+       "here:cm:segment:918404342#+"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -33.84157,
+        "Lng": 151.21075
+       },
+       {
+        "Lat": -33.84246,
+        "Lng": 151.21093
+       },
+       {
+        "Lat": -33.84266,
+        "Lng": 151.21101
+       },
+       {
+        "Lat": -33.84364,
+        "Lng": 151.21133
+       },
+       {
+        "Lat": -33.84364,
+        "Lng": 151.21133
+       },
+       {
+        "Lat": -33.84396,
+        "Lng": 151.21144
+       },
+       {
+        "Lat": -33.84396,
+        "Lng": 151.21144
+       },
+       {
+        "Lat": -33.84452,
+        "Lng": 151.21163
+       },
+       {
+        "Lat": -33.84558,
+        "Lng": 151.21194
+       },
+       {
+        "Lat": -33.84558,
+        "Lng": 151.21194
+       },
+       {
+        "Lat": -33.84594,
+        "Lng": 151.21208
+       },
+       {
+        "Lat": -33.84606,
+        "Lng": 151.21215
+       },
+       {
+        "Lat": -33.84615,
+        "Lng": 151.21224
+       },
+       {
+        "Lat": -33.84615,
+        "Lng": 151.21224
+       },
+       {
+        "Lat": -33.84636,
+        "Lng": 151.21241
+       }
+      ],
+      "RoadClosed": true,
+      "EntryTimeUtc": "2026-08-13T12:30:38+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "southbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -33.84157,
+    "Longitude": 151.21075,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null,
+    "VoicedExtentMeters": 557
+   },
+   {
+    "RoadName": "Barclay Road",
+    "Severity": 1,
+    "FunctionalClass": 3,
+    "TotalLengthMeters": 2224,
+    "ImpactScore": 165,
+    "PrimaryType": "congestion",
+    "Description": "at a standstill",
+    "Incidents": [],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": null,
+    "Longitude": null,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 3,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": 3,
+    "VoicedExtentMeters": 2224
+   },
+   {
+    "RoadName": "Connells Point Road",
+    "Severity": 1,
+    "FunctionalClass": 3,
+    "TotalLengthMeters": 427,
+    "ImpactScore": 165,
+    "PrimaryType": "congestion",
+    "Description": "at a standstill",
+    "Incidents": [],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": null,
+    "Longitude": null,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null,
+    "VoicedExtentMeters": 427
+   },
+   {
+    "RoadName": "Blakesley Road",
+    "Severity": 1,
+    "FunctionalClass": 3,
+    "TotalLengthMeters": 767,
+    "ImpactScore": 165,
+    "PrimaryType": "congestion",
+    "Description": "at a standstill",
+    "Incidents": [],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": null,
+    "Longitude": null,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null,
+    "VoicedExtentMeters": 767
+   },
+   {
+    "RoadName": "Terry Street",
+    "Severity": 1,
+    "FunctionalClass": 3,
+    "TotalLengthMeters": 788,
+    "ImpactScore": 165,
+    "PrimaryType": "congestion",
+    "Description": "at a standstill",
+    "Incidents": [],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": null,
+    "Longitude": null,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null,
+    "VoicedExtentMeters": 788
+   }
+  ],
+  "MonitoredRoutes": [
+   {
+    "Name": "the Warringah Freeway into the city",
+    "Origin": {
+     "Lat": -33.8,
+     "Lng": 151.21
+    },
+    "Destination": {
+     "Lat": -33.8688,
+     "Lng": 151.2093
+    },
+    "DriveTimeMinutes": 13,
+    "NormalDriveTimeMinutes": 12,
+    "DistanceKm": 9.244,
+    "DelayMinutes": 1
+   },
+   {
+    "Name": "the M4 from Parramatta to the city",
+    "Origin": {
+     "Lat": -33.8148,
+     "Lng": 151.0017
+    },
+    "Destination": {
+     "Lat": -33.8688,
+     "Lng": 151.2093
+    },
+    "DriveTimeMinutes": 24,
+    "NormalDriveTimeMinutes": 24,
+    "DistanceKm": 25.367,
+    "DelayMinutes": 0
+   }
+  ],
+  "GoodRunRoads": [
+   "M4 WESTERN MOTORWAY (WESTBOUND)",
+   "M4 WESTERN MOTORWAY (EASTBOUND)",
+   "Western Motorway",
+   "M5",
+   "Victoria Road"
+  ],
+  "FlowPool": [
+   {
+    "RoadName": "M4 WESTERN MOTORWAY (WESTBOUND)",
+    "JamFactor": 0.9,
+    "LengthMeters": 5650,
+    "IsWeighted": true,
+    "FunctionalClass": 1,
+    "Score": 172.5,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "M4 WESTERN MOTORWAY (EASTBOUND)",
+    "JamFactor": 0,
+    "LengthMeters": 5094,
+    "IsWeighted": true,
+    "FunctionalClass": 1,
+    "Score": 172.5,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "Western Motorway",
+    "JamFactor": 0.7,
+    "LengthMeters": 11573,
+    "IsWeighted": true,
+    "FunctionalClass": 3,
+    "Score": 152.5,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "M5",
+    "JamFactor": 0,
+    "LengthMeters": 6568,
+    "IsWeighted": true,
+    "FunctionalClass": 1,
+    "Score": 112.5,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "Victoria Road",
+    "JamFactor": 2.3,
+    "LengthMeters": 15451,
+    "IsWeighted": true,
+    "FunctionalClass": 2,
+    "Score": 67.5,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "Parramatta Road",
+    "JamFactor": 3.6,
+    "LengthMeters": 14195,
+    "IsWeighted": true,
+    "FunctionalClass": 2,
+    "Score": 67.5,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "M7 Westlink",
+    "JamFactor": 1.7,
+    "LengthMeters": 17695,
+    "IsWeighted": false,
+    "FunctionalClass": 1,
+    "Score": 62.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "M2 Motorway",
+    "JamFactor": 3.8,
+    "LengthMeters": 14005,
+    "IsWeighted": false,
+    "FunctionalClass": 1,
+    "Score": 62.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "M8",
+    "JamFactor": 0.8,
+    "LengthMeters": 6680,
+    "IsWeighted": false,
+    "FunctionalClass": 1,
+    "Score": 62.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "M7 Motorway",
+    "JamFactor": 0.6,
+    "LengthMeters": 5211,
+    "IsWeighted": false,
+    "FunctionalClass": 1,
+    "Score": 62.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "M4 Service Centre",
+    "JamFactor": 0.8,
+    "LengthMeters": 4114,
+    "IsWeighted": false,
+    "FunctionalClass": 1,
+    "Score": 62.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "M5 Motorway",
+    "JamFactor": 0,
+    "LengthMeters": 4004,
+    "IsWeighted": false,
+    "FunctionalClass": 1,
+    "Score": 62.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Pacific Highway",
+    "JamFactor": 2.9,
+    "LengthMeters": 18417,
+    "IsWeighted": false,
+    "FunctionalClass": 2,
+    "Score": 52.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Great Western Highway",
+    "JamFactor": 2.2,
+    "LengthMeters": 16346,
+    "IsWeighted": false,
+    "FunctionalClass": 2,
+    "Score": 52.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Hume Highway",
+    "JamFactor": 1.6,
+    "LengthMeters": 15072,
+    "IsWeighted": false,
+    "FunctionalClass": 2,
+    "Score": 52.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Prospect Highway",
+    "JamFactor": 1.1,
+    "LengthMeters": 11734,
+    "IsWeighted": false,
+    "FunctionalClass": 2,
+    "Score": 52.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Elizabeth Drive",
+    "JamFactor": 0.2,
+    "LengthMeters": 36006,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "The Northern Road",
+    "JamFactor": 0.6,
+    "LengthMeters": 27626,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Bringelly Road",
+    "JamFactor": 0.2,
+    "LengthMeters": 20630,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Richmond Road",
+    "JamFactor": 0.4,
+    "LengthMeters": 18808,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   }
+  ],
+  "Weather": {
+   "Conditions": "Clear. Refreshingly cool.",
+   "TemperatureC": 13,
+   "WindDescription": null,
+   "PrecipitationProbabilityPercent": 1,
+   "Alerts": [],
+   "Outlook": "reaching 20 degrees later today; tomorrow light showers. overcast. cool, around 16 degrees",
+   "IsForecast": false,
+   "HasMajorAlert": false
+  },
+  "Fuel": null,
+  "IncidentChanges": {
+   "NewIncidents": [
+    {
+     "IncidentId": "3853722649066483244",
+     "Type": "roadClosure",
+     "Criticality": 1,
+     "RoadName": "Sydney Harbour Tunnel",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 557,
+     "Description": "Closed"
+    }
+   ],
+   "UpdatedIncidents": [],
+   "ClearedIncidents": [
+    {
+     "IncidentId": "1648720388906976001",
+     "Type": "congestion",
+     "Criticality": 1,
+     "RoadName": "Western Mwy",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 375,
+     "Description": null
+    },
+    {
+     "IncidentId": "1747849138024347188",
+     "Type": "congestion",
+     "Criticality": 1,
+     "RoadName": "Westlink M7",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 94,
+     "Description": null
+    },
+    {
+     "IncidentId": "2582678228244403840",
+     "Type": "construction",
+     "Criticality": 1,
+     "RoadName": "Hume Hwy",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 23,
+     "Description": null
+    },
+    {
+     "IncidentId": "2883499717432706230",
+     "Type": "congestion",
+     "Criticality": 1,
+     "RoadName": "Southern Cross Dr",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 71,
+     "Description": null
+    },
+    {
+     "IncidentId": "392395821584224443",
+     "Type": "construction",
+     "Criticality": 1,
+     "RoadName": "Hume Hwy",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 35,
+     "Description": null
+    },
+    {
+     "IncidentId": "4302622321824560495",
+     "Type": "congestion",
+     "Criticality": 1,
+     "RoadName": "South Western Mwy",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 617,
+     "Description": null
+    },
+    {
+     "IncidentId": "4578100100563667557",
+     "Type": "construction",
+     "Criticality": 2,
+     "RoadName": "Great Western Hwy",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 5342,
+     "Description": null
+    },
+    {
+     "IncidentId": "4641397133113499813",
+     "Type": "roadClosure",
+     "Criticality": 2,
+     "RoadName": "Mitchell Rd",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 348,
+     "Description": null
+    },
+    {
+     "IncidentId": "60555681480323377",
+     "Type": "construction",
+     "Criticality": 2,
+     "RoadName": "Mitchell Rd",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 22,
+     "Description": null
+    }
+   ],
+   "UnchangedIncidents": []
+  },
+  "Guidance": {
+   "Entries": [
+    {
+     "Id": "c2ac34c44e0144c49e83e77c53aad18a",
+     "Scope": 1,
+     "ScopeId": "sydney",
+     "Type": 2,
+     "Text": "Sydney names: 'the Harbour Bridge', 'the Harbour Tunnel', 'the M4', 'the M5', 'WestConnex', 'the Warringah Freeway', 'the Eastern Distributor', 'the Anzac Bridge'.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for — a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off.",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-08-10T08:31:01.7083665Z",
+     "UpdatedAtUtc": "2026-08-10T08:31:01.7083665Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "645e52b90299493a8dbde1205c6c657e",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "75fe175d471144b38bf23c24966dfb6f",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "7b012b9381e04e72be8211133f224188",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 4,
+     "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "Australian English with natural spoken contractions. Round the figures — say 'about ten minutes', never '10.3 minutes'. No police codes or insider jargon.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 3,
+     "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "f5e76bd5993c41edb637a7302f7d7479",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 2,
+     "Text": "Use common road names with the definite article: 'the M1', 'the M4', 'the CBD'. Use 'citybound' and 'outbound' for direction of travel.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    }
+   ],
+   "DroppedCount": 0,
+   "Count": 8,
+   "HasEntries": true
+  },
+  "FutureLessons": [],
+  "Bookends": {
+   "IntroText": "Now looking over Sydney.",
+   "OutroText": "That's KIIS traffic and weather together, powered by",
+   "Id": "bk-fac1a7ff9632422a9e64a871d62ad7e9",
+   "Version": 0
+  },
+  "FillerStatements": [
+   {
+    "Id": "29f2de7bdc3648eda609733be8fe3157",
+    "Text": "Please stay alert out there and stick to the speed limit.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "77aa9bf552b240bd87cd4f9dc5a722fd",
+    "Text": "School zones carry reduced speed limits on every school day — worth slowing down for.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "0dbdd04178074e6f812873359fbc1864",
+    "Text": "A reminder that speed restrictions apply through the signed roadworks zones — take it easy through the cones.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "b8415868fa1b4cc1bd6c5271c8b2eda9",
+    "Text": "The Harbour Bridge and Harbour Tunnel are both toll crossings, with cheaper rates once you're outside peak hour.",
+    "Enabled": true,
+    "Availability": null
+   }
+  ],
+  "SharedRules": null,
+  "RoadFeelPalette": null,
+  "EditorialSettings": {
+   "Scope": 0,
+   "ScopeId": ""
+  },
+  "CuratedCorridorRoads": null,
+  "CuratedGoodRunRoads": null,
+  "ExcludedIncidentKeys": null,
+  "WriterPrompt": null,
+  "EditedIncidents": []
+ },
+ "Coverage": {
+  "Latitude": -33.82805,
+  "Longitude": 151.00585,
+  "RadiusKm": 39.35497295617186,
+  "ShapeType": "polygon",
+  "West": null,
+  "South": null,
+  "East": null,
+  "North": null,
+  "CorridorPoints": null,
+  "CorridorRadiusMeters": null,
+  "PolygonPoints": [
+   {
+    "Lat": -33.5924,
+    "Lng": 151.3233
+   },
+   {
+    "Lat": -33.72,
+    "Lng": 151.2985
+   },
+   {
+    "Lat": -33.7947,
+    "Lng": 151.2872
+   },
+   {
+    "Lat": -33.8887,
+    "Lng": 151.2779
+   },
+   {
+    "Lat": -33.9415,
+    "Lng": 151.2383
+   },
+   {
+    "Lat": -34.0552,
+    "Lng": 151.1533
+   },
+   {
+    "Lat": -34.0637,
+    "Lng": 150.8169
+   },
+   {
+    "Lat": -33.7531,
+    "Lng": 150.6884
+   },
+   {
+    "Lat": -33.6095,
+    "Lng": 150.8185
+   }
+  ]
+ },
+ "FullCorridorPool": [
+  {
+   "RoadName": "Sydney Harbour Tunnel",
+   "Severity": 1,
+   "FunctionalClass": 1,
+   "TotalLengthMeters": 557,
+   "ImpactScore": 205,
+   "PrimaryType": "roadClosure",
+   "Description": "road closure southbound",
+   "Incidents": [
+    {
+     "Id": "3853722649066483244",
+     "Description": "Closed",
+     "Severity": 1,
+     "Location": "Sydney Harbour Tunnel",
+     "Type": "roadClosure",
+     "LengthMeters": 557,
+     "FunctionalClass": 1,
+     "Latitude": -33.84157,
+     "Longitude": 151.21075,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "southbound",
+     "Summary": null,
+     "JunctionTraversability": "intermediateClosedEdgeOpen",
+     "SegmentRefs": [
+      "here:cm:segment:918404342#+"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -33.84157,
+       "Lng": 151.21075
+      },
+      {
+       "Lat": -33.84246,
+       "Lng": 151.21093
+      },
+      {
+       "Lat": -33.84266,
+       "Lng": 151.21101
+      },
+      {
+       "Lat": -33.84364,
+       "Lng": 151.21133
+      },
+      {
+       "Lat": -33.84364,
+       "Lng": 151.21133
+      },
+      {
+       "Lat": -33.84396,
+       "Lng": 151.21144
+      },
+      {
+       "Lat": -33.84396,
+       "Lng": 151.21144
+      },
+      {
+       "Lat": -33.84452,
+       "Lng": 151.21163
+      },
+      {
+       "Lat": -33.84558,
+       "Lng": 151.21194
+      },
+      {
+       "Lat": -33.84558,
+       "Lng": 151.21194
+      },
+      {
+       "Lat": -33.84594,
+       "Lng": 151.21208
+      },
+      {
+       "Lat": -33.84606,
+       "Lng": 151.21215
+      },
+      {
+       "Lat": -33.84615,
+       "Lng": 151.21224
+      },
+      {
+       "Lat": -33.84615,
+       "Lng": 151.21224
+      },
+      {
+       "Lat": -33.84636,
+       "Lng": 151.21241
+      }
+     ],
+     "RoadClosed": true,
+     "EntryTimeUtc": "2026-08-13T12:30:38+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "southbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -33.84157,
+   "Longitude": 151.21075,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null,
+   "VoicedExtentMeters": 557
+  },
+  {
+   "RoadName": "Barclay Road",
+   "Severity": 1,
+   "FunctionalClass": 3,
+   "TotalLengthMeters": 2224,
+   "ImpactScore": 165,
+   "PrimaryType": "congestion",
+   "Description": "at a standstill",
+   "Incidents": [],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": null,
+   "Longitude": null,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 3,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": 3,
+   "VoicedExtentMeters": 2224
+  },
+  {
+   "RoadName": "Connells Point Road",
+   "Severity": 1,
+   "FunctionalClass": 3,
+   "TotalLengthMeters": 427,
+   "ImpactScore": 165,
+   "PrimaryType": "congestion",
+   "Description": "at a standstill",
+   "Incidents": [],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": null,
+   "Longitude": null,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null,
+   "VoicedExtentMeters": 427
+  },
+  {
+   "RoadName": "Blakesley Road",
+   "Severity": 1,
+   "FunctionalClass": 3,
+   "TotalLengthMeters": 767,
+   "ImpactScore": 165,
+   "PrimaryType": "congestion",
+   "Description": "at a standstill",
+   "Incidents": [],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": null,
+   "Longitude": null,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null,
+   "VoicedExtentMeters": 767
+  },
+  {
+   "RoadName": "Terry Street",
+   "Severity": 1,
+   "FunctionalClass": 3,
+   "TotalLengthMeters": 788,
+   "ImpactScore": 165,
+   "PrimaryType": "congestion",
+   "Description": "at a standstill",
+   "Incidents": [],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": null,
+   "Longitude": null,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null,
+   "VoicedExtentMeters": 788
+  }
+ ]
+}

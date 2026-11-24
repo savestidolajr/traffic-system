@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.6256727+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.74385,144.93555\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "15 Mitchell Pde, Pascoe Vale South VIC 3044, Australia",
+          "id": "here:af:streetsection:c14xlZlMsnYmdXqvM-C5FA:CggIBCCOmKSgARABGgIxNQ",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "15 Mitchell Pde, Pascoe Vale South VIC 3044, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Pascoe Vale South",
+            "street": "Mitchell Pde",
+            "postalCode": "3044",
+            "houseNumber": "15"
+          },
+          "position": {
+            "lat": -37.74386,
+            "lng": 144.93526
+          },
+          "access": [
+            {
+              "lat": -37.74389,
+              "lng": 144.93554
+            }
+          ],
+          "distance": 5,
+          "mapView": {
+            "west": 144.93375,
+            "south": -37.74539,
+            "east": 144.9358,
+            "north": -37.73776
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

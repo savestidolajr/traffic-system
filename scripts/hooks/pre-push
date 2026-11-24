@@ -1,0 +1,65 @@
+#!/usr/bin/env bash
+# Pre-push gate — runs the CI mirror (scripts/verify.sh) before every push so a
+# formatting / compile / unit-test break can't reach master. This closes the gap
+# that turned build 2496/2497 red: a commit "verified locally" that never ran
+# the lint gate.
+#
+# The hook used to run `verify.sh quick`, which is precisely how that break got
+# through — quick skips backend E2E and web perf, two of the three gates it
+# broke. Since 2026-07-27 verify.sh selects gates from the changed paths and
+# runs them in parallel lanes, so the hook can afford the honest gate set: a
+# docs-only push now costs a secret scan, and a web-only push never builds
+# .NET. Scoping, not gate-skipping, is what makes this fast.
+#
+# git feeds us "<local ref> <local sha> <remote ref> <remote sha>" per pushed
+# ref. That range is the authoritative statement of what this push adds, so we
+# hand it to verify.sh as VERIFY_RANGE. Anything we cannot bound precisely
+# (new branch, multiple refs, forced update) escalates to the full gate set.
+#
+# Bypass in a genuine emergency:   git push --no-verify
+# Faster, less thorough:           scripts/verify.sh --quick
+# See what would run:              scripts/verify.sh --explain
+#
+# Wired via `git config core.hooksPath scripts/hooks` (set by the root
+# package.json `prepare` script, or run scripts/install-hooks.sh once).
+set -uo pipefail
+
+REPO_ROOT="$(git rev-parse --show-toplevel)"
+ZERO='0000000000000000000000000000000000000000'
+
+range=""
+refs=0
+while read -r _local_ref local_sha _remote_ref remote_sha; do
+    [[ "$local_sha" == "$ZERO" ]] && continue   # branch deletion: nothing to verify
+    refs=$((refs + 1))
+    if [[ "$remote_sha" == "$ZERO" ]]; then
+        range=""                                 # new branch: no bounded range
+        break
+    fi
+    range="${remote_sha}..${local_sha}"
+done
+
+if [[ $refs -gt 1 ]]; then
+    range=""                                     # several refs at once: don't guess
+fi
+
+if [[ -n "$range" ]]; then
+    export VERIFY_RANGE="$range"
+    echo "pre-push → scripts/verify.sh, scoped to ${range}   (bypass: git push --no-verify)"
+else
+    export VERIFY_SCOPE=all
+    echo "pre-push → scripts/verify.sh, unscoped: no single bounded range   (bypass: git push --no-verify)"
+fi
+
+# verify.sh builds and tests the WORKING TREE, but a push delivers commits. When
+# the tree carries uncommitted work — a side branch of edits, another agent, a
+# half-finished refactor — the gate is judging something other than what you are
+# pushing, and can fail on work that isn't going anywhere. Say so rather than let
+# it look like the push itself is broken.
+dirty=$(git status --porcelain --untracked-files=no | wc -l)
+if [[ "$dirty" -gt 0 ]]; then
+    echo "note: ${dirty} uncommitted file(s) in the tree — the gate verifies the working"
+    echo "      tree, so those are included even though the push does not carry them."
+fi
+
+exec "${REPO_ROOT}/scripts/verify.sh"

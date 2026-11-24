@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:35.826573+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.71733,144.93344\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Northumberland Rd, Pascoe Vale VIC 3044, Australia",
+          "id": "here:af:streetsection:qGldDKHWbnCYA6wh2ZEBpD",
+          "resultType": "street",
+          "address": {
+            "label": "Northumberland Rd, Pascoe Vale VIC 3044, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Pascoe Vale",
+            "street": "Northumberland Rd",
+            "postalCode": "3044"
+          },
+          "position": {
+            "lat": -37.71733,
+            "lng": 144.93344
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 144.93256,
+            "south": -37.72256,
+            "east": 144.93361,
+            "north": -37.7162
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

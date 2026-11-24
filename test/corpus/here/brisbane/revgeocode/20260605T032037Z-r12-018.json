@@ -1,0 +1,55 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032037Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:37.9079645+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.45079,153.03307\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "631 Gregory Ter, Bowen Hills QLD 4006, Australia",
+          "id": "here:af:streetsection:rfp3D5mv4qbhYRX7O0XrdA:CggIBCDC6MifARABGgM2MzE",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "631 Gregory Ter, Bowen Hills QLD 4006, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Bowen Hills",
+            "street": "Gregory Ter",
+            "postalCode": "4006",
+            "houseNumber": "631"
+          },
+          "position": {
+            "lat": -27.45109,
+            "lng": 153.03354
+          },
+          "access": [
+            {
+              "lat": -27.45079,
+              "lng": 153.03307
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 153.02903,
+            "south": -27.45262,
+            "east": 153.03533,
+            "north": -27.44987
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

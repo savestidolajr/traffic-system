@@ -1,0 +1,102 @@
+{
+  "label": "unknown-075ee7d1",
+  "market": "unknown",
+  "sourceJobId": "075ee7d1a25742b78113c474159331d8",
+  "sourceCapture": "job-diagnostics/075ee7d1a25742b78113c474159331d8/llm_calls/072754.824-Draft-attempt1.json",
+  "promptSha": null,
+  "items": [
+    {
+      "category": "closure",
+      "evidenceIds": [
+        "corridor:Pittwater Road#1:suburb:",
+        "corridor:Pittwater Road#1:delayMinutes:",
+        "corridor:Pittwater Road#1:incident:0:",
+        "corridor:Pittwater Road#1:location:0:",
+        "corridor:Pittwater Road#1:location:1:",
+        "corridor:Pittwater Road#1:detail:"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Northbound Pittwater Road is closed at Kentwell Road and Oliver Street in North Manly, adding about 23 minutes."
+        },
+        {
+          "style": "standard",
+          "text": "Northbound Pittwater Road is closed at Kentwell Road and Oliver Street in North Manly, with delays adding about 23 minutes."
+        }
+      ]
+    },
+    {
+      "category": "congestion",
+      "evidenceIds": [
+        "corridor:M4#1:impact:",
+        "corridor:M4#1:detail:"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "The M4 is crawling."
+        },
+        {
+          "style": "standard",
+          "text": "The M4 is slow-moving with heavy traffic."
+        }
+      ]
+    },
+    {
+      "category": "congestion",
+      "evidenceIds": [
+        "corridor:M5#1:impact:",
+        "corridor:M5#1:detail:"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "The M5 is crawling."
+        },
+        {
+          "style": "standard",
+          "text": "The M5 is also running very slowly."
+        },
+        {
+          "style": "continuation",
+          "text": "And there's another slow grind on the M5."
+        }
+      ]
+    },
+    {
+      "category": "weather",
+      "evidenceIds": [
+        "weather:condition:",
+        "weather:temperature:"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Sunny, 20 degrees."
+        },
+        {
+          "style": "standard",
+          "text": "Sunny skies, with 20 degrees."
+        }
+      ]
+    },
+    {
+      "category": "general_flow",
+      "evidenceIds": [
+        "goodrun:Pacific Mwy:",
+        "goodrun:Hume Mwy:"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "The Pacific and Hume Motorways are clear."
+        },
+        {
+          "style": "standard",
+          "text": "Clear running on the Pacific and Hume Motorways."
+        }
+      ]
+    }
+  ]
+}

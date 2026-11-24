@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032030Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:31.6371609+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.87004,151.22096\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "70 Nicholson St, Woolloomooloo NSW 2011, Australia",
+          "id": "here:af:streetsection:C4Q8hRlolGVxYEU8NttKID:CggIBCD1r7ieARABGgI3MA",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "70 Nicholson St, Woolloomooloo NSW 2011, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Woolloomooloo",
+            "street": "Nicholson St",
+            "postalCode": "2011",
+            "houseNumber": "70"
+          },
+          "position": {
+            "lat": -33.86992,
+            "lng": 151.221
+          },
+          "access": [
+            {
+              "lat": -33.87004,
+              "lng": 151.22096
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 151.21871,
+            "south": -33.87013,
+            "east": 151.22143,
+            "north": -33.86968
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

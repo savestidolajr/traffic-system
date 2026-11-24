@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.8864546+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.87013,151.22143\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "46 Dowling St, Woolloomooloo NSW 2011, Australia",
+          "id": "here:af:streetsection:1dO8GX3G.0clYTNgAzk-TC:CggIBCCjrMyeARABGgI0Ng",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "46 Dowling St, Woolloomooloo NSW 2011, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Woolloomooloo",
+            "street": "Dowling St",
+            "postalCode": "2011",
+            "houseNumber": "46"
+          },
+          "position": {
+            "lat": -33.87011,
+            "lng": 151.22169
+          },
+          "access": [
+            {
+              "lat": -33.87008,
+              "lng": 151.22144
+            }
+          ],
+          "distance": 6,
+          "mapView": {
+            "west": 151.22035,
+            "south": -33.87494,
+            "east": 151.22159,
+            "north": -33.86933
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

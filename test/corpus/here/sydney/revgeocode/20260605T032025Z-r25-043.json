@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:30.0915706+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.8568,151.15185\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Plunkett Ln, Drummoyne NSW 2047, Australia",
+          "id": "here:af:streetsection:du.Rw-bbmcV-ahgoZhQ8HD",
+          "resultType": "street",
+          "address": {
+            "label": "Plunkett Ln, Drummoyne NSW 2047, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Drummoyne",
+            "street": "Plunkett Ln",
+            "postalCode": "2047"
+          },
+          "position": {
+            "lat": -33.85684,
+            "lng": 151.15178
+          },
+          "distance": 8,
+          "mapView": {
+            "west": 151.1514,
+            "south": -33.85723,
+            "east": 151.15213,
+            "north": -33.85642
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

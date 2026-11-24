@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032049Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:50.3971044+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.85599,115.96668\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Drumpellier Dr, Dayton WA 6055, Australia",
+          "id": "here:af:streetsection:MJV7AHXukUCQOVwyXztIAA",
+          "resultType": "street",
+          "address": {
+            "label": "Drumpellier Dr, Dayton WA 6055, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Dayton",
+            "street": "Drumpellier Dr",
+            "postalCode": "6055"
+          },
+          "position": {
+            "lat": -31.85599,
+            "lng": 115.96668
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.96229,
+            "south": -31.86135,
+            "east": 115.96668,
+            "north": -31.85556
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,129 @@
+# Security Architecture — presentation render.
+#
+# Companion to the `security-overview` LikeC4 element view (views.c4).
+# Shows the fail-closed auth chain, the RBAC enforcement point, and the
+# Managed Identity data plane. All ids are model FQNs.
+#
+# Layout invariants (keep when editing):
+#   * Entra and Dashboard share x=480 -> straight Easy Auth drop
+#   * Dashboard and Auth Middleware share y=425 -> straight request line
+#   * Operator/admin funnel turns at x=320/340 so verticals never overlap
+#   * Data services hang below the Functions container (MI drops)
+
+output: security-overview
+canvas: [1500, 880]
+
+styles:
+  containers:
+    functions: { fill: "#EFF6FF", stroke: "#0078D4", sw: 2, rx: 10, shadow: true }
+  edges:
+    auth: { color: "#EF4444", width: 2.5 }
+    flow: { color: "#2563EB", width: 2.5 }
+    rbac: { color: "#16A34A", width: 2 }
+    data: { color: "#7C3AED", width: 2 }
+    muted: { color: "#94A3B8", width: 2 }
+
+texts:
+  - { text: "Security Architecture", at: [40, 38], size: 20, weight: "700", anchor: start }
+  - { text: "Fail-closed authentication, server-side RBAC, Key Vault secrets, Managed Identity data plane",
+      at: [40, 60], size: 12, color: "#64748B", anchor: start }
+  - { text: "fail-closed: unauthenticated → 401 · roles enforced server-side · /api/health excluded",
+      at: [980, 840], size: 11, color: "#64748B", style: italic }
+  - { text: "no connection strings", at: [982, 661], size: 10, color: "#64748B", anchor: start }
+
+containers:
+  - id: arn.functions
+    style: functions
+    rect: [700, 250, 560, 340]
+    labels:
+      - { text: "Azure Functions", at: [720, 280], size: 14, color: "#1E3A8A", anchor: start, weight: "700" }
+      - { text: "Easy Auth · requireAuthentication=true", at: [855, 280], size: 11, color: "#64748B", anchor: start }
+
+edges:
+  # auth chain
+  - from: entra
+    to: arn.dashboard
+    class: auth
+    points: [[480, 172], [480, 388]]
+    label: { text: "Easy Auth", at: [492, 280], size: 11, anchor: start }
+  - from: entra
+    to: arn.functions.authMiddleware
+    class: auth
+    points: [[505, 172], [505, 190], [660, 190], [660, 408], [740, 408]]
+    label: { text: "Easy Auth · token validation", at: [560, 178], size: 11, anchor: start }
+
+  # actors
+  - from: operator
+    to: arn.dashboard
+    class: muted
+    points: [[192, 370], [320, 370], [320, 410], [448, 410]]
+    label: { text: "Operator role", at: [255, 358], size: 11 }
+  - from: admin
+    to: arn.dashboard
+    class: muted
+    points: [[192, 480], [340, 480], [340, 440], [448, 440]]
+    label: { text: "Admin role", at: [255, 468], size: 11 }
+
+  # request path through middleware
+  - from: arn.dashboard
+    to: arn.functions.httpApi
+    class: flow
+    points: [[512, 425], [740, 425]]
+    label: { text: "X-MS-CLIENT-PRINCIPAL", at: [622, 442], size: 11 }
+  - from: arn.functions.authMiddleware
+    to: arn.functions.httpApi
+    class: rbac
+    points: [[940, 412], [1000, 412], [1000, 360], [1040, 360]]
+    label: { text: "validated", at: [995, 340], size: 10 }
+  - from: arn.functions.authMiddleware
+    to: arn.functions.jobService
+    class: rbac
+    points: [[940, 440], [1000, 440], [1000, 490], [1040, 490]]
+
+  # data plane (managed identity)
+  - from: arn.functions
+    to: arn.storageAccount
+    class: data
+    points: [[770, 590], [770, 688]]
+  - from: arn.functions
+    to: arn.keyVault
+    class: data
+    points: [[970, 590], [970, 688]]
+    label: { text: "Managed Identity", at: [982, 645], size: 11, anchor: start }
+  - from: arn.functions
+    to: arn.aiServices
+    class: data
+    points: [[1170, 590], [1170, 688]]
+
+nodes:
+  - { id: operator, at: [160, 370], icon: person }
+  - { id: admin, at: [160, 480], icon: person }
+  - { id: entra, at: [480, 140], icon: entra, label: "Microsoft Entra ID",
+      sublabel: "ARN tenant", label_pos: right }
+  - { id: arn.dashboard, at: [480, 420], icon: dashboard, label: "Operator Dashboard",
+      sublabel: "SWA Easy Auth" }
+
+  - { id: arn.functions.authMiddleware, at: [840, 425], box: [200, 56],
+      fill: "#FEF2F2", stroke: "#EF4444",
+      label: "Auth Middleware", sublabel: "fail-closed · role matrix" }
+  - { id: arn.functions.httpApi, at: [1130, 360], box: [180, 48],
+      label: "HTTP API" }
+  - { id: arn.functions.jobService, at: [1130, 490], box: [180, 48],
+      label: "Job Service", sublabel: "approve · reject · publish" }
+  - { id: arn.functions.contentSafety, at: [840, 535], box: [200, 48],
+      fill: "#FFF7ED", stroke: "#F59E0B",
+      label: "Content Safety", sublabel: "banned words · substitutions" }
+
+  - { id: arn.storageAccount, at: [770, 720], icon: storage, label: "Azure Storage",
+      sublabel: "identity-based access" }
+  - { id: arn.keyVault, at: [970, 720], icon: keyvault, label: "Key Vault",
+      sublabel: "all secrets · RBAC" }
+  - { id: arn.aiServices, at: [1170, 720], icon: ai, label: "Azure OpenAI" }
+
+legend:
+  at: [75, 840]
+  items:
+    - ["Easy Auth", auth]
+    - ["request", flow]
+    - ["validated (RBAC)", rbac]
+    - ["Managed Identity", data]

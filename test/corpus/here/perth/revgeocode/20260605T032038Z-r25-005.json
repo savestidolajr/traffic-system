@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:38.8640501+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.86048,115.80167\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Mitchell Fwy, Balcatta WA 6021, Australia",
+          "id": "here:af:streetsection:ol.RtDQKcbN2b-isdaTmZC",
+          "resultType": "street",
+          "address": {
+            "label": "Mitchell Fwy, Balcatta WA 6021, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Balcatta",
+            "street": "Mitchell Fwy",
+            "postalCode": "6021"
+          },
+          "position": {
+            "lat": -31.86048,
+            "lng": 115.80167
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.80028,
+            "south": -31.86795,
+            "east": 115.80175,
+            "north": -31.85641
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

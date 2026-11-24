@@ -1,0 +1,55 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032036Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:37.449853+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.3549,152.94813\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "86 Dugandan Rd, Bunya QLD 4055, Australia",
+          "id": "here:af:streetsection:C5abM4B-mMXSr1uPC5QG8D:CggIBCCRvbOuARABGgI4Ng",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "86 Dugandan Rd, Bunya QLD 4055, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Bunya",
+            "street": "Dugandan Rd",
+            "postalCode": "4055",
+            "houseNumber": "86"
+          },
+          "position": {
+            "lat": -27.35477,
+            "lng": 152.94945
+          },
+          "access": [
+            {
+              "lat": -27.3549,
+              "lng": 152.94813
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 152.94168,
+            "south": -27.37386,
+            "east": 152.94835,
+            "north": -27.35428
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

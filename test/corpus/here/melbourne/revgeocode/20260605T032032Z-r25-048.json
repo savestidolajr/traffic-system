@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.6258569+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.75122,144.83554\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "10 Baldwin Ave, Sunshine North VIC 3020, Australia",
+          "id": "here:af:streetsection:B8oJXZm.Tsiw4n5jlu4dQC:CggIBCC2kqmgARABGgIxMA",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "10 Baldwin Ave, Sunshine North VIC 3020, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Sunshine North",
+            "street": "Baldwin Ave",
+            "postalCode": "3020",
+            "houseNumber": "10"
+          },
+          "position": {
+            "lat": -37.75097,
+            "lng": 144.83541
+          },
+          "access": [
+            {
+              "lat": -37.7512,
+              "lng": 144.83537
+            }
+          ],
+          "distance": 15,
+          "mapView": {
+            "west": 144.83345,
+            "south": -37.75186,
+            "east": 144.8414,
+            "north": -37.751
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

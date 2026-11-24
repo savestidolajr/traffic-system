@@ -1,0 +1,17 @@
+{
+  "Market": "_batch",
+  "Endpoint": "batch-revgeocode",
+  "SessionId": "20260605T032052Z-batch",
+  "CapturedAtUtc": "2026-06-05T03:20:53.8007223+00:00",
+  "Request": {
+    "Method": "POST",
+    "Uri": "https://multi-revgeocode.search.hereapi.com/v1/multi-revgeocode?apiKey=***",
+    "Body": "{\u0022batchItems\u0022:[{\u0022id\u0022:\u00220\u0022,\u0022at\u0022:\u0022-33.8688,151.2093\u0022},{\u0022id\u0022:\u00221\u0022,\u0022at\u0022:\u0022-37.8136,144.9631\u0022},{\u0022id\u0022:\u00222\u0022,\u0022at\u0022:\u0022-27.4698,153.0251\u0022},{\u0022id\u0022:\u00223\u0022,\u0022at\u0022:\u0022-31.9505,115.8605\u0022},{\u0022id\u0022:\u00224\u0022,\u0022at\u0022:\u0022-34.9285,138.6007\u0022},{\u0022id\u0022:\u00225\u0022,\u0022at\u0022:\u0022-28.0167,153.4\u0022}],\u0022items\u0022:[{\u0022id\u0022:\u00220\u0022,\u0022at\u0022:\u0022-33.8688,151.2093\u0022},{\u0022id\u0022:\u00221\u0022,\u0022at\u0022:\u0022-37.8136,144.9631\u0022},{\u0022id\u0022:\u00222\u0022,\u0022at\u0022:\u0022-27.4698,153.0251\u0022},{\u0022id\u0022:\u00223\u0022,\u0022at\u0022:\u0022-31.9505,115.8605\u0022},{\u0022id\u0022:\u00224\u0022,\u0022at\u0022:\u0022-34.9285,138.6007\u0022},{\u0022id\u0022:\u00225\u0022,\u0022at\u0022:\u0022-28.0167,153.4\u0022}]}"
+  },
+  "Response": {
+    "Status": 415,
+    "MediaType": "text/plain",
+    "Body": null,
+    "RawBody": "The request\u0027s Content-Type [application/json] is not supported. Expected:\ntext/plain; charset=UTF-8 or application/x-www-form-urlencoded"
+  }
+}

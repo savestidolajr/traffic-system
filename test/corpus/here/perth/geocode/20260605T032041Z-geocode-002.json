@@ -1,0 +1,88 @@
+{
+  "Market": "perth",
+  "Endpoint": "geocode",
+  "SessionId": "20260605T032041Z-geocode",
+  "CapturedAtUtc": "2026-06-05T03:20:41.2311709+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=6PR\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Road 6PR, Cody, WY 82414, United States",
+          "id": "here:af:streetsection:4yB23lFFBKwbAan9orC2mC",
+          "resultType": "street",
+          "address": {
+            "label": "Road 6PR, Cody, WY 82414, United States",
+            "countryCode": "USA",
+            "countryName": "United States",
+            "stateCode": "WY",
+            "state": "Wyoming",
+            "county": "Park",
+            "city": "Cody",
+            "street": "Road 6PR",
+            "postalCode": "82414"
+          },
+          "position": {
+            "lat": 44.40644,
+            "lng": -109.22433
+          },
+          "mapView": {
+            "west": -109.23708,
+            "south": 44.39306,
+            "east": -109.22414,
+            "north": 44.41907
+          },
+          "scoring": {
+            "queryScore": 0.99,
+            "fieldScore": {
+              "streets": [
+                0.6
+              ]
+            }
+          }
+        },
+        {
+          "title": "Road 6 Pr, Cody, WY 82414, United States",
+          "id": "here:af:streetsection:UvWJRSph52pD2XPCDq7I-D",
+          "resultType": "street",
+          "address": {
+            "label": "Road 6 Pr, Cody, WY 82414, United States",
+            "countryCode": "USA",
+            "countryName": "United States",
+            "stateCode": "WY",
+            "state": "Wyoming",
+            "county": "Park",
+            "city": "Cody",
+            "street": "Road 6 Pr",
+            "postalCode": "82414"
+          },
+          "position": {
+            "lat": 44.39261,
+            "lng": -109.20767
+          },
+          "mapView": {
+            "west": -109.20812,
+            "south": 44.35376,
+            "east": -109.16925,
+            "north": 44.39661
+          },
+          "scoring": {
+            "queryScore": 0.99,
+            "fieldScore": {
+              "streets": [
+                0.6
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

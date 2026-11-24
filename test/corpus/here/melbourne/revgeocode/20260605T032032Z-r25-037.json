@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.4059105+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.82358,144.70758\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "23 Joanne Dr, Truganina VIC 3029, Australia",
+          "id": "here:af:streetsection:6.xAVqrexBIGd90OqzFjgB:CggIBCDJl9eDAxABGgIyMw",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "23 Joanne Dr, Truganina VIC 3029, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Truganina",
+            "street": "Joanne Dr",
+            "postalCode": "3029",
+            "houseNumber": "23"
+          },
+          "position": {
+            "lat": -37.82377,
+            "lng": 144.70761
+          },
+          "access": [
+            {
+              "lat": -37.82359,
+              "lng": 144.70764
+            }
+          ],
+          "distance": 5,
+          "mapView": {
+            "west": 144.70665,
+            "south": -37.82384,
+            "east": 144.71036,
+            "north": -37.82351
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

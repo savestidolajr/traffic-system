@@ -1,0 +1,723 @@
+{
+ "JobId": "16f5f75a28d1455bb187bf95376d85d7",
+ "Market": "portlincoln",
+ "Station": "Magic FM 89.9",
+ "CapturedAtUtc": "2026-08-10T08:29:23.0191741Z",
+ "DevOutcome": {
+  "Status": "Published",
+  "FallbackKind": null,
+  "Attempts": 1,
+  "TargetWordsSeq": [
+   39
+  ],
+  "SynthWordsSeq": [
+   42
+  ],
+  "NaturalSecSeq": [
+   15.0
+  ],
+  "BestNaturalSec": 15.0,
+  "ReviewFeedbackCount": 0,
+  "SynthFailures": []
+ },
+ "Fidelity": {
+  "IncidentsRecovered": 2,
+  "IncidentsSynthesized": 0,
+  "WeatherSource": "job",
+  "FuelSource": "job",
+  "GoodRunsAndFlowPoolLost": false,
+  "StationConfigSource": "live-station-config"
+ },
+ "VoiceConfig": {
+  "Provider": "",
+  "VoiceId": "iKMw2nMnODCnVgY4VQbS",
+  "VoiceName": "Dolly Female Young",
+  "Model": "eleven_v3",
+  "Settings": {
+   "Stability": 0.5,
+   "SimilarityBoost": 0.75,
+   "Style": 0,
+   "UseSpeakerBoost": false,
+   "Speed": 1
+  },
+  "PaceBoostWpm": 0
+ },
+ "Snapshot": {
+  "TargetDurationSeconds": 15,
+  "Location": "portlincoln",
+  "City": null,
+  "MarketId": "portlincoln",
+  "Content": {
+   "Traffic": true,
+   "Weather": true,
+   "Fuel": true,
+   "WeatherRequired": true,
+   "FuelRequired": true,
+   "HasAnySource": true,
+   "RequiresWeather": true,
+   "RequiresFuel": true
+  },
+  "FillOrder": [
+   "Weather",
+   "Fuel",
+   "MinorTraffic",
+   "Filler"
+  ],
+  "Corridors": [
+   {
+    "RoadName": "Porter Street",
+    "Severity": 4,
+    "FunctionalClass": 5,
+    "TotalLengthMeters": 103,
+    "ImpactScore": 72.07702334823104,
+    "PrimaryType": "construction",
+    "Description": "roadworks",
+    "Incidents": [
+     {
+      "Id": "2013762182527331369",
+      "Description": "Road construction. Contraflow",
+      "Severity": 4,
+      "Location": "Porter St",
+      "Type": "construction",
+      "LengthMeters": 103,
+      "FunctionalClass": 5,
+      "Latitude": -34.72448,
+      "Longitude": 135.86473,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365078047:$1:498116075#+0..0.4899"
+      ],
+      "Comment": "Asphalt Works",
+      "Shape": [
+       {
+        "Lat": -34.72448,
+        "Lng": 135.86473
+       },
+       {
+        "Lat": -34.72479,
+        "Lng": 135.86555
+       },
+       {
+        "Lat": -34.72484,
+        "Lng": 135.86578
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-10T08:22:55+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -34.72448,
+    "Longitude": 135.86473,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   },
+   {
+    "RoadName": "Railway Place",
+    "Severity": 4,
+    "FunctionalClass": 5,
+    "TotalLengthMeters": 103,
+    "ImpactScore": 72.07702334823104,
+    "PrimaryType": "construction",
+    "Description": "roadworks",
+    "Incidents": [
+     {
+      "Id": "672791559124283591",
+      "Description": "Road construction. Contraflow",
+      "Severity": 4,
+      "Location": "Railway Pl",
+      "Type": "construction",
+      "LengthMeters": 103,
+      "FunctionalClass": 5,
+      "Latitude": -34.72484,
+      "Longitude": 135.86578,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365078047:$1:498116075#-0.5101..1"
+      ],
+      "Comment": "Asphalt Works",
+      "Shape": [
+       {
+        "Lat": -34.72484,
+        "Lng": 135.86578
+       },
+       {
+        "Lat": -34.72479,
+        "Lng": 135.86555
+       },
+       {
+        "Lat": -34.72448,
+        "Lng": 135.86473
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-10T08:22:55+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -34.72484,
+    "Longitude": 135.86578,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   }
+  ],
+  "MonitoredRoutes": [],
+  "GoodRunRoads": [
+   "Birdseye Highway",
+   "Tod Highway",
+   "Port Kenny Road",
+   "Birdseye Highway North"
+  ],
+  "FlowPool": [
+   {
+    "RoadName": "Birdseye Highway",
+    "JamFactor": 0.7,
+    "LengthMeters": 138926,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Tod Highway",
+    "JamFactor": 1,
+    "LengthMeters": 87201,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Port Kenny Road",
+    "JamFactor": 0.7,
+    "LengthMeters": 87136,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Birdseye Highway North",
+    "JamFactor": 0.3,
+    "LengthMeters": 77068,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Stringers Highway",
+    "JamFactor": 0.4,
+    "LengthMeters": 73778,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Sectus Tanks Road",
+    "JamFactor": 0.7,
+    "LengthMeters": 72169,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Sheringa Beach Rd",
+    "JamFactor": 0.7,
+    "LengthMeters": 72068,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "South Terrace",
+    "JamFactor": 0.5,
+    "LengthMeters": 66096,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Beach Road",
+    "JamFactor": 0.9,
+    "LengthMeters": 65949,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Ash Road",
+    "JamFactor": 0.6,
+    "LengthMeters": 64545,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Venus Bay Road",
+    "JamFactor": 0.6,
+    "LengthMeters": 63447,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Bay Road",
+    "JamFactor": 0.7,
+    "LengthMeters": 62259,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Balumbah Kinnard Road",
+    "JamFactor": 0.3,
+    "LengthMeters": 61577,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Port Neill Access Road",
+    "JamFactor": 0.7,
+    "LengthMeters": 59029,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "14 kilometers from Iron Knob",
+    "JamFactor": 0.1,
+    "LengthMeters": 54814,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Warramboo Ucndtchie Road",
+    "JamFactor": 0.4,
+    "LengthMeters": 54456,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Phillips Road",
+    "JamFactor": 0.8,
+    "LengthMeters": 52994,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Sieberts Road",
+    "JamFactor": 0.2,
+    "LengthMeters": 51650,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   }
+  ],
+  "Weather": {
+   "Conditions": "Cool.",
+   "TemperatureC": 10.72,
+   "WindDescription": "fresh Northwest wind",
+   "PrecipitationProbabilityPercent": 52,
+   "Alerts": [],
+   "Outlook": "reaching 16 degrees later today; tomorrow sprinkles. morning clouds. cool, around 16 degrees",
+   "IsForecast": false,
+   "HasMajorAlert": false
+  },
+  "Fuel": {
+   "Summaries": [
+    {
+     "FuelType": "Unleaded 91",
+     "MinPrice": 2.23,
+     "AveragePrice": 2.244,
+     "StationCount": 2,
+     "LatestModifiedUtc": "2026-08-10T07:28:03+00:00",
+     "CheapestStationSuburb": "Cummins"
+    },
+    {
+     "FuelType": "Diesel",
+     "MinPrice": 2.459,
+     "AveragePrice": 2.58,
+     "StationCount": 4,
+     "LatestModifiedUtc": "2026-08-10T07:28:03+00:00",
+     "CheapestStationSuburb": "Cummins"
+    }
+   ],
+   "HasPrices": true
+  },
+  "IncidentChanges": null,
+  "Guidance": {
+   "Entries": [
+    {
+     "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for — a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off. [cfgtest-2026",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-08-10T08:27:18.7636877Z",
+     "UpdatedAtUtc": "2026-08-10T08:27:18.7636877Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "645e52b90299493a8dbde1205c6c657e",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "75fe175d471144b38bf23c24966dfb6f",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "7b012b9381e04e72be8211133f224188",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 4,
+     "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "Australian English with natural spoken contractions. Round the figures — say 'about ten minutes', never '10.3 minutes'. No police codes or insider jargon.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 3,
+     "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "f5e76bd5993c41edb637a7302f7d7479",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 2,
+     "Text": "Use common road names with the definite article: 'the M1', 'the M4', 'the CBD'. Use 'citybound' and 'outbound' for direction of travel.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    }
+   ],
+   "DroppedCount": 0,
+   "Count": 7,
+   "HasEntries": true
+  },
+  "FutureLessons": [],
+  "Bookends": null,
+  "FillerStatements": [
+   {
+    "Id": "9b93cec5332548759afc92951045b6f2",
+    "Text": "Please stay alert out there and stick to the speed limit.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "b34bd184a8b546c3909e544cedb475b9",
+    "Text": "School zones carry reduced speed limits on every school day — worth slowing down for.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "e62ee34a460f4df3b861969a1aec3cd9",
+    "Text": "A reminder that speed restrictions apply through the signed roadworks zones — take it easy through the cones.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "c22030786db8481ca2130fce6a665aff",
+    "Text": "The Lincoln Highway remains the only sealed road connecting Port Lincoln to the rest of the Eyre Peninsula.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "083683bed71c4b80aa6ab80c69898477",
+    "Text": "It's a long stretch of highway between towns out here — pull over for a break if you're feeling fatigued.",
+    "Enabled": true,
+    "Availability": null
+   }
+  ],
+  "SharedRules": null,
+  "RoadFeelPalette": null,
+  "EditorialSettings": {
+   "Scope": 0,
+   "ScopeId": ""
+  },
+  "CuratedCorridorRoads": null,
+  "CuratedGoodRunRoads": null,
+  "ExcludedIncidentKeys": null,
+  "WriterPrompt": null,
+  "EditedIncidents": []
+ },
+ "Coverage": {
+  "Latitude": -34.175,
+  "Longitude": 135.74707031250003,
+  "RadiusKm": 194.60894116150126,
+  "ShapeType": "polygon",
+  "West": null,
+  "South": null,
+  "East": null,
+  "North": null,
+  "CorridorPoints": null,
+  "CorridorRadiusMeters": null,
+  "PolygonPoints": [
+   {
+    "Lat": -33.1,
+    "Lng": 134.55
+   },
+   {
+    "Lat": -33.18353672893614,
+    "Lng": 137.40600585937503
+   },
+   {
+    "Lat": -34.3,
+    "Lng": 136.2
+   },
+   {
+    "Lat": -34.55,
+    "Lng": 136.05
+   },
+   {
+    "Lat": -34.75,
+    "Lng": 135.85
+   },
+   {
+    "Lat": -35.1,
+    "Lng": 135.65
+   },
+   {
+    "Lat": -35.25,
+    "Lng": 135.2
+   },
+   {
+    "Lat": -34.95,
+    "Lng": 134.9
+   },
+   {
+    "Lat": -34.55,
+    "Lng": 134.7
+   },
+   {
+    "Lat": -33.9,
+    "Lng": 134.55
+   },
+   {
+    "Lat": -33.4,
+    "Lng": 134.5
+   },
+   {
+    "Lat": -33.312167837386205,
+    "Lng": 134.08813476562503
+   }
+  ]
+ },
+ "FullCorridorPool": [
+  {
+   "RoadName": "Porter Street",
+   "Severity": 4,
+   "FunctionalClass": 5,
+   "TotalLengthMeters": 103,
+   "ImpactScore": 72.07702334823104,
+   "PrimaryType": "construction",
+   "Description": "roadworks",
+   "Incidents": [
+    {
+     "Id": "2013762182527331369",
+     "Description": "Road construction. Contraflow",
+     "Severity": 4,
+     "Location": "Porter St",
+     "Type": "construction",
+     "LengthMeters": 103,
+     "FunctionalClass": 5,
+     "Latitude": -34.72448,
+     "Longitude": 135.86473,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365078047:$1:498116075#+0..0.4899"
+     ],
+     "Comment": "Asphalt Works",
+     "Shape": [
+      {
+       "Lat": -34.72448,
+       "Lng": 135.86473
+      },
+      {
+       "Lat": -34.72479,
+       "Lng": 135.86555
+      },
+      {
+       "Lat": -34.72484,
+       "Lng": 135.86578
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-10T08:22:55+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -34.72448,
+   "Longitude": 135.86473,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  },
+  {
+   "RoadName": "Railway Place",
+   "Severity": 4,
+   "FunctionalClass": 5,
+   "TotalLengthMeters": 103,
+   "ImpactScore": 72.07702334823104,
+   "PrimaryType": "construction",
+   "Description": "roadworks",
+   "Incidents": [
+    {
+     "Id": "672791559124283591",
+     "Description": "Road construction. Contraflow",
+     "Severity": 4,
+     "Location": "Railway Pl",
+     "Type": "construction",
+     "LengthMeters": 103,
+     "FunctionalClass": 5,
+     "Latitude": -34.72484,
+     "Longitude": 135.86578,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365078047:$1:498116075#-0.5101..1"
+     ],
+     "Comment": "Asphalt Works",
+     "Shape": [
+      {
+       "Lat": -34.72484,
+       "Lng": 135.86578
+      },
+      {
+       "Lat": -34.72479,
+       "Lng": 135.86555
+      },
+      {
+       "Lat": -34.72448,
+       "Lng": 135.86473
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-10T08:22:55+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -34.72484,
+   "Longitude": 135.86578,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  }
+ ]
+}

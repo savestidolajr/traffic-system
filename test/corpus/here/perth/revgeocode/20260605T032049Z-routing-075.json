@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032049Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:50.3979077+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.98336,115.85075\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Kwinana Fwy, South Perth WA 6151, Australia",
+          "id": "here:af:streetsection:c6jYGITW6zNLPqYw71LSSB",
+          "resultType": "street",
+          "address": {
+            "label": "Kwinana Fwy, South Perth WA 6151, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "South Perth",
+            "street": "Kwinana Fwy",
+            "postalCode": "6151"
+          },
+          "position": {
+            "lat": -31.98336,
+            "lng": 115.85075
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.84601,
+            "south": -31.9885,
+            "east": 115.85357,
+            "north": -31.96506
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

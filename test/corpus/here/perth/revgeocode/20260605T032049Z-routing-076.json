@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032049Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:50.3979439+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.04245,115.75476\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Queen Victoria St, Fremantle WA 6160, Australia",
+          "id": "here:af:streetsection:yd6T4tzhaOifhdDt2ckAaB",
+          "resultType": "street",
+          "address": {
+            "label": "Queen Victoria St, Fremantle WA 6160, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Fremantle",
+            "street": "Queen Victoria St",
+            "postalCode": "6160"
+          },
+          "position": {
+            "lat": -32.04245,
+            "lng": 115.75476
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.75196,
+            "south": -32.04657,
+            "east": 115.75493,
+            "north": -32.04227
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

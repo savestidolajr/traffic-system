@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:33.8799304+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.85484,144.96279\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "McGregor St, Middle Park VIC 3206, Australia",
+          "id": "here:af:streetsection:..PlIGUs33f3dFSinjsIfC",
+          "resultType": "street",
+          "address": {
+            "label": "McGregor St, Middle Park VIC 3206, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Middle Park",
+            "street": "McGregor St",
+            "postalCode": "3206"
+          },
+          "position": {
+            "lat": -37.85484,
+            "lng": 144.96279
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 144.96279,
+            "south": -37.85484,
+            "east": 144.9663,
+            "north": -37.8506
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

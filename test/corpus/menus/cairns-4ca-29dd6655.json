@@ -1,0 +1,126 @@
+{
+  "label": "cairns-4ca-29dd6655",
+  "market": "cairns-4ca",
+  "sourceJobId": "29dd66552ec54a16a47dcc12583e4081",
+  "sourceCapture": "job-diagnostics/29dd66552ec54a16a47dcc12583e4081/llm_calls/082342.914-Draft-attempt1.json",
+  "promptSha": null,
+  "items": [
+    {
+      "category": "works",
+      "evidenceIds": [
+        "r1:suburb",
+        "r1:direction",
+        "r1:delayMinutes",
+        "r1:location:0",
+        "r1:detail",
+        "r2:suburb",
+        "r2:impact",
+        "r2:location:0",
+        "r2:location:1",
+        "r2:detail"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Northbound Bruce Highway roadworks at Foster Road, Edmonton, are adding three minutes. More roadworks are at Gillies Highway and Munro Street in Gordonvale."
+        },
+        {
+          "style": "standard",
+          "text": "Northbound Bruce Highway roadworks at Foster Road in Edmonton are adding three minutes. There are also roadworks at Gillies Highway and Munro Street in Gordonvale."
+        }
+      ]
+    },
+    {
+      "category": "works",
+      "evidenceIds": [
+        "r7:suburb",
+        "r7:impact",
+        "r7:location:0",
+        "r7:detail"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Roadworks on Mulgrave Road in Earlville are leaving a slight queue."
+        },
+        {
+          "style": "standard",
+          "text": "There's also a slight queue around roadworks on Mulgrave Road in Earlville."
+        },
+        {
+          "style": "continuation",
+          "text": "There's also roadworks on Mulgrave Road in Earlville, with a slight queue."
+        }
+      ]
+    },
+    {
+      "category": "works",
+      "evidenceIds": [
+        "r3:suburb",
+        "r3:direction",
+        "r3:impact",
+        "r3:location:0",
+        "r3:detail",
+        "r4:suburb",
+        "r4:direction",
+        "r4:impact",
+        "r4:detail",
+        "r5:suburb",
+        "r5:impact",
+        "r5:location:0",
+        "r5:location:1",
+        "r5:detail"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Captain Cook Highway roadworks are a touch slower northbound through Aeroglen and Cairns North, with more works in Macalister Range."
+        },
+        {
+          "style": "standard",
+          "text": "It's a similar story on Captain Cook Highway, with northbound works through Aeroglen and Cairns North. More roadworks are in Macalister Range."
+        },
+        {
+          "style": "continuation",
+          "text": "More roadworks are affecting Captain Cook Highway northbound through Aeroglen and Cairns North, and Macalister Range."
+        }
+      ]
+    },
+    {
+      "category": "weather",
+      "evidenceIds": [
+        "weather:condition",
+        "weather:temperature"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Sunny, 22 degrees."
+        },
+        {
+          "style": "standard",
+          "text": "Sunny skies, 22 degrees."
+        }
+      ]
+    },
+    {
+      "category": "fuel",
+      "evidenceIds": [
+        "fuel:Unleaded 91:price",
+        "fuel:Unleaded 91:suburb",
+        "fuel:Diesel:price",
+        "fuel:Diesel:suburb"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Unleaded 91 is $1.98 and diesel is $2.40 in Manoora."
+        },
+        {
+          "style": "standard",
+          "text": "In Manoora, unleaded 91 is $1.98 and diesel is $2.40."
+        }
+      ]
+    }
+  ]
+}

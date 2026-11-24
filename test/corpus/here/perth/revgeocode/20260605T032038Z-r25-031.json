@@ -1,0 +1,55 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.5757961+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.03667,116.02334\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "16 Stephen St, Orange Grove WA 6109, Australia",
+          "id": "here:af:streetsection:LNgzwb9SRge7eXAFGEY5RA:CggIBCDGlcCuARABGgIxNg",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "16 Stephen St, Orange Grove WA 6109, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Orange Grove",
+            "street": "Stephen St",
+            "postalCode": "6109",
+            "houseNumber": "16"
+          },
+          "position": {
+            "lat": -32.03723,
+            "lng": 116.02224
+          },
+          "access": [
+            {
+              "lat": -32.0365,
+              "lng": 116.02316
+            }
+          ],
+          "distance": 25,
+          "mapView": {
+            "west": 116.02184,
+            "south": -32.03876,
+            "east": 116.0256,
+            "north": -32.03529
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

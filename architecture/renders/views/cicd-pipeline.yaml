@@ -1,0 +1,161 @@
+# CI/CD Pipeline — presentation render. SDD Figure 3. Reflects the REAL
+# azure-pipelines.yml as of 2026-07-20 (single `master` trunk; parameter-
+# gated deploy/promotion/eval stages; no develop/main split, no Bicep
+# what-if, no slot-swap gates — all of that was retired).
+#
+# Companion to the `cicd-pipeline` LikeC4 element view (views.c4).
+# Stage ids are model FQNs from cicd.c4; deploy targets are arn.* elements.
+#
+# Layout invariants (keep when editing):
+#   * Two CI lanes (buildTest cy=140, package cy=280) share cx=440, and
+#     merge into evalGateGolden (720,210); the promotion chain then runs as
+#     ONE straight row at y=210: evalGateGolden -> deployDev -> deployTest
+#     -> evalGateTest -> deployProd (cx 720 / 1000 / 1260 / 1520 / 1780).
+#   * Amber fill (#FEF3C7 / #D97706) marks both blocking eval gates.
+#   * Deploy targets (arn.functions cy=470, arn.dashboard cy=580, stacked)
+#     sit centered under the Dev<->Prod span. Dev's two edges exit its
+#     bottom at x=960 (-> functions, INNER) and x=920 (-> dashboard, OUTER);
+#     Prod's exit at x=1745 (-> functions, INNER) and x=1815 (-> dashboard,
+#     OUTER). Rule: the edge reaching the FARTHER (lower) box always takes
+#     the OUTER x so its long vertical run stays outside the nearer edge's
+#     horizontal turn — that is what keeps this fan-in at zero crossings.
+#   * Deploy Test's own Functions/SWA edges are identical to Dev's and
+#     Prod's and are omitted from the drawing for clarity — called out in
+#     the bottom caption, not hidden from the model (see cicd.c4).
+#   * evalDrift sits below repo, sharing cx=160 (straight scheduled-trigger
+#     line); it is the diagram's only muted, non-primary-path node.
+#   * NotifyOnFailure is OMITTED from the render: it converges edges from
+#     buildTest, package, and evalDrift, and routing all three into one
+#     node without crossing the promotion chain needs corridor gymnastics
+#     disproportionate to a secondary, purely-operational stage. It stays
+#     in the model and the companion LikeC4 view.
+
+output: cicd-pipeline
+canvas: [1910, 800]
+
+styles:
+  edges:
+    flow: { color: "#2563EB", width: 2.5 }
+    deploy: { color: "#F97316", width: 2.5 }
+    scheduled: { color: "#94A3B8", width: 2, dash: "6 4" }
+
+texts:
+  - { text: "CI/CD Pipeline", at: [40, 38], size: 20, weight: "700", anchor: start }
+  - { text: "Azure DevOps multi-stage delivery — master trunk, parallel build+package, a blocking golden eval gate, Dev -> Test -> Prod promotion through a second eval gate",
+      at: [40, 60], size: 12, color: "#64748B", anchor: start }
+  - { text: "Deploy Test runs the identical Infra -> Functions -> SWA -> smoke sequence as Dev/Prod; its target edges are omitted above for clarity.",
+      at: [40, 650], size: 11, color: "#64748B", style: italic, anchor: start }
+  - { text: "Dev/Test/Prod ADO environments each carry a required approval check — Test and Prod approver nominations are pending ARN confirmation.",
+      at: [40, 668], size: 11, color: "#64748B", style: italic, anchor: start }
+  - { text: "Eval drift runs only on the cron schedule (never on pushes) and never deploys; NotifyOnFailure (Teams card on CI/drift failure) is omitted here — see the model.",
+      at: [40, 686], size: 11, color: "#64748B", style: italic, anchor: start }
+
+edges:
+  # CI fan-out
+  - from: devops.repo
+    to: devops.buildTest
+    class: flow
+    points: [[250, 195], [300, 195], [300, 140], [350, 140]]
+  - from: devops.repo
+    to: devops.package
+    class: flow
+    points: [[250, 225], [300, 225], [300, 280], [350, 280]]
+
+  # CI merge into the golden gate
+  - from: devops.buildTest
+    to: devops.evalGateGolden
+    class: flow
+    points: [[530, 140], [590, 140], [590, 197], [630, 197]]
+    label: { text: "on success", at: [598, 168], size: 10, anchor: start }
+  - from: devops.package
+    to: devops.evalGateGolden
+    class: flow
+    points: [[530, 280], [590, 280], [590, 223], [630, 223]]
+
+  # promotion chain — one straight row
+  - from: devops.evalGateGolden
+    to: devops.deployDev
+    class: flow
+    points: [[810, 210], [910, 210]]
+    label: { text: "enableDeploy", at: [860, 198], size: 11, anchor: middle }
+  - from: devops.deployDev
+    to: devops.deployTest
+    class: flow
+    points: [[1090, 210], [1170, 210]]
+    label: { text: "promotion", at: [1130, 198], size: 10, anchor: middle }
+  - from: devops.deployTest
+    to: devops.evalGateTest
+    class: flow
+    points: [[1350, 210], [1430, 210]]
+  - from: devops.evalGateTest
+    to: devops.deployProd
+    class: flow
+    points: [[1610, 210], [1690, 210]]
+
+  # scheduled drift watch — independent of push
+  - from: devops.repo
+    to: devops.evalDrift
+    class: scheduled
+    points: [[160, 235], [160, 375]]
+    label: { text: "cron: nightly + weekly", at: [168, 308], size: 10, anchor: start }
+
+  # deploy targets — Dev and Prod only (Test is identical, see caption)
+  - from: devops.deployDev
+    to: arn.functions
+    class: deploy
+    points: [[960, 235], [960, 470], [1260, 470]]
+    label: { text: "Bicep + zip", at: [1110, 458], size: 11, anchor: middle }
+  - from: devops.deployDev
+    to: arn.dashboard
+    class: deploy
+    points: [[920, 235], [920, 580], [1260, 580]]
+    label: { text: "SWA deploy", at: [1090, 568], size: 11, anchor: middle }
+  - from: devops.deployProd
+    to: arn.functions
+    class: deploy
+    points: [[1745, 235], [1745, 470], [1520, 470]]
+    label: { text: "Bicep + zip", at: [1632, 458], size: 11, anchor: middle }
+  - from: devops.deployProd
+    to: arn.dashboard
+    class: deploy
+    points: [[1815, 235], [1815, 580], [1520, 580]]
+    label: { text: "SWA deploy", at: [1667, 568], size: 11, anchor: middle }
+
+nodes:
+  - { id: devops.repo, at: [160, 210], box: [180, 50],
+      sublabel: "master (single trunk)" }
+  - { id: devops.buildTest, at: [440, 140], box: [180, 50],
+      sublabel: "build+test · lint · scans" }
+  - { id: devops.package, at: [440, 280], box: [180, 50],
+      sublabel: "lint · test · E2E · Lighthouse" }
+  - { id: devops.evalGateGolden, at: [720, 210], box: [180, 50],
+      fill: "#FEF3C7", stroke: "#D97706",
+      sublabel: "blocking · golden+safety" }
+  - { id: devops.deployDev, at: [1000, 210], box: [180, 50],
+      sublabel: "Infra · Functions · SWA · smoke" }
+  - { id: devops.deployTest, at: [1260, 210], box: [180, 50],
+      sublabel: "approval pending (ARN)" }
+  - { id: devops.evalGateTest, at: [1520, 210], box: [180, 50],
+      fill: "#FEF3C7", stroke: "#D97706",
+      sublabel: "blocking · promotion panel" }
+  - { id: devops.deployProd, at: [1780, 210], box: [180, 50],
+      sublabel: "approval pending (ARN)" }
+  - { id: devops.evalDrift, at: [160, 400], box: [180, 50],
+      fill: "#F1F5F9", stroke: "#94A3B8", text_color: "#64748B",
+      sublabel: "cron only · no deploy" }
+
+  # deploy targets
+  - { id: arn.functions, at: [1390, 470], box: [260, 56],
+      fill: "#EFF6FF", stroke: "#0078D4", sw: 2,
+      sublabel: "Azure Functions (all envs)" }
+  - { id: arn.dashboard, at: [1390, 580], box: [260, 56],
+      fill: "#EFF6FF", stroke: "#0078D4", sw: 2,
+      sublabel: "Static Web App (all envs)" }
+
+
+legend:
+  at: [40, 745]
+  items:
+    - ["pipeline flow", flow]
+    - ["deployment", deploy]
+    - ["scheduled trigger", scheduled]

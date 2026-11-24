@@ -1,0 +1,55 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032036Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:37.5525552+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.50711,152.97247\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "11A Longman Ter, Chelmer QLD 4068, Australia",
+          "id": "here:af:streetsection:O0jPz8EZZs807xWmtTsZ3C:CggIBCDxp_qeARABGgMxMUE",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "11A Longman Ter, Chelmer QLD 4068, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Chelmer",
+            "street": "Longman Ter",
+            "postalCode": "4068",
+            "houseNumber": "11A"
+          },
+          "position": {
+            "lat": -27.50637,
+            "lng": 152.9722
+          },
+          "access": [
+            {
+              "lat": -27.50711,
+              "lng": 152.97246
+            }
+          ],
+          "distance": 1,
+          "mapView": {
+            "west": 152.96984,
+            "south": -27.51038,
+            "east": 152.97309,
+            "north": -27.50616
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

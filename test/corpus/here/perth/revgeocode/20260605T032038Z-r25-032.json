@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.5757961+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.89275,116.03471\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Meliador Way, Midvale WA 6056, Australia",
+          "id": "here:af:streetsection:5WnM8Kz.750KdFdS0C3JwC",
+          "resultType": "street",
+          "address": {
+            "label": "Meliador Way, Midvale WA 6056, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Midvale",
+            "street": "Meliador Way",
+            "postalCode": "6056"
+          },
+          "position": {
+            "lat": -31.89275,
+            "lng": 116.03471
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 116.03471,
+            "south": -31.89546,
+            "east": 116.03722,
+            "north": -31.89275
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,420 @@
+{
+  "Label": "fresh-darwin",
+  "Reason": "true sample wave 2: traffic\u002Bweather\u002Bfuel, 03:53",
+  "SourceJobId": "c98494178b81491c977724226c95cd34",
+  "OriginalScript": "Mitchell Street, Henry Wrigley Drive, Cavenagh Street and Knuckey Street are all under minor delays. Stuart Highway and Charles Point Road are both flowing well. Partly sunny, 31 degrees. Cheapest unleaded\u0027s $1.70 in Darwin City, and diesel\u0027s $1.82 there too. It\u0027s a long stretch of highway between towns out here \u2014 pull over for a break if you\u0027re feeling fatigued. School zones carry reduced speed limits on every school day \u2014 worth slowing down for.",
+  "CapturedAtUtc": "2026-07-10T03:53:28.706599+00:00",
+  "Snapshot": {
+    "TargetDurationSeconds": 30,
+    "Location": "darwin",
+    "City": null,
+    "MarketId": "darwin",
+    "Content": {
+      "Traffic": true,
+      "Weather": true,
+      "Fuel": true,
+      "HasAnySource": true
+    },
+    "Corridors": [
+      {
+        "RoadName": "Mitchell Street",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 172,
+        "ImpactScore": 162.35528446907549,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "Henry Wrigley Drive",
+        "Severity": 3,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 497,
+        "ImpactScore": 125,
+        "PrimaryType": "congestion",
+        "Description": "slow-moving",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "Cavenagh Street",
+        "Severity": 3,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 266,
+        "ImpactScore": 124.24881636631068,
+        "PrimaryType": "congestion",
+        "Description": "slow-moving",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "Knuckey Street",
+        "Severity": 3,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 236,
+        "ImpactScore": 123.72912002970106,
+        "PrimaryType": "congestion",
+        "Description": "slow-moving",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      }
+    ],
+    "MonitoredRoutes": [],
+    "GoodRunRoads": [
+      "Stuart Highway",
+      "Charles Point Road",
+      "Mcmillans Road",
+      "Gulnare Road",
+      "Produce Road",
+      "Old Bynoe Road"
+    ],
+    "FlowPool": [
+      {
+        "RoadName": "Stuart Highway",
+        "JamFactor": 2.3,
+        "LengthMeters": 25622,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Charles Point Road",
+        "JamFactor": 1.2,
+        "LengthMeters": 19265,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Mcmillans Road",
+        "JamFactor": 3.2,
+        "LengthMeters": 15941,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Gulnare Road",
+        "JamFactor": 0.2,
+        "LengthMeters": 12023,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Produce Road",
+        "JamFactor": 0.9,
+        "LengthMeters": 9959,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Old Bynoe Road",
+        "JamFactor": 0.5,
+        "LengthMeters": 9152,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Roystonea Avenue",
+        "JamFactor": 2.8,
+        "LengthMeters": 8646,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Berrimah Road",
+        "JamFactor": 2.1,
+        "LengthMeters": 7981,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Hook Road",
+        "JamFactor": 3,
+        "LengthMeters": 7364,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Vanderlin Drive",
+        "JamFactor": 3.4,
+        "LengthMeters": 7172,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Wanderrie Road",
+        "JamFactor": 0.5,
+        "LengthMeters": 6639,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Howard Springs Road",
+        "JamFactor": 0.5,
+        "LengthMeters": 6055,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Arnhem Highway",
+        "JamFactor": 0.8,
+        "LengthMeters": 6028,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Amy Johnson Avenue",
+        "JamFactor": 3.2,
+        "LengthMeters": 5931,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Temple Terrace",
+        "JamFactor": 2.2,
+        "LengthMeters": 5854,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Hidden Valley Road",
+        "JamFactor": 1,
+        "LengthMeters": 5733,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Tivendale Road",
+        "JamFactor": 0.7,
+        "LengthMeters": 5605,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Power Road",
+        "JamFactor": 0.5,
+        "LengthMeters": 4981,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      }
+    ],
+    "Weather": {
+      "Conditions": "Partly sunny. Warm.",
+      "TemperatureC": 31,
+      "WindDescription": "fresh East wind",
+      "PrecipitationProbabilityPercent": 0,
+      "Alerts": [],
+      "Outlook": "reaching 31 degrees later today; tomorrow sunny. warm, around 32 degrees",
+      "HasMajorAlert": false
+    },
+    "Fuel": {
+      "Summaries": [
+        {
+          "FuelType": "Unleaded 91",
+          "MinPrice": 1.695,
+          "AveragePrice": 1.734,
+          "StationCount": 48,
+          "LatestModifiedUtc": "2026-07-10T03:30:03+00:00",
+          "CheapestStationSuburb": "Darwin City"
+        },
+        {
+          "FuelType": "Diesel",
+          "MinPrice": 1.825,
+          "AveragePrice": 1.902,
+          "StationCount": 30,
+          "LatestModifiedUtc": "2026-07-10T03:30:03+00:00",
+          "CheapestStationSuburb": "Darwin City"
+        }
+      ],
+      "HasPrices": true
+    },
+    "IncidentChanges": null,
+    "Guidance": {
+      "Entries": [
+        {
+          "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for \u2014 a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "UpdatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "645e52b90299493a8dbde1205c6c657e",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "75fe175d471144b38bf23c24966dfb6f",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "7b012b9381e04e72be8211133f224188",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 4,
+          "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "Australian English with natural spoken contractions. Round the figures \u2014 say \u0027about ten minutes\u0027, never \u002710.3 minutes\u0027. No police codes or insider jargon.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 3,
+          "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "f5e76bd5993c41edb637a7302f7d7479",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 2,
+          "Text": "Use common road names with the definite article: \u0027the M1\u0027, \u0027the M4\u0027, \u0027the CBD\u0027. Use \u0027citybound\u0027 and \u0027outbound\u0027 for direction of travel.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        }
+      ],
+      "DroppedCount": 0,
+      "Count": 7,
+      "HasEntries": true
+    },
+    "MarketFeedback": []
+  }
+}

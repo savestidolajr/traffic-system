@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.4059445+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.61913,145.0282\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "2W Markham St, Wollert VIC 3750, Australia",
+          "id": "here:af:streetsection:Fs0mFzw1a3QaUgLBgaPSNC:CggIBCDs9JTRAhABGgIyVw",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "2W Markham St, Wollert VIC 3750, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Wollert",
+            "district": "Wollert",
+            "street": "Markham St",
+            "postalCode": "3750",
+            "houseNumber": "2W"
+          },
+          "position": {
+            "lat": -37.61923,
+            "lng": 145.02847
+          },
+          "access": [
+            {
+              "lat": -37.61907,
+              "lng": 145.02832
+            }
+          ],
+          "distance": 12,
+          "mapView": {
+            "west": 145.0282,
+            "south": -37.61913,
+            "east": 145.02859,
+            "north": -37.61809
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

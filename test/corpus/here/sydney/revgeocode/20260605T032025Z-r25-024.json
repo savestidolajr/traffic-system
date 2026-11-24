@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.4772112+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.84988,151.06015\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Frog Ln, Lidcombe NSW 2141, Australia",
+          "id": "here:af:streetsection:SwDW4gft4115j1iZSq.6EA",
+          "resultType": "street",
+          "address": {
+            "label": "Frog Ln, Lidcombe NSW 2141, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Lidcombe",
+            "street": "Frog Ln",
+            "postalCode": "2141"
+          },
+          "position": {
+            "lat": -33.84988,
+            "lng": 151.06015
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.06015,
+            "south": -33.84988,
+            "east": 151.06136,
+            "north": -33.84938
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

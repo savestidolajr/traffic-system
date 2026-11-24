@@ -1,0 +1,55 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.2497816+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94012,115.94124\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "29 Stanton Rd, Redcliffe WA 6104, Australia",
+          "id": "here:af:streetsection:qAigUYJdudH-D.LnSVg-VB:CggIBCC1_7ihARABGgIyOQ",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "29 Stanton Rd, Redcliffe WA 6104, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Redcliffe",
+            "street": "Stanton Rd",
+            "postalCode": "6104",
+            "houseNumber": "29"
+          },
+          "position": {
+            "lat": -31.93997,
+            "lng": 115.94097
+          },
+          "access": [
+            {
+              "lat": -31.94016,
+              "lng": 115.9412
+            }
+          ],
+          "distance": 6,
+          "mapView": {
+            "west": 115.93905,
+            "south": -31.94198,
+            "east": 115.94649,
+            "north": -31.9357
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

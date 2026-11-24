@@ -1,0 +1,47 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032041Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:42.7973668+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.92224,138.59939\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Gresham Pl, Adelaide SA 5000, Australia",
+          "id": "here:af:streetsection:M2ckCoULrni6ApeTisj9uA",
+          "resultType": "street",
+          "address": {
+            "label": "Gresham Pl, Adelaide SA 5000, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "SA",
+            "state": "South Australia",
+            "city": "Adelaide",
+            "district": "Adelaide",
+            "street": "Gresham Pl",
+            "postalCode": "5000"
+          },
+          "position": {
+            "lat": -34.92224,
+            "lng": 138.59939
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 138.5989,
+            "south": -34.92225,
+            "east": 138.59939,
+            "north": -34.92224
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

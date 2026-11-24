@@ -1,0 +1,405 @@
+parameters:
+  - name: targetEnvironment
+    type: string
+    default: none
+    values:
+      - none
+      - dev
+      - test
+      - prod
+  # App-only promotions can skip Bicep/autoscale while retaining the
+  # environment approvals on the application and smoke-test jobs.
+  - name: deployInfrastructure
+    type: boolean
+    default: true
+
+trigger:
+  batch: true # coalesce queued commits into one run
+  branches:
+    include: [master, main]
+  paths:
+    exclude: ["*.md", "docs/*"]
+
+pr:
+  branches:
+    include: [master, main]
+  paths:
+    exclude: ["*.md", "docs/*"]
+
+variables:
+  - name: buildConfiguration
+    value: Release
+  - name: dotnetVersion
+    value: "10.x"
+  - name: nodeVersion
+    value: "22.x"
+  - name: gitleaksVersion
+    value: "8.21.2"
+  # Dependency-cache locations (kept in the workspace so Cache@2 can persist them).
+  - name: NUGET_PACKAGES
+    value: $(Pipeline.Workspace)/.nuget/packages
+  - name: npm_config_cache
+    value: $(Pipeline.Workspace)/.npm
+  - name: PLAYWRIGHT_BROWSERS_PATH
+    value: $(Pipeline.Workspace)/ms-playwright
+  # TEAMS_CICD_WEBHOOK is intentionally NOT declared here: a YAML-declared
+  # variable cannot be overridden from the pipeline UI. It is set as a SECRET
+  # pipeline-definition variable (value = the notification Logic App trigger
+  # URL, set 2026-07-05). Unset → the NotifyOnFailure stage no-ops.
+
+pool:
+  vmImage: ubuntu-latest
+
+stages:
+  - stage: Build
+    displayName: Build & Test
+    jobs:
+      - job: BuildAndTest
+        displayName: Backend build, test, scan, publish
+        steps:
+          - task: UseDotNet@2
+            displayName: Install .NET SDK
+            inputs:
+              version: $(dotnetVersion)
+              includePreviewVersions: true
+
+          - task: Cache@2
+            displayName: Cache NuGet packages
+            inputs:
+              # Exclude generated project files (obj/**/WorkerExtensions.csproj appears
+              # DURING build), or the resolved key drifts between restore and save and
+              # the cache is never persisted.
+              key: 'nuget | "$(Agent.OS)" | **/*.csproj, !**/obj/**, !**/bin/**, Directory.Build.props'
+              restoreKeys: |
+                nuget | "$(Agent.OS)"
+              path: $(NUGET_PACKAGES)
+
+          - script: dotnet restore ArnBulletinGenerator.slnx
+            displayName: Restore
+            retryCountOnTaskFailure: 2
+
+          - script: dotnet build ArnBulletinGenerator.slnx -c $(buildConfiguration) --no-restore
+            displayName: Build
+
+          - script: |
+              set -euo pipefail
+              # Coverage instrumentation is costly; collect it only on PRs (where it is
+              # reviewed) to keep the critical-path push run fast.
+              COV=()
+              if [ "$(Build.Reason)" = "PullRequest" ]; then COV=(--collect:"XPlat Code Coverage"); fi
+              dotnet test ArnBulletinGenerator.slnx \
+                -c $(buildConfiguration) --no-build \
+                --filter "Category!=Integration&Category!=E2E" \
+                --logger trx --results-directory $(Agent.TempDirectory)/TestResults \
+                "${COV[@]}"
+            displayName: Run tests
+
+          - task: Cache@2
+            displayName: Cache Azure Functions Core Tools
+            inputs:
+              key: 'func | "$(Agent.OS)" | 4'
+              path: $(Pipeline.Workspace)/func-tools
+              cacheHitVar: FUNC_CACHE_HIT
+          - script: npm install --prefix $(Pipeline.Workspace)/func-tools azure-functions-core-tools@4 --unsafe-perm true
+            displayName: Install Azure Functions Core Tools (func)
+            retryCountOnTaskFailure: 2
+            condition: ne(variables['FUNC_CACHE_HIT'], 'true')
+          - script: echo "##vso[task.prependpath]$(Pipeline.Workspace)/func-tools/node_modules/.bin"
+            displayName: Add func to PATH
+
+          - script: bash scripts/e2e-backend.sh
+            displayName: Run backend E2E (Functions host + fake providers)
+            env:
+              # Reuse the Release build just compiled above for the E2E test project
+              # (func still builds the host itself). Saves a redundant Debug rebuild.
+              ARN_E2E_TEST_CONFIG: Release
+              ARN_E2E_TEST_NOBUILD: --no-build
+
+          # Build once: publish the exact bits that were just built + tested
+          # (no recompile in a separate stage), then ship them as the artifact.
+          - script: >-
+              dotnet publish
+              src/ArnBulletinGenerator.Functions/ArnBulletinGenerator.Functions.csproj
+              -c $(buildConfiguration)
+              --no-build
+              -o $(Build.ArtifactStagingDirectory)/functions
+            displayName: Publish function app (no rebuild)
+
+          - task: ArchiveFiles@2
+            displayName: Zip function app
+            inputs:
+              rootFolderOrFile: $(Build.ArtifactStagingDirectory)/functions
+              includeRootFolder: false
+              archiveType: zip
+              archiveFile: $(Build.ArtifactStagingDirectory)/functions.zip
+
+          - publish: $(Build.ArtifactStagingDirectory)/functions.zip
+            artifact: functions
+            displayName: Publish function app artifact
+
+          - task: PublishTestResults@2
+            displayName: Publish test results
+            condition: succeededOrFailed()
+            inputs:
+              testResultsFormat: VSTest
+              testResultsFiles: "**/*.trx"
+              searchFolder: $(Agent.TempDirectory)/TestResults
+              mergeTestResults: true
+
+          - task: PublishCodeCoverageResults@2
+            displayName: Publish code coverage
+            condition: and(succeededOrFailed(), eq(variables['Build.Reason'], 'PullRequest'))
+            inputs:
+              summaryFileLocation: $(Agent.TempDirectory)/TestResults/**/coverage.cobertura.xml
+
+      - job: BicepLint
+        displayName: Bicep Lint & Build
+        steps:
+          - script: |
+              set -euo pipefail
+              az bicep build --file deployment/main.bicep --outfile /tmp/main.json
+              for f in deployment/main.*.bicepparam; do
+                echo "Building $f"
+                az bicep build-params --file "$f" --outfile "/tmp/$(basename "$f").json"
+              done
+              echo "All Bicep templates and param files built successfully."
+            displayName: az bicep build (main + all .bicepparam)
+
+      - job: SecretScan
+        displayName: Secret scan (gitleaks)
+        steps:
+          - script: |
+              set -euo pipefail
+              curl -sSL --retry 3 --retry-delay 2 --retry-all-errors "https://github.com/gitleaks/gitleaks/releases/download/v$(gitleaksVersion)/gitleaks_$(gitleaksVersion)_linux_x64.tar.gz" -o /tmp/gitleaks.tgz
+              tar xzf /tmp/gitleaks.tgz -C /tmp gitleaks
+              /tmp/gitleaks dir . -c .gitleaks.toml --no-banner --redact --exit-code 1
+            displayName: gitleaks dir scan
+
+      - job: DependencyScan
+        displayName: .NET dependency vulnerability scan
+        steps:
+          - task: UseDotNet@2
+            displayName: Install .NET SDK
+            inputs:
+              version: $(dotnetVersion)
+              includePreviewVersions: true
+          - task: Cache@2
+            displayName: Cache NuGet packages
+            inputs:
+              # Same obj/bin exclusion as the Build job's NuGet cache (key drift otherwise).
+              key: 'nuget | "$(Agent.OS)" | **/*.csproj, !**/obj/**, !**/bin/**, Directory.Build.props'
+              restoreKeys: |
+                nuget | "$(Agent.OS)"
+              path: $(NUGET_PACKAGES)
+          - script: dotnet restore ArnBulletinGenerator.slnx
+            displayName: Restore
+            retryCountOnTaskFailure: 2
+          - script: |
+              set -euo pipefail
+              dotnet list ArnBulletinGenerator.slnx package --vulnerable --include-transitive 2>&1 | tee /tmp/vuln.txt
+              if grep -E '^[[:space:]]*>' /tmp/vuln.txt | grep -qiE '\b(High|Critical)\b'; then
+                echo "##vso[task.logissue type=error]High/Critical vulnerable NuGet packages found"
+                exit 1
+              fi
+              echo "No High/Critical vulnerable NuGet packages."
+            displayName: .NET dependency vulnerability scan
+
+  - stage: Package
+    displayName: Package
+    dependsOn: [] # run in parallel with Build — frontend has no backend dependency
+    jobs:
+      - job: Web
+        displayName: Frontend lint, test, build
+        steps:
+          - task: UseNode@1
+            displayName: Install Node.js
+            inputs:
+              version: $(nodeVersion)
+
+          - task: Cache@2
+            displayName: Cache npm packages
+            inputs:
+              key: 'npm | "$(Agent.OS)" | web/package-lock.json'
+              restoreKeys: |
+                npm | "$(Agent.OS)"
+              path: $(npm_config_cache)
+
+          - task: Cache@2
+            displayName: Cache Playwright browsers
+            inputs:
+              key: 'playwright | "$(Agent.OS)" | web/package-lock.json'
+              path: $(PLAYWRIGHT_BROWSERS_PATH)
+              cacheHitVar: PLAYWRIGHT_CACHE_HIT
+
+          - script: npm ci
+            displayName: Install dependencies
+            retryCountOnTaskFailure: 2
+            workingDirectory: web
+
+          - script: npm run lint
+            displayName: Lint
+            workingDirectory: web
+
+          - script: npm run test
+            displayName: Unit tests (vitest)
+            workingDirectory: web
+
+          - script: npm audit --audit-level=high
+            displayName: npm dependency vulnerability scan
+            workingDirectory: web
+
+          - script: npx playwright install --with-deps chromium
+            displayName: Install Playwright browsers (skipped on cache hit)
+            retryCountOnTaskFailure: 2
+            workingDirectory: web
+            condition: ne(variables['PLAYWRIGHT_CACHE_HIT'], 'true')
+
+          - script: npm run e2e
+            displayName: Run frontend E2E (mock mode)
+            workingDirectory: web
+
+          - script: npm run perf
+            displayName: Performance audit (Lighthouse, budget-gated)
+            workingDirectory: web
+
+          - script: npm run perf:runtime:nobuild -- --no-fail
+            displayName: Runtime performance probe (Lighthouse timespan, informational)
+            workingDirectory: web
+
+          - publish: web/perf
+            artifact: perf-report
+            condition: always()
+            displayName: Publish performance report
+
+          - script: npm run build
+            displayName: Build
+            workingDirectory: web
+            env:
+              # HERE API key for the evidence map. Set VITE_HERE_API_KEY in the
+              # arn-traffic-dev / arn-traffic-variables variable groups (ARN-managed).
+              # When unset the build still succeeds but the fallback Leaflet map
+              # is used instead of the HERE basemap with live traffic overlay.
+              VITE_HERE_API_KEY: $(VITE_HERE_API_KEY)
+          - publish: web/dist
+            artifact: web
+            displayName: Publish frontend artifact
+
+  # Deploy stages (Dev → Test → Prod promotion) compile only for an explicit
+  # targetEnvironment: dev compiles Dev, test compiles Dev → Test, and prod
+  # compiles Dev → Test → Prod. The default none keeps automatic CI to Build +
+  # Package only; deployment targets are selected on a manual run.
+  - ${{ if in(parameters.targetEnvironment, 'dev', 'test', 'prod') }}:
+    - template: deployment/pipelines/deploy-stage.yml
+      parameters:
+        stageName: Deploy_Dev
+        displayName: Deploy to Dev
+        adoEnvironment: dev
+        variableGroup: arn-traffic-dev
+        serviceConnection: IBP-DEV
+        bicepParamFile: deployment/main.dev.bicepparam
+        applyRbacConfig: false # dev keeps the built-in SWA provider + devAuthFallbackRole
+        deployInfrastructure: ${{ parameters.deployInfrastructure }}
+        dependsOn: [Build, Package] # needs functions artifact (Build) + web artifact (Package)
+        condition: and(succeeded(), in(variables['Build.SourceBranch'], 'refs/heads/master', 'refs/heads/main'))
+
+  - ${{ if in(parameters.targetEnvironment, 'test', 'prod') }}:
+    - template: deployment/pipelines/deploy-stage.yml
+      parameters:
+        stageName: Deploy_Test
+        displayName: Deploy to Test
+        adoEnvironment: test
+        variableGroup: arn-traffic-test
+        serviceConnection: IBP-TST
+        bicepParamFile: deployment/main.test.bicepparam
+        applyRbacConfig: true # test overlays the custom-Entra-provider RBAC SWA config (faithful prod mirror)
+        deployInfrastructure: ${{ parameters.deployInfrastructure }}
+        dependsOn: [Deploy_Dev]
+        condition: and(succeeded(), in(variables['Build.SourceBranch'], 'refs/heads/master', 'refs/heads/main'))
+
+    # A real-bulletin quality panel used to sit here as a Deploy_Prod blocker. It was
+    # retired on 2026-07-29: it had never passed end to end, it could not catch a
+    # generation regression against production because production already ran the same
+    # prompts, and its one hard check (zero fabricated road names) is already enforced
+    # deterministically in the application's own content gates.
+
+    - template: deployment/pipelines/deploy-stage.yml
+      parameters:
+        stageName: Deploy_Prod
+        displayName: Deploy to Production
+        adoEnvironment: production
+        variableGroup: arn-traffic-variables
+        serviceConnection: IBP-PRD
+        bicepParamFile: deployment/main.prod.bicepparam
+        applyRbacConfig: true # prod overlays the custom-Entra-provider RBAC SWA config
+        deployInfrastructure: ${{ parameters.deployInfrastructure }}
+        dependsOn: [Deploy_Test]
+        condition: and(succeeded(), in(variables['Build.SourceBranch'], 'refs/heads/master', 'refs/heads/main'))
+
+  # Failure notification. Runs only when an upstream CI stage fails; posts to
+  # the environment's notification Logic App (same Adaptive-Card pipeline as
+  # bulletin approval/failure cards) when TEAMS_CICD_WEBHOOK is set, otherwise
+  # it is a no-op. Payload matches the Logic App trigger schema
+  # (deployment/modules/logic-app-notification.bicep). A plain Teams Incoming
+  # Webhook also works — it ignores the extra fields and renders "title".
+  - stage: NotifyOnFailure
+    displayName: Notify on failure
+    # dependsOn MUST list every stage whose failure should notify. It once listed only
+    # Build and Package, so `failed()` was false for a failed DEPLOY: measured on
+    # 2026-08-12 across 112 builds, 8 of 34 failures notified nobody, including build
+    # 2791 (2026-08-09) where Deploy to Production failed at the post-deploy smoke test
+    # in silence. Each entry is guarded by the same template condition that compiles the
+    # stage in, because a dependsOn naming a stage that was never compiled is a hard
+    # pipeline error, not a skip.
+    dependsOn:
+      - Build
+      - Package
+      - ${{ if in(parameters.targetEnvironment, 'dev', 'test', 'prod') }}:
+        - Deploy_Dev
+      - ${{ if in(parameters.targetEnvironment, 'test', 'prod') }}:
+        - Deploy_Test
+      - ${{ if eq(parameters.targetEnvironment, 'prod') }}:
+        - Deploy_Prod
+    condition: failed()
+    jobs:
+      - job: notify
+        displayName: Teams failure notification
+        steps:
+          - checkout: none
+          - script: |
+              set -euo pipefail
+              if [ -z "${WEBHOOK:-}" ]; then
+                echo "TEAMS_CICD_WEBHOOK not set; skipping notification."
+                exit 0
+              fi
+              NOW="$(date -u +%Y-%m-%dT%H:%M:%SZ)"
+              # Check the HTTP status explicitly. `curl -sS` without -f prints nothing and
+              # exits 0 on a 4xx/5xx, so a misconfigured or expired webhook made this step
+              # report success while delivering nothing — the failure notification path
+              # cannot itself be a silent failure.
+              HTTP_CODE="$(curl -sS -o /tmp/ci-notify-response -w '%{http_code}' \
+                -X POST -H 'Content-Type: application/json' \
+                -d "{
+                  \"title\": \"❌ Arn CI failed — $(Build.DefinitionName)\",
+                  \"jobId\": \"$(Build.BuildId)\",
+                  \"market\": \"CI/CD\",
+                  \"station\": \"$(Build.SourceBranchName)\",
+                  \"status\": \"Failed\",
+                  \"scheduledAtDisplay\": \"Build #$(Build.BuildNumber)\",
+                  \"previewText\": \"Pipeline $(Build.DefinitionName) failed on $(Build.SourceBranchName) (build $(Build.BuildId)). Open the run for stage/job detail.\",
+                  \"createdBy\": \"Azure DevOps\",
+                  \"createdAt\": \"$NOW\",
+                  \"schemaVersion\": \"2.0\",
+                  \"correlationId\": \"$(Build.BuildId)\",
+                  \"allowedActions\": [],
+                  \"url\": \"$(System.CollectionUri)$(System.TeamProject)/_build/results?buildId=$(Build.BuildId)\"
+                }" \
+                "$WEBHOOK")"
+              if [ "$HTTP_CODE" -lt 200 ] || [ "$HTTP_CODE" -ge 300 ]; then
+                echo "Failure notification POST returned HTTP $HTTP_CODE — the card was NOT delivered."
+                cat /tmp/ci-notify-response || true
+                exit 1
+              fi
+              echo "Failure notification delivered (HTTP $HTTP_CODE)."
+            displayName: Post to Teams
+            env:
+              WEBHOOK: $(TEAMS_CICD_WEBHOOK)

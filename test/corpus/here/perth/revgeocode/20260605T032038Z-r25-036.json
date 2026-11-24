@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.6838554+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.04792,115.73687\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "North Quay Rd, North Fremantle WA 6159, Australia",
+          "id": "here:af:streetsection:RFYmi79lTLdaLOFhP9dO8B",
+          "resultType": "street",
+          "address": {
+            "label": "North Quay Rd, North Fremantle WA 6159, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "North Fremantle",
+            "street": "North Quay Rd",
+            "postalCode": "6159"
+          },
+          "position": {
+            "lat": -32.04792,
+            "lng": 115.73687
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.73687,
+            "south": -32.05009,
+            "east": 115.74206,
+            "north": -32.04476
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

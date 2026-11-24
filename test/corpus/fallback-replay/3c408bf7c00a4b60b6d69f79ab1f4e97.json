@@ -1,0 +1,1249 @@
+{
+ "JobId": "3c408bf7c00a4b60b6d69f79ab1f4e97",
+ "Market": "cairns-4ca",
+ "Station": "Star 102.7 FM",
+ "CapturedAtUtc": "2026-08-27T06:06:32.9462806Z",
+ "DevOutcome": {
+  "Status": "WaitingApproval",
+  "FallbackKind": null,
+  "Attempts": 1,
+  "TargetWordsSeq": [
+   48
+  ],
+  "SynthWordsSeq": [
+   46
+  ],
+  "NaturalSecSeq": [
+   21.2
+  ],
+  "BestNaturalSec": 21.2,
+  "ReviewFeedbackCount": 0,
+  "SynthFailures": []
+ },
+ "Fidelity": {
+  "IncidentsRecovered": 6,
+  "IncidentsSynthesized": 0,
+  "WeatherSource": "job",
+  "FuelSource": "job",
+  "GoodRunsAndFlowPoolLost": false,
+  "StationConfigSource": "live-station-config"
+ },
+ "VoiceConfig": {
+  "Provider": "elevenlabs",
+  "VoiceId": "yngV6X6u07ThpMteV50h",
+  "VoiceName": "ARN Sarah - Younger Female",
+  "Model": "eleven_v3",
+  "Settings": {
+   "Speed": 0.97,
+   "Stability": 0.7,
+   "SimilarityBoost": 0.7,
+   "Style": 0,
+   "UseSpeakerBoost": false
+  },
+  "PaceBoostWpm": 0
+ },
+ "Snapshot": {
+  "TargetDurationSeconds": 22,
+  "Location": "cairns-4ca",
+  "City": "cairns-4ca",
+  "MarketId": "cairns-4ca",
+  "Content": {
+   "Traffic": true,
+   "Weather": true,
+   "Fuel": true,
+   "WeatherRequired": false,
+   "FuelRequired": false
+  },
+  "Bookends": {
+   "IntroText": "Checking out the roads......",
+   "OutroText": "",
+   "Id": "bk-0a02c365f8c049ee91577828b784529b",
+   "Version": 0
+  },
+  "FillerStatements": [
+   {
+    "Id": "9997c732dbce422cb2206c6918f9f670",
+    "Text": "The Bruce Highway is the main artery south to Innisfail and north through the city — expect delays at the Draper Street and Lyons Street intersections during peak.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "b2c39f02b50d4d488693a5520ca5d50a",
+    "Text": "Captain Cook Highway heads north from the city to the Northern Beaches and Port Douglas — allow extra time through Smithfield during school drop-off and pickup.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "92c2e0eeb5d24893b7d13cc6e197a1d8",
+    "Text": "The Cairns Western Arterial Road connects Redlynch to the Captain Cook Highway — roadworks are ongoing so expect changed traffic conditions.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "2ff3e3ca50554d3789b39fcff7cb4090",
+    "Text": "School zones are back to 40 on school days — watch for the flashing signs morning and afternoon on Sheridan Street and Mulgrave Road.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "234e5c3e57df41d495ed0ae6821722df",
+    "Text": "During the wet season from November to April, flash flooding can affect low-lying roads around Redlynch and the Barron River crossing — never drive through floodwaters.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "04c896191ef1474fa7fff6aa77bd05de",
+    "Text": "Roadworks and changed traffic conditions are updated weekly on the Cairns Regional Council website.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "a0f2e361-4efb-49ba-acf0-f16025d03e20",
+    "Text": "Take us anywhere you go with the free iheart app - Just search Star one two point seven",
+    "Enabled": true,
+    "Availability": null
+   }
+  ],
+  "SharedRules": null,
+  "RoadFeelPalette": null,
+  "EditorialSettings": {
+   "Scope": 0,
+   "ScopeId": ""
+  },
+  "CuratedCorridorRoads": null,
+  "CuratedGoodRunRoads": null,
+  "ExcludedIncidentKeys": null,
+  "WriterPrompt": null,
+  "FillOrder": [
+   "Weather",
+   "Fuel",
+   "MinorTraffic",
+   "Filler"
+  ],
+  "Corridors": [
+   {
+    "RoadName": "Kennedy Highway",
+    "Severity": 1,
+    "FunctionalClass": 2,
+    "TotalLengthMeters": 1000.0,
+    "ImpactScore": 322.5,
+    "PrimaryType": "roadHazard",
+    "Description": "hazard and roadworks northbound",
+    "Incidents": [
+     {
+      "Id": "1775085339166027120",
+      "Description": "roadHazard on Kennedy Hwy",
+      "Severity": 1,
+      "Location": "Kennedy Hwy",
+      "Type": "roadHazard",
+      "LengthMeters": 247.0,
+      "FunctionalClass": 2,
+      "Latitude": -16.81492,
+      "Longitude": 145.63512,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "northbound",
+      "Summary": "At Myola Road - Hazardous driving conditions",
+      "JunctionTraversability": null,
+      "SegmentRefs": null,
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -16.81492,
+        "Lng": 145.63512
+       },
+       {
+        "Lat": -16.81517,
+        "Lng": 145.63492
+       },
+       {
+        "Lat": -16.81517,
+        "Lng": 145.63492
+       },
+       {
+        "Lat": -16.81541,
+        "Lng": 145.63473
+       },
+       {
+        "Lat": -16.81541,
+        "Lng": 145.63473
+       },
+       {
+        "Lat": -16.81629,
+        "Lng": 145.63402
+       },
+       {
+        "Lat": -16.81629,
+        "Lng": 145.63402
+       },
+       {
+        "Lat": -16.81669,
+        "Lng": 145.6337
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-19T07:54:03+00:00"
+     },
+     {
+      "Id": "342694560345213054",
+      "Description": "roadHazard on Kennedy Hwy",
+      "Severity": 1,
+      "Location": "Kennedy Hwy",
+      "Type": "roadHazard",
+      "LengthMeters": 233.0,
+      "FunctionalClass": 2,
+      "Latitude": -16.81684,
+      "Longitude": 145.63358,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "northbound",
+      "Summary": "At Captain Cook Highway - Hazardous driving conditions",
+      "JunctionTraversability": null,
+      "SegmentRefs": null,
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -16.81684,
+        "Lng": 145.63358
+       },
+       {
+        "Lat": -16.81669,
+        "Lng": 145.6337
+       },
+       {
+        "Lat": -16.81669,
+        "Lng": 145.6337
+       },
+       {
+        "Lat": -16.81629,
+        "Lng": 145.63402
+       },
+       {
+        "Lat": -16.81629,
+        "Lng": 145.63402
+       },
+       {
+        "Lat": -16.81541,
+        "Lng": 145.63473
+       },
+       {
+        "Lat": -16.81541,
+        "Lng": 145.63473
+       },
+       {
+        "Lat": -16.81517,
+        "Lng": 145.63492
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-19T07:54:03+00:00"
+     },
+     {
+      "Id": "3215398765398114000",
+      "Description": "construction on Kennedy Hwy",
+      "Severity": 1,
+      "Location": "Kennedy Hwy",
+      "Type": "construction",
+      "LengthMeters": 325.0,
+      "FunctionalClass": 2,
+      "Latitude": -16.81773,
+      "Longitude": 145.63286,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "northbound",
+      "Summary": "At Captain Cook Highway - Roadworks",
+      "JunctionTraversability": null,
+      "SegmentRefs": null,
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -16.81773,
+        "Lng": 145.63286
+       },
+       {
+        "Lat": -16.81684,
+        "Lng": 145.63358
+       },
+       {
+        "Lat": -16.81684,
+        "Lng": 145.63358
+       },
+       {
+        "Lat": -16.81669,
+        "Lng": 145.6337
+       },
+       {
+        "Lat": -16.81669,
+        "Lng": 145.6337
+       },
+       {
+        "Lat": -16.81629,
+        "Lng": 145.63402
+       },
+       {
+        "Lat": -16.81629,
+        "Lng": 145.63402
+       },
+       {
+        "Lat": -16.81541,
+        "Lng": 145.63473
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-19T07:54:03+00:00"
+     },
+     {
+      "Id": "5822537306380180",
+      "Description": "construction on Kennedy Hwy",
+      "Severity": 1,
+      "Location": "Kennedy Hwy",
+      "Type": "construction",
+      "LengthMeters": 233.0,
+      "FunctionalClass": 2,
+      "Latitude": -16.81517,
+      "Longitude": 145.63492,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "northbound",
+      "Summary": "At Myola Road - Roadworks",
+      "JunctionTraversability": null,
+      "SegmentRefs": null,
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -16.81517,
+        "Lng": 145.63492
+       },
+       {
+        "Lat": -16.81541,
+        "Lng": 145.63473
+       },
+       {
+        "Lat": -16.81541,
+        "Lng": 145.63473
+       },
+       {
+        "Lat": -16.81629,
+        "Lng": 145.63402
+       },
+       {
+        "Lat": -16.81629,
+        "Lng": 145.63402
+       },
+       {
+        "Lat": -16.81669,
+        "Lng": 145.6337
+       },
+       {
+        "Lat": -16.81669,
+        "Lng": 145.6337
+       },
+       {
+        "Lat": -16.81684,
+        "Lng": 145.63358
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-19T07:54:03+00:00"
+     }
+    ],
+    "Suburb": "Kuranda",
+    "Direction": "northbound",
+    "Extent": null,
+    "DriveTimeMinutes": 1,
+    "NormalDriveTimeMinutes": 1,
+    "Latitude": null,
+    "Longitude": null,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 0,
+    "PriorityBoosted": false,
+    "BaseScore": null,
+    "BoostAmount": null,
+    "Detour": null,
+    "MaxObservationMeters": null,
+    "HotSpotMeters": null,
+    "Sources": [
+     "here",
+     "qldtraffic"
+    ],
+    "OfficialHeadline": "Hazard: Barron River Bridge Kuranda",
+    "OfficialCrossStreet": null,
+    "OfficialEvidences": [
+     {
+      "SourceId": "qldtraffic",
+      "Headline": "Hazard: Barron River Bridge Kuranda",
+      "IsIncidentClass": true,
+      "RoadName": "Kennedy Highway (Barron River Bridge)",
+      "CrossStreet": null,
+      "Suburb": "Kuranda",
+      "Direction": "Both directions",
+      "Description": "Changed traffic conditions",
+      "StartTime": "2023-12-19T15:23:00+10:00",
+      "EndTime": null,
+      "PublishedTime": null,
+      "ShapePointCount": 6,
+      "MatchBasis": "road-name",
+      "AuthorityPriority": "Medium",
+      "Category": "Hazard",
+      "SubCategory": "Adverse driving conditions",
+      "IsStateRoad": null,
+      "IsPlanned": null,
+      "AdviceTags": null,
+      "ImpactType": "Road restricted",
+      "ImpactSubtype": "Subject to a 42.5 tonne GVM limit",
+      "QualitativeDelay": "Delays expected",
+      "SpeedLimitKph": null,
+      "LastUpdated": "2026-08-27T14:35:28.210736+10:00",
+      "SourceRecordId": "608815",
+      "LanesClosed": null,
+      "LanesTotal": null
+     }
+    ]
+   },
+   {
+    "RoadName": "Gordonvale Atherton Road",
+    "Severity": 2,
+    "FunctionalClass": 3,
+    "TotalLengthMeters": 67800.0,
+    "ImpactScore": 204.0,
+    "PrimaryType": "construction",
+    "Description": "roadworks",
+    "Incidents": [
+     {
+      "Id": "851885940986861169",
+      "Description": "construction on Gordonvale Atherton Rd",
+      "Severity": 2,
+      "Location": "Gordonvale Atherton Rd",
+      "Type": "construction",
+      "LengthMeters": 33921.0,
+      "FunctionalClass": 3,
+      "Latitude": -17.26175,
+      "Longitude": 145.6212,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": "Between Wrights Creek Road and Gillies Highway - Roadworks",
+      "JunctionTraversability": null,
+      "SegmentRefs": null,
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -17.26175,
+        "Lng": 145.6212
+       },
+       {
+        "Lat": -17.23497,
+        "Lng": 145.64987
+       },
+       {
+        "Lat": -17.22069,
+        "Lng": 145.67231
+       },
+       {
+        "Lat": -17.2181,
+        "Lng": 145.68364
+       },
+       {
+        "Lat": -17.21946,
+        "Lng": 145.68993
+       },
+       {
+        "Lat": -17.21513,
+        "Lng": 145.69882
+       },
+       {
+        "Lat": -17.20072,
+        "Lng": 145.69798
+       },
+       {
+        "Lat": -17.18365,
+        "Lng": 145.69514
+       },
+       {
+        "Lat": -17.17235,
+        "Lng": 145.69573
+       },
+       {
+        "Lat": -17.16072,
+        "Lng": 145.69967
+       },
+       {
+        "Lat": -17.15384,
+        "Lng": 145.70446
+       },
+       {
+        "Lat": -17.15141,
+        "Lng": 145.70418
+       },
+       {
+        "Lat": -17.15159,
+        "Lng": 145.71167
+       },
+       {
+        "Lat": -17.13838,
+        "Lng": 145.72524
+       },
+       {
+        "Lat": -17.14012,
+        "Lng": 145.75285
+       },
+       {
+        "Lat": -17.12519,
+        "Lng": 145.76898
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-27T02:44:01+00:00"
+     },
+     {
+      "Id": "4371712846068445315",
+      "Description": "construction on Gordonvale Atherton Rd",
+      "Severity": 2,
+      "Location": "Gordonvale Atherton Rd",
+      "Type": "construction",
+      "LengthMeters": 33830.0,
+      "FunctionalClass": 3,
+      "Latitude": -17.12359,
+      "Longitude": 145.76921,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": "Between Gillies Highway and Wrights Creek Road - Roadworks",
+      "JunctionTraversability": null,
+      "SegmentRefs": null,
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -17.12359,
+        "Lng": 145.76921
+       },
+       {
+        "Lat": -17.13919,
+        "Lng": 145.75467
+       },
+       {
+        "Lat": -17.13724,
+        "Lng": 145.72632
+       },
+       {
+        "Lat": -17.15145,
+        "Lng": 145.71182
+       },
+       {
+        "Lat": -17.15166,
+        "Lng": 145.70482
+       },
+       {
+        "Lat": -17.15321,
+        "Lng": 145.70347
+       },
+       {
+        "Lat": -17.15993,
+        "Lng": 145.69971
+       },
+       {
+        "Lat": -17.17208,
+        "Lng": 145.69675
+       },
+       {
+        "Lat": -17.18234,
+        "Lng": 145.69478
+       },
+       {
+        "Lat": -17.19918,
+        "Lng": 145.69873
+       },
+       {
+        "Lat": -17.21372,
+        "Lng": 145.69877
+       },
+       {
+        "Lat": -17.22016,
+        "Lng": 145.69025
+       },
+       {
+        "Lat": -17.21689,
+        "Lng": 145.68393
+       },
+       {
+        "Lat": -17.21895,
+        "Lng": 145.67197
+       },
+       {
+        "Lat": -17.23222,
+        "Lng": 145.65126
+       },
+       {
+        "Lat": -17.25986,
+        "Lng": 145.62273
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-27T02:44:01+00:00"
+     }
+    ],
+    "Suburb": "Lake Barrine",
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": 39,
+    "NormalDriveTimeMinutes": 37,
+    "Latitude": null,
+    "Longitude": null,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 2,
+    "PriorityBoosted": false,
+    "BaseScore": null,
+    "BoostAmount": null,
+    "Detour": null,
+    "MaxObservationMeters": null,
+    "HotSpotMeters": null,
+    "Sources": [
+     "here"
+    ],
+    "OfficialHeadline": null,
+    "OfficialCrossStreet": null,
+    "OfficialEvidences": null
+   }
+  ],
+  "MonitoredRoutes": [],
+  "GoodRunRoads": [
+   "Sheridan St",
+   "Comport St",
+   "Kenny St",
+   "Draper St",
+   "Smithfield Byp"
+  ],
+  "FlowPool": [
+   {
+    "RoadName": "Sheridan St",
+    "JamFactor": 3.6,
+    "LengthMeters": 3800.0,
+    "IsWeighted": false,
+    "FunctionalClass": 1,
+    "Score": 62.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Comport St",
+    "JamFactor": 1.4,
+    "LengthMeters": 2200.0,
+    "IsWeighted": false,
+    "FunctionalClass": 1,
+    "Score": 62.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Kenny St",
+    "JamFactor": 1.2,
+    "LengthMeters": 1200.0,
+    "IsWeighted": false,
+    "FunctionalClass": 1,
+    "Score": 62.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Draper St",
+    "JamFactor": 2,
+    "LengthMeters": 700.0,
+    "IsWeighted": false,
+    "FunctionalClass": 1,
+    "Score": 62.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Smithfield Byp",
+    "JamFactor": 2.3,
+    "LengthMeters": 6700.0,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   }
+  ],
+  "Weather": {
+   "Conditions": "Passing clouds. Warm.",
+   "TemperatureC": 27,
+   "WindDescription": "fresh Southeast wind",
+   "PrecipitationProbabilityPercent": 5,
+   "Alerts": []
+  },
+  "Fuel": {
+   "Summaries": [
+    {
+     "FuelType": "Unleaded 91",
+     "MinPrice": 1.995,
+     "AveragePrice": 2.06,
+     "StationCount": 48,
+     "LatestModifiedUtc": "2026-08-27T05:33:06+00:00"
+    },
+    {
+     "FuelType": "Diesel",
+     "MinPrice": 2.43,
+     "AveragePrice": 2.515,
+     "StationCount": 39,
+     "LatestModifiedUtc": "2026-08-27T05:33:06+00:00"
+    }
+   ]
+  },
+  "IncidentChanges": null,
+  "Guidance": {
+   "Entries": [],
+   "DroppedCount": 0
+  },
+  "EditedIncidents": [],
+  "FutureLessons": []
+ },
+ "Coverage": {
+  "Latitude": -16.900466,
+  "Longitude": 145.69998149999998,
+  "RadiusKm": 32.00156872391492,
+  "ShapeType": "polygon",
+  "West": null,
+  "South": null,
+  "East": null,
+  "North": null,
+  "CorridorPoints": null,
+  "CorridorRadiusMeters": null,
+  "PolygonPoints": [
+   {
+    "Lat": -17.149932,
+    "Lng": 145.720283
+   },
+   {
+    "Lat": -17.14981,
+    "Lng": 145.658486
+   },
+   {
+    "Lat": -17.096782,
+    "Lng": 145.623892
+   },
+   {
+    "Lat": -16.901715,
+    "Lng": 145.550097
+   },
+   {
+    "Lat": -16.651,
+    "Lng": 145.567667
+   },
+   {
+    "Lat": -16.722676,
+    "Lng": 145.686721
+   },
+   {
+    "Lat": -16.87178,
+    "Lng": 145.849866
+   },
+   {
+    "Lat": -17.126154,
+    "Lng": 145.839069
+   },
+   {
+    "Lat": -17.146535,
+    "Lng": 145.827527
+   },
+   {
+    "Lat": -17.148005,
+    "Lng": 145.826237
+   },
+   {
+    "Lat": -17.149355,
+    "Lng": 145.824707
+   }
+  ],
+  "WeatherCoverage": null,
+  "FuelCoverage": null
+ },
+ "FullCorridorPool": [
+  {
+   "RoadName": "Kennedy Highway",
+   "Severity": 1,
+   "FunctionalClass": 2,
+   "TotalLengthMeters": 1000.0,
+   "ImpactScore": 322.5,
+   "PrimaryType": "roadHazard",
+   "Description": "hazard and roadworks northbound",
+   "Incidents": [
+    {
+     "Id": "1775085339166027120",
+     "Description": "roadHazard on Kennedy Hwy",
+     "Severity": 1,
+     "Location": "Kennedy Hwy",
+     "Type": "roadHazard",
+     "LengthMeters": 247.0,
+     "FunctionalClass": 2,
+     "Latitude": -16.81492,
+     "Longitude": 145.63512,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "northbound",
+     "Summary": "At Myola Road - Hazardous driving conditions",
+     "JunctionTraversability": null,
+     "SegmentRefs": null,
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -16.81492,
+       "Lng": 145.63512
+      },
+      {
+       "Lat": -16.81517,
+       "Lng": 145.63492
+      },
+      {
+       "Lat": -16.81517,
+       "Lng": 145.63492
+      },
+      {
+       "Lat": -16.81541,
+       "Lng": 145.63473
+      },
+      {
+       "Lat": -16.81541,
+       "Lng": 145.63473
+      },
+      {
+       "Lat": -16.81629,
+       "Lng": 145.63402
+      },
+      {
+       "Lat": -16.81629,
+       "Lng": 145.63402
+      },
+      {
+       "Lat": -16.81669,
+       "Lng": 145.6337
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-19T07:54:03+00:00"
+    },
+    {
+     "Id": "342694560345213054",
+     "Description": "roadHazard on Kennedy Hwy",
+     "Severity": 1,
+     "Location": "Kennedy Hwy",
+     "Type": "roadHazard",
+     "LengthMeters": 233.0,
+     "FunctionalClass": 2,
+     "Latitude": -16.81684,
+     "Longitude": 145.63358,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "northbound",
+     "Summary": "At Captain Cook Highway - Hazardous driving conditions",
+     "JunctionTraversability": null,
+     "SegmentRefs": null,
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -16.81684,
+       "Lng": 145.63358
+      },
+      {
+       "Lat": -16.81669,
+       "Lng": 145.6337
+      },
+      {
+       "Lat": -16.81669,
+       "Lng": 145.6337
+      },
+      {
+       "Lat": -16.81629,
+       "Lng": 145.63402
+      },
+      {
+       "Lat": -16.81629,
+       "Lng": 145.63402
+      },
+      {
+       "Lat": -16.81541,
+       "Lng": 145.63473
+      },
+      {
+       "Lat": -16.81541,
+       "Lng": 145.63473
+      },
+      {
+       "Lat": -16.81517,
+       "Lng": 145.63492
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-19T07:54:03+00:00"
+    },
+    {
+     "Id": "3215398765398114000",
+     "Description": "construction on Kennedy Hwy",
+     "Severity": 1,
+     "Location": "Kennedy Hwy",
+     "Type": "construction",
+     "LengthMeters": 325.0,
+     "FunctionalClass": 2,
+     "Latitude": -16.81773,
+     "Longitude": 145.63286,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "northbound",
+     "Summary": "At Captain Cook Highway - Roadworks",
+     "JunctionTraversability": null,
+     "SegmentRefs": null,
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -16.81773,
+       "Lng": 145.63286
+      },
+      {
+       "Lat": -16.81684,
+       "Lng": 145.63358
+      },
+      {
+       "Lat": -16.81684,
+       "Lng": 145.63358
+      },
+      {
+       "Lat": -16.81669,
+       "Lng": 145.6337
+      },
+      {
+       "Lat": -16.81669,
+       "Lng": 145.6337
+      },
+      {
+       "Lat": -16.81629,
+       "Lng": 145.63402
+      },
+      {
+       "Lat": -16.81629,
+       "Lng": 145.63402
+      },
+      {
+       "Lat": -16.81541,
+       "Lng": 145.63473
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-19T07:54:03+00:00"
+    },
+    {
+     "Id": "5822537306380180",
+     "Description": "construction on Kennedy Hwy",
+     "Severity": 1,
+     "Location": "Kennedy Hwy",
+     "Type": "construction",
+     "LengthMeters": 233.0,
+     "FunctionalClass": 2,
+     "Latitude": -16.81517,
+     "Longitude": 145.63492,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "northbound",
+     "Summary": "At Myola Road - Roadworks",
+     "JunctionTraversability": null,
+     "SegmentRefs": null,
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -16.81517,
+       "Lng": 145.63492
+      },
+      {
+       "Lat": -16.81541,
+       "Lng": 145.63473
+      },
+      {
+       "Lat": -16.81541,
+       "Lng": 145.63473
+      },
+      {
+       "Lat": -16.81629,
+       "Lng": 145.63402
+      },
+      {
+       "Lat": -16.81629,
+       "Lng": 145.63402
+      },
+      {
+       "Lat": -16.81669,
+       "Lng": 145.6337
+      },
+      {
+       "Lat": -16.81669,
+       "Lng": 145.6337
+      },
+      {
+       "Lat": -16.81684,
+       "Lng": 145.63358
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-19T07:54:03+00:00"
+    }
+   ],
+   "Suburb": "Kuranda",
+   "Direction": "northbound",
+   "Extent": null,
+   "DriveTimeMinutes": 1,
+   "NormalDriveTimeMinutes": 1,
+   "Latitude": null,
+   "Longitude": null,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 0,
+   "PriorityBoosted": false,
+   "BaseScore": null,
+   "BoostAmount": null,
+   "Detour": null,
+   "MaxObservationMeters": null,
+   "HotSpotMeters": null,
+   "Sources": [
+    "here",
+    "qldtraffic"
+   ],
+   "OfficialHeadline": "Hazard: Barron River Bridge Kuranda",
+   "OfficialCrossStreet": null,
+   "OfficialEvidences": [
+    {
+     "SourceId": "qldtraffic",
+     "Headline": "Hazard: Barron River Bridge Kuranda",
+     "IsIncidentClass": true,
+     "RoadName": "Kennedy Highway (Barron River Bridge)",
+     "CrossStreet": null,
+     "Suburb": "Kuranda",
+     "Direction": "Both directions",
+     "Description": "Changed traffic conditions",
+     "StartTime": "2023-12-19T15:23:00+10:00",
+     "EndTime": null,
+     "PublishedTime": null,
+     "ShapePointCount": 6,
+     "MatchBasis": "road-name",
+     "AuthorityPriority": "Medium",
+     "Category": "Hazard",
+     "SubCategory": "Adverse driving conditions",
+     "IsStateRoad": null,
+     "IsPlanned": null,
+     "AdviceTags": null,
+     "ImpactType": "Road restricted",
+     "ImpactSubtype": "Subject to a 42.5 tonne GVM limit",
+     "QualitativeDelay": "Delays expected",
+     "SpeedLimitKph": null,
+     "LastUpdated": "2026-08-27T14:35:28.210736+10:00",
+     "SourceRecordId": "608815",
+     "LanesClosed": null,
+     "LanesTotal": null
+    }
+   ]
+  },
+  {
+   "RoadName": "Gordonvale Atherton Road",
+   "Severity": 2,
+   "FunctionalClass": 3,
+   "TotalLengthMeters": 67800.0,
+   "ImpactScore": 204.0,
+   "PrimaryType": "construction",
+   "Description": "roadworks",
+   "Incidents": [
+    {
+     "Id": "851885940986861169",
+     "Description": "construction on Gordonvale Atherton Rd",
+     "Severity": 2,
+     "Location": "Gordonvale Atherton Rd",
+     "Type": "construction",
+     "LengthMeters": 33921.0,
+     "FunctionalClass": 3,
+     "Latitude": -17.26175,
+     "Longitude": 145.6212,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": "Between Wrights Creek Road and Gillies Highway - Roadworks",
+     "JunctionTraversability": null,
+     "SegmentRefs": null,
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -17.26175,
+       "Lng": 145.6212
+      },
+      {
+       "Lat": -17.23497,
+       "Lng": 145.64987
+      },
+      {
+       "Lat": -17.22069,
+       "Lng": 145.67231
+      },
+      {
+       "Lat": -17.2181,
+       "Lng": 145.68364
+      },
+      {
+       "Lat": -17.21946,
+       "Lng": 145.68993
+      },
+      {
+       "Lat": -17.21513,
+       "Lng": 145.69882
+      },
+      {
+       "Lat": -17.20072,
+       "Lng": 145.69798
+      },
+      {
+       "Lat": -17.18365,
+       "Lng": 145.69514
+      },
+      {
+       "Lat": -17.17235,
+       "Lng": 145.69573
+      },
+      {
+       "Lat": -17.16072,
+       "Lng": 145.69967
+      },
+      {
+       "Lat": -17.15384,
+       "Lng": 145.70446
+      },
+      {
+       "Lat": -17.15141,
+       "Lng": 145.70418
+      },
+      {
+       "Lat": -17.15159,
+       "Lng": 145.71167
+      },
+      {
+       "Lat": -17.13838,
+       "Lng": 145.72524
+      },
+      {
+       "Lat": -17.14012,
+       "Lng": 145.75285
+      },
+      {
+       "Lat": -17.12519,
+       "Lng": 145.76898
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-27T02:44:01+00:00"
+    },
+    {
+     "Id": "4371712846068445315",
+     "Description": "construction on Gordonvale Atherton Rd",
+     "Severity": 2,
+     "Location": "Gordonvale Atherton Rd",
+     "Type": "construction",
+     "LengthMeters": 33830.0,
+     "FunctionalClass": 3,
+     "Latitude": -17.12359,
+     "Longitude": 145.76921,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": "Between Gillies Highway and Wrights Creek Road - Roadworks",
+     "JunctionTraversability": null,
+     "SegmentRefs": null,
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -17.12359,
+       "Lng": 145.76921
+      },
+      {
+       "Lat": -17.13919,
+       "Lng": 145.75467
+      },
+      {
+       "Lat": -17.13724,
+       "Lng": 145.72632
+      },
+      {
+       "Lat": -17.15145,
+       "Lng": 145.71182
+      },
+      {
+       "Lat": -17.15166,
+       "Lng": 145.70482
+      },
+      {
+       "Lat": -17.15321,
+       "Lng": 145.70347
+      },
+      {
+       "Lat": -17.15993,
+       "Lng": 145.69971
+      },
+      {
+       "Lat": -17.17208,
+       "Lng": 145.69675
+      },
+      {
+       "Lat": -17.18234,
+       "Lng": 145.69478
+      },
+      {
+       "Lat": -17.19918,
+       "Lng": 145.69873
+      },
+      {
+       "Lat": -17.21372,
+       "Lng": 145.69877
+      },
+      {
+       "Lat": -17.22016,
+       "Lng": 145.69025
+      },
+      {
+       "Lat": -17.21689,
+       "Lng": 145.68393
+      },
+      {
+       "Lat": -17.21895,
+       "Lng": 145.67197
+      },
+      {
+       "Lat": -17.23222,
+       "Lng": 145.65126
+      },
+      {
+       "Lat": -17.25986,
+       "Lng": 145.62273
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-27T02:44:01+00:00"
+    }
+   ],
+   "Suburb": "Lake Barrine",
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": 39,
+   "NormalDriveTimeMinutes": 37,
+   "Latitude": null,
+   "Longitude": null,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 2,
+   "PriorityBoosted": false,
+   "BaseScore": null,
+   "BoostAmount": null,
+   "Detour": null,
+   "MaxObservationMeters": null,
+   "HotSpotMeters": null,
+   "Sources": [
+    "here"
+   ],
+   "OfficialHeadline": null,
+   "OfficialCrossStreet": null,
+   "OfficialEvidences": null
+  }
+ ]
+}

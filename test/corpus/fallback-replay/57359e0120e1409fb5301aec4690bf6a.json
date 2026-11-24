@@ -1,0 +1,2548 @@
+{
+ "JobId": "57359e0120e1409fb5301aec4690bf6a",
+ "Market": "melbourne",
+ "Station": "KIIS 101.1",
+ "CapturedAtUtc": "2026-08-13T07:45:02.3469126Z",
+ "DevOutcome": {
+  "Status": "Published",
+  "FallbackKind": "missed-window",
+  "Attempts": 1,
+  "TargetWordsSeq": [
+   61
+  ],
+  "SynthWordsSeq": [
+   64
+  ],
+  "NaturalSecSeq": [
+   22.7
+  ],
+  "BestNaturalSec": 22.7,
+  "ReviewFeedbackCount": 0,
+  "SynthFailures": []
+ },
+ "Fidelity": {
+  "IncidentsRecovered": 12,
+  "IncidentsSynthesized": 0,
+  "WeatherSource": "job",
+  "FuelSource": "job",
+  "GoodRunsAndFlowPoolLost": false,
+  "StationConfigSource": "none"
+ },
+ "VoiceConfig": {
+  "Provider": "",
+  "VoiceId": "a1SQPk93LAMHsGM41p6S",
+  "VoiceName": "Jeffrey (original)",
+  "Model": "eleven_multilingual_v2",
+  "Settings": {
+   "Stability": 0.7,
+   "SimilarityBoost": 0.7,
+   "Style": 0,
+   "UseSpeakerBoost": true,
+   "Speed": 0.97
+  },
+  "PaceBoostWpm": 0
+ },
+ "Snapshot": {
+  "TargetDurationSeconds": 22,
+  "Location": "melbourne",
+  "City": null,
+  "MarketId": "melbourne",
+  "Content": {
+   "Traffic": true,
+   "Weather": true,
+   "Fuel": true,
+   "WeatherRequired": false,
+   "FuelRequired": false,
+   "HasAnySource": true,
+   "RequiresWeather": false,
+   "RequiresFuel": false
+  },
+  "FillOrder": [
+   "Weather",
+   "Fuel",
+   "MinorTraffic",
+   "Filler"
+  ],
+  "Corridors": [
+   {
+    "RoadName": "Citylink",
+    "Severity": 1,
+    "FunctionalClass": 1,
+    "TotalLengthMeters": 5806,
+    "ImpactScore": 481.6500000000001,
+    "PrimaryType": "construction",
+    "Description": "roadworks outbound",
+    "Incidents": [
+     {
+      "Id": "4244642607360724902",
+      "Description": "Between Toorak Road and Warrigal Road - Lane blocked",
+      "Severity": 1,
+      "Location": "Citylink",
+      "Type": "construction",
+      "LengthMeters": 5806,
+      "FunctionalClass": 1,
+      "Latitude": -37.84796,
+      "Longitude": 145.0429,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "outbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:224257806#-",
+       "here:cm:segment:224337489#+",
+       "here:cm:segment:242927804#-",
+       "here:cm:segment:863841578#-"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -37.84796,
+        "Lng": 145.0429
+       },
+       {
+        "Lat": -37.84898,
+        "Lng": 145.04693
+       },
+       {
+        "Lat": -37.85035,
+        "Lng": 145.04967
+       },
+       {
+        "Lat": -37.85244,
+        "Lng": 145.05393
+       },
+       {
+        "Lat": -37.85364,
+        "Lng": 145.05623
+       },
+       {
+        "Lat": -37.85449,
+        "Lng": 145.05713
+       },
+       {
+        "Lat": -37.85663,
+        "Lng": 145.05846
+       },
+       {
+        "Lat": -37.86363,
+        "Lng": 145.06051
+       },
+       {
+        "Lat": -37.86704,
+        "Lng": 145.06189
+       },
+       {
+        "Lat": -37.87091,
+        "Lng": 145.06491
+       },
+       {
+        "Lat": -37.87472,
+        "Lng": 145.06684
+       },
+       {
+        "Lat": -37.87677,
+        "Lng": 145.07022
+       },
+       {
+        "Lat": -37.87669,
+        "Lng": 145.07693
+       },
+       {
+        "Lat": -37.87676,
+        "Lng": 145.07915
+       },
+       {
+        "Lat": -37.87794,
+        "Lng": 145.08217
+       },
+       {
+        "Lat": -37.88035,
+        "Lng": 145.08654
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-13T05:45:45+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "outbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -37.84796,
+    "Longitude": 145.0429,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 12,
+    "PriorityBoosted": true,
+    "Detour": null,
+    "DelayMinutes": 12
+   },
+   {
+    "RoadName": "Mulgrave",
+    "Severity": 1,
+    "FunctionalClass": 1,
+    "TotalLengthMeters": 1263,
+    "ImpactScore": 446.11015314609386,
+    "PrimaryType": "congestion",
+    "Description": "heavy congestion outbound",
+    "Incidents": [
+     {
+      "Id": "4060420453570662572",
+      "Description": "At Jacksons Road - Traffic congestion",
+      "Severity": 1,
+      "Location": "Mulgrave",
+      "Type": "congestion",
+      "LengthMeters": 984,
+      "FunctionalClass": 1,
+      "Latitude": -37.92384,
+      "Longitude": 145.17817,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "outbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:916736145#-"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -37.92384,
+        "Lng": 145.17817
+       },
+       {
+        "Lat": -37.92468,
+        "Lng": 145.17922
+       },
+       {
+        "Lat": -37.92468,
+        "Lng": 145.17922
+       },
+       {
+        "Lat": -37.92512,
+        "Lng": 145.17977
+       },
+       {
+        "Lat": -37.92512,
+        "Lng": 145.17977
+       },
+       {
+        "Lat": -37.92522,
+        "Lng": 145.17989
+       },
+       {
+        "Lat": -37.92522,
+        "Lng": 145.17989
+       },
+       {
+        "Lat": -37.92855,
+        "Lng": 145.18406
+       },
+       {
+        "Lat": -37.92855,
+        "Lng": 145.18406
+       },
+       {
+        "Lat": -37.92949,
+        "Lng": 145.18524
+       },
+       {
+        "Lat": -37.92949,
+        "Lng": 145.18524
+       },
+       {
+        "Lat": -37.93017,
+        "Lng": 145.18609
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-13T07:41:36+00:00"
+     },
+     {
+      "Id": "4191466714243838546",
+      "Description": "At Springvale Road - Traffic congestion",
+      "Severity": 1,
+      "Location": "Mulgrave",
+      "Type": "congestion",
+      "LengthMeters": 201,
+      "FunctionalClass": 1,
+      "Latitude": -37.91262,
+      "Longitude": 145.1655,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "citybound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:221571851#+"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -37.91262,
+        "Lng": 145.1655
+       },
+       {
+        "Lat": -37.91211,
+        "Lng": 145.16489
+       },
+       {
+        "Lat": -37.91211,
+        "Lng": 145.16489
+       },
+       {
+        "Lat": -37.91166,
+        "Lng": 145.16435
+       },
+       {
+        "Lat": -37.91166,
+        "Lng": 145.16435
+       },
+       {
+        "Lat": -37.91132,
+        "Lng": 145.16391
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-13T07:42:06+00:00"
+     },
+     {
+      "Id": "3244182394913752545",
+      "Description": "At Springvale Road - Backed-up traffic. Approach with care",
+      "Severity": 1,
+      "Location": "Mulgrave",
+      "Type": "congestion",
+      "LengthMeters": 78,
+      "FunctionalClass": 1,
+      "Latitude": -37.91262,
+      "Longitude": 145.1655,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:221571851#+"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -37.91262,
+        "Lng": 145.1655
+       },
+       {
+        "Lat": -37.91211,
+        "Lng": 145.16489
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-13T07:42:28+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "outbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -37.92384,
+    "Longitude": 145.17817,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   },
+   {
+    "RoadName": "Glen Waverley",
+    "Severity": 1,
+    "FunctionalClass": 1,
+    "TotalLengthMeters": 331,
+    "ImpactScore": 399.75000000000006,
+    "PrimaryType": "congestion",
+    "Description": "heavy congestion outbound",
+    "Incidents": [
+     {
+      "Id": "1090869890451214569",
+      "Description": "At Ferntree Gully Road - Traffic congestion",
+      "Severity": 1,
+      "Location": "Glen Waverley",
+      "Type": "congestion",
+      "LengthMeters": 331,
+      "FunctionalClass": 1,
+      "Latitude": -37.89678,
+      "Longitude": 145.14789,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "outbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:916714334#-"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -37.89678,
+        "Lng": 145.14789
+       },
+       {
+        "Lat": -37.89702,
+        "Lng": 145.14818
+       },
+       {
+        "Lat": -37.8974,
+        "Lng": 145.14855
+       },
+       {
+        "Lat": -37.89756,
+        "Lng": 145.14869
+       },
+       {
+        "Lat": -37.89756,
+        "Lng": 145.14869
+       },
+       {
+        "Lat": -37.89778,
+        "Lng": 145.14888
+       },
+       {
+        "Lat": -37.89778,
+        "Lng": 145.14888
+       },
+       {
+        "Lat": -37.89839,
+        "Lng": 145.1494
+       },
+       {
+        "Lat": -37.89839,
+        "Lng": 145.1494
+       },
+       {
+        "Lat": -37.89903,
+        "Lng": 145.14996
+       },
+       {
+        "Lat": -37.89903,
+        "Lng": 145.14996
+       },
+       {
+        "Lat": -37.8992,
+        "Lng": 145.15012
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-13T07:40:36+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "outbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -37.89678,
+    "Longitude": 145.14789,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   },
+   {
+    "RoadName": "Frankston Freeway",
+    "Severity": 1,
+    "FunctionalClass": 1,
+    "TotalLengthMeters": 5530,
+    "ImpactScore": 382.20000000000005,
+    "PrimaryType": "construction",
+    "Description": "roadworks outbound",
+    "Incidents": [
+     {
+      "Id": "504356780986040053",
+      "Description": "Between EastLink and Danendong-Frankston - Maintenance work",
+      "Severity": 1,
+      "Location": "Frankston Fwy",
+      "Type": "construction",
+      "LengthMeters": 1766,
+      "FunctionalClass": 1,
+      "Latitude": -38.10604,
+      "Longitude": 145.13993,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "outbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:476731761#-",
+       "here:cm:segment:219097124#-"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -38.10604,
+        "Lng": 145.13993
+       },
+       {
+        "Lat": -38.107,
+        "Lng": 145.13977
+       },
+       {
+        "Lat": -38.10819,
+        "Lng": 145.13948
+       },
+       {
+        "Lat": -38.10883,
+        "Lng": 145.13926
+       },
+       {
+        "Lat": -38.11117,
+        "Lng": 145.13849
+       },
+       {
+        "Lat": -38.11235,
+        "Lng": 145.13811
+       },
+       {
+        "Lat": -38.11317,
+        "Lng": 145.13788
+       },
+       {
+        "Lat": -38.11656,
+        "Lng": 145.1375
+       },
+       {
+        "Lat": -38.11681,
+        "Lng": 145.13748
+       },
+       {
+        "Lat": -38.1171,
+        "Lng": 145.13746
+       },
+       {
+        "Lat": -38.11842,
+        "Lng": 145.13724
+       },
+       {
+        "Lat": -38.11888,
+        "Lng": 145.13707
+       },
+       {
+        "Lat": -38.11966,
+        "Lng": 145.13675
+       },
+       {
+        "Lat": -38.12072,
+        "Lng": 145.13631
+       },
+       {
+        "Lat": -38.12102,
+        "Lng": 145.13619
+       },
+       {
+        "Lat": -38.12156,
+        "Lng": 145.13594
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-07T16:49:42+00:00"
+     },
+     {
+      "Id": "2357146535406270131",
+      "Description": "Between Beach Street and Danendong-Frankston - Lane blocked",
+      "Severity": 2,
+      "Location": "Frankston Fwy",
+      "Type": "construction",
+      "LengthMeters": 3764,
+      "FunctionalClass": 3,
+      "Latitude": -38.14382,
+      "Longitude": 145.13646,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "citybound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:221658615#+",
+       "here:cm:segment:221137527#+",
+       "here:cm:segment:221072374#+"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -38.14382,
+        "Lng": 145.13646
+       },
+       {
+        "Lat": -38.143,
+        "Lng": 145.13648
+       },
+       {
+        "Lat": -38.14048,
+        "Lng": 145.13656
+       },
+       {
+        "Lat": -38.13417,
+        "Lng": 145.13658
+       },
+       {
+        "Lat": -38.13326,
+        "Lng": 145.1363
+       },
+       {
+        "Lat": -38.1316,
+        "Lng": 145.13514
+       },
+       {
+        "Lat": -38.12953,
+        "Lng": 145.13372
+       },
+       {
+        "Lat": -38.12881,
+        "Lng": 145.13342
+       },
+       {
+        "Lat": -38.12748,
+        "Lng": 145.13333
+       },
+       {
+        "Lat": -38.12361,
+        "Lng": 145.13483
+       },
+       {
+        "Lat": -38.12126,
+        "Lng": 145.13588
+       },
+       {
+        "Lat": -38.1205,
+        "Lng": 145.13621
+       },
+       {
+        "Lat": -38.11882,
+        "Lng": 145.13691
+       },
+       {
+        "Lat": -38.11421,
+        "Lng": 145.13749
+       },
+       {
+        "Lat": -38.11279,
+        "Lng": 145.13774
+       },
+       {
+        "Lat": -38.11107,
+        "Lng": 145.13828
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-07T04:55:23+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "outbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -38.10604,
+    "Longitude": 145.13993,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 1,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": 1
+   },
+   {
+    "RoadName": "O'Herns Road",
+    "Severity": 1,
+    "FunctionalClass": 1,
+    "TotalLengthMeters": 420,
+    "ImpactScore": 370.50000000000006,
+    "PrimaryType": "construction",
+    "Description": "roadworks outbound",
+    "Incidents": [
+     {
+      "Id": "1213996226902935298",
+      "Description": "At Craigieburn Road - Maintenance work",
+      "Severity": 1,
+      "Location": "O'Herns Rd",
+      "Type": "construction",
+      "LengthMeters": 420,
+      "FunctionalClass": 1,
+      "Latitude": -37.63406,
+      "Longitude": 144.99337,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "outbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:816639023#+"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -37.63406,
+        "Lng": 144.99337
+       },
+       {
+        "Lat": -37.63392,
+        "Lng": 144.9934
+       },
+       {
+        "Lat": -37.63392,
+        "Lng": 144.9934
+       },
+       {
+        "Lat": -37.63213,
+        "Lng": 144.99373
+       },
+       {
+        "Lat": -37.63106,
+        "Lng": 144.99385
+       },
+       {
+        "Lat": -37.63031,
+        "Lng": 144.99391
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-07T16:49:42+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "outbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -37.63406,
+    "Longitude": 144.99337,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   },
+   {
+    "RoadName": "Glen Iris",
+    "Severity": 1,
+    "FunctionalClass": 1,
+    "TotalLengthMeters": 347,
+    "ImpactScore": 343.16165626622603,
+    "PrimaryType": "disabledVehicle",
+    "Description": "breakdown and roadworks",
+    "Incidents": [
+     {
+      "Id": "2959058248733656344",
+      "Description": "At Toorak Road - Lane blocked",
+      "Severity": 1,
+      "Location": "Glen Iris",
+      "Type": "construction",
+      "LengthMeters": 182,
+      "FunctionalClass": 1,
+      "Latitude": -37.84998,
+      "Longitude": 145.0487,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "citybound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:895978235#-"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -37.84998,
+        "Lng": 145.0487
+       },
+       {
+        "Lat": -37.84979,
+        "Lng": 145.04835
+       },
+       {
+        "Lat": -37.84952,
+        "Lng": 145.04778
+       },
+       {
+        "Lat": -37.84936,
+        "Lng": 145.04741
+       },
+       {
+        "Lat": -37.84917,
+        "Lng": 145.04688
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-10T23:19:47+00:00"
+     },
+     {
+      "Id": "3552563758065187357",
+      "Description": "At High Street - Broken-down vehicle",
+      "Severity": 1,
+      "Location": "Glen Iris",
+      "Type": "disabledVehicle",
+      "LengthMeters": 106,
+      "FunctionalClass": 1,
+      "Latitude": -37.86097,
+      "Longitude": 145.05954,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:220297635#+"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -37.86097,
+        "Lng": 145.05954
+       },
+       {
+        "Lat": -37.86004,
+        "Lng": 145.05927
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-13T07:25:22+00:00"
+     },
+     {
+      "Id": "3789994757881817177",
+      "Description": "At Monash Freeway - Lane blocked",
+      "Severity": 1,
+      "Location": "Glen Iris",
+      "Type": "construction",
+      "LengthMeters": 59,
+      "FunctionalClass": 1,
+      "Latitude": -37.85229,
+      "Longitude": 145.05284,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:215549173#-",
+       "here:cm:segment:216393964#-"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -37.85229,
+        "Lng": 145.05284
+       },
+       {
+        "Lat": -37.85244,
+        "Lng": 145.05284
+       },
+       {
+        "Lat": -37.85244,
+        "Lng": 145.05284
+       },
+       {
+        "Lat": -37.85282,
+        "Lng": 145.05283
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-10T23:19:47+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": 4,
+    "NormalDriveTimeMinutes": 4,
+    "Latitude": -37.86097,
+    "Longitude": 145.05954,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 2,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": 0
+   },
+   {
+    "RoadName": "Greensborough Road",
+    "Severity": 1,
+    "FunctionalClass": 2,
+    "TotalLengthMeters": 2126,
+    "ImpactScore": 331.50000000000006,
+    "PrimaryType": "construction",
+    "Description": "roadworks outbound",
+    "Incidents": [
+     {
+      "Id": "1324429798919286705",
+      "Description": "Between Lower Plenty Road and Watsonia Road - Lane blocked",
+      "Severity": 1,
+      "Location": "Greensborough Rd",
+      "Type": "construction",
+      "LengthMeters": 2126,
+      "FunctionalClass": 2,
+      "Latitude": -37.73447,
+      "Longitude": 145.07866,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "outbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:219397321#-",
+       "here:cm:segment:227258961#+",
+       "here:cm:segment:224712356#-",
+       "here:cm:segment:215797022#+",
+       "here:cm:segment:225837567#-",
+       "here:cm:segment:893680867#+",
+       "here:cm:segment:898818548#+",
+       "here:cm:segment:898818438#+",
+       "here:cm:segment:215399605#+",
+       "here:cm:segment:478121408#+",
+       "here:cm:segment:218046924#+",
+       "here:cm:segment:220461047#-",
+       "here:cm:segment:216379527#+",
+       "here:cm:segment:221671334#-",
+       "here:cm:segment:503574274#+",
+       "here:cm:segment:220754188#-",
+       "here:cm:segment:634333193#+",
+       "here:cm:segment:915873718#+",
+       "here:cm:segment:915873698#+",
+       "here:cm:segment:634333537#-",
+       "here:cm:segment:898085796#+",
+       "here:cm:segment:919306411#+"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -37.73447,
+        "Lng": 145.07866
+       },
+       {
+        "Lat": -37.73344,
+        "Lng": 145.07879
+       },
+       {
+        "Lat": -37.73247,
+        "Lng": 145.07897
+       },
+       {
+        "Lat": -37.73158,
+        "Lng": 145.07914
+       },
+       {
+        "Lat": -37.73001,
+        "Lng": 145.07944
+       },
+       {
+        "Lat": -37.72786,
+        "Lng": 145.07982
+       },
+       {
+        "Lat": -37.7256,
+        "Lng": 145.0802
+       },
+       {
+        "Lat": -37.72447,
+        "Lng": 145.08041
+       },
+       {
+        "Lat": -37.72267,
+        "Lng": 145.08071
+       },
+       {
+        "Lat": -37.72192,
+        "Lng": 145.08083
+       },
+       {
+        "Lat": -37.7209,
+        "Lng": 145.08097
+       },
+       {
+        "Lat": -37.71989,
+        "Lng": 145.08114
+       },
+       {
+        "Lat": -37.71865,
+        "Lng": 145.08128
+       },
+       {
+        "Lat": -37.71706,
+        "Lng": 145.08156
+       },
+       {
+        "Lat": -37.71648,
+        "Lng": 145.08166
+       },
+       {
+        "Lat": -37.71554,
+        "Lng": 145.08182
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-07T16:57:16+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "outbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -37.73447,
+    "Longitude": 145.07866,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 1,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": 1
+   }
+  ],
+  "MonitoredRoutes": [
+   {
+    "Name": "the Monash citybound from EastLink",
+    "Origin": {
+     "Lat": -37.91,
+     "Lng": 145.18
+    },
+    "Destination": {
+     "Lat": -37.8136,
+     "Lng": 144.9631
+    },
+    "DriveTimeMinutes": 46,
+    "NormalDriveTimeMinutes": 34,
+    "DistanceKm": 26.586,
+    "DelayMinutes": 12
+   },
+   {
+    "Name": "the West Gate citybound",
+    "Origin": {
+     "Lat": -37.83,
+     "Lng": 144.89
+    },
+    "Destination": {
+     "Lat": -37.82,
+     "Lng": 144.95
+    },
+    "DriveTimeMinutes": 13,
+    "NormalDriveTimeMinutes": 13,
+    "DistanceKm": 8.439,
+    "DelayMinutes": 0
+   }
+  ],
+  "GoodRunRoads": [
+   "Victoria Road",
+   "Burwood Highway",
+   "Thompson Road"
+  ],
+  "FlowPool": [
+   {
+    "RoadName": "Victoria Road",
+    "JamFactor": 3.1,
+    "LengthMeters": 6772,
+    "IsWeighted": false,
+    "FunctionalClass": 2,
+    "Score": 52.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Burwood Highway",
+    "JamFactor": 3.7,
+    "LengthMeters": 25786,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Thompson Road",
+    "JamFactor": 3.5,
+    "LengthMeters": 24034,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Kangaroo Ground-St Andrews Road",
+    "JamFactor": 2.3,
+    "LengthMeters": 22682,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Ballarto Road",
+    "JamFactor": 3.5,
+    "LengthMeters": 20306,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Manor Lakes Drive",
+    "JamFactor": 1.1,
+    "LengthMeters": 19971,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Williamstown Road",
+    "JamFactor": 3.2,
+    "LengthMeters": 19392,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Melton Highway",
+    "JamFactor": 3.8,
+    "LengthMeters": 17672,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Greens Road",
+    "JamFactor": 3.6,
+    "LengthMeters": 17404,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Mickleham Road",
+    "JamFactor": 2.4,
+    "LengthMeters": 15337,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Leakes Road",
+    "JamFactor": 1.1,
+    "LengthMeters": 15088,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Donnybrook Road",
+    "JamFactor": 1.5,
+    "LengthMeters": 15051,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Sunbury Road",
+    "JamFactor": 1,
+    "LengthMeters": 15028,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Eltham-Yarra Glen Road",
+    "JamFactor": 1.3,
+    "LengthMeters": 15012,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Dalton Road",
+    "JamFactor": 3.9,
+    "LengthMeters": 14863,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Church Road",
+    "JamFactor": 3.9,
+    "LengthMeters": 14862,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Diggers Rest-Coimadai Road",
+    "JamFactor": 0.7,
+    "LengthMeters": 14507,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Taylors Road",
+    "JamFactor": 3.9,
+    "LengthMeters": 14045,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Millers Road",
+    "JamFactor": 3,
+    "LengthMeters": 13779,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   }
+  ],
+  "Weather": {
+   "Conditions": "Overcast. Cool.",
+   "TemperatureC": 13,
+   "WindDescription": null,
+   "PrecipitationProbabilityPercent": 42,
+   "Alerts": [],
+   "Outlook": "reaching 15 degrees later today; tomorrow sprinkles early. breaks of sun late. cool, around 14 degrees",
+   "IsForecast": false,
+   "HasMajorAlert": false
+  },
+  "Fuel": {
+   "Summaries": [
+    {
+     "FuelType": "Unleaded 91",
+     "MinPrice": 1.912,
+     "AveragePrice": 2.004,
+     "StationCount": 50,
+     "LatestModifiedUtc": "2026-08-13T07:05:44+00:00",
+     "CheapestStationSuburb": "Williamstown"
+    },
+    {
+     "FuelType": "Diesel",
+     "MinPrice": 2.372,
+     "AveragePrice": 2.44,
+     "StationCount": 15,
+     "LatestModifiedUtc": "2026-08-13T07:01:55+00:00",
+     "CheapestStationSuburb": "Williamstown"
+    }
+   ],
+   "HasPrices": true
+  },
+  "IncidentChanges": {
+   "NewIncidents": [
+    {
+     "IncidentId": "4060420453570662572",
+     "Type": "congestion",
+     "Criticality": 1,
+     "RoadName": "Mulgrave",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 984,
+     "Description": "At Jacksons Road - Traffic congestion"
+    },
+    {
+     "IncidentId": "4191466714243838546",
+     "Type": "congestion",
+     "Criticality": 1,
+     "RoadName": "Mulgrave",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 201,
+     "Description": "At Springvale Road - Traffic congestion"
+    },
+    {
+     "IncidentId": "3244182394913752545",
+     "Type": "congestion",
+     "Criticality": 1,
+     "RoadName": "Mulgrave",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 78,
+     "Description": "At Springvale Road - Backed-up traffic. Approach with care"
+    },
+    {
+     "IncidentId": "1090869890451214569",
+     "Type": "congestion",
+     "Criticality": 1,
+     "RoadName": "Glen Waverley",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 331,
+     "Description": "At Ferntree Gully Road - Traffic congestion"
+    }
+   ],
+   "UpdatedIncidents": [],
+   "ClearedIncidents": [
+    {
+     "IncidentId": "1029319206762224967",
+     "Type": "congestion",
+     "Criticality": 1,
+     "RoadName": "Western Ring Rd",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 417,
+     "Description": null
+    },
+    {
+     "IncidentId": "1906959318044672781",
+     "Type": "congestion",
+     "Criticality": 1,
+     "RoadName": "Western Ring Rd",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 166,
+     "Description": null
+    },
+    {
+     "IncidentId": "4536192728029876506",
+     "Type": "congestion",
+     "Criticality": 1,
+     "RoadName": "Blackburn Rd",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 159,
+     "Description": null
+    }
+   ],
+   "UnchangedIncidents": [
+    {
+     "IncidentId": "4244642607360724902",
+     "Type": "construction",
+     "Criticality": 1,
+     "RoadName": "Citylink",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 5806,
+     "Description": "Between Toorak Road and Warrigal Road - Lane blocked"
+    },
+    {
+     "IncidentId": "504356780986040053",
+     "Type": "construction",
+     "Criticality": 1,
+     "RoadName": "Frankston Fwy",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 1766,
+     "Description": "Between EastLink and Danendong-Frankston - Maintenance work"
+    },
+    {
+     "IncidentId": "2357146535406270131",
+     "Type": "construction",
+     "Criticality": 2,
+     "RoadName": "Frankston Fwy",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 3764,
+     "Description": "Between Beach Street and Danendong-Frankston - Lane blocked"
+    },
+    {
+     "IncidentId": "1213996226902935298",
+     "Type": "construction",
+     "Criticality": 1,
+     "RoadName": "O'Herns Rd",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 420,
+     "Description": "At Craigieburn Road - Maintenance work"
+    },
+    {
+     "IncidentId": "2959058248733656344",
+     "Type": "construction",
+     "Criticality": 1,
+     "RoadName": "Glen Iris",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 182,
+     "Description": "At Toorak Road - Lane blocked"
+    },
+    {
+     "IncidentId": "3552563758065187357",
+     "Type": "disabledVehicle",
+     "Criticality": 1,
+     "RoadName": "Glen Iris",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 106,
+     "Description": "At High Street - Broken-down vehicle"
+    },
+    {
+     "IncidentId": "3789994757881817177",
+     "Type": "construction",
+     "Criticality": 1,
+     "RoadName": "Glen Iris",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 59,
+     "Description": "At Monash Freeway - Lane blocked"
+    },
+    {
+     "IncidentId": "1324429798919286705",
+     "Type": "construction",
+     "Criticality": 1,
+     "RoadName": "Greensborough Rd",
+     "Suburb": null,
+     "Direction": null,
+     "LengthMeters": 2126,
+     "Description": "Between Lower Plenty Road and Watsonia Road - Lane blocked"
+    }
+   ]
+  },
+  "Guidance": {
+   "Entries": [
+    {
+     "Id": "e6df16adaeca4db18e98a8b18def21bf",
+     "Scope": 1,
+     "ScopeId": "melbourne",
+     "Type": 2,
+     "Text": "Melbourne names: 'the Monash', 'the West Gate', 'the Tulla', 'the Bolte', 'CityLink', 'the Eastern Freeway', 'the Ring Road'. Use 'inbound' and 'outbound'.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for — a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off.",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-08-10T08:31:01.7083665Z",
+     "UpdatedAtUtc": "2026-08-10T08:31:01.7083665Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "645e52b90299493a8dbde1205c6c657e",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "75fe175d471144b38bf23c24966dfb6f",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "7b012b9381e04e72be8211133f224188",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 4,
+     "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "Australian English with natural spoken contractions. Round the figures — say 'about ten minutes', never '10.3 minutes'. No police codes or insider jargon.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 3,
+     "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "f5e76bd5993c41edb637a7302f7d7479",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 2,
+     "Text": "Use common road names with the definite article: 'the M1', 'the M4', 'the CBD'. Use 'citybound' and 'outbound' for direction of travel.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    }
+   ],
+   "DroppedCount": 0,
+   "Count": 8,
+   "HasEntries": true
+  },
+  "FutureLessons": [],
+  "Bookends": null,
+  "FillerStatements": [],
+  "SharedRules": null,
+  "RoadFeelPalette": null,
+  "EditorialSettings": {
+   "Scope": 0,
+   "ScopeId": ""
+  },
+  "CuratedCorridorRoads": null,
+  "CuratedGoodRunRoads": null,
+  "ExcludedIncidentKeys": null,
+  "WriterPrompt": null,
+  "EditedIncidents": []
+ },
+ "Coverage": {
+  "Latitude": -37.860600000000005,
+  "Longitude": 144.96855,
+  "RadiusKm": 46.080345023603094,
+  "ShapeType": "polygon",
+  "West": null,
+  "South": null,
+  "East": null,
+  "North": null,
+  "CorridorPoints": null,
+  "CorridorRadiusMeters": null,
+  "PolygonPoints": [
+   {
+    "Lat": -37.6833,
+    "Lng": 144.5829
+   },
+   {
+    "Lat": -37.5801,
+    "Lng": 144.7291
+   },
+   {
+    "Lat": -37.5995,
+    "Lng": 144.9455
+   },
+   {
+    "Lat": -37.5871,
+    "Lng": 145.1032
+   },
+   {
+    "Lat": -37.7586,
+    "Lng": 145.3542
+   },
+   {
+    "Lat": -37.8825,
+    "Lng": 145.295
+   },
+   {
+    "Lat": -37.9853,
+    "Lng": 145.218
+   },
+   {
+    "Lat": -38.1411,
+    "Lng": 145.1218
+   },
+   {
+    "Lat": -38.0006,
+    "Lng": 145.0938
+   },
+   {
+    "Lat": -37.9094,
+    "Lng": 144.9975
+   },
+   {
+    "Lat": -37.833,
+    "Lng": 144.9243
+   },
+   {
+    "Lat": -37.8608,
+    "Lng": 144.9024
+   },
+   {
+    "Lat": -37.9032,
+    "Lng": 144.6606
+   }
+  ]
+ },
+ "FullCorridorPool": [
+  {
+   "RoadName": "Citylink",
+   "Severity": 1,
+   "FunctionalClass": 1,
+   "TotalLengthMeters": 5806,
+   "ImpactScore": 481.6500000000001,
+   "PrimaryType": "construction",
+   "Description": "roadworks outbound",
+   "Incidents": [
+    {
+     "Id": "4244642607360724902",
+     "Description": "Between Toorak Road and Warrigal Road - Lane blocked",
+     "Severity": 1,
+     "Location": "Citylink",
+     "Type": "construction",
+     "LengthMeters": 5806,
+     "FunctionalClass": 1,
+     "Latitude": -37.84796,
+     "Longitude": 145.0429,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "outbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:224257806#-",
+      "here:cm:segment:224337489#+",
+      "here:cm:segment:242927804#-",
+      "here:cm:segment:863841578#-"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -37.84796,
+       "Lng": 145.0429
+      },
+      {
+       "Lat": -37.84898,
+       "Lng": 145.04693
+      },
+      {
+       "Lat": -37.85035,
+       "Lng": 145.04967
+      },
+      {
+       "Lat": -37.85244,
+       "Lng": 145.05393
+      },
+      {
+       "Lat": -37.85364,
+       "Lng": 145.05623
+      },
+      {
+       "Lat": -37.85449,
+       "Lng": 145.05713
+      },
+      {
+       "Lat": -37.85663,
+       "Lng": 145.05846
+      },
+      {
+       "Lat": -37.86363,
+       "Lng": 145.06051
+      },
+      {
+       "Lat": -37.86704,
+       "Lng": 145.06189
+      },
+      {
+       "Lat": -37.87091,
+       "Lng": 145.06491
+      },
+      {
+       "Lat": -37.87472,
+       "Lng": 145.06684
+      },
+      {
+       "Lat": -37.87677,
+       "Lng": 145.07022
+      },
+      {
+       "Lat": -37.87669,
+       "Lng": 145.07693
+      },
+      {
+       "Lat": -37.87676,
+       "Lng": 145.07915
+      },
+      {
+       "Lat": -37.87794,
+       "Lng": 145.08217
+      },
+      {
+       "Lat": -37.88035,
+       "Lng": 145.08654
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-13T05:45:45+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "outbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -37.84796,
+   "Longitude": 145.0429,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 12,
+   "PriorityBoosted": true,
+   "Detour": null,
+   "DelayMinutes": 12
+  },
+  {
+   "RoadName": "Mulgrave",
+   "Severity": 1,
+   "FunctionalClass": 1,
+   "TotalLengthMeters": 1263,
+   "ImpactScore": 446.11015314609386,
+   "PrimaryType": "congestion",
+   "Description": "heavy congestion outbound",
+   "Incidents": [
+    {
+     "Id": "4060420453570662572",
+     "Description": "At Jacksons Road - Traffic congestion",
+     "Severity": 1,
+     "Location": "Mulgrave",
+     "Type": "congestion",
+     "LengthMeters": 984,
+     "FunctionalClass": 1,
+     "Latitude": -37.92384,
+     "Longitude": 145.17817,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "outbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:916736145#-"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -37.92384,
+       "Lng": 145.17817
+      },
+      {
+       "Lat": -37.92468,
+       "Lng": 145.17922
+      },
+      {
+       "Lat": -37.92468,
+       "Lng": 145.17922
+      },
+      {
+       "Lat": -37.92512,
+       "Lng": 145.17977
+      },
+      {
+       "Lat": -37.92512,
+       "Lng": 145.17977
+      },
+      {
+       "Lat": -37.92522,
+       "Lng": 145.17989
+      },
+      {
+       "Lat": -37.92522,
+       "Lng": 145.17989
+      },
+      {
+       "Lat": -37.92855,
+       "Lng": 145.18406
+      },
+      {
+       "Lat": -37.92855,
+       "Lng": 145.18406
+      },
+      {
+       "Lat": -37.92949,
+       "Lng": 145.18524
+      },
+      {
+       "Lat": -37.92949,
+       "Lng": 145.18524
+      },
+      {
+       "Lat": -37.93017,
+       "Lng": 145.18609
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-13T07:41:36+00:00"
+    },
+    {
+     "Id": "4191466714243838546",
+     "Description": "At Springvale Road - Traffic congestion",
+     "Severity": 1,
+     "Location": "Mulgrave",
+     "Type": "congestion",
+     "LengthMeters": 201,
+     "FunctionalClass": 1,
+     "Latitude": -37.91262,
+     "Longitude": 145.1655,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "citybound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:221571851#+"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -37.91262,
+       "Lng": 145.1655
+      },
+      {
+       "Lat": -37.91211,
+       "Lng": 145.16489
+      },
+      {
+       "Lat": -37.91211,
+       "Lng": 145.16489
+      },
+      {
+       "Lat": -37.91166,
+       "Lng": 145.16435
+      },
+      {
+       "Lat": -37.91166,
+       "Lng": 145.16435
+      },
+      {
+       "Lat": -37.91132,
+       "Lng": 145.16391
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-13T07:42:06+00:00"
+    },
+    {
+     "Id": "3244182394913752545",
+     "Description": "At Springvale Road - Backed-up traffic. Approach with care",
+     "Severity": 1,
+     "Location": "Mulgrave",
+     "Type": "congestion",
+     "LengthMeters": 78,
+     "FunctionalClass": 1,
+     "Latitude": -37.91262,
+     "Longitude": 145.1655,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:221571851#+"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -37.91262,
+       "Lng": 145.1655
+      },
+      {
+       "Lat": -37.91211,
+       "Lng": 145.16489
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-13T07:42:28+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "outbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -37.92384,
+   "Longitude": 145.17817,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  },
+  {
+   "RoadName": "Glen Waverley",
+   "Severity": 1,
+   "FunctionalClass": 1,
+   "TotalLengthMeters": 331,
+   "ImpactScore": 399.75000000000006,
+   "PrimaryType": "congestion",
+   "Description": "heavy congestion outbound",
+   "Incidents": [
+    {
+     "Id": "1090869890451214569",
+     "Description": "At Ferntree Gully Road - Traffic congestion",
+     "Severity": 1,
+     "Location": "Glen Waverley",
+     "Type": "congestion",
+     "LengthMeters": 331,
+     "FunctionalClass": 1,
+     "Latitude": -37.89678,
+     "Longitude": 145.14789,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "outbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:916714334#-"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -37.89678,
+       "Lng": 145.14789
+      },
+      {
+       "Lat": -37.89702,
+       "Lng": 145.14818
+      },
+      {
+       "Lat": -37.8974,
+       "Lng": 145.14855
+      },
+      {
+       "Lat": -37.89756,
+       "Lng": 145.14869
+      },
+      {
+       "Lat": -37.89756,
+       "Lng": 145.14869
+      },
+      {
+       "Lat": -37.89778,
+       "Lng": 145.14888
+      },
+      {
+       "Lat": -37.89778,
+       "Lng": 145.14888
+      },
+      {
+       "Lat": -37.89839,
+       "Lng": 145.1494
+      },
+      {
+       "Lat": -37.89839,
+       "Lng": 145.1494
+      },
+      {
+       "Lat": -37.89903,
+       "Lng": 145.14996
+      },
+      {
+       "Lat": -37.89903,
+       "Lng": 145.14996
+      },
+      {
+       "Lat": -37.8992,
+       "Lng": 145.15012
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-13T07:40:36+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "outbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -37.89678,
+   "Longitude": 145.14789,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  },
+  {
+   "RoadName": "Frankston Freeway",
+   "Severity": 1,
+   "FunctionalClass": 1,
+   "TotalLengthMeters": 5530,
+   "ImpactScore": 382.20000000000005,
+   "PrimaryType": "construction",
+   "Description": "roadworks outbound",
+   "Incidents": [
+    {
+     "Id": "504356780986040053",
+     "Description": "Between EastLink and Danendong-Frankston - Maintenance work",
+     "Severity": 1,
+     "Location": "Frankston Fwy",
+     "Type": "construction",
+     "LengthMeters": 1766,
+     "FunctionalClass": 1,
+     "Latitude": -38.10604,
+     "Longitude": 145.13993,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "outbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:476731761#-",
+      "here:cm:segment:219097124#-"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -38.10604,
+       "Lng": 145.13993
+      },
+      {
+       "Lat": -38.107,
+       "Lng": 145.13977
+      },
+      {
+       "Lat": -38.10819,
+       "Lng": 145.13948
+      },
+      {
+       "Lat": -38.10883,
+       "Lng": 145.13926
+      },
+      {
+       "Lat": -38.11117,
+       "Lng": 145.13849
+      },
+      {
+       "Lat": -38.11235,
+       "Lng": 145.13811
+      },
+      {
+       "Lat": -38.11317,
+       "Lng": 145.13788
+      },
+      {
+       "Lat": -38.11656,
+       "Lng": 145.1375
+      },
+      {
+       "Lat": -38.11681,
+       "Lng": 145.13748
+      },
+      {
+       "Lat": -38.1171,
+       "Lng": 145.13746
+      },
+      {
+       "Lat": -38.11842,
+       "Lng": 145.13724
+      },
+      {
+       "Lat": -38.11888,
+       "Lng": 145.13707
+      },
+      {
+       "Lat": -38.11966,
+       "Lng": 145.13675
+      },
+      {
+       "Lat": -38.12072,
+       "Lng": 145.13631
+      },
+      {
+       "Lat": -38.12102,
+       "Lng": 145.13619
+      },
+      {
+       "Lat": -38.12156,
+       "Lng": 145.13594
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-07T16:49:42+00:00"
+    },
+    {
+     "Id": "2357146535406270131",
+     "Description": "Between Beach Street and Danendong-Frankston - Lane blocked",
+     "Severity": 2,
+     "Location": "Frankston Fwy",
+     "Type": "construction",
+     "LengthMeters": 3764,
+     "FunctionalClass": 3,
+     "Latitude": -38.14382,
+     "Longitude": 145.13646,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "citybound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:221658615#+",
+      "here:cm:segment:221137527#+",
+      "here:cm:segment:221072374#+"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -38.14382,
+       "Lng": 145.13646
+      },
+      {
+       "Lat": -38.143,
+       "Lng": 145.13648
+      },
+      {
+       "Lat": -38.14048,
+       "Lng": 145.13656
+      },
+      {
+       "Lat": -38.13417,
+       "Lng": 145.13658
+      },
+      {
+       "Lat": -38.13326,
+       "Lng": 145.1363
+      },
+      {
+       "Lat": -38.1316,
+       "Lng": 145.13514
+      },
+      {
+       "Lat": -38.12953,
+       "Lng": 145.13372
+      },
+      {
+       "Lat": -38.12881,
+       "Lng": 145.13342
+      },
+      {
+       "Lat": -38.12748,
+       "Lng": 145.13333
+      },
+      {
+       "Lat": -38.12361,
+       "Lng": 145.13483
+      },
+      {
+       "Lat": -38.12126,
+       "Lng": 145.13588
+      },
+      {
+       "Lat": -38.1205,
+       "Lng": 145.13621
+      },
+      {
+       "Lat": -38.11882,
+       "Lng": 145.13691
+      },
+      {
+       "Lat": -38.11421,
+       "Lng": 145.13749
+      },
+      {
+       "Lat": -38.11279,
+       "Lng": 145.13774
+      },
+      {
+       "Lat": -38.11107,
+       "Lng": 145.13828
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-07T04:55:23+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "outbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -38.10604,
+   "Longitude": 145.13993,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 1,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": 1
+  },
+  {
+   "RoadName": "O'Herns Road",
+   "Severity": 1,
+   "FunctionalClass": 1,
+   "TotalLengthMeters": 420,
+   "ImpactScore": 370.50000000000006,
+   "PrimaryType": "construction",
+   "Description": "roadworks outbound",
+   "Incidents": [
+    {
+     "Id": "1213996226902935298",
+     "Description": "At Craigieburn Road - Maintenance work",
+     "Severity": 1,
+     "Location": "O'Herns Rd",
+     "Type": "construction",
+     "LengthMeters": 420,
+     "FunctionalClass": 1,
+     "Latitude": -37.63406,
+     "Longitude": 144.99337,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "outbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:816639023#+"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -37.63406,
+       "Lng": 144.99337
+      },
+      {
+       "Lat": -37.63392,
+       "Lng": 144.9934
+      },
+      {
+       "Lat": -37.63392,
+       "Lng": 144.9934
+      },
+      {
+       "Lat": -37.63213,
+       "Lng": 144.99373
+      },
+      {
+       "Lat": -37.63106,
+       "Lng": 144.99385
+      },
+      {
+       "Lat": -37.63031,
+       "Lng": 144.99391
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-07T16:49:42+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "outbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -37.63406,
+   "Longitude": 144.99337,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  },
+  {
+   "RoadName": "Glen Iris",
+   "Severity": 1,
+   "FunctionalClass": 1,
+   "TotalLengthMeters": 347,
+   "ImpactScore": 343.16165626622603,
+   "PrimaryType": "disabledVehicle",
+   "Description": "breakdown and roadworks",
+   "Incidents": [
+    {
+     "Id": "2959058248733656344",
+     "Description": "At Toorak Road - Lane blocked",
+     "Severity": 1,
+     "Location": "Glen Iris",
+     "Type": "construction",
+     "LengthMeters": 182,
+     "FunctionalClass": 1,
+     "Latitude": -37.84998,
+     "Longitude": 145.0487,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "citybound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:895978235#-"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -37.84998,
+       "Lng": 145.0487
+      },
+      {
+       "Lat": -37.84979,
+       "Lng": 145.04835
+      },
+      {
+       "Lat": -37.84952,
+       "Lng": 145.04778
+      },
+      {
+       "Lat": -37.84936,
+       "Lng": 145.04741
+      },
+      {
+       "Lat": -37.84917,
+       "Lng": 145.04688
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-10T23:19:47+00:00"
+    },
+    {
+     "Id": "3552563758065187357",
+     "Description": "At High Street - Broken-down vehicle",
+     "Severity": 1,
+     "Location": "Glen Iris",
+     "Type": "disabledVehicle",
+     "LengthMeters": 106,
+     "FunctionalClass": 1,
+     "Latitude": -37.86097,
+     "Longitude": 145.05954,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:220297635#+"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -37.86097,
+       "Lng": 145.05954
+      },
+      {
+       "Lat": -37.86004,
+       "Lng": 145.05927
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-13T07:25:22+00:00"
+    },
+    {
+     "Id": "3789994757881817177",
+     "Description": "At Monash Freeway - Lane blocked",
+     "Severity": 1,
+     "Location": "Glen Iris",
+     "Type": "construction",
+     "LengthMeters": 59,
+     "FunctionalClass": 1,
+     "Latitude": -37.85229,
+     "Longitude": 145.05284,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:215549173#-",
+      "here:cm:segment:216393964#-"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -37.85229,
+       "Lng": 145.05284
+      },
+      {
+       "Lat": -37.85244,
+       "Lng": 145.05284
+      },
+      {
+       "Lat": -37.85244,
+       "Lng": 145.05284
+      },
+      {
+       "Lat": -37.85282,
+       "Lng": 145.05283
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-10T23:19:47+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": 4,
+   "NormalDriveTimeMinutes": 4,
+   "Latitude": -37.86097,
+   "Longitude": 145.05954,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 2,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": 0
+  },
+  {
+   "RoadName": "Greensborough Road",
+   "Severity": 1,
+   "FunctionalClass": 2,
+   "TotalLengthMeters": 2126,
+   "ImpactScore": 331.50000000000006,
+   "PrimaryType": "construction",
+   "Description": "roadworks outbound",
+   "Incidents": [
+    {
+     "Id": "1324429798919286705",
+     "Description": "Between Lower Plenty Road and Watsonia Road - Lane blocked",
+     "Severity": 1,
+     "Location": "Greensborough Rd",
+     "Type": "construction",
+     "LengthMeters": 2126,
+     "FunctionalClass": 2,
+     "Latitude": -37.73447,
+     "Longitude": 145.07866,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "outbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:219397321#-",
+      "here:cm:segment:227258961#+",
+      "here:cm:segment:224712356#-",
+      "here:cm:segment:215797022#+",
+      "here:cm:segment:225837567#-",
+      "here:cm:segment:893680867#+",
+      "here:cm:segment:898818548#+",
+      "here:cm:segment:898818438#+",
+      "here:cm:segment:215399605#+",
+      "here:cm:segment:478121408#+",
+      "here:cm:segment:218046924#+",
+      "here:cm:segment:220461047#-",
+      "here:cm:segment:216379527#+",
+      "here:cm:segment:221671334#-",
+      "here:cm:segment:503574274#+",
+      "here:cm:segment:220754188#-",
+      "here:cm:segment:634333193#+",
+      "here:cm:segment:915873718#+",
+      "here:cm:segment:915873698#+",
+      "here:cm:segment:634333537#-",
+      "here:cm:segment:898085796#+",
+      "here:cm:segment:919306411#+"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -37.73447,
+       "Lng": 145.07866
+      },
+      {
+       "Lat": -37.73344,
+       "Lng": 145.07879
+      },
+      {
+       "Lat": -37.73247,
+       "Lng": 145.07897
+      },
+      {
+       "Lat": -37.73158,
+       "Lng": 145.07914
+      },
+      {
+       "Lat": -37.73001,
+       "Lng": 145.07944
+      },
+      {
+       "Lat": -37.72786,
+       "Lng": 145.07982
+      },
+      {
+       "Lat": -37.7256,
+       "Lng": 145.0802
+      },
+      {
+       "Lat": -37.72447,
+       "Lng": 145.08041
+      },
+      {
+       "Lat": -37.72267,
+       "Lng": 145.08071
+      },
+      {
+       "Lat": -37.72192,
+       "Lng": 145.08083
+      },
+      {
+       "Lat": -37.7209,
+       "Lng": 145.08097
+      },
+      {
+       "Lat": -37.71989,
+       "Lng": 145.08114
+      },
+      {
+       "Lat": -37.71865,
+       "Lng": 145.08128
+      },
+      {
+       "Lat": -37.71706,
+       "Lng": 145.08156
+      },
+      {
+       "Lat": -37.71648,
+       "Lng": 145.08166
+      },
+      {
+       "Lat": -37.71554,
+       "Lng": 145.08182
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-07T16:57:16+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "outbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -37.73447,
+   "Longitude": 145.07866,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 1,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": 1
+  }
+ ]
+}

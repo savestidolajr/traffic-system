@@ -1,0 +1,47 @@
+{
+  "Market": "goldcoast",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032051Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:52.3118313+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.95946,153.34714\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "10, Arundel QLD 4214, Australia",
+          "id": "here:af:streetsection:0Yz1VJzXQQgjTXoSXvRd4C",
+          "resultType": "street",
+          "address": {
+            "label": "10, Arundel QLD 4214, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Gold Coast",
+            "district": "Arundel",
+            "street": "10",
+            "postalCode": "4214"
+          },
+          "position": {
+            "lat": -27.95946,
+            "lng": 153.34714
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 153.34404,
+            "south": -27.96132,
+            "east": 153.35198,
+            "north": -27.95414
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

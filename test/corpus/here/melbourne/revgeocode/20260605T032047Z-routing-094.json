@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032047Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:48.435655+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-38.01638,145.09459\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "James Ave, Aspendale VIC 3195, Australia",
+          "id": "here:af:streetsection:JM5bQp4N9scUxNoUdyTnSA",
+          "resultType": "street",
+          "address": {
+            "label": "James Ave, Aspendale VIC 3195, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Aspendale",
+            "street": "James Ave",
+            "postalCode": "3195"
+          },
+          "position": {
+            "lat": -38.01638,
+            "lng": 145.09459
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 145.09459,
+            "south": -38.01638,
+            "east": 145.09956,
+            "north": -38.01307
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

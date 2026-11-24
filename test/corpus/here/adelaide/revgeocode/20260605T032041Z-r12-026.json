@@ -1,0 +1,55 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032041Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:42.5146439+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.92777,138.56107\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "33 Bagot Ave, Mile End SA 5031, Australia",
+          "id": "here:af:streetsection:y4PXGG-t9rc8t4cuCtNMUB:CggIBCDEh6GhARABGgIzMw",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "33 Bagot Ave, Mile End SA 5031, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "SA",
+            "state": "South Australia",
+            "city": "Adelaide",
+            "district": "Mile End",
+            "street": "Bagot Ave",
+            "postalCode": "5031",
+            "houseNumber": "33"
+          },
+          "position": {
+            "lat": -34.92775,
+            "lng": 138.56136
+          },
+          "access": [
+            {
+              "lat": -34.92775,
+              "lng": 138.56107
+            }
+          ],
+          "distance": 2,
+          "mapView": {
+            "west": 138.5609,
+            "south": -34.92993,
+            "east": 138.56116,
+            "north": -34.92421
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

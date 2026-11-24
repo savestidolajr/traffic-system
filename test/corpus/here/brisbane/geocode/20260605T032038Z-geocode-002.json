@@ -1,0 +1,54 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "geocode",
+  "SessionId": "20260605T032038Z-geocode",
+  "CapturedAtUtc": "2026-06-05T03:20:38.4880768+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=4BC\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Calle 4BC, 050029 Medell\u00EDn, Colombia",
+          "id": "here:af:streetsection:aUN9T1rlrIxyjbq2cdfvgD",
+          "resultType": "street",
+          "address": {
+            "label": "Calle 4BC, 050029 Medell\u00EDn, Colombia",
+            "countryCode": "COL",
+            "countryName": "Colombia",
+            "countyCode": "AN",
+            "county": "Antioquia",
+            "city": "Medell\u00EDn",
+            "district": "San Antonio de Prado",
+            "street": "Calle 4BC",
+            "postalCode": "050029"
+          },
+          "position": {
+            "lat": 6.1761,
+            "lng": -75.64458
+          },
+          "mapView": {
+            "west": -75.64495,
+            "south": 6.17609,
+            "east": -75.64348,
+            "north": 6.17613
+          },
+          "scoring": {
+            "queryScore": 0.99,
+            "fieldScore": {
+              "streets": [
+                0.9
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

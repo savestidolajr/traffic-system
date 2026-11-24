@@ -1,0 +1,110 @@
+{
+  "label": "sydney-b1adaec7",
+  "market": "sydney",
+  "sourceJobId": "b1adaec7b8044d7e90915fd8150d615f",
+  "sourceCapture": "job-diagnostics/b1adaec7b8044d7e90915fd8150d615f/llm_calls/082353.824-Draft-attempt1.json",
+  "promptSha": null,
+  "items": [
+    {
+      "category": "works",
+      "evidenceIds": [
+        "r1:suburb",
+        "r1:direction",
+        "r1:delayMinutes",
+        "r1:location:0",
+        "r1:detail"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Northbound Church Street at the M4 in Granville has roadworks, adding about seven minutes."
+        },
+        {
+          "style": "standard",
+          "text": "Roadworks northbound on Church Street near the M4 in Granville are adding about seven minutes."
+        }
+      ]
+    },
+    {
+      "category": "works",
+      "evidenceIds": [
+        "r6:suburb",
+        "r6:location:0",
+        "r6:detail",
+        "r6:delayMinutes"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "The Crescent at Johnston Street in Annandale has roadworks and is a little slower."
+        },
+        {
+          "style": "standard",
+          "text": "There are roadworks on The Crescent at Johnston Street in Annandale, with a slight queue."
+        },
+        {
+          "style": "continuation",
+          "text": "There are also roadworks on The Crescent at Johnston Street in Annandale."
+        }
+      ]
+    },
+    {
+      "category": "works",
+      "evidenceIds": [
+        "r2:suburb",
+        "r2:location:0",
+        "r2:detail",
+        "r2:delayMinutes"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Mitchell Road at Sydney Park Road in Erskineville has roadworks and is taking a little longer."
+        },
+        {
+          "style": "standard",
+          "text": "Roadworks on Mitchell Road at Sydney Park Road in Erskineville are causing a brief delay."
+        },
+        {
+          "style": "continuation",
+          "text": "It is a similar story on Mitchell Road at Sydney Park Road in Erskineville."
+        }
+      ]
+    },
+    {
+      "category": "congestion",
+      "evidenceIds": [
+        "r3:delayMinutes",
+        "r5:delayMinutes",
+        "r4:delayMinutes"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Moorebank Avenue, Telegraph Road and River Road West are all running a little slower."
+        },
+        {
+          "style": "standard",
+          "text": "Moorebank Avenue, Telegraph Road and River Road West are all seeing a slight queue."
+        }
+      ]
+    },
+    {
+      "category": "weather",
+      "evidenceIds": [
+        "weather:condition",
+        "weather:temperature"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Clear skies over Sydney, 21 degrees."
+        },
+        {
+          "style": "standard",
+          "text": "Clear skies across Sydney this morning, with 21 degrees."
+        }
+      ]
+    }
+  ]
+}

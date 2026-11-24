@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032030Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:31.320213+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.90946,151.11601\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "10-12 Broughton St, Canterbury NSW 2193, Australia",
+          "id": "here:af:streetsection:ueM.7WI729Bbk3zmK7UZwB:CggIBCDiwZjRAhABGgUxMC0xMg",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "10-12 Broughton St, Canterbury NSW 2193, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Canterbury",
+            "street": "Broughton St",
+            "postalCode": "2193",
+            "houseNumber": "10-12"
+          },
+          "position": {
+            "lat": -33.90962,
+            "lng": 151.11635
+          },
+          "access": [
+            {
+              "lat": -33.90958,
+              "lng": 151.11599
+            }
+          ],
+          "distance": 13,
+          "mapView": {
+            "west": 151.11549,
+            "south": -33.91207,
+            "east": 151.11923,
+            "north": -33.90909
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

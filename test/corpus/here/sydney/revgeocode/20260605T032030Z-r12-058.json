@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032030Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:31.3201247+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.83163,151.2138\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "7 Wyagdon St, Neutral Bay NSW 2089, Australia",
+          "id": "here:af:streetsection:7vlHM9mkvA88FK5-X2OobD:CggIBCDDtMWeARABGgE3",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "7 Wyagdon St, Neutral Bay NSW 2089, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Neutral Bay",
+            "street": "Wyagdon St",
+            "postalCode": "2089",
+            "houseNumber": "7"
+          },
+          "position": {
+            "lat": -33.83203,
+            "lng": 151.21365
+          },
+          "access": [
+            {
+              "lat": -33.83166,
+              "lng": 151.21388
+            }
+          ],
+          "distance": 8,
+          "mapView": {
+            "west": 151.2138,
+            "south": -33.83178,
+            "east": 151.2143,
+            "north": -33.83163
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

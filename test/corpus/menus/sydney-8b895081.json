@@ -1,0 +1,122 @@
+{
+  "label": "sydney-8b895081",
+  "market": "sydney",
+  "sourceJobId": "8b895081e0f24d2bb60ee61b05390ade",
+  "sourceCapture": "job-diagnostics/8b895081e0f24d2bb60ee61b05390ade/llm_calls/024738.764-Draft-attempt1.json",
+  "promptSha": null,
+  "items": [
+    {
+      "category": "congestion",
+      "evidenceIds": [
+        "r7:delayMinutes",
+        "r7:impact"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Victoria Road is crawling, with delays adding about ten minutes."
+        },
+        {
+          "style": "standard",
+          "text": "Victoria Road is seeing major delays, adding about ten minutes to the trip."
+        }
+      ]
+    },
+    {
+      "category": "congestion",
+      "evidenceIds": [
+        "r2:delayMinutes"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Arthur Street has heavy traffic."
+        },
+        {
+          "style": "standard",
+          "text": "Arthur Street is seeing a slow grind through the area."
+        },
+        {
+          "style": "continuation",
+          "text": "There's also heavy traffic on Arthur Street."
+        }
+      ]
+    },
+    {
+      "category": "congestion",
+      "evidenceIds": [
+        "r5:delayMinutes"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Park Avenue is backed up."
+        },
+        {
+          "style": "standard",
+          "text": "Park Avenue has a bit of a queue."
+        },
+        {
+          "style": "continuation",
+          "text": "It's a similar story on Park Avenue, with a bit of a queue."
+        }
+      ]
+    },
+    {
+      "category": "congestion",
+      "evidenceIds": [
+        "r6:delayMinutes",
+        "r3:delayMinutes",
+        "r1:delayMinutes",
+        "r4:delayMinutes"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Rohini Street, Bay Street, Albert Avenue and the M1 are all a little slower."
+        },
+        {
+          "style": "standard",
+          "text": "Rohini Street, Bay Street, Albert Avenue and the M1 Eastern Distributor are all running slower."
+        },
+        {
+          "style": "continuation",
+          "text": "There are also slower runs on Rohini Street, Bay Street, Albert Avenue and the M1 Eastern Distributor."
+        }
+      ]
+    },
+    {
+      "category": "weather",
+      "evidenceIds": [
+        "weather:condition",
+        "weather:temperature"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Sunny, 16 degrees."
+        },
+        {
+          "style": "standard",
+          "text": "Sunny skies across Sydney, 16 degrees."
+        }
+      ]
+    },
+    {
+      "category": "fuel",
+      "evidenceIds": [
+        "goodrun:M4 Service Centre"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "The M4 Service Centre is clear."
+        },
+        {
+          "style": "standard",
+          "text": "The M4 Service Centre is running clear."
+        }
+      ]
+    }
+  ]
+}

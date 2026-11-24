@@ -1,0 +1,123 @@
+{
+  "label": "melbourne-caaeb8a8",
+  "market": "melbourne",
+  "sourceJobId": "caaeb8a8fb984ec899ccc735a8bb5d5e",
+  "sourceCapture": "job-diagnostics/caaeb8a8fb984ec899ccc735a8bb5d5e/llm_calls/084802.834-Draft-attempt1.json",
+  "promptSha": null,
+  "items": [
+    {
+      "category": "incident",
+      "evidenceIds": [
+        "r1:suburb",
+        "r1:delayMinutes",
+        "r1:location:0",
+        "r1:detail"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Citylink is crawling past Yarra Boulevard in Burnley after a breakdown, adding nine minutes."
+        },
+        {
+          "style": "standard",
+          "text": "A breakdown on Citylink at Yarra Boulevard has traffic crawling through Burnley, adding nine minutes."
+        }
+      ]
+    },
+    {
+      "category": "incident",
+      "evidenceIds": [
+        "r7:suburb",
+        "r7:direction",
+        "r7:location:0",
+        "r7:detail"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "A breakdown is slowing the eastbound Western Freeway at Leakes Road, Grangefields."
+        },
+        {
+          "style": "standard",
+          "text": "The eastbound Western Freeway is slower after a breakdown at Leakes Road in Grangefields."
+        },
+        {
+          "style": "continuation",
+          "text": "There's another breakdown eastbound on the Western Freeway at Leakes Road in Grangefields."
+        }
+      ]
+    },
+    {
+      "category": "congestion",
+      "evidenceIds": [
+        "route:the Monash citybound from EastLink"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "The Monash citybound from EastLink is slower than usual."
+        },
+        {
+          "style": "standard",
+          "text": "Citybound on the Monash from EastLink, traffic is running slower than usual."
+        }
+      ]
+    },
+    {
+      "category": "works",
+      "evidenceIds": [
+        "r2:suburb",
+        "r2:impact",
+        "r2:location:0",
+        "r2:location:1",
+        "r2:detail"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Roadworks on the Eastern Freeway near Clifton Hill are causing a slight queue."
+        },
+        {
+          "style": "standard",
+          "text": "The Eastern Freeway has a slight queue through Clifton Hill with roadworks."
+        }
+      ]
+    },
+    {
+      "category": "weather",
+      "evidenceIds": [
+        "weather:condition",
+        "weather:temperature"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Cloudy skies, 14 degrees."
+        },
+        {
+          "style": "standard",
+          "text": "Cloudy skies across Melbourne, 14 degrees."
+        }
+      ]
+    },
+    {
+      "category": "fuel",
+      "evidenceIds": [
+        "fuel:Unleaded 91:price",
+        "fuel:Unleaded 91:suburb",
+        "fuel:Diesel:price",
+        "fuel:Diesel:suburb"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Unleaded is $1.91 in Williamstown, diesel $2.40 in Richmond."
+        },
+        {
+          "style": "standard",
+          "text": "Unleaded 91 is $1.91 in Williamstown, while diesel is $2.40 in Richmond."
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,450 @@
+{
+ "voiceId": "yngV6X6u07ThpMteV50h",
+ "voiceName": "ARN Sarah - Younger Female",
+ "modelId": "eleven_v3",
+ "stability": 0.45,
+ "similarityBoost": 0.9,
+ "style": 0.15,
+ "speed": 1.0,
+ "paceBoostWpm": 0.0,
+ "total": 1,
+ "clean": 0,
+ "tokens": 82,
+ "bulletins": [
+  {
+   "jobId": "1259d6200c70431f8c2449552d7cdd16",
+   "market": "mildura",
+   "targetSec": 30.0,
+   "naturalSec": 30.0,
+   "fittedSec": 29.609,
+   "stretch": 1.01321,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched"
+   ],
+   "spokenText": "Walker Road's closed outbound. Werrimull North Road and Tapaulin Road are moving nicely, while Fletchers Lake Road and Benetook Avenue have a clear run. It's cloudy and 10 degrees in Mildura. Cheapest unleaded's one dollar seventy a litre in Merbein South, with diesel two dollars four there too. The Sturt Highway and Calder Highway are Mildura's two main links to the rest of the state \u2014 plan around them if one's affected. We'll keep you posted through the day. Drive safe, Mildura.",
+   "features": {
+    "syl": 121,
+    "words": 82,
+    "ellipsis": 0,
+    "period": 7,
+    "comma": 3,
+    "dash": 1,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "Walker",
+     "s": 0,
+     "e": 0.313
+    },
+    {
+     "w": "Road's",
+     "s": 0.359,
+     "e": 0.703
+    },
+    {
+     "w": "closed",
+     "s": 0.748,
+     "e": 1.016
+    },
+    {
+     "w": "outbound.",
+     "s": 1.094,
+     "e": 1.954
+    },
+    {
+     "w": "Werrimull",
+     "s": 1.993,
+     "e": 2.422
+    },
+    {
+     "w": "North",
+     "s": 2.474,
+     "e": 2.735
+    },
+    {
+     "w": "Road",
+     "s": 2.798,
+     "e": 3.048
+    },
+    {
+     "w": "and",
+     "s": 3.067,
+     "e": 3.126
+    },
+    {
+     "w": "Tapaulin",
+     "s": 3.204,
+     "e": 3.673
+    },
+    {
+     "w": "Road",
+     "s": 3.735,
+     "e": 3.985
+    },
+    {
+     "w": "are",
+     "s": 4.024,
+     "e": 4.142
+    },
+    {
+     "w": "moving",
+     "s": 4.187,
+     "e": 4.454
+    },
+    {
+     "w": "nicely,",
+     "s": 4.532,
+     "e": 5.314
+    },
+    {
+     "w": "while",
+     "s": 5.34,
+     "e": 5.47
+    },
+    {
+     "w": "Fletchers",
+     "s": 5.509,
+     "e": 5.861
+    },
+    {
+     "w": "Lake",
+     "s": 5.923,
+     "e": 6.173
+    },
+    {
+     "w": "Road",
+     "s": 6.236,
+     "e": 6.486
+    },
+    {
+     "w": "and",
+     "s": 6.525,
+     "e": 6.642
+    },
+    {
+     "w": "Benetook",
+     "s": 6.701,
+     "e": 7.111
+    },
+    {
+     "w": "Avenue",
+     "s": 7.167,
+     "e": 7.502
+    },
+    {
+     "w": "have",
+     "s": 7.549,
+     "e": 7.736
+    },
+    {
+     "w": "a",
+     "s": 7.775,
+     "e": 7.815
+    },
+    {
+     "w": "clear",
+     "s": 7.866,
+     "e": 8.127
+    },
+    {
+     "w": "run.",
+     "s": 8.225,
+     "e": 8.987
+    },
+    {
+     "w": "It's",
+     "s": 9.013,
+     "e": 9.221
+    },
+    {
+     "w": "cloudy",
+     "s": 9.277,
+     "e": 9.612
+    },
+    {
+     "w": "and",
+     "s": 9.651,
+     "e": 9.768
+    },
+    {
+     "w": "10",
+     "s": 9.807,
+     "e": 9.924
+    },
+    {
+     "w": "degrees",
+     "s": 9.993,
+     "e": 10.471
+    },
+    {
+     "w": "in",
+     "s": 10.523,
+     "e": 10.628
+    },
+    {
+     "w": "Mildura.",
+     "s": 10.667,
+     "e": 11.722
+    },
+    {
+     "w": "Cheapest",
+     "s": 11.741,
+     "e": 12.034
+    },
+    {
+     "w": "unleaded's",
+     "s": 12.097,
+     "e": 12.66
+    },
+    {
+     "w": "one",
+     "s": 12.699,
+     "e": 12.816
+    },
+    {
+     "w": "dollar",
+     "s": 12.871,
+     "e": 13.207
+    },
+    {
+     "w": "seventy",
+     "s": 13.255,
+     "e": 13.597
+    },
+    {
+     "w": "a",
+     "s": 13.636,
+     "e": 13.675
+    },
+    {
+     "w": "litre",
+     "s": 13.727,
+     "e": 13.988
+    },
+    {
+     "w": "in",
+     "s": 14.04,
+     "e": 14.144
+    },
+    {
+     "w": "Merbein",
+     "s": 14.203,
+     "e": 14.613
+    },
+    {
+     "w": "South,",
+     "s": 14.691,
+     "e": 15.277
+    },
+    {
+     "w": "with",
+     "s": 15.316,
+     "e": 15.473
+    },
+    {
+     "w": "diesel",
+     "s": 15.528,
+     "e": 15.863
+    },
+    {
+     "w": "two",
+     "s": 15.922,
+     "e": 16.098
+    },
+    {
+     "w": "dollars",
+     "s": 16.147,
+     "e": 16.489
+    },
+    {
+     "w": "four",
+     "s": 16.52,
+     "e": 16.645
+    },
+    {
+     "w": "there",
+     "s": 16.697,
+     "e": 16.957
+    },
+    {
+     "w": "too.",
+     "s": 17.036,
+     "e": 17.426
+    },
+    {
+     "w": "The",
+     "s": 17.755,
+     "e": 17.833
+    },
+    {
+     "w": "Sturt",
+     "s": 17.911,
+     "e": 18.224
+    },
+    {
+     "w": "Highway",
+     "s": 18.292,
+     "e": 18.771
+    },
+    {
+     "w": "and",
+     "s": 18.81,
+     "e": 18.927
+    },
+    {
+     "w": "Calder",
+     "s": 18.994,
+     "e": 19.396
+    },
+    {
+     "w": "Highway",
+     "s": 19.454,
+     "e": 19.865
+    },
+    {
+     "w": "are",
+     "s": 19.904,
+     "e": 20.021
+    },
+    {
+     "w": "Mildura's",
+     "s": 20.068,
+     "e": 20.646
+    },
+    {
+     "w": "two",
+     "s": 20.724,
+     "e": 20.959
+    },
+    {
+     "w": "main",
+     "s": 21.006,
+     "e": 21.193
+    },
+    {
+     "w": "links",
+     "s": 21.271,
+     "e": 21.662
+    },
+    {
+     "w": "to",
+     "s": 21.688,
+     "e": 21.74
+    },
+    {
+     "w": "the",
+     "s": 21.76,
+     "e": 21.818
+    },
+    {
+     "w": "rest",
+     "s": 21.881,
+     "e": 22.131
+    },
+    {
+     "w": "of",
+     "s": 22.157,
+     "e": 22.209
+    },
+    {
+     "w": "the",
+     "s": 22.248,
+     "e": 22.365
+    },
+    {
+     "w": "state",
+     "s": 22.456,
+     "e": 22.912
+    },
+    {
+     "w": "\u2014",
+     "s": 23.147,
+     "e": 23.381
+    },
+    {
+     "w": "plan",
+     "s": 23.444,
+     "e": 23.694
+    },
+    {
+     "w": "around",
+     "s": 23.739,
+     "e": 24.006
+    },
+    {
+     "w": "them",
+     "s": 24.053,
+     "e": 24.241
+    },
+    {
+     "w": "if",
+     "s": 24.319,
+     "e": 24.475
+    },
+    {
+     "w": "one's",
+     "s": 24.534,
+     "e": 24.788
+    },
+    {
+     "w": "affected.",
+     "s": 24.848,
+     "e": 25.491
+    },
+    {
+     "w": "We'll",
+     "s": 25.833,
+     "e": 25.989
+    },
+    {
+     "w": "keep",
+     "s": 26.021,
+     "e": 26.146
+    },
+    {
+     "w": "you",
+     "s": 26.185,
+     "e": 26.302
+    },
+    {
+     "w": "posted",
+     "s": 26.391,
+     "e": 26.927
+    },
+    {
+     "w": "through",
+     "s": 26.956,
+     "e": 27.162
+    },
+    {
+     "w": "the",
+     "s": 27.181,
+     "e": 27.24
+    },
+    {
+     "w": "day.",
+     "s": 27.337,
+     "e": 27.881
+    },
+    {
+     "w": "Drive",
+     "s": 28.223,
+     "e": 28.437
+    },
+    {
+     "w": "safe,",
+     "s": 28.5,
+     "e": 28.828
+    },
+    {
+     "w": "Mildura.",
+     "s": 28.875,
+     "e": 29.609
+    }
+   ]
+  }
+ ]
+}

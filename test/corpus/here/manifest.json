@@ -1,0 +1,3962 @@
+[
+  {
+    "Market": "sydney",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:27.8583961+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-33.8688,151.2093;r=25000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/traffic-incidents/20260605T032025Z-r25-001.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:28.7641911+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.84473,151.06638\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-001.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:28.7643939+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.85635,151.20746\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-004.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:28.7644607+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.82856,151.08718\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-005.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:28.7642548+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.85772,151.20886\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-002.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:28.7642743+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.82696,151.01198\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-003.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:28.8853387+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86758,151.18306\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-009.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:28.8852807+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.95772,151.20815\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-006.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:28.8853182+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.05629,151.14347\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-007.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:28.8853526+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.05536,151.14367\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-008.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:28.8854687+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.84356,151.06954\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-010.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.0677196+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.67809,151.29858\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-011.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.0678853+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.78101,151.11578\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-012.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.0679797+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86749,151.18326\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-013.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.0679916+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.67968,151.29833\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-015.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.06798+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.78231,151.11746\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-014.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.2605442+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.84938,151.06136\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-019.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.2604735+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.85312,151.27767\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-016.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.2604686+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.8498,151.06159\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-017.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.260548+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86835,151.18168\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-018.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.2605688+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.84859,151.06091\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-020.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.477223+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.78266,151.11655\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-025.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.4772112+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.84988,151.06015\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-024.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.477193+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.82593,151.21415\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-022.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.4771988+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.78238,151.11739\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-023.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.4771932+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86612,151.12193\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-021.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.5865584+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.91371,151.15077\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-027.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.5866153+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.90946,151.11601\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-029.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.5865783+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86588,151.12082\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-028.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.5865412+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86746,151.18071\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-026.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.5882548+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.9132,151.14987\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-030.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.6952714+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86709,151.17968\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-031.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.6952714+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.83163,151.2138\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-032.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.696101+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.03655,151.07062\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-034.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.6957915+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.03666,151.07147\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-033.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.6970558+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.88616,151.23187\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-035.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.8863023+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.88959,151.12182\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-038.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.8862912+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.88707,151.22957\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-036.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.8864546+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.87013,151.22143\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-039.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.8862957+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.88707,151.22957\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-037.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:29.8867612+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.88741,151.22917\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-040.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:30.0915611+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.85668,151.15206\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-042.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:30.0920636+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.87004,151.22096\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-045.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:30.091561+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.87004,151.22096\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-041.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:30.0915706+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.8568,151.15185\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-043.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:30.0915965+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.87037,151.2209\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-044.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:30.2522609+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.03309,151.06671\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-046.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032025Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:30.2522613+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.03307,151.06658\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032025Z-r25-047.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:30.7873232+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-33.8688,151.2093;r=12000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/traffic-incidents/20260605T032030Z-r12-002.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:30.8999904+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.85772,151.20886\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-048.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:30.9000986+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.85635,151.20746\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-050.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:30.9000659+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.95772,151.20815\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-049.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:30.9003944+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86758,151.18306\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-051.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:30.9005377+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86749,151.18326\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-052.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.1153119+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86588,151.12082\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-053.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.1153135+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86612,151.12193\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-054.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.1157847+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.82593,151.21415\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-056.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.1155975+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86835,151.18168\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-055.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.1160941+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.85312,151.27767\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-057.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.3201247+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.83163,151.2138\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-058.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.3201447+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.9132,151.14987\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-059.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.3201681+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.91371,151.15077\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-060.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.3202964+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86746,151.18071\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-062.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.320213+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.90946,151.11601\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-061.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.5247303+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86709,151.17968\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-063.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.5248691+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.88616,151.23187\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-065.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.524869+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.88707,151.22957\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-064.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.5250214+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.88959,151.12182\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-066.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.5250217+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.88707,151.22957\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-067.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.6345219+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.87004,151.22096\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-069.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.6345225+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.87037,151.2209\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-068.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.6345338+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.87013,151.22143\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-070.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.6355931+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.88741,151.22917\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-071.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.6371609+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.87004,151.22096\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-072.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.7424755+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.8568,151.15185\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-073.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032030Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:31.7427578+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.85668,151.15206\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032030Z-r12-074.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "geocode",
+    "SessionId": "20260605T032031Z-geocode",
+    "CapturedAtUtc": "2026-06-05T03:20:31.9344824+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=sydney%2C Australia\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/geocode/20260605T032031Z-geocode-001.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "geocode",
+    "SessionId": "20260605T032031Z-geocode",
+    "CapturedAtUtc": "2026-06-05T03:20:32.139664+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=2GB\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/geocode/20260605T032031Z-geocode-002.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:32.9634075+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-37.8136,144.9631;r=25000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/traffic-incidents/20260605T032032Z-r25-001.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.1640863+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.74252,144.91938\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-001.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.1641649+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.86861,144.76273\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-005.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.1640931+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69512,145.09253\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-004.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.1640882+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69712,145.09165\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-002.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.1640883+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69068,144.9722\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-003.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.3679813+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.7162,144.93361\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-007.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.3679816+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.88329,144.719\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-008.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.3682624+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.99916,145.12321\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-010.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.3679816+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.9573,145.10071\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-006.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.3681668+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.74144,144.90988\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-009.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.573409+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.98259,145.03356\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-012.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.5734091+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69512,145.09253\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-013.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.5734264+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69388,145.09327\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-014.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.5734323+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69327,145.09264\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-015.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.5733713+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.79648,145.11836\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-011.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.6836114+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.83264,144.93246\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-016.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.6837596+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81964,145.01002\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-017.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.6851103+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.6792,145.01503\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-019.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.6851114+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.68148,145.06921\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-018.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.6851971+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.79619,145.11865\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-020.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.8798044+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.73677,144.95722\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-021.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.8799305+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.7267,144.70893\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-022.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.8802044+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.88427,144.71882\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-024.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.8799304+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.85484,144.96279\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-023.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:33.8802201+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.71733,144.93344\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-025.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.0842185+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.87968,145.16183\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-028.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.0841704+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-38.01198,145.09065\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-026.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.084185+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.7367,144.9565\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-027.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.0844206+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.93629,145.06137\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-029.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.0844207+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-38.01184,145.08991\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-030.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.2900967+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.71573,144.71748\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-033.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.2902617+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69126,144.72932\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-034.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.2902622+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.97461,145.10642\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-035.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.289293+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81029,144.83374\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-032.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.2892894+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.80804,145.07112\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-031.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.4059191+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.87807,145.00357\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-036.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.4059105+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.82358,144.70758\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-037.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.4059623+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.74539,144.9353\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-039.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.4059513+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.72056,144.72623\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-040.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.4059445+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.61913,145.0282\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-038.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.5167767+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.63658,145.02538\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-041.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.5175662+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.62582,145.02865\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-042.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.5176505+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.78945,145.10577\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-043.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.5176595+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.62788,145.02837\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-044.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.5180747+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.75302,144.83522\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-045.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.6256727+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.74385,144.93555\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-046.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.6258569+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.75122,144.83554\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-048.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.6257597+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.71946,144.71677\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-047.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.6265191+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69278,144.75004\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-049.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:34.6266416+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.64296,145.02665\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032032Z-r25-050.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032032Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:35.2110323+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-37.693270,145.092640\u0026destination=-37.693880,145.093270\u0026departureTime=2026-06-05T03:20:34.6377640\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/routing/20260605T032032Z-r25-001.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.5204928+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-37.8136,144.9631;r=12000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/traffic-incidents/20260605T032035Z-r12-002.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.7050687+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.74252,144.91938\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-052.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.7050726+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.83264,144.93246\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-051.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.7050821+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.74144,144.90988\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-053.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.705174+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.7162,144.93361\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-054.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.7052425+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81964,145.01002\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-055.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.8263525+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.73677,144.95722\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-056.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.8263569+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.7367,144.9565\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-057.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.826368+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.85484,144.96279\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-058.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.8264605+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81029,144.83374\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-059.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.826573+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.71733,144.93344\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-060.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.9972213+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.74539,144.9353\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-062.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.9971682+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.74385,144.93555\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-061.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.9974195+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.87807,145.00357\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-064.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.9972319+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.79197,144.99034\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-063.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:35.997528+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.80804,145.07112\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-065.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.1054855+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81533,144.95964\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-067.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.1054452+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.7918,144.9886\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-066.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.1056065+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81533,144.95964\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-068.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.1065952+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.83395,144.96838\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-069.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.1068501+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81533,144.95964\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-070.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.2358939+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.78733,145.00296\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-075.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.2358795+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.83455,144.96765\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-071.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.2358885+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.83931,144.99821\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-074.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.2358797+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.80239,144.94871\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-073.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.2358796+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.78761,145.0037\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-072.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.3447421+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.80227,144.94941\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-078.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.3447422+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.801,144.98702\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-077.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.3447421+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.80105,144.98793\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-076.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.3450913+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81529,144.90857\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-079.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.3455296+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.80219,144.94876\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-080.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.4530746+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.73827,144.93806\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-081.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.4534233+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.80115,144.98861\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-083.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.4534234+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81039,144.96887\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-082.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.453747+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81069,144.96901\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-084.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.4540534+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.79896,144.91043\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032035Z-r12-085.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032035Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:36.6452254+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-37.741440,144.909880\u0026destination=-37.742520,144.919380\u0026departureTime=2026-06-05T03:20:36.4555007\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/routing/20260605T032035Z-r12-002.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "geocode",
+    "SessionId": "20260605T032036Z-geocode",
+    "CapturedAtUtc": "2026-06-05T03:20:36.7535526+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=melbourne%2C Australia\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/geocode/20260605T032036Z-geocode-001.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "geocode",
+    "SessionId": "20260605T032036Z-geocode",
+    "CapturedAtUtc": "2026-06-05T03:20:36.8630064+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=3AW\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/geocode/20260605T032036Z-geocode-002.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.1117088+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-27.4698,153.0251;r=25000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/traffic-incidents/20260605T032036Z-r25-001.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.2263531+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.59774,152.94645\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-001.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.2296738+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.45085,153.0206\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-002.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.229956+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.56292,153.00717\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-003.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.230047+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.61303,153.12296\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-004.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.2340064+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.64729,153.15216\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-005.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.3356163+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.35855,152.95268\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-006.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.338127+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.55173,153.02556\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-007.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.3387518+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.35959,152.95383\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-008.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.3395133+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.5999,153.13554\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-009.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.3419745+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.6001,153.13366\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-010.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.4443659+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.45079,153.03307\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-011.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.4467655+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.26211,153.0209\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-012.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.4471913+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.35549,152.94796\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-014.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.4471773+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.26128,153.02093\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-013.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.449853+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.3549,152.94813\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-015.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.5525552+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.50711,152.97247\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-016.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032036Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:37.5554688+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.50725,152.97202\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032036Z-r25-017.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032037Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:37.7969951+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-27.4698,153.0251;r=12000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/traffic-incidents/20260605T032037Z-r12-002.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032037Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:37.9079645+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.45079,153.03307\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032037Z-r12-018.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032037Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:37.9087304+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.45085,153.0206\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032037Z-r12-020.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032037Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:37.9087468+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.50711,152.97247\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032037Z-r12-021.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032037Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:37.9087168+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.55173,153.02556\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032037Z-r12-019.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032037Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:37.9119304+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.56292,153.00717\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032037Z-r12-022.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032037Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:38.0783719+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.50725,152.97202\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032037Z-r12-023.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "geocode",
+    "SessionId": "20260605T032038Z-geocode",
+    "CapturedAtUtc": "2026-06-05T03:20:38.2833199+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=brisbane%2C Australia\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/geocode/20260605T032038Z-geocode-001.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "geocode",
+    "SessionId": "20260605T032038Z-geocode",
+    "CapturedAtUtc": "2026-06-05T03:20:38.4880768+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=4BC\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/geocode/20260605T032038Z-geocode-002.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:38.7366636+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-31.9505,115.8605;r=25000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/traffic-incidents/20260605T032038Z-r25-001.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:38.8639225+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.79548,115.96294\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-001.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:38.8640501+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.86048,115.80167\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-005.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:38.8640364+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.86169,115.94494\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-004.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:38.8639224+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.86168,115.94632\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-002.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:38.8639225+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.89383,115.80255\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-003.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:38.9735603+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94993,115.97527\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-006.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:38.9735603+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.7335,115.82902\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-007.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:38.973686+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.86162,115.96328\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-009.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:38.9736579+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.73351,115.81729\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-008.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:38.9745342+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.03733,115.75383\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-010.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.1020106+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.03628,115.75583\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-011.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.102012+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.86168,115.94632\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-013.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.1020046+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.03684,115.75412\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-012.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.1020953+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.86199,115.94535\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-014.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.102126+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.86208,115.96482\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-015.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.2497816+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94012,115.94124\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-017.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.2497816+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.89436,115.80055\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-016.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.2497816+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94198,115.93905\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-018.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.2500499+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.95086,115.98681\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-020.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.2498637+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.00811,115.90042\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-019.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.3590697+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94473,115.94198\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-023.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.3590661+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.01515,115.76983\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-022.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.3590675+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.97978,115.7828\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-021.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.3649177+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94688,115.93946\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-024.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.367509+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94643,115.93999\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-025.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.4672103+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.12641,115.88558\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-026.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.4672173+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.01515,115.77086\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-027.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.4674249+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.95482,115.9994\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-028.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.4725226+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.12988,115.88547\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-029.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.4745745+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.03889,116.02576\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-030.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.5757961+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.03667,116.02334\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-031.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.5757961+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.89275,116.03471\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-032.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.57683+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.89022,116.03489\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-033.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.5796451+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.95709,115.87954\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-034.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.5825155+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.12562,115.91198\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-035.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.683897+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.12661,115.91318\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-037.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.6838554+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.04792,115.73687\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-036.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.6839164+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.07131,115.84888\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-038.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.6873096+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.04086,115.73906\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-039.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.6899715+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.95672,115.87836\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-040.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.7920648+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.03667,116.02334\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-041.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.7926029+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.07218,115.84875\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-043.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.792491+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.90469,115.91972\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-042.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.7959684+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.06368,115.80141\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-044.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.7985195+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.06363,115.80056\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-045.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.9025715+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.92945,115.77229\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-047.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.9022265+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.83454,115.78303\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-046.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.9026212+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.92905,115.77291\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-048.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.9060064+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.05697,115.98015\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-049.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:39.9071071+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.87006,116.03928\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032038Z-r25-050.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032038Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:40.0204137+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-31.861690,115.944940\u0026destination=-31.862080,115.964820\u0026departureTime=2026-06-05T03:20:39.9088883\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/routing/20260605T032038Z-r25-001.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.2646184+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-31.9505,115.8605;r=12000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/traffic-incidents/20260605T032040Z-r12-002.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.4344662+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.86048,115.80167\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-051.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.4344697+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94993,115.97527\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-053.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.4344662+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94198,115.93905\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-052.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.4345002+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.89383,115.80255\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-054.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.4346316+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.89436,115.80055\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-055.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.6389033+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94012,115.94124\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-059.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.6388995+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94643,115.93999\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-058.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.6389001+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94473,115.94198\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-057.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.6390069+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.00811,115.90042\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-060.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.6388979+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.95086,115.98681\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-056.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.7739958+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.01515,115.76983\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-063.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.7739958+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94688,115.93946\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-062.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.7739959+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.95709,115.87954\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-061.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.7739958+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.01515,115.77086\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-065.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.7739957+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.97978,115.7828\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-064.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.8836709+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.92945,115.77229\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-067.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.8836741+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.96451,115.95154\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-066.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.8836712+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.92905,115.77291\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-068.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.8852729+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.95672,115.87836\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-069.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:40.8854647+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.90469,115.91972\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-070.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032040Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:41.0144987+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.96459,115.95159\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032040Z-r12-071.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "geocode",
+    "SessionId": "20260605T032041Z-geocode",
+    "CapturedAtUtc": "2026-06-05T03:20:41.1230951+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=perth%2C Australia\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/geocode/20260605T032041Z-geocode-001.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "geocode",
+    "SessionId": "20260605T032041Z-geocode",
+    "CapturedAtUtc": "2026-06-05T03:20:41.2311709+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=6PR\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/geocode/20260605T032041Z-geocode-002.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.4881928+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-34.9285,138.6007;r=25000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/traffic-incidents/20260605T032041Z-r25-001.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.6080808+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.94648,138.5691\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-001.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.6081571+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.97642,138.58249\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-005.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.6080816+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.97959,138.5738\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-003.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.6080842+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.97969,138.57165\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-002.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.6080842+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.81359,138.62087\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-004.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.7177788+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.9796,138.57352\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-007.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.7177798+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.88103,138.68348\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-008.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.7177786+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-35.02739,138.57564\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-006.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.7180759+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.92777,138.56107\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-009.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.7181515+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.87896,138.68431\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-010.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.8266758+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-35.02926,138.57092\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-011.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.8266512+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.95971,138.5977\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-012.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.8266511+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.96062,138.59852\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-013.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.8280046+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.93742,138.57068\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-014.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.8280047+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.8743,138.57992\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-015.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.9355987+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.92224,138.59939\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-016.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.9355952+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.92225,138.5989\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-017.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r25",
+    "CapturedAtUtc": "2026-06-05T03:20:41.9356509+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.96065,138.59795\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r25-018.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.2839329+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-34.9285,138.6007;r=12000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/traffic-incidents/20260605T032041Z-r12-002.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.4042198+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.9796,138.57352\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-022.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.4042009+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.97959,138.5738\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-020.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.4042011+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.97969,138.57165\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-019.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.4042029+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.97642,138.58249\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-021.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.4045487+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.94648,138.5691\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-023.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.514599+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.8743,138.57992\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-025.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.5146439+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.92777,138.56107\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-026.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.5146672+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-35.02739,138.57564\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-027.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.5145515+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.88103,138.68348\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-024.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.5149314+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.87896,138.68431\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-028.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.6882776+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.93742,138.57068\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-029.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.6882787+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.96062,138.59852\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-030.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.6883784+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-35.02926,138.57092\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-031.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.6884376+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.95971,138.5977\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-032.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.6885178+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.96065,138.59795\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-033.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.7973668+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.92224,138.59939\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-034.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032041Z-r12",
+    "CapturedAtUtc": "2026-06-05T03:20:42.7974647+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.92225,138.5989\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032041Z-r12-035.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "geocode",
+    "SessionId": "20260605T032042Z-geocode",
+    "CapturedAtUtc": "2026-06-05T03:20:42.9084821+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=adelaide%2C Australia\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/geocode/20260605T032042Z-geocode-001.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "geocode",
+    "SessionId": "20260605T032042Z-geocode",
+    "CapturedAtUtc": "2026-06-05T03:20:43.0963202+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=5AA\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/geocode/20260605T032042Z-geocode-002.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032043Z-r20",
+    "CapturedAtUtc": "2026-06-05T03:20:43.4070774+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-28.0167,153.4;r=20000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/traffic-incidents/20260605T032043Z-r20-001.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032043Z-r20",
+    "CapturedAtUtc": "2026-06-05T03:20:43.6080567+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.92686,153.39828\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032043Z-r20-001.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032043Z-r20",
+    "CapturedAtUtc": "2026-06-05T03:20:43.6080649+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.92267,153.39898\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032043Z-r20-004.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032043Z-r20",
+    "CapturedAtUtc": "2026-06-05T03:20:43.6080682+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.95091,153.34253\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032043Z-r20-003.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032043Z-r20",
+    "CapturedAtUtc": "2026-06-05T03:20:43.6080633+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.12729,153.46629\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032043Z-r20-002.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032043Z-r20",
+    "CapturedAtUtc": "2026-06-05T03:20:43.6081201+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.92466,153.39868\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032043Z-r20-005.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032043Z-r20",
+    "CapturedAtUtc": "2026-06-05T03:20:43.811664+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.95334,153.34614\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032043Z-r20-006.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032043Z-r20",
+    "CapturedAtUtc": "2026-06-05T03:20:43.811664+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.12264,153.46306\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032043Z-r20-007.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032043Z-r20",
+    "CapturedAtUtc": "2026-06-05T03:20:43.8116651+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.08317,153.44779\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032043Z-r20-008.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032043Z-r10",
+    "CapturedAtUtc": "2026-06-05T03:20:44.1209422+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-28.0167,153.4;r=10000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/traffic-incidents/20260605T032043Z-r10-002.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032043Z-r10",
+    "CapturedAtUtc": "2026-06-05T03:20:44.3249732+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.95334,153.34614\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032043Z-r10-010.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032043Z-r10",
+    "CapturedAtUtc": "2026-06-05T03:20:44.3249732+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.92686,153.39828\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032043Z-r10-009.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032043Z-r10",
+    "CapturedAtUtc": "2026-06-05T03:20:44.3251639+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.95091,153.34253\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032043Z-r10-011.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032043Z-r10",
+    "CapturedAtUtc": "2026-06-05T03:20:44.3254635+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.08317,153.44779\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032043Z-r10-012.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "geocode",
+    "SessionId": "20260605T032044Z-geocode",
+    "CapturedAtUtc": "2026-06-05T03:20:44.4349646+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=goldcoast%2C Australia\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/geocode/20260605T032044Z-geocode-001.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "geocode",
+    "SessionId": "20260605T032044Z-geocode",
+    "CapturedAtUtc": "2026-06-05T03:20:44.632468+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=Gold FM\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/geocode/20260605T032044Z-geocode-002.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032044Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:46.0731948+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-33.8688,151.2093;r=25000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/traffic-incidents/20260605T032044Z-routing-003.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032044Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:46.4124192+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.9643,151.13761\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032044Z-routing-075.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032044Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:46.4159285+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.84159,151.21055\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032044Z-routing-076.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032044Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:46.5171466+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.82856,151.08718\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032044Z-routing-077.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032044Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:46.5202395+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.82558,151.21372\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032044Z-routing-078.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032044Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:46.5208174+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.87173,151.17376\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032044Z-routing-079.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032044Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:46.5250374+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.85772,151.20886\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032044Z-routing-080.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032044Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:46.5278868+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.83121,151.08641\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/revgeocode/20260605T032044Z-routing-081.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032044Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:47.0893675+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-33.825580,151.213720\u0026destination=-33.964300,151.137610\u0026departureTime=2026-06-05T03:20:46.5424006\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/routing/20260605T032044Z-routing-001.json"
+  },
+  {
+    "Market": "sydney",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032044Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:47.2946986+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-33.825580,151.213720\u0026destination=-33.841590,151.210550\u0026departureTime=2026-06-05T03:20:47.0901193\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "sydney/routing/20260605T032044Z-routing-002.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032047Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:48.1165918+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-37.8136,144.9631;r=25000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/traffic-incidents/20260605T032047Z-routing-003.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032047Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:48.3196438+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.74252,144.91938\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032047Z-routing-088.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032047Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:48.3196439+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69068,144.9722\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032047Z-routing-086.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032047Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:48.3196483+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69712,145.09165\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032047Z-routing-087.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032047Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:48.3196439+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.76769,145.07976\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032047Z-routing-089.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032047Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:48.3196634+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69512,145.09253\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032047Z-routing-090.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032047Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:48.428553+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.74144,144.90988\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032047Z-routing-091.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032047Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:48.4285533+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.88329,144.719\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032047Z-routing-092.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032047Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:48.4285776+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.9573,145.10071\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032047Z-routing-093.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032047Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:48.435655+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-38.01638,145.09459\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/revgeocode/20260605T032047Z-routing-094.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032047Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:48.6259661+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-37.767690,145.079760\u0026destination=-37.695120,145.092530\u0026departureTime=2026-06-05T03:20:48.4364281\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/routing/20260605T032047Z-routing-003.json"
+  },
+  {
+    "Market": "melbourne",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032047Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:48.8309723+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-37.767690,145.079760\u0026destination=-37.690680,144.972200\u0026departureTime=2026-06-05T03:20:48.6264436\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "melbourne/routing/20260605T032047Z-routing-004.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032048Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:49.4458356+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-27.4698,153.0251;r=25000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/traffic-incidents/20260605T032048Z-routing-003.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032048Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:49.5598394+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.59774,152.94645\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032048Z-routing-024.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032048Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:49.5653359+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.60704,153.09891\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032048Z-routing-025.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032048Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:49.5659426+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.32929,153.05104\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032048Z-routing-026.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032048Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:49.5662002+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.58851,152.82298\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032048Z-routing-027.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032048Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:49.5678672+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.29673,153.01778\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032048Z-routing-028.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032048Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:49.718828+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.59099,152.83309\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032048Z-routing-030.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032048Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:49.718828+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.59154,152.83326\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032048Z-routing-029.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032048Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:49.7188778+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.59219,152.84394\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032048Z-routing-031.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032048Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:49.7189633+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.60008,153.08309\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/revgeocode/20260605T032048Z-routing-032.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032048Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:49.8291018+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-27.296730,153.017780\u0026destination=-27.329290,153.051040\u0026departureTime=2026-06-05T03:20:49.7195879\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/routing/20260605T032048Z-routing-001.json"
+  },
+  {
+    "Market": "brisbane",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032048Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:49.9470648+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-27.296730,153.017780\u0026destination=-27.588510,152.822980\u0026departureTime=2026-06-05T03:20:49.8299377\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "brisbane/routing/20260605T032048Z-routing-002.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032049Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:50.2697511+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-31.9505,115.8605;r=25000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/traffic-incidents/20260605T032049Z-routing-003.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032049Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:50.3946424+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.79548,115.96294\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032049Z-routing-073.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032049Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:50.3946424+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.86048,115.80167\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032049Z-routing-072.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032049Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:50.3971044+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.85599,115.96668\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032049Z-routing-074.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032049Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:50.3979077+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.98336,115.85075\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032049Z-routing-075.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032049Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:50.3979439+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.04245,115.75476\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032049Z-routing-076.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032049Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:50.5715673+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.73351,115.81729\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032049Z-routing-078.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032049Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:50.5715671+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.7335,115.82902\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032049Z-routing-077.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032049Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:50.5715671+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.03704,115.75386\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032049Z-routing-079.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032049Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:50.5715671+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94993,115.97527\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/revgeocode/20260605T032049Z-routing-080.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032049Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:50.7764157+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-31.855990,115.966680\u0026destination=-31.983360,115.850750\u0026departureTime=2026-06-05T03:20:50.5722779\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/routing/20260605T032049Z-routing-002.json"
+  },
+  {
+    "Market": "perth",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032049Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:50.9043362+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-31.855990,115.966680\u0026destination=-31.860480,115.801670\u0026departureTime=2026-06-05T03:20:50.7770960\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "perth/routing/20260605T032049Z-routing-003.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032050Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:51.1956314+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-34.9285,138.6007;r=25000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/traffic-incidents/20260605T032050Z-routing-003.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032050Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:51.319694+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.82469,138.78161\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032050Z-routing-037.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032050Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:51.3196962+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.82055,138.78991\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032050Z-routing-036.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032050Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:51.3199343+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-35.05063,138.8298\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032050Z-routing-039.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032050Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:51.3197828+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.89876,138.63939\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032050Z-routing-038.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032050Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:51.3199466+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.96684,138.57276\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032050Z-routing-040.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032050Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:51.4928158+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-35.02039,138.54114\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032050Z-routing-041.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032050Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:51.4928157+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.81693,138.80357\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032050Z-routing-042.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032050Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:51.492928+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.81359,138.62087\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032050Z-routing-044.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032050Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:51.4928737+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.97969,138.57165\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/revgeocode/20260605T032050Z-routing-043.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032050Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:51.6975483+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-35.050630,138.829800\u0026destination=-34.966840,138.572760\u0026departureTime=2026-06-05T03:20:51.4938617\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/routing/20260605T032050Z-routing-001.json"
+  },
+  {
+    "Market": "adelaide",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032050Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:51.9029121+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-35.050630,138.829800\u0026destination=-34.898760,138.639390\u0026departureTime=2026-06-05T03:20:51.6983422\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "adelaide/routing/20260605T032050Z-routing-002.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "traffic-incidents",
+    "SessionId": "20260605T032051Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:52.1521258+00:00",
+    "Method": "GET",
+    "Uri": "https://data.traffic.hereapi.com/v7/incidents?in=circle:-28.0167,153.4;r=20000\u0026locationReferencing=shape\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/traffic-incidents/20260605T032051Z-routing-003.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032051Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:52.3117607+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.95091,153.34253\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032051Z-routing-014.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032051Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:52.3117608+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.95436,153.34847\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032051Z-routing-013.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032051Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:52.3118313+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.95946,153.34714\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032051Z-routing-015.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032051Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:52.3119121+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.01499,153.38197\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032051Z-routing-016.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032051Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:52.311953+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.12221,153.29555\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032051Z-routing-017.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032051Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:52.5166622+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.11171,153.24473\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032051Z-routing-019.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "revgeocode",
+    "SessionId": "20260605T032051Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:52.5166703+00:00",
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.14681,153.27124\u0026lang=en-US\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/revgeocode/20260605T032051Z-routing-018.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032051Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:52.7214174+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-27.954360,153.348470\u0026destination=-27.950910,153.342530\u0026departureTime=2026-06-05T03:20:52.5173979\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/routing/20260605T032051Z-routing-001.json"
+  },
+  {
+    "Market": "goldcoast",
+    "Endpoint": "routing",
+    "SessionId": "20260605T032051Z-routing",
+    "CapturedAtUtc": "2026-06-05T03:20:52.9263647+00:00",
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-27.954360,153.348470\u0026destination=-28.014990,153.381970\u0026departureTime=2026-06-05T03:20:52.7222040\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Status": 200,
+    "File": "goldcoast/routing/20260605T032051Z-routing-002.json"
+  },
+  {
+    "Market": "_batch",
+    "Endpoint": "batch-revgeocode",
+    "SessionId": "20260605T032052Z-batch",
+    "CapturedAtUtc": "2026-06-05T03:20:53.8007223+00:00",
+    "Method": "POST",
+    "Uri": "https://multi-revgeocode.search.hereapi.com/v1/multi-revgeocode?apiKey=***",
+    "Status": 415,
+    "File": "_batch/batch-revgeocode/20260605T032052Z-batch-001.json"
+  }
+]

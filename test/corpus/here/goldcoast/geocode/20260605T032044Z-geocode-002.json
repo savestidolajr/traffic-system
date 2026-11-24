@@ -1,0 +1,50 @@
+{
+  "Market": "goldcoast",
+  "Endpoint": "geocode",
+  "SessionId": "20260605T032044Z-geocode",
+  "CapturedAtUtc": "2026-06-05T03:20:44.632468+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=Gold FM\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Fermo, Marche, Italia",
+          "id": "here:cm:namedplace:23502441",
+          "resultType": "administrativeArea",
+          "administrativeAreaType": "county",
+          "address": {
+            "label": "Fermo, Marche, Italia",
+            "countryCode": "ITA",
+            "countryName": "Italia",
+            "state": "Marche",
+            "countyCode": "FM",
+            "county": "Fermo"
+          },
+          "position": {
+            "lat": 43.16256,
+            "lng": 13.72208
+          },
+          "mapView": {
+            "west": 13.21609,
+            "south": 42.8901,
+            "east": 13.84963,
+            "north": 43.29401
+          },
+          "scoring": {
+            "queryScore": 0.33,
+            "fieldScore": {
+              "county": 1.0
+            }
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

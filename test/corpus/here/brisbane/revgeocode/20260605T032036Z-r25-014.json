@@ -1,0 +1,56 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032036Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:37.4471913+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.35549,152.94796\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "CRESSBROOK DRIVE RESERVE, 94 Dugandan Rd, Bunya QLD 4055, Australia",
+          "id": "here:af:streetsection:C5abM4B-mMXSr1uPC5QG8D:CggIBCC10N6jAxABGgI5NA",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "CRESSBROOK DRIVE RESERVE, 94 Dugandan Rd, Bunya QLD 4055, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Bunya",
+            "street": "Dugandan Rd",
+            "postalCode": "4055",
+            "houseNumber": "94",
+            "building": "CRESSBROOK DRIVE RESERVE"
+          },
+          "position": {
+            "lat": -27.35602,
+            "lng": 152.94952
+          },
+          "access": [
+            {
+              "lat": -27.35568,
+              "lng": 152.94791
+            }
+          ],
+          "distance": 22,
+          "mapView": {
+            "west": 152.94168,
+            "south": -27.37386,
+            "east": 152.94835,
+            "north": -27.35428
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,122 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "geocode",
+  "SessionId": "20260605T032042Z-geocode",
+  "CapturedAtUtc": "2026-06-05T03:20:43.0963202+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=5AA\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Calle 5AA, 051030 Girardota, Colombia",
+          "id": "here:af:streetsection:pWJ4PvRfIgquT4vD-AKEPD",
+          "resultType": "street",
+          "address": {
+            "label": "Calle 5AA, 051030 Girardota, Colombia",
+            "countryCode": "COL",
+            "countryName": "Colombia",
+            "countyCode": "AN",
+            "county": "Antioquia",
+            "city": "Girardota",
+            "district": "Nuevo Horizonte",
+            "street": "Calle 5AA",
+            "postalCode": "051030"
+          },
+          "position": {
+            "lat": 6.37524,
+            "lng": -75.44251
+          },
+          "mapView": {
+            "west": -75.44262,
+            "south": 6.3751,
+            "east": -75.4424,
+            "north": 6.37537
+          },
+          "scoring": {
+            "queryScore": 0.99,
+            "fieldScore": {
+              "streets": [
+                0.9
+              ]
+            }
+          }
+        },
+        {
+          "title": "Calle 5AA, 051030 Girardota, Colombia",
+          "id": "here:af:streetsection:YT8KHFeHsx3ygPoZIXqBvD",
+          "resultType": "street",
+          "address": {
+            "label": "Calle 5AA, 051030 Girardota, Colombia",
+            "countryCode": "COL",
+            "countryName": "Colombia",
+            "countyCode": "AN",
+            "county": "Antioquia",
+            "city": "Girardota",
+            "district": "Centro",
+            "street": "Calle 5AA",
+            "postalCode": "051030"
+          },
+          "position": {
+            "lat": 6.38023,
+            "lng": -75.4462
+          },
+          "mapView": {
+            "west": -75.44626,
+            "south": 6.3801,
+            "east": -75.44614,
+            "north": 6.38036
+          },
+          "scoring": {
+            "queryScore": 0.99,
+            "fieldScore": {
+              "streets": [
+                0.9
+              ]
+            }
+          }
+        },
+        {
+          "title": "Calle 5AA, 050029 Medell\u00EDn, Colombia",
+          "id": "here:af:streetsection:QluEhC4bFQrGHsrS.d0lAA",
+          "resultType": "street",
+          "address": {
+            "label": "Calle 5AA, 050029 Medell\u00EDn, Colombia",
+            "countryCode": "COL",
+            "countryName": "Colombia",
+            "countyCode": "AN",
+            "county": "Antioquia",
+            "city": "Medell\u00EDn",
+            "district": "San Antonio de Prado",
+            "street": "Calle 5AA",
+            "postalCode": "050029"
+          },
+          "position": {
+            "lat": 6.17658,
+            "lng": -75.64164
+          },
+          "mapView": {
+            "west": -75.64192,
+            "south": 6.17639,
+            "east": -75.64136,
+            "north": 6.17676
+          },
+          "scoring": {
+            "queryScore": 0.99,
+            "fieldScore": {
+              "streets": [
+                0.9
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

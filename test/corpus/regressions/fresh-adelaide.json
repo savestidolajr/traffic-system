@@ -1,0 +1,1951 @@
+{
+  "Label": "fresh-adelaide",
+  "Reason": "true sample wave 2: traffic\u002Bweather\u002Bfuel, 03:53",
+  "SourceJobId": "fe9f82dee0bc47cf82fe6204d78fbe36",
+  "OriginalScript": "Heavy rain\u2019s anticipated, and the Adelaide Hills roads could be affected. South Road is closed at Sir Donald Bradman Drive for Torrens to Darlington civil works, and it\u2019s also closed at James Congdon Drive. Main North Road is under speed with roadworks. Anzac Highway at Morphett Road, Old Port Road at Tapleys Hill Road, Marion Road at Winifred Avenue, Port Wakefield Road at Grand Junction Road and Salisbury Highway at Shepherdson Road are all a touch slow through construction.",
+  "CapturedAtUtc": "2026-07-10T03:53:28.445979+00:00",
+  "Snapshot": {
+    "TargetDurationSeconds": 30,
+    "Location": "adelaide",
+    "City": null,
+    "MarketId": "adelaide",
+    "Content": {
+      "Traffic": true,
+      "Weather": true,
+      "Fuel": true,
+      "HasAnySource": true
+    },
+    "Corridors": [
+      {
+        "RoadName": "Port Wakefield Road",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 400,
+        "ImpactScore": 262.6,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "2533372473919036780",
+            "Description": "At Martins Road - Road construction",
+            "Severity": 1,
+            "Location": "Port Wakefield Rd",
+            "Type": "construction",
+            "LengthMeters": 129,
+            "FunctionalClass": 1,
+            "Latitude": -34.79072,
+            "Longitude": 138.59662,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.79072,
+                "Lng": 138.59662
+              },
+              {
+                "Lat": -34.79188,
+                "Lng": 138.59674
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:48:19+00:00"
+          },
+          {
+            "Id": "4408790164486226317",
+            "Description": "At Martins Road - Road construction",
+            "Severity": 1,
+            "Location": "Port Wakefield Rd",
+            "Type": "construction",
+            "LengthMeters": 39,
+            "FunctionalClass": 1,
+            "Latitude": -34.79381,
+            "Longitude": 138.59681,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.79381,
+                "Lng": 138.59681
+              },
+              {
+                "Lat": -34.79416,
+                "Lng": 138.59679
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:48:19+00:00"
+          },
+          {
+            "Id": "4172068351037422622",
+            "Description": "At Cavan Road - Road construction",
+            "Severity": 1,
+            "Location": "Port Wakefield Rd",
+            "Type": "construction",
+            "LengthMeters": 115,
+            "FunctionalClass": 2,
+            "Latitude": -34.83542,
+            "Longitude": 138.59927,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Vms Trailer",
+            "Shape": [
+              {
+                "Lat": -34.83542,
+                "Lng": 138.59927
+              },
+              {
+                "Lat": -34.83645,
+                "Lng": 138.59935
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:42:50+00:00"
+          },
+          {
+            "Id": "3515327448673265413",
+            "Description": "At Grand Junction Road - Road construction",
+            "Severity": 1,
+            "Location": "Port Wakefield Rd",
+            "Type": "construction",
+            "LengthMeters": 90,
+            "FunctionalClass": 2,
+            "Latitude": -34.84118,
+            "Longitude": 138.59969,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Kerbing Installation",
+            "Shape": [
+              {
+                "Lat": -34.84118,
+                "Lng": 138.59969
+              },
+              {
+                "Lat": -34.84199,
+                "Lng": 138.59976
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:48:19+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": 10,
+        "NormalDriveTimeMinutes": 9,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": true,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "South Road",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 1000,
+        "ImpactScore": 255,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure and roadworks",
+        "Incidents": [
+          {
+            "Id": "4109299645014959009",
+            "Description": "At Ashwin Parade - Closed",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "roadClosure",
+            "LengthMeters": 134,
+            "FunctionalClass": 1,
+            "Latitude": -34.9154,
+            "Longitude": 138.56624,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.9154,
+                "Lng": 138.56624
+              },
+              {
+                "Lat": -34.91513,
+                "Lng": 138.56606
+              },
+              {
+                "Lat": -34.91513,
+                "Lng": 138.56606
+              },
+              {
+                "Lat": -34.91485,
+                "Lng": 138.56587
+              },
+              {
+                "Lat": -34.91485,
+                "Lng": 138.56587
+              },
+              {
+                "Lat": -34.91472,
+                "Lng": 138.56579
+              },
+              {
+                "Lat": -34.91472,
+                "Lng": 138.56579
+              },
+              {
+                "Lat": -34.91463,
+                "Lng": 138.56572
+              },
+              {
+                "Lat": -34.91463,
+                "Lng": 138.56572
+              },
+              {
+                "Lat": -34.91432,
+                "Lng": 138.5656
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-07-10T02:38:09+00:00"
+          },
+          {
+            "Id": "2341012584037847272",
+            "Description": "Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 104,
+            "FunctionalClass": 1,
+            "Latitude": -34.96684,
+            "Longitude": 138.57276,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.96684,
+                "Lng": 138.57276
+              },
+              {
+                "Lat": -34.96591,
+                "Lng": 138.57269
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:18:45+00:00"
+          },
+          {
+            "Id": "2240585754205621412",
+            "Description": "At Anzac Highway - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 63,
+            "FunctionalClass": 1,
+            "Latitude": -34.95298,
+            "Longitude": 138.57165,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.95298,
+                "Lng": 138.57165
+              },
+              {
+                "Lat": -34.95355,
+                "Lng": 138.57169
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:18:45+00:00"
+          },
+          {
+            "Id": "2895296296271421057",
+            "Description": "At Anzac Highway - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 56,
+            "FunctionalClass": 1,
+            "Latitude": -34.95356,
+            "Longitude": 138.57157,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.95356,
+                "Lng": 138.57157
+              },
+              {
+                "Lat": -34.95306,
+                "Lng": 138.57154
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:18:45+00:00"
+          },
+          {
+            "Id": "3075250711532704734",
+            "Description": "At Anzac Highway - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 53,
+            "FunctionalClass": 1,
+            "Latitude": -34.94982,
+            "Longitude": 138.57166,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.94982,
+                "Lng": 138.57166
+              },
+              {
+                "Lat": -34.9503,
+                "Lng": 138.57164
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:48:20+00:00"
+          },
+          {
+            "Id": "572601657760289111",
+            "Description": "At Barwell Avenue - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 50,
+            "FunctionalClass": 1,
+            "Latitude": -34.94809,
+            "Longitude": 138.57149,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.94809,
+                "Lng": 138.57149
+              },
+              {
+                "Lat": -34.94764,
+                "Lng": 138.57146
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:18:45+00:00"
+          },
+          {
+            "Id": "3824938601845055957",
+            "Description": "At Tennyson Street - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 46,
+            "FunctionalClass": 1,
+            "Latitude": -34.94928,
+            "Longitude": 138.57155,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Torrens To Darlington - Civil Works",
+            "Shape": [
+              {
+                "Lat": -34.94928,
+                "Lng": 138.57155
+              },
+              {
+                "Lat": -34.94887,
+                "Lng": 138.57154
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T02:57:53+00:00"
+          },
+          {
+            "Id": "3211388697641086260",
+            "Description": "At Tennyson Street - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 43,
+            "FunctionalClass": 1,
+            "Latitude": -34.94725,
+            "Longitude": 138.57154,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.94725,
+                "Lng": 138.57154
+              },
+              {
+                "Lat": -34.94764,
+                "Lng": 138.57157
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:18:45+00:00"
+          },
+          {
+            "Id": "709061886072577686",
+            "Description": "At James Congdon Drive - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 39,
+            "FunctionalClass": 1,
+            "Latitude": -34.93491,
+            "Longitude": 138.57061,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Torrens To Darlington - Civil Works",
+            "Shape": [
+              {
+                "Lat": -34.93491,
+                "Lng": 138.57061
+              },
+              {
+                "Lat": -34.93526,
+                "Lng": 138.57064
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T00:53:03+00:00"
+          },
+          {
+            "Id": "1908631473954881739",
+            "Description": "Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 38,
+            "FunctionalClass": 1,
+            "Latitude": -34.96572,
+            "Longitude": 138.57298,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.96572,
+                "Lng": 138.57298
+              },
+              {
+                "Lat": -34.96606,
+                "Lng": 138.57301
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:18:45+00:00"
+          },
+          {
+            "Id": "4284673287499943071",
+            "Description": "At Barwell Avenue - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 36,
+            "FunctionalClass": 1,
+            "Latitude": -34.94688,
+            "Longitude": 138.5714,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Torrens To Darlington - Civil Works",
+            "Shape": [
+              {
+                "Lat": -34.94688,
+                "Lng": 138.5714
+              },
+              {
+                "Lat": -34.94656,
+                "Lng": 138.57137
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T02:30:18+00:00"
+          },
+          {
+            "Id": "2335814483897722635",
+            "Description": "At Sir Donald Bradman Drive - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 35,
+            "FunctionalClass": 1,
+            "Latitude": -34.93557,
+            "Longitude": 138.57055,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Torrens To Darlington - Civil Works",
+            "Shape": [
+              {
+                "Lat": -34.93557,
+                "Lng": 138.57055
+              },
+              {
+                "Lat": -34.93526,
+                "Lng": 138.57053
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T00:53:03+00:00"
+          },
+          {
+            "Id": "344579398339829995",
+            "Description": "At Tennyson Street - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 27,
+            "FunctionalClass": 1,
+            "Latitude": -34.9463,
+            "Longitude": 138.57147,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Torrens To Darlington - Civil Works",
+            "Shape": [
+              {
+                "Lat": -34.9463,
+                "Lng": 138.57147
+              },
+              {
+                "Lat": -34.94654,
+                "Lng": 138.57149
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T02:30:18+00:00"
+          },
+          {
+            "Id": "3683462709499350513",
+            "Description": "At Cross Road - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 27,
+            "FunctionalClass": 1,
+            "Latitude": -34.96384,
+            "Longitude": 138.57275,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.96384,
+                "Lng": 138.57275
+              },
+              {
+                "Lat": -34.96408,
+                "Lng": 138.57277
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:18:45+00:00"
+          },
+          {
+            "Id": "2329869679810420546",
+            "Description": "At Cross Road - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 21,
+            "FunctionalClass": 1,
+            "Latitude": -34.96151,
+            "Longitude": 138.57261,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.96151,
+                "Lng": 138.57261
+              },
+              {
+                "Lat": -34.9617,
+                "Lng": 138.57262
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:18:45+00:00"
+          },
+          {
+            "Id": "273493842428451311",
+            "Description": "At Anzac Highway - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 19,
+            "FunctionalClass": 1,
+            "Latitude": -34.96406,
+            "Longitude": 138.57267,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.96406,
+                "Lng": 138.57267
+              },
+              {
+                "Lat": -34.96389,
+                "Lng": 138.57266
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:18:45+00:00"
+          },
+          {
+            "Id": "1428511970353501905",
+            "Description": "At Barwell Avenue - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 17,
+            "FunctionalClass": 1,
+            "Latitude": -34.94,
+            "Longitude": 138.57098,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Torrens To Darlington - Civil Works",
+            "Shape": [
+              {
+                "Lat": -34.94,
+                "Lng": 138.57098
+              },
+              {
+                "Lat": -34.94015,
+                "Lng": 138.57099
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-09T23:28:22+00:00"
+          },
+          {
+            "Id": "3164970461738772152",
+            "Description": "At Tennyson Street - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 16,
+            "FunctionalClass": 1,
+            "Latitude": -34.94873,
+            "Longitude": 138.57163,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Torrens To Darlington - Civil Works",
+            "Shape": [
+              {
+                "Lat": -34.94873,
+                "Lng": 138.57163
+              },
+              {
+                "Lat": -34.94887,
+                "Lng": 138.57164
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T02:57:53+00:00"
+          },
+          {
+            "Id": "2437294806439650603",
+            "Description": "At Anzac Highway - Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 14,
+            "FunctionalClass": 1,
+            "Latitude": -34.96182,
+            "Longitude": 138.57251,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.96182,
+                "Lng": 138.57251
+              },
+              {
+                "Lat": -34.96169,
+                "Lng": 138.5725
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:18:45+00:00"
+          },
+          {
+            "Id": "701305833464457662",
+            "Description": "Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 88,
+            "FunctionalClass": 2,
+            "Latitude": -34.95555,
+            "Longitude": 138.57205,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.95555,
+                "Lng": 138.57205
+              },
+              {
+                "Lat": -34.95595,
+                "Lng": 138.5721
+              },
+              {
+                "Lat": -34.95634,
+                "Lng": 138.57213
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:18:45+00:00"
+          },
+          {
+            "Id": "3878605415455887541",
+            "Description": "Road construction",
+            "Severity": 1,
+            "Location": "South Rd",
+            "Type": "construction",
+            "LengthMeters": 77,
+            "FunctionalClass": 2,
+            "Latitude": -34.95158,
+            "Longitude": 138.57187,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.95158,
+                "Lng": 138.57187
+              },
+              {
+                "Lat": -34.95227,
+                "Lng": 138.57191
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:18:45+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": 14,
+        "NormalDriveTimeMinutes": 13,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "Anzac Highway",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 100,
+        "ImpactScore": 218.44472089316199,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "759771803406052404",
+            "Description": "At Morphett Road - Road construction",
+            "Severity": 1,
+            "Location": "Anzac Hwy",
+            "Type": "construction",
+            "LengthMeters": 102,
+            "FunctionalClass": 2,
+            "Latitude": -34.97567,
+            "Longitude": 138.53104,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Junction Upgrade",
+            "Shape": [
+              {
+                "Lat": -34.97567,
+                "Lng": 138.53104
+              },
+              {
+                "Lat": -34.97562,
+                "Lng": 138.53217
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:07:48+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 5,
+        "PriorityBoosted": true,
+        "Detour": null,
+        "DelayMinutes": 5
+      },
+      {
+        "RoadName": "Cross Road",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 100,
+        "ImpactScore": 194.59687645062152,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "2646215015007140466",
+            "Description": "At Harrow Terrace - Road construction",
+            "Severity": 1,
+            "Location": "Cross Rd",
+            "Type": "construction",
+            "LengthMeters": 24,
+            "FunctionalClass": 1,
+            "Latitude": -34.96479,
+            "Longitude": 138.62211,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Urgent Sewer Works",
+            "Shape": [
+              {
+                "Lat": -34.96479,
+                "Lng": 138.62211
+              },
+              {
+                "Lat": -34.9648,
+                "Lng": 138.62185
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:42:50+00:00"
+          },
+          {
+            "Id": "409368158333496773",
+            "Description": "At Marion Road - Road construction. Contraflow",
+            "Severity": 1,
+            "Location": "Cross Rd",
+            "Type": "construction",
+            "LengthMeters": 117,
+            "FunctionalClass": 2,
+            "Latitude": -34.96836,
+            "Longitude": 138.55064,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.96836,
+                "Lng": 138.55064
+              },
+              {
+                "Lat": -34.96835,
+                "Lng": 138.55081
+              },
+              {
+                "Lat": -34.96835,
+                "Lng": 138.55081
+              },
+              {
+                "Lat": -34.96829,
+                "Lng": 138.55194
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:48:20+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": 10,
+        "NormalDriveTimeMinutes": 11,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": -1
+      },
+      {
+        "RoadName": "Portrush Road",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 100,
+        "ImpactScore": 194.37368674064894,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "488128590932521952",
+            "Description": "At Marian Road - Road construction",
+            "Severity": 1,
+            "Location": "Portrush Rd",
+            "Type": "construction",
+            "LengthMeters": 87,
+            "FunctionalClass": 1,
+            "Latitude": -34.89876,
+            "Longitude": 138.63939,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Asphalt Works",
+            "Shape": [
+              {
+                "Lat": -34.89876,
+                "Lng": 138.63939
+              },
+              {
+                "Lat": -34.89954,
+                "Lng": 138.63945
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:48:19+00:00"
+          },
+          {
+            "Id": "4181589079046796384",
+            "Description": "At Payneham Road - Road construction",
+            "Severity": 1,
+            "Location": "Portrush Rd",
+            "Type": "construction",
+            "LengthMeters": 37,
+            "FunctionalClass": 1,
+            "Latitude": -34.89987,
+            "Longitude": 138.63938,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Asphalt Works",
+            "Shape": [
+              {
+                "Lat": -34.89987,
+                "Lng": 138.63938
+              },
+              {
+                "Lat": -34.89954,
+                "Lng": 138.63937
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:48:19+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": 1,
+        "NormalDriveTimeMinutes": 1,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 0
+      },
+      {
+        "RoadName": "Stuart Road",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 0,
+        "ImpactScore": 186.6510313267263,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "3231010369807528346",
+            "Description": "At James Congdon Drive - Road construction",
+            "Severity": 1,
+            "Location": "Stuart Rd",
+            "Type": "construction",
+            "LengthMeters": 46,
+            "FunctionalClass": 1,
+            "Latitude": -34.94001,
+            "Longitude": 138.57087,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Torrens To Darlington - Civil Works",
+            "Shape": [
+              {
+                "Lat": -34.94001,
+                "Lng": 138.57087
+              },
+              {
+                "Lat": -34.9396,
+                "Lng": 138.57084
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-09T23:28:22+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": null
+      },
+      {
+        "RoadName": "Salisbury Highway",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 500,
+        "ImpactScore": 183.93156856932418,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "1031180887239248758",
+            "Description": "At Shepherdson Road - Road construction",
+            "Severity": 1,
+            "Location": "Salisbury Hwy",
+            "Type": "construction",
+            "LengthMeters": 118,
+            "FunctionalClass": 2,
+            "Latitude": -34.78074,
+            "Longitude": 138.62507,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Mowing",
+            "Shape": [
+              {
+                "Lat": -34.78074,
+                "Lng": 138.62507
+              },
+              {
+                "Lat": -34.7816,
+                "Lng": 138.62431
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T01:58:19+00:00"
+          },
+          {
+            "Id": "1254660029926581018",
+            "Description": "At Ryans Road - Road construction",
+            "Severity": 1,
+            "Location": "Salisbury Hwy",
+            "Type": "construction",
+            "LengthMeters": 110,
+            "FunctionalClass": 2,
+            "Latitude": -34.79195,
+            "Longitude": 138.61505,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Mowing",
+            "Shape": [
+              {
+                "Lat": -34.79195,
+                "Lng": 138.61505
+              },
+              {
+                "Lat": -34.79275,
+                "Lng": 138.61434
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T01:58:19+00:00"
+          },
+          {
+            "Id": "4591099416104367733",
+            "Description": "At Shepherdson Road - Road construction",
+            "Severity": 1,
+            "Location": "Salisbury Hwy",
+            "Type": "construction",
+            "LengthMeters": 110,
+            "FunctionalClass": 2,
+            "Latitude": -34.7853,
+            "Longitude": 138.621,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Mowing",
+            "Shape": [
+              {
+                "Lat": -34.7853,
+                "Lng": 138.621
+              },
+              {
+                "Lat": -34.7861,
+                "Lng": 138.62028
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T01:58:19+00:00"
+          },
+          {
+            "Id": "2790518067104783560",
+            "Description": "At Spains Road - Road construction",
+            "Severity": 1,
+            "Location": "Salisbury Hwy",
+            "Type": "construction",
+            "LengthMeters": 104,
+            "FunctionalClass": 2,
+            "Latitude": -34.77344,
+            "Longitude": 138.63145,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Mowing",
+            "Shape": [
+              {
+                "Lat": -34.77344,
+                "Lng": 138.63145
+              },
+              {
+                "Lat": -34.77268,
+                "Lng": 138.63213
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T01:58:19+00:00"
+          },
+          {
+            "Id": "2722356935631276556",
+            "Description": "At Kings Road - Road construction",
+            "Severity": 1,
+            "Location": "Salisbury Hwy",
+            "Type": "construction",
+            "LengthMeters": 86,
+            "FunctionalClass": 2,
+            "Latitude": -34.78129,
+            "Longitude": 138.62443,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Mowing",
+            "Shape": [
+              {
+                "Lat": -34.78129,
+                "Lng": 138.62443
+              },
+              {
+                "Lat": -34.78066,
+                "Lng": 138.62499
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T01:58:19+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": 5,
+        "NormalDriveTimeMinutes": 4,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "Old Port Road",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 100,
+        "ImpactScore": 168.45577340922733,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "531547787362572195",
+            "Description": "At Tapleys Hill Road - Road construction",
+            "Severity": 1,
+            "Location": "Old Port Rd",
+            "Type": "construction",
+            "LengthMeters": 130,
+            "FunctionalClass": 2,
+            "Latitude": -34.86092,
+            "Longitude": 138.50589,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Maintenance",
+            "Shape": [
+              {
+                "Lat": -34.86092,
+                "Lng": 138.50589
+              },
+              {
+                "Lat": -34.86166,
+                "Lng": 138.50701
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:28:37+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 5,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 5
+      },
+      {
+        "RoadName": "Marion Road",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 100,
+        "ImpactScore": 168.45577340922733,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "2001228498463248957",
+            "Description": "At Winifred Avenue - Road construction",
+            "Severity": 1,
+            "Location": "Marion Rd",
+            "Type": "construction",
+            "LengthMeters": 130,
+            "FunctionalClass": 2,
+            "Latitude": -34.96813,
+            "Longitude": 138.55511,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Traffic Management",
+            "Shape": [
+              {
+                "Lat": -34.96813,
+                "Lng": 138.55511
+              },
+              {
+                "Lat": -34.96804,
+                "Lng": 138.55654
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T01:38:20+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 5,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 5
+      },
+      {
+        "RoadName": "Main North Road",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 100,
+        "ImpactScore": 167.92908493215828,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "2438640414190265252",
+            "Description": "At Port Wakefield Road - Road construction",
+            "Severity": 1,
+            "Location": "Main North Rd",
+            "Type": "construction",
+            "LengthMeters": 96,
+            "FunctionalClass": 2,
+            "Latitude": -34.84123,
+            "Longitude": 138.60541,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Vms Trailer",
+            "Shape": [
+              {
+                "Lat": -34.84123,
+                "Lng": 138.60541
+              },
+              {
+                "Lat": -34.84197,
+                "Lng": 138.60487
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:42:50+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 7,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 7
+      },
+      {
+        "RoadName": "Greenhill Road",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 100,
+        "ImpactScore": 167.4769268789239,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "338980800223620267",
+            "Description": "At George Street - Road construction",
+            "Severity": 1,
+            "Location": "Greenhill Rd",
+            "Type": "construction",
+            "LengthMeters": 74,
+            "FunctionalClass": 2,
+            "Latitude": -34.9408,
+            "Longitude": 138.60732,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": "Kerbing Installation",
+            "Shape": [
+              {
+                "Lat": -34.9408,
+                "Lng": 138.60732
+              },
+              {
+                "Lat": -34.94076,
+                "Lng": 138.60814
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T03:42:50+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 6,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 6
+      },
+      {
+        "RoadName": "Bolivar Road",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 4400,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 16,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 16
+      },
+      {
+        "RoadName": "Maxwell Road",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 1100,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "Morphett Street",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 800,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 4,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 4
+      },
+      {
+        "RoadName": "Ackland Street",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 900,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 2
+      },
+      {
+        "RoadName": "Diagonal Road",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 800,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 2
+      },
+      {
+        "RoadName": "Curtis Road",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 600,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 2
+      },
+      {
+        "RoadName": "George Street",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 400,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 3,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 3
+      },
+      {
+        "RoadName": "James Congdon Drive",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 600,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 2
+      },
+      {
+        "RoadName": "Sir Donald Bradman Drive",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 900,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 3,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 3
+      }
+    ],
+    "MonitoredRoutes": [],
+    "GoodRunRoads": [
+      "South Eastern Freeway",
+      "North-South Motorway",
+      "Southern Expressway",
+      "Northern Expressway",
+      "Angle Vale Road",
+      "Heaslip Road"
+    ],
+    "FlowPool": [
+      {
+        "RoadName": "South Eastern Freeway",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 140,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "North-South Motorway",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 80,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Southern Expressway",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 80,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Northern Expressway",
+        "JamFactor": 1.2,
+        "LengthMeters": 24779,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Angle Vale Road",
+        "JamFactor": 2.1,
+        "LengthMeters": 22068,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Heaslip Road",
+        "JamFactor": 2.5,
+        "LengthMeters": 20616,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Waterloo Corner Road",
+        "JamFactor": 3.1,
+        "LengthMeters": 15873,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Coulls Road",
+        "JamFactor": 1,
+        "LengthMeters": 13902,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Grand Junction Road",
+        "JamFactor": 3.6,
+        "LengthMeters": 12960,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Mcintyre Road",
+        "JamFactor": 2.8,
+        "LengthMeters": 12750,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Torrens Hill Road",
+        "JamFactor": 0.7,
+        "LengthMeters": 12425,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Hancock Road",
+        "JamFactor": 2.7,
+        "LengthMeters": 12018,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "North East Road",
+        "JamFactor": 3.7,
+        "LengthMeters": 11050,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Two Wells Road",
+        "JamFactor": 1.2,
+        "LengthMeters": 10974,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Grange Road",
+        "JamFactor": 3.3,
+        "LengthMeters": 10619,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "West Lakes Boulevard",
+        "JamFactor": 3.5,
+        "LengthMeters": 10483,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      }
+    ],
+    "Weather": {
+      "Conditions": "Sunny. Mild.",
+      "TemperatureC": 17,
+      "WindDescription": null,
+      "PrecipitationProbabilityPercent": 3,
+      "Alerts": [
+        "Heavy rain anticipated"
+      ],
+      "Outlook": "reaching 17 degrees later today; tomorrow thunderstorms. cloudy. cool, around 14 degrees",
+      "HasMajorAlert": true
+    },
+    "Fuel": {
+      "Summaries": [
+        {
+          "FuelType": "Unleaded 91",
+          "MinPrice": 1.517,
+          "AveragePrice": 1.624,
+          "StationCount": 49,
+          "LatestModifiedUtc": "2026-07-10T03:28:03+00:00",
+          "CheapestStationSuburb": "Kilburn"
+        },
+        {
+          "FuelType": "Diesel",
+          "MinPrice": 1.799,
+          "AveragePrice": 1.83,
+          "StationCount": 12,
+          "LatestModifiedUtc": "2026-07-10T03:28:03+00:00",
+          "CheapestStationSuburb": "Blair Athol"
+        }
+      ],
+      "HasPrices": true
+    },
+    "IncidentChanges": null,
+    "Guidance": {
+      "Entries": [],
+      "DroppedCount": 0,
+      "Count": 0,
+      "HasEntries": false
+    },
+    "MarketFeedback": []
+  }
+}

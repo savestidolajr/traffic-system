@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:28.8853182+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.05629,151.14347\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "25 Gunnamatta Rd, Burraneer NSW 2230, Australia",
+          "id": "here:af:streetsection:AelXxNElSMA7xpOH49HkaA:CggIBCCH2OKzARABGgIyNQ",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "25 Gunnamatta Rd, Burraneer NSW 2230, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Burraneer",
+            "street": "Gunnamatta Rd",
+            "postalCode": "2230",
+            "houseNumber": "25"
+          },
+          "position": {
+            "lat": -34.05611,
+            "lng": 151.14221
+          },
+          "access": [
+            {
+              "lat": -34.05629,
+              "lng": 151.14347
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 151.14338,
+            "south": -34.05673,
+            "east": 151.14411,
+            "north": -34.05348
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

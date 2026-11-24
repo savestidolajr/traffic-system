@@ -1,0 +1,264 @@
+{
+ "JobId": "c1a7f60fb7864deeba9d6372504f57e7",
+ "Market": "portlincoln",
+ "Station": "portlincoln",
+ "CapturedAtUtc": "2026-07-02T00:44:04.199925+00:00",
+ "DevOutcome": {
+  "Status": "FallbackUsed",
+  "FallbackKind": "same-day bulletin.",
+  "Attempts": 8,
+  "TargetWordsSeq": [
+   85,
+   51,
+   46,
+   44,
+   96,
+   96,
+   95,
+   93
+  ],
+  "SynthWordsSeq": [
+   17,
+   41,
+   43,
+   45,
+   23,
+   85,
+   90,
+   84
+  ],
+  "NaturalSecSeq": [
+   null,
+   null,
+   null,
+   null,
+   7.2,
+   27,
+   29.5,
+   28
+  ],
+  "BestNaturalSec": 29.5,
+  "ReviewFeedbackCount": 2,
+  "SynthFailures": [
+   "VoiceId is required. Each schedule or job must specify a voice.",
+   "VoiceId is required. Each schedule or job must specify a voice."
+  ]
+ },
+ "Fidelity": {
+  "IncidentsRecovered": 0,
+  "IncidentsSynthesized": 0,
+  "WeatherSource": "off",
+  "FuelSource": "off",
+  "GoodRunsAndFlowPoolLost": false
+ },
+ "VoiceConfig": {
+  "Provider": "ElevenLabs",
+  "VoiceId": "oKDz3nEzNfwKIVvUwPs0",
+  "VoiceName": "ARN Hudson",
+  "Model": "eleven_v3",
+  "Settings": null,
+  "PaceBoostWpm": 0
+ },
+ "Snapshot": {
+  "TargetDurationSeconds": 30,
+  "Location": "portlincoln",
+  "City": "portlincoln",
+  "MarketId": "portlincoln",
+  "Content": {
+   "Traffic": true,
+   "Weather": false,
+   "Fuel": false,
+   "HasAnySource": true
+  },
+  "Corridors": [],
+  "MonitoredRoutes": [],
+  "GoodRunRoads": [
+   "Bishop Street",
+   "White Flat Road",
+   "Hallet Place",
+   "Pine Freezers Road",
+   "New West Road",
+   "Flinders Highway"
+  ],
+  "FlowPool": [
+   {
+    "RoadName": "Bishop Street",
+    "JamFactor": 1,
+    "LengthMeters": 16438,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "White Flat Road",
+    "JamFactor": 0.4,
+    "LengthMeters": 16309,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Hallet Place",
+    "JamFactor": 2.4,
+    "LengthMeters": 9413,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Pine Freezers Road",
+    "JamFactor": 2.1,
+    "LengthMeters": 9292,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "New West Road",
+    "JamFactor": 2,
+    "LengthMeters": 7723,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Flinders Highway",
+    "JamFactor": 1,
+    "LengthMeters": 7542,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Lincoln Highway",
+    "JamFactor": 2,
+    "LengthMeters": 247,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 41.96348476629833,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Lewis Street",
+    "JamFactor": 1.6,
+    "LengthMeters": 235,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 41.855339311358684,
+    "PriorityBoosted": false
+   }
+  ],
+  "Weather": null,
+  "Fuel": null,
+  "IncidentChanges": null,
+  "Guidance": {
+   "Entries": [
+    {
+     "Id": "645e52b90299493a8dbde1205c6c657e",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:40:21.286082+00:00",
+     "UpdatedAtUtc": "2026-06-30T04:40:21.286082+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover only the three or four most significant items for a 30-second read. Close with a short safety sign-off.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "75fe175d471144b38bf23c24966dfb6f",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:39:29.324454+00:00",
+     "UpdatedAtUtc": "2026-06-30T04:39:29.324454+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "7b012b9381e04e72be8211133f224188",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 4,
+     "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:57.082974+00:00",
+     "UpdatedAtUtc": "2026-06-25T23:45:57.082974+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "Australian English with natural spoken contractions. Round the figures — say 'about ten minutes', never '10.3 minutes'. No police codes or insider jargon.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:56.924571+00:00",
+     "UpdatedAtUtc": "2026-06-25T23:45:56.924571+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 3,
+     "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "f5e76bd5993c41edb637a7302f7d7479",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 2,
+     "Text": "Use common road names with the definite article: 'the M1', 'the M4', 'the CBD'. Use 'citybound' and 'outbound' for direction of travel.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    }
+   ],
+   "DroppedCount": 0
+  },
+  "MarketFeedback": []
+ },
+ "Coverage": {
+  "Latitude": -34.72193,
+  "Longitude": 135.85802,
+  "RadiusKm": 5
+ },
+ "FullCorridorPool": []
+}

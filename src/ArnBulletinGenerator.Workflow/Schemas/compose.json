@@ -1,0 +1,34 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["sentences"],
+  "properties": {
+    "sentences": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["order", "storyId", "evidenceIds", "text"],
+        "properties": {
+          "order": {
+            "type": "integer"
+          },
+          "storyId": {
+            "type": ["string", "null"]
+          },
+          "evidenceIds": {
+            "type": "array",
+            "description": "Evidence ids cited by this sentence. The Composer injects an enum of exactly this bulletin's authorized ids into items before each request, so emitted ids are structurally constrained.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "text": {
+            "type": "string"
+          }
+        }
+      }
+    }
+  }
+}

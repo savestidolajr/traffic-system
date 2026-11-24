@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:35.8264605+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81029,144.83374\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Bunting Rd, Brooklyn VIC 3012, Australia",
+          "id": "here:af:streetsection:0qgeQyZ9hWPId3T3FcZJOB",
+          "resultType": "street",
+          "address": {
+            "label": "Bunting Rd, Brooklyn VIC 3012, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Brooklyn",
+            "street": "Bunting Rd",
+            "postalCode": "3012"
+          },
+          "position": {
+            "lat": -37.81029,
+            "lng": 144.83374
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 144.83374,
+            "south": -37.81185,
+            "east": 144.84761,
+            "north": -37.81029
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

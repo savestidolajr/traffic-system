@@ -1,0 +1,47 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032041Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:41.7177798+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.88103,138.68348\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Graves St, Newton SA 5074, Australia",
+          "id": "here:af:streetsection:OHnhmYh.IHBQGIJzfK1QVB",
+          "resultType": "street",
+          "address": {
+            "label": "Graves St, Newton SA 5074, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "SA",
+            "state": "South Australia",
+            "city": "Adelaide",
+            "district": "Newton",
+            "street": "Graves St",
+            "postalCode": "5074"
+          },
+          "position": {
+            "lat": -34.88108,
+            "lng": 138.68356
+          },
+          "distance": 9,
+          "mapView": {
+            "west": 138.67375,
+            "south": -34.88157,
+            "east": 138.69152,
+            "north": -34.88073
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

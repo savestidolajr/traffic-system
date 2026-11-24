@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032030Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:31.5247303+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86709,151.17968\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Port Access Rd, Rozelle NSW 2039, Australia",
+          "id": "here:af:streetsection:xf0u1.sljeRlpopgwcjOJD",
+          "resultType": "street",
+          "address": {
+            "label": "Port Access Rd, Rozelle NSW 2039, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Rozelle",
+            "street": "Port Access Rd",
+            "postalCode": "2039"
+          },
+          "position": {
+            "lat": -33.86709,
+            "lng": 151.17968
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.17865,
+            "south": -33.86709,
+            "east": 151.18121,
+            "north": -33.8635
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

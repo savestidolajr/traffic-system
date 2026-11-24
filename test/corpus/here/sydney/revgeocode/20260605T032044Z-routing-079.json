@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032044Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:46.5208174+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.87173,151.17376\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "The Crescent, Annandale NSW 2038, Australia",
+          "id": "here:af:streetsection:2AgB-Tac4KuN68QauYI3wD",
+          "resultType": "street",
+          "address": {
+            "label": "The Crescent, Annandale NSW 2038, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Annandale",
+            "street": "The Crescent",
+            "postalCode": "2038"
+          },
+          "position": {
+            "lat": -33.87173,
+            "lng": 151.17376
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.17246,
+            "south": -33.87825,
+            "east": 151.17689,
+            "north": -33.87166
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

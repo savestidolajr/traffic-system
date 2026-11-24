@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:38.8639225+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.79548,115.96294\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Gnangara Rd, Ellenbrook WA 6069, Australia",
+          "id": "here:af:streetsection:dJh2hdrtFLHcDkrnTjzCuA",
+          "resultType": "street",
+          "address": {
+            "label": "Gnangara Rd, Ellenbrook WA 6069, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Ellenbrook",
+            "street": "Gnangara Rd",
+            "postalCode": "6069"
+          },
+          "position": {
+            "lat": -31.79548,
+            "lng": 115.96294
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.95772,
+            "south": -31.79618,
+            "east": 115.97882,
+            "north": -31.79543
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

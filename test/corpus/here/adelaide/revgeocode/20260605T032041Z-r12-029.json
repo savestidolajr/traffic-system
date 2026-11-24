@@ -1,0 +1,47 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032041Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:42.6882776+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.93742,138.57068\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Deacon Ave, Richmond SA 5033, Australia",
+          "id": "here:af:streetsection:5-96DQmXJaNSAGQ4uQtHgB",
+          "resultType": "street",
+          "address": {
+            "label": "Deacon Ave, Richmond SA 5033, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "SA",
+            "state": "South Australia",
+            "city": "Adelaide",
+            "district": "Richmond",
+            "street": "Deacon Ave",
+            "postalCode": "5033"
+          },
+          "position": {
+            "lat": -34.93742,
+            "lng": 138.57068
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 138.56755,
+            "south": -34.94223,
+            "east": 138.57068,
+            "north": -34.9372
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

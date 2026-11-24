@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.5865412+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86746,151.18071\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Solomons Way, Rozelle NSW 2039, Australia",
+          "id": "here:af:streetsection:2QRlfTSrG35FSGlw.Z9S3A",
+          "resultType": "street",
+          "address": {
+            "label": "Solomons Way, Rozelle NSW 2039, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Rozelle",
+            "street": "Solomons Way",
+            "postalCode": "2039"
+          },
+          "position": {
+            "lat": -33.86746,
+            "lng": 151.18071
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.17968,
+            "south": -33.8676,
+            "east": 151.18152,
+            "north": -33.86709
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

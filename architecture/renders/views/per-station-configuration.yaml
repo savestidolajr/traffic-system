@@ -1,0 +1,97 @@
+# Per-Station Configuration & Content Model — standalone presentation render.
+#
+# SOURCE OF TRUTH (keep in sync — this diagram is NOT model-validated):
+#   * Assignment fields: MarketSchedule, src/ArnBulletinGenerator.Domain/Models/MarketSchedule.cs
+#   * Voice rotation: VoiceRotation.cs (VoiceSelectionMode / VoiceWindow / VoiceRotationPolicy)
+#   * Delivery style: DeliveryStyle.cs + IScriptDirector.cs
+#   * Pronunciation: PronunciationDictionary.cs
+#   * Good-runs: Domain/Services/GoodRunPolicy.cs
+#   * Governance: GuidanceEntry.cs, SafetyTerm.cs (scope repos, not schedule fields)
+#   * Live resolution: Application/SchedulePollerService.cs (ResolveVoiceAsync, etc.)
+#   * Companion reference doc: docs/reference/per-station-configuration.md
+#
+# Standalone, code-grounded: nodes are literal (no FQNs). Update in the same
+# change that alters those sources — there is no automated drift gate.
+#
+# Layout invariants (zero edge crossings by construction):
+#   * Station (tall box, left) and Poller (tall box, right) span the full
+#     config-stack height, so every station->config and config->poller edge is
+#     a straight horizontal line at its config row's y (no fan, no crossing).
+#   * Config boxes stacked centre, one row each (y 230/350/470/590/710).
+#   * Pipeline column on the far right, top-down.
+
+output: per-station-configuration
+canvas: [1580, 880]
+
+styles:
+  edges:
+    assign:  { color: "#6366F1", width: 2.5 }
+    resolve: { color: "#0891B2", width: 2.5 }
+    scope:   { color: "#7C3AED", width: 2, dash: "6 4" }
+    pipe:    { color: "#16A34A", width: 2.5 }
+
+texts:
+  - { text: "Per-Station Configuration & Content Model", at: [40, 40], size: 20, weight: "700", anchor: start }
+  - { text: "Each station's settings are versioned and applied when the bulletin is produced, so a change reaches the next bulletin without a release. A station that sets none reads with the platform defaults.",
+      at: [40, 62], size: 12, color: "#64748B", anchor: start }
+  - { text: "STATION", at: [200, 150], size: 12, color: "#475569", anchor: middle, weight: "700" }
+  - { text: "VERSIONED CONFIGURATION  (ARN-editable, append-only)", at: [640, 132], size: 12, color: "#475569", anchor: middle, weight: "700" }
+  - { text: "LIVE RESOLUTION", at: [1090, 150], size: 12, color: "#475569", anchor: middle, weight: "700" }
+  - { text: "BULLETIN GENERATION", at: [1410, 312], size: 12, color: "#475569", anchor: middle, weight: "700" }
+  - { text: "roles: draft · review · refine · safety · director · attribute",
+      at: [1410, 632], size: 10, color: "#64748B", anchor: middle, style: italic }
+  - { text: "Settings are versioned: editing creates a new version, and each bulletin records the exact versions it used.",
+      at: [40, 852], size: 11, color: "#64748B", anchor: start, style: italic }
+
+edges:
+  # station -> config (assigned on the schedule)
+  - { class: assign, points: [[310, 230], [490, 230]], label: { text: "voice", at: [400, 218], size: 10 } }
+  - { class: assign, points: [[310, 350], [490, 350]], label: { text: "how it is read", at: [400, 338], size: 10 } }
+  - { class: assign, points: [[310, 470], [490, 470]], label: { text: "pronunciation", at: [400, 458], size: 10 } }
+  - { class: assign, points: [[310, 590], [490, 590]], label: { text: "ContentSelection", at: [400, 578], size: 10 } }
+
+  # config -> poller (resolved live)
+  - { class: resolve, points: [[790, 230], [970, 230]], label: { text: "resolve current version", at: [880, 218], size: 10 } }
+  - { class: resolve, points: [[790, 350], [970, 350]] }
+  - { class: resolve, points: [[790, 470], [970, 470]] }
+  - { class: resolve, points: [[790, 590], [970, 590]] }
+  - { class: scope,   points: [[790, 710], [970, 710]], label: { text: "applied by scope", at: [880, 698], size: 10 } }
+
+  # poller -> pipeline
+  - { class: pipe, points: [[1210, 400], [1285, 400]], label: { text: "live config", at: [1247, 388], size: 10, anchor: middle } }
+  - { class: pipe, points: [[1410, 435], [1410, 512]] }
+
+nodes:
+  # station (tall, left)
+  - { at: [200, 470], box: [220, 580], fill: "#EEF2FF", stroke: "#6366F1", sw: 2,
+      label: "Station", sublabel: "schedule and coverage" }
+
+  # versioned configuration (centre stack)
+  - { at: [640, 230], box: [300, 76], fill: "#F1F5F9", stroke: "#64748B",
+      label: "Voice Profile + Rotation", sublabel: "single · round-robin · time-of-day" }
+  - { at: [640, 350], box: [300, 76], fill: "#F1F5F9", stroke: "#64748B",
+      label: "Delivery Style", sublabel: "v3 audio tags · neutral default" }
+  - { at: [640, 470], box: [300, 76], fill: "#F1F5F9", stroke: "#64748B",
+      label: "Pronunciation Dictionary", sublabel: "alias (all) · phoneme (v2 only)" }
+  - { at: [640, 590], box: [300, 76], fill: "#F1F5F9", stroke: "#64748B",
+      label: "Content + Good-runs", sublabel: "traffic · weather · fuel" }
+  - { at: [640, 710], box: [300, 76], fill: "#F5F3FF", stroke: "#7C3AED",
+      label: "Editorial Governance", sublabel: "standing guidance · banned words" }
+
+  # live resolution (tall, right)
+  - { at: [1090, 470], box: [240, 580], fill: "#ECFEFF", stroke: "#0891B2", sw: 2,
+      label: "Scheduler", sublabel: "applies settings at airtime" }
+
+  # bulletin generation (far right, top-down)
+  - { at: [1410, 400], box: [250, 70], fill: "#F0FDF4", stroke: "#16A34A",
+      label: "Settings in force", sublabel: "resolved for this bulletin" }
+  - { at: [1410, 560], box: [250, 96], fill: "#F0FDF4", stroke: "#16A34A",
+      label: "Bulletin generation", sublabel: "script written, then voiced" }
+
+legend:
+  at: [75, 795]
+  items:
+    - ["assigned on the schedule", assign]
+    - ["resolved live by the poller", resolve]
+    - ["applied by scope (global · market · station)", scope]
+    - ["into the bulletin pipeline", pipe]

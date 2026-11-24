@@ -1,0 +1,47 @@
+{
+  "Market": "goldcoast",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032043Z-r20",
+  "CapturedAtUtc": "2026-06-05T03:20:43.6080649+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.92267,153.39898\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Morala Ave, Runaway Bay QLD 4216, Australia",
+          "id": "here:af:streetsection:ti.E.PJTB9eV0.OUKEqAMB",
+          "resultType": "street",
+          "address": {
+            "label": "Morala Ave, Runaway Bay QLD 4216, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Gold Coast",
+            "district": "Runaway Bay",
+            "street": "Morala Ave",
+            "postalCode": "4216"
+          },
+          "position": {
+            "lat": -27.92267,
+            "lng": 153.39898
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 153.39715,
+            "south": -27.92728,
+            "east": 153.40031,
+            "north": -27.90202
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

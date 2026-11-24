@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.477223+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.78266,151.11655\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Sandstone Cres, Macquarie Park NSW 2113, Australia",
+          "id": "here:af:streetsection:k3jZgeDdigA6rv-Od-6gvB",
+          "resultType": "street",
+          "address": {
+            "label": "Sandstone Cres, Macquarie Park NSW 2113, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Macquarie Park",
+            "street": "Sandstone Cres",
+            "postalCode": "2113"
+          },
+          "position": {
+            "lat": -33.78266,
+            "lng": 151.11655
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.11514,
+            "south": -33.78286,
+            "east": 151.11746,
+            "north": -33.78101
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032036Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:37.3356163+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.35855,152.95268\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "1 Coolmunda Pl, Albany Creek QLD 4035, Australia",
+          "id": "here:af:streetsection:YjB5Y2-vEu5sHKukwapFkB:CggIBCDZnvu1AxABGgEx",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "1 Coolmunda Pl, Albany Creek QLD 4035, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Albany Creek",
+            "street": "Coolmunda Pl",
+            "postalCode": "4035",
+            "houseNumber": "1"
+          },
+          "position": {
+            "lat": -27.3583,
+            "lng": 152.95272
+          },
+          "access": [
+            {
+              "lat": -27.35855,
+              "lng": 152.95269
+            }
+          ],
+          "distance": 1,
+          "mapView": {
+            "west": 152.95268,
+            "south": -27.3586,
+            "east": 152.9532,
+            "north": -27.35855
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

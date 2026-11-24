@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.5882548+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.9132,151.14987\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "38 Jersey St, Marrickville NSW 2204, Australia",
+          "id": "here:af:streetsection:.R-0Q08AzwqkIf7BH1DUTB:CggIBCCM2JfRAhABGgIzOA",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "38 Jersey St, Marrickville NSW 2204, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Marrickville",
+            "street": "Jersey St",
+            "postalCode": "2204",
+            "houseNumber": "38"
+          },
+          "position": {
+            "lat": -33.91284,
+            "lng": 151.14998
+          },
+          "access": [
+            {
+              "lat": -33.91306,
+              "lng": 151.14978
+            }
+          ],
+          "distance": 18,
+          "mapView": {
+            "west": 151.14807,
+            "south": -33.91311,
+            "east": 151.14987,
+            "north": -33.912
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,482 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Arn — Docs</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+         display: flex; min-height: 100vh; background: #0f172a; color: #e2e8f0; }
+  a { color: #60a5fa; text-decoration: none; }
+  a:hover { text-decoration: underline; }
+
+  /* ── Sidebar ── */
+  nav { width: 300px; min-width: 300px; background: #1e293b; border-right: 1px solid #334155;
+         height: 100vh; position: sticky; top: 0; display: flex; flex-direction: column; }
+  nav header { padding: 16px 16px 8px; border-bottom: 1px solid #334155; }
+  nav header h1 { font-size: 1.1em; color: #f1f5f9; }
+  nav header small { font-size: 0.75em; color: #64748b; }
+  #filter { margin: 8px 16px; padding: 8px 12px; border-radius: 6px; border: 1px solid #334155;
+            background: #0f172a; color: #e2e8f0; font-size: 0.85em; outline: none; }
+  #filter:focus { border-color: #6366f1; }
+  #nav-scroll { flex: 1; overflow-y: auto; padding: 4px 0; }
+
+  .dir-group { }
+  .dir-label { padding: 6px 16px 2px; font-size: 0.7em; font-weight: 700; text-transform: uppercase;
+               letter-spacing: 0.5px; color: #64748b; cursor: pointer; user-select: none; display: flex;
+               align-items: center; gap: 4px; }
+  .dir-label:hover { color: #94a3b8; }
+  .dir-label .arrow { font-size: 0.7em; transition: transform 0.15s; }
+  .dir-label .arrow.open { transform: rotate(90deg); }
+  .dir-items { overflow: hidden; transition: max-height 0.15s; max-height: 2000px; }
+  .dir-items.collapsed { max-height: 0; }
+
+  .doc-link { display: block; padding: 3px 16px 3px 28px; font-size: 0.82em; color: #94a3b8;
+              cursor: pointer; transition: all 0.1s; border-left: 2px solid transparent; }
+  .doc-link:hover { background: #334155; color: #e2e8f0; }
+  .doc-link.active { color: #60a5fa; border-left-color: #6366f1; background: #1a2332; }
+  .doc-link.hidden { display: none; }
+  .doc-link .status-dot { display: inline-block; width: 6px; height: 6px; border-radius: 50%;
+                          margin-right: 4px; }
+  .status-current { background: #22c55e; }
+  .status-draft { background: #eab308; }
+  .status-needs-review { background: #f97316; }
+  .status-stale { background: #ef4444; }
+  .status-archived { background: #6b7280; }
+  .doc-link .tag-badge { display: inline-block; font-size: 0.65em; padding: 0 4px; margin-left: 2px;
+                          background: #334155; color: #64748b; border-radius: 3px; }
+
+  #result-count { font-size: 0.75em; color: #64748b; padding: 2px 16px; }
+
+  /* ── Content ── */
+  main { flex: 1; padding: 32px 48px; max-width: 960px; overflow-y: auto; }
+  #loading { text-align: center; padding: 80px 0; color: #64748b; }
+  #loading .spinner { display: inline-block; width: 24px; height: 24px; border: 3px solid #334155;
+                      border-top-color: #6366f1; border-radius: 50%; animation: spin 0.8s linear infinite; }
+  @keyframes spin { to { transform: rotate(360deg); } }
+  #welcome { text-align: center; padding: 80px 0; }
+  #welcome h2 { color: #64748b; font-weight: 400; font-size: 1.2em; }
+  #welcome p { color: #475569; margin-top: 8px; }
+  #doc-view { display: none; }
+
+  .doc-meta { font-size: 0.75em; color: #64748b; margin-bottom: 8px; display: flex; gap: 8px;
+              align-items: center; flex-wrap: wrap; }
+  .doc-meta .file-path { font-family: 'SF Mono', 'Fira Code', monospace; background: #1e293b;
+                          padding: 1px 6px; border-radius: 3px; }
+  #doc-view h1 { font-size: 1.6em; color: #f1f5f9; margin-bottom: 16px; margin-top: 0; }
+  #doc-view h2 { font-size: 1.2em; color: #e2e8f0; margin: 24px 0 8px;
+                  border-left: 3px solid #6366f1; padding-left: 12px; }
+  #doc-view h3 { font-size: 1.05em; color: #cbd5e1; margin: 20px 0 6px; }
+  #doc-view h4 { font-size: 0.95em; color: #94a3b8; margin: 16px 0 4px; }
+  #doc-view h1 a, #doc-view h2 a, #doc-view h3 a, #doc-view h4 a { opacity: 0.3; font-size: 0.7em;
+              margin-left: 4px; color: #64748b; text-decoration: none; }
+  #doc-view h1:hover a, #doc-view h2:hover a, #doc-view h3:hover a, #doc-view h4:hover a { opacity: 1; }
+
+  #doc-view p { margin: 8px 0; line-height: 1.7; color: #cbd5e1; }
+  #doc-view ul, #doc-view ol { margin: 8px 0; padding-left: 24px; }
+  #doc-view li { margin: 4px 0; line-height: 1.6; color: #cbd5e1; }
+  #doc-view li.task-done { color: #4ade80; }
+  #doc-view li.task-pending { color: #fbbf24; }
+  #doc-view li input[type=checkbox] { margin-right: 6px; }
+  #doc-view code { font-family: 'SF Mono', 'Fira Code', monospace; background: #1e293b;
+                    padding: 1px 5px; border-radius: 3px; font-size: 0.88em; color: #f472b6; }
+  #doc-view pre { background: #0f172a; padding: 16px; border-radius: 8px; overflow-x: auto;
+                   margin: 12px 0; border: 1px solid #1e293b; }
+  #doc-view pre code { background: none; padding: 0; color: #e2e8f0; font-size: 0.85em; }
+  #doc-view hr { border: none; border-top: 1px solid #1e293b; margin: 24px 0; }
+  #doc-view strong { color: #f1f5f9; }
+  #doc-view del { color: #64748b; }
+  #doc-view table { border-collapse: collapse; margin: 12px 0; font-size: 0.88em; width: 100%; }
+  #doc-view th, #doc-view td { border: 1px solid #334155; padding: 6px 12px; text-align: left; }
+  #doc-view th { background: #1e293b; color: #94a3b8; font-weight: 600; }
+  #doc-view td { color: #cbd5e1; }
+  #doc-view tr:nth-child(even) td { background: #1a2332; }
+  #doc-view blockquote { border-left: 3px solid #6366f1; padding: 8px 16px; margin: 12px 0;
+                          background: #1e293b; border-radius: 0 6px 6px 0; }
+  #doc-view blockquote p { color: #94a3b8; }
+  #doc-view .task-list-item { list-style: none; margin-left: -24px; }
+  #doc-view .tag-badges { margin-bottom: 12px; }
+  #doc-view .tag-badges span { display: inline-block; font-size: 0.75em; padding: 2px 8px; margin: 2px 4px 2px 0;
+                                background: #1e293b; color: #94a3b8; border-radius: 4px; }
+
+  @media (max-width: 768px) {
+    nav { width: 200px; min-width: 200px; }
+    main { padding: 16px 20px; }
+  }
+</style>
+</head>
+<body>
+
+<nav>
+  <header>
+    <h1>📖 Arn Docs</h1>
+    <small id="doc-count">Loading...</small>
+  </header>
+  <input type="text" id="filter" placeholder="Filter docs..." autofocus>
+  <div id="result-count"></div>
+  <div id="nav-scroll"></div>
+</nav>
+
+<main>
+  <div id="loading"><div class="spinner"></div></div>
+  <div id="welcome">
+    <h2>Select a document from the sidebar</h2>
+    <p>Or start typing to filter</p>
+  </div>
+  <div id="doc-view"></div>
+</main>
+
+<script src="_data.js"></script>
+<script>
+// ── Minimal Markdown → HTML renderer ──
+function renderMarkdown(text, basePath = '') {
+  let html = '';
+  const lines = text.split('\n');
+  let i = 0;
+
+  while (i < lines.length) {
+    const line = lines[i];
+    const next = lines[i + 1] || '';
+
+    // Code block
+    if (line.startsWith('```')) {
+      const lang = line.slice(3).trim();
+      let code = [];
+      i++;
+      while (i < lines.length && !lines[i].startsWith('```')) {
+        code.push(escapeHtml(lines[i]));
+        i++;
+      }
+      html += `<pre><code class="lang-${lang}">${code.join('\n')}</code></pre>`;
+      i++;
+      continue;
+    }
+
+    // Horizontal rule
+    if (/^---+$/.test(line.trim())) {
+      html += '<hr>';
+      i++;
+      continue;
+    }
+
+    // Headings
+    const hMatch = line.match(/^(#{1,4})\s+(.+)$/);
+    if (hMatch) {
+      const level = hMatch[1].length;
+      const text = hMatch[2].trim();
+      const id = slug(stripMarkdown(text));
+      html += `<h${level} id="${id}">${inlineMarkdown(text, basePath)} <a href="#${id}">¶</a></h${level}>`;
+      i++;
+      continue;
+    }
+
+    // Table
+    if (line.startsWith('|') && line.endsWith('|')) {
+      let rows = [];
+      let headerDone = false;
+      while (i < lines.length && lines[i].startsWith('|')) {
+        if (!/^\|[\s\-:|]+\|$/.test(lines[i])) { // skip separator (any column count)
+          rows.push(lines[i]);
+        }
+        i++;
+      }
+      html += renderTable(rows, basePath);
+      continue;
+    }
+
+    // Lists
+    const liMatch = line.match(/^(\s*)[-*+]\s+(.+)$/);
+    if (liMatch) {
+      let items = [];
+      let listType = 'ul';
+      while (i < lines.length) {
+        const m = lines[i].match(/^(\s*)[-*+]\s+(.+)$/);
+        if (!m) break;
+        const content = m[2];
+        if (content.startsWith('[x] ')) {
+          items.push(`<li class="task-list-item"><input type="checkbox" checked disabled> ${inlineMarkdown(content.slice(4), basePath)}</li>`);
+        } else if (content.startsWith('[ ] ')) {
+          items.push(`<li class="task-list-item"><input type="checkbox" disabled> ${inlineMarkdown(content.slice(4), basePath)}</li>`);
+        } else {
+          items.push(`<li>${inlineMarkdown(content, basePath)}</li>`);
+        }
+        i++;
+      }
+      html += `<${listType}>${items.join('')}</${listType}>`;
+      continue;
+    }
+
+    // Blockquote
+    if (line.startsWith('> ')) {
+      let quote = [];
+      while (i < lines.length && lines[i].startsWith('> ')) {
+        quote.push(inlineMarkdown(lines[i].slice(2), basePath));
+        i++;
+      }
+      html += `<blockquote><p>${quote.join('<br>')}</p></blockquote>`;
+      continue;
+    }
+
+    // Empty line
+    if (!line.trim()) {
+      i++;
+      continue;
+    }
+
+    // Paragraph
+    let para = [];
+    while (i < lines.length && lines[i].trim() && !lines[i].startsWith('#')
+           && !lines[i].startsWith('```') && !lines[i].startsWith('|')
+           && !lines[i].startsWith('- ') && !lines[i].startsWith('* ') && !lines[i].startsWith('> ')
+           && !/^---+$/.test(lines[i].trim())
+           && !lines[i].match(/^\s*[-*+]\s+/)) {
+      para.push(inlineMarkdown(lines[i], basePath));
+      i++;
+    }
+    if (para.length) {
+      html += `<p>${para.join(' ')}</p>`;
+    } else {
+      i++;
+    }
+  }
+
+  return html;
+}
+
+function inlineMarkdown(text, basePath = '') {
+  let s = escapeHtml(text);
+  // Images
+  s = s.replace(/!\[([^\]]*)\]\(([^)]+)\)/g, (_, alt, url) => `<img src="${resolveDocUrl(url, basePath)}" alt="${alt}" style="max-width:100%">`);
+  // Links
+  s = s.replace(/\[([^\]]+)\]\(([^)]+)\)/g, (_, label, url) => `<a href="${resolveDocUrl(url, basePath)}" target="_blank">${label}</a>`);
+  // Bold
+  s = s.replace(/\*\*(.+?)\*\*/g, '<strong>$1</strong>');
+  // Italic (non-greedy, single *)
+  s = s.replace(/(?<!\*)\*(?!\*)(.+?)(?<!\*)\*(?!\*)/g, '<em>$1</em>');
+  // Strikethrough
+  s = s.replace(/~~(.+?)~~/g, '<del>$1</del>');
+  // Inline code
+  s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+  return s;
+}
+
+function renderTable(rows, basePath = '') {
+  if (rows.length < 1) return '';
+  let html = '<table>';
+  rows.forEach((row, idx) => {
+    const cells = row.replace(/^\||\|$/g, '').split('|').map(c => inlineMarkdown(c.trim(), basePath));
+    const tag = idx === 0 ? 'th' : 'td';
+    html += `<tr>${cells.map(c => `<${tag}>${c}</${tag}>`).join('')}</tr>`;
+  });
+  return html + '</table>';
+}
+
+function stripMarkdown(text) {
+  return text.replace(/\*\*(.+?)\*\*/g, '$1').replace(/`(.+?)`/g, '$1');
+}
+
+function escapeHtml(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;');
+}
+
+function resolveDocUrl(url, basePath) {
+  if (!url || /^(?:[a-z][a-z0-9+.-]*:|#|\/)/i.test(url)) return url;
+  const baseParts = (basePath || '').split('/');
+  baseParts.pop();
+  const parts = [];
+  for (const part of [...baseParts, ...url.split('/')]) {
+    if (!part || part === '.') continue;
+    if (part === '..') {
+      parts.pop();
+    } else {
+      parts.push(part);
+    }
+  }
+  if (parts[0] === 'docs') parts.shift();
+  const joined = parts.join('/');
+  // Normalise encoding so both pre-encoded (%20) and literal-space targets resolve once.
+  try { return encodeURI(decodeURI(joined)); } catch (e) { return joined; }
+}
+
+function slug(text) {
+  return text.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-|-$/g, '') || 'section';
+}
+
+// ── App state ──
+let allDocs = [];
+
+// ── Load docs from _data.js (loaded via <script src="_data.js">) ──
+function loadDocs() {
+  if (!window.DOCS_DATA || !window.DOCS_DATA.length) {
+    document.getElementById('loading').innerHTML =
+      '<p style="color:#ef4444">No docs found. Regenerate from the repo root: <code style="background:#1e293b;padding:2px 6px;border-radius:3px">python3 scripts/docs.py generate</code></p>';
+    return;
+  }
+  allDocs = window.DOCS_DATA;
+  buildSidebar(allDocs);
+  document.getElementById('doc-count').textContent = `${allDocs.length} docs`;
+
+  // Check URL hash for initial doc
+  if (location.hash) {
+    const target = location.hash.slice(1);
+    const doc = allDocs.find(d => slug(d.title) === target);
+    if (doc) openDoc(doc);
+  }
+}
+
+// ── Build sidebar ──
+function buildSidebar(docs) {
+  // Group by directory
+  const groups = {};
+  docs.forEach(d => {
+    const parts = d.file.split('/');
+    const dir = parts.length > 1 ? parts.slice(0, -1).join('/') : '(root)';
+    if (!groups[dir]) groups[dir] = [];
+    groups[dir].push(d);
+  });
+
+  const nav = document.getElementById('nav-scroll');
+  const sortedDirs = Object.keys(groups).sort();
+
+  nav.innerHTML = sortedDirs.map(dir => {
+    const label = dir === '(root)' ? 'Root' : dir.replace('docs/', '');
+    const items = groups[dir].sort((a, b) => a.title.localeCompare(b.title));
+    return `
+      <div class="dir-group">
+        <div class="dir-label" onclick="toggleDir(this)">
+          <span class="arrow open">▶</span> ${label}
+        </div>
+        <div class="dir-items">
+          ${items.map(d => {
+            const id = slug(d.title);
+            const statusClass = d.status ? `status-${d.status}` : 'status-current';
+            const tags = (d.tags || []).slice(0, 2).map(t => `<span class="tag-badge">${escapeHtml(t)}</span>`).join('');
+            return `<div class="doc-link" data-id="${id}" onclick="openDocByTitle('${id}')">
+              <span class="status-dot ${statusClass}"></span>${escapeHtml(d.title)}${tags}
+            </div>`;
+          }).join('')}
+        </div>
+      </div>`;
+  }).join('');
+
+  document.getElementById('loading').style.display = 'none';
+  document.getElementById('welcome').style.display = 'block';
+
+  // Apply current filter
+  const q = document.getElementById('filter').value;
+  if (q) filterDocs(q);
+}
+
+function toggleDir(el) {
+  const arrow = el.querySelector('.arrow');
+  const items = el.nextElementSibling;
+  arrow.classList.toggle('open');
+  items.classList.toggle('collapsed');
+}
+
+function openDoc(doc) {
+  const md = doc.body || '';
+  document.getElementById('welcome').style.display = 'none';
+  document.getElementById('loading').style.display = 'none';
+  const view = document.getElementById('doc-view');
+  view.style.display = 'block';
+  const tags = (doc.tags || []).map(t => `<span>${escapeHtml(t)}</span>`).join('');
+  const statusLabel = doc.status || 'current';
+  const statusDot = `<span class="status-dot status-${statusLabel}"></span>`;
+  view.innerHTML = `
+    <div class="doc-meta">
+      <span class="file-path">${escapeHtml(doc.file)}</span>
+      ${statusDot} ${statusLabel}
+      <span>·</span>
+      <span>${doc.purpose || 'reference'}</span>
+    </div>
+    ${tags ? `<div class="tag-badges">${tags}</div>` : ''}
+    ${renderMarkdown(md, doc.file)}
+  `;
+  document.querySelectorAll('.doc-link.active').forEach(el => el.classList.remove('active'));
+  const link = document.querySelector(`.doc-link[data-id="${slug(doc.title)}"]`);
+  if (link) link.classList.add('active');
+  location.hash = slug(doc.title);
+  document.title = `${doc.title} — Arn Docs`;
+}
+
+function openDocByTitle(id) {
+  const doc = allDocs.find(d => slug(d.title) === id);
+  if (doc) openDoc(doc);
+}
+
+// ── Filter sidebar ──
+document.getElementById('filter').addEventListener('input', function() {
+  const q = this.value.trim().toLowerCase();
+  filterDocs(q);
+});
+
+function filterDocs(q) {
+  const links = document.querySelectorAll('.doc-link');
+  const groups = document.querySelectorAll('.dir-group');
+  const countEl = document.getElementById('result-count');
+  let visible = 0;
+
+  if (!q) {
+    links.forEach(l => l.classList.remove('hidden'));
+    groups.forEach(g => g.style.display = '');
+    countEl.textContent = '';
+    // Expand all groups
+    document.querySelectorAll('.dir-items.collapsed').forEach(el => el.classList.remove('collapsed'));
+    document.querySelectorAll('.arrow:not(.open)').forEach(el => el.classList.add('open'));
+    // Filter content too
+    document.getElementById('doc-view').querySelectorAll('*').forEach(el => {
+      if (el.id !== 'doc-view') el.style.display = '';
+    });
+    return;
+  }
+
+  const terms = q.split(/\s+/);
+  links.forEach(link => {
+    const text = link.textContent.toLowerCase();
+    const match = terms.every(t => text.includes(t));
+    link.classList.toggle('hidden', !match);
+    if (match) visible++;
+  });
+
+  // Hide empty groups
+  groups.forEach(g => {
+    const visibleLinks = g.querySelectorAll('.doc-link:not(.hidden)').length;
+    g.style.display = visibleLinks === 0 ? 'none' : '';
+    // Expand groups with matches
+    if (visibleLinks > 0) {
+      const items = g.querySelector('.dir-items');
+      if (items) items.classList.remove('collapsed');
+      const arrow = g.querySelector('.arrow');
+      if (arrow) arrow.classList.add('open');
+    }
+  });
+
+  countEl.textContent = `${visible} of ${links.length} docs`;
+
+  // Also filter content
+  if (visible > 0) {
+    const qLower = q.toLowerCase();
+    document.getElementById('doc-view').querySelectorAll('h1, h2, h3, h4, p, li, td, th').forEach(el => {
+      const text = el.textContent.toLowerCase();
+      el.style.display = terms.every(t => text.includes(t)) ? '' : 'none';
+    });
+  }
+}
+
+// ── Keyboard shortcut ──
+document.addEventListener('keydown', e => {
+  if (e.key === '/' && !e.ctrlKey && !e.metaKey) {
+    const filter = document.getElementById('filter');
+    if (document.activeElement !== filter) {
+      e.preventDefault();
+      filter.focus();
+    }
+  }
+});
+
+loadDocs();
+</script>
+</body>
+</html>

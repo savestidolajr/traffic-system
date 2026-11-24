@@ -1,0 +1,47 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032050Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:51.3199466+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.96684,138.57276\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "South Rd, Glandore SA 5037, Australia",
+          "id": "here:af:streetsection:l3-UP-ZzX4Lo1WU-Na0p9B",
+          "resultType": "street",
+          "address": {
+            "label": "South Rd, Glandore SA 5037, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "SA",
+            "state": "South Australia",
+            "city": "Adelaide",
+            "district": "Glandore",
+            "street": "South Rd",
+            "postalCode": "5037"
+          },
+          "position": {
+            "lat": -34.96684,
+            "lng": 138.57276
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 138.5719,
+            "south": -34.96729,
+            "east": 138.5728,
+            "north": -34.95282
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

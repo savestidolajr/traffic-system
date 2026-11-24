@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.5176595+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.62788,145.02837\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Epping Rd, Epping VIC 3076, Australia",
+          "id": "here:af:streetsection:-V634tLteMTzDSRmKtS0vA",
+          "resultType": "street",
+          "address": {
+            "label": "Epping Rd, Epping VIC 3076, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Epping",
+            "street": "Epping Rd",
+            "postalCode": "3076"
+          },
+          "position": {
+            "lat": -37.62787,
+            "lng": 145.02823
+          },
+          "distance": 12,
+          "mapView": {
+            "west": 145.0264,
+            "south": -37.63764,
+            "east": 145.02901,
+            "north": -37.62306
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

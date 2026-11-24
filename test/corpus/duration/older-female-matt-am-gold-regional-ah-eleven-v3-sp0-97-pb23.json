@@ -1,0 +1,313 @@
+{
+ "voiceId": "XGZ4jNfM7INNpwHL5r87",
+ "voiceName": "Older Female Matt - AM - Gold/Regional AH",
+ "modelId": "eleven_v3",
+ "stability": 0.7,
+ "similarityBoost": 0.7,
+ "style": 0.0,
+ "speed": 0.97,
+ "paceBoostWpm": 23.0,
+ "total": 1,
+ "clean": 1,
+ "tokens": 55,
+ "bulletins": [
+  {
+   "jobId": "6f7b1df97acc400aa792304942c2d873",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 21.8,
+   "fittedSec": 22,
+   "stretch": 0.99091,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Rooty Hill Road\u2019s at a standstill. Richmond Road\u2019s stopped solid as well. Forest Road and Banks Drive have a few brake lights. The Warringah Freeway\u2019s got works at Brook Street. There\u2019s a slow patch on Quakers Hill Parkway and the Harbour Tunnel southbound. [delighted] The Harbour Bridge and M4 are moving NICELY! Cleveland Street\u2019s cleared.",
+   "features": {
+    "syl": 76,
+    "words": 54,
+    "ellipsis": 0,
+    "period": 7,
+    "comma": 0,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Rooty",
+     "s": 0,
+     "e": 0.242
+    },
+    {
+     "w": "Hill",
+     "s": 0.29,
+     "e": 0.484
+    },
+    {
+     "w": "Road\u2019s",
+     "s": 0.58,
+     "e": 1.048
+    },
+    {
+     "w": "at",
+     "s": 1.075,
+     "e": 1.128
+    },
+    {
+     "w": "a",
+     "s": 1.169,
+     "e": 1.209
+    },
+    {
+     "w": "standstill.",
+     "s": 1.29,
+     "e": 2.378
+    },
+    {
+     "w": "Richmond",
+     "s": 2.418,
+     "e": 2.74
+    },
+    {
+     "w": "Road\u2019s",
+     "s": 2.805,
+     "e": 3.143
+    },
+    {
+     "w": "stopped",
+     "s": 3.194,
+     "e": 3.546
+    },
+    {
+     "w": "solid",
+     "s": 3.614,
+     "e": 3.949
+    },
+    {
+     "w": "as",
+     "s": 4.003,
+     "e": 4.111
+    },
+    {
+     "w": "well.",
+     "s": 4.191,
+     "e": 4.514
+    },
+    {
+     "w": "Forest",
+     "s": 4.64,
+     "e": 5.4
+    },
+    {
+     "w": "Road",
+     "s": 5.465,
+     "e": 5.723
+    },
+    {
+     "w": "and",
+     "s": 5.763,
+     "e": 5.884
+    },
+    {
+     "w": "Banks",
+     "s": 5.951,
+     "e": 6.287
+    },
+    {
+     "w": "Drive",
+     "s": 6.354,
+     "e": 6.69
+    },
+    {
+     "w": "have",
+     "s": 6.738,
+     "e": 6.931
+    },
+    {
+     "w": "a",
+     "s": 6.972,
+     "e": 7.012
+    },
+    {
+     "w": "few",
+     "s": 7.073,
+     "e": 7.254
+    },
+    {
+     "w": "brake",
+     "s": 7.307,
+     "e": 7.576
+    },
+    {
+     "w": "lights.",
+     "s": 7.646,
+     "e": 8.463
+    },
+    {
+     "w": "The",
+     "s": 8.503,
+     "e": 8.624
+    },
+    {
+     "w": "Warringah",
+     "s": 8.664,
+     "e": 9.188
+    },
+    {
+     "w": "Freeway\u2019s",
+     "s": 9.249,
+     "e": 9.833
+    },
+    {
+     "w": "got",
+     "s": 9.914,
+     "e": 10.155
+    },
+    {
+     "w": "works",
+     "s": 10.223,
+     "e": 10.558
+    },
+    {
+     "w": "at",
+     "s": 10.612,
+     "e": 10.72
+    },
+    {
+     "w": "Brook",
+     "s": 10.76,
+     "e": 10.961
+    },
+    {
+     "w": "Street.",
+     "s": 11.019,
+     "e": 11.445
+    },
+    {
+     "w": "There\u2019s",
+     "s": 11.539,
+     "e": 12.05
+    },
+    {
+     "w": "a",
+     "s": 12.07,
+     "e": 12.09
+    },
+    {
+     "w": "slow",
+     "s": 12.154,
+     "e": 12.412
+    },
+    {
+     "w": "patch",
+     "s": 12.48,
+     "e": 12.815
+    },
+    {
+     "w": "on",
+     "s": 12.869,
+     "e": 12.976
+    },
+    {
+     "w": "Quakers",
+     "s": 13.03,
+     "e": 13.46
+    },
+    {
+     "w": "Hill",
+     "s": 13.492,
+     "e": 13.621
+    },
+    {
+     "w": "Parkway",
+     "s": 13.702,
+     "e": 14.266
+    },
+    {
+     "w": "and",
+     "s": 14.326,
+     "e": 14.508
+    },
+    {
+     "w": "the",
+     "s": 14.528,
+     "e": 14.588
+    },
+    {
+     "w": "Harbour",
+     "s": 14.629,
+     "e": 14.911
+    },
+    {
+     "w": "Tunnel",
+     "s": 14.968,
+     "e": 15.314
+    },
+    {
+     "w": "southbound.",
+     "s": 15.367,
+     "e": 16.523
+    },
+    {
+     "w": "The",
+     "s": 16.632,
+     "e": 16.692
+    },
+    {
+     "w": "Harbour",
+     "s": 16.732,
+     "e": 17.014
+    },
+    {
+     "w": "Bridge",
+     "s": 17.072,
+     "e": 17.417
+    },
+    {
+     "w": "and",
+     "s": 17.478,
+     "e": 17.659
+    },
+    {
+     "w": "M",
+     "s": 17.861,
+     "e": 18.062
+    },
+    {
+     "w": "4",
+     "s": 18.159,
+     "e": 18.546
+    },
+    {
+     "w": "are",
+     "s": 18.606,
+     "e": 18.788
+    },
+    {
+     "w": "moving",
+     "s": 18.845,
+     "e": 19.191
+    },
+    {
+     "w": "NICELY!",
+     "s": 19.311,
+     "e": 20.52
+    },
+    {
+     "w": "Cleveland",
+     "s": 20.565,
+     "e": 20.964
+    },
+    {
+     "w": "Street\u2019s",
+     "s": 21.01,
+     "e": 21.367
+    },
+    {
+     "w": "cleared.",
+     "s": 21.427,
+     "e": 22
+    }
+   ]
+  }
+ ]
+}

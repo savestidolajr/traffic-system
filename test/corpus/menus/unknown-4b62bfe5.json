@@ -1,0 +1,81 @@
+{
+  "label": "unknown-4b62bfe5",
+  "market": "unknown",
+  "sourceJobId": "4b62bfe50b144753acfc2843261b7dc6",
+  "sourceCapture": "job-diagnostics/4b62bfe50b144753acfc2843261b7dc6/llm_calls/075702.814-Draft-attempt1.json",
+  "promptSha": null,
+  "items": [
+    {
+      "category": "closure",
+      "evidenceIds": [
+        "corridor:Pittwater Road#1:detail",
+        "corridor:Pittwater Road#1:location:0",
+        "corridor:Pittwater Road#1:location:1",
+        "corridor:Pittwater Road#1:delayMinutes"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Westbound Pittwater Road is closed at Kentwell Road and Oliver Street, adding about 24 minutes."
+        },
+        {
+          "style": "standard",
+          "text": "A westbound closure on Pittwater Road at Kentwell Road and Oliver Street is adding about 24 minutes."
+        }
+      ]
+    },
+    {
+      "category": "congestion",
+      "evidenceIds": [
+        "corridor:M5#1:detail"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Heavy traffic is slowing the M5."
+        },
+        {
+          "style": "standard",
+          "text": "The M5 is carrying heavy traffic."
+        }
+      ]
+    },
+    {
+      "category": "congestion",
+      "evidenceIds": [
+        "route:the M4 from Parramatta to the city"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "The M4 is also slow into the city."
+        },
+        {
+          "style": "standard",
+          "text": "There's a slower run from Parramatta along the M4 into the city."
+        },
+        {
+          "style": "continuation",
+          "text": "It's a similar story on the M4 into the city."
+        }
+      ]
+    },
+    {
+      "category": "weather",
+      "evidenceIds": [
+        "weather:condition",
+        "weather:temperature"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Clear skies, 19 degrees."
+        },
+        {
+          "style": "standard",
+          "text": "Clear skies across Sydney, with 19 degrees."
+        }
+      ]
+    }
+  ]
+}

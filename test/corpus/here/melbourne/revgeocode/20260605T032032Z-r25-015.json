@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:33.5734323+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69327,145.09264\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "M80, Greensborough VIC 3088, Australia",
+          "id": "here:af:streetsection:H-4.YQFOqBeGn1pdsbmUlD",
+          "resultType": "street",
+          "address": {
+            "label": "M80, Greensborough VIC 3088, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Greensborough",
+            "street": "M80",
+            "postalCode": "3088"
+          },
+          "position": {
+            "lat": -37.69327,
+            "lng": 145.09264
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 145.0679,
+            "south": -37.69623,
+            "east": 145.09808,
+            "north": -37.6865
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

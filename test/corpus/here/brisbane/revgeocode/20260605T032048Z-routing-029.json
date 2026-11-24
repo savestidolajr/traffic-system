@@ -1,0 +1,55 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032048Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:49.718828+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.59154,152.83326\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "43 River Rd, Dinmore QLD 4303, Australia",
+          "id": "here:af:streetsection:TOXNkAF9q6am5faAWcD9yD:CggIBCC0gLWuARABGgI0Mw",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "43 River Rd, Dinmore QLD 4303, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Dinmore",
+            "street": "River Rd",
+            "postalCode": "4303",
+            "houseNumber": "43"
+          },
+          "position": {
+            "lat": -27.59189,
+            "lng": 152.83357
+          },
+          "access": [
+            {
+              "lat": -27.59164,
+              "lng": 152.83318
+            }
+          ],
+          "distance": 14,
+          "mapView": {
+            "west": 152.83193,
+            "south": -27.59763,
+            "east": 152.83326,
+            "north": -27.59086
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

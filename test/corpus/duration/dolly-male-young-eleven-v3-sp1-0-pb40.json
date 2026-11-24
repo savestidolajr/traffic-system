@@ -1,0 +1,8769 @@
+{
+ "voiceId": "EF2rFRNHqbfaMctIvS2k",
+ "voiceName": "Dolly Male Young",
+ "modelId": "eleven_v3",
+ "stability": 0.5,
+ "similarityBoost": 0.75,
+ "style": 0.0,
+ "speed": 1.0,
+ "paceBoostWpm": 40.0,
+ "total": 26,
+ "clean": 19,
+ "tokens": 1628,
+ "bulletins": [
+  {
+   "jobId": "0c1c11e81dfe4c83821c1a637657691b",
+   "market": "cairns-4ca",
+   "targetSec": 30.0,
+   "naturalSec": 30.0,
+   "fittedSec": 30,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "James Street's at a standstill, with Toogood Road also backed up. Cairns Western Arterial Road and Sheridan Street are moving nicely, while Draper Street and Spence Street have a clear run. It's sunny with twenty-six degrees. Unleaded's cheapest at a dollar ninety-six in Edge Hill, with diesel at two thirty-five there too. Roadworks and changed traffic conditions are updated weekly on the Cairns Regional Council website. Download the iHeartRadio app to take us anywhere \u2014 search Star Cairns.",
+   "features": {
+    "syl": 124,
+    "words": 78,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 3,
+    "dash": 1,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "James",
+     "s": 0,
+     "e": 0.275
+    },
+    {
+     "w": "Street's",
+     "s": 0.324,
+     "e": 0.686
+    },
+    {
+     "w": "at",
+     "s": 0.732,
+     "e": 0.824
+    },
+    {
+     "w": "a",
+     "s": 0.858,
+     "e": 0.892
+    },
+    {
+     "w": "standstill,",
+     "s": 0.961,
+     "e": 1.716
+    },
+    {
+     "w": "with",
+     "s": 1.744,
+     "e": 1.854
+    },
+    {
+     "w": "Toogood",
+     "s": 1.922,
+     "e": 2.265
+    },
+    {
+     "w": "Road",
+     "s": 2.334,
+     "e": 2.609
+    },
+    {
+     "w": "also",
+     "s": 2.677,
+     "e": 2.952
+    },
+    {
+     "w": "backed",
+     "s": 3.001,
+     "e": 3.295
+    },
+    {
+     "w": "up.",
+     "s": 3.409,
+     "e": 3.707
+    },
+    {
+     "w": "Cairns",
+     "s": 3.817,
+     "e": 4.394
+    },
+    {
+     "w": "Western",
+     "s": 4.436,
+     "e": 4.737
+    },
+    {
+     "w": "Arterial",
+     "s": 4.805,
+     "e": 5.286
+    },
+    {
+     "w": "Road",
+     "s": 5.368,
+     "e": 5.698
+    },
+    {
+     "w": "and",
+     "s": 5.784,
+     "e": 6.041
+    },
+    {
+     "w": "Sheridan",
+     "s": 6.094,
+     "e": 6.522
+    },
+    {
+     "w": "Street",
+     "s": 6.571,
+     "e": 6.865
+    },
+    {
+     "w": "are",
+     "s": 6.916,
+     "e": 7.071
+    },
+    {
+     "w": "moving",
+     "s": 7.11,
+     "e": 7.346
+    },
+    {
+     "w": "nicely,",
+     "s": 7.414,
+     "e": 8.169
+    },
+    {
+     "w": "while",
+     "s": 8.204,
+     "e": 8.375
+    },
+    {
+     "w": "Draper",
+     "s": 8.421,
+     "e": 8.787
+    },
+    {
+     "w": "Street",
+     "s": 8.836,
+     "e": 9.13
+    },
+    {
+     "w": "and",
+     "s": 9.165,
+     "e": 9.268
+    },
+    {
+     "w": "Spence",
+     "s": 9.336,
+     "e": 9.611
+    },
+    {
+     "w": "Street",
+     "s": 9.66,
+     "e": 9.954
+    },
+    {
+     "w": "have",
+     "s": 9.995,
+     "e": 10.16
+    },
+    {
+     "w": "a",
+     "s": 10.195,
+     "e": 10.229
+    },
+    {
+     "w": "clear",
+     "s": 10.286,
+     "e": 10.572
+    },
+    {
+     "w": "run.",
+     "s": 10.675,
+     "e": 11.053
+    },
+    {
+     "w": "It's",
+     "s": 11.19,
+     "e": 11.533
+    },
+    {
+     "w": "sunny",
+     "s": 11.579,
+     "e": 11.808
+    },
+    {
+     "w": "with",
+     "s": 11.863,
+     "e": 12.082
+    },
+    {
+     "w": "twenty-six",
+     "s": 12.122,
+     "e": 12.563
+    },
+    {
+     "w": "degrees.",
+     "s": 12.64,
+     "e": 13.249
+    },
+    {
+     "w": "Unleaded's",
+     "s": 13.41,
+     "e": 14.073
+    },
+    {
+     "w": "cheapest",
+     "s": 14.126,
+     "e": 14.554
+    },
+    {
+     "w": "at",
+     "s": 14.599,
+     "e": 14.691
+    },
+    {
+     "w": "a",
+     "s": 14.725,
+     "e": 14.76
+    },
+    {
+     "w": "dollar",
+     "s": 14.799,
+     "e": 15.034
+    },
+    {
+     "w": "ninety-six",
+     "s": 15.074,
+     "e": 15.584
+    },
+    {
+     "w": "in",
+     "s": 15.629,
+     "e": 15.721
+    },
+    {
+     "w": "Edge",
+     "s": 15.776,
+     "e": 15.995
+    },
+    {
+     "w": "Hill,",
+     "s": 16.05,
+     "e": 16.613
+    },
+    {
+     "w": "with",
+     "s": 16.641,
+     "e": 16.751
+    },
+    {
+     "w": "diesel",
+     "s": 16.819,
+     "e": 17.231
+    },
+    {
+     "w": "at",
+     "s": 17.323,
+     "e": 17.506
+    },
+    {
+     "w": "two",
+     "s": 17.54,
+     "e": 17.643
+    },
+    {
+     "w": "thirty-five",
+     "s": 17.692,
+     "e": 18.261
+    },
+    {
+     "w": "there",
+     "s": 18.306,
+     "e": 18.535
+    },
+    {
+     "w": "too.",
+     "s": 18.673,
+     "e": 19.153
+    },
+    {
+     "w": "Roadworks",
+     "s": 19.277,
+     "e": 20.046
+    },
+    {
+     "w": "and",
+     "s": 20.08,
+     "e": 20.183
+    },
+    {
+     "w": "changed",
+     "s": 20.252,
+     "e": 20.732
+    },
+    {
+     "w": "traffic",
+     "s": 20.784,
+     "e": 21.144
+    },
+    {
+     "w": "conditions",
+     "s": 21.188,
+     "e": 21.625
+    },
+    {
+     "w": "are",
+     "s": 21.745,
+     "e": 22.105
+    },
+    {
+     "w": "updated",
+     "s": 22.165,
+     "e": 22.586
+    },
+    {
+     "w": "weekly",
+     "s": 22.654,
+     "e": 23.066
+    },
+    {
+     "w": "on",
+     "s": 23.135,
+     "e": 23.272
+    },
+    {
+     "w": "the",
+     "s": 23.307,
+     "e": 23.41
+    },
+    {
+     "w": "Cairns",
+     "s": 23.478,
+     "e": 23.89
+    },
+    {
+     "w": "Regional",
+     "s": 23.936,
+     "e": 24.302
+    },
+    {
+     "w": "Council",
+     "s": 24.362,
+     "e": 24.783
+    },
+    {
+     "w": "website.",
+     "s": 24.851,
+     "e": 25.4
+    },
+    {
+     "w": "Download",
+     "s": 25.492,
+     "e": 26.224
+    },
+    {
+     "w": "the",
+     "s": 26.241,
+     "e": 26.293
+    },
+    {
+     "w": "iHeartRadio",
+     "s": 26.43,
+     "e": 27.117
+    },
+    {
+     "w": "app",
+     "s": 27.168,
+     "e": 27.323
+    },
+    {
+     "w": "to",
+     "s": 27.368,
+     "e": 27.46
+    },
+    {
+     "w": "take",
+     "s": 27.501,
+     "e": 27.666
+    },
+    {
+     "w": "us",
+     "s": 27.711,
+     "e": 27.803
+    },
+    {
+     "w": "anywhere",
+     "s": 27.849,
+     "e": 28.215
+    },
+    {
+     "w": "\u2014",
+     "s": 28.421,
+     "e": 28.627
+    },
+    {
+     "w": "search",
+     "s": 28.666,
+     "e": 28.902
+    },
+    {
+     "w": "Star",
+     "s": 28.97,
+     "e": 29.245
+    },
+    {
+     "w": "Cairns.",
+     "s": 29.327,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "0551cfc0ed6e45c0bd8ddf0567b81c16",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 28.9,
+   "fittedSec": 22,
+   "stretch": 1.31364,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "[brightly]Chockers at the Western Ring Road near the Deer Park Bypass with heavy congestion. CityLink\u2019s westbound under the pump between Toorak and Warrigal Roads, with more congestion at Power Street. Point Cook Road\u2019s closed westbound at the West Gate Freeway turn-off. Greensborough Bypass is closed southbound where it meets the M80, and Finlayson Street\u2019s blocked eastbound by the Eastern Freeway. It\u2019s showery, 10 degrees.",
+   "features": {
+    "syl": 99,
+    "words": 64,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Chockers",
+     "s": 0.107,
+     "e": 0.427
+    },
+    {
+     "w": "at",
+     "s": 0.467,
+     "e": 0.548
+    },
+    {
+     "w": "the",
+     "s": 0.564,
+     "e": 0.609
+    },
+    {
+     "w": "Western",
+     "s": 0.648,
+     "e": 0.914
+    },
+    {
+     "w": "Ring",
+     "s": 0.963,
+     "e": 1.158
+    },
+    {
+     "w": "Road",
+     "s": 1.207,
+     "e": 1.402
+    },
+    {
+     "w": "near",
+     "s": 1.438,
+     "e": 1.584
+    },
+    {
+     "w": "the",
+     "s": 1.6,
+     "e": 1.645
+    },
+    {
+     "w": "Deer",
+     "s": 1.682,
+     "e": 1.828
+    },
+    {
+     "w": "Park",
+     "s": 1.877,
+     "e": 2.072
+    },
+    {
+     "w": "Bypass",
+     "s": 2.163,
+     "e": 2.681
+    },
+    {
+     "w": "with",
+     "s": 2.706,
+     "e": 2.803
+    },
+    {
+     "w": "heavy",
+     "s": 2.854,
+     "e": 3.108
+    },
+    {
+     "w": "congestion.",
+     "s": 3.169,
+     "e": 4.083
+    },
+    {
+     "w": "CityLink\u2019s",
+     "s": 4.132,
+     "e": 4.571
+    },
+    {
+     "w": "westbound",
+     "s": 4.619,
+     "e": 5.058
+    },
+    {
+     "w": "under",
+     "s": 5.099,
+     "e": 5.302
+    },
+    {
+     "w": "the",
+     "s": 5.317,
+     "e": 5.363
+    },
+    {
+     "w": "pump",
+     "s": 5.424,
+     "e": 5.668
+    },
+    {
+     "w": "between",
+     "s": 5.721,
+     "e": 6.094
+    },
+    {
+     "w": "Toorak",
+     "s": 6.155,
+     "e": 6.582
+    },
+    {
+     "w": "and",
+     "s": 6.612,
+     "e": 6.704
+    },
+    {
+     "w": "Warrigal",
+     "s": 6.765,
+     "e": 7.069
+    },
+    {
+     "w": "Roads,",
+     "s": 7.14,
+     "e": 7.679
+    },
+    {
+     "w": "with",
+     "s": 7.703,
+     "e": 7.801
+    },
+    {
+     "w": "more",
+     "s": 7.837,
+     "e": 7.983
+    },
+    {
+     "w": "congestion",
+     "s": 8.028,
+     "e": 8.471
+    },
+    {
+     "w": "at",
+     "s": 8.532,
+     "e": 8.654
+    },
+    {
+     "w": "Power",
+     "s": 8.705,
+     "e": 8.958
+    },
+    {
+     "w": "Street.",
+     "s": 9.011,
+     "e": 9.385
+    },
+    {
+     "w": "Point",
+     "s": 9.467,
+     "e": 9.873
+    },
+    {
+     "w": "Cook",
+     "s": 9.909,
+     "e": 10.055
+    },
+    {
+     "w": "Road\u2019s",
+     "s": 10.104,
+     "e": 10.36
+    },
+    {
+     "w": "closed",
+     "s": 10.421,
+     "e": 10.787
+    },
+    {
+     "w": "westbound",
+     "s": 10.86,
+     "e": 11.396
+    },
+    {
+     "w": "at",
+     "s": 11.497,
+     "e": 11.701
+    },
+    {
+     "w": "the",
+     "s": 11.716,
+     "e": 11.762
+    },
+    {
+     "w": "West",
+     "s": 11.798,
+     "e": 11.945
+    },
+    {
+     "w": "Gate",
+     "s": 11.981,
+     "e": 12.127
+    },
+    {
+     "w": "Freeway",
+     "s": 12.173,
+     "e": 12.493
+    },
+    {
+     "w": "turn-off.",
+     "s": 12.554,
+     "e": 13.285
+    },
+    {
+     "w": "Greensborough",
+     "s": 13.329,
+     "e": 13.773
+    },
+    {
+     "w": "Bypass",
+     "s": 13.834,
+     "e": 14.26
+    },
+    {
+     "w": "is",
+     "s": 14.321,
+     "e": 14.443
+    },
+    {
+     "w": "closed",
+     "s": 14.496,
+     "e": 14.809
+    },
+    {
+     "w": "southbound",
+     "s": 14.89,
+     "e": 15.54
+    },
+    {
+     "w": "where",
+     "s": 15.591,
+     "e": 15.845
+    },
+    {
+     "w": "it",
+     "s": 15.865,
+     "e": 15.906
+    },
+    {
+     "w": "meets",
+     "s": 15.936,
+     "e": 16.089
+    },
+    {
+     "w": "the",
+     "s": 16.119,
+     "e": 16.211
+    },
+    {
+     "w": "M",
+     "s": 16.332,
+     "e": 16.454
+    },
+    {
+     "w": "80,",
+     "s": 16.507,
+     "e": 17.064
+    },
+    {
+     "w": "and",
+     "s": 17.079,
+     "e": 17.125
+    },
+    {
+     "w": "Finlayson",
+     "s": 17.186,
+     "e": 17.673
+    },
+    {
+     "w": "Street\u2019s",
+     "s": 17.717,
+     "e": 18.039
+    },
+    {
+     "w": "blocked",
+     "s": 18.077,
+     "e": 18.343
+    },
+    {
+     "w": "eastbound",
+     "s": 18.417,
+     "e": 18.953
+    },
+    {
+     "w": "by",
+     "s": 19.034,
+     "e": 19.197
+    },
+    {
+     "w": "the",
+     "s": 19.227,
+     "e": 19.319
+    },
+    {
+     "w": "Eastern",
+     "s": 19.364,
+     "e": 19.684
+    },
+    {
+     "w": "Freeway.",
+     "s": 19.73,
+     "e": 20.233
+    },
+    {
+     "w": "It\u2019s",
+     "s": 20.334,
+     "e": 20.598
+    },
+    {
+     "w": "showery,",
+     "s": 20.647,
+     "e": 21.208
+    },
+    {
+     "w": "10",
+     "s": 21.238,
+     "e": 21.33
+    },
+    {
+     "w": "degrees.",
+     "s": 21.398,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "081ff69457ab49fe83627cd6353662e4",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 25.4,
+   "fittedSec": 22,
+   "stretch": 1.15455,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Western Ring Road's chockers southbound at the Deer Park Bypass with heavy congestion. Point Cook Road's CLOSED westbound at the West Gate Freeway, with Greensborough Bypass blocked southbound at the M80. Finlayson Street's closed eastbound at the Eastern Freeway. CityLink's a slow patch westbound, and the Tulla's minor delays citybound. [brightly]Showery, 10 degrees!",
+   "features": {
+    "syl": 86,
+    "words": 54,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.138
+    },
+    {
+     "w": "Western",
+     "s": 0.173,
+     "e": 0.415
+    },
+    {
+     "w": "Ring",
+     "s": 0.457,
+     "e": 0.623
+    },
+    {
+     "w": "Road's",
+     "s": 0.664,
+     "e": 0.969
+    },
+    {
+     "w": "chockers",
+     "s": 0.992,
+     "e": 1.314
+    },
+    {
+     "w": "southbound",
+     "s": 1.384,
+     "e": 1.937
+    },
+    {
+     "w": "at",
+     "s": 1.96,
+     "e": 2.006
+    },
+    {
+     "w": "the",
+     "s": 2.024,
+     "e": 2.075
+    },
+    {
+     "w": "Deer",
+     "s": 2.117,
+     "e": 2.283
+    },
+    {
+     "w": "Park",
+     "s": 2.352,
+     "e": 2.629
+    },
+    {
+     "w": "Bypass",
+     "s": 2.664,
+     "e": 3.182
+    },
+    {
+     "w": "with",
+     "s": 3.252,
+     "e": 3.528
+    },
+    {
+     "w": "heavy",
+     "s": 3.586,
+     "e": 3.874
+    },
+    {
+     "w": "congestion.",
+     "s": 3.943,
+     "e": 4.704
+    },
+    {
+     "w": "Point",
+     "s": 4.797,
+     "e": 5.258
+    },
+    {
+     "w": "Cook",
+     "s": 5.299,
+     "e": 5.465
+    },
+    {
+     "w": "Road's",
+     "s": 5.507,
+     "e": 5.811
+    },
+    {
+     "w": "CLOSED",
+     "s": 5.881,
+     "e": 6.296
+    },
+    {
+     "w": "westbound",
+     "s": 6.379,
+     "e": 7.057
+    },
+    {
+     "w": "at",
+     "s": 7.149,
+     "e": 7.333
+    },
+    {
+     "w": "the",
+     "s": 7.351,
+     "e": 7.403
+    },
+    {
+     "w": "West",
+     "s": 7.458,
+     "e": 7.679
+    },
+    {
+     "w": "Gate",
+     "s": 7.721,
+     "e": 7.887
+    },
+    {
+     "w": "Freeway,",
+     "s": 7.921,
+     "e": 8.648
+    },
+    {
+     "w": "with",
+     "s": 8.675,
+     "e": 8.786
+    },
+    {
+     "w": "Greensborough",
+     "s": 8.835,
+     "e": 9.34
+    },
+    {
+     "w": "Bypass",
+     "s": 9.443,
+     "e": 9.962
+    },
+    {
+     "w": "blocked",
+     "s": 10.006,
+     "e": 10.308
+    },
+    {
+     "w": "southbound",
+     "s": 10.366,
+     "e": 10.931
+    },
+    {
+     "w": "at",
+     "s": 11.023,
+     "e": 11.208
+    },
+    {
+     "w": "the",
+     "s": 11.242,
+     "e": 11.346
+    },
+    {
+     "w": "M",
+     "s": 11.484,
+     "e": 11.623
+    },
+    {
+     "w": "80.",
+     "s": 11.682,
+     "e": 12.107
+    },
+    {
+     "w": "Finlayson",
+     "s": 12.211,
+     "e": 12.868
+    },
+    {
+     "w": "Street's",
+     "s": 12.908,
+     "e": 13.214
+    },
+    {
+     "w": "closed",
+     "s": 13.263,
+     "e": 13.56
+    },
+    {
+     "w": "eastbound",
+     "s": 13.629,
+     "e": 14.182
+    },
+    {
+     "w": "at",
+     "s": 14.275,
+     "e": 14.459
+    },
+    {
+     "w": "the",
+     "s": 14.494,
+     "e": 14.597
+    },
+    {
+     "w": "Eastern",
+     "s": 14.649,
+     "e": 15.013
+    },
+    {
+     "w": "Freeway.",
+     "s": 15.064,
+     "e": 15.704
+    },
+    {
+     "w": "CityLink's",
+     "s": 15.829,
+     "e": 16.535
+    },
+    {
+     "w": "a",
+     "s": 16.569,
+     "e": 16.604
+    },
+    {
+     "w": "slow",
+     "s": 16.659,
+     "e": 16.881
+    },
+    {
+     "w": "patch",
+     "s": 16.926,
+     "e": 17.157
+    },
+    {
+     "w": "westbound,",
+     "s": 17.226,
+     "e": 17.987
+    },
+    {
+     "w": "and",
+     "s": 18.005,
+     "e": 18.057
+    },
+    {
+     "w": "the",
+     "s": 18.074,
+     "e": 18.126
+    },
+    {
+     "w": "Tulla's",
+     "s": 18.23,
+     "e": 18.61
+    },
+    {
+     "w": "minor",
+     "s": 18.656,
+     "e": 18.887
+    },
+    {
+     "w": "delays",
+     "s": 18.946,
+     "e": 19.302
+    },
+    {
+     "w": "citybound.",
+     "s": 19.399,
+     "e": 20.132
+    },
+    {
+     "w": "Showery,",
+     "s": 20.634,
+     "e": 21.17
+    },
+    {
+     "w": "10",
+     "s": 21.204,
+     "e": 21.308
+    },
+    {
+     "w": "degrees!",
+     "s": 21.386,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "184b8e14582e45bfb0c6014650b1a243",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 25.8,
+   "fittedSec": 22,
+   "stretch": 1.17273,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Western Ring Road\u2019s chockers at the Deer Park Bypass, with heavy delays. [brightly]Point Cook Road\u2019s closed westbound at the West Gate Freeway, while Greensborough Bypass is blocked southbound at the M80 Metropolitan Ring Road. Finlayson Street\u2019s closed eastbound approaching the Eastern Freeway. CityLink\u2019s slow at Burnley Tunnel and between Toorak and Warrigal Roads. Showers, ten degrees.",
+   "features": {
+    "syl": 92,
+    "words": 57,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.137
+    },
+    {
+     "w": "Western",
+     "s": 0.171,
+     "e": 0.41
+    },
+    {
+     "w": "Ring",
+     "s": 0.451,
+     "e": 0.615
+    },
+    {
+     "w": "Road\u2019s",
+     "s": 0.656,
+     "e": 0.957
+    },
+    {
+     "w": "chockers",
+     "s": 1.002,
+     "e": 1.366
+    },
+    {
+     "w": "at",
+     "s": 1.412,
+     "e": 1.503
+    },
+    {
+     "w": "the",
+     "s": 1.52,
+     "e": 1.571
+    },
+    {
+     "w": "Deer",
+     "s": 1.612,
+     "e": 1.776
+    },
+    {
+     "w": "Park",
+     "s": 1.831,
+     "e": 2.05
+    },
+    {
+     "w": "Bypass,",
+     "s": 2.118,
+     "e": 2.87
+    },
+    {
+     "w": "with",
+     "s": 2.883,
+     "e": 2.938
+    },
+    {
+     "w": "heavy",
+     "s": 2.983,
+     "e": 3.211
+    },
+    {
+     "w": "delays.",
+     "s": 3.289,
+     "e": 4.099
+    },
+    {
+     "w": "Point",
+     "s": 4.168,
+     "e": 4.304
+    },
+    {
+     "w": "Cook",
+     "s": 4.345,
+     "e": 4.509
+    },
+    {
+     "w": "Road\u2019s",
+     "s": 4.564,
+     "e": 4.851
+    },
+    {
+     "w": "closed",
+     "s": 4.9,
+     "e": 5.193
+    },
+    {
+     "w": "westbound",
+     "s": 5.247,
+     "e": 5.807
+    },
+    {
+     "w": "at",
+     "s": 5.831,
+     "e": 5.876
+    },
+    {
+     "w": "the",
+     "s": 5.893,
+     "e": 5.944
+    },
+    {
+     "w": "West",
+     "s": 5.999,
+     "e": 6.217
+    },
+    {
+     "w": "Gate",
+     "s": 6.258,
+     "e": 6.422
+    },
+    {
+     "w": "Freeway,",
+     "s": 6.457,
+     "e": 7.174
+    },
+    {
+     "w": "while",
+     "s": 7.197,
+     "e": 7.311
+    },
+    {
+     "w": "Greensborough",
+     "s": 7.359,
+     "e": 7.857
+    },
+    {
+     "w": "Bypass",
+     "s": 7.891,
+     "e": 8.472
+    },
+    {
+     "w": "is",
+     "s": 8.517,
+     "e": 8.609
+    },
+    {
+     "w": "blocked",
+     "s": 8.643,
+     "e": 8.882
+    },
+    {
+     "w": "southbound",
+     "s": 8.927,
+     "e": 9.497
+    },
+    {
+     "w": "at",
+     "s": 9.61,
+     "e": 9.839
+    },
+    {
+     "w": "the",
+     "s": 9.856,
+     "e": 9.907
+    },
+    {
+     "w": "M",
+     "s": 10.043,
+     "e": 10.18
+    },
+    {
+     "w": "80",
+     "s": 10.229,
+     "e": 10.522
+    },
+    {
+     "w": "Metropolitan",
+     "s": 10.575,
+     "e": 11.205
+    },
+    {
+     "w": "Ring",
+     "s": 11.246,
+     "e": 11.41
+    },
+    {
+     "w": "Road.",
+     "s": 11.478,
+     "e": 12.025
+    },
+    {
+     "w": "Finlayson",
+     "s": 12.093,
+     "e": 12.64
+    },
+    {
+     "w": "Street\u2019s",
+     "s": 12.688,
+     "e": 13.05
+    },
+    {
+     "w": "closed",
+     "s": 13.098,
+     "e": 13.391
+    },
+    {
+     "w": "eastbound",
+     "s": 13.46,
+     "e": 14.075
+    },
+    {
+     "w": "approaching",
+     "s": 14.132,
+     "e": 14.758
+    },
+    {
+     "w": "the",
+     "s": 14.775,
+     "e": 14.826
+    },
+    {
+     "w": "Eastern",
+     "s": 14.877,
+     "e": 15.236
+    },
+    {
+     "w": "Freeway.",
+     "s": 15.287,
+     "e": 16.056
+    },
+    {
+     "w": "CityLink\u2019s",
+     "s": 16.138,
+     "e": 16.739
+    },
+    {
+     "w": "slow",
+     "s": 16.807,
+     "e": 17.081
+    },
+    {
+     "w": "at",
+     "s": 17.126,
+     "e": 17.217
+    },
+    {
+     "w": "Burnley",
+     "s": 17.272,
+     "e": 17.559
+    },
+    {
+     "w": "Tunnel",
+     "s": 17.618,
+     "e": 17.969
+    },
+    {
+     "w": "and",
+     "s": 18.054,
+     "e": 18.311
+    },
+    {
+     "w": "between",
+     "s": 18.345,
+     "e": 18.584
+    },
+    {
+     "w": "Toorak",
+     "s": 18.652,
+     "e": 19.13
+    },
+    {
+     "w": "and",
+     "s": 19.165,
+     "e": 19.267
+    },
+    {
+     "w": "Warrigal",
+     "s": 19.335,
+     "e": 19.677
+    },
+    {
+     "w": "Roads.",
+     "s": 19.756,
+     "e": 20.463
+    },
+    {
+     "w": "Showers,",
+     "s": 20.524,
+     "e": 21.112
+    },
+    {
+     "w": "ten",
+     "s": 21.146,
+     "e": 21.248
+    },
+    {
+     "w": "degrees.",
+     "s": 21.317,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "37b2f35b0eae42669005c4f71a776a9f",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 25.1,
+   "fittedSec": 22,
+   "stretch": 1.14091,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Western Ring Road's chockers at the Deer Park Bypass with heavy DELAYS. Point Cook Road's closed westbound at the West Gate Freeway. Greensborough Bypass is blocked southbound joining the M80, and Finlayson Street's sealed off eastbound onto the Eastern Freeway. The Tulla's a bit slow between Melbourne Airport and Mickleham Road. Showers, ten degrees. [brightly] Unleaded's two dollars in Richmond!",
+   "features": {
+    "syl": 93,
+    "words": 60,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.14
+    },
+    {
+     "w": "Western",
+     "s": 0.175,
+     "e": 0.42
+    },
+    {
+     "w": "Ring",
+     "s": 0.462,
+     "e": 0.631
+    },
+    {
+     "w": "Road's",
+     "s": 0.673,
+     "e": 0.981
+    },
+    {
+     "w": "chockers",
+     "s": 1.027,
+     "e": 1.401
+    },
+    {
+     "w": "at",
+     "s": 1.448,
+     "e": 1.541
+    },
+    {
+     "w": "the",
+     "s": 1.559,
+     "e": 1.611
+    },
+    {
+     "w": "Deer",
+     "s": 1.654,
+     "e": 1.822
+    },
+    {
+     "w": "Park",
+     "s": 1.878,
+     "e": 2.102
+    },
+    {
+     "w": "Bypass",
+     "s": 2.172,
+     "e": 2.732
+    },
+    {
+     "w": "with",
+     "s": 2.817,
+     "e": 3.153
+    },
+    {
+     "w": "heavy",
+     "s": 3.199,
+     "e": 3.433
+    },
+    {
+     "w": "DELAYS.",
+     "s": 3.521,
+     "e": 4.274
+    },
+    {
+     "w": "Point",
+     "s": 4.355,
+     "e": 4.764
+    },
+    {
+     "w": "Cook",
+     "s": 4.806,
+     "e": 4.975
+    },
+    {
+     "w": "Road's",
+     "s": 5.031,
+     "e": 5.325
+    },
+    {
+     "w": "closed",
+     "s": 5.365,
+     "e": 5.605
+    },
+    {
+     "w": "westbound",
+     "s": 5.661,
+     "e": 6.096
+    },
+    {
+     "w": "at",
+     "s": 6.119,
+     "e": 6.166
+    },
+    {
+     "w": "the",
+     "s": 6.183,
+     "e": 6.236
+    },
+    {
+     "w": "West",
+     "s": 6.278,
+     "e": 6.446
+    },
+    {
+     "w": "Gate",
+     "s": 6.488,
+     "e": 6.656
+    },
+    {
+     "w": "Freeway.",
+     "s": 6.691,
+     "e": 7.217
+    },
+    {
+     "w": "Greensborough",
+     "s": 7.296,
+     "e": 7.987
+    },
+    {
+     "w": "Bypass",
+     "s": 8.057,
+     "e": 8.548
+    },
+    {
+     "w": "is",
+     "s": 8.594,
+     "e": 8.688
+    },
+    {
+     "w": "blocked",
+     "s": 8.732,
+     "e": 9.038
+    },
+    {
+     "w": "southbound",
+     "s": 9.108,
+     "e": 9.739
+    },
+    {
+     "w": "joining",
+     "s": 9.818,
+     "e": 10.369
+    },
+    {
+     "w": "the",
+     "s": 10.404,
+     "e": 10.51
+    },
+    {
+     "w": "M",
+     "s": 10.615,
+     "e": 10.72
+    },
+    {
+     "w": "80,",
+     "s": 10.79,
+     "e": 11.49
+    },
+    {
+     "w": "and",
+     "s": 11.508,
+     "e": 11.561
+    },
+    {
+     "w": "Finlayson",
+     "s": 11.613,
+     "e": 12.121
+    },
+    {
+     "w": "Street's",
+     "s": 12.161,
+     "e": 12.471
+    },
+    {
+     "w": "sealed",
+     "s": 12.501,
+     "e": 12.682
+    },
+    {
+     "w": "off",
+     "s": 12.734,
+     "e": 12.892
+    },
+    {
+     "w": "eastbound",
+     "s": 12.948,
+     "e": 13.452
+    },
+    {
+     "w": "onto",
+     "s": 13.55,
+     "e": 13.943
+    },
+    {
+     "w": "the",
+     "s": 13.96,
+     "e": 14.013
+    },
+    {
+     "w": "Eastern",
+     "s": 14.057,
+     "e": 14.363
+    },
+    {
+     "w": "Freeway.",
+     "s": 14.416,
+     "e": 14.994
+    },
+    {
+     "w": "The",
+     "s": 15.099,
+     "e": 15.414
+    },
+    {
+     "w": "Tulla's",
+     "s": 15.449,
+     "e": 15.694
+    },
+    {
+     "w": "a",
+     "s": 15.729,
+     "e": 15.764
+    },
+    {
+     "w": "bit",
+     "s": 15.799,
+     "e": 15.904
+    },
+    {
+     "w": "slow",
+     "s": 15.975,
+     "e": 16.255
+    },
+    {
+     "w": "between",
+     "s": 16.29,
+     "e": 16.535
+    },
+    {
+     "w": "Melbourne",
+     "s": 16.563,
+     "e": 16.815
+    },
+    {
+     "w": "Airport",
+     "s": 16.868,
+     "e": 17.236
+    },
+    {
+     "w": "and",
+     "s": 17.306,
+     "e": 17.516
+    },
+    {
+     "w": "Mickleham",
+     "s": 17.568,
+     "e": 18.006
+    },
+    {
+     "w": "Road.",
+     "s": 18.076,
+     "e": 18.427
+    },
+    {
+     "w": "Showers,",
+     "s": 18.525,
+     "e": 19.197
+    },
+    {
+     "w": "ten",
+     "s": 19.268,
+     "e": 19.478
+    },
+    {
+     "w": "degrees.",
+     "s": 19.548,
+     "e": 20.108
+    },
+    {
+     "w": "Unleaded's",
+     "s": 20.435,
+     "e": 20.739
+    },
+    {
+     "w": "two",
+     "s": 20.774,
+     "e": 20.879
+    },
+    {
+     "w": "dollars",
+     "s": 20.914,
+     "e": 21.159
+    },
+    {
+     "w": "in",
+     "s": 21.206,
+     "e": 21.299
+    },
+    {
+     "w": "Richmond!",
+     "s": 21.362,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "3971bcc90a4e4fe6be97a0ef129fbcdb",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 24.9,
+   "fittedSec": 22,
+   "stretch": 1.13182,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Edgars Road's chockers. The Peninsula Link's a touch slow, while Sydney Road's slow-moving with moderate delays. We've got the Western Ring Road slow-moving too, plus minor delays on the Burnley Tunnel eastbound near Cremorne. A road hazard's causing minor delays on the Metropolitan Ring Road southbound near Greensborough, at the Greensborough Highway South ramp. [brightly] Sunny, eighteen degrees!",
+   "features": {
+    "syl": 94,
+    "words": 57,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Edgars",
+     "s": 0,
+     "e": 0.283
+    },
+    {
+     "w": "Road's",
+     "s": 0.354,
+     "e": 0.778
+    },
+    {
+     "w": "chockers.",
+     "s": 0.825,
+     "e": 1.414
+    },
+    {
+     "w": "The",
+     "s": 1.485,
+     "e": 1.697
+    },
+    {
+     "w": "Peninsula",
+     "s": 1.747,
+     "e": 2.192
+    },
+    {
+     "w": "Link's",
+     "s": 2.249,
+     "e": 2.546
+    },
+    {
+     "w": "a",
+     "s": 2.581,
+     "e": 2.616
+    },
+    {
+     "w": "touch",
+     "s": 2.676,
+     "e": 2.97
+    },
+    {
+     "w": "slow,",
+     "s": 3.027,
+     "e": 3.324
+    },
+    {
+     "w": "while",
+     "s": 3.383,
+     "e": 3.677
+    },
+    {
+     "w": "Sydney",
+     "s": 3.728,
+     "e": 4.031
+    },
+    {
+     "w": "Road's",
+     "s": 4.101,
+     "e": 4.455
+    },
+    {
+     "w": "slow-moving",
+     "s": 4.512,
+     "e": 5.162
+    },
+    {
+     "w": "with",
+     "s": 5.219,
+     "e": 5.445
+    },
+    {
+     "w": "moderate",
+     "s": 5.484,
+     "e": 5.799
+    },
+    {
+     "w": "delays.",
+     "s": 5.879,
+     "e": 6.435
+    },
+    {
+     "w": "We've",
+     "s": 6.553,
+     "e": 6.859
+    },
+    {
+     "w": "got",
+     "s": 6.895,
+     "e": 7.001
+    },
+    {
+     "w": "the",
+     "s": 7.018,
+     "e": 7.071
+    },
+    {
+     "w": "Western",
+     "s": 7.116,
+     "e": 7.425
+    },
+    {
+     "w": "Ring",
+     "s": 7.482,
+     "e": 7.708
+    },
+    {
+     "w": "Road",
+     "s": 7.764,
+     "e": 7.991
+    },
+    {
+     "w": "slow-moving",
+     "s": 8.033,
+     "e": 8.556
+    },
+    {
+     "w": "too,",
+     "s": 8.627,
+     "e": 9.193
+    },
+    {
+     "w": "plus",
+     "s": 9.249,
+     "e": 9.476
+    },
+    {
+     "w": "minor",
+     "s": 9.535,
+     "e": 9.829
+    },
+    {
+     "w": "delays",
+     "s": 9.89,
+     "e": 10.254
+    },
+    {
+     "w": "on",
+     "s": 10.324,
+     "e": 10.466
+    },
+    {
+     "w": "the",
+     "s": 10.483,
+     "e": 10.536
+    },
+    {
+     "w": "Burnley",
+     "s": 10.593,
+     "e": 10.89
+    },
+    {
+     "w": "Tunnel",
+     "s": 10.94,
+     "e": 11.244
+    },
+    {
+     "w": "eastbound",
+     "s": 11.314,
+     "e": 11.951
+    },
+    {
+     "w": "near",
+     "s": 12.036,
+     "e": 12.375
+    },
+    {
+     "w": "Cremorne.",
+     "s": 12.41,
+     "e": 13.117
+    },
+    {
+     "w": "A",
+     "s": 13.17,
+     "e": 13.224
+    },
+    {
+     "w": "road",
+     "s": 13.266,
+     "e": 13.436
+    },
+    {
+     "w": "hazard's",
+     "s": 13.476,
+     "e": 13.789
+    },
+    {
+     "w": "causing",
+     "s": 13.833,
+     "e": 14.143
+    },
+    {
+     "w": "minor",
+     "s": 14.202,
+     "e": 14.496
+    },
+    {
+     "w": "delays",
+     "s": 14.567,
+     "e": 14.991
+    },
+    {
+     "w": "on",
+     "s": 15.015,
+     "e": 15.062
+    },
+    {
+     "w": "the",
+     "s": 15.097,
+     "e": 15.204
+    },
+    {
+     "w": "Metropolitan",
+     "s": 15.247,
+     "e": 15.769
+    },
+    {
+     "w": "Ring",
+     "s": 15.826,
+     "e": 16.052
+    },
+    {
+     "w": "Road",
+     "s": 16.095,
+     "e": 16.264
+    },
+    {
+     "w": "southbound",
+     "s": 16.335,
+     "e": 16.901
+    },
+    {
+     "w": "near",
+     "s": 16.943,
+     "e": 17.113
+    },
+    {
+     "w": "Greensborough,",
+     "s": 17.163,
+     "e": 18.032
+    },
+    {
+     "w": "at",
+     "s": 18.056,
+     "e": 18.103
+    },
+    {
+     "w": "the",
+     "s": 18.138,
+     "e": 18.244
+    },
+    {
+     "w": "Greensborough",
+     "s": 18.305,
+     "e": 18.881
+    },
+    {
+     "w": "Highway",
+     "s": 18.943,
+     "e": 19.376
+    },
+    {
+     "w": "South",
+     "s": 19.435,
+     "e": 19.729
+    },
+    {
+     "w": "ramp.",
+     "s": 19.814,
+     "e": 20.224
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.785,
+     "e": 20.935
+    },
+    {
+     "w": "eighteen",
+     "s": 20.982,
+     "e": 21.359
+    },
+    {
+     "w": "degrees!",
+     "s": 21.439,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "7a25c865178b4ff4bfc08bb76addcfd2",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 29.4,
+   "fittedSec": 21.82,
+   "stretch": 1.34739,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Western Ring Road's chockers at the Deer Park Bypass, with heavy DELAYS. Point Cook Road's closed westbound at the West Gate Freeway entry. Greensborough Bypass is blocked southbound where it meets the M80, and Finlayson Street's sealed off eastbound by the Eastern Freeway. CityLink's slow between Toorak and Warrigal, with works at Harcourt Parade. Showery, ten degrees. [brightly] Unleaded's two dollars in Richmond!",
+   "features": {
+    "syl": 98,
+    "words": 63,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.12
+    },
+    {
+     "w": "Western",
+     "s": 0.157,
+     "e": 0.42
+    },
+    {
+     "w": "Ring",
+     "s": 0.456,
+     "e": 0.599
+    },
+    {
+     "w": "Road's",
+     "s": 0.647,
+     "e": 0.899
+    },
+    {
+     "w": "chockers",
+     "s": 0.959,
+     "e": 1.319
+    },
+    {
+     "w": "at",
+     "s": 1.339,
+     "e": 1.379
+    },
+    {
+     "w": "the",
+     "s": 1.394,
+     "e": 1.439
+    },
+    {
+     "w": "Deer",
+     "s": 1.487,
+     "e": 1.678
+    },
+    {
+     "w": "Park",
+     "s": 1.726,
+     "e": 1.918
+    },
+    {
+     "w": "Bypass,",
+     "s": 1.978,
+     "e": 2.458
+    },
+    {
+     "w": "with",
+     "s": 2.518,
+     "e": 2.757
+    },
+    {
+     "w": "heavy",
+     "s": 2.797,
+     "e": 2.997
+    },
+    {
+     "w": "DELAYS.",
+     "s": 3.057,
+     "e": 3.657
+    },
+    {
+     "w": "Point",
+     "s": 3.707,
+     "e": 3.956
+    },
+    {
+     "w": "Cook",
+     "s": 3.992,
+     "e": 4.136
+    },
+    {
+     "w": "Road's",
+     "s": 4.196,
+     "e": 4.496
+    },
+    {
+     "w": "closed",
+     "s": 4.539,
+     "e": 4.796
+    },
+    {
+     "w": "westbound",
+     "s": 4.844,
+     "e": 5.335
+    },
+    {
+     "w": "at",
+     "s": 5.435,
+     "e": 5.635
+    },
+    {
+     "w": "the",
+     "s": 5.65,
+     "e": 5.695
+    },
+    {
+     "w": "West",
+     "s": 5.731,
+     "e": 5.875
+    },
+    {
+     "w": "Gate",
+     "s": 5.911,
+     "e": 6.054
+    },
+    {
+     "w": "Freeway",
+     "s": 6.114,
+     "e": 6.474
+    },
+    {
+     "w": "entry.",
+     "s": 6.554,
+     "e": 7.014
+    },
+    {
+     "w": "Greensborough",
+     "s": 7.108,
+     "e": 7.793
+    },
+    {
+     "w": "Bypass",
+     "s": 7.853,
+     "e": 8.332
+    },
+    {
+     "w": "is",
+     "s": 8.353,
+     "e": 8.392
+    },
+    {
+     "w": "blocked",
+     "s": 8.43,
+     "e": 8.692
+    },
+    {
+     "w": "southbound",
+     "s": 8.752,
+     "e": 9.292
+    },
+    {
+     "w": "where",
+     "s": 9.351,
+     "e": 9.651
+    },
+    {
+     "w": "it",
+     "s": 9.671,
+     "e": 9.711
+    },
+    {
+     "w": "meets",
+     "s": 9.751,
+     "e": 9.951
+    },
+    {
+     "w": "the",
+     "s": 9.966,
+     "e": 10.011
+    },
+    {
+     "w": "M",
+     "s": 10.131,
+     "e": 10.251
+    },
+    {
+     "w": "80,",
+     "s": 10.285,
+     "e": 10.73
+    },
+    {
+     "w": "and",
+     "s": 10.76,
+     "e": 10.85
+    },
+    {
+     "w": "Finlayson",
+     "s": 10.895,
+     "e": 11.33
+    },
+    {
+     "w": "Street's",
+     "s": 11.381,
+     "e": 11.809
+    },
+    {
+     "w": "sealed",
+     "s": 11.844,
+     "e": 12.049
+    },
+    {
+     "w": "off",
+     "s": 12.079,
+     "e": 12.169
+    },
+    {
+     "w": "eastbound",
+     "s": 12.229,
+     "e": 12.768
+    },
+    {
+     "w": "by",
+     "s": 12.868,
+     "e": 13.068
+    },
+    {
+     "w": "the",
+     "s": 13.083,
+     "e": 13.128
+    },
+    {
+     "w": "Eastern",
+     "s": 13.173,
+     "e": 13.488
+    },
+    {
+     "w": "Freeway.",
+     "s": 13.533,
+     "e": 14.027
+    },
+    {
+     "w": "CityLink's",
+     "s": 14.159,
+     "e": 14.866
+    },
+    {
+     "w": "slow",
+     "s": 14.926,
+     "e": 15.166
+    },
+    {
+     "w": "between",
+     "s": 15.204,
+     "e": 15.466
+    },
+    {
+     "w": "Toorak",
+     "s": 15.526,
+     "e": 15.826
+    },
+    {
+     "w": "and",
+     "s": 15.841,
+     "e": 15.886
+    },
+    {
+     "w": "Warrigal,",
+     "s": 15.946,
+     "e": 16.605
+    },
+    {
+     "w": "with",
+     "s": 16.629,
+     "e": 16.725
+    },
+    {
+     "w": "works",
+     "s": 16.785,
+     "e": 17.084
+    },
+    {
+     "w": "at",
+     "s": 17.124,
+     "e": 17.204
+    },
+    {
+     "w": "Harcourt",
+     "s": 17.264,
+     "e": 17.624
+    },
+    {
+     "w": "Parade.",
+     "s": 17.684,
+     "e": 18.104
+    },
+    {
+     "w": "Showery,",
+     "s": 18.223,
+     "e": 18.943
+    },
+    {
+     "w": "ten",
+     "s": 19.003,
+     "e": 19.183
+    },
+    {
+     "w": "degrees.",
+     "s": 19.25,
+     "e": 19.782
+    },
+    {
+     "w": "Unleaded's",
+     "s": 20.181,
+     "e": 20.501
+    },
+    {
+     "w": "two",
+     "s": 20.531,
+     "e": 20.621
+    },
+    {
+     "w": "dollars",
+     "s": 20.666,
+     "e": 20.981
+    },
+    {
+     "w": "in",
+     "s": 21.061,
+     "e": 21.221
+    },
+    {
+     "w": "Richmond!",
+     "s": 21.274,
+     "e": 21.82
+    }
+   ]
+  },
+  {
+   "jobId": "8ff3e22316f44c71a1b5840f6c6f1bc5",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 22.9,
+   "fittedSec": 22,
+   "stretch": 1.04091,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Western Ring Road's chockers southbound at the Deer Park Bypass with heavy delays. Point Cook Road's CLOSED westbound at the West Gate Freeway, and Greensborough Bypass is closed southbound at the M80. Finlayson Street's blocked eastbound at the Eastern Freeway. Light rain, 10 degrees. [brightly] Cheapest unleaded's TWO dollars in Richmond!",
+   "features": {
+    "syl": 77,
+    "words": 51,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.154
+    },
+    {
+     "w": "Western",
+     "s": 0.192,
+     "e": 0.462
+    },
+    {
+     "w": "Ring",
+     "s": 0.508,
+     "e": 0.693
+    },
+    {
+     "w": "Road's",
+     "s": 0.739,
+     "e": 1.078
+    },
+    {
+     "w": "chockers",
+     "s": 1.104,
+     "e": 1.463
+    },
+    {
+     "w": "southbound",
+     "s": 1.54,
+     "e": 2.155
+    },
+    {
+     "w": "at",
+     "s": 2.181,
+     "e": 2.232
+    },
+    {
+     "w": "the",
+     "s": 2.252,
+     "e": 2.309
+    },
+    {
+     "w": "Deer",
+     "s": 2.356,
+     "e": 2.54
+    },
+    {
+     "w": "Park",
+     "s": 2.602,
+     "e": 2.848
+    },
+    {
+     "w": "Bypass",
+     "s": 2.925,
+     "e": 3.464
+    },
+    {
+     "w": "with",
+     "s": 3.541,
+     "e": 3.849
+    },
+    {
+     "w": "heavy",
+     "s": 3.9,
+     "e": 4.157
+    },
+    {
+     "w": "delays.",
+     "s": 4.256,
+     "e": 4.927
+    },
+    {
+     "w": "Point",
+     "s": 5.016,
+     "e": 5.465
+    },
+    {
+     "w": "Cook",
+     "s": 5.512,
+     "e": 5.696
+    },
+    {
+     "w": "Road's",
+     "s": 5.743,
+     "e": 6.081
+    },
+    {
+     "w": "CLOSED",
+     "s": 6.169,
+     "e": 6.697
+    },
+    {
+     "w": "westbound",
+     "s": 6.774,
+     "e": 7.39
+    },
+    {
+     "w": "at",
+     "s": 7.493,
+     "e": 7.698
+    },
+    {
+     "w": "the",
+     "s": 7.717,
+     "e": 7.775
+    },
+    {
+     "w": "West",
+     "s": 7.836,
+     "e": 8.083
+    },
+    {
+     "w": "Gate",
+     "s": 8.129,
+     "e": 8.314
+    },
+    {
+     "w": "Freeway,",
+     "s": 8.371,
+     "e": 9.16
+    },
+    {
+     "w": "and",
+     "s": 9.18,
+     "e": 9.237
+    },
+    {
+     "w": "Greensborough",
+     "s": 9.304,
+     "e": 9.853
+    },
+    {
+     "w": "Bypass",
+     "s": 9.969,
+     "e": 10.469
+    },
+    {
+     "w": "is",
+     "s": 10.52,
+     "e": 10.623
+    },
+    {
+     "w": "closed",
+     "s": 10.678,
+     "e": 11.008
+    },
+    {
+     "w": "southbound",
+     "s": 11.072,
+     "e": 11.701
+    },
+    {
+     "w": "at",
+     "s": 11.804,
+     "e": 12.008
+    },
+    {
+     "w": "the",
+     "s": 12.047,
+     "e": 12.162
+    },
+    {
+     "w": "M",
+     "s": 12.278,
+     "e": 12.393
+    },
+    {
+     "w": "80.",
+     "s": 12.46,
+     "e": 13.317
+    },
+    {
+     "w": "Finlayson",
+     "s": 13.375,
+     "e": 13.856
+    },
+    {
+     "w": "Street's",
+     "s": 13.911,
+     "e": 14.433
+    },
+    {
+     "w": "blocked",
+     "s": 14.457,
+     "e": 14.626
+    },
+    {
+     "w": "eastbound",
+     "s": 14.703,
+     "e": 15.319
+    },
+    {
+     "w": "at",
+     "s": 15.421,
+     "e": 15.626
+    },
+    {
+     "w": "the",
+     "s": 15.665,
+     "e": 15.78
+    },
+    {
+     "w": "Eastern",
+     "s": 15.828,
+     "e": 16.165
+    },
+    {
+     "w": "Freeway.",
+     "s": 16.223,
+     "e": 16.935
+    },
+    {
+     "w": "Light",
+     "s": 17.025,
+     "e": 17.474
+    },
+    {
+     "w": "rain,",
+     "s": 17.551,
+     "e": 18.09
+    },
+    {
+     "w": "10",
+     "s": 18.147,
+     "e": 18.321
+    },
+    {
+     "w": "degrees.",
+     "s": 18.407,
+     "e": 19.09
+    },
+    {
+     "w": "Cheapest",
+     "s": 19.424,
+     "e": 19.713
+    },
+    {
+     "w": "unleaded's",
+     "s": 19.759,
+     "e": 20.329
+    },
+    {
+     "w": "TWO",
+     "s": 20.387,
+     "e": 20.56
+    },
+    {
+     "w": "dollars",
+     "s": 20.608,
+     "e": 20.945
+    },
+    {
+     "w": "in",
+     "s": 21.048,
+     "e": 21.252
+    },
+    {
+     "w": "Richmond!",
+     "s": 21.321,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "9c65945247754d589d6e433435789a27",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 24.8,
+   "fittedSec": 21.929,
+   "stretch": 1.13092,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Western Ring Road's chockers southbound at the Deer Park Bypass with heavy delays. Point Cook Road's closed westbound at the West Gate Freeway, and Greensborough Bypass is blocked southbound at the M80 Metropolitan Ring Road. Finlayson Street's closed eastbound at the Eastern Freeway. Roadworks are slowing the Tulla citybound near Mickleham Road. [brightly] Showers, TEN degrees!",
+   "features": {
+    "syl": 89,
+    "words": 56,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.142
+    },
+    {
+     "w": "Western",
+     "s": 0.177,
+     "e": 0.426
+    },
+    {
+     "w": "Ring",
+     "s": 0.468,
+     "e": 0.639
+    },
+    {
+     "w": "Road's",
+     "s": 0.681,
+     "e": 0.994
+    },
+    {
+     "w": "chockers",
+     "s": 1.018,
+     "e": 1.348
+    },
+    {
+     "w": "southbound",
+     "s": 1.419,
+     "e": 1.987
+    },
+    {
+     "w": "at",
+     "s": 2.011,
+     "e": 2.058
+    },
+    {
+     "w": "the",
+     "s": 2.076,
+     "e": 2.129
+    },
+    {
+     "w": "Deer",
+     "s": 2.172,
+     "e": 2.342
+    },
+    {
+     "w": "Park",
+     "s": 2.399,
+     "e": 2.626
+    },
+    {
+     "w": "Bypass",
+     "s": 2.697,
+     "e": 3.194
+    },
+    {
+     "w": "with",
+     "s": 3.265,
+     "e": 3.548
+    },
+    {
+     "w": "heavy",
+     "s": 3.595,
+     "e": 3.832
+    },
+    {
+     "w": "delays.",
+     "s": 3.913,
+     "e": 4.471
+    },
+    {
+     "w": "Point",
+     "s": 4.553,
+     "e": 4.968
+    },
+    {
+     "w": "Cook",
+     "s": 5.01,
+     "e": 5.181
+    },
+    {
+     "w": "Road's",
+     "s": 5.237,
+     "e": 5.535
+    },
+    {
+     "w": "closed",
+     "s": 5.597,
+     "e": 5.961
+    },
+    {
+     "w": "westbound",
+     "s": 6.046,
+     "e": 6.671
+    },
+    {
+     "w": "at",
+     "s": 6.789,
+     "e": 7.026
+    },
+    {
+     "w": "the",
+     "s": 7.044,
+     "e": 7.097
+    },
+    {
+     "w": "West",
+     "s": 7.139,
+     "e": 7.31
+    },
+    {
+     "w": "Gate",
+     "s": 7.352,
+     "e": 7.523
+    },
+    {
+     "w": "Freeway,",
+     "s": 7.558,
+     "e": 8.303
+    },
+    {
+     "w": "and",
+     "s": 8.339,
+     "e": 8.445
+    },
+    {
+     "w": "Greensborough",
+     "s": 8.496,
+     "e": 8.942
+    },
+    {
+     "w": "Bypass",
+     "s": 9.013,
+     "e": 9.51
+    },
+    {
+     "w": "is",
+     "s": 9.557,
+     "e": 9.652
+    },
+    {
+     "w": "blocked",
+     "s": 9.696,
+     "e": 10.006
+    },
+    {
+     "w": "southbound",
+     "s": 10.053,
+     "e": 10.645
+    },
+    {
+     "w": "at",
+     "s": 10.74,
+     "e": 10.929
+    },
+    {
+     "w": "the",
+     "s": 10.965,
+     "e": 11.071
+    },
+    {
+     "w": "M",
+     "s": 11.177,
+     "e": 11.284
+    },
+    {
+     "w": "80",
+     "s": 11.334,
+     "e": 11.639
+    },
+    {
+     "w": "Metropolitan",
+     "s": 11.688,
+     "e": 12.277
+    },
+    {
+     "w": "Ring",
+     "s": 12.32,
+     "e": 12.49
+    },
+    {
+     "w": "Road.",
+     "s": 12.547,
+     "e": 12.845
+    },
+    {
+     "w": "Finlayson",
+     "s": 12.969,
+     "e": 13.697
+    },
+    {
+     "w": "Street's",
+     "s": 13.738,
+     "e": 14.052
+    },
+    {
+     "w": "closed",
+     "s": 14.102,
+     "e": 14.406
+    },
+    {
+     "w": "eastbound",
+     "s": 14.477,
+     "e": 15.045
+    },
+    {
+     "w": "at",
+     "s": 15.163,
+     "e": 15.4
+    },
+    {
+     "w": "the",
+     "s": 15.418,
+     "e": 15.471
+    },
+    {
+     "w": "Eastern",
+     "s": 15.524,
+     "e": 15.897
+    },
+    {
+     "w": "Freeway.",
+     "s": 15.95,
+     "e": 16.89
+    },
+    {
+     "w": "Roadworks",
+     "s": 16.961,
+     "e": 17.458
+    },
+    {
+     "w": "are",
+     "s": 17.494,
+     "e": 17.6
+    },
+    {
+     "w": "slowing",
+     "s": 17.635,
+     "e": 17.884
+    },
+    {
+     "w": "the",
+     "s": 17.902,
+     "e": 17.955
+    },
+    {
+     "w": "Tulla",
+     "s": 18.026,
+     "e": 18.381
+    },
+    {
+     "w": "citybound",
+     "s": 18.437,
+     "e": 18.948
+    },
+    {
+     "w": "near",
+     "s": 19.019,
+     "e": 19.303
+    },
+    {
+     "w": "Mickleham",
+     "s": 19.356,
+     "e": 19.729
+    },
+    {
+     "w": "Road.",
+     "s": 19.814,
+     "e": 20.226
+    },
+    {
+     "w": "Showers,",
+     "s": 20.737,
+     "e": 21.077
+    },
+    {
+     "w": "TEN",
+     "s": 21.113,
+     "e": 21.219
+    },
+    {
+     "w": "degrees!",
+     "s": 21.299,
+     "e": 21.929
+    }
+   ]
+  },
+  {
+   "jobId": "a6a1b09e0e4940de9b92ff0ffd80372f",
+   "market": "melbourne",
+   "targetSec": 30.0,
+   "naturalSec": 36.0,
+   "fittedSec": 30,
+   "stretch": 1.2,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Crawling on Point Cook Road westbound, closed for construction. Greensborough Bypass is closed southbound at the M80 Metropolitan Ring Road ramp. Finlayson Street's blocked eastbound for construction. The Tulla's got a slow patch between Melbourne Airport and Mickleham Road. The West Gate's a bit sluggish through the works from 8 Mile Bridge to Todd Road and Cook Street. Frankston Freeway outbound's moving slowly between EastLink and Danendong-Frankston. Glen Iris citybound's also delayed at Toorak Road. [brightly] Cloudy, eleven degrees!",
+   "features": {
+    "syl": 127,
+    "words": 78,
+    "ellipsis": 0,
+    "period": 8,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Crawling",
+     "s": 0,
+     "e": 0.333
+    },
+    {
+     "w": "on",
+     "s": 0.377,
+     "e": 0.467
+    },
+    {
+     "w": "Point",
+     "s": 0.511,
+     "e": 0.733
+    },
+    {
+     "w": "Cook",
+     "s": 0.773,
+     "e": 0.933
+    },
+    {
+     "w": "Road",
+     "s": 0.987,
+     "e": 1.2
+    },
+    {
+     "w": "westbound,",
+     "s": 1.266,
+     "e": 2.066
+    },
+    {
+     "w": "closed",
+     "s": 2.124,
+     "e": 2.466
+    },
+    {
+     "w": "for",
+     "s": 2.483,
+     "e": 2.533
+    },
+    {
+     "w": "construction.",
+     "s": 2.59,
+     "e": 3.599
+    },
+    {
+     "w": "Greensborough",
+     "s": 3.647,
+     "e": 4.066
+    },
+    {
+     "w": "Bypass",
+     "s": 4.133,
+     "e": 4.599
+    },
+    {
+     "w": "is",
+     "s": 4.643,
+     "e": 4.733
+    },
+    {
+     "w": "closed",
+     "s": 4.78,
+     "e": 5.066
+    },
+    {
+     "w": "southbound",
+     "s": 5.11,
+     "e": 5.666
+    },
+    {
+     "w": "at",
+     "s": 5.777,
+     "e": 5.999
+    },
+    {
+     "w": "the",
+     "s": 6.032,
+     "e": 6.132
+    },
+    {
+     "w": "M",
+     "s": 6.266,
+     "e": 6.399
+    },
+    {
+     "w": "80",
+     "s": 6.446,
+     "e": 6.732
+    },
+    {
+     "w": "Metropolitan",
+     "s": 6.799,
+     "e": 7.599
+    },
+    {
+     "w": "Ring",
+     "s": 7.652,
+     "e": 7.865
+    },
+    {
+     "w": "Road",
+     "s": 7.905,
+     "e": 8.065
+    },
+    {
+     "w": "ramp.",
+     "s": 8.145,
+     "e": 8.532
+    },
+    {
+     "w": "Finlayson",
+     "s": 8.649,
+     "e": 9.332
+    },
+    {
+     "w": "Street's",
+     "s": 9.37,
+     "e": 9.665
+    },
+    {
+     "w": "blocked",
+     "s": 9.698,
+     "e": 9.932
+    },
+    {
+     "w": "eastbound",
+     "s": 9.985,
+     "e": 10.465
+    },
+    {
+     "w": "for",
+     "s": 10.498,
+     "e": 10.598
+    },
+    {
+     "w": "construction.",
+     "s": 10.65,
+     "e": 11.331
+    },
+    {
+     "w": "The",
+     "s": 11.431,
+     "e": 11.731
+    },
+    {
+     "w": "Tulla's",
+     "s": 11.798,
+     "e": 12.065
+    },
+    {
+     "w": "got",
+     "s": 12.098,
+     "e": 12.198
+    },
+    {
+     "w": "a",
+     "s": 12.231,
+     "e": 12.265
+    },
+    {
+     "w": "slow",
+     "s": 12.318,
+     "e": 12.531
+    },
+    {
+     "w": "patch",
+     "s": 12.575,
+     "e": 12.798
+    },
+    {
+     "w": "between",
+     "s": 12.84,
+     "e": 13.131
+    },
+    {
+     "w": "Melbourne",
+     "s": 13.165,
+     "e": 13.464
+    },
+    {
+     "w": "Airport",
+     "s": 13.523,
+     "e": 13.931
+    },
+    {
+     "w": "and",
+     "s": 14.031,
+     "e": 14.331
+    },
+    {
+     "w": "Mickleham",
+     "s": 14.364,
+     "e": 14.864
+    },
+    {
+     "w": "Road.",
+     "s": 14.931,
+     "e": 15.264
+    },
+    {
+     "w": "The",
+     "s": 15.348,
+     "e": 15.597
+    },
+    {
+     "w": "West",
+     "s": 15.651,
+     "e": 15.864
+    },
+    {
+     "w": "Gate's",
+     "s": 15.904,
+     "e": 16.13
+    },
+    {
+     "w": "a",
+     "s": 16.131,
+     "e": 16.132
+    },
+    {
+     "w": "bit",
+     "s": 16.164,
+     "e": 16.264
+    },
+    {
+     "w": "sluggish",
+     "s": 16.316,
+     "e": 16.731
+    },
+    {
+     "w": "through",
+     "s": 16.747,
+     "e": 16.864
+    },
+    {
+     "w": "the",
+     "s": 16.881,
+     "e": 16.931
+    },
+    {
+     "w": "works",
+     "s": 16.997,
+     "e": 17.331
+    },
+    {
+     "w": "from",
+     "s": 17.397,
+     "e": 17.664
+    },
+    {
+     "w": "8",
+     "s": 17.697,
+     "e": 17.864
+    },
+    {
+     "w": "Mile",
+     "s": 17.904,
+     "e": 18.064
+    },
+    {
+     "w": "Bridge",
+     "s": 18.121,
+     "e": 18.464
+    },
+    {
+     "w": "to",
+     "s": 18.508,
+     "e": 18.597
+    },
+    {
+     "w": "Todd",
+     "s": 18.65,
+     "e": 18.864
+    },
+    {
+     "w": "Road",
+     "s": 18.93,
+     "e": 19.197
+    },
+    {
+     "w": "and",
+     "s": 19.247,
+     "e": 19.397
+    },
+    {
+     "w": "Cook",
+     "s": 19.437,
+     "e": 19.597
+    },
+    {
+     "w": "Street.",
+     "s": 19.654,
+     "e": 20.063
+    },
+    {
+     "w": "Frankston",
+     "s": 20.163,
+     "e": 20.797
+    },
+    {
+     "w": "Freeway",
+     "s": 20.847,
+     "e": 21.197
+    },
+    {
+     "w": "outbound's",
+     "s": 21.256,
+     "e": 21.796
+    },
+    {
+     "w": "moving",
+     "s": 21.835,
+     "e": 22.063
+    },
+    {
+     "w": "slowly",
+     "s": 22.13,
+     "e": 22.53
+    },
+    {
+     "w": "between",
+     "s": 22.613,
+     "e": 23.196
+    },
+    {
+     "w": "EastLink",
+     "s": 23.263,
+     "e": 23.663
+    },
+    {
+     "w": "and",
+     "s": 23.713,
+     "e": 23.863
+    },
+    {
+     "w": "Danendong-Frankston.",
+     "s": 23.929,
+     "e": 25.063
+    },
+    {
+     "w": "Glen",
+     "s": 25.169,
+     "e": 25.596
+    },
+    {
+     "w": "Iris",
+     "s": 25.663,
+     "e": 25.929
+    },
+    {
+     "w": "citybound's",
+     "s": 25.982,
+     "e": 26.529
+    },
+    {
+     "w": "also",
+     "s": 26.582,
+     "e": 26.796
+    },
+    {
+     "w": "delayed",
+     "s": 26.846,
+     "e": 27.196
+    },
+    {
+     "w": "at",
+     "s": 27.285,
+     "e": 27.462
+    },
+    {
+     "w": "Toorak",
+     "s": 27.506,
+     "e": 27.862
+    },
+    {
+     "w": "Road.",
+     "s": 27.942,
+     "e": 28.329
+    },
+    {
+     "w": "Cloudy,",
+     "s": 28.806,
+     "e": 29.129
+    },
+    {
+     "w": "eleven",
+     "s": 29.167,
+     "e": 29.395
+    },
+    {
+     "w": "degrees!",
+     "s": 29.47,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "aa17dd5876ce45acb47cb1a716ef5707",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 27.2,
+   "fittedSec": 22,
+   "stretch": 1.23636,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Point Cook Road\u2019s closed westbound at the West Gate Freeway ramp. Greensborough Bypass is closed southbound at the M80 Metropolitan Ring Road, and Finlayson Street\u2019s blocked eastbound near the Eastern Freeway. Western Ring Road has moderate delays at the Deer Park Bypass. CityLink has minor delays through works between Toorak and Warrigal roads, with showers and ten degrees. [brightly] Unleaded\u2019s two dollars in RICHMOND!",
+   "features": {
+    "syl": 100,
+    "words": 63,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Point",
+     "s": 0,
+     "e": 0.129
+    },
+    {
+     "w": "Cook",
+     "s": 0.181,
+     "e": 0.388
+    },
+    {
+     "w": "Road\u2019s",
+     "s": 0.44,
+     "e": 0.712
+    },
+    {
+     "w": "closed",
+     "s": 0.758,
+     "e": 1.035
+    },
+    {
+     "w": "westbound",
+     "s": 1.087,
+     "e": 1.553
+    },
+    {
+     "w": "at",
+     "s": 1.575,
+     "e": 1.618
+    },
+    {
+     "w": "the",
+     "s": 1.634,
+     "e": 1.682
+    },
+    {
+     "w": "West",
+     "s": 1.721,
+     "e": 1.876
+    },
+    {
+     "w": "Gate",
+     "s": 1.915,
+     "e": 2.071
+    },
+    {
+     "w": "Freeway",
+     "s": 2.119,
+     "e": 2.459
+    },
+    {
+     "w": "ramp.",
+     "s": 2.524,
+     "e": 3.041
+    },
+    {
+     "w": "Greensborough",
+     "s": 3.078,
+     "e": 3.429
+    },
+    {
+     "w": "Bypass",
+     "s": 3.462,
+     "e": 3.882
+    },
+    {
+     "w": "is",
+     "s": 3.925,
+     "e": 4.012
+    },
+    {
+     "w": "closed",
+     "s": 4.058,
+     "e": 4.335
+    },
+    {
+     "w": "southbound",
+     "s": 4.378,
+     "e": 4.853
+    },
+    {
+     "w": "at",
+     "s": 4.961,
+     "e": 5.176
+    },
+    {
+     "w": "the",
+     "s": 5.193,
+     "e": 5.241
+    },
+    {
+     "w": "M",
+     "s": 5.371,
+     "e": 5.5
+    },
+    {
+     "w": "80",
+     "s": 5.546,
+     "e": 5.824
+    },
+    {
+     "w": "Metropolitan",
+     "s": 5.874,
+     "e": 6.471
+    },
+    {
+     "w": "Ring",
+     "s": 6.509,
+     "e": 6.665
+    },
+    {
+     "w": "Road,",
+     "s": 6.716,
+     "e": 7.182
+    },
+    {
+     "w": "and",
+     "s": 7.199,
+     "e": 7.247
+    },
+    {
+     "w": "Finlayson",
+     "s": 7.312,
+     "e": 7.765
+    },
+    {
+     "w": "Street\u2019s",
+     "s": 7.811,
+     "e": 8.153
+    },
+    {
+     "w": "blocked",
+     "s": 8.193,
+     "e": 8.476
+    },
+    {
+     "w": "eastbound",
+     "s": 8.528,
+     "e": 9.059
+    },
+    {
+     "w": "near",
+     "s": 9.124,
+     "e": 9.382
+    },
+    {
+     "w": "the",
+     "s": 9.399,
+     "e": 9.447
+    },
+    {
+     "w": "Eastern",
+     "s": 9.488,
+     "e": 9.771
+    },
+    {
+     "w": "Freeway.",
+     "s": 9.819,
+     "e": 10.288
+    },
+    {
+     "w": "Western",
+     "s": 10.377,
+     "e": 11
+    },
+    {
+     "w": "Ring",
+     "s": 11.039,
+     "e": 11.194
+    },
+    {
+     "w": "Road",
+     "s": 11.246,
+     "e": 11.453
+    },
+    {
+     "w": "has",
+     "s": 11.485,
+     "e": 11.582
+    },
+    {
+     "w": "moderate",
+     "s": 11.618,
+     "e": 11.906
+    },
+    {
+     "w": "delays",
+     "s": 11.971,
+     "e": 12.359
+    },
+    {
+     "w": "at",
+     "s": 12.381,
+     "e": 12.424
+    },
+    {
+     "w": "the",
+     "s": 12.44,
+     "e": 12.488
+    },
+    {
+     "w": "Deer",
+     "s": 12.54,
+     "e": 12.747
+    },
+    {
+     "w": "Park",
+     "s": 12.799,
+     "e": 13.006
+    },
+    {
+     "w": "Bypass.",
+     "s": 13.071,
+     "e": 13.976
+    },
+    {
+     "w": "CityLink",
+     "s": 14.028,
+     "e": 14.429
+    },
+    {
+     "w": "has",
+     "s": 14.478,
+     "e": 14.624
+    },
+    {
+     "w": "minor",
+     "s": 14.656,
+     "e": 14.818
+    },
+    {
+     "w": "delays",
+     "s": 14.882,
+     "e": 15.271
+    },
+    {
+     "w": "through",
+     "s": 15.295,
+     "e": 15.465
+    },
+    {
+     "w": "works",
+     "s": 15.529,
+     "e": 15.853
+    },
+    {
+     "w": "between",
+     "s": 15.918,
+     "e": 16.371
+    },
+    {
+     "w": "Toorak",
+     "s": 16.413,
+     "e": 16.824
+    },
+    {
+     "w": "and",
+     "s": 16.856,
+     "e": 16.953
+    },
+    {
+     "w": "Warrigal",
+     "s": 17.018,
+     "e": 17.406
+    },
+    {
+     "w": "roads,",
+     "s": 17.481,
+     "e": 18.053
+    },
+    {
+     "w": "with",
+     "s": 18.079,
+     "e": 18.182
+    },
+    {
+     "w": "showers",
+     "s": 18.239,
+     "e": 18.635
+    },
+    {
+     "w": "and",
+     "s": 18.684,
+     "e": 18.829
+    },
+    {
+     "w": "ten",
+     "s": 18.878,
+     "e": 19.024
+    },
+    {
+     "w": "degrees.",
+     "s": 19.096,
+     "e": 19.671
+    },
+    {
+     "w": "Unleaded\u2019s",
+     "s": 20.091,
+     "e": 20.447
+    },
+    {
+     "w": "two",
+     "s": 20.479,
+     "e": 20.576
+    },
+    {
+     "w": "dollars",
+     "s": 20.633,
+     "e": 21.029
+    },
+    {
+     "w": "in",
+     "s": 21.116,
+     "e": 21.288
+    },
+    {
+     "w": "RICHMOND!",
+     "s": 21.353,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "c304a34a43e242a68088a491d3fae1e3",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 24.9,
+   "fittedSec": 22,
+   "stretch": 1.13182,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Western Ring Road's chockers at the Deer Park Bypass, with heavy delays. Greensborough Bypass is closed southbound at the M80 Metropolitan Ring Road. Point Cook Road's blocked westbound near the West Gate Freeway, and Finlayson Street's sealed eastbound by the Eastern Freeway. CityLink's also heavy eastbound between Toorak and Warrigal Roads. Light rain, ten degrees.",
+   "features": {
+    "syl": 89,
+    "words": 56,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.142
+    },
+    {
+     "w": "Western",
+     "s": 0.177,
+     "e": 0.425
+    },
+    {
+     "w": "Ring",
+     "s": 0.467,
+     "e": 0.637
+    },
+    {
+     "w": "Road's",
+     "s": 0.68,
+     "e": 0.991
+    },
+    {
+     "w": "chockers",
+     "s": 1.038,
+     "e": 1.416
+    },
+    {
+     "w": "at",
+     "s": 1.463,
+     "e": 1.557
+    },
+    {
+     "w": "the",
+     "s": 1.575,
+     "e": 1.628
+    },
+    {
+     "w": "Deer",
+     "s": 1.671,
+     "e": 1.84
+    },
+    {
+     "w": "Park",
+     "s": 1.897,
+     "e": 2.124
+    },
+    {
+     "w": "Bypass,",
+     "s": 2.194,
+     "e": 2.973
+    },
+    {
+     "w": "with",
+     "s": 3.001,
+     "e": 3.115
+    },
+    {
+     "w": "heavy",
+     "s": 3.174,
+     "e": 3.469
+    },
+    {
+     "w": "delays.",
+     "s": 3.569,
+     "e": 4.46
+    },
+    {
+     "w": "Greensborough",
+     "s": 4.5,
+     "e": 4.955
+    },
+    {
+     "w": "Bypass",
+     "s": 5.026,
+     "e": 5.451
+    },
+    {
+     "w": "is",
+     "s": 5.521,
+     "e": 5.663
+    },
+    {
+     "w": "closed",
+     "s": 5.704,
+     "e": 5.946
+    },
+    {
+     "w": "southbound",
+     "s": 6.005,
+     "e": 6.583
+    },
+    {
+     "w": "at",
+     "s": 6.701,
+     "e": 6.937
+    },
+    {
+     "w": "the",
+     "s": 6.955,
+     "e": 7.008
+    },
+    {
+     "w": "M",
+     "s": 7.15,
+     "e": 7.291
+    },
+    {
+     "w": "80",
+     "s": 7.332,
+     "e": 7.574
+    },
+    {
+     "w": "Metropolitan",
+     "s": 7.629,
+     "e": 8.282
+    },
+    {
+     "w": "Ring",
+     "s": 8.325,
+     "e": 8.494
+    },
+    {
+     "w": "Road.",
+     "s": 8.565,
+     "e": 9.202
+    },
+    {
+     "w": "Point",
+     "s": 9.226,
+     "e": 9.344
+    },
+    {
+     "w": "Cook",
+     "s": 9.386,
+     "e": 9.556
+    },
+    {
+     "w": "Road's",
+     "s": 9.613,
+     "e": 10.016
+    },
+    {
+     "w": "blocked",
+     "s": 10.039,
+     "e": 10.193
+    },
+    {
+     "w": "westbound",
+     "s": 10.25,
+     "e": 10.689
+    },
+    {
+     "w": "near",
+     "s": 10.717,
+     "e": 10.83
+    },
+    {
+     "w": "the",
+     "s": 10.848,
+     "e": 10.901
+    },
+    {
+     "w": "West",
+     "s": 10.944,
+     "e": 11.114
+    },
+    {
+     "w": "Gate",
+     "s": 11.156,
+     "e": 11.326
+    },
+    {
+     "w": "Freeway,",
+     "s": 11.379,
+     "e": 12.105
+    },
+    {
+     "w": "and",
+     "s": 12.122,
+     "e": 12.175
+    },
+    {
+     "w": "Finlayson",
+     "s": 12.246,
+     "e": 12.812
+    },
+    {
+     "w": "Street's",
+     "s": 12.853,
+     "e": 13.166
+    },
+    {
+     "w": "sealed",
+     "s": 13.207,
+     "e": 13.45
+    },
+    {
+     "w": "eastbound",
+     "s": 13.52,
+     "e": 14.087
+    },
+    {
+     "w": "by",
+     "s": 14.204,
+     "e": 14.441
+    },
+    {
+     "w": "the",
+     "s": 14.476,
+     "e": 14.582
+    },
+    {
+     "w": "Eastern",
+     "s": 14.626,
+     "e": 14.936
+    },
+    {
+     "w": "Freeway.",
+     "s": 14.989,
+     "e": 15.927
+    },
+    {
+     "w": "CityLink's",
+     "s": 15.998,
+     "e": 16.493
+    },
+    {
+     "w": "also",
+     "s": 16.564,
+     "e": 16.847
+    },
+    {
+     "w": "heavy",
+     "s": 16.894,
+     "e": 17.131
+    },
+    {
+     "w": "eastbound",
+     "s": 17.187,
+     "e": 17.697
+    },
+    {
+     "w": "between",
+     "s": 17.759,
+     "e": 18.192
+    },
+    {
+     "w": "Toorak",
+     "s": 18.287,
+     "e": 18.829
+    },
+    {
+     "w": "and",
+     "s": 18.847,
+     "e": 18.9
+    },
+    {
+     "w": "Warrigal",
+     "s": 18.971,
+     "e": 19.396
+    },
+    {
+     "w": "Roads.",
+     "s": 19.478,
+     "e": 19.962
+    },
+    {
+     "w": "Light",
+     "s": 20.044,
+     "e": 20.458
+    },
+    {
+     "w": "rain,",
+     "s": 20.528,
+     "e": 20.988
+    },
+    {
+     "w": "ten",
+     "s": 21.033,
+     "e": 21.165
+    },
+    {
+     "w": "degrees.",
+     "s": 21.245,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "c3e1297f238b44f09f367e74d5e77f2f",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 24.6,
+   "fittedSec": 21.996,
+   "stretch": 1.11839,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Crawling on the Western Ring Road citybound at the Deer Park Bypass with heavy congestion. Point Cook Road's closed westbound at the West Gate Freeway ramp. The Greensborough Bypass is blocked southbound between Diamond Creek Road and Northern Ring Road, and at the M80 ramp. Finlayson Street's closed eastbound at the Eastern Freeway. Mostly cloudy, 13 degrees.",
+   "features": {
+    "syl": 85,
+    "words": 57,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "Crawling",
+     "s": 0,
+     "e": 0.357
+    },
+    {
+     "w": "on",
+     "s": 0.381,
+     "e": 0.428
+    },
+    {
+     "w": "the",
+     "s": 0.446,
+     "e": 0.5
+    },
+    {
+     "w": "Western",
+     "s": 0.545,
+     "e": 0.857
+    },
+    {
+     "w": "Ring",
+     "s": 0.9,
+     "e": 1.071
+    },
+    {
+     "w": "Road",
+     "s": 1.128,
+     "e": 1.357
+    },
+    {
+     "w": "citybound",
+     "s": 1.428,
+     "e": 2.071
+    },
+    {
+     "w": "at",
+     "s": 2.118,
+     "e": 2.214
+    },
+    {
+     "w": "the",
+     "s": 2.232,
+     "e": 2.285
+    },
+    {
+     "w": "Deer",
+     "s": 2.328,
+     "e": 2.5
+    },
+    {
+     "w": "Park",
+     "s": 2.557,
+     "e": 2.785
+    },
+    {
+     "w": "Bypass",
+     "s": 2.857,
+     "e": 3.428
+    },
+    {
+     "w": "with",
+     "s": 3.457,
+     "e": 3.571
+    },
+    {
+     "w": "heavy",
+     "s": 3.618,
+     "e": 3.856
+    },
+    {
+     "w": "congestion.",
+     "s": 3.915,
+     "e": 4.571
+    },
+    {
+     "w": "Point",
+     "s": 4.666,
+     "e": 5.142
+    },
+    {
+     "w": "Cook",
+     "s": 5.185,
+     "e": 5.356
+    },
+    {
+     "w": "Road's",
+     "s": 5.413,
+     "e": 5.713
+    },
+    {
+     "w": "closed",
+     "s": 5.775,
+     "e": 6.142
+    },
+    {
+     "w": "westbound",
+     "s": 6.213,
+     "e": 6.856
+    },
+    {
+     "w": "at",
+     "s": 6.975,
+     "e": 7.213
+    },
+    {
+     "w": "the",
+     "s": 7.231,
+     "e": 7.284
+    },
+    {
+     "w": "West",
+     "s": 7.327,
+     "e": 7.499
+    },
+    {
+     "w": "Gate",
+     "s": 7.542,
+     "e": 7.713
+    },
+    {
+     "w": "Freeway",
+     "s": 7.767,
+     "e": 8.07
+    },
+    {
+     "w": "ramp.",
+     "s": 8.17,
+     "e": 8.641
+    },
+    {
+     "w": "The",
+     "s": 8.731,
+     "e": 8.998
+    },
+    {
+     "w": "Greensborough",
+     "s": 9.049,
+     "e": 9.57
+    },
+    {
+     "w": "Bypass",
+     "s": 9.641,
+     "e": 10.141
+    },
+    {
+     "w": "is",
+     "s": 10.188,
+     "e": 10.284
+    },
+    {
+     "w": "blocked",
+     "s": 10.32,
+     "e": 10.57
+    },
+    {
+     "w": "southbound",
+     "s": 10.629,
+     "e": 11.212
+    },
+    {
+     "w": "between",
+     "s": 11.293,
+     "e": 11.855
+    },
+    {
+     "w": "Diamond",
+     "s": 11.891,
+     "e": 12.141
+    },
+    {
+     "w": "Creek",
+     "s": 12.188,
+     "e": 12.426
+    },
+    {
+     "w": "Road",
+     "s": 12.512,
+     "e": 12.855
+    },
+    {
+     "w": "and",
+     "s": 12.944,
+     "e": 13.212
+    },
+    {
+     "w": "Northern",
+     "s": 13.244,
+     "e": 13.498
+    },
+    {
+     "w": "Ring",
+     "s": 13.541,
+     "e": 13.712
+    },
+    {
+     "w": "Road,",
+     "s": 13.783,
+     "e": 14.212
+    },
+    {
+     "w": "and",
+     "s": 14.283,
+     "e": 14.498
+    },
+    {
+     "w": "at",
+     "s": 14.545,
+     "e": 14.64
+    },
+    {
+     "w": "the",
+     "s": 14.658,
+     "e": 14.712
+    },
+    {
+     "w": "M",
+     "s": 14.855,
+     "e": 14.997
+    },
+    {
+     "w": "80",
+     "s": 15.028,
+     "e": 15.212
+    },
+    {
+     "w": "ramp.",
+     "s": 15.312,
+     "e": 15.783
+    },
+    {
+     "w": "Finlayson",
+     "s": 15.908,
+     "e": 16.64
+    },
+    {
+     "w": "Street's",
+     "s": 16.691,
+     "e": 17.068
+    },
+    {
+     "w": "closed",
+     "s": 17.119,
+     "e": 17.426
+    },
+    {
+     "w": "eastbound",
+     "s": 17.497,
+     "e": 18.14
+    },
+    {
+     "w": "at",
+     "s": 18.235,
+     "e": 18.425
+    },
+    {
+     "w": "the",
+     "s": 18.461,
+     "e": 18.568
+    },
+    {
+     "w": "Eastern",
+     "s": 18.613,
+     "e": 18.925
+    },
+    {
+     "w": "Freeway.",
+     "s": 18.979,
+     "e": 19.639
+    },
+    {
+     "w": "Mostly",
+     "s": 19.731,
+     "e": 20.282
+    },
+    {
+     "w": "cloudy,",
+     "s": 20.344,
+     "e": 20.925
+    },
+    {
+     "w": "13",
+     "s": 20.964,
+     "e": 21.282
+    },
+    {
+     "w": "degrees.",
+     "s": 21.353,
+     "e": 21.996
+    }
+   ]
+  },
+  {
+   "jobId": "cdd7969f97634234becb72af9067278c",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 25.8,
+   "fittedSec": 22,
+   "stretch": 1.17273,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Point Cook Road, Greensborough Bypass and Finlayson Street are closed westbound, southbound and eastbound at their freeway ramps. The West Gate's got minor delays eastbound through construction between 8 Mile Bridge and Cook Street. The Tulla's a bit slow citybound between Melbourne Airport and Mickleham Road. Light rain, nine degrees. Unleaded's two dollars in Richmond.",
+   "features": {
+    "syl": 85,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "Point",
+     "s": 0,
+     "e": 0.205
+    },
+    {
+     "w": "Cook",
+     "s": 0.26,
+     "e": 0.478
+    },
+    {
+     "w": "Road,",
+     "s": 0.547,
+     "e": 1.093
+    },
+    {
+     "w": "Greensborough",
+     "s": 1.142,
+     "e": 1.64
+    },
+    {
+     "w": "Bypass",
+     "s": 1.742,
+     "e": 2.323
+    },
+    {
+     "w": "and",
+     "s": 2.391,
+     "e": 2.596
+    },
+    {
+     "w": "Finlayson",
+     "s": 2.665,
+     "e": 3.211
+    },
+    {
+     "w": "Street",
+     "s": 3.26,
+     "e": 3.553
+    },
+    {
+     "w": "are",
+     "s": 3.638,
+     "e": 3.894
+    },
+    {
+     "w": "closed",
+     "s": 3.943,
+     "e": 4.236
+    },
+    {
+     "w": "westbound,",
+     "s": 4.318,
+     "e": 5.261
+    },
+    {
+     "w": "southbound",
+     "s": 5.318,
+     "e": 5.876
+    },
+    {
+     "w": "and",
+     "s": 5.961,
+     "e": 6.217
+    },
+    {
+     "w": "eastbound",
+     "s": 6.299,
+     "e": 6.901
+    },
+    {
+     "w": "at",
+     "s": 6.992,
+     "e": 7.174
+    },
+    {
+     "w": "their",
+     "s": 7.208,
+     "e": 7.379
+    },
+    {
+     "w": "freeway",
+     "s": 7.422,
+     "e": 7.72
+    },
+    {
+     "w": "ramps.",
+     "s": 7.8,
+     "e": 8.267
+    },
+    {
+     "w": "The",
+     "s": 8.335,
+     "e": 8.54
+    },
+    {
+     "w": "West",
+     "s": 8.595,
+     "e": 8.814
+    },
+    {
+     "w": "Gate's",
+     "s": 8.855,
+     "e": 9.087
+    },
+    {
+     "w": "got",
+     "s": 9.121,
+     "e": 9.224
+    },
+    {
+     "w": "minor",
+     "s": 9.281,
+     "e": 9.565
+    },
+    {
+     "w": "delays",
+     "s": 9.624,
+     "e": 9.975
+    },
+    {
+     "w": "eastbound",
+     "s": 10.043,
+     "e": 10.59
+    },
+    {
+     "w": "through",
+     "s": 10.616,
+     "e": 10.795
+    },
+    {
+     "w": "construction",
+     "s": 10.842,
+     "e": 11.41
+    },
+    {
+     "w": "between",
+     "s": 11.487,
+     "e": 12.025
+    },
+    {
+     "w": "8",
+     "s": 12.059,
+     "e": 12.23
+    },
+    {
+     "w": "Mile",
+     "s": 12.284,
+     "e": 12.503
+    },
+    {
+     "w": "Bridge",
+     "s": 12.562,
+     "e": 12.913
+    },
+    {
+     "w": "and",
+     "s": 12.964,
+     "e": 13.118
+    },
+    {
+     "w": "Cook",
+     "s": 13.173,
+     "e": 13.391
+    },
+    {
+     "w": "Street.",
+     "s": 13.45,
+     "e": 13.87
+    },
+    {
+     "w": "The",
+     "s": 13.938,
+     "e": 14.143
+    },
+    {
+     "w": "Tulla's",
+     "s": 14.211,
+     "e": 14.484
+    },
+    {
+     "w": "a",
+     "s": 14.519,
+     "e": 14.553
+    },
+    {
+     "w": "bit",
+     "s": 14.587,
+     "e": 14.689
+    },
+    {
+     "w": "slow",
+     "s": 14.758,
+     "e": 15.031
+    },
+    {
+     "w": "citybound",
+     "s": 15.099,
+     "e": 15.714
+    },
+    {
+     "w": "between",
+     "s": 15.783,
+     "e": 16.261
+    },
+    {
+     "w": "Melbourne",
+     "s": 16.288,
+     "e": 16.534
+    },
+    {
+     "w": "Airport",
+     "s": 16.594,
+     "e": 17.012
+    },
+    {
+     "w": "and",
+     "s": 17.047,
+     "e": 17.149
+    },
+    {
+     "w": "Mickleham",
+     "s": 17.217,
+     "e": 17.559
+    },
+    {
+     "w": "Road.",
+     "s": 17.641,
+     "e": 18.242
+    },
+    {
+     "w": "Light",
+     "s": 18.288,
+     "e": 18.516
+    },
+    {
+     "w": "rain,",
+     "s": 18.584,
+     "e": 19.062
+    },
+    {
+     "w": "nine",
+     "s": 19.089,
+     "e": 19.199
+    },
+    {
+     "w": "degrees.",
+     "s": 19.267,
+     "e": 19.814
+    },
+    {
+     "w": "Unleaded's",
+     "s": 19.927,
+     "e": 20.497
+    },
+    {
+     "w": "two",
+     "s": 20.565,
+     "e": 20.77
+    },
+    {
+     "w": "dollars",
+     "s": 20.813,
+     "e": 21.112
+    },
+    {
+     "w": "in",
+     "s": 21.18,
+     "e": 21.317
+    },
+    {
+     "w": "Richmond.",
+     "s": 21.377,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "e28aa34d0f0e4bee9be5ddf71b706f11",
+   "market": "melbourne",
+   "targetSec": 22.0,
+   "naturalSec": 25.9,
+   "fittedSec": 22,
+   "stretch": 1.17727,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Western Ring Road's chockers southbound at the Deer Park Bypass, with heavy delays. Point Cook Road's CLOSED westbound approaching the West Gate Freeway. Greensborough Bypass is blocked southbound at the M80 Metropolitan Ring Road, and Finlayson Street's sealed off eastbound near the Eastern Freeway. [brightly] Tullamarine's got minor delays citybound between Melbourne Airport and Mickleham Road. Light rain, 10 degrees.",
+   "features": {
+    "syl": 100,
+    "words": 60,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.068
+    },
+    {
+     "w": "Western",
+     "s": 0.119,
+     "e": 0.475
+    },
+    {
+     "w": "Ring",
+     "s": 0.516,
+     "e": 0.679
+    },
+    {
+     "w": "Road's",
+     "s": 0.733,
+     "e": 1.086
+    },
+    {
+     "w": "chockers",
+     "s": 1.131,
+     "e": 1.562
+    },
+    {
+     "w": "southbound",
+     "s": 1.619,
+     "e": 2.105
+    },
+    {
+     "w": "at",
+     "s": 2.128,
+     "e": 2.173
+    },
+    {
+     "w": "the",
+     "s": 2.19,
+     "e": 2.241
+    },
+    {
+     "w": "Deer",
+     "s": 2.295,
+     "e": 2.512
+    },
+    {
+     "w": "Park",
+     "s": 2.553,
+     "e": 2.716
+    },
+    {
+     "w": "Bypass,",
+     "s": 2.818,
+     "e": 3.395
+    },
+    {
+     "w": "with",
+     "s": 3.409,
+     "e": 3.463
+    },
+    {
+     "w": "heavy",
+     "s": 3.52,
+     "e": 3.802
+    },
+    {
+     "w": "delays.",
+     "s": 3.89,
+     "e": 4.753
+    },
+    {
+     "w": "Point",
+     "s": 4.776,
+     "e": 4.889
+    },
+    {
+     "w": "Cook",
+     "s": 4.943,
+     "e": 5.16
+    },
+    {
+     "w": "Road's",
+     "s": 5.201,
+     "e": 5.5
+    },
+    {
+     "w": "CLOSED",
+     "s": 5.559,
+     "e": 5.907
+    },
+    {
+     "w": "westbound",
+     "s": 5.962,
+     "e": 6.383
+    },
+    {
+     "w": "approaching",
+     "s": 6.417,
+     "e": 6.79
+    },
+    {
+     "w": "the",
+     "s": 6.807,
+     "e": 6.858
+    },
+    {
+     "w": "West",
+     "s": 6.912,
+     "e": 7.13
+    },
+    {
+     "w": "Gate",
+     "s": 7.17,
+     "e": 7.333
+    },
+    {
+     "w": "Freeway.",
+     "s": 7.384,
+     "e": 8.216
+    },
+    {
+     "w": "Greensborough",
+     "s": 8.255,
+     "e": 8.691
+    },
+    {
+     "w": "Bypass",
+     "s": 8.759,
+     "e": 9.235
+    },
+    {
+     "w": "is",
+     "s": 9.28,
+     "e": 9.37
+    },
+    {
+     "w": "blocked",
+     "s": 9.413,
+     "e": 9.71
+    },
+    {
+     "w": "southbound",
+     "s": 9.767,
+     "e": 10.253
+    },
+    {
+     "w": "at",
+     "s": 10.276,
+     "e": 10.321
+    },
+    {
+     "w": "the",
+     "s": 10.338,
+     "e": 10.389
+    },
+    {
+     "w": "M",
+     "s": 10.525,
+     "e": 10.66
+    },
+    {
+     "w": "80",
+     "s": 10.709,
+     "e": 11
+    },
+    {
+     "w": "Metropolitan",
+     "s": 11.053,
+     "e": 11.679
+    },
+    {
+     "w": "Ring",
+     "s": 11.706,
+     "e": 11.815
+    },
+    {
+     "w": "Road,",
+     "s": 11.883,
+     "e": 12.426
+    },
+    {
+     "w": "and",
+     "s": 12.443,
+     "e": 12.494
+    },
+    {
+     "w": "Finlayson",
+     "s": 12.562,
+     "e": 13.105
+    },
+    {
+     "w": "Street's",
+     "s": 13.144,
+     "e": 13.444
+    },
+    {
+     "w": "sealed",
+     "s": 13.483,
+     "e": 13.716
+    },
+    {
+     "w": "off",
+     "s": 13.767,
+     "e": 13.92
+    },
+    {
+     "w": "eastbound",
+     "s": 13.988,
+     "e": 14.463
+    },
+    {
+     "w": "near",
+     "s": 14.504,
+     "e": 14.667
+    },
+    {
+     "w": "the",
+     "s": 14.684,
+     "e": 14.735
+    },
+    {
+     "w": "Eastern",
+     "s": 14.785,
+     "e": 15.142
+    },
+    {
+     "w": "Freeway.",
+     "s": 15.193,
+     "e": 15.753
+    },
+    {
+     "w": "Tullamarine's",
+     "s": 16.168,
+     "e": 16.711
+    },
+    {
+     "w": "got",
+     "s": 16.745,
+     "e": 16.847
+    },
+    {
+     "w": "minor",
+     "s": 16.904,
+     "e": 17.187
+    },
+    {
+     "w": "delays",
+     "s": 17.235,
+     "e": 17.526
+    },
+    {
+     "w": "citybound",
+     "s": 17.58,
+     "e": 18.069
+    },
+    {
+     "w": "between",
+     "s": 18.112,
+     "e": 18.409
+    },
+    {
+     "w": "Melbourne",
+     "s": 18.436,
+     "e": 18.68
+    },
+    {
+     "w": "Airport",
+     "s": 18.74,
+     "e": 19.156
+    },
+    {
+     "w": "and",
+     "s": 19.19,
+     "e": 19.292
+    },
+    {
+     "w": "Mickleham",
+     "s": 19.359,
+     "e": 19.835
+    },
+    {
+     "w": "Road.",
+     "s": 19.903,
+     "e": 20.242
+    },
+    {
+     "w": "Light",
+     "s": 20.321,
+     "e": 20.718
+    },
+    {
+     "w": "rain,",
+     "s": 20.785,
+     "e": 21.261
+    },
+    {
+     "w": "10",
+     "s": 21.278,
+     "e": 21.329
+    },
+    {
+     "w": "degrees.",
+     "s": 21.397,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "026b6b1db0b04102a6ca116364aae25b",
+   "market": "mildura",
+   "targetSec": 30.0,
+   "naturalSec": 30.0,
+   "fittedSec": 30,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Walker Road's closed outbound\u2026 Lock 10 Road's also closed outbound, and Old Mail Road's blocked citybound. Werrimull North Road and Tapaulin Road are both moving nicely\u2026 It's cloudy in Mildura, with temperatures on seventeen degrees. Unleaded's cheapest at two-oh-two a litre in Mildura, with diesel at two-forty-eight there too. [gently] A reminder that speed restrictions apply through the signed roadworks zones \u2014 take it easy through the cones.",
+   "features": {
+    "syl": 114,
+    "words": 67,
+    "ellipsis": 2,
+    "period": 4,
+    "comma": 3,
+    "dash": 1,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Walker",
+     "s": 0,
+     "e": 0.235
+    },
+    {
+     "w": "Road's",
+     "s": 0.313,
+     "e": 0.783
+    },
+    {
+     "w": "closed",
+     "s": 0.839,
+     "e": 1.175
+    },
+    {
+     "w": "outbound\u2026",
+     "s": 1.253,
+     "e": 2.271
+    },
+    {
+     "w": "Lock",
+     "s": 2.318,
+     "e": 2.506
+    },
+    {
+     "w": "10",
+     "s": 2.565,
+     "e": 2.741
+    },
+    {
+     "w": "Road's",
+     "s": 2.804,
+     "e": 3.133
+    },
+    {
+     "w": "also",
+     "s": 3.227,
+     "e": 3.604
+    },
+    {
+     "w": "closed",
+     "s": 3.659,
+     "e": 3.995
+    },
+    {
+     "w": "outbound,",
+     "s": 4.065,
+     "e": 4.935
+    },
+    {
+     "w": "and",
+     "s": 4.974,
+     "e": 5.092
+    },
+    {
+     "w": "Old",
+     "s": 5.17,
+     "e": 5.405
+    },
+    {
+     "w": "Mail",
+     "s": 5.467,
+     "e": 5.718
+    },
+    {
+     "w": "Road's",
+     "s": 5.796,
+     "e": 6.188
+    },
+    {
+     "w": "blocked",
+     "s": 6.237,
+     "e": 6.58
+    },
+    {
+     "w": "citybound.",
+     "s": 6.674,
+     "e": 7.911
+    },
+    {
+     "w": "Werrimull",
+     "s": 7.95,
+     "e": 8.381
+    },
+    {
+     "w": "North",
+     "s": 8.433,
+     "e": 8.694
+    },
+    {
+     "w": "Road",
+     "s": 8.772,
+     "e": 9.086
+    },
+    {
+     "w": "and",
+     "s": 9.125,
+     "e": 9.242
+    },
+    {
+     "w": "Tapaulin",
+     "s": 9.321,
+     "e": 9.869
+    },
+    {
+     "w": "Road",
+     "s": 9.932,
+     "e": 10.183
+    },
+    {
+     "w": "are",
+     "s": 10.242,
+     "e": 10.418
+    },
+    {
+     "w": "both",
+     "s": 10.481,
+     "e": 10.731
+    },
+    {
+     "w": "moving",
+     "s": 10.787,
+     "e": 11.123
+    },
+    {
+     "w": "nicely\u2026",
+     "s": 11.212,
+     "e": 12.141
+    },
+    {
+     "w": "It's",
+     "s": 12.167,
+     "e": 12.376
+    },
+    {
+     "w": "cloudy",
+     "s": 12.444,
+     "e": 12.846
+    },
+    {
+     "w": "in",
+     "s": 12.898,
+     "e": 13.003
+    },
+    {
+     "w": "Mildura,",
+     "s": 13.061,
+     "e": 13.786
+    },
+    {
+     "w": "with",
+     "s": 13.864,
+     "e": 14.177
+    },
+    {
+     "w": "temperatures",
+     "s": 14.225,
+     "e": 14.804
+    },
+    {
+     "w": "on",
+     "s": 14.882,
+     "e": 15.039
+    },
+    {
+     "w": "seventeen",
+     "s": 15.101,
+     "e": 15.665
+    },
+    {
+     "w": "degrees.",
+     "s": 15.763,
+     "e": 16.527
+    },
+    {
+     "w": "Unleaded's",
+     "s": 16.683,
+     "e": 17.312
+    },
+    {
+     "w": "cheapest",
+     "s": 17.372,
+     "e": 17.859
+    },
+    {
+     "w": "at",
+     "s": 17.937,
+     "e": 18.094
+    },
+    {
+     "w": "two-oh-two",
+     "s": 18.133,
+     "e": 18.642
+    },
+    {
+     "w": "a",
+     "s": 18.721,
+     "e": 18.799
+    },
+    {
+     "w": "litre",
+     "s": 18.851,
+     "e": 19.112
+    },
+    {
+     "w": "in",
+     "s": 19.19,
+     "e": 19.347
+    },
+    {
+     "w": "Mildura,",
+     "s": 19.406,
+     "e": 20.365
+    },
+    {
+     "w": "with",
+     "s": 20.397,
+     "e": 20.522
+    },
+    {
+     "w": "diesel",
+     "s": 20.6,
+     "e": 21.07
+    },
+    {
+     "w": "at",
+     "s": 21.148,
+     "e": 21.305
+    },
+    {
+     "w": "two-forty-eight",
+     "s": 21.364,
+     "e": 22.01
+    },
+    {
+     "w": "there",
+     "s": 22.075,
+     "e": 22.401
+    },
+    {
+     "w": "too.",
+     "s": 22.48,
+     "e": 22.793
+    },
+    {
+     "w": "A",
+     "s": 23.613,
+     "e": 23.651
+    },
+    {
+     "w": "reminder",
+     "s": 23.71,
+     "e": 24.18
+    },
+    {
+     "w": "that",
+     "s": 24.211,
+     "e": 24.332
+    },
+    {
+     "w": "speed",
+     "s": 24.395,
+     "e": 24.709
+    },
+    {
+     "w": "restrictions",
+     "s": 24.756,
+     "e": 25.314
+    },
+    {
+     "w": "apply",
+     "s": 25.402,
+     "e": 25.843
+    },
+    {
+     "w": "through",
+     "s": 25.872,
+     "e": 26.07
+    },
+    {
+     "w": "the",
+     "s": 26.089,
+     "e": 26.146
+    },
+    {
+     "w": "signed",
+     "s": 26.211,
+     "e": 26.599
+    },
+    {
+     "w": "roadworks",
+     "s": 26.69,
+     "e": 27.279
+    },
+    {
+     "w": "zones",
+     "s": 27.367,
+     "e": 27.808
+    },
+    {
+     "w": "\u2014",
+     "s": 27.997,
+     "e": 28.186
+    },
+    {
+     "w": "take",
+     "s": 28.232,
+     "e": 28.413
+    },
+    {
+     "w": "it",
+     "s": 28.439,
+     "e": 28.489
+    },
+    {
+     "w": "easy",
+     "s": 28.564,
+     "e": 28.867
+    },
+    {
+     "w": "through",
+     "s": 28.904,
+     "e": 29.169
+    },
+    {
+     "w": "the",
+     "s": 29.188,
+     "e": 29.245
+    },
+    {
+     "w": "cones.",
+     "s": 29.346,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "34ccca6fac894d29b1f043213d8599d6",
+   "market": "mildura",
+   "targetSec": 30.0,
+   "naturalSec": 30.0,
+   "fittedSec": 30,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The roads are closed outbound on Walker Road and Lock 10 Road, with Old Mail Road closed citybound\u2026 Werrimull North Road and Tapaulin Road are both moving nicely. It\u2019s partly sunny in Mildura, twelve degrees. Unleaded\u2019s cheapest at two dollars two a litre in Mildura, with diesel at two dollars forty-eight there too. [gently] Please stay alert out there and stick to the speed limit. Drive safe, Mildura. We'll keep you posted through the day.",
+   "features": {
+    "syl": 107,
+    "words": 74,
+    "ellipsis": 1,
+    "period": 6,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.084
+    },
+    {
+     "w": "roads",
+     "s": 0.139,
+     "e": 0.419
+    },
+    {
+     "w": "are",
+     "s": 0.439,
+     "e": 0.501
+    },
+    {
+     "w": "closed",
+     "s": 0.561,
+     "e": 0.92
+    },
+    {
+     "w": "outbound",
+     "s": 0.995,
+     "e": 1.589
+    },
+    {
+     "w": "on",
+     "s": 1.644,
+     "e": 1.756
+    },
+    {
+     "w": "Walker",
+     "s": 1.816,
+     "e": 2.175
+    },
+    {
+     "w": "Road",
+     "s": 2.275,
+     "e": 2.676
+    },
+    {
+     "w": "and",
+     "s": 2.718,
+     "e": 2.844
+    },
+    {
+     "w": "Lock",
+     "s": 2.91,
+     "e": 3.178
+    },
+    {
+     "w": "10",
+     "s": 3.262,
+     "e": 3.512
+    },
+    {
+     "w": "Road,",
+     "s": 3.58,
+     "e": 4.182
+    },
+    {
+     "w": "with",
+     "s": 4.215,
+     "e": 4.349
+    },
+    {
+     "w": "Old",
+     "s": 4.432,
+     "e": 4.683
+    },
+    {
+     "w": "Mail",
+     "s": 4.733,
+     "e": 4.935
+    },
+    {
+     "w": "Road",
+     "s": 5.018,
+     "e": 5.352
+    },
+    {
+     "w": "closed",
+     "s": 5.425,
+     "e": 5.854
+    },
+    {
+     "w": "citybound\u2026",
+     "s": 5.938,
+     "e": 7.192
+    },
+    {
+     "w": "Werrimull",
+     "s": 7.234,
+     "e": 7.611
+    },
+    {
+     "w": "North",
+     "s": 7.666,
+     "e": 7.945
+    },
+    {
+     "w": "Road",
+     "s": 8.028,
+     "e": 8.363
+    },
+    {
+     "w": "and",
+     "s": 8.405,
+     "e": 8.531
+    },
+    {
+     "w": "Tapaulin",
+     "s": 8.614,
+     "e": 9.199
+    },
+    {
+     "w": "Road",
+     "s": 9.283,
+     "e": 9.618
+    },
+    {
+     "w": "are",
+     "s": 9.681,
+     "e": 9.868
+    },
+    {
+     "w": "both",
+     "s": 9.935,
+     "e": 10.203
+    },
+    {
+     "w": "moving",
+     "s": 10.251,
+     "e": 10.538
+    },
+    {
+     "w": "nicely.",
+     "s": 10.622,
+     "e": 11.29
+    },
+    {
+     "w": "It\u2019s",
+     "s": 11.486,
+     "e": 11.959
+    },
+    {
+     "w": "partly",
+     "s": 12.007,
+     "e": 12.294
+    },
+    {
+     "w": "sunny",
+     "s": 12.378,
+     "e": 12.795
+    },
+    {
+     "w": "in",
+     "s": 12.851,
+     "e": 12.963
+    },
+    {
+     "w": "Mildura,",
+     "s": 13.005,
+     "e": 13.715
+    },
+    {
+     "w": "twelve",
+     "s": 13.775,
+     "e": 14.134
+    },
+    {
+     "w": "degrees.",
+     "s": 14.228,
+     "e": 14.97
+    },
+    {
+     "w": "Unleaded\u2019s",
+     "s": 15.137,
+     "e": 15.89
+    },
+    {
+     "w": "cheapest",
+     "s": 15.946,
+     "e": 16.391
+    },
+    {
+     "w": "at",
+     "s": 16.475,
+     "e": 16.643
+    },
+    {
+     "w": "two",
+     "s": 16.705,
+     "e": 16.894
+    },
+    {
+     "w": "dollars",
+     "s": 16.946,
+     "e": 17.311
+    },
+    {
+     "w": "two",
+     "s": 17.374,
+     "e": 17.562
+    },
+    {
+     "w": "a",
+     "s": 17.604,
+     "e": 17.646
+    },
+    {
+     "w": "litre",
+     "s": 17.702,
+     "e": 17.981
+    },
+    {
+     "w": "in",
+     "s": 18.065,
+     "e": 18.231
+    },
+    {
+     "w": "Mildura,",
+     "s": 18.294,
+     "e": 19.319
+    },
+    {
+     "w": "with",
+     "s": 19.336,
+     "e": 19.402
+    },
+    {
+     "w": "diesel",
+     "s": 19.474,
+     "e": 19.905
+    },
+    {
+     "w": "at",
+     "s": 20.017,
+     "e": 20.239
+    },
+    {
+     "w": "two",
+     "s": 20.259,
+     "e": 20.322
+    },
+    {
+     "w": "dollars",
+     "s": 20.375,
+     "e": 20.741
+    },
+    {
+     "w": "forty-eight",
+     "s": 20.811,
+     "e": 21.326
+    },
+    {
+     "w": "there",
+     "s": 21.368,
+     "e": 21.577
+    },
+    {
+     "w": "too.",
+     "s": 21.682,
+     "e": 22.078
+    },
+    {
+     "w": "Please",
+     "s": 22.815,
+     "e": 23.165
+    },
+    {
+     "w": "stay",
+     "s": 23.2,
+     "e": 23.339
+    },
+    {
+     "w": "alert",
+     "s": 23.397,
+     "e": 23.689
+    },
+    {
+     "w": "out",
+     "s": 23.733,
+     "e": 23.864
+    },
+    {
+     "w": "there",
+     "s": 23.907,
+     "e": 24.126
+    },
+    {
+     "w": "and",
+     "s": 24.191,
+     "e": 24.388
+    },
+    {
+     "w": "stick",
+     "s": 24.446,
+     "e": 24.737
+    },
+    {
+     "w": "to",
+     "s": 24.767,
+     "e": 24.824
+    },
+    {
+     "w": "the",
+     "s": 24.846,
+     "e": 24.912
+    },
+    {
+     "w": "speed",
+     "s": 24.97,
+     "e": 25.261
+    },
+    {
+     "w": "limit.",
+     "s": 25.349,
+     "e": 25.96
+    },
+    {
+     "w": "Drive",
+     "s": 26.279,
+     "e": 26.544
+    },
+    {
+     "w": "safe,",
+     "s": 26.613,
+     "e": 26.994
+    },
+    {
+     "w": "Mildura.",
+     "s": 27.014,
+     "e": 27.513
+    },
+    {
+     "w": "We'll",
+     "s": 27.831,
+     "e": 28.005
+    },
+    {
+     "w": "keep",
+     "s": 28.039,
+     "e": 28.178
+    },
+    {
+     "w": "you",
+     "s": 28.221,
+     "e": 28.352
+    },
+    {
+     "w": "posted",
+     "s": 28.438,
+     "e": 28.959
+    },
+    {
+     "w": "through",
+     "s": 29.002,
+     "e": 29.306
+    },
+    {
+     "w": "the",
+     "s": 29.328,
+     "e": 29.393
+    },
+    {
+     "w": "day.",
+     "s": 29.501,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "8cea4413edab4a78aa5ceac8d2e782af",
+   "market": "mildura",
+   "targetSec": 30.0,
+   "naturalSec": 30.0,
+   "fittedSec": 30,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "[gently] Walker Road's closed outbound, with Lock 10 Road also closed in that direction\u2026 Old Mail Road's blocked citybound, while Werrimull North Road and Tapaulin Road are both moving nicely. Unleaded 91's cheapest at two dollars two a litre in Mildura, with diesel at two dollars forty-six there too\u2026 Passing clouds and sixteen degrees. Please stay alert out there and stick to the speed limit. Drive safe, Mildura.",
+   "features": {
+    "syl": 101,
+    "words": 67,
+    "ellipsis": 2,
+    "period": 4,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Walker",
+     "s": 0.339,
+     "e": 0.432
+    },
+    {
+     "w": "Road's",
+     "s": 0.501,
+     "e": 0.864
+    },
+    {
+     "w": "closed",
+     "s": 0.925,
+     "e": 1.296
+    },
+    {
+     "w": "outbound,",
+     "s": 1.382,
+     "e": 2.159
+    },
+    {
+     "w": "with",
+     "s": 2.194,
+     "e": 2.332
+    },
+    {
+     "w": "Lock",
+     "s": 2.384,
+     "e": 2.591
+    },
+    {
+     "w": "10",
+     "s": 2.677,
+     "e": 2.937
+    },
+    {
+     "w": "Road",
+     "s": 3.005,
+     "e": 3.282
+    },
+    {
+     "w": "also",
+     "s": 3.403,
+     "e": 3.887
+    },
+    {
+     "w": "closed",
+     "s": 3.973,
+     "e": 4.491
+    },
+    {
+     "w": "in",
+     "s": 4.549,
+     "e": 4.664
+    },
+    {
+     "w": "that",
+     "s": 4.698,
+     "e": 4.836
+    },
+    {
+     "w": "direction\u2026",
+     "s": 4.915,
+     "e": 6.046
+    },
+    {
+     "w": "Old",
+     "s": 6.11,
+     "e": 6.305
+    },
+    {
+     "w": "Mail",
+     "s": 6.374,
+     "e": 6.651
+    },
+    {
+     "w": "Road's",
+     "s": 6.719,
+     "e": 7.082
+    },
+    {
+     "w": "blocked",
+     "s": 7.136,
+     "e": 7.514
+    },
+    {
+     "w": "citybound,",
+     "s": 7.583,
+     "e": 8.464
+    },
+    {
+     "w": "while",
+     "s": 8.507,
+     "e": 8.723
+    },
+    {
+     "w": "Werrimull",
+     "s": 8.809,
+     "e": 9.328
+    },
+    {
+     "w": "North",
+     "s": 9.4,
+     "e": 9.76
+    },
+    {
+     "w": "Road",
+     "s": 9.846,
+     "e": 10.191
+    },
+    {
+     "w": "and",
+     "s": 10.235,
+     "e": 10.364
+    },
+    {
+     "w": "Tapaulin",
+     "s": 10.451,
+     "e": 11.055
+    },
+    {
+     "w": "Road",
+     "s": 11.125,
+     "e": 11.401
+    },
+    {
+     "w": "are",
+     "s": 11.508,
+     "e": 11.832
+    },
+    {
+     "w": "both",
+     "s": 11.884,
+     "e": 12.092
+    },
+    {
+     "w": "moving",
+     "s": 12.153,
+     "e": 12.523
+    },
+    {
+     "w": "nicely.",
+     "s": 12.622,
+     "e": 13.56
+    },
+    {
+     "w": "Unleaded",
+     "s": 13.675,
+     "e": 14.164
+    },
+    {
+     "w": "91's",
+     "s": 14.214,
+     "e": 14.942
+    },
+    {
+     "w": "cheapest",
+     "s": 14.999,
+     "e": 15.46
+    },
+    {
+     "w": "at",
+     "s": 15.575,
+     "e": 15.805
+    },
+    {
+     "w": "two",
+     "s": 15.827,
+     "e": 15.892
+    },
+    {
+     "w": "dollars",
+     "s": 15.936,
+     "e": 16.237
+    },
+    {
+     "w": "two",
+     "s": 16.303,
+     "e": 16.496
+    },
+    {
+     "w": "a",
+     "s": 16.582,
+     "e": 16.67
+    },
+    {
+     "w": "litre",
+     "s": 16.726,
+     "e": 17.015
+    },
+    {
+     "w": "in",
+     "s": 17.101,
+     "e": 17.274
+    },
+    {
+     "w": "Mildura,",
+     "s": 17.317,
+     "e": 18.311
+    },
+    {
+     "w": "with",
+     "s": 18.345,
+     "e": 18.483
+    },
+    {
+     "w": "diesel",
+     "s": 18.557,
+     "e": 19.002
+    },
+    {
+     "w": "at",
+     "s": 19.117,
+     "e": 19.347
+    },
+    {
+     "w": "two",
+     "s": 19.369,
+     "e": 19.433
+    },
+    {
+     "w": "dollars",
+     "s": 19.476,
+     "e": 19.779
+    },
+    {
+     "w": "forty-six",
+     "s": 19.851,
+     "e": 20.556
+    },
+    {
+     "w": "there",
+     "s": 20.613,
+     "e": 20.901
+    },
+    {
+     "w": "too\u2026",
+     "s": 21.01,
+     "e": 21.937
+    },
+    {
+     "w": "Passing",
+     "s": 21.992,
+     "e": 22.37
+    },
+    {
+     "w": "clouds",
+     "s": 22.444,
+     "e": 22.888
+    },
+    {
+     "w": "and",
+     "s": 22.952,
+     "e": 23.147
+    },
+    {
+     "w": "sixteen",
+     "s": 23.222,
+     "e": 23.752
+    },
+    {
+     "w": "degrees.",
+     "s": 23.838,
+     "e": 24.592
+    },
+    {
+     "w": "Please",
+     "s": 24.933,
+     "e": 25.309
+    },
+    {
+     "w": "stay",
+     "s": 25.346,
+     "e": 25.497
+    },
+    {
+     "w": "alert",
+     "s": 25.559,
+     "e": 25.872
+    },
+    {
+     "w": "out",
+     "s": 25.919,
+     "e": 26.06
+    },
+    {
+     "w": "there",
+     "s": 26.107,
+     "e": 26.342
+    },
+    {
+     "w": "and",
+     "s": 26.413,
+     "e": 26.624
+    },
+    {
+     "w": "stick",
+     "s": 26.686,
+     "e": 27
+    },
+    {
+     "w": "to",
+     "s": 27.031,
+     "e": 27.094
+    },
+    {
+     "w": "the",
+     "s": 27.117,
+     "e": 27.188
+    },
+    {
+     "w": "speed",
+     "s": 27.25,
+     "e": 27.563
+    },
+    {
+     "w": "limit.",
+     "s": 27.657,
+     "e": 28.315
+    },
+    {
+     "w": "Drive",
+     "s": 28.657,
+     "e": 28.946
+    },
+    {
+     "w": "safe,",
+     "s": 29.022,
+     "e": 29.436
+    },
+    {
+     "w": "Mildura.",
+     "s": 29.458,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "98f3c558e6b94de692b483ea307749ec",
+   "market": "portlincoln",
+   "targetSec": 15.0,
+   "naturalSec": 19.4,
+   "fittedSec": 15,
+   "stretch": 1.29333,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "No major delays across Port Lincoln this afternoon \u2014 the Birdseye Highway, Tod Highway and Port Kenny Road are moving nicely, with Birdseye Highway North looking good. [gently] Cool, fourteen degrees\u2026 Unleaded\u2019s cheapest at two twenty-three in Cummins, diesel\u2019s two forty-six there too.",
+   "features": {
+    "syl": 67,
+    "words": 42,
+    "ellipsis": 1,
+    "period": 2,
+    "comma": 4,
+    "dash": 1,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "No",
+     "s": 0,
+     "e": 0.124
+    },
+    {
+     "w": "major",
+     "s": 0.165,
+     "e": 0.371
+    },
+    {
+     "w": "delays",
+     "s": 0.433,
+     "e": 0.804
+    },
+    {
+     "w": "across",
+     "s": 0.84,
+     "e": 1.052
+    },
+    {
+     "w": "Port",
+     "s": 1.089,
+     "e": 1.237
+    },
+    {
+     "w": "Lincoln",
+     "s": 1.284,
+     "e": 1.546
+    },
+    {
+     "w": "this",
+     "s": 1.584,
+     "e": 1.732
+    },
+    {
+     "w": "afternoon",
+     "s": 1.775,
+     "e": 2.165
+    },
+    {
+     "w": "\u2014",
+     "s": 2.289,
+     "e": 2.412
+    },
+    {
+     "w": "the",
+     "s": 2.428,
+     "e": 2.474
+    },
+    {
+     "w": "Birdseye",
+     "s": 2.524,
+     "e": 3.062
+    },
+    {
+     "w": "Highway,",
+     "s": 3.089,
+     "e": 3.34
+    },
+    {
+     "w": "Tod",
+     "s": 3.402,
+     "e": 3.588
+    },
+    {
+     "w": "Highway",
+     "s": 3.634,
+     "e": 3.959
+    },
+    {
+     "w": "and",
+     "s": 4.005,
+     "e": 4.144
+    },
+    {
+     "w": "Port",
+     "s": 4.194,
+     "e": 4.392
+    },
+    {
+     "w": "Kenny",
+     "s": 4.433,
+     "e": 4.639
+    },
+    {
+     "w": "Road",
+     "s": 4.701,
+     "e": 4.949
+    },
+    {
+     "w": "are",
+     "s": 4.979,
+     "e": 5.072
+    },
+    {
+     "w": "moving",
+     "s": 5.116,
+     "e": 5.382
+    },
+    {
+     "w": "nicely,",
+     "s": 5.443,
+     "e": 6.124
+    },
+    {
+     "w": "with",
+     "s": 6.136,
+     "e": 6.186
+    },
+    {
+     "w": "Birdseye",
+     "s": 6.248,
+     "e": 6.773
+    },
+    {
+     "w": "Highway",
+     "s": 6.793,
+     "e": 6.928
+    },
+    {
+     "w": "North",
+     "s": 6.99,
+     "e": 7.299
+    },
+    {
+     "w": "looking",
+     "s": 7.345,
+     "e": 7.67
+    },
+    {
+     "w": "good.",
+     "s": 7.744,
+     "e": 8.289
+    },
+    {
+     "w": "Cool,",
+     "s": 8.821,
+     "e": 9.031
+    },
+    {
+     "w": "fourteen",
+     "s": 9.072,
+     "e": 9.402
+    },
+    {
+     "w": "degrees\u2026",
+     "s": 9.48,
+     "e": 10.33
+    },
+    {
+     "w": "Unleaded\u2019s",
+     "s": 10.392,
+     "e": 10.825
+    },
+    {
+     "w": "cheapest",
+     "s": 10.866,
+     "e": 11.196
+    },
+    {
+     "w": "at",
+     "s": 11.279,
+     "e": 11.444
+    },
+    {
+     "w": "two",
+     "s": 11.474,
+     "e": 11.567
+    },
+    {
+     "w": "twenty-three",
+     "s": 11.611,
+     "e": 12.124
+    },
+    {
+     "w": "in",
+     "s": 12.207,
+     "e": 12.371
+    },
+    {
+     "w": "Cummins,",
+     "s": 12.418,
+     "e": 13.176
+    },
+    {
+     "w": "diesel\u2019s",
+     "s": 13.22,
+     "e": 13.547
+    },
+    {
+     "w": "two",
+     "s": 13.593,
+     "e": 13.732
+    },
+    {
+     "w": "forty-six",
+     "s": 13.784,
+     "e": 14.351
+    },
+    {
+     "w": "there",
+     "s": 14.392,
+     "e": 14.598
+    },
+    {
+     "w": "too.",
+     "s": 14.676,
+     "e": 15
+    }
+   ]
+  },
+  {
+   "jobId": "027729aac185484591019faa32cc050c",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 27.8,
+   "fittedSec": 22,
+   "stretch": 1.26364,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Western Motorway's chockers at Church Street with heavy delays. The Warringah Freeway's closed southbound at the Alfred Street North ramp and Brook Street. Mitchell Road's closed northbound between Sydney Park Road and Maddox Street. Southern Cross Drive's a bit slow citybound at Botany Road, with minor delays on Cleveland Street and a couple more spots near St James Road. Passing clouds, 14 degrees. . That's [brightly] KIIS traffic and weather together.",
+   "features": {
+    "syl": 105,
+    "words": 71,
+    "ellipsis": 0,
+    "period": 7,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.064
+    },
+    {
+     "w": "Western",
+     "s": 0.104,
+     "e": 0.384
+    },
+    {
+     "w": "Motorway's",
+     "s": 0.438,
+     "e": 0.961
+    },
+    {
+     "w": "chockers",
+     "s": 1.003,
+     "e": 1.345
+    },
+    {
+     "w": "at",
+     "s": 1.366,
+     "e": 1.409
+    },
+    {
+     "w": "Church",
+     "s": 1.454,
+     "e": 1.729
+    },
+    {
+     "w": "Street",
+     "s": 1.766,
+     "e": 1.985
+    },
+    {
+     "w": "with",
+     "s": 2.011,
+     "e": 2.113
+    },
+    {
+     "w": "heavy",
+     "s": 2.156,
+     "e": 2.369
+    },
+    {
+     "w": "delays.",
+     "s": 2.433,
+     "e": 2.882
+    },
+    {
+     "w": "The",
+     "s": 2.962,
+     "e": 3.202
+    },
+    {
+     "w": "Warringah",
+     "s": 3.234,
+     "e": 3.682
+    },
+    {
+     "w": "Freeway's",
+     "s": 3.706,
+     "e": 4.098
+    },
+    {
+     "w": "closed",
+     "s": 4.144,
+     "e": 4.418
+    },
+    {
+     "w": "southbound",
+     "s": 4.472,
+     "e": 4.931
+    },
+    {
+     "w": "at",
+     "s": 5.037,
+     "e": 5.251
+    },
+    {
+     "w": "the",
+     "s": 5.267,
+     "e": 5.315
+    },
+    {
+     "w": "Alfred",
+     "s": 5.361,
+     "e": 5.635
+    },
+    {
+     "w": "Street",
+     "s": 5.672,
+     "e": 5.891
+    },
+    {
+     "w": "North",
+     "s": 5.934,
+     "e": 6.147
+    },
+    {
+     "w": "ramp",
+     "s": 6.199,
+     "e": 6.403
+    },
+    {
+     "w": "and",
+     "s": 6.452,
+     "e": 6.596
+    },
+    {
+     "w": "Brook",
+     "s": 6.638,
+     "e": 6.852
+    },
+    {
+     "w": "Street.",
+     "s": 6.897,
+     "e": 7.236
+    },
+    {
+     "w": "Mitchell",
+     "s": 7.293,
+     "e": 7.748
+    },
+    {
+     "w": "Road's",
+     "s": 7.812,
+     "e": 8.132
+    },
+    {
+     "w": "closed",
+     "s": 8.169,
+     "e": 8.389
+    },
+    {
+     "w": "northbound",
+     "s": 8.431,
+     "e": 8.901
+    },
+    {
+     "w": "between",
+     "s": 8.965,
+     "e": 9.413
+    },
+    {
+     "w": "Sydney",
+     "s": 9.461,
+     "e": 9.733
+    },
+    {
+     "w": "Park",
+     "s": 9.785,
+     "e": 9.989
+    },
+    {
+     "w": "Road",
+     "s": 10.053,
+     "e": 10.31
+    },
+    {
+     "w": "and",
+     "s": 10.326,
+     "e": 10.374
+    },
+    {
+     "w": "Maddox",
+     "s": 10.425,
+     "e": 10.758
+    },
+    {
+     "w": "Street.",
+     "s": 10.803,
+     "e": 11.142
+    },
+    {
+     "w": "Southern",
+     "s": 11.192,
+     "e": 11.59
+    },
+    {
+     "w": "Cross",
+     "s": 11.633,
+     "e": 11.846
+    },
+    {
+     "w": "Drive's",
+     "s": 11.889,
+     "e": 12.167
+    },
+    {
+     "w": "a",
+     "s": 12.199,
+     "e": 12.231
+    },
+    {
+     "w": "bit",
+     "s": 12.263,
+     "e": 12.359
+    },
+    {
+     "w": "slow",
+     "s": 12.41,
+     "e": 12.615
+    },
+    {
+     "w": "citybound",
+     "s": 12.679,
+     "e": 13.127
+    },
+    {
+     "w": "at",
+     "s": 13.17,
+     "e": 13.255
+    },
+    {
+     "w": "Botany",
+     "s": 13.303,
+     "e": 13.575
+    },
+    {
+     "w": "Road,",
+     "s": 13.639,
+     "e": 14.152
+    },
+    {
+     "w": "with",
+     "s": 14.177,
+     "e": 14.28
+    },
+    {
+     "w": "minor",
+     "s": 14.322,
+     "e": 14.536
+    },
+    {
+     "w": "delays",
+     "s": 14.591,
+     "e": 14.92
+    },
+    {
+     "w": "on",
+     "s": 14.942,
+     "e": 14.984
+    },
+    {
+     "w": "Cleveland",
+     "s": 15.029,
+     "e": 15.432
+    },
+    {
+     "w": "Street",
+     "s": 15.478,
+     "e": 15.753
+    },
+    {
+     "w": "and",
+     "s": 15.817,
+     "e": 16.009
+    },
+    {
+     "w": "a",
+     "s": 16.041,
+     "e": 16.073
+    },
+    {
+     "w": "couple",
+     "s": 16.11,
+     "e": 16.329
+    },
+    {
+     "w": "more",
+     "s": 16.355,
+     "e": 16.457
+    },
+    {
+     "w": "spots",
+     "s": 16.521,
+     "e": 16.841
+    },
+    {
+     "w": "near",
+     "s": 16.88,
+     "e": 17.033
+    },
+    {
+     "w": "St",
+     "s": 17.065,
+     "e": 17.225
+    },
+    {
+     "w": "James",
+     "s": 17.279,
+     "e": 17.546
+    },
+    {
+     "w": "Road.",
+     "s": 17.61,
+     "e": 17.93
+    },
+    {
+     "w": "Passing",
+     "s": 18.002,
+     "e": 18.506
+    },
+    {
+     "w": "clouds,",
+     "s": 18.57,
+     "e": 19.082
+    },
+    {
+     "w": "14",
+     "s": 19.118,
+     "e": 19.403
+    },
+    {
+     "w": "degrees.",
+     "s": 19.467,
+     "e": 20.235
+    },
+    {
+     "w": ".",
+     "s": 20.267,
+     "e": 20.299
+    },
+    {
+     "w": "That's",
+     "s": 20.312,
+     "e": 20.427
+    },
+    {
+     "w": "KIIS",
+     "s": 20.568,
+     "e": 20.619
+    },
+    {
+     "w": "traffic",
+     "s": 20.667,
+     "e": 21.003
+    },
+    {
+     "w": "and",
+     "s": 21.035,
+     "e": 21.132
+    },
+    {
+     "w": "weather",
+     "s": 21.164,
+     "e": 21.388
+    },
+    {
+     "w": "together.",
+     "s": 21.444,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "17c0b28e704c4116a0dc4996db38ca37",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 24.1,
+   "fittedSec": 22,
+   "stretch": 1.09545,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Now looking over Sydney. Haig Avenue, Denman Road and Parramatta Road are at a STANDSTILL. Garfield Road East is stopped solid too. The M4 from Parramatta to the city\u2019s seven minutes slower than usual. Construction\u2019s underway on the Warringah Freeway at Brook Street, with minor delays, and Flinders Road\u2019s a bit slow. That's KIIS traffic and weather together, powered by [brightly]...",
+   "features": {
+    "syl": 97,
+    "words": 61,
+    "ellipsis": 1,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Now",
+     "s": 0,
+     "e": 0.148
+    },
+    {
+     "w": "looking",
+     "s": 0.185,
+     "e": 0.443
+    },
+    {
+     "w": "over",
+     "s": 0.472,
+     "e": 0.591
+    },
+    {
+     "w": "Sydney.",
+     "s": 0.664,
+     "e": 1.255
+    },
+    {
+     "w": "Haig",
+     "s": 1.378,
+     "e": 1.772
+    },
+    {
+     "w": "Avenue,",
+     "s": 1.835,
+     "e": 2.362
+    },
+    {
+     "w": "Denman",
+     "s": 2.418,
+     "e": 2.658
+    },
+    {
+     "w": "Road",
+     "s": 2.731,
+     "e": 3.027
+    },
+    {
+     "w": "and",
+     "s": 3.082,
+     "e": 3.248
+    },
+    {
+     "w": "Parramatta",
+     "s": 3.307,
+     "e": 3.839
+    },
+    {
+     "w": "Road",
+     "s": 3.898,
+     "e": 4.134
+    },
+    {
+     "w": "are",
+     "s": 4.226,
+     "e": 4.503
+    },
+    {
+     "w": "at",
+     "s": 4.552,
+     "e": 4.651
+    },
+    {
+     "w": "a",
+     "s": 4.688,
+     "e": 4.725
+    },
+    {
+     "w": "STANDSTILL.",
+     "s": 4.798,
+     "e": 5.611
+    },
+    {
+     "w": "Garfield",
+     "s": 5.74,
+     "e": 6.275
+    },
+    {
+     "w": "Road",
+     "s": 6.319,
+     "e": 6.496
+    },
+    {
+     "w": "East",
+     "s": 6.555,
+     "e": 6.792
+    },
+    {
+     "w": "is",
+     "s": 6.866,
+     "e": 7.013
+    },
+    {
+     "w": "stopped",
+     "s": 7.05,
+     "e": 7.308
+    },
+    {
+     "w": "solid",
+     "s": 7.37,
+     "e": 7.678
+    },
+    {
+     "w": "too.",
+     "s": 7.77,
+     "e": 8.121
+    },
+    {
+     "w": "The",
+     "s": 8.231,
+     "e": 8.563
+    },
+    {
+     "w": "M",
+     "s": 8.637,
+     "e": 8.711
+    },
+    {
+     "w": "4",
+     "s": 8.77,
+     "e": 9.006
+    },
+    {
+     "w": "from",
+     "s": 9.036,
+     "e": 9.154
+    },
+    {
+     "w": "Parramatta",
+     "s": 9.213,
+     "e": 9.745
+    },
+    {
+     "w": "to",
+     "s": 9.77,
+     "e": 9.818
+    },
+    {
+     "w": "the",
+     "s": 9.855,
+     "e": 9.966
+    },
+    {
+     "w": "city\u2019s",
+     "s": 10.025,
+     "e": 10.704
+    },
+    {
+     "w": "seven",
+     "s": 10.753,
+     "e": 11
+    },
+    {
+     "w": "minutes",
+     "s": 11.037,
+     "e": 11.295
+    },
+    {
+     "w": "slower",
+     "s": 11.326,
+     "e": 11.516
+    },
+    {
+     "w": "than",
+     "s": 11.561,
+     "e": 11.738
+    },
+    {
+     "w": "usual.",
+     "s": 11.812,
+     "e": 12.255
+    },
+    {
+     "w": "Construction\u2019s",
+     "s": 12.317,
+     "e": 13.14
+    },
+    {
+     "w": "underway",
+     "s": 13.198,
+     "e": 13.657
+    },
+    {
+     "w": "on",
+     "s": 13.706,
+     "e": 13.805
+    },
+    {
+     "w": "the",
+     "s": 13.823,
+     "e": 13.879
+    },
+    {
+     "w": "Warringah",
+     "s": 13.916,
+     "e": 14.322
+    },
+    {
+     "w": "Freeway",
+     "s": 14.359,
+     "e": 14.765
+    },
+    {
+     "w": "at",
+     "s": 14.814,
+     "e": 14.912
+    },
+    {
+     "w": "Brook",
+     "s": 14.949,
+     "e": 15.134
+    },
+    {
+     "w": "Street,",
+     "s": 15.186,
+     "e": 15.577
+    },
+    {
+     "w": "with",
+     "s": 15.65,
+     "e": 15.946
+    },
+    {
+     "w": "minor",
+     "s": 15.995,
+     "e": 16.241
+    },
+    {
+     "w": "delays,",
+     "s": 16.325,
+     "e": 17.053
+    },
+    {
+     "w": "and",
+     "s": 17.09,
+     "e": 17.201
+    },
+    {
+     "w": "Flinders",
+     "s": 17.275,
+     "e": 17.644
+    },
+    {
+     "w": "Road\u2019s",
+     "s": 17.718,
+     "e": 18.087
+    },
+    {
+     "w": "a",
+     "s": 18.124,
+     "e": 18.16
+    },
+    {
+     "w": "bit",
+     "s": 18.216,
+     "e": 18.382
+    },
+    {
+     "w": "slow.",
+     "s": 18.471,
+     "e": 18.899
+    },
+    {
+     "w": "That's",
+     "s": 18.973,
+     "e": 19.342
+    },
+    {
+     "w": "KIIS",
+     "s": 19.386,
+     "e": 19.563
+    },
+    {
+     "w": "traffic",
+     "s": 19.609,
+     "e": 19.932
+    },
+    {
+     "w": "and",
+     "s": 19.969,
+     "e": 20.08
+    },
+    {
+     "w": "weather",
+     "s": 20.117,
+     "e": 20.375
+    },
+    {
+     "w": "together,",
+     "s": 20.424,
+     "e": 21.113
+    },
+    {
+     "w": "powered",
+     "s": 21.169,
+     "e": 21.556
+    },
+    {
+     "w": "by",
+     "s": 21.655,
+     "e": 21.852
+    },
+    {
+     "w": "...",
+     "s": 22,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "1e1db0593adc43049e0ce92dfd0540a7",
+   "market": "sydney",
+   "targetSec": 30.0,
+   "naturalSec": 31.8,
+   "fittedSec": 30,
+   "stretch": 1.06,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Now looking over Sydney. Dacey Avenue, Park Parade and Solander Drive are all a bit slow. Banks Drive and the M1 at General Holmes Drive have minor delays too. Stanmore Road's moving slowly, with Market Street and Stacey Street Bridge also under the pump. Roadworks and minor delays on the Warringah Freeway at Brook Street. Maddox Street's a slow patch. It's sunny, 16 degrees. [delighted]Unleaded's CHEAPEST at a dollar eighty-nine in Greystanes! That's KIIS traffic and weather together, powered by...",
+   "features": {
+    "syl": 123,
+    "words": 80,
+    "ellipsis": 1,
+    "period": 8,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Now",
+     "s": 0,
+     "e": 0.151
+    },
+    {
+     "w": "looking",
+     "s": 0.189,
+     "e": 0.453
+    },
+    {
+     "w": "over",
+     "s": 0.483,
+     "e": 0.604
+    },
+    {
+     "w": "Sydney.",
+     "s": 0.679,
+     "e": 1.207
+    },
+    {
+     "w": "Dacey",
+     "s": 1.396,
+     "e": 1.887
+    },
+    {
+     "w": "Avenue,",
+     "s": 1.952,
+     "e": 2.415
+    },
+    {
+     "w": "Park",
+     "s": 2.46,
+     "e": 2.641
+    },
+    {
+     "w": "Parade",
+     "s": 2.695,
+     "e": 3.018
+    },
+    {
+     "w": "and",
+     "s": 3.075,
+     "e": 3.245
+    },
+    {
+     "w": "Solander",
+     "s": 3.32,
+     "e": 3.773
+    },
+    {
+     "w": "Drive",
+     "s": 3.836,
+     "e": 4.15
+    },
+    {
+     "w": "are",
+     "s": 4.263,
+     "e": 4.603
+    },
+    {
+     "w": "all",
+     "s": 4.641,
+     "e": 4.754
+    },
+    {
+     "w": "a",
+     "s": 4.792,
+     "e": 4.829
+    },
+    {
+     "w": "bit",
+     "s": 4.867,
+     "e": 4.98
+    },
+    {
+     "w": "slow.",
+     "s": 5.086,
+     "e": 5.584
+    },
+    {
+     "w": "Banks",
+     "s": 5.685,
+     "e": 6.188
+    },
+    {
+     "w": "Drive",
+     "s": 6.238,
+     "e": 6.49
+    },
+    {
+     "w": "and",
+     "s": 6.527,
+     "e": 6.64
+    },
+    {
+     "w": "the",
+     "s": 6.659,
+     "e": 6.716
+    },
+    {
+     "w": "M",
+     "s": 6.829,
+     "e": 6.942
+    },
+    {
+     "w": "1",
+     "s": 6.98,
+     "e": 7.093
+    },
+    {
+     "w": "at",
+     "s": 7.119,
+     "e": 7.169
+    },
+    {
+     "w": "General",
+     "s": 7.216,
+     "e": 7.546
+    },
+    {
+     "w": "Holmes",
+     "s": 7.589,
+     "e": 7.848
+    },
+    {
+     "w": "Drive",
+     "s": 7.911,
+     "e": 8.225
+    },
+    {
+     "w": "have",
+     "s": 8.316,
+     "e": 8.678
+    },
+    {
+     "w": "minor",
+     "s": 8.728,
+     "e": 8.98
+    },
+    {
+     "w": "delays",
+     "s": 9.034,
+     "e": 9.357
+    },
+    {
+     "w": "too.",
+     "s": 9.47,
+     "e": 10.149
+    },
+    {
+     "w": "Stanmore",
+     "s": 10.217,
+     "e": 10.64
+    },
+    {
+     "w": "Road's",
+     "s": 10.7,
+     "e": 11.093
+    },
+    {
+     "w": "moving",
+     "s": 11.114,
+     "e": 11.244
+    },
+    {
+     "w": "slowly,",
+     "s": 11.319,
+     "e": 11.847
+    },
+    {
+     "w": "with",
+     "s": 11.923,
+     "e": 12.225
+    },
+    {
+     "w": "Market",
+     "s": 12.278,
+     "e": 12.602
+    },
+    {
+     "w": "Street",
+     "s": 12.656,
+     "e": 12.979
+    },
+    {
+     "w": "and",
+     "s": 13.017,
+     "e": 13.13
+    },
+    {
+     "w": "Stacey",
+     "s": 13.206,
+     "e": 13.658
+    },
+    {
+     "w": "Street",
+     "s": 13.69,
+     "e": 13.885
+    },
+    {
+     "w": "Bridge",
+     "s": 13.938,
+     "e": 14.262
+    },
+    {
+     "w": "also",
+     "s": 14.398,
+     "e": 14.941
+    },
+    {
+     "w": "under",
+     "s": 14.991,
+     "e": 15.243
+    },
+    {
+     "w": "the",
+     "s": 15.262,
+     "e": 15.318
+    },
+    {
+     "w": "pump.",
+     "s": 15.394,
+     "e": 15.771
+    },
+    {
+     "w": "Roadworks",
+     "s": 15.892,
+     "e": 16.677
+    },
+    {
+     "w": "and",
+     "s": 16.714,
+     "e": 16.828
+    },
+    {
+     "w": "minor",
+     "s": 16.878,
+     "e": 17.129
+    },
+    {
+     "w": "delays",
+     "s": 17.195,
+     "e": 17.582
+    },
+    {
+     "w": "on",
+     "s": 17.632,
+     "e": 17.733
+    },
+    {
+     "w": "the",
+     "s": 17.752,
+     "e": 17.809
+    },
+    {
+     "w": "Warringah",
+     "s": 17.846,
+     "e": 18.261
+    },
+    {
+     "w": "Freeway",
+     "s": 18.299,
+     "e": 18.79
+    },
+    {
+     "w": "at",
+     "s": 18.865,
+     "e": 19.016
+    },
+    {
+     "w": "Brook",
+     "s": 19.054,
+     "e": 19.242
+    },
+    {
+     "w": "Street.",
+     "s": 19.307,
+     "e": 19.771
+    },
+    {
+     "w": "Maddox",
+     "s": 19.861,
+     "e": 20.299
+    },
+    {
+     "w": "Street's",
+     "s": 20.342,
+     "e": 20.676
+    },
+    {
+     "w": "a",
+     "s": 20.714,
+     "e": 20.752
+    },
+    {
+     "w": "slow",
+     "s": 20.812,
+     "e": 21.053
+    },
+    {
+     "w": "patch.",
+     "s": 21.129,
+     "e": 21.695
+    },
+    {
+     "w": "It's",
+     "s": 21.758,
+     "e": 21.959
+    },
+    {
+     "w": "sunny,",
+     "s": 22.009,
+     "e": 22.336
+    },
+    {
+     "w": "16",
+     "s": 22.402,
+     "e": 22.864
+    },
+    {
+     "w": "degrees.",
+     "s": 22.93,
+     "e": 23.468
+    },
+    {
+     "w": "Unleaded's",
+     "s": 23.808,
+     "e": 24.147
+    },
+    {
+     "w": "CHEAPEST",
+     "s": 24.185,
+     "e": 24.675
+    },
+    {
+     "w": "at",
+     "s": 24.725,
+     "e": 24.826
+    },
+    {
+     "w": "a",
+     "s": 24.864,
+     "e": 24.902
+    },
+    {
+     "w": "dollar",
+     "s": 24.934,
+     "e": 25.128
+    },
+    {
+     "w": "eighty-nine",
+     "s": 25.172,
+     "e": 25.656
+    },
+    {
+     "w": "in",
+     "s": 25.732,
+     "e": 25.883
+    },
+    {
+     "w": "Greystanes!",
+     "s": 25.939,
+     "e": 26.788
+    },
+    {
+     "w": "That's",
+     "s": 26.864,
+     "e": 27.241
+    },
+    {
+     "w": "KIIS",
+     "s": 27.286,
+     "e": 27.467
+    },
+    {
+     "w": "traffic",
+     "s": 27.524,
+     "e": 27.92
+    },
+    {
+     "w": "and",
+     "s": 27.977,
+     "e": 28.147
+    },
+    {
+     "w": "weather",
+     "s": 28.184,
+     "e": 28.448
+    },
+    {
+     "w": "together,",
+     "s": 28.498,
+     "e": 29.203
+    },
+    {
+     "w": "powered",
+     "s": 29.25,
+     "e": 29.58
+    },
+    {
+     "w": "by...",
+     "s": 29.681,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "8b5cee405cf74c86833df7ace5f5b527",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 32.7,
+   "fittedSec": 22,
+   "stretch": 1.48636,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Warringah Freeway's closed southbound at the Alfred Street North ramp and Brook Street. Mitchell Road's closed northbound between Sydney Park Road and Maddox Street. The South Western Motorway's chockers at the M7 with heavy delays. Parramatta Road's at a standstill. Wentworth Avenue's a bit slow citybound between Gardeners Road and Botany Road. The Sydney Harbour Bridge and M4 Western Motorway are both moving nicely. Passing clouds, 14 degrees.",
+   "features": {
+    "syl": 111,
+    "words": 69,
+    "ellipsis": 0,
+    "period": 7,
+    "comma": 1,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.059
+    },
+    {
+     "w": "Warringah",
+     "s": 0.119,
+     "e": 0.416
+    },
+    {
+     "w": "Freeway's",
+     "s": 0.461,
+     "e": 0.952
+    },
+    {
+     "w": "closed",
+     "s": 0.994,
+     "e": 1.249
+    },
+    {
+     "w": "southbound",
+     "s": 1.288,
+     "e": 1.725
+    },
+    {
+     "w": "at",
+     "s": 1.764,
+     "e": 1.844
+    },
+    {
+     "w": "the",
+     "s": 1.859,
+     "e": 1.903
+    },
+    {
+     "w": "Alfred",
+     "s": 1.955,
+     "e": 2.26
+    },
+    {
+     "w": "Street",
+     "s": 2.294,
+     "e": 2.498
+    },
+    {
+     "w": "North",
+     "s": 2.537,
+     "e": 2.736
+    },
+    {
+     "w": "ramp",
+     "s": 2.807,
+     "e": 3.093
+    },
+    {
+     "w": "and",
+     "s": 3.123,
+     "e": 3.212
+    },
+    {
+     "w": "Brook",
+     "s": 3.241,
+     "e": 3.39
+    },
+    {
+     "w": "Street.",
+     "s": 3.441,
+     "e": 3.807
+    },
+    {
+     "w": "Mitchell",
+     "s": 3.859,
+     "e": 4.282
+    },
+    {
+     "w": "Road's",
+     "s": 4.342,
+     "e": 4.699
+    },
+    {
+     "w": "closed",
+     "s": 4.733,
+     "e": 4.937
+    },
+    {
+     "w": "northbound",
+     "s": 4.986,
+     "e": 5.412
+    },
+    {
+     "w": "between",
+     "s": 5.45,
+     "e": 5.71
+    },
+    {
+     "w": "Sydney",
+     "s": 5.752,
+     "e": 6.007
+    },
+    {
+     "w": "Park",
+     "s": 6.067,
+     "e": 6.305
+    },
+    {
+     "w": "Road",
+     "s": 6.352,
+     "e": 6.542
+    },
+    {
+     "w": "and",
+     "s": 6.587,
+     "e": 6.721
+    },
+    {
+     "w": "Maddox",
+     "s": 6.757,
+     "e": 6.959
+    },
+    {
+     "w": "Street.",
+     "s": 7.01,
+     "e": 7.375
+    },
+    {
+     "w": "The",
+     "s": 7.464,
+     "e": 7.732
+    },
+    {
+     "w": "South",
+     "s": 7.771,
+     "e": 7.97
+    },
+    {
+     "w": "Western",
+     "s": 8.007,
+     "e": 8.267
+    },
+    {
+     "w": "Motorway's",
+     "s": 8.307,
+     "e": 8.743
+    },
+    {
+     "w": "chockers",
+     "s": 8.783,
+     "e": 9.1
+    },
+    {
+     "w": "at",
+     "s": 9.139,
+     "e": 9.219
+    },
+    {
+     "w": "the",
+     "s": 9.234,
+     "e": 9.278
+    },
+    {
+     "w": "M",
+     "s": 9.368,
+     "e": 9.457
+    },
+    {
+     "w": "7",
+     "s": 9.507,
+     "e": 9.754
+    },
+    {
+     "w": "with",
+     "s": 9.826,
+     "e": 10.111
+    },
+    {
+     "w": "heavy",
+     "s": 10.141,
+     "e": 10.29
+    },
+    {
+     "w": "delays.",
+     "s": 10.366,
+     "e": 10.884
+    },
+    {
+     "w": "Parramatta",
+     "s": 10.968,
+     "e": 11.539
+    },
+    {
+     "w": "Road's",
+     "s": 11.586,
+     "e": 11.836
+    },
+    {
+     "w": "at",
+     "s": 11.856,
+     "e": 11.895
+    },
+    {
+     "w": "a",
+     "s": 11.985,
+     "e": 12.074
+    },
+    {
+     "w": "standstill.",
+     "s": 12.104,
+     "e": 12.639
+    },
+    {
+     "w": "Wentworth",
+     "s": 12.669,
+     "e": 12.966
+    },
+    {
+     "w": "Avenue's",
+     "s": 13.008,
+     "e": 13.382
+    },
+    {
+     "w": "a",
+     "s": 13.412,
+     "e": 13.442
+    },
+    {
+     "w": "bit",
+     "s": 13.472,
+     "e": 13.561
+    },
+    {
+     "w": "slow",
+     "s": 13.62,
+     "e": 13.858
+    },
+    {
+     "w": "citybound",
+     "s": 13.918,
+     "e": 14.393
+    },
+    {
+     "w": "between",
+     "s": 14.453,
+     "e": 14.869
+    },
+    {
+     "w": "Gardeners",
+     "s": 14.912,
+     "e": 15.286
+    },
+    {
+     "w": "Road",
+     "s": 15.333,
+     "e": 15.523
+    },
+    {
+     "w": "and",
+     "s": 15.568,
+     "e": 15.702
+    },
+    {
+     "w": "Botany",
+     "s": 15.761,
+     "e": 16.059
+    },
+    {
+     "w": "Road.",
+     "s": 16.118,
+     "e": 16.416
+    },
+    {
+     "w": "The",
+     "s": 16.49,
+     "e": 16.713
+    },
+    {
+     "w": "Sydney",
+     "s": 16.747,
+     "e": 16.951
+    },
+    {
+     "w": "Harbour",
+     "s": 16.981,
+     "e": 17.189
+    },
+    {
+     "w": "Bridge",
+     "s": 17.231,
+     "e": 17.486
+    },
+    {
+     "w": "and",
+     "s": 17.501,
+     "e": 17.546
+    },
+    {
+     "w": "M",
+     "s": 17.605,
+     "e": 17.665
+    },
+    {
+     "w": "4",
+     "s": 17.7,
+     "e": 17.843
+    },
+    {
+     "w": "Western",
+     "s": 17.888,
+     "e": 18.2
+    },
+    {
+     "w": "Motorway",
+     "s": 18.239,
+     "e": 18.616
+    },
+    {
+     "w": "are",
+     "s": 18.706,
+     "e": 18.973
+    },
+    {
+     "w": "both",
+     "s": 19.021,
+     "e": 19.211
+    },
+    {
+     "w": "moving",
+     "s": 19.253,
+     "e": 19.508
+    },
+    {
+     "w": "nicely.",
+     "s": 19.568,
+     "e": 19.984
+    },
+    {
+     "w": "Passing",
+     "s": 20.059,
+     "e": 20.579
+    },
+    {
+     "w": "clouds,",
+     "s": 20.639,
+     "e": 21.114
+    },
+    {
+     "w": "14",
+     "s": 21.147,
+     "e": 21.412
+    },
+    {
+     "w": "degrees.",
+     "s": 21.471,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "a0947b1ee6844794833da9a4c39ac831",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 25.3,
+   "fittedSec": 22,
+   "stretch": 1.15,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Parramatta Road's at a standstill. The Warringah Freeway's closed southbound at the Alfred Street North ramp and Brook Street. Mitchell Road's closed northbound between Sydney Park Road and Maddox Street. Southern Cross Drive's a bit slow outbound at Wentworth Avenue, with minor delays. Dreadnought Road's slow at Frenchs Forest Road, and works are underway on The Crescent near Johnston Street.",
+   "features": {
+    "syl": 89,
+    "words": 60,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "Parramatta",
+     "s": 0,
+     "e": 0.418
+    },
+    {
+     "w": "Road's",
+     "s": 0.487,
+     "e": 0.905
+    },
+    {
+     "w": "at",
+     "s": 0.929,
+     "e": 0.975
+    },
+    {
+     "w": "a",
+     "s": 1.009,
+     "e": 1.044
+    },
+    {
+     "w": "standstill.",
+     "s": 1.114,
+     "e": 2.019
+    },
+    {
+     "w": "The",
+     "s": 2.036,
+     "e": 2.089
+    },
+    {
+     "w": "Warringah",
+     "s": 2.158,
+     "e": 2.576
+    },
+    {
+     "w": "Freeway's",
+     "s": 2.611,
+     "e": 3.063
+    },
+    {
+     "w": "closed",
+     "s": 3.142,
+     "e": 3.62
+    },
+    {
+     "w": "southbound",
+     "s": 3.69,
+     "e": 4.316
+    },
+    {
+     "w": "at",
+     "s": 4.432,
+     "e": 4.665
+    },
+    {
+     "w": "the",
+     "s": 4.682,
+     "e": 4.734
+    },
+    {
+     "w": "Alfred",
+     "s": 4.794,
+     "e": 5.152
+    },
+    {
+     "w": "Street",
+     "s": 5.192,
+     "e": 5.43
+    },
+    {
+     "w": "North",
+     "s": 5.477,
+     "e": 5.709
+    },
+    {
+     "w": "ramp",
+     "s": 5.778,
+     "e": 6.057
+    },
+    {
+     "w": "and",
+     "s": 6.127,
+     "e": 6.335
+    },
+    {
+     "w": "Brook",
+     "s": 6.37,
+     "e": 6.544
+    },
+    {
+     "w": "Street.",
+     "s": 6.594,
+     "e": 7.241
+    },
+    {
+     "w": "Mitchell",
+     "s": 7.272,
+     "e": 7.519
+    },
+    {
+     "w": "Road's",
+     "s": 7.561,
+     "e": 7.797
+    },
+    {
+     "w": "closed",
+     "s": 7.858,
+     "e": 8.215
+    },
+    {
+     "w": "northbound",
+     "s": 8.285,
+     "e": 8.981
+    },
+    {
+     "w": "between",
+     "s": 9.051,
+     "e": 9.538
+    },
+    {
+     "w": "Sydney",
+     "s": 9.578,
+     "e": 9.816
+    },
+    {
+     "w": "Park",
+     "s": 9.872,
+     "e": 10.095
+    },
+    {
+     "w": "Road",
+     "s": 10.165,
+     "e": 10.443
+    },
+    {
+     "w": "and",
+     "s": 10.478,
+     "e": 10.582
+    },
+    {
+     "w": "Maddox",
+     "s": 10.638,
+     "e": 10.93
+    },
+    {
+     "w": "Street.",
+     "s": 10.99,
+     "e": 11.592
+    },
+    {
+     "w": "Southern",
+     "s": 11.619,
+     "e": 11.835
+    },
+    {
+     "w": "Cross",
+     "s": 11.87,
+     "e": 12.044
+    },
+    {
+     "w": "Drive's",
+     "s": 12.103,
+     "e": 12.427
+    },
+    {
+     "w": "a",
+     "s": 12.445,
+     "e": 12.462
+    },
+    {
+     "w": "bit",
+     "s": 12.497,
+     "e": 12.601
+    },
+    {
+     "w": "slow",
+     "s": 12.671,
+     "e": 12.949
+    },
+    {
+     "w": "outbound",
+     "s": 13.011,
+     "e": 13.506
+    },
+    {
+     "w": "at",
+     "s": 13.552,
+     "e": 13.646
+    },
+    {
+     "w": "Wentworth",
+     "s": 13.701,
+     "e": 14.133
+    },
+    {
+     "w": "Avenue,",
+     "s": 14.193,
+     "e": 14.62
+    },
+    {
+     "w": "with",
+     "s": 14.69,
+     "e": 14.968
+    },
+    {
+     "w": "minor",
+     "s": 15.038,
+     "e": 15.386
+    },
+    {
+     "w": "delays.",
+     "s": 15.485,
+     "e": 16.152
+    },
+    {
+     "w": "Dreadnought",
+     "s": 16.233,
+     "e": 16.848
+    },
+    {
+     "w": "Road's",
+     "s": 16.904,
+     "e": 17.266
+    },
+    {
+     "w": "slow",
+     "s": 17.335,
+     "e": 17.614
+    },
+    {
+     "w": "at",
+     "s": 17.66,
+     "e": 17.753
+    },
+    {
+     "w": "Frenchs",
+     "s": 17.803,
+     "e": 18.171
+    },
+    {
+     "w": "Forest",
+     "s": 18.211,
+     "e": 18.449
+    },
+    {
+     "w": "Road,",
+     "s": 18.519,
+     "e": 19.076
+    },
+    {
+     "w": "and",
+     "s": 19.111,
+     "e": 19.215
+    },
+    {
+     "w": "works",
+     "s": 19.261,
+     "e": 19.494
+    },
+    {
+     "w": "are",
+     "s": 19.528,
+     "e": 19.633
+    },
+    {
+     "w": "underway",
+     "s": 19.679,
+     "e": 20.051
+    },
+    {
+     "w": "on",
+     "s": 20.097,
+     "e": 20.19
+    },
+    {
+     "w": "The",
+     "s": 20.207,
+     "e": 20.259
+    },
+    {
+     "w": "Crescent",
+     "s": 20.306,
+     "e": 20.677
+    },
+    {
+     "w": "near",
+     "s": 20.719,
+     "e": 20.886
+    },
+    {
+     "w": "Johnston",
+     "s": 20.94,
+     "e": 21.373
+    },
+    {
+     "w": "Street.",
+     "s": 21.433,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "d59b97239b364507a0e109be47a8e095",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 29.9,
+   "fittedSec": 22,
+   "stretch": 1.35909,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Warringah Freeway's CLOSED southbound at the Alfred Street North ramp and Brook Street for construction. Mitchell Road's closed northbound between Sydney Park Road and Maddox Street. Botany Road's under the pump at Hale Street with roadworks. Gore Hill Freeway's a bit slow northbound at Willoughby Road. Dreadnought Road and The Crescent have minor delays through works. [brightly]Passing clouds, 14 degrees! That's KIIS traffic and weather together.",
+   "features": {
+    "syl": 99,
+    "words": 67,
+    "ellipsis": 0,
+    "period": 7,
+    "comma": 1,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.119
+    },
+    {
+     "w": "Warringah",
+     "s": 0.239,
+     "e": 0.776
+    },
+    {
+     "w": "Freeway's",
+     "s": 0.82,
+     "e": 1.313
+    },
+    {
+     "w": "CLOSED",
+     "s": 1.381,
+     "e": 1.79
+    },
+    {
+     "w": "southbound",
+     "s": 1.85,
+     "e": 2.387
+    },
+    {
+     "w": "at",
+     "s": 2.486,
+     "e": 2.685
+    },
+    {
+     "w": "the",
+     "s": 2.7,
+     "e": 2.745
+    },
+    {
+     "w": "Alfred",
+     "s": 2.787,
+     "e": 3.043
+    },
+    {
+     "w": "Street",
+     "s": 3.086,
+     "e": 3.342
+    },
+    {
+     "w": "North",
+     "s": 3.381,
+     "e": 3.58
+    },
+    {
+     "w": "ramp",
+     "s": 3.64,
+     "e": 3.879
+    },
+    {
+     "w": "and",
+     "s": 3.908,
+     "e": 3.998
+    },
+    {
+     "w": "Brook",
+     "s": 4.048,
+     "e": 4.296
+    },
+    {
+     "w": "Street",
+     "s": 4.331,
+     "e": 4.535
+    },
+    {
+     "w": "for",
+     "s": 4.565,
+     "e": 4.654
+    },
+    {
+     "w": "construction.",
+     "s": 4.695,
+     "e": 5.549
+    },
+    {
+     "w": "Mitchell",
+     "s": 5.582,
+     "e": 5.848
+    },
+    {
+     "w": "Road's",
+     "s": 5.896,
+     "e": 6.146
+    },
+    {
+     "w": "closed",
+     "s": 6.198,
+     "e": 6.504
+    },
+    {
+     "w": "northbound",
+     "s": 6.554,
+     "e": 7.041
+    },
+    {
+     "w": "between",
+     "s": 7.079,
+     "e": 7.34
+    },
+    {
+     "w": "Sydney",
+     "s": 7.399,
+     "e": 7.698
+    },
+    {
+     "w": "Park",
+     "s": 7.745,
+     "e": 7.936
+    },
+    {
+     "w": "Road",
+     "s": 7.996,
+     "e": 8.235
+    },
+    {
+     "w": "and",
+     "s": 8.264,
+     "e": 8.354
+    },
+    {
+     "w": "Maddox",
+     "s": 8.402,
+     "e": 8.652
+    },
+    {
+     "w": "Street.",
+     "s": 8.695,
+     "e": 9.01
+    },
+    {
+     "w": "Botany",
+     "s": 9.13,
+     "e": 9.607
+    },
+    {
+     "w": "Road's",
+     "s": 9.655,
+     "e": 9.905
+    },
+    {
+     "w": "under",
+     "s": 9.935,
+     "e": 10.084
+    },
+    {
+     "w": "the",
+     "s": 10.099,
+     "e": 10.144
+    },
+    {
+     "w": "pump",
+     "s": 10.204,
+     "e": 10.442
+    },
+    {
+     "w": "at",
+     "s": 10.482,
+     "e": 10.562
+    },
+    {
+     "w": "Hale",
+     "s": 10.621,
+     "e": 10.86
+    },
+    {
+     "w": "Street",
+     "s": 10.903,
+     "e": 11.159
+    },
+    {
+     "w": "with",
+     "s": 11.182,
+     "e": 11.278
+    },
+    {
+     "w": "roadworks.",
+     "s": 11.338,
+     "e": 12.203
+    },
+    {
+     "w": "Gore",
+     "s": 12.256,
+     "e": 12.471
+    },
+    {
+     "w": "Hill",
+     "s": 12.507,
+     "e": 12.65
+    },
+    {
+     "w": "Freeway's",
+     "s": 12.695,
+     "e": 13.068
+    },
+    {
+     "w": "a",
+     "s": 13.098,
+     "e": 13.128
+    },
+    {
+     "w": "bit",
+     "s": 13.158,
+     "e": 13.247
+    },
+    {
+     "w": "slow",
+     "s": 13.307,
+     "e": 13.545
+    },
+    {
+     "w": "northbound",
+     "s": 13.605,
+     "e": 14.142
+    },
+    {
+     "w": "at",
+     "s": 14.202,
+     "e": 14.321
+    },
+    {
+     "w": "Willoughby",
+     "s": 14.357,
+     "e": 14.619
+    },
+    {
+     "w": "Road.",
+     "s": 14.703,
+     "e": 15.038
+    },
+    {
+     "w": "Dreadnought",
+     "s": 15.136,
+     "e": 15.813
+    },
+    {
+     "w": "Road",
+     "s": 15.861,
+     "e": 16.052
+    },
+    {
+     "w": "and",
+     "s": 16.066,
+     "e": 16.111
+    },
+    {
+     "w": "The",
+     "s": 16.126,
+     "e": 16.171
+    },
+    {
+     "w": "Crescent",
+     "s": 16.224,
+     "e": 16.648
+    },
+    {
+     "w": "have",
+     "s": 16.696,
+     "e": 16.887
+    },
+    {
+     "w": "minor",
+     "s": 16.947,
+     "e": 17.245
+    },
+    {
+     "w": "delays",
+     "s": 17.296,
+     "e": 17.603
+    },
+    {
+     "w": "through",
+     "s": 17.64,
+     "e": 17.901
+    },
+    {
+     "w": "works.",
+     "s": 17.971,
+     "e": 18.617
+    },
+    {
+     "w": "Passing",
+     "s": 18.761,
+     "e": 18.856
+    },
+    {
+     "w": "clouds,",
+     "s": 18.916,
+     "e": 19.333
+    },
+    {
+     "w": "14",
+     "s": 19.36,
+     "e": 19.572
+    },
+    {
+     "w": "degrees!",
+     "s": 19.632,
+     "e": 20.109
+    },
+    {
+     "w": "That's",
+     "s": 20.169,
+     "e": 20.467
+    },
+    {
+     "w": "KIIS",
+     "s": 20.515,
+     "e": 20.706
+    },
+    {
+     "w": "traffic",
+     "s": 20.743,
+     "e": 21.004
+    },
+    {
+     "w": "and",
+     "s": 21.064,
+     "e": 21.243
+    },
+    {
+     "w": "weather",
+     "s": 21.273,
+     "e": 21.482
+    },
+    {
+     "w": "together.",
+     "s": 21.535,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "d6ca1e2e9d074d808a789a306aa54bcd",
+   "market": "sydneyd",
+   "targetSec": 22.0,
+   "naturalSec": 21.3,
+   "fittedSec": 22,
+   "stretch": 0.96818,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Looking across Sydney. Schofields Road's at a standstill. The Warringah Freeway's CLOSED southbound at the ramp to Alfred Street North, with construction at Brook Street as well. Passing clouds, fourteen degrees. [brightly]Unleaded's CHEAPEST at one ninety-two in Merrylands West! That's KIIS traffic and weather together.",
+   "features": {
+    "syl": 73,
+    "words": 45,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Looking",
+     "s": 0,
+     "e": 0.248
+    },
+    {
+     "w": "across",
+     "s": 0.307,
+     "e": 0.662
+    },
+    {
+     "w": "Sydney.",
+     "s": 0.733,
+     "e": 1.241
+    },
+    {
+     "w": "Schofields",
+     "s": 1.356,
+     "e": 2.068
+    },
+    {
+     "w": "Road's",
+     "s": 2.134,
+     "e": 2.481
+    },
+    {
+     "w": "at",
+     "s": 2.509,
+     "e": 2.564
+    },
+    {
+     "w": "a",
+     "s": 2.688,
+     "e": 2.812
+    },
+    {
+     "w": "standstill.",
+     "s": 2.853,
+     "e": 3.474
+    },
+    {
+     "w": "The",
+     "s": 3.577,
+     "e": 3.887
+    },
+    {
+     "w": "Warringah",
+     "s": 4.011,
+     "e": 4.838
+    },
+    {
+     "w": "Freeway's",
+     "s": 4.869,
+     "e": 5.459
+    },
+    {
+     "w": "CLOSED",
+     "s": 5.518,
+     "e": 5.872
+    },
+    {
+     "w": "southbound",
+     "s": 5.941,
+     "e": 6.617
+    },
+    {
+     "w": "at",
+     "s": 6.754,
+     "e": 7.03
+    },
+    {
+     "w": "the",
+     "s": 7.071,
+     "e": 7.195
+    },
+    {
+     "w": "ramp",
+     "s": 7.262,
+     "e": 7.526
+    },
+    {
+     "w": "to",
+     "s": 7.554,
+     "e": 7.609
+    },
+    {
+     "w": "Alfred",
+     "s": 7.668,
+     "e": 8.023
+    },
+    {
+     "w": "Street",
+     "s": 8.07,
+     "e": 8.353
+    },
+    {
+     "w": "North,",
+     "s": 8.423,
+     "e": 8.85
+    },
+    {
+     "w": "with",
+     "s": 8.932,
+     "e": 9.263
+    },
+    {
+     "w": "construction",
+     "s": 9.314,
+     "e": 9.925
+    },
+    {
+     "w": "at",
+     "s": 9.98,
+     "e": 10.09
+    },
+    {
+     "w": "Brook",
+     "s": 10.145,
+     "e": 10.421
+    },
+    {
+     "w": "Street",
+     "s": 10.456,
+     "e": 10.669
+    },
+    {
+     "w": "as",
+     "s": 10.752,
+     "e": 10.917
+    },
+    {
+     "w": "well.",
+     "s": 11,
+     "e": 11.786
+    },
+    {
+     "w": "Passing",
+     "s": 11.843,
+     "e": 12.241
+    },
+    {
+     "w": "clouds,",
+     "s": 12.323,
+     "e": 12.82
+    },
+    {
+     "w": "fourteen",
+     "s": 12.884,
+     "e": 13.398
+    },
+    {
+     "w": "degrees.",
+     "s": 13.492,
+     "e": 14.391
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.763,
+     "e": 15.135
+    },
+    {
+     "w": "CHEAPEST",
+     "s": 15.218,
+     "e": 15.88
+    },
+    {
+     "w": "at",
+     "s": 15.934,
+     "e": 16.045
+    },
+    {
+     "w": "one",
+     "s": 16.128,
+     "e": 16.376
+    },
+    {
+     "w": "ninety-two",
+     "s": 16.435,
+     "e": 17.12
+    },
+    {
+     "w": "in",
+     "s": 17.203,
+     "e": 17.368
+    },
+    {
+     "w": "Merrylands",
+     "s": 17.438,
+     "e": 18.03
+    },
+    {
+     "w": "West!",
+     "s": 18.113,
+     "e": 18.526
+    },
+    {
+     "w": "That's",
+     "s": 18.626,
+     "e": 19.105
+    },
+    {
+     "w": "KIIS",
+     "s": 19.229,
+     "e": 20.18
+    },
+    {
+     "w": "traffic",
+     "s": 20.253,
+     "e": 20.759
+    },
+    {
+     "w": "and",
+     "s": 20.801,
+     "e": 20.925
+    },
+    {
+     "w": "weather",
+     "s": 20.956,
+     "e": 21.173
+    },
+    {
+     "w": "together.",
+     "s": 21.246,
+     "e": 22
+    }
+   ]
+  }
+ ]
+}

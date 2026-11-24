@@ -1,0 +1,238 @@
+# Reusable deployment stage — one Azure environment (test or prod).
+#
+# Deploys, in order, within one ADO environment (so approval gates apply):
+#   1. Infrastructure — subscription-scope Bicep across IBP-AUE-{ENV}-RSG-*
+#   2. Function App    — zip-deploy the published Functions artifact
+#   3. Static Web App  — swa deploy the built web artifact (production slot)
+#
+# The AAD IDs, Function App name and SWA deployment token come from the
+# per-environment variable group (parameter `variableGroup`); the ARM service
+# connection is passed as a literal compile-time template parameter
+# (`serviceConnection`) rather than read from the variable group, because
+# azureSubscription (a connectedService:AzureRM input) is resolved by ADO at
+# compile time and can't take a runtime $(var) macro sourced from a group —
+# confirmed live 2026-07-09 (build 2358 failed: "service connection
+# $(azureServiceConnection) could not be found... not authorized"). Gated on
+# ARN provisioning: the service connection + variable group must exist, and
+# the ADO environment must carry the required approvers, before this can run.
+parameters:
+  - name: stageName
+    type: string
+  - name: displayName
+    type: string
+  - name: adoEnvironment # ADO environment name (carries approval gates)
+    type: string
+  - name: variableGroup # variables: aadClientId, aadTenantId, functionAppName, SWA_DEPLOYMENT_TOKEN, deployDocsSite ('true'/'false', must match the bicepparam), DOCS_SWA_DEPLOYMENT_TOKEN (dev and prod only)
+    type: string
+  - name: serviceConnection # literal ARM service connection NAME (compile-time — azureSubscription can't take a runtime $(var) macro; ADO resolves resource authorization at compile time)
+    type: string
+  - name: bicepParamFile # deployment/main.<env>.bicepparam
+    type: string
+  - name: dependsOn
+    type: object
+    default: []
+  - name: condition
+    type: string
+    default: succeeded()
+  - name: applyRbacConfig # true (test/prod): overlay custom-Entra-provider SWA config; false (dev): keep built-in provider
+    type: boolean
+    default: true
+  - name: deployInfrastructure # false: skip Bicep/autoscale for an app-only promotion
+    type: boolean
+    default: true
+
+stages:
+  - stage: ${{ parameters.stageName }}
+    displayName: ${{ parameters.displayName }}
+    dependsOn: ${{ parameters.dependsOn }}
+    condition: ${{ parameters.condition }}
+    variables:
+      - group: ${{ parameters.variableGroup }}
+    jobs:
+      - ${{ if eq(parameters.deployInfrastructure, true) }}:
+        - deployment: Infrastructure
+          displayName: Infrastructure (Bicep)
+          environment: ${{ parameters.adoEnvironment }}
+          # The default 60-minute job timeout cancelled build 2735 mid-deployment on
+          # 2026-08-03. The subscription deployment itself is a few minutes; what is slow
+          # is a Static Web App whose enterprise-edge enablement is in flight
+          # (`enterpriseGradeCdnStatus: Enabling`), because ARM holds the staticSites
+          # resource operation open until the edge profile settles. Cancelling at 60
+          # minutes fails the stage while the enablement carries on in the background,
+          # which is the worst of both. Give it room; a genuinely stuck deployment still
+          # ends when ARM's own resource timeout fires.
+          timeoutInMinutes: 180
+          strategy:
+            runOnce:
+              deploy:
+                steps:
+                  - checkout: self
+
+                  - task: AzureCLI@2
+                    displayName: Deploy Bicep
+                    inputs:
+                      azureSubscription: ${{ parameters.serviceConnection }}
+                      scriptType: bash
+                      scriptLocation: inlineScript
+                      # Subscription-scope deployment across the ARN-confirmed
+                      # IBP-AUE-{ENV}-RSG-{APP01,NTW01,KYV01,STA01} layout
+                      # (docs/reference/azure-naming-convention.md).
+                      # Gated on ARN provisioning: AAD client/tenant IDs, PE subnet
+                      # + private DNS zone IDs must be injected as parameter
+                      # overrides / variable-group values before this succeeds.
+                      inlineScript: |
+                        az deployment sub create \
+                          --location australiaeast \
+                          --template-file deployment/main.bicep \
+                          --parameters ${{ parameters.bicepParamFile }} \
+                          --parameters aadClientId=$(aadClientId) aadTenantId=$(aadTenantId)
+
+                  - task: AzureCLI@2
+                    displayName: Configure autoscale
+                    inputs:
+                      azureSubscription: ${{ parameters.serviceConnection }}
+                      scriptType: bash
+                      scriptLocation: inlineScript
+                      inlineScript: |
+                        set -euo pipefail
+                        FNA="$(functionAppName)"
+                        ENV_CODE=$(echo "$FNA" | sed 's/IBP-AUE-\([A-Z]*\)-FNA-APP01/\1/')
+                        RG="IBP-AUE-${ENV_CODE}-RSG-APP01"
+                        PLAN="IBP-AUE-${ENV_CODE}-PLN-APP01"
+                        # Storage lives in the STA01 RG (not the app RG) per the naming convention.
+                        STORAGE=$(az storage account list -g "IBP-AUE-${ENV_CODE}-RSG-STA01" \
+                          --query "[?contains(name,'sta')].name" -o tsv 2>/dev/null | head -1)
+                        if [ -n "$STORAGE" ]; then
+                          ./deployment/scripts/setup-autoscale.sh "$RG" "$PLAN" "$STORAGE"
+                        else
+                          echo "##[warn]Could not find storage account in $RG -- autoscale not configured"
+                        fi
+
+      - deployment: FunctionApp
+        displayName: Functions App
+        dependsOn:
+          - ${{ if eq(parameters.deployInfrastructure, true) }}:
+            - Infrastructure
+        environment: ${{ parameters.adoEnvironment }}
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - download: current
+                  artifact: functions
+
+                - task: AzureFunctionApp@2
+                  displayName: Deploy to Function App
+                  inputs:
+                    azureSubscription: ${{ parameters.serviceConnection }}
+                    appType: functionAppLinux
+                    appName: $(functionAppName)
+                    package: $(Pipeline.Workspace)/functions/functions.zip
+
+      - deployment: StaticWebApp
+        displayName: Static Web App
+        dependsOn:
+          - ${{ if eq(parameters.deployInfrastructure, true) }}:
+            - Infrastructure
+        environment: ${{ parameters.adoEnvironment }}
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - checkout: self
+
+                - download: current
+                  artifact: web
+
+                # Full prod-style RBAC: ship the custom-Entra-provider SWA config
+                # (token carries Operator/Admin roles) for test/prod, replacing the
+                # built artifact's built-in-provider config. Skipped for dev, which
+                # keeps the built-in provider + devAuthFallbackRole (applyRbacConfig=false).
+                #
+                # Rendered, never copied: the renderer injects this environment's
+                # rolesSource token audience (`<clientId>/.default`) into
+                # login.loginParameters. A plain cp ships OIDC-only scopes, Entra mints a
+                # Graph-audience access token, SwaRolesSourceTokenValidator cannot validate
+                # it, and no operator is ever registered at sign-in (fixed 2026-08-13).
+                - ${{ if eq(parameters.applyRbacConfig, true) }}:
+                  - script: |
+                      set -euo pipefail
+                      python3 "$(Build.SourcesDirectory)/deployment/static-web-app/render-rbac-config.py" \
+                        --param-file "$(Build.SourcesDirectory)/${{ parameters.bicepParamFile }}" \
+                        "$(Pipeline.Workspace)/web/staticwebapp.config.json"
+                    displayName: Render full prod-style RBAC SWA auth config
+
+                - task: UseNode@1
+                  displayName: Install Node.js
+                  inputs:
+                    version: "22.x"
+
+                - script: |
+                    npm install -g @azure/static-web-apps-cli
+                    swa deploy $(Pipeline.Workspace)/web --deployment-token $(SWA_DEPLOYMENT_TOKEN) --env production
+                  displayName: Deploy to Static Web App
+
+      # The handover documentation site, a second Static Web App
+      # (IBP-AUE-{ENV}-SWA-DOC01). A Bicep parameter cannot gate a pipeline
+      # job, so `deployDocsSite` is also a variable-group variable and must be
+      # kept in step with the matching bicepparam: 'true' on dev and prod,
+      # 'false' on test. Ordering note: the first run after this job is added
+      # provisions the SWA and skips the deploy, because
+      # DOCS_SWA_DEPLOYMENT_TOKEN is only obtainable once the app exists
+      # (az staticwebapp secrets list -n IBP-AUE-{ENV}-SWA-DOC01
+      #  --query properties.apiKey -o tsv). The second run publishes.
+      - deployment: DocsSite
+        displayName: Documentation site
+        dependsOn:
+          - ${{ if eq(parameters.deployInfrastructure, true) }}:
+            - Infrastructure
+        condition: and(succeeded(), eq(variables['deployDocsSite'], 'true'))
+        environment: ${{ parameters.adoEnvironment }}
+        strategy:
+          runOnce:
+            deploy:
+              steps:
+                - checkout: self
+
+                - task: UseNode@1
+                  displayName: Install Node.js
+                  inputs:
+                    version: "22.x"
+
+                # Built here rather than in the build stage: the site's content
+                # is synced from docs/ at build time by
+                # scripts/build-docs-site.py, so it needs the repository, not a
+                # pre-built artefact.
+                - script: |
+                    set -euo pipefail
+                    cd docs-site
+                    npm ci
+                    npm run build
+                  displayName: Build documentation site
+
+                # Run from inside docs-site/. The CLI searches for a
+                # staticwebapp.config.json from its working directory, and from
+                # the repository root it finds the CONSOLE app's config
+                # (web/public/staticwebapp.config.json) — a single-page-app
+                # navigation fallback plus an authentication redirect, both
+                # wrong for a static documentation site. The symptom is every
+                # unknown URL serving the home page with a 200 instead of the
+                # site's own 404. docs-site/public/staticwebapp.config.json is
+                # copied into dist/ by the build and is the one that must win.
+                - script: |
+                    set -euo pipefail
+                    npm install -g @azure/static-web-apps-cli
+                    cd docs-site
+                    swa deploy dist --deployment-token $(DOCS_SWA_DEPLOYMENT_TOKEN) --env production
+                  displayName: Deploy documentation site
+
+      - job: Smoke
+        displayName: Post-deploy smoke test
+        dependsOn: [FunctionApp, StaticWebApp]
+        steps:
+          - checkout: self
+          - script: |
+              set -euo pipefail
+              ARN_SMOKE_BASE_URL="https://$(functionAppName).azurewebsites.net" \
+                bash deployment/scripts/smoke-test.sh
+            displayName: Smoke test (/api/health + auth fail-closed)

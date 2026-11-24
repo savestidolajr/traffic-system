@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.2358885+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.83931,144.99821\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "3A Tivoli Rd, South Yarra VIC 3141, Australia",
+          "id": "here:af:streetsection:aU-4YP6HK3H9JctLmHxybC:CggIBCD6j5LRAhABGgIzQQ",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "3A Tivoli Rd, South Yarra VIC 3141, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "South Yarra",
+            "street": "Tivoli Rd",
+            "postalCode": "3141",
+            "houseNumber": "3A"
+          },
+          "position": {
+            "lat": -37.83934,
+            "lng": 144.99802
+          },
+          "access": [
+            {
+              "lat": -37.83936,
+              "lng": 144.9982
+            }
+          ],
+          "distance": 6,
+          "mapView": {
+            "west": 144.99812,
+            "south": -37.83979,
+            "east": 144.99887,
+            "north": -37.83602
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

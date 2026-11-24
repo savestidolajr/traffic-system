@@ -1,0 +1,55 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.7926029+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.07218,115.84875\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "28 Fiona Wood Rd, Murdoch WA 6150, Australia",
+          "id": "here:af:streetsection:nNh9eqGxJoUh.07UyId3vA:CggIBCCizuTHAhABGgIyOA",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "28 Fiona Wood Rd, Murdoch WA 6150, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Murdoch",
+            "street": "Fiona Wood Rd",
+            "postalCode": "6150",
+            "houseNumber": "28"
+          },
+          "position": {
+            "lat": -32.07237,
+            "lng": 115.84797
+          },
+          "access": [
+            {
+              "lat": -32.07239,
+              "lng": 115.84874
+            }
+          ],
+          "distance": 23,
+          "mapView": {
+            "west": 115.84499,
+            "south": -32.0735,
+            "east": 115.84899,
+            "north": -32.06591
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

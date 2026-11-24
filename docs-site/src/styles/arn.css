@@ -1,0 +1,648 @@
+/* ARN documentation site — page and chrome styles.
+ * Consumes token names from tokens.css only; nothing is inlined here.
+ * Accent is ARN purple (hue 271). Contrast verified in both themes, lowest
+ * text pair 4.70:1 against a 4.5:1 floor; layout verified at 320/375/414/768.
+ *
+ * A documentation home's job is to route two audiences to the right page, so
+ * the landing page IS the index rather than a hero over six identical cards.
+ *
+ * Motion is deliberately absent: nothing reveals on scroll, because a runbook
+ * being read at 3am should be still.
+ *
+ * Two deliberate deviations, recorded rather than hidden:
+ *   · The mono face carries two roles: code, and the small-caps label
+ *     register (wordmark, sidebar group heads, table heads, colophon). Body
+ *     prose is Geist throughout, so mono never becomes a second body font.
+ *   · The hairline rule colour sits at 1.68:1. Rules are decorative
+ *     separators, not text, icons or focus rings, so non-text contrast does
+ *     not apply; making them loud enough to pass would wreck the restraint
+ *     the whole page depends on.
+ */
+
+html {
+    overflow-x: clip;
+}
+
+body {
+    overflow-x: clip;
+}
+
+/* ── Starlight bindings ───────────────────────────────────────────────────
+   Starlight's own tokens are mapped onto the token layer, so the whole theme
+   moves from one place and the components we do not own inherit correctly. */
+:root {
+    --sl-font: var(--font-body);
+    --sl-font-mono: var(--font-outlier);
+
+    --sl-color-accent-low: color-mix(in oklab, var(--color-accent) 22%, var(--color-paper));
+    --sl-color-accent: var(--color-accent);
+    --sl-color-accent-high: color-mix(in oklab, var(--color-accent) 70%, var(--color-ink));
+    --sl-color-white: var(--color-ink);
+    --sl-color-gray-1: var(--color-ink);
+    --sl-color-gray-2: var(--color-ink-2);
+    --sl-color-gray-3: var(--color-ink-3);
+    --sl-color-gray-4: var(--color-line-2);
+    --sl-color-gray-5: var(--color-line);
+    --sl-color-gray-6: var(--color-paper-2);
+    --sl-color-gray-7: var(--color-paper-3);
+    --sl-color-black: var(--color-paper);
+    --sl-color-bg: var(--color-paper);
+    --sl-color-bg-nav: var(--color-paper);
+    --sl-color-bg-sidebar: var(--color-paper);
+    --sl-color-hairline: var(--color-line);
+    --sl-color-hairline-light: var(--color-line);
+    --sl-color-hairline-shade: var(--color-line);
+    --sl-color-text: var(--color-ink-2);
+    --sl-color-text-accent: var(--color-accent);
+    --sl-color-text-invert: var(--color-accent-ink);
+
+    --sl-text-code: var(--text-sm);
+    --sl-nav-height: 4rem;
+    --sl-content-width: 47rem;
+}
+
+/* ── Type ────────────────────────────────────────────────────────────────
+   Weight carries the hierarchy: body 400, display 700. A 300-unit gap reads
+   as a decision; 400 next to 500 reads as a default. */
+body {
+    font-family: var(--font-body);
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: var(--tracking-tight);
+}
+
+.sl-markdown-content {
+    font-size: var(--text-md);
+    line-height: 1.65;
+    color: var(--color-ink-2);
+}
+
+/* `:not(:where(.not-content *))` follows Starlight's own convention: rules
+   scoped to prose must not reach hand-built markup such as the site index,
+   which brings its own type. Without it the index's group labels inherited a
+   section rule and grew a stray hairline. */
+.sl-markdown-content
+    :is(h1, h2, h3, h4):not(:where(.not-content *)) {
+    font-family: var(--font-display);
+    font-weight: 700;
+    color: var(--color-ink);
+    letter-spacing: var(--tracking-display);
+    line-height: 1.15;
+    text-wrap: balance;
+}
+
+/* A section rule reads the rhythm of a long operational page better than
+   size alone: the reader sees where one topic ends. */
+.sl-markdown-content h2:not(:where(.not-content *)) {
+    font-size: var(--text-2xl);
+    margin-top: var(--space-3xl);
+    padding-top: var(--space-lg);
+    border-top: var(--rule-hair) solid var(--color-line);
+}
+
+.sl-markdown-content h3:not(:where(.not-content *)) {
+    font-size: var(--text-lg);
+    margin-top: var(--space-xl);
+    letter-spacing: var(--tracking-tight);
+}
+
+.sl-markdown-content h4:not(:where(.not-content *)) {
+    font-size: var(--text-base);
+    margin-top: var(--space-lg);
+    letter-spacing: var(--tracking-tight);
+}
+
+.sl-markdown-content
+    :is(h2, h3, h4):not(:where(.not-content *))
+    + * {
+    margin-top: var(--space-sm);
+}
+
+/* Starlight sets the page title in its own header block. */
+.content-panel h1#_top {
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-3xl);
+    letter-spacing: var(--tracking-display);
+    line-height: 1.08;
+    text-wrap: balance;
+    overflow-wrap: anywhere;
+    min-width: 0;
+}
+
+.sl-markdown-content strong {
+    color: var(--color-ink);
+    font-weight: 600;
+}
+
+/* Numbers in operational tables have to line up to be scannable. */
+.sl-markdown-content :is(table, code, kbd) {
+    font-variant-numeric: tabular-nums;
+}
+
+/* ── Links ───────────────────────────────────────────────────────────────
+   Underline offset and thickness, not colour alone, so a link is legible to
+   anyone who does not perceive the accent hue. */
+.sl-markdown-content a:not(:where(.not-content *)) {
+    color: var(--color-ink);
+    text-decoration-color: var(--color-line-2);
+    text-decoration-thickness: 1px;
+    text-underline-offset: 0.22em;
+    transition: color var(--dur-instant) var(--ease-out),
+        text-decoration-color var(--dur-instant) var(--ease-out);
+}
+
+.sl-markdown-content a:not(:where(.not-content *)):hover {
+    color: var(--color-accent);
+    text-decoration-color: var(--color-accent);
+}
+
+:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 2px;
+    border-radius: var(--radius-sm);
+}
+
+/* ── Chrome · N9 edge-aligned minimal ────────────────────────────────────
+   Starlight owns the header markup because it carries search and the theme
+   control. The restyle takes it from a bordered bar to an edge-aligned line
+   of type: hairline below, wordmark in the outlier face, nothing raised. */
+header.header {
+    border-bottom: var(--rule-hair) solid var(--color-line);
+    box-shadow: none;
+    backdrop-filter: blur(12px);
+    background: color-mix(in oklab, var(--color-paper) 88%, transparent);
+}
+
+.site-title {
+    font-family: var(--font-outlier);
+    font-size: var(--text-sm);
+    font-weight: 500;
+    letter-spacing: 0.01em;
+    color: var(--color-ink);
+}
+
+.sidebar-pane {
+    border-inline-end: var(--rule-hair) solid var(--color-line);
+    background: var(--color-paper);
+}
+
+/* Group headings are the sidebar's only label register. */
+.sidebar-content details > summary,
+.sidebar-content .group-label > span {
+    font-family: var(--font-outlier);
+    font-size: var(--text-2xs);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-label);
+    color: var(--color-ink-3);
+}
+
+.sidebar-content a {
+    font-size: var(--text-sm);
+    letter-spacing: var(--tracking-tight);
+    border-radius: var(--radius-sm);
+    transition: color var(--dur-instant) var(--ease-out),
+        background-color var(--dur-instant) var(--ease-out);
+}
+
+/* The current page is marked by weight and ink alone. Starlight's default adds
+   an inset accent stripe on the inline start edge; against the sublist's own
+   nesting hairline it reads as a shadow hanging off the item rather than as a
+   marker, so it is removed. Bold ink against muted siblings is unambiguous. */
+.sidebar-content a[aria-current='page'] {
+    color: var(--color-ink);
+    font-weight: 600;
+    background: transparent;
+    box-shadow: none;
+}
+
+/* ── Currency notice ─────────────────────────────────────────────
+   Starlight's default banner is an accent bar with inverted text, which reads
+   as an alert. This is a standing fact, not an alert, so it sits quietly.
+   Both custom properties must be set together: overriding the background
+   alone leaves inverted text on it. */
+:root {
+    --sl-color-banner-bg: var(--color-paper-2);
+    --sl-color-banner-text: var(--color-ink-3);
+}
+
+.sl-banner {
+    font-size: var(--text-xs);
+    letter-spacing: var(--tracking-tight);
+    box-shadow: none;
+    border-bottom: var(--rule-hair) solid var(--color-line);
+    padding: var(--space-xs) var(--space-md);
+}
+
+/* ── Tables ──────────────────────────────────────────────────────────────
+   Operational pages carry wide alert catalogues, station-settings matrices
+   and scenario sheets. They are ruled rather than boxed, and they scroll
+   rather than forcing the whole page horizontal.
+
+   `overflow-x` alone is not enough: without a floor on cell width the table
+   satisfies the container by crushing five prose columns to four characters
+   a line, which is unreadable and does not look like it scrolls. The floor
+   makes the table wider than the measure, so it scrolls and stays legible. */
+.sl-markdown-content table {
+    display: block;
+    overflow-x: auto;
+    max-width: 100%;
+    border-collapse: collapse;
+    font-size: var(--text-sm);
+    line-height: 1.55;
+    overscroll-behavior-x: contain;
+}
+
+.sl-markdown-content :is(th, td) {
+    border: 0;
+    border-bottom: var(--rule-hair) solid var(--color-line);
+    padding: var(--space-sm) var(--space-md) var(--space-sm) 0;
+    vertical-align: baseline;
+    min-width: 11rem;
+}
+
+/* A first column is usually a short key, so it does not need the floor. */
+.sl-markdown-content :is(th, td):first-child {
+    min-width: 7rem;
+}
+
+.sl-markdown-content th {
+    font-family: var(--font-outlier);
+    font-size: var(--text-2xs);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-label);
+    color: var(--color-ink-3);
+    border-bottom-color: var(--color-line-2);
+    white-space: nowrap;
+}
+
+/* ── Figures ─────────────────────────────────────────────────────────────
+   Diagrams and console captures get a hairline and a caption, never a drawn
+   browser frame: the reader already has real chrome around them. */
+.sl-markdown-content img {
+    border: var(--rule-hair) solid var(--color-line);
+    border-radius: var(--radius-md);
+    background: var(--color-paper-2);
+}
+
+.sl-markdown-content img + em,
+.sl-markdown-content p > em:only-child {
+    display: block;
+    margin-top: var(--space-xs);
+    font-style: normal;
+    font-size: var(--text-xs);
+    color: var(--color-ink-3);
+    letter-spacing: var(--tracking-tight);
+}
+
+.sl-markdown-content :is(blockquote) {
+    border-inline-start: var(--rule-hair) solid var(--color-line-2);
+    padding-inline-start: var(--space-lg);
+    font-style: normal;
+    color: var(--color-ink-2);
+}
+/* ── Code ────────────────────────────────────────────────────────────────
+   The renderer's default dresses a shell block as a macOS terminal window:
+   a title bar with three traffic-light dots. The reader already has a real
+   terminal and a real browser; redrawing either is the tell. The frame is
+   flattened to a ruled block with a label and the copy button kept, which is
+   the part that earns its place. */
+.expressive-code .frame {
+    box-shadow: none;
+}
+
+.expressive-code .frame.is-terminal .header {
+    background: var(--color-paper-2);
+    border-bottom: var(--rule-hair) solid var(--color-line);
+    height: auto;
+    padding: var(--space-2xs) var(--space-sm);
+}
+
+/* The dots are drawn as pseudo-elements on the header. */
+.expressive-code .frame.is-terminal .header::before,
+.expressive-code .frame.is-terminal .header::after {
+    display: none;
+}
+
+.expressive-code .frame.is-terminal .header .sr-only {
+    position: static;
+    width: auto;
+    height: auto;
+    clip: auto;
+    clip-path: none;
+    overflow: visible;
+    white-space: nowrap;
+    font-family: var(--font-outlier);
+    font-size: var(--text-2xs);
+    font-weight: 500;
+    text-transform: uppercase;
+    letter-spacing: var(--tracking-label);
+    color: var(--color-ink-3);
+}
+
+.expressive-code :is(pre, .frame.is-terminal pre) {
+    border: var(--rule-hair) solid var(--color-line);
+    border-radius: var(--radius-md);
+    background: var(--color-paper-2);
+}
+
+.expressive-code .frame.is-terminal pre {
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+}
+
+/* ══════════════════════════════════════════════════════════════════════════
+   The home page · macrostructure 13 Index-First
+   The home page is a list of destinations grouped by who reads them. One short
+   paragraph at the top, then rows. No display hero art, no cards, no icons:
+   the links themselves are the buttons.
+   ══════════════════════════════════════════════════════════════════════════ */
+
+/* The splash template renders the frontmatter title as its own `h1` panel
+   above the content. On the index that is a second, weaker headline saying
+   what the header already says, so the panel is suppressed and the page's own
+   opening line is the only `h1`.
+
+   The panel is matched by what it contains, not by position: the banner is
+   also a `div` child of `main`, so `:first-of-type` selects the banner and
+   silently matches nothing here. */
+main:has(.arn-index) > .content-panel:has(> .sl-container > h1#_top) {
+    display: none;
+}
+
+.arn-index {
+    --measure: 34rem;
+    max-width: 68rem;
+    margin-inline: auto;
+    padding: var(--space-xl) var(--space-lg) var(--space-4xl);
+}
+
+@media (min-width: 50rem) {
+    .arn-index {
+        padding-inline: var(--space-2xl);
+    }
+}
+
+/* Opening. Left-biased and deliberately not centred; the eye starts where
+   every row below it starts. */
+.arn-open {
+    display: grid;
+    gap: var(--space-lg);
+    padding-bottom: var(--space-xl);
+    border-bottom: var(--rule-hair) solid var(--color-line-2);
+}
+
+.arn-open h1 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-weight: 700;
+    font-size: var(--text-display);
+    line-height: 1.02;
+    letter-spacing: var(--tracking-display);
+    color: var(--color-ink);
+    max-width: 22ch;
+    overflow-wrap: anywhere;
+    min-width: 0;
+}
+
+.arn-open p {
+    margin: 0;
+    max-width: var(--measure);
+    font-size: var(--text-md);
+    line-height: 1.6;
+    color: var(--color-ink-2);
+}
+
+/* Two entry points, typographic rather than buttons: the index below is the
+   real navigation, so these do not compete with it. */
+.arn-jump {
+    display: flex;
+    flex-wrap: wrap;
+    gap: var(--space-md) var(--space-xl);
+    margin-top: var(--space-xs);
+}
+
+.arn-jump a {
+    display: inline-flex;
+    align-items: baseline;
+    gap: var(--space-xs);
+    white-space: nowrap;
+    font-size: var(--text-sm);
+    font-weight: 500;
+    color: var(--color-ink);
+    text-decoration: none;
+    border-bottom: 1px solid var(--color-accent);
+    padding-bottom: var(--space-3xs);
+    transition: color var(--dur-instant) var(--ease-out);
+}
+
+.arn-jump a:hover,
+.arn-jump a:active {
+    color: var(--color-accent);
+}
+
+.arn-jump a:active {
+    border-bottom-color: var(--color-ink);
+}
+
+/* The arrow is an affordance marker, not a label, so it stays in the body
+   face: the outlier is reserved for code and the small-caps label register. */
+.arn-jump a span {
+    font-size: var(--text-xs);
+    color: var(--color-ink-3);
+}
+
+/* A group is a narrow label column beside its rows on wide screens, stacked
+   below 60rem. The asymmetry is the layout's primary axis: labels hold the
+   left, content takes the width. */
+.arn-group {
+    display: grid;
+    gap: var(--space-lg);
+    padding-block: var(--space-xl) var(--space-2xl);
+    border-bottom: var(--rule-hair) solid var(--color-line);
+}
+
+.arn-group:last-of-type,
+.arn-group:has(+ .arn-close) {
+    border-bottom: 0;
+}
+
+@media (min-width: 60rem) {
+    .arn-group {
+        grid-template-columns: 15rem minmax(0, 1fr);
+        gap: var(--space-2xl);
+    }
+}
+
+.arn-group__label {
+    display: grid;
+    gap: var(--space-xs);
+    align-content: start;
+}
+
+.arn-group__label h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--text-lg);
+    font-weight: 700;
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-ink);
+    overflow-wrap: anywhere;
+    min-width: 0;
+}
+
+.arn-group__label p {
+    margin: 0;
+    font-size: var(--text-xs);
+    line-height: 1.55;
+    color: var(--color-ink-3);
+    max-width: 26ch;
+}
+
+.arn-rows {
+    display: grid;
+}
+
+/* One row, one destination. The whole row is the target; the title carries
+   the accent on hover and the arrow moves, so there are two signals and
+   neither is a scale transform. */
+.arn-row {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr) auto;
+    align-items: baseline;
+    gap: var(--space-md);
+    padding-block: var(--space-md);
+    border-top: var(--rule-hair) solid var(--color-line);
+    text-decoration: none;
+    color: inherit;
+}
+
+.arn-rows .arn-row:first-child {
+    border-top: 0;
+    padding-top: 0;
+}
+
+.arn-row__title {
+    font-size: var(--text-base);
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-ink);
+    transition: color var(--dur-instant) var(--ease-out);
+}
+
+.arn-row__note {
+    display: block;
+    margin-top: var(--space-3xs);
+    font-size: var(--text-sm);
+    font-weight: 400;
+    line-height: 1.5;
+    color: var(--color-ink-3);
+    max-width: 52ch;
+}
+
+.arn-row__go {
+    font-size: var(--text-xs);
+    /* An affordance marker still has to be seen. This was --color-line-2, a
+       token for rules rather than type, which left the arrow near-invisible
+       against the paper; --color-ink-3 is the same step as the row note. */
+    color: var(--color-ink-3);
+    transition: transform var(--dur-short) var(--ease-out),
+        color var(--dur-instant) var(--ease-out);
+}
+
+.arn-row:hover .arn-row__title,
+.arn-row:active .arn-row__title {
+    color: var(--color-accent);
+}
+
+.arn-row:hover .arn-row__go,
+.arn-row:active .arn-row__go {
+    color: var(--color-accent);
+    transform: translateX(3px);
+}
+
+/* Pressed state: the row dims rather than moving, so a tap does not shift the
+   text under the finger. */
+.arn-row:active {
+    background: var(--color-paper-2);
+}
+
+.arn-row:focus-visible {
+    outline: 2px solid var(--color-focus);
+    outline-offset: 4px;
+}
+
+/* Closing note. Not a call to action: a statement of where the offline copy
+   lives, which is the one thing a reader needs that is not a page. */
+.arn-close {
+    margin-top: var(--space-2xl);
+    padding-top: var(--space-lg);
+    border-top: var(--rule-hair) solid var(--color-line-2);
+    display: grid;
+    gap: var(--space-xs);
+}
+
+/* The measure belongs to the prose, not the container: with max-width on the
+   container its hairline stopped short of every rule above it, which read as
+   a mistake rather than a measure. */
+.arn-close > * {
+    max-width: 46rem;
+}
+
+.arn-close h2 {
+    margin: 0;
+    font-family: var(--font-display);
+    font-size: var(--text-base);
+    font-weight: 600;
+    letter-spacing: var(--tracking-tight);
+    color: var(--color-ink);
+}
+
+.arn-close p {
+    margin: 0;
+    font-size: var(--text-sm);
+    line-height: 1.6;
+    color: var(--color-ink-3);
+}
+
+.arn-close code {
+    font-family: var(--font-outlier);
+    font-size: 0.92em;
+    color: var(--color-ink-2);
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        transition-duration: 1ms !important;
+        animation-duration: 1ms !important;
+    }
+}
+
+/* ── Contents rail ───────────────────────────────────────────────────────
+   Starlight sizes both sidebars from --sl-sidebar-width, but the two do
+   different jobs: the left nav carries full page names across six groups and
+   needs its width, while "On this page" is a short scan list that can wrap.
+   So the right rail is narrowed on its own and the reclaimed space is handed
+   to the prose measure rather than left as gutter. Only applies at the width
+   where Starlight actually shows the rail as a column. */
+@media (min-width: 72rem) {
+    .right-sidebar-container {
+        width: 17rem;
+        flex: 0 0 17rem;
+        /* Sit the rail against the right edge rather than immediately after a
+           capped prose column, which otherwise strands the slack on the far
+           right. Starlight's panel is position:fixed but tracks this box, so
+           moving the container moves the visible rail with it. */
+        margin-inline-start: auto;
+        margin-inline-end: 1.5rem;
+    }
+
+    /* Without this the rail just gains gutter: the panel is capped by
+       --sl-content-width, so the measure has to grow by the same amount. */
+    :root {
+        --sl-content-width: 51rem;
+    }
+}

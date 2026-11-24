@@ -1,0 +1,21 @@
+{
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 9101,
+        "Id": 280001,
+        "DateStarted": "2026-08-18T00:00:00Z",
+        "EstimatedCompletionDate": "2026-08-25T00:00:00Z",
+        "WorkStatus": "In progress",
+        "WorkType": "Road resurfacing",
+        "Description": "Night works with changed traffic conditions.",
+        "TrafficImpact": "Reduced speed limit",
+        "Road": "Tonkin Hwy",
+        "Suburb": "Welshpool",
+        "EntryDate": "18/08/2026 10:00:00",
+        "UpdateDateTime": "19/08/2026 08:00:00"
+      },
+      "geometry": { "x": 115.9500, "y": -31.9900 }
+    }
+  ]
+}

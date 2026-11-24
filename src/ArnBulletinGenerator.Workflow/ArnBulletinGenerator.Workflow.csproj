@@ -1,0 +1,39 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Logging.Abstractions" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!--
+      BriefDivision is internal because it is a routing rule, not a contract: nothing outside the
+      workflow should reach past the stages and decide which desk owns an event. Its decisions are
+      still the ones a reader would notice first if they were wrong - the same jam described twice,
+      a closure read after a two-minute delay - so the tests see it rather than the type being
+      widened to public purely to make it testable.
+    -->
+    <InternalsVisibleTo Include="ArnBulletinGenerator.Workflow.Tests" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="../ArnBulletinGenerator.Domain/ArnBulletinGenerator.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Keep workflow assets beside the assembly in both test/build output and publish output.
+         PromptLibrary resolves from that application directory, never from the caller's cwd. -->
+    <Content Include="Prompts/**/*.md">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="Schemas/**/*.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+</Project>

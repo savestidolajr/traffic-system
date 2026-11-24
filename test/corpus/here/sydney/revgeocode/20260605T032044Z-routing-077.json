@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032044Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:46.5171466+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.82856,151.08718\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Walker St, Rhodes NSW 2138, Australia",
+          "id": "here:af:streetsection:rL18zXmFu0eynHj6LkLppC",
+          "resultType": "street",
+          "address": {
+            "label": "Walker St, Rhodes NSW 2138, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Rhodes",
+            "street": "Walker St",
+            "postalCode": "2138"
+          },
+          "position": {
+            "lat": -33.82856,
+            "lng": 151.08718
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.08641,
+            "south": -33.83121,
+            "east": 151.0888,
+            "north": -33.82397
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

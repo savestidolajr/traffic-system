@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.2902617+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69126,144.72932\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "9 Sunningdale Dr, Hillside VIC 3037, Australia",
+          "id": "here:af:streetsection:Chjz7XpO82cxVfK.FalQdC:CggIBCDpyLyuARABGgE5",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "9 Sunningdale Dr, Hillside VIC 3037, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Hillside",
+            "street": "Sunningdale Dr",
+            "postalCode": "3037",
+            "houseNumber": "9"
+          },
+          "position": {
+            "lat": -37.69142,
+            "lng": 144.72933
+          },
+          "access": [
+            {
+              "lat": -37.69126,
+              "lng": 144.72932
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 144.72743,
+            "south": -37.69209,
+            "east": 144.73029,
+            "north": -37.69115
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

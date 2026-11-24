@@ -1,0 +1,185 @@
+{
+  "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+  "KeyVaultUri": "<your-key-vault-uri>",
+
+  "Providers": {
+    "OutputProvider": "Console",
+    "ExternalProviderMode": "Real"
+  },
+
+  "Broadcast": {
+    "MaxGenerationRetries": 3,
+    "MaxSynthesisAttempts": 3,
+    "MaxReviewRefineRetries": 1,
+    "ScheduleLeadTimeMinutes": 15,
+    "FallbackDeadlineMinutes": 3,
+    "TrafficDataMaxAgeMinutes": 10,
+    "WordsPerMinute": 150,
+    "MaxWordCountAdjustmentPercent": 30,
+    "SyllablesPerSecond": 5.8,
+    "DefaultVoiceId": "oKDz3nEzNfwKIVvUwPs0",
+    "DefaultVoiceProvider": "ElevenLabs",
+    "DefaultLanguage": "en"
+  },
+
+  "ModelSelection": {
+    "BroadcastModel": "eleven_v3",
+    "QualityModel": "eleven_turbo_v2_5",
+    "FallbackModel": "eleven_multilingual_v2"
+  },
+
+  "SpeechDuration": {
+    "FineTuningThresholdSeconds": 0.01,
+    "MaxSafeUnderrunRetimeSeconds": 3.0,
+    "MaxSafeOverrunTrimSeconds": 3.0,
+    "EffectiveToleranceSeconds": 0.15,
+    "CandidateToleranceSeconds": 2.5,
+    "ExactHitThresholdSeconds": 0.05
+  },
+
+  "IncidentState": {
+    "GenericLocations": ["Unidentified Road", "Unknown Location"],
+    "LengthChangeToleranceMeters": 50,
+    "DefaultSource": "HERE"
+  },
+
+  "Storage": {
+    "AccountName": "<your-storage-account-name>",
+    "ContainerName": "broadcasts"
+  },
+
+  "AuditExport": {
+    "Enabled": true,
+    "ContainerName": "audit-exports"
+  },
+
+  "Queues": {
+    "BroadcastQueueName": "broadcast-queue",
+    "RegenerationQueueName": "regeneration-queue"
+  },
+
+  "Here": {
+    "ApiKey": "<your-here-api-key>",
+    "MapApiKey": "<separate-domain-restricted-here-js-key-for-the-browser-map>",
+    "TrafficBaseUrl": "https://data.traffic.hereapi.com/v7",
+    "GeocodingBaseUrl": "https://geocode.search.hereapi.com/v1",
+    "RoutingBaseUrl": "https://router.hereapi.com/v8",
+    "IncidentsPath": "incidents",
+    "GeocodePath": "geocode",
+    "ReverseGeocodePath": "revgeocode",
+    "BatchReverseGeocodeUrl": "https://multi-revgeocode.search.hereapi.com/v1/multi-revgeocode",
+    "UseBatchGeocoding": false,
+    "MaxParallelReverseGeocode": 5,
+    "AllowedIncidentTypes": [
+      "accident", "congestion", "construction", "disabledVehicle",
+      "laneRestriction", "roadClosure", "roadHazard", "plannedEvent"
+    ]
+  },
+
+  "MonitoredRoutes": {
+    "Enabled": true,
+    "Markets": {
+      "sydney": [
+        {
+          "Name": "M4 Parramatta to Sydney CBD",
+          "Origin": { "Lat": -33.8179, "Lng": 150.9999 },
+          "Destination": { "Lat": -33.8688, "Lng": 151.2093 }
+        }
+      ],
+      "melbourne": [
+        {
+          "Name": "Monash Freeway to Melbourne CBD",
+          "Origin": { "Lat": -37.9105, "Lng": 145.1648 },
+          "Destination": { "Lat": -37.8136, "Lng": 144.9631 }
+        }
+      ],
+      "goldcoast": [
+        {
+          "Name": "Pacific Motorway to Surfers Paradise",
+          "Origin": { "Lat": -28.0836, "Lng": 153.4072 },
+          "Destination": { "Lat": -27.9659, "Lng": 153.4122 }
+        }
+      ]
+    }
+  },
+
+  "AiSettings": {
+    "AzureAI": {
+      "Endpoint": "<your-azure-openai-endpoint>",
+      "Model": "<your-azure-openai-model-deployment>",
+      "ApiKey": "<your-azure-openai-api-key>",
+      "TimeoutSeconds": 120
+    },
+    "ElevenLabs": {
+      "ApiKey": "<your-elevenlabs-api-key>",
+      "ModelId": "eleven_v3",
+      "LanguageCode": "en",
+      "PronunciationDictionaryEnabled": false,
+      "PronunciationDictionaryId": "",
+      "PronunciationDictionaryVersionId": "",
+      "BaseUrl": "https://api.elevenlabs.io/v1/text-to-speech",
+      "OutputFormat": "pcm_44100",
+      "MinSpeed": 0.7,
+      "MaxSpeed": 1.2,
+      "TimeoutSeconds": 120,
+      "Seed": null,
+      "UseTimestampsEndpoint": true,
+      "VoicesEndpoint": "voices",
+      "TextSettings": {
+        "ApplyTextNormalization": true
+      },
+      "VoiceSettings": {
+        "Stability": 0.50,
+        "SimilarityBoost": 0.90,
+        "Style": 0.0,
+        "UseSpeakerBoost": true,
+        "Speed": 1.0
+      }
+    }
+  },
+
+  "AzureSearch": {
+    "Enabled": false,
+    "Endpoint": "<your-azure-search-endpoint>",
+    "ApiKey": "<your-azure-search-api-key>",
+    "IndexName": "traffic-transcripts",
+    "SemanticConfigName": "traffic-semantic-config",
+    "MaxStyleExamples": 3
+  },
+
+  "Webhook": {
+    "Enabled": false,
+    "EndpointUrl": "<your-webhook-endpoint-url (Power Automate Workflows)>",
+    "OpsConsoleBaseUrl": "<your-ops-console-base-url>",
+    "MaxRetries": 2,
+    "TimeoutSeconds": 15
+  },
+
+  "Zetta": {
+    "Enabled": false,
+    "DropAccountName": "",
+    "DropContainerName": "informationbulletins",
+    "DropFileShareName": "informationbulletins",
+    "ServerAddress": "",
+    "ShareName": "!ZETTA_IMPORTS",
+    "SubFolder": "Traffic",
+    "Domain": "",
+    "Username": "",
+    "Password": "",
+    "FileNamePattern": "{MarketId}_TRAIN_TRAFF",
+    "MarketCodes": {
+      "sydney": "SYD",
+      "melbourne": "MEL",
+      "brisbane": "BNE",
+      "adelaide": "ADL",
+      "perth": "PER",
+      "goldcoast": "GLD"
+    }
+  },
+
+  "ContentSafety": {
+    "BannedWords": [],
+    "AllowedPhrases": [],
+    "Substitutions": {}
+  }
+}

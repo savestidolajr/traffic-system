@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:33.6851971+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.79619,145.11865\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Elgar Rd, Doncaster VIC 3108, Australia",
+          "id": "here:af:streetsection:rHW4KE6Umsgql9Q7nOgkAB",
+          "resultType": "street",
+          "address": {
+            "label": "Elgar Rd, Doncaster VIC 3108, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Doncaster",
+            "street": "Elgar Rd",
+            "postalCode": "3108"
+          },
+          "position": {
+            "lat": -37.79619,
+            "lng": 145.11865
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 145.11838,
+            "south": -37.79648,
+            "east": 145.1237,
+            "north": -37.78748
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

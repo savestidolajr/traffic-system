@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.2358795+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.83455,144.96765\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "21 Stead St, South Melbourne VIC 3205, Australia",
+          "id": "here:af:streetsection:eEFaLJ56V1pMoNk20ePq0C:CggIBCC27t-gARABGgIyMQ",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "21 Stead St, South Melbourne VIC 3205, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "South Melbourne",
+            "street": "Stead St",
+            "postalCode": "3205",
+            "houseNumber": "21"
+          },
+          "position": {
+            "lat": -37.83456,
+            "lng": 144.96786
+          },
+          "access": [
+            {
+              "lat": -37.83463,
+              "lng": 144.96773
+            }
+          ],
+          "distance": 11,
+          "mapView": {
+            "west": 144.96765,
+            "south": -37.83651,
+            "east": 144.96956,
+            "north": -37.83455
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

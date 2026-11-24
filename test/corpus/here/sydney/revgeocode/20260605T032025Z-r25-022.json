@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.477193+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.82593,151.21415\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Warringah Fwy, Cammeray NSW 2062, Australia",
+          "id": "here:af:streetsection:y0KqOMOJaOOUfZnD9dHOiD",
+          "resultType": "street",
+          "address": {
+            "label": "Warringah Fwy, Cammeray NSW 2062, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Cammeray",
+            "street": "Warringah Fwy",
+            "postalCode": "2062"
+          },
+          "position": {
+            "lat": -33.82619,
+            "lng": 151.21371
+          },
+          "distance": 50,
+          "mapView": {
+            "west": 151.21041,
+            "south": -33.82972,
+            "east": 151.21477,
+            "north": -33.8244
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

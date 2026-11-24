@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032047Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:48.4285533+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.88329,144.719\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Hacketts Rd, Point Cook VIC 3030, Australia",
+          "id": "here:af:streetsection:12H8fEplf.DrP9e31kQGPB",
+          "resultType": "street",
+          "address": {
+            "label": "Hacketts Rd, Point Cook VIC 3030, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Point Cook",
+            "street": "Hacketts Rd",
+            "postalCode": "3030"
+          },
+          "position": {
+            "lat": -37.88329,
+            "lng": 144.719
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 144.71356,
+            "south": -37.91487,
+            "east": 144.71927,
+            "north": -37.87868
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

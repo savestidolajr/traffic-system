@@ -1,0 +1,55 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032040Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:40.7739959+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.95709,115.87954\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "15 Waterloo Cres, East Perth WA 6004, Australia",
+          "id": "here:af:streetsection:KRuHuT1UrOdDlFFPED85IA:EAIaAjE1",
+          "resultType": "houseNumber",
+          "houseNumberType": "interpolated",
+          "address": {
+            "label": "15 Waterloo Cres, East Perth WA 6004, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "East Perth",
+            "street": "Waterloo Cres",
+            "postalCode": "6004",
+            "houseNumber": "15"
+          },
+          "position": {
+            "lat": -31.95708,
+            "lng": 115.87976
+          },
+          "access": [
+            {
+              "lat": -31.95699,
+              "lng": 115.87964
+            }
+          ],
+          "distance": 15,
+          "mapView": {
+            "west": 115.8762,
+            "south": -31.95765,
+            "east": 115.88017,
+            "north": -31.95512
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

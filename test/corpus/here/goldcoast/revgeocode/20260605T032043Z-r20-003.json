@@ -1,0 +1,47 @@
+{
+  "Market": "goldcoast",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032043Z-r20",
+  "CapturedAtUtc": "2026-06-05T03:20:43.6080682+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.95091,153.34253\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Smith St, Gaven QLD 4211, Australia",
+          "id": "here:af:streetsection:LZ5G8PRuy-eIvS5n3Eg9jB",
+          "resultType": "street",
+          "address": {
+            "label": "Smith St, Gaven QLD 4211, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Gold Coast",
+            "district": "Gaven",
+            "street": "Smith St",
+            "postalCode": "4211"
+          },
+          "position": {
+            "lat": -27.95091,
+            "lng": 153.34253
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 153.32566,
+            "south": -27.95583,
+            "east": 153.34253,
+            "north": -27.94667
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

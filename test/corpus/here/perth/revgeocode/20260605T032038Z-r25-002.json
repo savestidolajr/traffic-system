@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:38.8639224+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.86168,115.94632\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Reid Hwy, Beechboro WA 6063, Australia",
+          "id": "here:af:streetsection:4f3j30cKjT7hh6-k9sfIcA",
+          "resultType": "street",
+          "address": {
+            "label": "Reid Hwy, Beechboro WA 6063, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Beechboro",
+            "street": "Reid Hwy",
+            "postalCode": "6063"
+          },
+          "position": {
+            "lat": -31.86168,
+            "lng": 115.94632
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.92595,
+            "south": -31.86231,
+            "east": 115.95266,
+            "north": -31.86051
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

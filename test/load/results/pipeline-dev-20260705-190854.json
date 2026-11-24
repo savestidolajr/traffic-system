@@ -1,0 +1,22 @@
+{
+  "startedUtc": "2026-07-05T09:08:54Z",
+  "baseUrl": "https://ibp-aue-dev-fna-app01.azurewebsites.net",
+  "requested": 1,
+  "succeeded": 1,
+  "failed": [],
+  "latencySeconds": {
+    "p50": 70.9,
+    "p95": 70.9,
+    "max": 70.9
+  },
+  "sloGenerationP99Under240s": true,
+  "results": [
+    {
+      "market": "Sydney",
+      "jobId": "0ff5ac6fe45045e3bf7b5fe0753675e4",
+      "ok": true,
+      "finalStatus": "WAITING_APPROVAL",
+      "elapsedSeconds": 70.9
+    }
+  ]
+}

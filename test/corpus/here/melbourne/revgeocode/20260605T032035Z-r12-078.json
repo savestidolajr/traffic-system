@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.3447421+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.80227,144.94941\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Dangerfield Ln, North Melbourne VIC 3051, Australia",
+          "id": "here:af:streetsection:Hzy7gD8SQWfyzTqkd9ItmA",
+          "resultType": "street",
+          "address": {
+            "label": "Dangerfield Ln, North Melbourne VIC 3051, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "North Melbourne",
+            "street": "Dangerfield Ln",
+            "postalCode": "3051"
+          },
+          "position": {
+            "lat": -37.80227,
+            "lng": 144.94941
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 144.94871,
+            "south": -37.80248,
+            "east": 144.94941,
+            "north": -37.80227
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:28.7643939+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.85635,151.20746\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "33 Lower Fort St, Dawes Point NSW 2000, Australia",
+          "id": "here:af:streetsection:-uq6MECCyrzN9VpQ8S9cNB:CggIBCCf_fqdARABGgIzMw",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "33 Lower Fort St, Dawes Point NSW 2000, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Dawes Point",
+            "street": "Lower Fort St",
+            "postalCode": "2000",
+            "houseNumber": "33"
+          },
+          "position": {
+            "lat": -33.85623,
+            "lng": 151.20733
+          },
+          "access": [
+            {
+              "lat": -33.85635,
+              "lng": 151.20746
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 151.20527,
+            "south": -33.85856,
+            "east": 151.20855,
+            "north": -33.85425
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

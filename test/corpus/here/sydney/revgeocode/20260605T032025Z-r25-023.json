@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.4771988+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.78238,151.11739\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Mahogany Ave, Macquarie Park NSW 2113, Australia",
+          "id": "here:af:streetsection:FHwMIkzuLPDGuwmEVN5pwB",
+          "resultType": "street",
+          "address": {
+            "label": "Mahogany Ave, Macquarie Park NSW 2113, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Macquarie Park",
+            "street": "Mahogany Ave",
+            "postalCode": "2113"
+          },
+          "position": {
+            "lat": -33.78231,
+            "lng": 151.11747
+          },
+          "distance": 10,
+          "mapView": {
+            "west": 151.11503,
+            "south": -33.78374,
+            "east": 151.11967,
+            "north": -33.78018
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

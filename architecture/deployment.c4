@@ -1,0 +1,62 @@
+// ══════════════════════════════════════════════════════════════
+// Deployment topology — Information Bulletin Platform (IBP)
+// Dedicated IBP subscription, separated from the ARN Servers
+// network. Per-environment (dev / test / prod).
+// ══════════════════════════════════════════════════════════════
+
+deployment {
+
+  // ── Azure platform subscription (dev / test / prod) ──
+  environment platformSub "Platform Subscription" {
+    description "IBP-AUE-{ENV}-RSG-* resource groups (dev / test / prod); Function App plans declare prod min/default 2 and non-prod min/default 1 (max 6), while generation-only autoscale remains opt-in pending Azure custom-metric support"
+
+    region aue "Azure Australia East" {
+
+      // Public PaaS frontend — not inside the VNet
+      dashboardNode = instanceOf arn.dashboard
+
+      vnet platformVnet "Platform VNet" {
+      technology "test 10.241.91.0/24 · prod 10.61.0.0/24"
+
+        // Function App egress path
+        subnet snetFunc "Compute Subnet" {
+          technology "snet-func · delegated to Microsoft.Web"
+          funcNode = instanceOf arn.functions
+        }
+
+        // Private endpoint NICs for the data services
+        subnet snetPe "Data Subnet" {
+          technology "snet-pe · private endpoints + DNS zones"
+          storageNode = instanceOf arn.storageAccount
+          keyVaultNode = instanceOf arn.keyVault
+          aiNode = instanceOf arn.aiServices
+          // The ARN-built playout drop account is reached over a file-subresource
+          // private endpoint in THIS VNet (prod: IBP-AUE-PRD-PEP-APP07 +
+          // privatelink.file zone, added 2026-07-30 — prod has no peering to the
+          // test VNet where ARN's own endpoints live).
+          playoutDropNode = instanceOf arn.playoutDrop
+        }
+
+      }
+
+      // PaaS reached over the platform's outbound path
+      logicNode = instanceOf arn.logicApp
+      monitoringNode = instanceOf arn.appInsights
+    }
+  }
+
+  // ── ARN internal network (separate VNet) ──
+  onprem arnServers "ARN Servers Network" {
+    description "Reached from test via the ARN hub network; prod hub link pending"
+    zettaNode = instanceOf zetta
+  }
+
+  // ── Public internet / SaaS + identity ──
+  internet saas "Internet / SaaS" {
+    description "Public endpoints reached over outbound HTTPS"
+    hereNode = instanceOf here
+    elevenNode = instanceOf elevenlabs
+    teamsNode = instanceOf teams
+    entraNode = instanceOf entra
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032050Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:51.3199343+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-35.05063,138.8298\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Princes Hwy, Hahndorf SA 5245, Australia",
+          "id": "here:af:streetsection:kLd6cDobjLmxrcv-eR2VhB",
+          "resultType": "street",
+          "address": {
+            "label": "Princes Hwy, Hahndorf SA 5245, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "SA",
+            "state": "South Australia",
+            "city": "Hahndorf",
+            "district": "Hahndorf",
+            "street": "Princes Hwy",
+            "postalCode": "5245"
+          },
+          "position": {
+            "lat": -35.05063,
+            "lng": 138.8298
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 138.78984,
+            "south": -35.05098,
+            "east": 138.83011,
+            "north": -35.02527
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

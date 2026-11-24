@@ -1,0 +1,266 @@
+{
+  "version": "Notebook/1.0",
+  "items": [
+    {
+      "type": 1,
+      "content": {
+        "json": "# Operations Overview\nSingle-pane operational view of the Information Bulletin Platform: bulletin pipeline health, delivery to playout (Zetta), queues, external dependencies, availability, errors, and cost. Use the time range selector to widen or narrow the window."
+      },
+      "name": "title"
+    },
+    {
+      "type": 9,
+      "content": {
+        "version": "KqlParameterItem/1.0",
+        "parameters": [
+          {
+            "id": "timerange",
+            "version": "KqlParameterItem/1.0",
+            "name": "TimeRange",
+            "label": "Time range",
+            "type": 4,
+            "isRequired": true,
+            "value": { "durationMs": 86400000 },
+            "typeSettings": {
+              "selectableValues": [
+                { "durationMs": 3600000 },
+                { "durationMs": 14400000 },
+                { "durationMs": 43200000 },
+                { "durationMs": 86400000 },
+                { "durationMs": 259200000 },
+                { "durationMs": 604800000 }
+              ]
+            }
+          }
+        ]
+      },
+      "name": "parameters"
+    },
+    {
+      "type": 1,
+      "content": { "json": "## Bulletin pipeline health" },
+      "name": "head-pipeline"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "customEvents | where name == 'broadcast.bulletin.emitted' | extend Outcome = iff(tostring(customDimensions.success) == 'true', 'Succeeded', 'Failed') | summarize Bulletins = count() by Outcome, bin(timestamp, 30m)",
+        "size": 0,
+        "title": "Bulletins emitted over time",
+        "timeContextFromParameter": "TimeRange",
+        "queryType": 0,
+        "resourceType": "microsoft.insights/components",
+        "visualization": "timechart"
+      },
+      "customWidth": "50",
+      "name": "q-bulletins-timeline"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "customEvents | where name == 'broadcast.bulletin.emitted' | extend market = tostring(customDimensions.market), success = tostring(customDimensions.success) | summarize Total = count(), Succeeded = countif(success == 'true'), Failed = countif(success != 'true') by Market = market | extend ['Success %'] = round(100.0 * Succeeded / Total, 1) | order by Total desc",
+        "size": 0,
+        "title": "Bulletins by market",
+        "timeContextFromParameter": "TimeRange",
+        "queryType": 0,
+        "resourceType": "microsoft.insights/components",
+        "visualization": "table"
+      },
+      "customWidth": "50",
+      "name": "q-bulletins-by-market"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "customMetrics | where name startswith 'broadcast.stage.' and name endswith '.duration_seconds' | extend Stage = replace_string(replace_string(name, 'broadcast.stage.', ''), '.duration_seconds', ''), duration = valueSum / valueCount | summarize ['P50 s'] = round(percentile(duration, 50), 1), ['P95 s'] = round(percentile(duration, 95), 1), ['P99 s'] = round(percentile(duration, 99), 1), Bulletins = sum(valueCount) by Stage | order by ['P95 s'] desc",
+        "size": 0,
+        "title": "Pipeline stage latency (P50 / P95 / P99 seconds)",
+        "timeContextFromParameter": "TimeRange",
+        "queryType": 0,
+        "resourceType": "microsoft.insights/components",
+        "visualization": "table"
+      },
+      "customWidth": "50",
+      "name": "q-stage-latency"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "customEvents | where name == 'broadcast.fallback.activated' | summarize Count = count() by Reason = tostring(customDimensions.reason) | order by Count desc",
+        "size": 0,
+        "title": "Fallback activations by reason",
+        "timeContextFromParameter": "TimeRange",
+        "queryType": 0,
+        "resourceType": "microsoft.insights/components",
+        "visualization": "barchart"
+      },
+      "customWidth": "50",
+      "name": "q-fallbacks"
+    },
+    {
+      "type": 1,
+      "content": { "json": "## Delivery to playout (Zetta)" },
+      "name": "head-delivery"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "customEvents | where name in ('zetta.delivery.success', 'zetta.delivery.failure') | extend Result = iff(name == 'zetta.delivery.success', 'Delivered', 'Failed') | summarize Count = count() by Result, bin(timestamp, 30m)",
+        "size": 0,
+        "title": "Zetta delivery outcomes over time",
+        "timeContextFromParameter": "TimeRange",
+        "queryType": 0,
+        "resourceType": "microsoft.insights/components",
+        "visualization": "timechart"
+      },
+      "customWidth": "50",
+      "name": "q-zetta-timeline"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "customEvents | where name == 'zetta.delivery.failure' | summarize Failures = count() by Market = tostring(customDimensions.market), Reason = tostring(customDimensions.reason) | order by Failures desc",
+        "size": 0,
+        "title": "Zetta delivery failures (market / reason)",
+        "timeContextFromParameter": "TimeRange",
+        "queryType": 0,
+        "resourceType": "microsoft.insights/components",
+        "visualization": "table"
+      },
+      "customWidth": "50",
+      "name": "q-zetta-failures"
+    },
+    {
+      "type": 1,
+      "content": { "json": "## Queues" },
+      "name": "head-queues"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "customMetrics | where name == 'broadcast.queue.depth' | summarize Depth = max(value) by Queue = tostring(customDimensions.queue), bin(timestamp, 5m)",
+        "size": 0,
+        "title": "Queue depth over time (sampled every 5 min)",
+        "timeContextFromParameter": "TimeRange",
+        "queryType": 0,
+        "resourceType": "microsoft.insights/components",
+        "visualization": "timechart"
+      },
+      "name": "q-queue-depth"
+    },
+    {
+      "type": 1,
+      "content": { "json": "## External dependencies" },
+      "name": "head-deps"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "dependencies | where target has_any ('hereapi', 'elevenlabs', 'openai', 'cognitiveservices') | summarize Calls = count(), ['Success %'] = round(100.0 * countif(success == true) / count(), 1), ['Avg ms'] = round(avg(duration), 0), ['P95 ms'] = round(percentile(duration, 95), 0) by Target = target | order by Calls desc",
+        "size": 0,
+        "title": "Dependency health (HERE / ElevenLabs / Azure OpenAI)",
+        "timeContextFromParameter": "TimeRange",
+        "queryType": 0,
+        "resourceType": "microsoft.insights/components",
+        "visualization": "table"
+      },
+      "customWidth": "50",
+      "name": "q-deps"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "dependencies | where target has_any ('openai', 'cognitiveservices') | where resultCode == '429' | summarize Throttled = count() by bin(timestamp, 15m)",
+        "size": 0,
+        "title": "Azure OpenAI 429 throttling",
+        "timeContextFromParameter": "TimeRange",
+        "queryType": 0,
+        "resourceType": "microsoft.insights/components",
+        "visualization": "timechart"
+      },
+      "customWidth": "50",
+      "name": "q-throttling"
+    },
+    {
+      "type": 1,
+      "content": { "json": "## Availability & errors" },
+      "name": "head-avail"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "availabilityResults | summarize ['Availability %'] = round(100.0 * countif(success == true) / count(), 2) by name, bin(timestamp, 15m)",
+        "size": 0,
+        "title": "Health endpoint availability",
+        "timeContextFromParameter": "TimeRange",
+        "queryType": 0,
+        "resourceType": "microsoft.insights/components",
+        "visualization": "timechart"
+      },
+      "customWidth": "50",
+      "name": "q-availability"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "exceptions | summarize Count = count(), ['Last seen'] = max(timestamp) by Problem = problemId, Type = type | order by Count desc | take 20",
+        "size": 0,
+        "title": "Top exceptions",
+        "timeContextFromParameter": "TimeRange",
+        "queryType": 0,
+        "resourceType": "microsoft.insights/components",
+        "visualization": "table"
+      },
+      "customWidth": "50",
+      "name": "q-exceptions"
+    },
+    {
+      "type": 1,
+      "content": { "json": "## Cost (TTS usage)" },
+      "name": "head-cost"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "customMetrics | where name == 'broadcast.tts.estimated_cost_usd' | summarize ['Estimated USD'] = round(sum(value), 2) by Market = tostring(customDimensions.market) | order by ['Estimated USD'] desc",
+        "size": 0,
+        "title": "Estimated TTS cost (USD) by market",
+        "timeContextFromParameter": "TimeRange",
+        "queryType": 0,
+        "resourceType": "microsoft.insights/components",
+        "visualization": "barchart"
+      },
+      "customWidth": "50",
+      "name": "q-cost"
+    },
+    {
+      "type": 3,
+      "content": {
+        "version": "KqlItem/1.0",
+        "query": "customMetrics | where name == 'broadcast.tts.characters' | summarize Characters = sum(value) by Market = tostring(customDimensions.market) | order by Characters desc",
+        "size": 0,
+        "title": "TTS characters synthesised by market",
+        "timeContextFromParameter": "TimeRange",
+        "queryType": 0,
+        "resourceType": "microsoft.insights/components",
+        "visualization": "table"
+      },
+      "customWidth": "50",
+      "name": "q-tts-chars"
+    }
+  ],
+  "fallbackResourceIds": [],
+  "$schema": "https://github.com/Microsoft/Application-Insights-Workbooks/blob/master/schema/workbook.json"
+}

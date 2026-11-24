@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.3447422+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.801,144.98702\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Wellington St, Collingwood VIC 3066, Australia",
+          "id": "here:af:streetsection:bfkUg6j84AuGa9i572s13D",
+          "resultType": "street",
+          "address": {
+            "label": "Wellington St, Collingwood VIC 3066, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Collingwood",
+            "street": "Wellington St",
+            "postalCode": "3066"
+          },
+          "position": {
+            "lat": -37.801,
+            "lng": 144.98702
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 144.98566,
+            "south": -37.80905,
+            "east": 144.98818,
+            "north": -37.79436
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

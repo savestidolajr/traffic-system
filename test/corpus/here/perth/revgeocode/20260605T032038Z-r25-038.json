@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.6839164+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.07131,115.84888\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Robin Warren Dr, Murdoch WA 6150, Australia",
+          "id": "here:af:streetsection:iHcyliTScbALgn2V06OsmC",
+          "resultType": "street",
+          "address": {
+            "label": "Robin Warren Dr, Murdoch WA 6150, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Murdoch",
+            "street": "Robin Warren Dr",
+            "postalCode": "6150"
+          },
+          "position": {
+            "lat": -32.07131,
+            "lng": 115.84888
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.84299,
+            "south": -32.07131,
+            "east": 115.84888,
+            "north": -32.07114
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

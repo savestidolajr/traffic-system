@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.4530746+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.73827,144.93806\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "558 Bell St, Pascoe Vale South VIC 3044, Australia",
+          "id": "here:af:streetsection:gSfchxowNkik7Cc.ntJGoA:CggIBCDUpOigARABGgM1NTg",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "558 Bell St, Pascoe Vale South VIC 3044, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Pascoe Vale South",
+            "street": "Bell St",
+            "postalCode": "3044",
+            "houseNumber": "558"
+          },
+          "position": {
+            "lat": -37.73806,
+            "lng": 144.93807
+          },
+          "access": [
+            {
+              "lat": -37.73826,
+              "lng": 144.93802
+            }
+          ],
+          "distance": 4,
+          "mapView": {
+            "west": 144.93234,
+            "south": -37.73958,
+            "east": 144.94925,
+            "north": -37.7375
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

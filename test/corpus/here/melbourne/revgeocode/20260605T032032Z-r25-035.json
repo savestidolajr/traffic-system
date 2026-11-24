@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.2902622+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.97461,145.10642\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Chifley Dr, Moorabbin Airport VIC 3194, Australia",
+          "id": "here:af:streetsection:GMvLDNT17L4ZJvXz4HzklA",
+          "resultType": "street",
+          "address": {
+            "label": "Chifley Dr, Moorabbin Airport VIC 3194, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Moorabbin Airport",
+            "street": "Chifley Dr",
+            "postalCode": "3194"
+          },
+          "position": {
+            "lat": -37.97461,
+            "lng": 145.10642
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 145.10609,
+            "south": -37.98002,
+            "east": 145.1106,
+            "north": -37.97172
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

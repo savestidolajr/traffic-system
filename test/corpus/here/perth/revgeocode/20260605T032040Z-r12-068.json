@@ -1,0 +1,55 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032040Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:40.8836712+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.92905,115.77291\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "12 Omaroo Ter, City Beach WA 6015, Australia",
+          "id": "here:af:streetsection:OfqSzlENwW9tb9rityEJWC:CggIBCC_rMuhARABGgIxMg",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "12 Omaroo Ter, City Beach WA 6015, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "City Beach",
+            "street": "Omaroo Ter",
+            "postalCode": "6015",
+            "houseNumber": "12"
+          },
+          "position": {
+            "lat": -31.92886,
+            "lng": 115.77301
+          },
+          "access": [
+            {
+              "lat": -31.92905,
+              "lng": 115.77292
+            }
+          ],
+          "distance": 1,
+          "mapView": {
+            "west": 115.77092,
+            "south": -31.92929,
+            "east": 115.7736,
+            "north": -31.92846
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

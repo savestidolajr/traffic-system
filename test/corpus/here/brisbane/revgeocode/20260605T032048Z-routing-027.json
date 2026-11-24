@@ -1,0 +1,47 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032048Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:49.5662002+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.58851,152.82298\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Warrego Hwy, Riverview QLD 4303, Australia",
+          "id": "here:af:streetsection:ZFf0.M27WRRPnZFjWxsELA",
+          "resultType": "street",
+          "address": {
+            "label": "Warrego Hwy, Riverview QLD 4303, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Riverview",
+            "street": "Warrego Hwy",
+            "postalCode": "4303"
+          },
+          "position": {
+            "lat": -27.58851,
+            "lng": 152.82298
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 152.81396,
+            "south": -27.59504,
+            "east": 152.84104,
+            "north": -27.58254
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

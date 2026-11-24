@@ -1,0 +1,54 @@
+{
+  "Market": "sydney",
+  "Endpoint": "geocode",
+  "SessionId": "20260605T032031Z-geocode",
+  "CapturedAtUtc": "2026-06-05T03:20:32.139664+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=2GB\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "CR-2GB, Cuervo, NM 88417, United States",
+          "id": "here:af:streetsection:wsZjWUsGhgY6lQSaZoOexB",
+          "resultType": "street",
+          "address": {
+            "label": "CR-2GB, Cuervo, NM 88417, United States",
+            "countryCode": "USA",
+            "countryName": "United States",
+            "stateCode": "NM",
+            "state": "New Mexico",
+            "county": "Guadalupe",
+            "city": "Cuervo",
+            "street": "CR-2GB",
+            "postalCode": "88417"
+          },
+          "position": {
+            "lat": 34.80166,
+            "lng": -104.35341
+          },
+          "mapView": {
+            "west": -104.35767,
+            "south": 34.80119,
+            "east": -104.34891,
+            "north": 34.80279
+          },
+          "scoring": {
+            "queryScore": 0.99,
+            "fieldScore": {
+              "streets": [
+                0.6
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

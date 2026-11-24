@@ -1,0 +1,804 @@
+{
+ "JobId": "bb0489ba2d284d22a788ea59f8d857c9",
+ "Market": "cairns-4ca",
+ "Station": "Star 102.7 FM",
+ "CapturedAtUtc": "2026-08-13T14:00:01.8858700Z",
+ "DevOutcome": {
+  "Status": "Published",
+  "FallbackKind": "missed-window",
+  "Attempts": 1,
+  "TargetWordsSeq": [
+   38
+  ],
+  "SynthWordsSeq": [
+   61
+  ],
+  "NaturalSecSeq": [
+   23.3
+  ],
+  "BestNaturalSec": 23.3,
+  "ReviewFeedbackCount": 0,
+  "SynthFailures": []
+ },
+ "Fidelity": {
+  "IncidentsRecovered": 2,
+  "IncidentsSynthesized": 0,
+  "WeatherSource": "job",
+  "FuelSource": "job",
+  "GoodRunsAndFlowPoolLost": false,
+  "StationConfigSource": "live-station-config"
+ },
+ "VoiceConfig": {
+  "Provider": "",
+  "VoiceId": "yngV6X6u07ThpMteV50h",
+  "VoiceName": "Young Female Sarah - PM - KIIS/Regional HOT AC",
+  "Model": "eleven_v3",
+  "Settings": {
+   "Stability": 0.7,
+   "SimilarityBoost": 0.7,
+   "Style": 0,
+   "UseSpeakerBoost": false,
+   "Speed": 0.97
+  },
+  "PaceBoostWpm": 0
+ },
+ "Snapshot": {
+  "TargetDurationSeconds": 22,
+  "Location": "cairns-4ca",
+  "City": null,
+  "MarketId": "cairns-4ca",
+  "Content": {
+   "Traffic": true,
+   "Weather": true,
+   "Fuel": true,
+   "WeatherRequired": true,
+   "FuelRequired": true,
+   "HasAnySource": true,
+   "RequiresWeather": true,
+   "RequiresFuel": true
+  },
+  "FillOrder": [
+   "MinorTraffic",
+   "Fuel",
+   "Weather",
+   "Filler"
+  ],
+  "Corridors": [
+   {
+    "RoadName": "Kennedy Highway",
+    "Severity": 1,
+    "FunctionalClass": 2,
+    "TotalLengthMeters": 515,
+    "ImpactScore": 200,
+    "PrimaryType": "roadHazard",
+    "Description": "hazard on road northbound",
+    "Incidents": [
+     {
+      "Id": "342694560343703526",
+      "Description": "At Captain Cook Highway - Hazardous driving conditions",
+      "Severity": 1,
+      "Location": "Kennedy Hwy",
+      "Type": "roadHazard",
+      "LengthMeters": 268,
+      "FunctionalClass": 2,
+      "Latitude": -16.81684,
+      "Longitude": 145.63358,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "northbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:221129749#+"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -16.81684,
+        "Lng": 145.63358
+       },
+       {
+        "Lat": -16.81669,
+        "Lng": 145.6337
+       },
+       {
+        "Lat": -16.81669,
+        "Lng": 145.6337
+       },
+       {
+        "Lat": -16.81629,
+        "Lng": 145.63402
+       },
+       {
+        "Lat": -16.81629,
+        "Lng": 145.63402
+       },
+       {
+        "Lat": -16.81541,
+        "Lng": 145.63473
+       },
+       {
+        "Lat": -16.81541,
+        "Lng": 145.63473
+       },
+       {
+        "Lat": -16.81517,
+        "Lng": 145.63492
+       },
+       {
+        "Lat": -16.81517,
+        "Lng": 145.63492
+       },
+       {
+        "Lat": -16.81492,
+        "Lng": 145.63512
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+     },
+     {
+      "Id": "1775085339156836348",
+      "Description": "At Myola Road - Hazardous driving conditions",
+      "Severity": 1,
+      "Location": "Kennedy Hwy",
+      "Type": "roadHazard",
+      "LengthMeters": 247,
+      "FunctionalClass": 2,
+      "Latitude": -16.81492,
+      "Longitude": 145.63512,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "southbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "here:cm:segment:221129749#-"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -16.81492,
+        "Lng": 145.63512
+       },
+       {
+        "Lat": -16.81517,
+        "Lng": 145.63492
+       },
+       {
+        "Lat": -16.81517,
+        "Lng": 145.63492
+       },
+       {
+        "Lat": -16.81541,
+        "Lng": 145.63473
+       },
+       {
+        "Lat": -16.81541,
+        "Lng": 145.63473
+       },
+       {
+        "Lat": -16.81629,
+        "Lng": 145.63402
+       },
+       {
+        "Lat": -16.81629,
+        "Lng": 145.63402
+       },
+       {
+        "Lat": -16.81669,
+        "Lng": 145.6337
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -16.81684,
+    "Longitude": 145.63358,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null,
+    "VoicedExtentMeters": 268
+   }
+  ],
+  "MonitoredRoutes": [],
+  "GoodRunRoads": [
+   "Bruce Highway",
+   "Captain Cook Highway",
+   "Cairns Western Arterial Road",
+   "Sheridan Street",
+   "Kenny Street",
+   "Draper Street"
+  ],
+  "FlowPool": [
+   {
+    "RoadName": "Bruce Highway",
+    "JamFactor": 3.3,
+    "LengthMeters": 6974,
+    "IsWeighted": true,
+    "FunctionalClass": 1,
+    "Score": 172.5,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "Captain Cook Highway",
+    "JamFactor": 0.1,
+    "LengthMeters": 15604,
+    "IsWeighted": true,
+    "FunctionalClass": 3,
+    "Score": 152.5,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "Cairns Western Arterial Road",
+    "JamFactor": 0.2,
+    "LengthMeters": 10315,
+    "IsWeighted": true,
+    "FunctionalClass": 3,
+    "Score": 92.5,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "Sheridan Street",
+    "JamFactor": 0.5,
+    "LengthMeters": 4279,
+    "IsWeighted": true,
+    "FunctionalClass": 3,
+    "Score": 92.5,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "Kenny Street",
+    "JamFactor": 1.9,
+    "LengthMeters": 1636,
+    "IsWeighted": true,
+    "FunctionalClass": 3,
+    "Score": 92.5,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "Draper Street",
+    "JamFactor": 0.1,
+    "LengthMeters": 1190,
+    "IsWeighted": true,
+    "FunctionalClass": 3,
+    "Score": 92.5,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "Gillies Highway",
+    "JamFactor": 0.1,
+    "LengthMeters": 71223,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "McGregor Road",
+    "JamFactor": 0,
+    "LengthMeters": 51281,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Myola Road",
+    "JamFactor": 0,
+    "LengthMeters": 46642,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Port Douglas Road",
+    "JamFactor": 0,
+    "LengthMeters": 45682,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Munro Street",
+    "JamFactor": 0,
+    "LengthMeters": 34857,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Anzac Avenue",
+    "JamFactor": 0,
+    "LengthMeters": 32619,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Boar Pocket Road",
+    "JamFactor": 0,
+    "LengthMeters": 30325,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Warner Road",
+    "JamFactor": 0,
+    "LengthMeters": 14047,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Foster Road",
+    "JamFactor": 0,
+    "LengthMeters": 9283,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Stratford Connection Road",
+    "JamFactor": 0,
+    "LengthMeters": 8929,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Ray Jones Drive",
+    "JamFactor": 0.1,
+    "LengthMeters": 4645,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Mccoombe Street",
+    "JamFactor": 0,
+    "LengthMeters": 3756,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Martyn Street",
+    "JamFactor": 0.2,
+    "LengthMeters": 3448,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "James Street",
+    "JamFactor": 0.2,
+    "LengthMeters": 3093,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   }
+  ],
+  "Weather": {
+   "Conditions": "Clear. Mild.",
+   "TemperatureC": 21,
+   "WindDescription": "fresh South wind",
+   "PrecipitationProbabilityPercent": 4,
+   "Alerts": [],
+   "Outlook": "reaching 22 degrees later today; tomorrow sunny. cool, around 22 degrees",
+   "IsForecast": false,
+   "HasMajorAlert": false
+  },
+  "Fuel": {
+   "Summaries": [
+    {
+     "FuelType": "Unleaded 91",
+     "MinPrice": 1.955,
+     "AveragePrice": 2.026,
+     "StationCount": 48,
+     "LatestModifiedUtc": "2026-08-13T13:33:07+00:00",
+     "CheapestStationSuburb": "Edge Hill"
+    },
+    {
+     "FuelType": "Diesel",
+     "MinPrice": 2.355,
+     "AveragePrice": 2.418,
+     "StationCount": 39,
+     "LatestModifiedUtc": "2026-08-13T13:33:07+00:00",
+     "CheapestStationSuburb": "Edge Hill"
+    }
+   ],
+   "HasPrices": true
+  },
+  "IncidentChanges": null,
+  "Guidance": {
+   "Entries": [
+    {
+     "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for — a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off.",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-08-10T08:31:01.7083665Z",
+     "UpdatedAtUtc": "2026-08-10T08:31:01.7083665Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "645e52b90299493a8dbde1205c6c657e",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "75fe175d471144b38bf23c24966dfb6f",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "7b012b9381e04e72be8211133f224188",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 4,
+     "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "Australian English with natural spoken contractions. Round the figures — say 'about ten minutes', never '10.3 minutes'. No police codes or insider jargon.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 3,
+     "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "f5e76bd5993c41edb637a7302f7d7479",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 2,
+     "Text": "Use common road names with the definite article: 'the M1', 'the M4', 'the CBD'. Use 'citybound' and 'outbound' for direction of travel.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    }
+   ],
+   "DroppedCount": 0,
+   "Count": 7,
+   "HasEntries": true
+  },
+  "FutureLessons": [],
+  "Bookends": {
+   "IntroText": "Checking out the roads......",
+   "OutroText": "",
+   "Id": "bk-0a02c365f8c049ee91577828b784529b",
+   "Version": 0
+  },
+  "FillerStatements": [
+   {
+    "Id": "9997c732dbce422cb2206c6918f9f670",
+    "Text": "The Bruce Highway is the main artery south to Innisfail and north through the city — expect delays at the Draper Street and Lyons Street intersections during peak.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "b2c39f02b50d4d488693a5520ca5d50a",
+    "Text": "Captain Cook Highway heads north from the city to the Northern Beaches and Port Douglas — allow extra time through Smithfield during school drop-off and pickup.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "92c2e0eeb5d24893b7d13cc6e197a1d8",
+    "Text": "The Cairns Western Arterial Road connects Redlynch to the Captain Cook Highway — roadworks are ongoing so expect changed traffic conditions.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "2ff3e3ca50554d3789b39fcff7cb4090",
+    "Text": "School zones are back to 40 on school days — watch for the flashing signs morning and afternoon on Sheridan Street and Mulgrave Road.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "234e5c3e57df41d495ed0ae6821722df",
+    "Text": "During the wet season from November to April, flash flooding can affect low-lying roads around Redlynch and the Barron River crossing — never drive through floodwaters.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "04c896191ef1474fa7fff6aa77bd05de",
+    "Text": "Roadworks and changed traffic conditions are updated weekly on the Cairns Regional Council website.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "a0f2e361-4efb-49ba-acf0-f16025d03e20",
+    "Text": "Take us anywhere you go with the free iheart app - Just search Star one two point seven",
+    "Enabled": true,
+    "Availability": null
+   }
+  ],
+  "SharedRules": null,
+  "RoadFeelPalette": null,
+  "EditorialSettings": {
+   "Scope": 0,
+   "ScopeId": ""
+  },
+  "CuratedCorridorRoads": null,
+  "CuratedGoodRunRoads": null,
+  "ExcludedIncidentKeys": null,
+  "WriterPrompt": null,
+  "EditedIncidents": []
+ },
+ "Coverage": {
+  "Latitude": -16.900466,
+  "Longitude": 145.69998149999998,
+  "RadiusKm": 32.00156872391492,
+  "ShapeType": "polygon",
+  "West": null,
+  "South": null,
+  "East": null,
+  "North": null,
+  "CorridorPoints": null,
+  "CorridorRadiusMeters": null,
+  "PolygonPoints": [
+   {
+    "Lat": -17.149932,
+    "Lng": 145.720283
+   },
+   {
+    "Lat": -17.14981,
+    "Lng": 145.658486
+   },
+   {
+    "Lat": -17.096782,
+    "Lng": 145.623892
+   },
+   {
+    "Lat": -16.901715,
+    "Lng": 145.550097
+   },
+   {
+    "Lat": -16.651,
+    "Lng": 145.567667
+   },
+   {
+    "Lat": -16.722676,
+    "Lng": 145.686721
+   },
+   {
+    "Lat": -16.87178,
+    "Lng": 145.849866
+   },
+   {
+    "Lat": -17.126154,
+    "Lng": 145.839069
+   },
+   {
+    "Lat": -17.146535,
+    "Lng": 145.827527
+   },
+   {
+    "Lat": -17.148005,
+    "Lng": 145.826237
+   },
+   {
+    "Lat": -17.149355,
+    "Lng": 145.824707
+   }
+  ]
+ },
+ "FullCorridorPool": [
+  {
+   "RoadName": "Kennedy Highway",
+   "Severity": 1,
+   "FunctionalClass": 2,
+   "TotalLengthMeters": 515,
+   "ImpactScore": 200,
+   "PrimaryType": "roadHazard",
+   "Description": "hazard on road northbound",
+   "Incidents": [
+    {
+     "Id": "342694560343703526",
+     "Description": "At Captain Cook Highway - Hazardous driving conditions",
+     "Severity": 1,
+     "Location": "Kennedy Hwy",
+     "Type": "roadHazard",
+     "LengthMeters": 268,
+     "FunctionalClass": 2,
+     "Latitude": -16.81684,
+     "Longitude": 145.63358,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "northbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:221129749#+"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -16.81684,
+       "Lng": 145.63358
+      },
+      {
+       "Lat": -16.81669,
+       "Lng": 145.6337
+      },
+      {
+       "Lat": -16.81669,
+       "Lng": 145.6337
+      },
+      {
+       "Lat": -16.81629,
+       "Lng": 145.63402
+      },
+      {
+       "Lat": -16.81629,
+       "Lng": 145.63402
+      },
+      {
+       "Lat": -16.81541,
+       "Lng": 145.63473
+      },
+      {
+       "Lat": -16.81541,
+       "Lng": 145.63473
+      },
+      {
+       "Lat": -16.81517,
+       "Lng": 145.63492
+      },
+      {
+       "Lat": -16.81517,
+       "Lng": 145.63492
+      },
+      {
+       "Lat": -16.81492,
+       "Lng": 145.63512
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+    },
+    {
+     "Id": "1775085339156836348",
+     "Description": "At Myola Road - Hazardous driving conditions",
+     "Severity": 1,
+     "Location": "Kennedy Hwy",
+     "Type": "roadHazard",
+     "LengthMeters": 247,
+     "FunctionalClass": 2,
+     "Latitude": -16.81492,
+     "Longitude": 145.63512,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "southbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "here:cm:segment:221129749#-"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -16.81492,
+       "Lng": 145.63512
+      },
+      {
+       "Lat": -16.81517,
+       "Lng": 145.63492
+      },
+      {
+       "Lat": -16.81517,
+       "Lng": 145.63492
+      },
+      {
+       "Lat": -16.81541,
+       "Lng": 145.63473
+      },
+      {
+       "Lat": -16.81541,
+       "Lng": 145.63473
+      },
+      {
+       "Lat": -16.81629,
+       "Lng": 145.63402
+      },
+      {
+       "Lat": -16.81629,
+       "Lng": 145.63402
+      },
+      {
+       "Lat": -16.81669,
+       "Lng": 145.6337
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -16.81684,
+   "Longitude": 145.63358,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null,
+   "VoicedExtentMeters": 268
+  }
+ ]
+}

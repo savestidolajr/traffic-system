@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032030Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:31.1160941+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.85312,151.27767\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "13 Parsley Rd, Vaucluse NSW 2030, Australia",
+          "id": "here:af:streetsection:sHic4AsES2R7CvmnFckfvC:CggIBCC4uemdARABGgIxMw",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "13 Parsley Rd, Vaucluse NSW 2030, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Vaucluse",
+            "street": "Parsley Rd",
+            "postalCode": "2030",
+            "houseNumber": "13"
+          },
+          "position": {
+            "lat": -33.85371,
+            "lng": 151.27751
+          },
+          "access": [
+            {
+              "lat": -33.85312,
+              "lng": 151.27767
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 151.27634,
+            "south": -33.85383,
+            "east": 151.27945,
+            "north": -33.85192
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,67 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\ArnBulletinGenerator.Domain\ArnBulletinGenerator.Domain.csproj" />
+    <!--
+      The conversational workflow and its Azure OpenAI host. Both sit inside the Infrastructure
+      boundary: Workflow references only Domain, so the dependency still flows inward, and the
+      adapter that presents it as an IScriptGenerator belongs beside the other AI providers.
+      The reference also carries Workflow/Prompts/*.md into the output, which is how the writer,
+      composer and editor instructions reach the deployed app.
+    -->
+    <ProjectReference Include="..\ArnBulletinGenerator.Workflow\ArnBulletinGenerator.Workflow.csproj" />
+    <ProjectReference Include="..\ArnBulletinGenerator.Workflow.Hosting\ArnBulletinGenerator.Workflow.Hosting.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Azure.Data.Tables" />
+    <PackageReference Include="Azure.Identity" />
+    <PackageReference Include="Azure.Search.Documents" />
+    <PackageReference Include="Azure.Storage.Blobs" />
+    <PackageReference Include="Azure.Storage.Files.Shares" />
+    <PackageReference Include="Azure.Storage.Queues" />
+    <PackageReference Include="Cronos" />
+    <PackageReference Include="Microsoft.Extensions.Caching.Memory" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" />
+    <PackageReference Include="Microsoft.Extensions.Http" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" />
+    <PackageReference Include="Microsoft.Extensions.Options.DataAnnotations" />
+    <PackageReference Include="OpenAI" />
+    <PackageReference Include="Handlebars.Net" />
+    <PackageReference Include="SoundTouch.Net" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Generated from test/corpus/duration/calibration-v3.json; the runtime has no test-path dependency. -->
+    <EmbeddedResource Include="Audio\calibration\spoken-duration-v3.json" />
+  </ItemGroup>
+  <ItemGroup>
+    <!-- Raw-model role prompts are runtime content, not source-only files. Keep them beside the
+         assembly in both test/build output and published Function App output so PromptLibrary never
+         falls back to the caller's working directory. -->
+    <Content Include="..\..\prompts\*.md" Link="prompts\%(Filename)%(Extension)">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+    <Content Include="..\..\prompts\agents\*.md" Link="prompts\agents\%(Filename)%(Extension)">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>PreserveNewest</CopyToPublishDirectory>
+    </Content>
+  </ItemGroup>
+
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <!-- OpenAI.Responses is Experimental("OPENAI001") in the SDK; Arn already treats the
+         Azure OpenAI Responses API as its stable substrate (BuildResponsesEndpoint /
+         reasoning.effort), so this suppression matches the pre-existing risk, not a new one. -->
+    <NoWarn>$(NoWarn);OPENAI001</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <InternalsVisibleTo Include="ArnBulletinGenerator.Infrastructure.Tests" />
+    <InternalsVisibleTo Include="ArnBulletinGenerator.Workflow.LiveTests" />
+    <InternalsVisibleTo Include="DynamicProxyGenAssembly2" />
+  </ItemGroup>
+
+</Project>

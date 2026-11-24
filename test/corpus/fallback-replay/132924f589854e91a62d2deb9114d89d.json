@@ -1,0 +1,2551 @@
+{
+ "JobId": "132924f589854e91a62d2deb9114d89d",
+ "Market": "brisbane",
+ "Station": "KIIS 97.3",
+ "CapturedAtUtc": "2026-08-11T11:54:06.7740671Z",
+ "DevOutcome": {
+  "Status": "Published",
+  "FallbackKind": "missed-window",
+  "Attempts": 1,
+  "TargetWordsSeq": [
+   80
+  ],
+  "SynthWordsSeq": [
+   94
+  ],
+  "NaturalSecSeq": [
+   32.0
+  ],
+  "BestNaturalSec": 32.0,
+  "ReviewFeedbackCount": 0,
+  "SynthFailures": []
+ },
+ "Fidelity": {
+  "IncidentsRecovered": 11,
+  "IncidentsSynthesized": 0,
+  "WeatherSource": "job",
+  "FuelSource": "job",
+  "GoodRunsAndFlowPoolLost": false,
+  "StationConfigSource": "live-station-config"
+ },
+ "VoiceConfig": {
+  "Provider": "",
+  "VoiceId": "081vkDcbgbIsSiFEYxT0",
+  "VoiceName": "Dolly (original)",
+  "Model": "eleven_v3",
+  "Settings": {
+   "Stability": 0.5,
+   "SimilarityBoost": 0.7,
+   "Style": 0,
+   "UseSpeakerBoost": false,
+   "Speed": 1
+  },
+  "PaceBoostWpm": 0
+ },
+ "Snapshot": {
+  "TargetDurationSeconds": 30,
+  "Location": "brisbane",
+  "City": null,
+  "MarketId": "brisbane",
+  "Content": {
+   "Traffic": true,
+   "Weather": true,
+   "Fuel": true,
+   "WeatherRequired": true,
+   "FuelRequired": true,
+   "HasAnySource": true,
+   "RequiresWeather": true,
+   "RequiresFuel": true
+  },
+  "FillOrder": [
+   "Weather",
+   "Fuel",
+   "MinorTraffic",
+   "Filler"
+  ],
+  "Corridors": [
+   {
+    "RoadName": "Bruce Highway",
+    "Severity": 1,
+    "FunctionalClass": 1,
+    "TotalLengthMeters": 7302,
+    "ImpactScore": 254.8,
+    "PrimaryType": "construction",
+    "Description": "roadworks citybound",
+    "Incidents": [
+     {
+      "Id": "3053568323130588578",
+      "Description": "Between Bruce Highway and Sandgate Road - Lane blocked",
+      "Severity": 1,
+      "Location": "Bruce Hwy",
+      "Type": "construction",
+      "LengthMeters": 5483,
+      "FunctionalClass": 1,
+      "Latitude": -27.29673,
+      "Longitude": 153.01778,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "citybound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365890865:$1:240452780#-0..1",
+       "$0:365890865:$1:828749669#+0..1",
+       "$0:365890865:$1:828749672#-0..0.64853"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -27.29673,
+        "Lng": 153.01778
+       },
+       {
+        "Lat": -27.30037,
+        "Lng": 153.01725
+       },
+       {
+        "Lat": -27.30274,
+        "Lng": 153.01893
+       },
+       {
+        "Lat": -27.30396,
+        "Lng": 153.02192
+       },
+       {
+        "Lat": -27.30708,
+        "Lng": 153.02784
+       },
+       {
+        "Lat": -27.309,
+        "Lng": 153.03066
+       },
+       {
+        "Lat": -27.31033,
+        "Lng": 153.03562
+       },
+       {
+        "Lat": -27.31198,
+        "Lng": 153.03881
+       },
+       {
+        "Lat": -27.31285,
+        "Lng": 153.04109
+       },
+       {
+        "Lat": -27.31269,
+        "Lng": 153.04497
+       },
+       {
+        "Lat": -27.31337,
+        "Lng": 153.04695
+       },
+       {
+        "Lat": -27.31446,
+        "Lng": 153.04774
+       },
+       {
+        "Lat": -27.31863,
+        "Lng": 153.0495
+       },
+       {
+        "Lat": -27.32097,
+        "Lng": 153.05037
+       },
+       {
+        "Lat": -27.3246,
+        "Lng": 153.05125
+       },
+       {
+        "Lat": -27.3278,
+        "Lng": 153.05139
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-10T16:16:34+00:00"
+     },
+     {
+      "Id": "4252568569751917526",
+      "Description": "At Anzac Avenue - Road construction",
+      "Severity": 1,
+      "Location": "Bruce Hwy",
+      "Type": "construction",
+      "LengthMeters": 1819,
+      "FunctionalClass": 1,
+      "Latitude": -27.26772,
+      "Longitude": 153.01794,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "outbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365890874:$1:914132110#+0.02404..1",
+       "$0:365890874:$1:737803275#+0..1",
+       "$0:365890874:$1:737802954#+0..1",
+       "$0:365890874:$1:476002929#+0..0.13032"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -27.26772,
+        "Lng": 153.01794
+       },
+       {
+        "Lat": -27.26585,
+        "Lng": 153.01807
+       },
+       {
+        "Lat": -27.25987,
+        "Lng": 153.01848
+       },
+       {
+        "Lat": -27.25961,
+        "Lng": 153.0185
+       },
+       {
+        "Lat": -27.25961,
+        "Lng": 153.0185
+       },
+       {
+        "Lat": -27.25945,
+        "Lng": 153.01851
+       },
+       {
+        "Lat": -27.25718,
+        "Lng": 153.01867
+       },
+       {
+        "Lat": -27.2559,
+        "Lng": 153.01876
+       },
+       {
+        "Lat": -27.2559,
+        "Lng": 153.01876
+       },
+       {
+        "Lat": -27.25505,
+        "Lng": 153.01882
+       },
+       {
+        "Lat": -27.25386,
+        "Lng": 153.0189
+       },
+       {
+        "Lat": -27.25317,
+        "Lng": 153.01894
+       },
+       {
+        "Lat": -27.25317,
+        "Lng": 153.01894
+       },
+       {
+        "Lat": -27.25309,
+        "Lng": 153.01894
+       },
+       {
+        "Lat": -27.25275,
+        "Lng": 153.01895
+       },
+       {
+        "Lat": -27.25139,
+        "Lng": 153.01884
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-09T03:57:02+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "citybound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -27.29673,
+    "Longitude": 153.01778,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 1,
+    "PriorityBoosted": true,
+    "Detour": null,
+    "DelayMinutes": 1
+   },
+   {
+    "RoadName": "Gateway Motorway",
+    "Severity": 1,
+    "FunctionalClass": 1,
+    "TotalLengthMeters": 6229,
+    "ImpactScore": 254.8,
+    "PrimaryType": "construction",
+    "Description": "roadworks westbound",
+    "Incidents": [
+     {
+      "Id": "3179114667743551042",
+      "Description": "Between Sandgate Road and Bruce Highway - Road construction",
+      "Severity": 1,
+      "Location": "Gateway Mwy",
+      "Type": "construction",
+      "LengthMeters": 4810,
+      "FunctionalClass": 1,
+      "Latitude": -27.32929,
+      "Longitude": 153.05104,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "westbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365890865:$1:661250772#+0.6075..1",
+       "$0:365890865:$1:828749667#+0..1",
+       "$0:365890865:$1:828749671#+0..1",
+       "$0:365890865:$1:746190582#+0..1",
+       "$0:365890866:$1:221817891#-0..1",
+       "$0:365890866:$1:221724332#+0..0.62826"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -27.32929,
+        "Lng": 153.05104
+       },
+       {
+        "Lat": -27.32603,
+        "Lng": 153.0513
+       },
+       {
+        "Lat": -27.32438,
+        "Lng": 153.05102
+       },
+       {
+        "Lat": -27.32089,
+        "Lng": 153.05017
+       },
+       {
+        "Lat": -27.3183,
+        "Lng": 153.04922
+       },
+       {
+        "Lat": -27.31674,
+        "Lng": 153.04852
+       },
+       {
+        "Lat": -27.31431,
+        "Lng": 153.04744
+       },
+       {
+        "Lat": -27.31301,
+        "Lng": 153.04594
+       },
+       {
+        "Lat": -27.31307,
+        "Lng": 153.04243
+       },
+       {
+        "Lat": -27.3128,
+        "Lng": 153.0403
+       },
+       {
+        "Lat": -27.312,
+        "Lng": 153.03857
+       },
+       {
+        "Lat": -27.31037,
+        "Lng": 153.03523
+       },
+       {
+        "Lat": -27.30939,
+        "Lng": 153.0312
+       },
+       {
+        "Lat": -27.30737,
+        "Lng": 153.02796
+       },
+       {
+        "Lat": -27.30557,
+        "Lng": 153.02514
+       },
+       {
+        "Lat": -27.30331,
+        "Lng": 153.01968
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-12T02:16:43+00:00"
+     },
+     {
+      "Id": "4661090567336136031",
+      "Description": "Between Gateway Motorway and Dohles Rocks Road - Road construction",
+      "Severity": 1,
+      "Location": "Gateway Mwy",
+      "Type": "construction",
+      "LengthMeters": 1419,
+      "FunctionalClass": 1,
+      "Latitude": -27.30331,
+      "Longitude": 153.01968,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "outbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365890866:$1:221724332#+0.63149..1",
+       "$0:365890866:$1:736180583#-0..1",
+       "$0:365890866:$1:736180705#+0..0.19057"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -27.30331,
+        "Lng": 153.01968
+       },
+       {
+        "Lat": -27.30284,
+        "Lng": 153.01822
+       },
+       {
+        "Lat": -27.30266,
+        "Lng": 153.0178
+       },
+       {
+        "Lat": -27.30225,
+        "Lng": 153.01718
+       },
+       {
+        "Lat": -27.30206,
+        "Lng": 153.01698
+       },
+       {
+        "Lat": -27.30129,
+        "Lng": 153.01646
+       },
+       {
+        "Lat": -27.30056,
+        "Lng": 153.01626
+       },
+       {
+        "Lat": -27.30005,
+        "Lng": 153.01626
+       },
+       {
+        "Lat": -27.29901,
+        "Lng": 153.01657
+       },
+       {
+        "Lat": -27.29868,
+        "Lng": 153.01672
+       },
+       {
+        "Lat": -27.2985,
+        "Lng": 153.0168
+       },
+       {
+        "Lat": -27.29764,
+        "Lng": 153.01716
+       },
+       {
+        "Lat": -27.29736,
+        "Lng": 153.01725
+       },
+       {
+        "Lat": -27.29571,
+        "Lng": 153.01779
+       },
+       {
+        "Lat": -27.29459,
+        "Lng": 153.01809
+       },
+       {
+        "Lat": -27.29248,
+        "Lng": 153.01867
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "westbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -27.32929,
+    "Longitude": 153.05104,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 2,
+    "PriorityBoosted": true,
+    "Detour": null,
+    "DelayMinutes": 2
+   },
+   {
+    "RoadName": "Ipswich Motorway",
+    "Severity": 1,
+    "FunctionalClass": 1,
+    "TotalLengthMeters": 6646,
+    "ImpactScore": 247,
+    "PrimaryType": "construction",
+    "Description": "roadworks eastbound",
+    "Incidents": [
+     {
+      "Id": "2887968023636816821",
+      "Description": "Between Warrego Highway and Logan Motorway - Road construction",
+      "Severity": 1,
+      "Location": "Ipswich Mwy",
+      "Type": "construction",
+      "LengthMeters": 6646,
+      "FunctionalClass": 1,
+      "Latitude": -27.59717,
+      "Longitude": 152.85038,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "eastbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365889146:$1:220997166#-0.45559..1",
+       "$0:365889146:$1:480387079#-0..1",
+       "$0:365889146:$1:221126899#+0..1",
+       "$0:365889150:$1:235203317#-0..1",
+       "$0:365889150:$1:221138802#-0..1",
+       "$0:365889150:$1:221594846#+0..0.99494"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -27.59717,
+        "Lng": 152.85038
+       },
+       {
+        "Lat": -27.59793,
+        "Lng": 152.85483
+       },
+       {
+        "Lat": -27.59982,
+        "Lng": 152.85736
+       },
+       {
+        "Lat": -27.60281,
+        "Lng": 152.8606
+       },
+       {
+        "Lat": -27.60425,
+        "Lng": 152.86417
+       },
+       {
+        "Lat": -27.60381,
+        "Lng": 152.86815
+       },
+       {
+        "Lat": -27.60171,
+        "Lng": 152.87396
+       },
+       {
+        "Lat": -27.60095,
+        "Lng": 152.87949
+       },
+       {
+        "Lat": -27.60139,
+        "Lng": 152.88433
+       },
+       {
+        "Lat": -27.60356,
+        "Lng": 152.89063
+       },
+       {
+        "Lat": -27.60569,
+        "Lng": 152.89486
+       },
+       {
+        "Lat": -27.60719,
+        "Lng": 152.89655
+       },
+       {
+        "Lat": -27.60891,
+        "Lng": 152.90028
+       },
+       {
+        "Lat": -27.6092,
+        "Lng": 152.90359
+       },
+       {
+        "Lat": -27.60886,
+        "Lng": 152.90825
+       },
+       {
+        "Lat": -27.60754,
+        "Lng": 152.91209
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-25T10:00:25+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "eastbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -27.59717,
+    "Longitude": 152.85038,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 1,
+    "PriorityBoosted": true,
+    "Detour": null,
+    "DelayMinutes": 1
+   },
+   {
+    "RoadName": "Pacific Motorway",
+    "Severity": 1,
+    "FunctionalClass": 1,
+    "TotalLengthMeters": 130,
+    "ImpactScore": 244.99250543199554,
+    "PrimaryType": "construction",
+    "Description": "roadworks",
+    "Incidents": [
+     {
+      "Id": "2543287847163343322",
+      "Description": "At Beenleigh - Redland Bay Road - Road construction",
+      "Severity": 1,
+      "Location": "Pacific Mwy",
+      "Type": "construction",
+      "LengthMeters": 130,
+      "FunctionalClass": 1,
+      "Latitude": -27.68238,
+      "Longitude": 153.18773,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365889359:$1:221133699#+0.79918..0.89184"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -27.68238,
+        "Lng": 153.18773
+       },
+       {
+        "Lat": -27.68132,
+        "Lng": 153.18717
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-08T02:31:03+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -27.68238,
+    "Longitude": 153.18773,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 3,
+    "PriorityBoosted": true,
+    "Detour": null,
+    "DelayMinutes": 3
+   },
+   {
+    "RoadName": "Warrego Highway",
+    "Severity": 1,
+    "FunctionalClass": 1,
+    "TotalLengthMeters": 3759,
+    "ImpactScore": 190,
+    "PrimaryType": "construction",
+    "Description": "roadworks westbound",
+    "Incidents": [
+     {
+      "Id": "2983454572527730160",
+      "Description": "Between River Road and Mt Crosby Road - Road construction",
+      "Severity": 1,
+      "Location": "Warrego Hwy",
+      "Type": "construction",
+      "LengthMeters": 3759,
+      "FunctionalClass": 1,
+      "Latitude": -27.58851,
+      "Longitude": 152.82298,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "westbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365889221:$1:556788067#+0..1",
+       "$0:365889221:$1:735943452#-0..1",
+       "$0:365889221:$1:735942579#+0..1",
+       "$0:365889220:$1:735943032#+0..1",
+       "$0:365889217:$1:220297992#-0..0.34261"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -27.58851,
+        "Lng": 152.82298
+       },
+       {
+        "Lat": -27.58793,
+        "Lng": 152.82227
+       },
+       {
+        "Lat": -27.5874,
+        "Lng": 152.82161
+       },
+       {
+        "Lat": -27.58454,
+        "Lng": 152.81803
+       },
+       {
+        "Lat": -27.58361,
+        "Lng": 152.81667
+       },
+       {
+        "Lat": -27.58305,
+        "Lng": 152.81512
+       },
+       {
+        "Lat": -27.58278,
+        "Lng": 152.81396
+       },
+       {
+        "Lat": -27.5824,
+        "Lng": 152.81242
+       },
+       {
+        "Lat": -27.58212,
+        "Lng": 152.81165
+       },
+       {
+        "Lat": -27.57698,
+        "Lng": 152.80382
+       },
+       {
+        "Lat": -27.57633,
+        "Lng": 152.80269
+       },
+       {
+        "Lat": -27.57428,
+        "Lng": 152.7967
+       },
+       {
+        "Lat": -27.57389,
+        "Lng": 152.7949
+       },
+       {
+        "Lat": -27.57389,
+        "Lng": 152.79333
+       },
+       {
+        "Lat": -27.57407,
+        "Lng": 152.79234
+       },
+       {
+        "Lat": -27.57467,
+        "Lng": 152.78975
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-22T22:44:26+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "westbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -27.58851,
+    "Longitude": 152.82298,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   },
+   {
+    "RoadName": "Formation Street",
+    "Severity": 1,
+    "FunctionalClass": 1,
+    "TotalLengthMeters": 1329,
+    "ImpactScore": 190,
+    "PrimaryType": "construction",
+    "Description": "roadworks eastbound",
+    "Incidents": [
+     {
+      "Id": "1639579015761937920",
+      "Description": "At Boundary Road - Road construction",
+      "Severity": 1,
+      "Location": "Formation St",
+      "Type": "construction",
+      "LengthMeters": 1329,
+      "FunctionalClass": 1,
+      "Latitude": -27.6077,
+      "Longitude": 152.92404,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "eastbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365889151:$1:253727910#-0.98744..1",
+       "$0:365889322:$1:220920226#-0..1"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -27.6077,
+        "Lng": 152.92404
+       },
+       {
+        "Lat": -27.60775,
+        "Lng": 152.9241
+       },
+       {
+        "Lat": -27.60909,
+        "Lng": 152.92563
+       },
+       {
+        "Lat": -27.61018,
+        "Lng": 152.92694
+       },
+       {
+        "Lat": -27.61067,
+        "Lng": 152.92761
+       },
+       {
+        "Lat": -27.61093,
+        "Lng": 152.92803
+       },
+       {
+        "Lat": -27.61165,
+        "Lng": 152.9295
+       },
+       {
+        "Lat": -27.61186,
+        "Lng": 152.93009
+       },
+       {
+        "Lat": -27.61196,
+        "Lng": 152.9304
+       },
+       {
+        "Lat": -27.61201,
+        "Lng": 152.93057
+       },
+       {
+        "Lat": -27.61234,
+        "Lng": 152.93168
+       },
+       {
+        "Lat": -27.61266,
+        "Lng": 152.93245
+       },
+       {
+        "Lat": -27.61333,
+        "Lng": 152.93356
+       },
+       {
+        "Lat": -27.61349,
+        "Lng": 152.93377
+       },
+       {
+        "Lat": -27.61431,
+        "Lng": 152.93459
+       },
+       {
+        "Lat": -27.6146,
+        "Lng": 152.93485
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-11T10:00:35+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "eastbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -27.6077,
+    "Longitude": 152.92404,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   },
+   {
+    "RoadName": "Gympie Road",
+    "Severity": 1,
+    "FunctionalClass": 2,
+    "TotalLengthMeters": 130,
+    "ImpactScore": 174.45577340922733,
+    "PrimaryType": "construction",
+    "Description": "roadworks",
+    "Incidents": [
+     {
+      "Id": "4102809099988497174",
+      "Description": "At Webster Road - Road construction",
+      "Severity": 1,
+      "Location": "Gympie Rd",
+      "Type": "construction",
+      "LengthMeters": 68,
+      "FunctionalClass": 2,
+      "Latitude": -27.37412,
+      "Longitude": 153.02416,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365890840:$1:220976207#+0.41243..0.81623"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -27.37412,
+        "Lng": 153.02416
+       },
+       {
+        "Lat": -27.3738,
+        "Lng": 153.02357
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+     },
+     {
+      "Id": "1147432083021885562",
+      "Description": "At Buckby Street - Road construction",
+      "Severity": 2,
+      "Location": "Gympie Rd",
+      "Type": "construction",
+      "LengthMeters": 62,
+      "FunctionalClass": 3,
+      "Latitude": -27.28813,
+      "Longitude": 152.98452,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365890860:$1:911062934#-0.03226..1"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -27.28813,
+        "Lng": 152.98452
+       },
+       {
+        "Lat": -27.28867,
+        "Lng": 152.98468
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-21T03:42:23+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": 17,
+    "NormalDriveTimeMinutes": 15,
+    "Latitude": -27.37412,
+    "Longitude": 153.02416,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 2,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": 2
+   },
+   {
+    "RoadName": "Milton Road",
+    "Severity": 1,
+    "FunctionalClass": 2,
+    "TotalLengthMeters": 58,
+    "ImpactScore": 167.05371197425174,
+    "PrimaryType": "construction",
+    "Description": "roadworks",
+    "Incidents": [
+     {
+      "Id": "2613405707077925893",
+      "Description": "At Sylvan Road - Lane blocked",
+      "Severity": 1,
+      "Location": "Milton Rd",
+      "Type": "construction",
+      "LengthMeters": 58,
+      "FunctionalClass": 2,
+      "Latitude": -27.47823,
+      "Longitude": 152.98516,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365889446:$1:919755735#-0.14286..1",
+       "$0:365889446:$1:916233164#-0..0.8"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -27.47823,
+        "Lng": 152.98516
+       },
+       {
+        "Lat": -27.47837,
+        "Lng": 152.9854
+       },
+       {
+        "Lat": -27.47837,
+        "Lng": 152.9854
+       },
+       {
+        "Lat": -27.47842,
+        "Lng": 152.98549
+       },
+       {
+        "Lat": -27.47849,
+        "Lng": 152.98567
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-08-11T11:09:08+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -27.47823,
+    "Longitude": 152.98516,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 1,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": 1
+   },
+   {
+    "RoadName": "Zillmere Road",
+    "Severity": 1,
+    "FunctionalClass": 3,
+    "TotalLengthMeters": 492,
+    "ImpactScore": 165,
+    "PrimaryType": "congestion",
+    "Description": "at a standstill",
+    "Incidents": [],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": null,
+    "Longitude": null,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 5,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": 5
+   },
+   {
+    "RoadName": "Baudesert Road",
+    "Severity": 1,
+    "FunctionalClass": 3,
+    "TotalLengthMeters": 959,
+    "ImpactScore": 165,
+    "PrimaryType": "congestion",
+    "Description": "at a standstill",
+    "Incidents": [],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": null,
+    "Longitude": null,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 2,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": 2
+   }
+  ],
+  "MonitoredRoutes": [
+   {
+    "Name": "the Pacific Motorway into the city",
+    "Origin": {
+     "Lat": -27.55,
+     "Lng": 153.09
+    },
+    "Destination": {
+     "Lat": -27.4698,
+     "Lng": 153.0251
+    },
+    "DriveTimeMinutes": 19,
+    "NormalDriveTimeMinutes": 18,
+    "DistanceKm": 14.876,
+    "DelayMinutes": 1
+   }
+  ],
+  "GoodRunRoads": [
+   "Story Bridge",
+   "Riverside Expressway",
+   "Logan Motorway",
+   "Waterworks Road",
+   "Hay Road",
+   "Mount Glorious Road"
+  ],
+  "FlowPool": [
+   {
+    "RoadName": "Story Bridge",
+    "JamFactor": 0,
+    "LengthMeters": 0,
+    "IsWeighted": true,
+    "FunctionalClass": 3,
+    "Score": 80,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "Riverside Expressway",
+    "JamFactor": 0,
+    "LengthMeters": 0,
+    "IsWeighted": true,
+    "FunctionalClass": 3,
+    "Score": 45,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "Logan Motorway",
+    "JamFactor": 2.9,
+    "LengthMeters": 32789,
+    "IsWeighted": false,
+    "FunctionalClass": 1,
+    "Score": 62.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Waterworks Road",
+    "JamFactor": 2.1,
+    "LengthMeters": 31726,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Hay Road",
+    "JamFactor": 0.8,
+    "LengthMeters": 27504,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Mount Glorious Road",
+    "JamFactor": 0.7,
+    "LengthMeters": 27346,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Mount Mee",
+    "JamFactor": 0.3,
+    "LengthMeters": 26780,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Winn Road",
+    "JamFactor": 0.2,
+    "LengthMeters": 25293,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Anzac Avenue",
+    "JamFactor": 2.9,
+    "LengthMeters": 19553,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Lake Manchester Road",
+    "JamFactor": 1,
+    "LengthMeters": 19484,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Old Cleveland Road",
+    "JamFactor": 2.1,
+    "LengthMeters": 19213,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Ripley Road",
+    "JamFactor": 0.4,
+    "LengthMeters": 18852,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Centenary Highway",
+    "JamFactor": 3.1,
+    "LengthMeters": 18598,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "PROGRESS ROAD",
+    "JamFactor": 2.5,
+    "LengthMeters": 17973,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Samford Road",
+    "JamFactor": 1.7,
+    "LengthMeters": 17270,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Mt Nebo Road",
+    "JamFactor": 0.7,
+    "LengthMeters": 17249,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Kholo Bridge",
+    "JamFactor": 0,
+    "LengthMeters": 17005,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Old Gympie Road",
+    "JamFactor": 2.9,
+    "LengthMeters": 16442,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Dayboro Road",
+    "JamFactor": 0.2,
+    "LengthMeters": 15881,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   }
+  ],
+  "Weather": {
+   "Conditions": "Clear. Refreshingly cool.",
+   "TemperatureC": 16.39,
+   "WindDescription": "blustery West wind",
+   "PrecipitationProbabilityPercent": 0,
+   "Alerts": [],
+   "Outlook": "reaching 25 degrees later today; tomorrow sunny. mild, around 24 degrees",
+   "IsForecast": false,
+   "HasMajorAlert": false
+  },
+  "Fuel": {
+   "Summaries": [
+    {
+     "FuelType": "Unleaded 91",
+     "MinPrice": 1.979,
+     "AveragePrice": 2.046,
+     "StationCount": 50,
+     "LatestModifiedUtc": "2026-08-11T11:33:06+00:00",
+     "CheapestStationSuburb": "Chermside West"
+    },
+    {
+     "FuelType": "Diesel",
+     "MinPrice": 2.395,
+     "AveragePrice": 2.463,
+     "StationCount": 18,
+     "LatestModifiedUtc": "2026-08-11T11:33:06+00:00",
+     "CheapestStationSuburb": "Grange"
+    }
+   ],
+   "HasPrices": true
+  },
+  "IncidentChanges": null,
+  "Guidance": {
+   "Entries": [
+    {
+     "Id": "805e0cdd0ce947588bbb591a659b4b60",
+     "Scope": 1,
+     "ScopeId": "brisbane",
+     "Type": 2,
+     "Text": "Brisbane names: 'the Gateway', 'the Bruce Highway', 'the M1', 'the Pacific Motorway', 'the Riverside Expressway', 'the Story Bridge', 'the ICB'.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for — a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off.",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-08-10T08:31:01.7083665Z",
+     "UpdatedAtUtc": "2026-08-10T08:31:01.7083665Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "645e52b90299493a8dbde1205c6c657e",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "75fe175d471144b38bf23c24966dfb6f",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "7b012b9381e04e72be8211133f224188",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 4,
+     "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "Australian English with natural spoken contractions. Round the figures — say 'about ten minutes', never '10.3 minutes'. No police codes or insider jargon.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 3,
+     "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "f5e76bd5993c41edb637a7302f7d7479",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 2,
+     "Text": "Use common road names with the definite article: 'the M1', 'the M4', 'the CBD'. Use 'citybound' and 'outbound' for direction of travel.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    }
+   ],
+   "DroppedCount": 0,
+   "Count": 8,
+   "HasEntries": true
+  },
+  "FutureLessons": [],
+  "Bookends": null,
+  "FillerStatements": [
+   {
+    "Id": "759b91370aed4acb948e0af4e6e190c2",
+    "Text": "Please stay alert out there and stick to the speed limit.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "c90b73c9ae244cf1a5ce8ad73edc3e75",
+    "Text": "School zones carry reduced speed limits on every school day — worth slowing down for.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "3b878f4f54824274ad63aef1a12df5e2",
+    "Text": "A reminder that speed restrictions apply through the signed roadworks zones — take it easy through the cones.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "114004fb09bf4977abd0cb75598f1a5a",
+    "Text": "The Gateway Bridge, Clem7 and Legacy Way tunnels are all toll routes here in Brisbane.",
+    "Enabled": true,
+    "Availability": null
+   }
+  ],
+  "SharedRules": null,
+  "RoadFeelPalette": null,
+  "EditorialSettings": {
+   "Scope": 0,
+   "ScopeId": ""
+  },
+  "CuratedCorridorRoads": null,
+  "CuratedGoodRunRoads": null,
+  "ExcludedIncidentKeys": null,
+  "WriterPrompt": null,
+  "EditedIncidents": []
+ },
+ "Coverage": {
+  "Latitude": -27.3921,
+  "Longitude": 153.01595,
+  "RadiusKm": 43.54876494078112,
+  "ShapeType": "polygon",
+  "West": null,
+  "South": null,
+  "East": null,
+  "North": null,
+  "CorridorPoints": null,
+  "CorridorRadiusMeters": null,
+  "PolygonPoints": [
+   {
+    "Lat": -27.0703,
+    "Lng": 152.9505
+   },
+   {
+    "Lat": -27.229,
+    "Lng": 153.1068
+   },
+   {
+    "Lat": -27.4437,
+    "Lng": 153.1737
+   },
+   {
+    "Lat": -27.5288,
+    "Lng": 153.267
+   },
+   {
+    "Lat": -27.7139,
+    "Lng": 153.1861
+   },
+   {
+    "Lat": -27.6626,
+    "Lng": 153.0529
+   },
+   {
+    "Lat": -27.6164,
+    "Lng": 152.7649
+   },
+   {
+    "Lat": -27.4013,
+    "Lng": 152.9364
+   }
+  ]
+ },
+ "FullCorridorPool": [
+  {
+   "RoadName": "Bruce Highway",
+   "Severity": 1,
+   "FunctionalClass": 1,
+   "TotalLengthMeters": 7302,
+   "ImpactScore": 254.8,
+   "PrimaryType": "construction",
+   "Description": "roadworks citybound",
+   "Incidents": [
+    {
+     "Id": "3053568323130588578",
+     "Description": "Between Bruce Highway and Sandgate Road - Lane blocked",
+     "Severity": 1,
+     "Location": "Bruce Hwy",
+     "Type": "construction",
+     "LengthMeters": 5483,
+     "FunctionalClass": 1,
+     "Latitude": -27.29673,
+     "Longitude": 153.01778,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "citybound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365890865:$1:240452780#-0..1",
+      "$0:365890865:$1:828749669#+0..1",
+      "$0:365890865:$1:828749672#-0..0.64853"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -27.29673,
+       "Lng": 153.01778
+      },
+      {
+       "Lat": -27.30037,
+       "Lng": 153.01725
+      },
+      {
+       "Lat": -27.30274,
+       "Lng": 153.01893
+      },
+      {
+       "Lat": -27.30396,
+       "Lng": 153.02192
+      },
+      {
+       "Lat": -27.30708,
+       "Lng": 153.02784
+      },
+      {
+       "Lat": -27.309,
+       "Lng": 153.03066
+      },
+      {
+       "Lat": -27.31033,
+       "Lng": 153.03562
+      },
+      {
+       "Lat": -27.31198,
+       "Lng": 153.03881
+      },
+      {
+       "Lat": -27.31285,
+       "Lng": 153.04109
+      },
+      {
+       "Lat": -27.31269,
+       "Lng": 153.04497
+      },
+      {
+       "Lat": -27.31337,
+       "Lng": 153.04695
+      },
+      {
+       "Lat": -27.31446,
+       "Lng": 153.04774
+      },
+      {
+       "Lat": -27.31863,
+       "Lng": 153.0495
+      },
+      {
+       "Lat": -27.32097,
+       "Lng": 153.05037
+      },
+      {
+       "Lat": -27.3246,
+       "Lng": 153.05125
+      },
+      {
+       "Lat": -27.3278,
+       "Lng": 153.05139
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-10T16:16:34+00:00"
+    },
+    {
+     "Id": "4252568569751917526",
+     "Description": "At Anzac Avenue - Road construction",
+     "Severity": 1,
+     "Location": "Bruce Hwy",
+     "Type": "construction",
+     "LengthMeters": 1819,
+     "FunctionalClass": 1,
+     "Latitude": -27.26772,
+     "Longitude": 153.01794,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "outbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365890874:$1:914132110#+0.02404..1",
+      "$0:365890874:$1:737803275#+0..1",
+      "$0:365890874:$1:737802954#+0..1",
+      "$0:365890874:$1:476002929#+0..0.13032"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -27.26772,
+       "Lng": 153.01794
+      },
+      {
+       "Lat": -27.26585,
+       "Lng": 153.01807
+      },
+      {
+       "Lat": -27.25987,
+       "Lng": 153.01848
+      },
+      {
+       "Lat": -27.25961,
+       "Lng": 153.0185
+      },
+      {
+       "Lat": -27.25961,
+       "Lng": 153.0185
+      },
+      {
+       "Lat": -27.25945,
+       "Lng": 153.01851
+      },
+      {
+       "Lat": -27.25718,
+       "Lng": 153.01867
+      },
+      {
+       "Lat": -27.2559,
+       "Lng": 153.01876
+      },
+      {
+       "Lat": -27.2559,
+       "Lng": 153.01876
+      },
+      {
+       "Lat": -27.25505,
+       "Lng": 153.01882
+      },
+      {
+       "Lat": -27.25386,
+       "Lng": 153.0189
+      },
+      {
+       "Lat": -27.25317,
+       "Lng": 153.01894
+      },
+      {
+       "Lat": -27.25317,
+       "Lng": 153.01894
+      },
+      {
+       "Lat": -27.25309,
+       "Lng": 153.01894
+      },
+      {
+       "Lat": -27.25275,
+       "Lng": 153.01895
+      },
+      {
+       "Lat": -27.25139,
+       "Lng": 153.01884
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-09T03:57:02+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "citybound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -27.29673,
+   "Longitude": 153.01778,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 1,
+   "PriorityBoosted": true,
+   "Detour": null,
+   "DelayMinutes": 1
+  },
+  {
+   "RoadName": "Gateway Motorway",
+   "Severity": 1,
+   "FunctionalClass": 1,
+   "TotalLengthMeters": 6229,
+   "ImpactScore": 254.8,
+   "PrimaryType": "construction",
+   "Description": "roadworks westbound",
+   "Incidents": [
+    {
+     "Id": "3179114667743551042",
+     "Description": "Between Sandgate Road and Bruce Highway - Road construction",
+     "Severity": 1,
+     "Location": "Gateway Mwy",
+     "Type": "construction",
+     "LengthMeters": 4810,
+     "FunctionalClass": 1,
+     "Latitude": -27.32929,
+     "Longitude": 153.05104,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "westbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365890865:$1:661250772#+0.6075..1",
+      "$0:365890865:$1:828749667#+0..1",
+      "$0:365890865:$1:828749671#+0..1",
+      "$0:365890865:$1:746190582#+0..1",
+      "$0:365890866:$1:221817891#-0..1",
+      "$0:365890866:$1:221724332#+0..0.62826"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -27.32929,
+       "Lng": 153.05104
+      },
+      {
+       "Lat": -27.32603,
+       "Lng": 153.0513
+      },
+      {
+       "Lat": -27.32438,
+       "Lng": 153.05102
+      },
+      {
+       "Lat": -27.32089,
+       "Lng": 153.05017
+      },
+      {
+       "Lat": -27.3183,
+       "Lng": 153.04922
+      },
+      {
+       "Lat": -27.31674,
+       "Lng": 153.04852
+      },
+      {
+       "Lat": -27.31431,
+       "Lng": 153.04744
+      },
+      {
+       "Lat": -27.31301,
+       "Lng": 153.04594
+      },
+      {
+       "Lat": -27.31307,
+       "Lng": 153.04243
+      },
+      {
+       "Lat": -27.3128,
+       "Lng": 153.0403
+      },
+      {
+       "Lat": -27.312,
+       "Lng": 153.03857
+      },
+      {
+       "Lat": -27.31037,
+       "Lng": 153.03523
+      },
+      {
+       "Lat": -27.30939,
+       "Lng": 153.0312
+      },
+      {
+       "Lat": -27.30737,
+       "Lng": 153.02796
+      },
+      {
+       "Lat": -27.30557,
+       "Lng": 153.02514
+      },
+      {
+       "Lat": -27.30331,
+       "Lng": 153.01968
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-12T02:16:43+00:00"
+    },
+    {
+     "Id": "4661090567336136031",
+     "Description": "Between Gateway Motorway and Dohles Rocks Road - Road construction",
+     "Severity": 1,
+     "Location": "Gateway Mwy",
+     "Type": "construction",
+     "LengthMeters": 1419,
+     "FunctionalClass": 1,
+     "Latitude": -27.30331,
+     "Longitude": 153.01968,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "outbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365890866:$1:221724332#+0.63149..1",
+      "$0:365890866:$1:736180583#-0..1",
+      "$0:365890866:$1:736180705#+0..0.19057"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -27.30331,
+       "Lng": 153.01968
+      },
+      {
+       "Lat": -27.30284,
+       "Lng": 153.01822
+      },
+      {
+       "Lat": -27.30266,
+       "Lng": 153.0178
+      },
+      {
+       "Lat": -27.30225,
+       "Lng": 153.01718
+      },
+      {
+       "Lat": -27.30206,
+       "Lng": 153.01698
+      },
+      {
+       "Lat": -27.30129,
+       "Lng": 153.01646
+      },
+      {
+       "Lat": -27.30056,
+       "Lng": 153.01626
+      },
+      {
+       "Lat": -27.30005,
+       "Lng": 153.01626
+      },
+      {
+       "Lat": -27.29901,
+       "Lng": 153.01657
+      },
+      {
+       "Lat": -27.29868,
+       "Lng": 153.01672
+      },
+      {
+       "Lat": -27.2985,
+       "Lng": 153.0168
+      },
+      {
+       "Lat": -27.29764,
+       "Lng": 153.01716
+      },
+      {
+       "Lat": -27.29736,
+       "Lng": 153.01725
+      },
+      {
+       "Lat": -27.29571,
+       "Lng": 153.01779
+      },
+      {
+       "Lat": -27.29459,
+       "Lng": 153.01809
+      },
+      {
+       "Lat": -27.29248,
+       "Lng": 153.01867
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "westbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -27.32929,
+   "Longitude": 153.05104,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 2,
+   "PriorityBoosted": true,
+   "Detour": null,
+   "DelayMinutes": 2
+  },
+  {
+   "RoadName": "Ipswich Motorway",
+   "Severity": 1,
+   "FunctionalClass": 1,
+   "TotalLengthMeters": 6646,
+   "ImpactScore": 247,
+   "PrimaryType": "construction",
+   "Description": "roadworks eastbound",
+   "Incidents": [
+    {
+     "Id": "2887968023636816821",
+     "Description": "Between Warrego Highway and Logan Motorway - Road construction",
+     "Severity": 1,
+     "Location": "Ipswich Mwy",
+     "Type": "construction",
+     "LengthMeters": 6646,
+     "FunctionalClass": 1,
+     "Latitude": -27.59717,
+     "Longitude": 152.85038,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "eastbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365889146:$1:220997166#-0.45559..1",
+      "$0:365889146:$1:480387079#-0..1",
+      "$0:365889146:$1:221126899#+0..1",
+      "$0:365889150:$1:235203317#-0..1",
+      "$0:365889150:$1:221138802#-0..1",
+      "$0:365889150:$1:221594846#+0..0.99494"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -27.59717,
+       "Lng": 152.85038
+      },
+      {
+       "Lat": -27.59793,
+       "Lng": 152.85483
+      },
+      {
+       "Lat": -27.59982,
+       "Lng": 152.85736
+      },
+      {
+       "Lat": -27.60281,
+       "Lng": 152.8606
+      },
+      {
+       "Lat": -27.60425,
+       "Lng": 152.86417
+      },
+      {
+       "Lat": -27.60381,
+       "Lng": 152.86815
+      },
+      {
+       "Lat": -27.60171,
+       "Lng": 152.87396
+      },
+      {
+       "Lat": -27.60095,
+       "Lng": 152.87949
+      },
+      {
+       "Lat": -27.60139,
+       "Lng": 152.88433
+      },
+      {
+       "Lat": -27.60356,
+       "Lng": 152.89063
+      },
+      {
+       "Lat": -27.60569,
+       "Lng": 152.89486
+      },
+      {
+       "Lat": -27.60719,
+       "Lng": 152.89655
+      },
+      {
+       "Lat": -27.60891,
+       "Lng": 152.90028
+      },
+      {
+       "Lat": -27.6092,
+       "Lng": 152.90359
+      },
+      {
+       "Lat": -27.60886,
+       "Lng": 152.90825
+      },
+      {
+       "Lat": -27.60754,
+       "Lng": 152.91209
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-25T10:00:25+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "eastbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -27.59717,
+   "Longitude": 152.85038,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 1,
+   "PriorityBoosted": true,
+   "Detour": null,
+   "DelayMinutes": 1
+  },
+  {
+   "RoadName": "Pacific Motorway",
+   "Severity": 1,
+   "FunctionalClass": 1,
+   "TotalLengthMeters": 130,
+   "ImpactScore": 244.99250543199554,
+   "PrimaryType": "construction",
+   "Description": "roadworks",
+   "Incidents": [
+    {
+     "Id": "2543287847163343322",
+     "Description": "At Beenleigh - Redland Bay Road - Road construction",
+     "Severity": 1,
+     "Location": "Pacific Mwy",
+     "Type": "construction",
+     "LengthMeters": 130,
+     "FunctionalClass": 1,
+     "Latitude": -27.68238,
+     "Longitude": 153.18773,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365889359:$1:221133699#+0.79918..0.89184"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -27.68238,
+       "Lng": 153.18773
+      },
+      {
+       "Lat": -27.68132,
+       "Lng": 153.18717
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-08T02:31:03+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -27.68238,
+   "Longitude": 153.18773,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 3,
+   "PriorityBoosted": true,
+   "Detour": null,
+   "DelayMinutes": 3
+  },
+  {
+   "RoadName": "Warrego Highway",
+   "Severity": 1,
+   "FunctionalClass": 1,
+   "TotalLengthMeters": 3759,
+   "ImpactScore": 190,
+   "PrimaryType": "construction",
+   "Description": "roadworks westbound",
+   "Incidents": [
+    {
+     "Id": "2983454572527730160",
+     "Description": "Between River Road and Mt Crosby Road - Road construction",
+     "Severity": 1,
+     "Location": "Warrego Hwy",
+     "Type": "construction",
+     "LengthMeters": 3759,
+     "FunctionalClass": 1,
+     "Latitude": -27.58851,
+     "Longitude": 152.82298,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "westbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365889221:$1:556788067#+0..1",
+      "$0:365889221:$1:735943452#-0..1",
+      "$0:365889221:$1:735942579#+0..1",
+      "$0:365889220:$1:735943032#+0..1",
+      "$0:365889217:$1:220297992#-0..0.34261"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -27.58851,
+       "Lng": 152.82298
+      },
+      {
+       "Lat": -27.58793,
+       "Lng": 152.82227
+      },
+      {
+       "Lat": -27.5874,
+       "Lng": 152.82161
+      },
+      {
+       "Lat": -27.58454,
+       "Lng": 152.81803
+      },
+      {
+       "Lat": -27.58361,
+       "Lng": 152.81667
+      },
+      {
+       "Lat": -27.58305,
+       "Lng": 152.81512
+      },
+      {
+       "Lat": -27.58278,
+       "Lng": 152.81396
+      },
+      {
+       "Lat": -27.5824,
+       "Lng": 152.81242
+      },
+      {
+       "Lat": -27.58212,
+       "Lng": 152.81165
+      },
+      {
+       "Lat": -27.57698,
+       "Lng": 152.80382
+      },
+      {
+       "Lat": -27.57633,
+       "Lng": 152.80269
+      },
+      {
+       "Lat": -27.57428,
+       "Lng": 152.7967
+      },
+      {
+       "Lat": -27.57389,
+       "Lng": 152.7949
+      },
+      {
+       "Lat": -27.57389,
+       "Lng": 152.79333
+      },
+      {
+       "Lat": -27.57407,
+       "Lng": 152.79234
+      },
+      {
+       "Lat": -27.57467,
+       "Lng": 152.78975
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-22T22:44:26+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "westbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -27.58851,
+   "Longitude": 152.82298,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  },
+  {
+   "RoadName": "Formation Street",
+   "Severity": 1,
+   "FunctionalClass": 1,
+   "TotalLengthMeters": 1329,
+   "ImpactScore": 190,
+   "PrimaryType": "construction",
+   "Description": "roadworks eastbound",
+   "Incidents": [
+    {
+     "Id": "1639579015761937920",
+     "Description": "At Boundary Road - Road construction",
+     "Severity": 1,
+     "Location": "Formation St",
+     "Type": "construction",
+     "LengthMeters": 1329,
+     "FunctionalClass": 1,
+     "Latitude": -27.6077,
+     "Longitude": 152.92404,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "eastbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365889151:$1:253727910#-0.98744..1",
+      "$0:365889322:$1:220920226#-0..1"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -27.6077,
+       "Lng": 152.92404
+      },
+      {
+       "Lat": -27.60775,
+       "Lng": 152.9241
+      },
+      {
+       "Lat": -27.60909,
+       "Lng": 152.92563
+      },
+      {
+       "Lat": -27.61018,
+       "Lng": 152.92694
+      },
+      {
+       "Lat": -27.61067,
+       "Lng": 152.92761
+      },
+      {
+       "Lat": -27.61093,
+       "Lng": 152.92803
+      },
+      {
+       "Lat": -27.61165,
+       "Lng": 152.9295
+      },
+      {
+       "Lat": -27.61186,
+       "Lng": 152.93009
+      },
+      {
+       "Lat": -27.61196,
+       "Lng": 152.9304
+      },
+      {
+       "Lat": -27.61201,
+       "Lng": 152.93057
+      },
+      {
+       "Lat": -27.61234,
+       "Lng": 152.93168
+      },
+      {
+       "Lat": -27.61266,
+       "Lng": 152.93245
+      },
+      {
+       "Lat": -27.61333,
+       "Lng": 152.93356
+      },
+      {
+       "Lat": -27.61349,
+       "Lng": 152.93377
+      },
+      {
+       "Lat": -27.61431,
+       "Lng": 152.93459
+      },
+      {
+       "Lat": -27.6146,
+       "Lng": 152.93485
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-11T10:00:35+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "eastbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -27.6077,
+   "Longitude": 152.92404,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  },
+  {
+   "RoadName": "Gympie Road",
+   "Severity": 1,
+   "FunctionalClass": 2,
+   "TotalLengthMeters": 130,
+   "ImpactScore": 174.45577340922733,
+   "PrimaryType": "construction",
+   "Description": "roadworks",
+   "Incidents": [
+    {
+     "Id": "4102809099988497174",
+     "Description": "At Webster Road - Road construction",
+     "Severity": 1,
+     "Location": "Gympie Rd",
+     "Type": "construction",
+     "LengthMeters": 68,
+     "FunctionalClass": 2,
+     "Latitude": -27.37412,
+     "Longitude": 153.02416,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365890840:$1:220976207#+0.41243..0.81623"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -27.37412,
+       "Lng": 153.02416
+      },
+      {
+       "Lat": -27.3738,
+       "Lng": 153.02357
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+    },
+    {
+     "Id": "1147432083021885562",
+     "Description": "At Buckby Street - Road construction",
+     "Severity": 2,
+     "Location": "Gympie Rd",
+     "Type": "construction",
+     "LengthMeters": 62,
+     "FunctionalClass": 3,
+     "Latitude": -27.28813,
+     "Longitude": 152.98452,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365890860:$1:911062934#-0.03226..1"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -27.28813,
+       "Lng": 152.98452
+      },
+      {
+       "Lat": -27.28867,
+       "Lng": 152.98468
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-21T03:42:23+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": 17,
+   "NormalDriveTimeMinutes": 15,
+   "Latitude": -27.37412,
+   "Longitude": 153.02416,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 2,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": 2
+  },
+  {
+   "RoadName": "Milton Road",
+   "Severity": 1,
+   "FunctionalClass": 2,
+   "TotalLengthMeters": 58,
+   "ImpactScore": 167.05371197425174,
+   "PrimaryType": "construction",
+   "Description": "roadworks",
+   "Incidents": [
+    {
+     "Id": "2613405707077925893",
+     "Description": "At Sylvan Road - Lane blocked",
+     "Severity": 1,
+     "Location": "Milton Rd",
+     "Type": "construction",
+     "LengthMeters": 58,
+     "FunctionalClass": 2,
+     "Latitude": -27.47823,
+     "Longitude": 152.98516,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365889446:$1:919755735#-0.14286..1",
+      "$0:365889446:$1:916233164#-0..0.8"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -27.47823,
+       "Lng": 152.98516
+      },
+      {
+       "Lat": -27.47837,
+       "Lng": 152.9854
+      },
+      {
+       "Lat": -27.47837,
+       "Lng": 152.9854
+      },
+      {
+       "Lat": -27.47842,
+       "Lng": 152.98549
+      },
+      {
+       "Lat": -27.47849,
+       "Lng": 152.98567
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-08-11T11:09:08+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -27.47823,
+   "Longitude": 152.98516,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 1,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": 1
+  },
+  {
+   "RoadName": "Zillmere Road",
+   "Severity": 1,
+   "FunctionalClass": 3,
+   "TotalLengthMeters": 492,
+   "ImpactScore": 165,
+   "PrimaryType": "congestion",
+   "Description": "at a standstill",
+   "Incidents": [],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": null,
+   "Longitude": null,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 5,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": 5
+  },
+  {
+   "RoadName": "Baudesert Road",
+   "Severity": 1,
+   "FunctionalClass": 3,
+   "TotalLengthMeters": 959,
+   "ImpactScore": 165,
+   "PrimaryType": "congestion",
+   "Description": "at a standstill",
+   "Incidents": [],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": null,
+   "Longitude": null,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 2,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": 2
+  }
+ ]
+}

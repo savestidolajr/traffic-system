@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.4540534+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.79896,144.91043\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "1 Joseph Rd, Footscray VIC 3011, Australia",
+          "id": "here:af:streetsection:.U0uA0LHv2xUPiUJ2EXWDD:CggIBCCUzvyfARABGgEx",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "1 Joseph Rd, Footscray VIC 3011, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Footscray",
+            "street": "Joseph Rd",
+            "postalCode": "3011",
+            "houseNumber": "1"
+          },
+          "position": {
+            "lat": -37.79877,
+            "lng": 144.91014
+          },
+          "access": [
+            {
+              "lat": -37.79892,
+              "lng": 144.9101
+            }
+          ],
+          "distance": 29,
+          "mapView": {
+            "west": 144.90924,
+            "south": -37.80084,
+            "east": 144.91609,
+            "north": -37.79822
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

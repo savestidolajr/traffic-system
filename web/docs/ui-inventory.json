@@ -1,0 +1,2199 @@
+[
+  {
+    "id": "primitives",
+    "title": "Primitives — `src/components/ui/`",
+    "blurb": "shadcn/Radix-derived building blocks. Restyle these; never fork one into a feature folder.",
+    "dir": "src/components/ui",
+    "recursive": true,
+    "components": [
+      {
+        "name": "Alert",
+        "file": "src/components/ui/alert.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {
+          "variant": [
+            "default",
+            "destructive"
+          ]
+        },
+        "usageCount": 3,
+        "usedIn": [
+          "src/components/ErrorAlert.tsx",
+          "src/components/ErrorBoundary.tsx",
+          "src/pages/OperatorsPage.tsx"
+        ]
+      },
+      {
+        "name": "AlertDescription",
+        "file": "src/components/ui/alert.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/components/ErrorAlert.tsx",
+          "src/components/ErrorBoundary.tsx",
+          "src/pages/OperatorsPage.tsx"
+        ]
+      },
+      {
+        "name": "AlertDialog",
+        "file": "src/components/ui/alert-dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/components/ConfirmDialog.tsx",
+          "src/components/LiveEditConfirmationDialog.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "AlertDialogAction",
+        "file": "src/components/ui/alert-dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/components/ConfirmDialog.tsx",
+          "src/components/LiveEditConfirmationDialog.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "AlertDialogCancel",
+        "file": "src/components/ui/alert-dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/components/ConfirmDialog.tsx",
+          "src/components/LiveEditConfirmationDialog.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "AlertDialogContent",
+        "file": "src/components/ui/alert-dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/components/ConfirmDialog.tsx",
+          "src/components/LiveEditConfirmationDialog.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "AlertDialogDescription",
+        "file": "src/components/ui/alert-dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/components/ConfirmDialog.tsx",
+          "src/components/LiveEditConfirmationDialog.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "AlertDialogFooter",
+        "file": "src/components/ui/alert-dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/components/ConfirmDialog.tsx",
+          "src/components/LiveEditConfirmationDialog.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "AlertDialogHeader",
+        "file": "src/components/ui/alert-dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/components/ConfirmDialog.tsx",
+          "src/components/LiveEditConfirmationDialog.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "AlertDialogOverlay",
+        "file": "src/components/ui/alert-dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "AlertDialogPortal",
+        "file": "src/components/ui/alert-dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "AlertDialogTitle",
+        "file": "src/components/ui/alert-dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/components/ConfirmDialog.tsx",
+          "src/components/LiveEditConfirmationDialog.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "AlertDialogTrigger",
+        "file": "src/components/ui/alert-dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "AlertTitle",
+        "file": "src/components/ui/alert.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/components/ErrorAlert.tsx",
+          "src/components/ErrorBoundary.tsx",
+          "src/pages/OperatorsPage.tsx"
+        ]
+      },
+      {
+        "name": "AuroraHero",
+        "file": "src/components/ui/aceternity/aurora-hero.tsx",
+        "summary": "Aceternity \"Aurora Background\", adapted for the workstation: a contained hero band (not a 100vh marketing section), the palette shifted from Aceternity's blues to the ARN purple family, and the drift wrapped in `motion-safe` (reduced motion gets the same aurora, frozen).",
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 2,
+        "usedIn": [
+          "src/features/onair/components/board/CoverageHome.tsx",
+          "src/pages/HomePage.tsx"
+        ]
+      },
+      {
+        "name": "AuroraWash",
+        "file": "src/components/ui/aceternity/aurora-wash.tsx",
+        "summary": "Aceternity's Aurora Background at micro scale: a corner-masked gradient bloom for a single data block, tinted by the data it sits behind (e.g.",
+        "required": [
+          "gradient"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/features/jobs/components/review/ReviewSources.tsx"
+        ]
+      },
+      {
+        "name": "Badge",
+        "file": "src/components/ui/badge.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {
+          "variant": [
+            "default",
+            "secondary",
+            "destructive",
+            "rejected",
+            "outline",
+            "success",
+            "warning",
+            "muted",
+            "approved",
+            "requested",
+            "hereFetched",
+            "incidents",
+            "scriptReady",
+            "audioReady",
+            "synthesizingAudio",
+            "fallback",
+            "info",
+            "broadcasting",
+            "scheduled"
+          ]
+        },
+        "usageCount": 41,
+        "usedIn": [
+          "src/components/navigation/AppSidebar.tsx",
+          "src/components/navigation/MobileNav.tsx",
+          "src/features/bookends/components/BookendCard.tsx"
+        ]
+      },
+      {
+        "name": "Button",
+        "file": "src/components/ui/button.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {
+          "variant": [
+            "default",
+            "destructive",
+            "outline",
+            "secondary",
+            "ghost",
+            "link"
+          ],
+          "size": [
+            "default",
+            "sm",
+            "lg",
+            "icon"
+          ]
+        },
+        "usageCount": 80,
+        "usedIn": [
+          "src/App.tsx",
+          "src/components/EntityActionsMenu.tsx",
+          "src/components/ErrorAlert.tsx"
+        ]
+      },
+      {
+        "name": "Card",
+        "file": "src/components/ui/card.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 2,
+        "usedIn": [
+          "src/components/Placeholder.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "CardAction",
+        "file": "src/components/ui/card.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "CardContent",
+        "file": "src/components/ui/card.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 2,
+        "usedIn": [
+          "src/components/Placeholder.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "CardDescription",
+        "file": "src/components/ui/card.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "CardFooter",
+        "file": "src/components/ui/card.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "CardHeader",
+        "file": "src/components/ui/card.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "CardTitle",
+        "file": "src/components/ui/card.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "Command",
+        "file": "src/components/ui/command.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "CommandDialog",
+        "file": "src/components/ui/command.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/CommandPalette.tsx"
+        ]
+      },
+      {
+        "name": "CommandEmpty",
+        "file": "src/components/ui/command.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/CommandPalette.tsx"
+        ]
+      },
+      {
+        "name": "CommandGroup",
+        "file": "src/components/ui/command.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/CommandPalette.tsx"
+        ]
+      },
+      {
+        "name": "CommandInput",
+        "file": "src/components/ui/command.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/CommandPalette.tsx"
+        ]
+      },
+      {
+        "name": "CommandItem",
+        "file": "src/components/ui/command.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/CommandPalette.tsx"
+        ]
+      },
+      {
+        "name": "CommandList",
+        "file": "src/components/ui/command.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/CommandPalette.tsx"
+        ]
+      },
+      {
+        "name": "CommandSeparator",
+        "file": "src/components/ui/command.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "CommandShortcut",
+        "file": "src/components/ui/command.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/CommandPalette.tsx"
+        ]
+      },
+      {
+        "name": "Container",
+        "file": "src/components/ui/container.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/layout/PageContainer.tsx"
+        ]
+      },
+      {
+        "name": "Dialog",
+        "file": "src/components/ui/dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 6,
+        "usedIn": [
+          "src/components/studio/Studio.tsx",
+          "src/components/ui/command.tsx",
+          "src/features/jobs/components/review/adjust/AdjustMapExplorer.tsx"
+        ]
+      },
+      {
+        "name": "DialogClose",
+        "file": "src/components/ui/dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/studio/Studio.tsx"
+        ]
+      },
+      {
+        "name": "DialogContent",
+        "file": "src/components/ui/dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 5,
+        "usedIn": [
+          "src/components/ui/command.tsx",
+          "src/features/jobs/components/review/adjust/AdjustMapExplorer.tsx",
+          "src/features/jobs/components/review/adjust/EvidenceDialog.tsx"
+        ]
+      },
+      {
+        "name": "DialogDescription",
+        "file": "src/components/ui/dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 4,
+        "usedIn": [
+          "src/components/studio/Studio.tsx",
+          "src/features/jobs/components/review/adjust/EvidenceDialog.tsx",
+          "src/features/playbooks/components/WriterPromptManager.tsx"
+        ]
+      },
+      {
+        "name": "DialogFooter",
+        "file": "src/components/ui/dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 2,
+        "usedIn": [
+          "src/features/playbooks/components/WriterPromptManager.tsx",
+          "src/features/schedules/components/FillerStatementsManager.tsx"
+        ]
+      },
+      {
+        "name": "DialogHeader",
+        "file": "src/components/ui/dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 4,
+        "usedIn": [
+          "src/features/jobs/components/review/adjust/AdjustMapExplorer.tsx",
+          "src/features/jobs/components/review/adjust/EvidenceDialog.tsx",
+          "src/features/playbooks/components/WriterPromptManager.tsx"
+        ]
+      },
+      {
+        "name": "DialogOverlay",
+        "file": "src/components/ui/dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/studio/Studio.tsx"
+        ]
+      },
+      {
+        "name": "DialogPortal",
+        "file": "src/components/ui/dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/studio/Studio.tsx"
+        ]
+      },
+      {
+        "name": "DialogTitle",
+        "file": "src/components/ui/dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 6,
+        "usedIn": [
+          "src/components/studio/Studio.tsx",
+          "src/components/ui/command.tsx",
+          "src/features/jobs/components/review/adjust/AdjustMapExplorer.tsx"
+        ]
+      },
+      {
+        "name": "DialogTrigger",
+        "file": "src/components/ui/dialog.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "DotGridBackdrop",
+        "file": "src/components/ui/aceternity/dot-grid-backdrop.tsx",
+        "summary": "Aceternity-style dot-grid backdrop, radially masked so it fades toward the edges.",
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/App.tsx",
+          "src/components/Placeholder.tsx",
+          "src/components/studio/Studio.tsx"
+        ]
+      },
+      {
+        "name": "DropdownMenu",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 13,
+        "usedIn": [
+          "src/components/EntityActionsMenu.tsx",
+          "src/components/RuleRow.tsx",
+          "src/components/navigation/UserMenu.tsx"
+        ]
+      },
+      {
+        "name": "DropdownMenuCheckboxItem",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "DropdownMenuContent",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 13,
+        "usedIn": [
+          "src/components/EntityActionsMenu.tsx",
+          "src/components/RuleRow.tsx",
+          "src/components/navigation/UserMenu.tsx"
+        ]
+      },
+      {
+        "name": "DropdownMenuGroup",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 6,
+        "usedIn": [
+          "src/components/navigation/UserMenu.tsx",
+          "src/features/notifications/components/NotificationsPanel.tsx",
+          "src/features/operators/components/OperatorAssignmentCard.tsx"
+        ]
+      },
+      {
+        "name": "DropdownMenuItem",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 13,
+        "usedIn": [
+          "src/components/EntityActionsMenu.tsx",
+          "src/components/RuleRow.tsx",
+          "src/components/navigation/UserMenu.tsx"
+        ]
+      },
+      {
+        "name": "DropdownMenuLabel",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/components/navigation/UserMenu.tsx",
+          "src/features/notifications/components/NotificationsPanel.tsx",
+          "src/features/playbooks/components/WriterPromptManager.tsx"
+        ]
+      },
+      {
+        "name": "DropdownMenuPortal",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "DropdownMenuRadioGroup",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "DropdownMenuRadioItem",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [
+          "value"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "DropdownMenuSeparator",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 6,
+        "usedIn": [
+          "src/components/navigation/UserMenu.tsx",
+          "src/features/notifications/components/NotificationsPanel.tsx",
+          "src/features/onair/components/workstation/ReviewPane.tsx"
+        ]
+      },
+      {
+        "name": "DropdownMenuShortcut",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "DropdownMenuSub",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "DropdownMenuSubContent",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "DropdownMenuSubTrigger",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "DropdownMenuTrigger",
+        "file": "src/components/ui/dropdown-menu.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 13,
+        "usedIn": [
+          "src/components/EntityActionsMenu.tsx",
+          "src/components/RuleRow.tsx",
+          "src/components/navigation/UserMenu.tsx"
+        ]
+      },
+      {
+        "name": "Flex",
+        "file": "src/components/ui/flex.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/layout/Header.tsx"
+        ]
+      },
+      {
+        "name": "Form",
+        "file": "src/components/ui/form.tsx",
+        "summary": null,
+        "required": [
+          "clearErrors",
+          "control",
+          "formState",
+          "getFieldState",
+          "getValues",
+          "handleSubmit",
+          "register",
+          "reset",
+          "resetDefaultValues",
+          "resetField",
+          "setError",
+          "setFocus",
+          "setValue",
+          "setValues",
+          "subscribe",
+          "trigger",
+          "unregister",
+          "watch"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 8,
+        "usedIn": [
+          "src/features/operators/components/AssignOperatorDialog.tsx",
+          "src/features/schedules/components/BookendRotationEditor.test.tsx",
+          "src/features/schedules/components/ScheduleStudio.tsx"
+        ]
+      },
+      {
+        "name": "FormControl",
+        "file": "src/components/ui/form.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 8,
+        "usedIn": [
+          "src/components/FormInputField.tsx",
+          "src/features/operators/components/AssignOperatorDialog.tsx",
+          "src/features/schedules/components/EntitySelectorField.tsx"
+        ]
+      },
+      {
+        "name": "FormDescription",
+        "file": "src/components/ui/form.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 2,
+        "usedIn": [
+          "src/features/schedules/components/EntitySelectorField.tsx",
+          "src/features/schedules/components/sections/AlertTimesSection.tsx"
+        ]
+      },
+      {
+        "name": "FormField",
+        "file": "src/components/ui/form.tsx",
+        "summary": null,
+        "required": [
+          "name",
+          "render"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 11,
+        "usedIn": [
+          "src/components/FormInputField.tsx",
+          "src/components/ui/form-context.ts",
+          "src/features/operators/components/AssignOperatorDialog.tsx"
+        ]
+      },
+      {
+        "name": "FormItem",
+        "file": "src/components/ui/form.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 10,
+        "usedIn": [
+          "src/components/FormInputField.tsx",
+          "src/features/operators/components/AssignOperatorDialog.tsx",
+          "src/features/schedules/components/EntitySelectorField.tsx"
+        ]
+      },
+      {
+        "name": "FormLabel",
+        "file": "src/components/ui/form.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 8,
+        "usedIn": [
+          "src/components/FormInputField.tsx",
+          "src/features/schedules/components/EntitySelectorField.tsx",
+          "src/features/schedules/components/sections/AlertTimesSection.tsx"
+        ]
+      },
+      {
+        "name": "FormMessage",
+        "file": "src/components/ui/form.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 9,
+        "usedIn": [
+          "src/components/FormInputField.tsx",
+          "src/features/schedules/components/EntitySelectorField.tsx",
+          "src/features/schedules/components/sections/AlertTimesSection.tsx"
+        ]
+      },
+      {
+        "name": "GlowBorder",
+        "file": "src/components/ui/aceternity/glow-border.tsx",
+        "summary": "Aceternity-style moving border: a slowly rotating conic gradient clipped to a 1-2px frame around the content.",
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 6,
+        "usedIn": [
+          "src/components/RuleComposer.tsx",
+          "src/components/studio/StudioSubmitButton.tsx",
+          "src/features/onair/components/board/CoverageHome.tsx"
+        ]
+      },
+      {
+        "name": "Input",
+        "file": "src/components/ui/input.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 38,
+        "usedIn": [
+          "src/components/FormInputField.tsx",
+          "src/components/RuleToolbar.tsx",
+          "src/components/map-picker/AddressSearch.tsx"
+        ]
+      },
+      {
+        "name": "Label",
+        "file": "src/components/ui/label.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 21,
+        "usedIn": [
+          "src/components/ComposerField.tsx",
+          "src/components/FieldLabel.tsx",
+          "src/components/map-picker/MapPicker.tsx"
+        ]
+      },
+      {
+        "name": "MovingBorder",
+        "file": "src/components/ui/aceternity/moving-border.tsx",
+        "summary": "Aceternity \"Moving Border\", CSS-only: their version animates a glow dot along the border path with motion's getPointAtLength; the same read — light traveling around the edge — comes from rotating an oversized conic gradient behind a 1px-inset inner card.",
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 4,
+        "usedIn": [
+          "src/features/config-transfer/components/ImportPanel.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx",
+          "src/features/onair/components/workstation/QueueBeam.tsx"
+        ]
+      },
+      {
+        "name": "Popover",
+        "file": "src/components/ui/popover.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 4,
+        "usedIn": [
+          "src/features/jobs/components/ScriptRespellPopover.tsx",
+          "src/features/jobs/components/ScriptWordMark.tsx",
+          "src/features/onair/components/board/CoverageHome.tsx"
+        ]
+      },
+      {
+        "name": "PopoverAnchor",
+        "file": "src/components/ui/popover.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 2,
+        "usedIn": [
+          "src/features/jobs/components/ScriptRespellPopover.tsx",
+          "src/features/jobs/components/ScriptWordMark.tsx"
+        ]
+      },
+      {
+        "name": "PopoverContent",
+        "file": "src/components/ui/popover.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 4,
+        "usedIn": [
+          "src/features/jobs/components/ScriptRespellPopover.tsx",
+          "src/features/jobs/components/ScriptWordMark.tsx",
+          "src/features/onair/components/board/CoverageHome.tsx"
+        ]
+      },
+      {
+        "name": "PopoverTrigger",
+        "file": "src/components/ui/popover.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 2,
+        "usedIn": [
+          "src/features/onair/components/board/CoverageHome.tsx",
+          "src/features/schedules/components/sections/ContentSection.tsx"
+        ]
+      },
+      {
+        "name": "ScrollArea",
+        "file": "src/components/ui/scroll-area.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 2,
+        "usedIn": [
+          "src/features/notifications/components/NotificationsPanel.tsx",
+          "src/features/onair/components/workstation/QueueBeam.tsx"
+        ]
+      },
+      {
+        "name": "ScrollBar",
+        "file": "src/components/ui/scroll-area.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "Select",
+        "file": "src/components/ui/select.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 19,
+        "usedIn": [
+          "src/components/RuleToolbar.tsx",
+          "src/features/guidance/components/GuidanceComposer.tsx",
+          "src/features/guidance/components/GuidanceInventory.tsx"
+        ]
+      },
+      {
+        "name": "SelectContent",
+        "file": "src/components/ui/select.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 18,
+        "usedIn": [
+          "src/features/guidance/components/GuidanceComposer.tsx",
+          "src/features/guidance/components/GuidanceInventory.tsx",
+          "src/features/jobs/components/history/BroadcastLog.tsx"
+        ]
+      },
+      {
+        "name": "SelectGroup",
+        "file": "src/components/ui/select.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/features/jobs/components/review/ReviseDialog.tsx",
+          "src/features/pronunciation/components/PronunciationRuleTable.tsx",
+          "src/features/schedules/components/sections/BasicInfoSection.tsx"
+        ]
+      },
+      {
+        "name": "SelectItem",
+        "file": "src/components/ui/select.tsx",
+        "summary": null,
+        "required": [
+          "value"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 18,
+        "usedIn": [
+          "src/features/guidance/components/GuidanceComposer.tsx",
+          "src/features/guidance/components/GuidanceInventory.tsx",
+          "src/features/jobs/components/history/BroadcastLog.tsx"
+        ]
+      },
+      {
+        "name": "SelectLabel",
+        "file": "src/components/ui/select.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/features/pronunciation/components/PronunciationRuleTable.tsx"
+        ]
+      },
+      {
+        "name": "SelectScrollDownButton",
+        "file": "src/components/ui/select.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "SelectScrollUpButton",
+        "file": "src/components/ui/select.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "SelectSeparator",
+        "file": "src/components/ui/select.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 2,
+        "usedIn": [
+          "src/features/jobs/components/review/TonePalette.tsx",
+          "src/features/pronunciation/components/PronunciationRuleTable.tsx"
+        ]
+      },
+      {
+        "name": "SelectTrigger",
+        "file": "src/components/ui/select.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [
+          [
+            "aria-label"
+          ],
+          [
+            "aria-labelledby"
+          ]
+        ],
+        "variants": {},
+        "usageCount": 18,
+        "usedIn": [
+          "src/features/guidance/components/GuidanceComposer.tsx",
+          "src/features/guidance/components/GuidanceInventory.tsx",
+          "src/features/jobs/components/history/BroadcastLog.tsx"
+        ]
+      },
+      {
+        "name": "SelectValue",
+        "file": "src/components/ui/select.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 18,
+        "usedIn": [
+          "src/features/guidance/components/GuidanceComposer.tsx",
+          "src/features/guidance/components/GuidanceInventory.tsx",
+          "src/features/jobs/components/history/BroadcastLog.tsx"
+        ]
+      },
+      {
+        "name": "Separator",
+        "file": "src/components/ui/separator.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 4,
+        "usedIn": [
+          "src/components/ConfigRow.tsx",
+          "src/components/layout/Header.tsx",
+          "src/features/playbooks/components/studio/Studio.tsx"
+        ]
+      },
+      {
+        "name": "Sheet",
+        "file": "src/components/ui/sheet.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {
+          "side": [
+            "top",
+            "bottom",
+            "left",
+            "right"
+          ]
+        },
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/navigation/MobileNav.tsx"
+        ]
+      },
+      {
+        "name": "SheetClose",
+        "file": "src/components/ui/sheet.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "SheetContent",
+        "file": "src/components/ui/sheet.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/navigation/MobileNav.tsx"
+        ]
+      },
+      {
+        "name": "SheetDescription",
+        "file": "src/components/ui/sheet.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "SheetFooter",
+        "file": "src/components/ui/sheet.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "SheetHeader",
+        "file": "src/components/ui/sheet.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/navigation/MobileNav.tsx"
+        ]
+      },
+      {
+        "name": "SheetOverlay",
+        "file": "src/components/ui/sheet.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "SheetPortal",
+        "file": "src/components/ui/sheet.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "SheetTitle",
+        "file": "src/components/ui/sheet.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/navigation/MobileNav.tsx"
+        ]
+      },
+      {
+        "name": "SheetTrigger",
+        "file": "src/components/ui/sheet.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/components/navigation/MobileNav.tsx"
+        ]
+      },
+      {
+        "name": "Skeleton",
+        "file": "src/components/ui/skeleton.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 12,
+        "usedIn": [
+          "src/components/LoadingSkeleton.tsx",
+          "src/components/map-picker/MapPicker.tsx",
+          "src/features/activity/components/ScopedActivityHistory.tsx"
+        ]
+      },
+      {
+        "name": "Slider",
+        "file": "src/components/ui/slider.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [
+          [
+            "aria-label"
+          ],
+          [
+            "aria-labelledby"
+          ]
+        ],
+        "variants": {},
+        "usageCount": 6,
+        "usedIn": [
+          "src/features/editorial/components/EditorialSettingsPanel.tsx",
+          "src/features/jobs/components/AudioWaveformPlayer.tsx",
+          "src/features/schedules/components/IncidentPrioritiesManager.tsx"
+        ]
+      },
+      {
+        "name": "Spinner",
+        "file": "src/components/ui/spinner.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 11,
+        "usedIn": [
+          "src/components/LoadOlderButton.tsx",
+          "src/components/studio/StudioSubmitButton.tsx",
+          "src/features/jobs/components/JobActions.tsx"
+        ]
+      },
+      {
+        "name": "Spotlight",
+        "file": "src/components/ui/aceternity/spotlight.tsx",
+        "summary": "Aceternity-style spotlight: a soft diagonal light sweep for sparse surfaces (404s, empty heroes).",
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 2,
+        "usedIn": [
+          "src/components/Placeholder.tsx",
+          "src/pages/NotFoundPage.tsx"
+        ]
+      },
+      {
+        "name": "SpotlightCard",
+        "file": "src/components/ui/aceternity/spotlight-card.tsx",
+        "summary": "Aceternity-style spotlight card: a radial glow that follows the cursor, plus a border highlight near the pointer.",
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 31,
+        "usedIn": [
+          "src/components/MetricCard.tsx",
+          "src/components/RuleComposer.tsx",
+          "src/features/bookends/components/BookendCard.tsx"
+        ]
+      },
+      {
+        "name": "Switch",
+        "file": "src/components/ui/switch.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 17,
+        "usedIn": [
+          "src/components/RuleRow.tsx",
+          "src/features/bookends/components/BookendGalleryPage.tsx",
+          "src/features/editorial/components/EditorialSettingsPanel.tsx"
+        ]
+      },
+      {
+        "name": "Table",
+        "file": "src/components/ui/table.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 12,
+        "usedIn": [
+          "src/features/activity/components/ActivityTable.tsx",
+          "src/features/bookends/components/BookendTable.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "TableBody",
+        "file": "src/components/ui/table.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 11,
+        "usedIn": [
+          "src/features/activity/components/ActivityTable.tsx",
+          "src/features/bookends/components/BookendTable.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "TableCaption",
+        "file": "src/components/ui/table.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "TableCell",
+        "file": "src/components/ui/table.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 12,
+        "usedIn": [
+          "src/features/activity/components/ActivityTable.tsx",
+          "src/features/bookends/components/BookendTable.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "TableFooter",
+        "file": "src/components/ui/table.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "TableHead",
+        "file": "src/components/ui/table.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 12,
+        "usedIn": [
+          "src/components/DataTableColumnHeader.tsx",
+          "src/features/activity/components/ActivityTable.tsx",
+          "src/features/bookends/components/BookendTable.tsx"
+        ]
+      },
+      {
+        "name": "TableHeader",
+        "file": "src/components/ui/table.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 11,
+        "usedIn": [
+          "src/features/activity/components/ActivityTable.tsx",
+          "src/features/bookends/components/BookendTable.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "TableRow",
+        "file": "src/components/ui/table.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 12,
+        "usedIn": [
+          "src/features/activity/components/ActivityTable.tsx",
+          "src/features/bookends/components/BookendTable.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx"
+        ]
+      },
+      {
+        "name": "Tabs",
+        "file": "src/components/ui/tabs.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 10,
+        "usedIn": [
+          "src/features/config-transfer/components/ImportReviewTabs.tsx",
+          "src/features/onair/components/workstation/ReviewPane.tsx",
+          "src/features/schedules/components/BookendRotationEditor.tsx"
+        ]
+      },
+      {
+        "name": "TabsContent",
+        "file": "src/components/ui/tabs.tsx",
+        "summary": null,
+        "required": [
+          "value"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 10,
+        "usedIn": [
+          "src/features/config-transfer/components/ImportReviewTabs.tsx",
+          "src/features/onair/components/workstation/ReviewPane.tsx",
+          "src/features/schedules/components/BookendRotationEditor.tsx"
+        ]
+      },
+      {
+        "name": "TabsList",
+        "file": "src/components/ui/tabs.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 10,
+        "usedIn": [
+          "src/features/config-transfer/components/ImportReviewTabs.tsx",
+          "src/features/onair/components/workstation/ReviewPane.tsx",
+          "src/features/schedules/components/BookendRotationEditor.tsx"
+        ]
+      },
+      {
+        "name": "TabsTrigger",
+        "file": "src/components/ui/tabs.tsx",
+        "summary": null,
+        "required": [
+          "value"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 10,
+        "usedIn": [
+          "src/features/config-transfer/components/ImportReviewTabs.tsx",
+          "src/features/onair/components/workstation/ReviewPane.tsx",
+          "src/features/schedules/components/BookendRotationEditor.tsx"
+        ]
+      },
+      {
+        "name": "Textarea",
+        "file": "src/components/ui/textarea.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 9,
+        "usedIn": [
+          "src/features/bookends/components/BookendStudio.tsx",
+          "src/features/delivery/components/DeliveryStyleStudio.tsx",
+          "src/features/jobs/components/review/PronunciationScriptEditor.tsx"
+        ]
+      },
+      {
+        "name": "ToggleGroup",
+        "file": "src/components/ui/toggle-group.tsx",
+        "summary": null,
+        "required": [
+          "type"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 7,
+        "usedIn": [
+          "src/components/ViewToggle.tsx",
+          "src/components/map-picker/MapPicker.tsx",
+          "src/features/delivery/components/AuditionPanel.tsx"
+        ]
+      },
+      {
+        "name": "ToggleGroupItem",
+        "file": "src/components/ui/toggle-group.tsx",
+        "summary": null,
+        "required": [
+          "value"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 7,
+        "usedIn": [
+          "src/components/ViewToggle.tsx",
+          "src/components/map-picker/MapPicker.tsx",
+          "src/features/delivery/components/AuditionPanel.tsx"
+        ]
+      },
+      {
+        "name": "Tooltip",
+        "file": "src/components/ui/tooltip.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 35,
+        "usedIn": [
+          "src/components/InfoHint.tsx",
+          "src/components/LiveAssignmentNotice.tsx",
+          "src/components/RuleComposer.tsx"
+        ]
+      },
+      {
+        "name": "TooltipContent",
+        "file": "src/components/ui/tooltip.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 35,
+        "usedIn": [
+          "src/components/InfoHint.tsx",
+          "src/components/LiveAssignmentNotice.tsx",
+          "src/components/RuleComposer.tsx"
+        ]
+      },
+      {
+        "name": "TooltipProvider",
+        "file": "src/components/ui/tooltip.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 35,
+        "usedIn": [
+          "src/App.tsx",
+          "src/components/studio/Studio.test.tsx",
+          "src/features/delivery/components/DeliveryStyleStudio.test.tsx"
+        ]
+      },
+      {
+        "name": "TooltipTrigger",
+        "file": "src/components/ui/tooltip.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 35,
+        "usedIn": [
+          "src/components/InfoHint.tsx",
+          "src/components/LiveAssignmentNotice.tsx",
+          "src/components/RuleComposer.tsx"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "shared",
+    "title": "Shared components — `src/components/`",
+    "blurb": "App-level patterns assembled from the primitives and reused across features.",
+    "dir": "src/components",
+    "recursive": false,
+    "components": [
+      {
+        "name": "CardGridSkeleton",
+        "file": "src/components/LoadingSkeleton.tsx",
+        "summary": "Card-grid placeholder for entity-card pages (stations, voices, operators).",
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 7,
+        "usedIn": [
+          "src/features/bookends/components/BookendGalleryPage.tsx",
+          "src/pages/DeliveryPage.tsx",
+          "src/pages/OperatorsPage.tsx"
+        ]
+      },
+      {
+        "name": "CommandPalette",
+        "file": "src/components/CommandPalette.tsx",
+        "summary": null,
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/App.tsx"
+        ]
+      },
+      {
+        "name": "ComposerField",
+        "file": "src/components/ComposerField.tsx",
+        "summary": "One labelled field in a {@link RuleComposer} row: a small muted label above a control.",
+        "required": [
+          "label"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 5,
+        "usedIn": [
+          "src/features/guidance/components/GuidanceComposer.tsx",
+          "src/features/pronunciation/components/VerifiedPronunciationsManager.tsx",
+          "src/features/safety/components/SafetyTermsManager.tsx"
+        ]
+      },
+      {
+        "name": "ConfigRow",
+        "file": "src/components/ConfigRow.tsx",
+        "summary": null,
+        "required": [
+          "label"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/features/schedules/components/ScheduleDetailStudio.tsx"
+        ]
+      },
+      {
+        "name": "ConfirmDialog",
+        "file": "src/components/ConfirmDialog.tsx",
+        "summary": null,
+        "required": [
+          "description",
+          "onConfirm",
+          "onOpenChange",
+          "open",
+          "title"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 17,
+        "usedIn": [
+          "src/components/RuleRow.tsx",
+          "src/features/bookends/components/BookendGalleryPage.tsx",
+          "src/features/bookends/components/BookendStudio.tsx"
+        ]
+      },
+      {
+        "name": "DataBoundary",
+        "file": "src/components/DataBoundary.tsx",
+        "summary": null,
+        "required": [
+          "empty",
+          "errorFallback",
+          "loading",
+          "query"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 12,
+        "usedIn": [
+          "src/components/DataBoundary.test.tsx",
+          "src/features/bookends/components/BookendGalleryPage.tsx",
+          "src/pages/ActivityPage.tsx"
+        ]
+      },
+      {
+        "name": "DataTableColumnHeader",
+        "file": "src/components/DataTableColumnHeader.tsx",
+        "summary": "A clickable `<TableHead>` with a sort-direction indicator.",
+        "required": [
+          "label",
+          "onSort",
+          "sort",
+          "sortKey"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 8,
+        "usedIn": [
+          "src/features/activity/components/ActivityTable.tsx",
+          "src/features/bookends/components/BookendTable.tsx",
+          "src/features/delivery/components/DeliveryStyleTable.tsx"
+        ]
+      },
+      {
+        "name": "EmptyState",
+        "file": "src/components/EmptyState.tsx",
+        "summary": "The standard in-content empty state: dashed border, centred muted text.",
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 14,
+        "usedIn": [
+          "src/features/config-transfer/components/ImportReviewTabs.tsx",
+          "src/features/delivery/components/DeliveryStyleCard.tsx",
+          "src/features/guidance/components/FutureLessonsPanel.tsx"
+        ]
+      },
+      {
+        "name": "EntityActionsMenu",
+        "file": "src/components/EntityActionsMenu.tsx",
+        "summary": "Shared kebab menu for gallery cards and table rows.",
+        "required": [
+          "onDuplicate",
+          "onEdit",
+          "onView"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 9,
+        "usedIn": [
+          "src/features/bookends/components/BookendCard.tsx",
+          "src/features/bookends/components/BookendTable.tsx",
+          "src/features/delivery/components/DeliveryStyleCard.tsx"
+        ]
+      },
+      {
+        "name": "EntityDiffView",
+        "file": "src/components/EntityDiffView.tsx",
+        "summary": "Renders one value's diff: a field row shows before → after (git-style strike/highlight), a whole array item added/removed collapses to one tinted `+`/`−` line instead of exploding into its own fields.",
+        "required": [
+          "entries"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 8,
+        "usedIn": [
+          "src/features/activity/components/ActivityFeed.tsx",
+          "src/features/activity/components/ActivityTable.tsx",
+          "src/features/bookends/components/VersionHistory.tsx"
+        ]
+      },
+      {
+        "name": "ErrorAlert",
+        "file": "src/components/ErrorAlert.tsx",
+        "summary": null,
+        "required": [
+          "error"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 4,
+        "usedIn": [
+          "src/components/DataBoundary.tsx",
+          "src/features/config-transfer/components/PendingApprovalsCard.tsx",
+          "src/features/onair/components/workstation/ReviewPane.tsx"
+        ]
+      },
+      {
+        "name": "ExportButton",
+        "file": "src/components/TransferButtons.tsx",
+        "summary": null,
+        "required": [
+          "onExport"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 2,
+        "usedIn": [
+          "src/features/jobs/components/history/BroadcastLog.tsx",
+          "src/lib/transfer.ts"
+        ]
+      },
+      {
+        "name": "FieldLabel",
+        "file": "src/components/FieldLabel.tsx",
+        "summary": "A studio-form field label with its explanation behind a tooltip.",
+        "required": [
+          "hint",
+          "hintLabel"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 4,
+        "usedIn": [
+          "src/features/bookends/components/BookendStudio.tsx",
+          "src/features/delivery/components/DeliveryStyleStudio.tsx",
+          "src/features/pronunciation/components/PronunciationDictionaryStudio.tsx"
+        ]
+      },
+      {
+        "name": "FormInputField",
+        "file": "src/components/FormInputField.tsx",
+        "summary": null,
+        "required": [
+          "control",
+          "label",
+          "name"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 2,
+        "usedIn": [
+          "src/features/schedules/components/sections/BasicInfoSection.tsx",
+          "src/features/schedules/components/sections/SchedulingSection.tsx"
+        ]
+      },
+      {
+        "name": "InfoHint",
+        "file": "src/components/InfoHint.tsx",
+        "summary": "The one \"explain this\" affordance for the Bulletin-rules hub.",
+        "required": [
+          "label"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 28,
+        "usedIn": [
+          "src/components/FieldLabel.tsx",
+          "src/components/RuleToolbar.tsx",
+          "src/components/SectionHeader.tsx"
+        ]
+      },
+      {
+        "name": "ListSkeleton",
+        "file": "src/components/LoadingSkeleton.tsx",
+        "summary": "Bordered row-list placeholder for the Bulletin-rules hub inventories and the broadcast log.",
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 5,
+        "usedIn": [
+          "src/components/ScopeGroupedList.tsx",
+          "src/features/editorial/components/EditorialSettingsPanel.tsx",
+          "src/pages/ActivityPage.tsx"
+        ]
+      },
+      {
+        "name": "LiveAssignmentNotice",
+        "file": "src/components/LiveAssignmentNotice.tsx",
+        "summary": "The one \"this is live, saving affects air\" banner for every versioned library studio (voices, delivery styles, bookends, pronunciation dictionaries).",
+        "required": [
+          "stations"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 4,
+        "usedIn": [
+          "src/features/bookends/components/BookendStudio.tsx",
+          "src/features/delivery/components/DeliveryStyleStudio.tsx",
+          "src/features/pronunciation/components/PronunciationDictionaryStudio.tsx"
+        ]
+      },
+      {
+        "name": "LiveEditConfirmationDialog",
+        "file": "src/components/LiveEditConfirmationDialog.tsx",
+        "summary": "Shown before saving a NEW version of a library entity that is assigned to stations.",
+        "required": [
+          "changeNote",
+          "entityName",
+          "guidance",
+          "isSaving",
+          "nextVersion",
+          "noun",
+          "onConfirm",
+          "onOpenChange",
+          "open",
+          "stations"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 4,
+        "usedIn": [
+          "src/features/bookends/components/BookendStudio.tsx",
+          "src/features/delivery/components/DeliveryStyleStudio.tsx",
+          "src/features/pronunciation/components/PronunciationDictionaryStudio.tsx"
+        ]
+      },
+      {
+        "name": "LoadOlderButton",
+        "file": "src/components/LoadOlderButton.tsx",
+        "summary": "Shared footer control for \"Load older\" cursor pagination — Activity and History both page this way.",
+        "required": [
+          "loading",
+          "onClick"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 2,
+        "usedIn": [
+          "src/features/activity/components/ActivityTable.tsx",
+          "src/features/jobs/components/history/BroadcastLog.tsx"
+        ]
+      },
+      {
+        "name": "MetricCard",
+        "file": "src/components/MetricCard.tsx",
+        "summary": null,
+        "required": [
+          "label"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/features/config-transfer/components/ImportPanel.tsx",
+          "src/features/jobs/components/canvas/FailureDetailsPanel.tsx",
+          "src/pages/ActivityPage.tsx"
+        ]
+      },
+      {
+        "name": "NavigationBar",
+        "file": "src/components/NavigationBar.tsx",
+        "summary": "Mobile top bar.",
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 1,
+        "usedIn": [
+          "src/App.tsx"
+        ]
+      },
+      {
+        "name": "Placeholder",
+        "file": "src/components/Placeholder.tsx",
+        "summary": "The standard empty / loading / error state.",
+        "required": [
+          "icon",
+          "message"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 14,
+        "usedIn": [
+          "src/App.tsx",
+          "src/features/activity/components/ActivityFeed.tsx",
+          "src/features/activity/components/ActivityTable.tsx"
+        ]
+      },
+      {
+        "name": "RuleComposer",
+        "file": "src/components/RuleComposer.tsx",
+        "summary": "Shared authoring shell for the Bulletin-rules hub composers.",
+        "required": [
+          "submit"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 5,
+        "usedIn": [
+          "src/features/guidance/components/GuidanceComposer.tsx",
+          "src/features/pronunciation/components/VerifiedPronunciationsManager.tsx",
+          "src/features/safety/components/SafetyTermsManager.tsx"
+        ]
+      },
+      {
+        "name": "RuleRow",
+        "file": "src/components/RuleRow.tsx",
+        "summary": "Shared list-row component for the Bulletin-rules hub and editorial guidance inventory.",
+        "required": [
+          "enabled",
+          "label",
+          "onToggle"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 8,
+        "usedIn": [
+          "src/components/RuleRow.test.tsx",
+          "src/features/guidance/components/GuidanceInventory.tsx",
+          "src/features/pronunciation/components/PronunciationRuleTable.tsx"
+        ]
+      },
+      {
+        "name": "RuleTab",
+        "file": "src/components/RuleTab.tsx",
+        "summary": "Shared scaffold for the Bulletin-rules hub tabs.",
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 7,
+        "usedIn": [
+          "src/features/playbooks/components/WriterPromptManager.tsx",
+          "src/features/pronunciation/components/VerifiedPronunciationsManager.tsx",
+          "src/features/safety/components/SafetyTermsManager.tsx"
+        ]
+      },
+      {
+        "name": "RuleToolbar",
+        "file": "src/components/RuleToolbar.tsx",
+        "summary": "The single row of chrome above every Bulletin-rules list: find, narrow, create — in that order, in the same place, on every tab.",
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 6,
+        "usedIn": [
+          "src/features/guidance/components/GuidanceInventory.tsx",
+          "src/features/pronunciation/components/VerifiedPronunciationsManager.tsx",
+          "src/features/safety/components/SafetyTermsManager.tsx"
+        ]
+      },
+      {
+        "name": "ScopeGroupedList",
+        "file": "src/components/ScopeGroupedList.tsx",
+        "summary": "Shared scope-grouped list for the Bulletin-rules hub: one bordered container with sticky per-scope headers (\"{label} (n)\") and dense, evenly-divided rows.",
+        "required": [
+          "empty",
+          "groups",
+          "renderRow",
+          "rowKey"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 6,
+        "usedIn": [
+          "src/features/guidance/components/GuidanceInventory.tsx",
+          "src/features/pronunciation/components/VerifiedPronunciationsManager.tsx",
+          "src/features/safety/components/SafetyTermsManager.tsx"
+        ]
+      },
+      {
+        "name": "SectionHeader",
+        "file": "src/components/SectionHeader.tsx",
+        "summary": null,
+        "required": [
+          "label"
+        ],
+        "alternatives": [
+          [
+            "hint",
+            "hintLabel"
+          ]
+        ],
+        "variants": {},
+        "usageCount": 0,
+        "usedIn": []
+      },
+      {
+        "name": "StickyFilterRail",
+        "file": "src/components/StickyFilterRail.tsx",
+        "summary": "Keeps list controls reachable while desktop operators scan long records.",
+        "required": [],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 3,
+        "usedIn": [
+          "src/components/RuleToolbar.tsx",
+          "src/features/jobs/components/history/BroadcastLog.tsx",
+          "src/pages/ActivityPage.tsx"
+        ]
+      },
+      {
+        "name": "ViewToggle",
+        "file": "src/components/ViewToggle.tsx",
+        "summary": "Cards | Table segmented control for entity-list pages.",
+        "required": [
+          "onChange",
+          "value"
+        ],
+        "alternatives": [],
+        "variants": {},
+        "usageCount": 6,
+        "usedIn": [
+          "src/features/bookends/components/BookendGalleryPage.tsx",
+          "src/pages/DeliveryPage.tsx",
+          "src/pages/OperatorsPage.tsx"
+        ]
+      }
+    ]
+  }
+]

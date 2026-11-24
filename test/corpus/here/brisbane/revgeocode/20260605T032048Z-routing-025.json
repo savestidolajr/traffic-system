@@ -1,0 +1,47 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032048Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:49.5653359+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.60704,153.09891\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Beenleigh Rd, Kuraby QLD 4112, Australia",
+          "id": "here:af:streetsection:Y.LEoMuGeCngeMiX-svEYB",
+          "resultType": "street",
+          "address": {
+            "label": "Beenleigh Rd, Kuraby QLD 4112, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Kuraby",
+            "street": "Beenleigh Rd",
+            "postalCode": "4112"
+          },
+          "position": {
+            "lat": -27.60704,
+            "lng": 153.09891
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 153.08669,
+            "south": -27.60722,
+            "east": 153.1033,
+            "north": -27.60226
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

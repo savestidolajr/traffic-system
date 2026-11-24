@@ -1,0 +1,47 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032044Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:46.5250374+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.85772,151.20886\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Playfair St, The Rocks NSW 2000, Australia",
+          "id": "here:af:streetsection:w7SR5beuuDU-X7yj-wt--A",
+          "resultType": "street",
+          "address": {
+            "label": "Playfair St, The Rocks NSW 2000, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "The Rocks",
+            "street": "Playfair St",
+            "postalCode": "2000"
+          },
+          "position": {
+            "lat": -33.85772,
+            "lng": 151.20886
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 151.20815,
+            "south": -33.85913,
+            "east": 151.20886,
+            "north": -33.85772
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

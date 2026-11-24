@@ -1,0 +1,157 @@
+{
+ "schemaVersion": 1,
+ "model": "token-additive prosody cost + per-voice intercept",
+ "formula": "predictedSecondsAtSpeed1 = perSyllableSec*syllables + wordBoundarySec*plainWords + commaSec*commas + periodSec*periods + ellipsisSec*ellipses + dashSec*dashes + interceptSec; plainWords = words - commas - periods - ellipses - dashes (floored at 0); realSeconds = predictedSecondsAtSpeed1 / voiceSpeed",
+ "fittedFrom": "test/corpus/duration schemaVersion 3; clean rows only; fingerprints with >=8 clean bulletins",
+ "partialPooling": {
+  "minObservationsPerClass": 25,
+  "pooledGlobal": {
+   "none": 0.10159,
+   "comma": 0.33042,
+   "period": 0.4617,
+   "ellipsis": 0.49089,
+   "dash": 0.01206
+  },
+  "globalPerSyllableSec": 0.15565,
+  "rationale": "Ridge shrinks an UNOBSERVED punctuation class to zero, which would price an ellipsis at 0s. No voice has more than 5 ellipsis tokens, so ellipsis and dash always fall back to the pooled global cost. This matters live: every Cairns bulletin opens with one."
+ },
+ "validation": {
+  "primaryGate": "cross-slot: train on one target duration, test on the other",
+  "crossSlotMaeSec": 1.084,
+  "crossSlotMaxSec": 3.42,
+  "crossSlotBiasSec": 0.17,
+  "rejectedAlternatives": {
+   "freeScaleAffine": {
+    "crossSlotMaeSec": 5.31,
+    "note": "LOOCV said 1.12s - an artefact. ARN Sarah's corpus is 100% 22s targets, so a free scale term degenerated to 'always predict 22s' (scale 0.056, intercept 21.97) and scored well only because held-out rows were also 22s."
+   },
+   "syllablesPlusIntercept": {
+    "crossSlotMaeSec": 5.07,
+    "note": "same failure mode; LOOCV said 1.13s"
+   }
+  },
+  "lesson": "LOOCV over a corpus dominated by one slot length cannot detect a model that has learned the slot length instead of the content. Cross-slot holdout is the only honest gate here."
+ },
+ "voices": [
+  {
+   "voiceId": "yngV6X6u07ThpMteV50h",
+   "voiceName": "ARN Sarah - Younger Female",
+   "modelId": "eleven_v3",
+   "speed": 0.97,
+   "paceBoostWpm": 0.0,
+   "samples": 30,
+   "perSyllableSec": 0.15049,
+   "wordBoundarySec": 0.09867,
+   "commaSec": 0.30804,
+   "periodSec": 0.47924,
+   "ellipsisSec": 0.49089,
+   "dashSec": 0.01206,
+   "interceptSec": 0.19396,
+   "residualSdSec": 1.5516,
+   "pooledClasses": [
+    "ellipsis",
+    "dash"
+   ]
+  },
+  {
+   "voiceId": "EF2rFRNHqbfaMctIvS2k",
+   "voiceName": "Male Sarah - AM - KIIS/Regional HOT AC",
+   "modelId": "eleven_v3",
+   "speed": 0.97,
+   "paceBoostWpm": 0.0,
+   "samples": 27,
+   "perSyllableSec": 0.12678,
+   "wordBoundarySec": 0.13003,
+   "commaSec": 0.3661,
+   "periodSec": 0.49637,
+   "ellipsisSec": 0.49089,
+   "dashSec": 0.01206,
+   "interceptSec": 0.16686,
+   "residualSdSec": 3.1059,
+   "pooledClasses": [
+    "ellipsis",
+    "dash"
+   ]
+  },
+  {
+   "voiceId": "a1SQPk93LAMHsGM41p6S",
+   "voiceName": "Jeffrey (original)",
+   "modelId": "eleven_multilingual_v2",
+   "speed": 0.97,
+   "paceBoostWpm": 0.0,
+   "samples": 21,
+   "perSyllableSec": 0.17125,
+   "wordBoundarySec": 0.06288,
+   "commaSec": 0.19808,
+   "periodSec": 0.28637,
+   "ellipsisSec": 0.49089,
+   "dashSec": 0.01206,
+   "interceptSec": 0.43547,
+   "residualSdSec": 1.1185,
+   "pooledClasses": [
+    "ellipsis",
+    "dash"
+   ]
+  },
+  {
+   "voiceId": "EF2rFRNHqbfaMctIvS2k",
+   "voiceName": "Dolly Male Young",
+   "modelId": "eleven_v3",
+   "speed": 1.0,
+   "paceBoostWpm": 40.0,
+   "samples": 19,
+   "perSyllableSec": 0.18425,
+   "wordBoundarySec": 0.09644,
+   "commaSec": 0.38567,
+   "periodSec": 0.48928,
+   "ellipsisSec": 0.49089,
+   "dashSec": 0.01206,
+   "interceptSec": 0.23775,
+   "residualSdSec": 1.6536,
+   "pooledClasses": [
+    "ellipsis",
+    "dash"
+   ]
+  },
+  {
+   "voiceId": "081vkDcbgbIsSiFEYxT0",
+   "voiceName": "Dolly (original)",
+   "modelId": "eleven_v3",
+   "speed": 1.0,
+   "paceBoostWpm": 0.0,
+   "samples": 12,
+   "perSyllableSec": 0.18153,
+   "wordBoundarySec": 0.08633,
+   "commaSec": 0.33905,
+   "periodSec": 0.47546,
+   "ellipsisSec": 0.49089,
+   "dashSec": 0.01206,
+   "interceptSec": 0.11971,
+   "residualSdSec": 1.2803,
+   "pooledClasses": [
+    "ellipsis",
+    "dash"
+   ]
+  },
+  {
+   "voiceId": "EF2rFRNHqbfaMctIvS2k",
+   "voiceName": "Dolly Male Young Faster",
+   "modelId": "eleven_v3",
+   "speed": 0.97,
+   "paceBoostWpm": 60.0,
+   "samples": 18,
+   "perSyllableSec": 0.1532,
+   "wordBoundarySec": 0.10764,
+   "commaSec": 0.39978,
+   "periodSec": 0.51229,
+   "ellipsisSec": 0.49089,
+   "dashSec": 0.01206,
+   "interceptSec": 0.27395,
+   "residualSdSec": 1.3801,
+   "pooledClasses": [
+    "ellipsis",
+    "dash"
+   ]
+  }
+ ]
+}

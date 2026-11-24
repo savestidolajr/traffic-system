@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032047Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:48.3196439+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.76769,145.07976\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Bulleen Rd, Bulleen VIC 3105, Australia",
+          "id": "here:af:streetsection:MqIRNcF1-oUOjCQPNYL2.D",
+          "resultType": "street",
+          "address": {
+            "label": "Bulleen Rd, Bulleen VIC 3105, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Bulleen",
+            "street": "Bulleen Rd",
+            "postalCode": "3105"
+          },
+          "position": {
+            "lat": -37.76769,
+            "lng": 145.07976
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 145.0774,
+            "south": -37.77688,
+            "east": 145.08373,
+            "north": -37.76052
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

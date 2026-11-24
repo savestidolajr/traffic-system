@@ -1,0 +1,54 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032041Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:42.6883784+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-35.02926,138.57092\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Car Park 09 - Flinders University",
+          "id": "here:pds:place:036r1f89-a6b17b1b0986b867472d3558c7462987",
+          "resultType": "place",
+          "address": {
+            "label": "Car Park 09 - Flinders University, Physical Sciences Rd, Bedford Park SA 5042, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "SA",
+            "state": "South Australia",
+            "city": "Adelaide",
+            "district": "Bedford Park",
+            "street": "Physical Sciences Rd",
+            "postalCode": "5042"
+          },
+          "position": {
+            "lat": -35.02966,
+            "lng": 138.57102
+          },
+          "access": [
+            {
+              "lat": -35.02966,
+              "lng": 138.57108
+            }
+          ],
+          "distance": 45,
+          "categories": [
+            {
+              "id": "800-8500-0178",
+              "name": "Parking Lot",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

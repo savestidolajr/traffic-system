@@ -1,0 +1,108 @@
+# Arn
+
+Arn is the productionisation repository for ARN's AI Traffic Bulletin platform.
+
+## Start Here
+
+- `AGENTS.md` - canonical agent instructions
+- `docs/CODEMAPS/ARCHITECTURE.md` - how the platform fits together
+- `docs/_manifest.yaml` - generated doc routing index
+- `docs/_search.jsonl` - generated search index for agents and tools
+- `docs/_sections.yaml` - generated section-level routing index
+
+## Generated Indexes
+
+- `docs/_manifest.yaml`
+- `docs/_search.jsonl`
+- `docs/_sections.yaml`
+- `docs/_data.js`
+- `llms.txt`
+
+## Overview Docs
+
+- `docs/operations/platform-overview.md` - Read this first: what a traffic bulletin is, where the data comes from, who approves it, and what reaches air.
+- `docs/operations/solution-overview.md` - How the platform is put together, what each part is responsible for, and the boundaries of what it does.
+
+## Decision-Log Docs
+
+- `docs/canonical/decisions.md` - Durable technical decisions with context, rationale, consequences, and status
+
+## Reference Docs
+
+- `docs/CODEMAPS/ARCHITECTURE.md` - High-level system architecture, Clean Architecture layer relationships, data flow diagrams, deployment architecture, and external system integrations for the Arn traffic bulletin platform
+- `docs/CODEMAPS/FILES.md` - Comprehensive directory structure and file-purpose reference for the entire Arn codebase: backend C# projects, frontend React app, Bicep IaC, test projects, documentation, and scripts
+- `docs/CODEMAPS/MODULES.md` - Module descriptions, public APIs, dependencies, exports, and usage examples for every project in the Arn codebase: backend layers, frontend, deployment IaC, and documentation
+- `docs/canonical/architecture.md` - How the ARN Information Bulletin Platform runs, integrates with external services and protects operational data
+- `docs/deliverables/README.md` - Separates ARN-facing handoff artifacts from internal canonical, working, reference, and generated documentation.
+- `docs/deliverables/SDD/README.md` - Isolated ARN-facing Solution Design Document package for Stage Gate 2 review and sign-off.
+- `docs/deliverables/cost-estimate/arn-azure-cost-estimate.md` - Full production-solution Azure cost estimate (DEV + TEST + PROD) built via the official Azure Pricing Calculator, exported programmatically
+- `docs/operations/acceptance.md` - What accepting the handover means, what the signatories confirm and where the signature record lives.
+- `docs/operations/access-and-accounts.md` - Role-based ownership for the Azure subscription, identity services, deployment controls, vendor accounts and operational endpoints used by the ARN Information Bulletin Platform.
+- `docs/operations/as-built.md` - The deployed ARN Information Bulletin Platform across development, test and production, including resource inventory, hostnames, network topology and identity model.
+- `docs/operations/dependencies.md` - The external services used by the ARN Information Bulletin Platform, their operational effect, credential location, rotation path and ARN owner.
+- `docs/operations/design-decisions.md` - The design choices that shape how the platform must be operated, and the reasoning behind each.
+- `docs/operations/disaster-recovery.md` - Current recovery position, resilience limits, data protection and the actions required to establish regional recovery for the ARN Information Bulletin Platform.
+- `docs/operations/faq.md` - Short answers to the questions operators and support engineers ask most, each pointing at the page that covers it in depth.
+- `docs/operations/glossary.md` - Definitions for every platform term the rest of the documentation assumes you already know.
+- `docs/operations/known-limitations.md` - Operational constraints and missing capabilities that ARN must account for when running the platform.
+- `docs/operations/open-items.md` - Where platform behaviour depends on ARN-held access, ARN-owned scheduling or an ARN address, with the role, timing and consequence for each.
+- `docs/operations/proven-capacity.md` - The load the platform has been measured at, the response times it achieves, and the limits it has been tested to.
+- `docs/operations/run-costs.md` - Measured Azure run costs by environment, the cost shape of running or parking an environment, vendor commercial arrangements and practical cost controls.
+- `docs/operations/slo.md` - Service-level indicators, objectives, targets, and executable KQL for the ARN Information Bulletin Platform
+- `docs/operations/solution-structure.md` - The six backend projects, the dependency rules between them, where the console code lives, and which tests enforce the boundaries
+- `docs/reference/activity-audit-log.md` - Cross-cutting middleware-based audit trail of admin/operator config changes: what it captures, the resource table, RBAC, retention, and known gaps
+- `docs/reference/architecture-diagrams.md` - Seven architecture figures showing the platform's boundaries, runtime flow, security and operating connections.
+- `docs/reference/arn-brand-guidelines.md` - ARN branding the operator UI must follow — colours, typography, logo/Light Portal, iconography, and design principles distilled from the ARN Brand Guidelines for application to the Arn operator dashboard
+- `docs/reference/arn-voice-candidate-demos.md` - Four ARN-produced demo renders of ONE shared generated Sydney traffic+weather bulletin script, each voiced with a different ElevenLabs trained voice (Original MVO, Younger FVO, Younger MVO, plus one unlabelled render). A voice-selection A/B reel of our OWN pipeline output — NOT ATN on-air ground truth. Audio committed under assets/voice-candidates/.
+- `docs/reference/atn-audio-corpus/2026-07-03-ads-removed-transcripts.md` - Machine transcripts and manifest pointer for 97 ARN-supplied ads-removed ATN airchecks: KIIS 101.1 Melbourne and Gold/WSFM 101.7 Sydney.
+- `docs/reference/atn-bulletin-samples-sanitised.md` - All four ARN-supplied ATN sample corpora with sponsor reads, station wrappers, and PII stripped; traffic copy only, the ground-truth style reference for prompt tuning and bulletin evals
+- `docs/reference/atn-bulletin-style-samples.md` - Transcripts of real ATN traffic bulletins: 12 metro reads from the PoC (Traffic_Examples.zip, 28 Jan 2026), 9 regional/rural reads (25 Jun 2026), 62 written network-roundup reads (TRAFFIC DRIBBLE.docx, 30 Jun 2026), and 97 ads-removed Sydney/Melbourne airchecks (3 Jul 2026), with style analysis and a gap assessment against our generated scripts
+- `docs/reference/atn-severity-phrasing-palette.md` - Deterministic mapping from HERE data categories (jam factor bands, closure/crash/roadworks types) to the phrasing real ATN traffic copy uses, extracted from all 180 sanitised ATN samples; used as prompt-injection examples for the draft/polish agents
+- `docs/reference/azure-naming-convention.md` - ARN's confirmed Azure naming convention for the Information Bulletin Platform (IBP): IBP-AUE-{ENV}-{TYPE}-APP01, resource group layout, action groups, DLs, cost alerting, and the open items still with ARN's technology lead.
+- `docs/reference/bulletin-requirements-corpus.md` - The single accumulated source of truth for what a good Arn traffic bulletin is — every requirement, rule, ATN-style target, and lesson learned from ARN feedback (BFN/WALK3) and every pipeline iteration. Written so a prompt author or a workflow-lab experiment can make ONE agent aware of everything the current pipeline only enforces downstream via deterministic gates and the refine loop.
+- `docs/reference/delivery-device-map.md` - Measured effect of every text-level delivery device on an ElevenLabs v3 station voice: 50 devices and 364 generations tested against an 8-run unchanged control with Welch t-tests. Establishes the audibility rule (a device is audible only if it inserts non-speech, shifts pitch, or changes duration), the confirmed-working tag list, the tag-placement rule, and the ceiling of text-only delivery control.
+- `docs/reference/foundry-role-agents.md` - How Arn pipeline roles route through Foundry prompt agents or the raw model, including the conversational workflow agents, Content Rewrite, and where their prompts and reasoning effort come from
+- `docs/reference/here-staleness-landscape-quantified-across-7-markets-vs-official-sources-2026-08-17.md` - Measurement study backing the Wave-3 corroboration decision: window-class distribution, closure staleness, 12-hour persistence, bidirectional official-feed corroboration (NSW+QLD), the entry-freshness re-entry loophole, and flow self-contradiction rates.
+- `docs/reference/job-table-schema.md` - The radioJobs Azure Table Storage row contract (JobEntity) for non-C# consumers: partition/row key scheme, every column's .NET type/nullability/JSON-vs-scalar shape, the six-column gzip-compression contract with its gz: sentinel and 30,000-char cap, source-fetch diagnostics, ETag/ConcurrencyFingerprint semantics, and the drop-on-incompressible-oversize caveat. Read by the Python harvest/eval tooling that parses these columns directly.
+- `docs/reference/per-station-configuration.md` - The settings an operator or administrator can use to control a station's voice, delivery, pronunciation, content, roads, editorial rules, schedule and licence area
+- `docs/reference/playout-delivery-defect-classes.md` - The five recurring defect classes behind the 2026-08-11 dead-air findings: a status that changed while the file did not move, a stale revision passed to a guarded call, a promise nothing keeps, a null that disables a safety net, and an action the UI offers that the domain refuses. Each with the audited instances, what was fixed, and what remains open.
+- `docs/reference/prompt-iteration-guide.md` - How to change bulletin wording through Bulletin rules, preview a station writer-prompt edit, choose the right scope and confirm the result on air
+- `docs/reference/pronunciation/README.md` - Index of the per-market place-name pronunciation guides that seed each ARN station's ElevenLabs eleven_v3 alias pronunciation dictionary.
+- `docs/reference/pronunciation/adelaide.md` - Locally-correct pronunciations and ElevenLabs alias respellings for Greater Adelaide suburbs, roads and landmarks used in the KIIS 102.3 ARN traffic bulletin.
+- `docs/reference/pronunciation/brisbane.md` - Locally-correct pronunciations and ElevenLabs alias respellings for Greater Brisbane suburbs, roads and landmarks used in the KIIS 97.3 ARN traffic bulletin.
+- `docs/reference/pronunciation/darwin.md` - Locally-correct pronunciations and ElevenLabs alias respellings for Darwin and Palmerston suburbs, roads and landmarks used in the Hot 100 ARN traffic bulletin.
+- `docs/reference/pronunciation/goldcoast.md` - Locally-correct pronunciations and ElevenLabs alias respellings for Gold Coast suburbs, roads and landmarks used in the Hot Tomato 102.9 ARN traffic bulletin.
+- `docs/reference/pronunciation/melbourne.md` - Locally-correct pronunciations and ElevenLabs alias respellings for Greater Melbourne suburbs, roads and landmarks used in the KIIS 101.1 ARN traffic bulletin.
+- `docs/reference/pronunciation/mildura.md` - Locally-correct pronunciations and ElevenLabs alias respellings for Mildura and Sunraysia suburbs, roads and landmarks used in the River 1467 ARN traffic bulletin.
+- `docs/reference/pronunciation/perth.md` - Locally-correct pronunciations and ElevenLabs alias respellings for Greater Perth suburbs, roads and landmarks used in the Gold 96FM ARN traffic bulletin.
+- `docs/reference/pronunciation/portaugusta.md` - Locally-correct pronunciations and ElevenLabs alias respellings for Port Augusta and upper Spencer Gulf localities, roads and landmarks used in the 5AU 97.9 ARN traffic bulletin.
+- `docs/reference/pronunciation/portlincoln.md` - Locally-correct pronunciations and ElevenLabs alias respellings for Port Lincoln and Eyre Peninsula localities, roads and landmarks used in the Magic FM 89.9 ARN traffic bulletin.
+- `docs/reference/pronunciation/queenstown.md` - Locally-correct pronunciations and ElevenLabs alias respellings for Queenstown and West Coast Tasmania localities, roads and landmarks used in the 7XS 92.1 ARN traffic bulletin.
+- `docs/reference/pronunciation/sydney.md` - Locally-correct pronunciations and ElevenLabs alias respellings for Greater Sydney suburbs, roads and landmarks used in the KIIS 90s SYD traffic bulletin.
+
+## Runbook Docs
+
+- `docs/operations/dashboard-guide.md` - How ARN support engineers reach Azure Monitor workbooks, interpret health signals, and respond to alert rules
+- `docs/operations/defect-log.md` - The register ARN records acceptance and integration findings in: observable behaviour, condition, workaround and severity.
+- `docs/operations/delivery-pipeline.md` - How a change reaches an environment: the build and release stages, the gates and approvals, and how to read a failed run
+- `docs/operations/e2e-testing.md` - Runbook for deterministic backend and frontend E2E tests plus gated external-provider smoke checks
+- `docs/operations/first-day.md` - An ordered checklist for day one of owning the platform: what to confirm, in what order, and who to call.
+- `docs/operations/first-time-sign-in.md` - Zero-context walkthrough for an ARN content-team participant signing into the operator console for the first time.
+- `docs/operations/integration-test-plan.md` - Integration cases for the external services that support bulletin generation, review, audio synthesis, notifications, identity and Zetta playout.
+- `docs/operations/load-testing.md` - The backend/system load-test harness under test/load/: scenarios, auth model, cost controls, repeatable execution, and measured baselines. Frontend perf is covered separately in performance-testing.md
+- `docs/operations/local-development.md` - Commands and setup steps for building, testing, and running the ARN Information Bulletin Platform locally
+- `docs/operations/manual-steps.md` - Canonical register of manual and out-of-band steps required to stand up or maintain an Arn environment, including verification and silent invalidation rules
+- `docs/operations/notifications.md` - How the platform delivers review and failure notifications to Microsoft Teams, how to reauthorise the connection, and how to diagnose missing cards
+- `docs/operations/operator-guide.md` - Practical guide for ARN content operators who review, approve and manage daily bulletins
+- `docs/operations/performance-testing.md` - How to test Arn's UI performance: local Lighthouse regression harness (cold-load + runtime/JS-jank probe) and live-deployed-environment waterfall diagnosis
+- `docs/operations/quick-reference.md` - Executable Azure CLI and KQL checks for health, alerts, releases, park and resume, secret rotation, and service-level measurements
+- `docs/operations/runbook.md` - Incident response, Azure health checks, release handling, park and resume procedures, secret rotation, and audit retrieval for the ARN Information Bulletin Platform
+- `docs/operations/support-model.md` - Three support tiers, vendor escalation paths, contact ownership and the operating workload for the ARN Information Bulletin Platform.
+- `docs/operations/uat-plan.md` - Acceptance testing scope, participant roles, entry and exit criteria, and scenarios for ARN operators using the test environment.
+- `docs/operations/uat-scenario-sheet.md` - Reusable template for recording acceptance scenarios, outcomes and evidence for the ARN Information Bulletin Platform.
+
+## Maintenance
+
+- Use `./scripts/docs.py new-doc`, `add-decision`, or `new-skill` for source creation.
+- Regenerate indexes with `./scripts/docs.py generate`.
+- Validate health with `./scripts/docs.py check`.

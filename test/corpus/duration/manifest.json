@@ -1,0 +1,280 @@
+{
+ "schemaVersion": 3,
+ "generatedAt": "2026-08-20T03:11:52.132276+00:00",
+ "purpose": "Per-voice script->natural-TTS-duration corpus for choosing and regression-gating a duration predictor.",
+ "source": "dev radioJobs: TaggedScriptText|ScriptText + WordTimingsJson + LogsJson natural-duration line + VoiceConfigJson",
+ "groupingKey": "voice fingerprint = voiceId+modelId+stability+similarityBoost+style+speed+paceBoostWpm (voiceId ALONE is wrong: 3 profiles shared one voiceId at 3.57/3.90/4.22 syl-per-sec)",
+ "naturalDurationProvenance": "LogsJson 'Audio filled to slot: {natural}s natural read fitted to {target}s' - PRE stretch/trim",
+ "tokenTimeBase": "stored token timings are POST slot-fit; multiply by `stretch` to recover natural time",
+ "speedNormalisation": "duration at speed 1.0 = naturalSec * speed",
+ "exclusionRules": [
+  "filler-stitched: stitched filler audio inflates naturalSec but contributes no spokenText (observed -8.9s residual)",
+  "trimmed-during-synthesis: naturalSec was measured PRE-trim, spokenText is POST-trim (observed 2.8 syl/s, impossible)"
+ ],
+ "irreducibleNoise": {
+  "headline": "Two DIFFERENT variances were conflated in schemaVersion 2. Measured live 2026-08-20.",
+  "sameInputTtsVariance": {
+   "measuredOn": "controlled A/B: 21 live ElevenLabs calls, one 373-char script, ARN Sarah/eleven_v3/speed0.97",
+   "unseeded": {
+    "n": 5,
+    "meanSec": 24.528,
+    "sdSec": 0.23,
+    "cv": 0.0094,
+    "rangeSec": 0.72
+   },
+   "seeded": [
+    {
+     "seed": 424242,
+     "n": 8,
+     "meanSec": 24.94,
+     "sdSec": 0.035,
+     "cv": 0.0014,
+     "rangeSec": 0.08
+    },
+    {
+     "seed": 999001,
+     "n": 8,
+     "meanSec": 22.62,
+     "sdSec": 0.203,
+     "cv": 0.009,
+     "rangeSec": 0.48
+    }
+   ],
+   "oneSigmaAt22s": 0.21,
+   "bestAchievableMaeAt22s": 0.17,
+   "note": "TRUE floor for identical input is ~0.94% CV, NOT the 3.1% previously claimed."
+  },
+  "historicalCrossJobVariance": {
+   "measuredOn": "10 groups of jobs sharing (spokenText, voiceId, modelId, speed), 47 bulletins",
+   "pooledCoefficientOfVariation": 0.031,
+   "oneSigmaAt22s": 0.67,
+   "worstObservedRangePct": 11.1,
+   "interpretation": "3.3x the controlled same-input figure. The excess is NOT ElevenLabs nondeterminism; something else varied between those jobs (pronunciation-dictionary stack, text normalisation, or inputs not actually byte-identical). UNDIAGNOSED - a real lead."
+  },
+  "seedVerdict": {
+   "reliablyDeterministic": false,
+   "evidence": "seed 424242 collapsed variance 6.6x (sd 0.230->0.035); seed 999001 did NOT (sd 0.203, indistinguishable from unseeded). Audio was never bit-identical under a fixed seed.",
+   "betweenSeedShiftSec": 2.32,
+   "betweenSeedShiftPct": 9.3,
+   "recommendation": "Do NOT pin ElevenLabs:Seed as a slot-accuracy fix. It does not reliably remove variance, and seed choice moves the mean by 9.3% - larger than the noise it removes - so any pinned seed forces a full per-voice recalibration."
+  }
+ },
+ "counts": {
+  "total": 295,
+  "clean": 142,
+  "fingerprints": 15,
+  "tokens": 18774
+ },
+ "voices": [
+  {
+   "file": "arn-sarah-younger-female-eleven-v3-sp0-97-pb0.json",
+   "voiceId": "yngV6X6u07ThpMteV50h",
+   "voiceName": "ARN Sarah - Younger Female",
+   "modelId": "eleven_v3",
+   "stability": 0.7,
+   "similarityBoost": 0.7,
+   "style": 0.0,
+   "speed": 0.97,
+   "paceBoostWpm": 0.0,
+   "total": 62,
+   "clean": 30,
+   "tokens": 3764
+  },
+  {
+   "file": "male-sarah-am-kiis-regional-hot-ac-eleven-v3-sp0-97-pb0.json",
+   "voiceId": "EF2rFRNHqbfaMctIvS2k",
+   "voiceName": "Male Sarah - AM - KIIS/Regional HOT AC",
+   "modelId": "eleven_v3",
+   "stability": 0.7,
+   "similarityBoost": 0.7,
+   "style": 0.0,
+   "speed": 0.97,
+   "paceBoostWpm": 0.0,
+   "total": 56,
+   "clean": 27,
+   "tokens": 3248
+  },
+  {
+   "file": "jeffrey-original-eleven-multilingual-v2-sp0-97-pb0.json",
+   "voiceId": "a1SQPk93LAMHsGM41p6S",
+   "voiceName": "Jeffrey (original)",
+   "modelId": "eleven_multilingual_v2",
+   "stability": 0.7,
+   "similarityBoost": 0.7,
+   "style": 0.0,
+   "speed": 0.97,
+   "paceBoostWpm": 0.0,
+   "total": 53,
+   "clean": 21,
+   "tokens": 3743
+  },
+  {
+   "file": "dolly-female-young-eleven-v3-sp1-0-pb0.json",
+   "voiceId": "iKMw2nMnODCnVgY4VQbS",
+   "voiceName": "Dolly Female Young",
+   "modelId": "eleven_v3",
+   "stability": 0.5,
+   "similarityBoost": 0.75,
+   "style": 0.0,
+   "speed": 1.0,
+   "paceBoostWpm": 0.0,
+   "total": 36,
+   "clean": 3,
+   "tokens": 2271
+  },
+  {
+   "file": "dolly-male-young-eleven-v3-sp1-0-pb40.json",
+   "voiceId": "EF2rFRNHqbfaMctIvS2k",
+   "voiceName": "Dolly Male Young",
+   "modelId": "eleven_v3",
+   "stability": 0.5,
+   "similarityBoost": 0.75,
+   "style": 0.0,
+   "speed": 1.0,
+   "paceBoostWpm": 40.0,
+   "total": 26,
+   "clean": 19,
+   "tokens": 1628
+  },
+  {
+   "file": "dolly-original-eleven-v3-sp1-0-pb0.json",
+   "voiceId": "081vkDcbgbIsSiFEYxT0",
+   "voiceName": "Dolly (original)",
+   "modelId": "eleven_v3",
+   "stability": 0.5,
+   "similarityBoost": 0.7,
+   "style": 0.0,
+   "speed": 1.0,
+   "paceBoostWpm": 0.0,
+   "total": 25,
+   "clean": 12,
+   "tokens": 1650
+  },
+  {
+   "file": "dolly-male-young-faster-eleven-v3-sp0-97-pb60.json",
+   "voiceId": "EF2rFRNHqbfaMctIvS2k",
+   "voiceName": "Dolly Male Young Faster",
+   "modelId": "eleven_v3",
+   "stability": 0.7,
+   "similarityBoost": 0.7,
+   "style": 0.0,
+   "speed": 0.97,
+   "paceBoostWpm": 60.0,
+   "total": 20,
+   "clean": 18,
+   "tokens": 1422
+  },
+  {
+   "file": "dolly-female-old-eleven-v3-sp1-0-pb0.json",
+   "voiceId": "EL6XrRSm7bY124NCgVxf",
+   "voiceName": "Dolly Female Old",
+   "modelId": "eleven_v3",
+   "stability": 0.5,
+   "similarityBoost": 0.75,
+   "style": 0.0,
+   "speed": 1.0,
+   "paceBoostWpm": 0.0,
+   "total": 4,
+   "clean": 2,
+   "tokens": 266
+  },
+  {
+   "file": "dolly-male-young-eleven-v3-sp1-0-pb55.json",
+   "voiceId": "EF2rFRNHqbfaMctIvS2k",
+   "voiceName": "Dolly Male Young",
+   "modelId": "eleven_v3",
+   "stability": 0.5,
+   "similarityBoost": 0.75,
+   "style": 0.0,
+   "speed": 1.0,
+   "paceBoostWpm": 55.0,
+   "total": 3,
+   "clean": 2,
+   "tokens": 188
+  },
+  {
+   "file": "older-female-matt-am-gold-regional-ah-eleven-v3-sp0-97-pb25.json",
+   "voiceId": "XGZ4jNfM7INNpwHL5r87",
+   "voiceName": "Older Female Matt - AM - Gold/Regional AH",
+   "modelId": "eleven_v3",
+   "stability": 0.7,
+   "similarityBoost": 0.7,
+   "style": 0.0,
+   "speed": 0.97,
+   "paceBoostWpm": 25.0,
+   "total": 3,
+   "clean": 3,
+   "tokens": 170
+  },
+  {
+   "file": "older-female-matt-am-gold-regional-ah-eleven-v3-sp0-97-pb16.json",
+   "voiceId": "XGZ4jNfM7INNpwHL5r87",
+   "voiceName": "Older Female Matt - AM - Gold/Regional AH",
+   "modelId": "eleven_v3",
+   "stability": 0.7,
+   "similarityBoost": 0.7,
+   "style": 0.0,
+   "speed": 0.97,
+   "paceBoostWpm": 16.0,
+   "total": 3,
+   "clean": 3,
+   "tokens": 149
+  },
+  {
+   "file": "arn-sarah-younger-female-eleven-v3-sp1-0-pb0.json",
+   "voiceId": "yngV6X6u07ThpMteV50h",
+   "voiceName": "ARN Sarah - Younger Female",
+   "modelId": "eleven_v3",
+   "stability": 0.45,
+   "similarityBoost": 0.9,
+   "style": 0.15,
+   "speed": 1.0,
+   "paceBoostWpm": 0.0,
+   "total": 1,
+   "clean": 0,
+   "tokens": 82
+  },
+  {
+   "file": "older-male-matt-pm-gold-regional-ah-eleven-v3-sp0-97-pb0.json",
+   "voiceId": "2B7m3O0EkoYaWvSeFOZx",
+   "voiceName": "Older Male Matt - PM - Gold/Regional AH",
+   "modelId": "eleven_v3",
+   "stability": 0.7,
+   "similarityBoost": 0.7,
+   "style": 0.0,
+   "speed": 0.97,
+   "paceBoostWpm": 0.0,
+   "total": 1,
+   "clean": 0,
+   "tokens": 81
+  },
+  {
+   "file": "older-female-matt-am-gold-regional-ah-eleven-v3-sp0-97-pb23.json",
+   "voiceId": "XGZ4jNfM7INNpwHL5r87",
+   "voiceName": "Older Female Matt - AM - Gold/Regional AH",
+   "modelId": "eleven_v3",
+   "stability": 0.7,
+   "similarityBoost": 0.7,
+   "style": 0.0,
+   "speed": 0.97,
+   "paceBoostWpm": 23.0,
+   "total": 1,
+   "clean": 1,
+   "tokens": 55
+  },
+  {
+   "file": "older-female-matt-am-gold-regional-ah-eleven-v3-sp0-97-pb0.json",
+   "voiceId": "XGZ4jNfM7INNpwHL5r87",
+   "voiceName": "Older Female Matt - AM - Gold/Regional AH",
+   "modelId": "eleven_v3",
+   "stability": 0.7,
+   "similarityBoost": 0.7,
+   "style": 0.0,
+   "speed": 0.97,
+   "paceBoostWpm": 0.0,
+   "total": 1,
+   "clean": 1,
+   "tokens": 57
+  }
+ ]
+}

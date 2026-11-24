@@ -1,0 +1,905 @@
+{
+  "Label": "full-goldcoast",
+  "Reason": "true sample: traffic\u002Bweather\u002Bfuel, M1 closure \u002B five-kays trap",
+  "SourceJobId": "7050d59d2d15491093f8a8a47aeb50bb",
+  "OriginalScript": "The Pacific Motorway is closed citybound. West Burleigh Road is slow through roadworks near Starling Street. Helensvale Road and Hope Island Road have heavy congestion and minor delays. Thomas Drive, Smith Street Motorway and Laver Drive are all moving slowly. Captain Cook Drive and Cavill Avenue also have minor delays. Arundel is under construction northbound along about five kays. It\u2019s sunny, eighteen degrees. Unleaded\u2019s cheapest at a dollar fifty-two in Labrador, with diesel at a dollar seventy-three there too.",
+  "CapturedAtUtc": "2026-07-10T02:23:01.957923+00:00",
+  "Snapshot": {
+    "TargetDurationSeconds": 30,
+    "Location": "goldcoast",
+    "City": null,
+    "MarketId": "goldcoast",
+    "Content": {
+      "Traffic": true,
+      "Weather": true,
+      "Fuel": true,
+      "HasAnySource": true
+    },
+    "Corridors": [
+      {
+        "RoadName": "Smith Street Motorway",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 1182,
+        "ImpactScore": 188.5,
+        "PrimaryType": "congestion",
+        "Description": "heavy congestion",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": true,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "Thomas Drive",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 368,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 2
+      },
+      {
+        "RoadName": "Laver Drive",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 412,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "Cavill Avenue",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 90,
+        "ImpactScore": 159.54242509439325,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": null
+      },
+      {
+        "RoadName": "Pacific Motorway",
+        "Severity": 3,
+        "FunctionalClass": 4,
+        "TotalLengthMeters": 661,
+        "ImpactScore": 156,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure citybound",
+        "Incidents": [
+          {
+            "Id": "3300468543934718392",
+            "Description": "Closed",
+            "Severity": 3,
+            "Location": "Pacific Mwy",
+            "Type": "roadClosure",
+            "LengthMeters": 608,
+            "FunctionalClass": 4,
+            "Latitude": -28.12729,
+            "Longitude": 153.46629,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": "intermediateClosedEdgeOpen",
+            "SegmentRefs": [
+              "$0:365804266:$1:914510457#\u002B0.01644..0.98331"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -28.12729,
+                "Lng": 153.46629
+              },
+              {
+                "Lat": -28.1272,
+                "Lng": 153.46616
+              },
+              {
+                "Lat": -28.12621,
+                "Lng": 153.46549
+              },
+              {
+                "Lat": -28.12564,
+                "Lng": 153.46512
+              },
+              {
+                "Lat": -28.12486,
+                "Lng": 153.46469
+              },
+              {
+                "Lat": -28.12456,
+                "Lng": 153.46454
+              },
+              {
+                "Lat": -28.12385,
+                "Lng": 153.46409
+              },
+              {
+                "Lat": -28.12277,
+                "Lng": 153.46322
+              },
+              {
+                "Lat": -28.12277,
+                "Lng": 153.46322
+              },
+              {
+                "Lat": -28.12264,
+                "Lng": 153.46306
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-07-09T23:58:09+00:00"
+          },
+          {
+            "Id": "1365808494604048567",
+            "Description": "Closed",
+            "Severity": 3,
+            "Location": "Pacific Mwy",
+            "Type": "roadClosure",
+            "LengthMeters": 53,
+            "FunctionalClass": 4,
+            "Latitude": -28.12264,
+            "Longitude": 153.46306,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": "intermediateClosedEdgeOpen",
+            "SegmentRefs": [
+              "$0:365891648:$1:914510427#\u002B0.18868..0.84692"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -28.12264,
+                "Lng": 153.46306
+              },
+              {
+                "Lat": -28.1226,
+                "Lng": 153.46303
+              },
+              {
+                "Lat": -28.12258,
+                "Lng": 153.46298
+              },
+              {
+                "Lat": -28.12255,
+                "Lng": 153.46282
+              },
+              {
+                "Lat": -28.12257,
+                "Lng": 153.46268
+              },
+              {
+                "Lat": -28.12262,
+                "Lng": 153.46257
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-07-09T23:58:09+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": "citybound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -28.12729,
+        "Longitude": 153.46629,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 8,
+        "PriorityBoosted": true,
+        "Detour": null,
+        "DelayMinutes": 8
+      },
+      {
+        "RoadName": "Hope Island Road",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 1532,
+        "ImpactScore": 145,
+        "PrimaryType": "congestion",
+        "Description": "heavy congestion",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "Helensvale Road",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 2540,
+        "ImpactScore": 145,
+        "PrimaryType": "congestion",
+        "Description": "heavy congestion",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 2
+      },
+      {
+        "RoadName": "West Burleigh Road",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 463,
+        "ImpactScore": 136,
+        "PrimaryType": "construction",
+        "Description": "roadworks citybound",
+        "Incidents": [
+          {
+            "Id": "1296852350492687312",
+            "Description": "Between West Burleigh Road and Starling Street - Road construction",
+            "Severity": 2,
+            "Location": "West Burleigh Rd",
+            "Type": "construction",
+            "LengthMeters": 253,
+            "FunctionalClass": 3,
+            "Latitude": -28.09839,
+            "Longitude": 153.44255,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365891607:$1:221651991#\u002B0.00876..1",
+              "$0:365891607:$1:215421744#\u002B0..1",
+              "$0:365891607:$1:215510356#\u002B0..1",
+              "$0:365891607:$1:532106094#\u002B0..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -28.09839,
+                "Lng": 153.44255
+              },
+              {
+                "Lat": -28.09817,
+                "Lng": 153.44269
+              },
+              {
+                "Lat": -28.09793,
+                "Lng": 153.4428
+              },
+              {
+                "Lat": -28.09793,
+                "Lng": 153.4428
+              },
+              {
+                "Lat": -28.09765,
+                "Lng": 153.44288
+              },
+              {
+                "Lat": -28.09765,
+                "Lng": 153.44288
+              },
+              {
+                "Lat": -28.09743,
+                "Lng": 153.44293
+              },
+              {
+                "Lat": -28.09743,
+                "Lng": 153.44293
+              },
+              {
+                "Lat": -28.09724,
+                "Lng": 153.44296
+              },
+              {
+                "Lat": -28.09703,
+                "Lng": 153.44299
+              },
+              {
+                "Lat": -28.09703,
+                "Lng": 153.44299
+              },
+              {
+                "Lat": -28.09683,
+                "Lng": 153.44302
+              },
+              {
+                "Lat": -28.09683,
+                "Lng": 153.44302
+              },
+              {
+                "Lat": -28.09655,
+                "Lng": 153.44305
+              },
+              {
+                "Lat": -28.09655,
+                "Lng": 153.44305
+              },
+              {
+                "Lat": -28.09618,
+                "Lng": 153.44308
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:51+00:00"
+          },
+          {
+            "Id": "2821980688012215096",
+            "Description": "Between Starling Street and West Burleigh Road - Road construction",
+            "Severity": 2,
+            "Location": "West Burleigh Rd",
+            "Type": "construction",
+            "LengthMeters": 210,
+            "FunctionalClass": 3,
+            "Latitude": -28.09621,
+            "Longitude": 153.44324,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "outbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365891607:$1:216718824#-0.51996..1",
+              "$0:365891607:$1:215836393#-0..1",
+              "$0:365891607:$1:216343844#-0..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -28.09621,
+                "Lng": 153.44324
+              },
+              {
+                "Lat": -28.09657,
+                "Lng": 153.44322
+              },
+              {
+                "Lat": -28.09657,
+                "Lng": 153.44322
+              },
+              {
+                "Lat": -28.09688,
+                "Lng": 153.44319
+              },
+              {
+                "Lat": -28.09749,
+                "Lng": 153.44308
+              },
+              {
+                "Lat": -28.09749,
+                "Lng": 153.44308
+              },
+              {
+                "Lat": -28.09774,
+                "Lng": 153.44302
+              },
+              {
+                "Lat": -28.09774,
+                "Lng": 153.44302
+              },
+              {
+                "Lat": -28.09807,
+                "Lng": 153.4429
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": "citybound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -28.09839,
+        "Longitude": 153.44255,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 6,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 6
+      },
+      {
+        "RoadName": "Arundel",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 530,
+        "ImpactScore": 130,
+        "PrimaryType": "construction",
+        "Description": "roadworks northbound",
+        "Incidents": [
+          {
+            "Id": "1173352116204084408",
+            "Description": "Ramp to Smith Street (Northbound) - Road construction",
+            "Severity": 2,
+            "Location": "Arundel",
+            "Type": "construction",
+            "LengthMeters": 530,
+            "FunctionalClass": 3,
+            "Latitude": -27.95946,
+            "Longitude": 153.34714,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365891631:$1:919366268#-0.10395..1",
+              "$0:365891631:$1:919366348#\u002B0..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -27.95946,
+                "Lng": 153.34714
+              },
+              {
+                "Lat": -27.9599,
+                "Lng": 153.34799
+              },
+              {
+                "Lat": -27.96028,
+                "Lng": 153.34887
+              },
+              {
+                "Lat": -27.96037,
+                "Lng": 153.34918
+              },
+              {
+                "Lat": -27.9604,
+                "Lng": 153.34933
+              },
+              {
+                "Lat": -27.96042,
+                "Lng": 153.34964
+              },
+              {
+                "Lat": -27.96042,
+                "Lng": 153.34964
+              },
+              {
+                "Lat": -27.96035,
+                "Lng": 153.34995
+              },
+              {
+                "Lat": -27.96018,
+                "Lng": 153.35034
+              },
+              {
+                "Lat": -27.96007,
+                "Lng": 153.35049
+              },
+              {
+                "Lat": -27.95996,
+                "Lng": 153.35061
+              },
+              {
+                "Lat": -27.95977,
+                "Lng": 153.35075
+              },
+              {
+                "Lat": -27.95958,
+                "Lng": 153.35084
+              },
+              {
+                "Lat": -27.95928,
+                "Lng": 153.35089
+              },
+              {
+                "Lat": -27.95905,
+                "Lng": 153.35087
+              },
+              {
+                "Lat": -27.95867,
+                "Lng": 153.35078
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-10T01:21:52+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": "northbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -27.95946,
+        "Longitude": 153.34714,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": null
+      },
+      {
+        "RoadName": "Captain Cook Drive",
+        "Severity": 3,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 555,
+        "ImpactScore": 125,
+        "PrimaryType": "congestion",
+        "Description": "slow-moving",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      }
+    ],
+    "MonitoredRoutes": [],
+    "GoodRunRoads": [
+      "Southport-Burleigh Road",
+      "Pacific Highway",
+      "Stewart Road",
+      "Cobaki Parkway"
+    ],
+    "FlowPool": [
+      {
+        "RoadName": "Southport-Burleigh Road",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 45,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Pacific Highway",
+        "JamFactor": 2.6,
+        "LengthMeters": 4379,
+        "IsWeighted": false,
+        "FunctionalClass": 2,
+        "Score": 52.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Stewart Road",
+        "JamFactor": 2.6,
+        "LengthMeters": 13629,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Cobaki Parkway",
+        "JamFactor": 1,
+        "LengthMeters": 10941,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Gooding Drive",
+        "JamFactor": 1.6,
+        "LengthMeters": 9496,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Markeri Street",
+        "JamFactor": 2.2,
+        "LengthMeters": 7585,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Labrador - Carrara Road",
+        "JamFactor": 3.4,
+        "LengthMeters": 5218,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "ROBINA PARKWAY",
+        "JamFactor": 0.3,
+        "LengthMeters": 5208,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Galleon Way",
+        "JamFactor": 1.4,
+        "LengthMeters": 4962,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "REGENCY PLACE",
+        "JamFactor": 0.1,
+        "LengthMeters": 4589,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Reedy Creek Road",
+        "JamFactor": 2.7,
+        "LengthMeters": 4516,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Evers Street",
+        "JamFactor": 3,
+        "LengthMeters": 4160,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Crescent Avenue",
+        "JamFactor": 2.6,
+        "LengthMeters": 4048,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Tsipura Drive",
+        "JamFactor": 2.8,
+        "LengthMeters": 3998,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Christine Avenue",
+        "JamFactor": 3.1,
+        "LengthMeters": 3601,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      }
+    ],
+    "Weather": {
+      "Conditions": "Sunny. Mild.",
+      "TemperatureC": 18,
+      "WindDescription": null,
+      "PrecipitationProbabilityPercent": 48,
+      "Alerts": [],
+      "Outlook": "reaching 21 degrees later today; tomorrow scattered clouds. cool, around 20 degrees",
+      "HasMajorAlert": false
+    },
+    "Fuel": {
+      "Summaries": [
+        {
+          "FuelType": "Unleaded 91",
+          "MinPrice": 1.525,
+          "AveragePrice": 1.64,
+          "StationCount": 49,
+          "LatestModifiedUtc": "2026-07-10T00:33:06+00:00",
+          "CheapestStationSuburb": "Labrador"
+        },
+        {
+          "FuelType": "Diesel",
+          "MinPrice": 1.729,
+          "AveragePrice": 1.838,
+          "StationCount": 20,
+          "LatestModifiedUtc": "2026-07-10T00:33:05+00:00",
+          "CheapestStationSuburb": "Labrador"
+        }
+      ],
+      "HasPrices": true
+    },
+    "IncidentChanges": null,
+    "Guidance": {
+      "Entries": [
+        {
+          "Id": "fe048837c889409ba1ce7997dcf55417",
+          "Scope": 1,
+          "ScopeId": "goldcoast",
+          "Type": 1,
+          "Text": "The M1 Pacific Motorway is the spine of the Coast \u2014 lead with M1 conditions between the Tugun bypass and the Logan Motorway, then the Gold Coast Highway and Smith Street Motorway.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for \u2014 a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "UpdatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "645e52b90299493a8dbde1205c6c657e",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "75fe175d471144b38bf23c24966dfb6f",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "7b012b9381e04e72be8211133f224188",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 4,
+          "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "Australian English with natural spoken contractions. Round the figures \u2014 say \u0027about ten minutes\u0027, never \u002710.3 minutes\u0027. No police codes or insider jargon.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 3,
+          "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "f5e76bd5993c41edb637a7302f7d7479",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 2,
+          "Text": "Use common road names with the definite article: \u0027the M1\u0027, \u0027the M4\u0027, \u0027the CBD\u0027. Use \u0027citybound\u0027 and \u0027outbound\u0027 for direction of travel.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        }
+      ],
+      "DroppedCount": 0,
+      "Count": 8,
+      "HasEntries": true
+    },
+    "MarketFeedback": []
+  }
+}

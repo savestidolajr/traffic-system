@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:33.6851114+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.68148,145.06921\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Plenty Rd, Bundoora VIC 3083, Australia",
+          "id": "here:af:streetsection:T6hn3nfHEuhwTmgP4m1ZMB",
+          "resultType": "street",
+          "address": {
+            "label": "Plenty Rd, Bundoora VIC 3083, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Bundoora",
+            "street": "Plenty Rd",
+            "postalCode": "3083"
+          },
+          "position": {
+            "lat": -37.68148,
+            "lng": 145.06921
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 145.06779,
+            "south": -37.68622,
+            "east": 145.06977,
+            "north": -37.67831
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

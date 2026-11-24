@@ -1,0 +1,48 @@
+{
+  "features": [
+    {
+      "attributes": {
+        "roadworks_and_incidents_id": "SA-1001",
+        "rec_type": "INCIDENT",
+        "incident_id": 1001,
+        "description": "Crash blocking lanes",
+        "start_date": 1787126400000,
+        "end_date": 1787212800000,
+        "local_road": "Main North Road",
+        "side_street": "Regency Road",
+        "suburb": "PROSPECT",
+        "latitude": -34.8850,
+        "longitude": 138.6000,
+        "active": " ",
+        "highest_delay": "Moderate delay",
+        "traffic_dir": "[{\"direction\":\"NORTHBOUND\",\"lanes_closed\":2},{\"direction\":\"SOUTHBOUND\",\"lanes_closed\":0}]",
+        "no_lanes_closed": "2",
+        "speed_limit": "60",
+        "timeframe_type": "CURRENT"
+      }
+    },
+    {
+      "attributes": {
+        "roadworks_and_incidents_id": "SA-1002",
+        "rec_type": "INCIDENT",
+        "incident_id": 1002,
+        "description": "Inactive event",
+        "latitude": -34.8850,
+        "longitude": 138.6000,
+        "active": "No",
+        "timeframe_type": "CURRENT"
+      }
+    },
+    {
+      "attributes": {
+        "roadworks_and_incidents_id": "SA-1003",
+        "rec_type": "ROADWORKS",
+        "description": "Historical event",
+        "latitude": -34.8850,
+        "longitude": 138.6000,
+        "active": " ",
+        "timeframe_type": "PAST"
+      }
+    }
+  ]
+}

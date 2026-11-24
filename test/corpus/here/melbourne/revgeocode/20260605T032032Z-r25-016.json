@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:33.6836114+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.83264,144.93246\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Graham St, Port Melbourne VIC 3207, Australia",
+          "id": "here:af:streetsection:z00l7osf5EOkQxxvahMBrB",
+          "resultType": "street",
+          "address": {
+            "label": "Graham St, Port Melbourne VIC 3207, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Port Melbourne",
+            "street": "Graham St",
+            "postalCode": "3207"
+          },
+          "position": {
+            "lat": -37.83264,
+            "lng": 144.93246
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 144.93052,
+            "south": -37.84319,
+            "east": 144.94554,
+            "north": -37.82166
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

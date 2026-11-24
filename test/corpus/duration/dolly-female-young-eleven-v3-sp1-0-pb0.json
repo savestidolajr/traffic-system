@@ -1,0 +1,12274 @@
+{
+ "voiceId": "iKMw2nMnODCnVgY4VQbS",
+ "voiceName": "Dolly Female Young",
+ "modelId": "eleven_v3",
+ "stability": 0.5,
+ "similarityBoost": 0.75,
+ "style": 0.0,
+ "speed": 1.0,
+ "paceBoostWpm": 0.0,
+ "total": 36,
+ "clean": 3,
+ "tokens": 2271,
+ "bulletins": [
+  {
+   "jobId": "0a1223e7f63547c7829c2c285d231985",
+   "market": "cairns-4ca",
+   "targetSec": 30.0,
+   "naturalSec": 30.9,
+   "fittedSec": 30,
+   "stretch": 1.03,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Kennedy Highway's got roadworks and a hazard northbound at Myola Road, with queues back about ten kays. The Captain Cook Highway's a bit slow northbound at Port Douglas Road. Works are underway on the Bruce Highway citybound at Gillies Highway, affecting about two kays. Mulgrave Road's got a short work zone between Toogood Road and McCoombe Street. It's sunny, 25 degrees. Unleaded's cheapest at a dollar ninety-six in Edge Hill, diesel's two dollars thirty-five there too.",
+   "features": {
+    "syl": 115,
+    "words": 77,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.155
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.194,
+     "e": 0.466
+    },
+    {
+     "w": "Highway's",
+     "s": 0.525,
+     "e": 1.01
+    },
+    {
+     "w": "got",
+     "s": 1.049,
+     "e": 1.166
+    },
+    {
+     "w": "roadworks",
+     "s": 1.244,
+     "e": 1.943
+    },
+    {
+     "w": "and",
+     "s": 2.001,
+     "e": 2.176
+    },
+    {
+     "w": "a",
+     "s": 2.215,
+     "e": 2.254
+    },
+    {
+     "w": "hazard",
+     "s": 2.321,
+     "e": 2.72
+    },
+    {
+     "w": "northbound",
+     "s": 2.772,
+     "e": 3.342
+    },
+    {
+     "w": "at",
+     "s": 3.393,
+     "e": 3.497
+    },
+    {
+     "w": "Myola",
+     "s": 3.575,
+     "e": 3.964
+    },
+    {
+     "w": "Road,",
+     "s": 4.041,
+     "e": 4.663
+    },
+    {
+     "w": "with",
+     "s": 4.694,
+     "e": 4.819
+    },
+    {
+     "w": "queues",
+     "s": 4.863,
+     "e": 5.13
+    },
+    {
+     "w": "back",
+     "s": 5.192,
+     "e": 5.44
+    },
+    {
+     "w": "about",
+     "s": 5.506,
+     "e": 5.829
+    },
+    {
+     "w": "ten",
+     "s": 5.868,
+     "e": 5.984
+    },
+    {
+     "w": "kays.",
+     "s": 6.101,
+     "e": 7.073
+    },
+    {
+     "w": "The",
+     "s": 7.092,
+     "e": 7.15
+    },
+    {
+     "w": "Captain",
+     "s": 7.189,
+     "e": 7.461
+    },
+    {
+     "w": "Cook",
+     "s": 7.523,
+     "e": 7.772
+    },
+    {
+     "w": "Highway's",
+     "s": 7.811,
+     "e": 8.238
+    },
+    {
+     "w": "a",
+     "s": 8.277,
+     "e": 8.316
+    },
+    {
+     "w": "bit",
+     "s": 8.355,
+     "e": 8.472
+    },
+    {
+     "w": "slow",
+     "s": 8.534,
+     "e": 8.782
+    },
+    {
+     "w": "northbound",
+     "s": 8.847,
+     "e": 9.482
+    },
+    {
+     "w": "at",
+     "s": 9.533,
+     "e": 9.637
+    },
+    {
+     "w": "Port",
+     "s": 9.699,
+     "e": 9.948
+    },
+    {
+     "w": "Douglas",
+     "s": 9.997,
+     "e": 10.337
+    },
+    {
+     "w": "Road.",
+     "s": 10.415,
+     "e": 10.803
+    },
+    {
+     "w": "Works",
+     "s": 10.92,
+     "e": 11.503
+    },
+    {
+     "w": "are",
+     "s": 11.522,
+     "e": 11.58
+    },
+    {
+     "w": "underway",
+     "s": 11.641,
+     "e": 12.124
+    },
+    {
+     "w": "on",
+     "s": 12.151,
+     "e": 12.202
+    },
+    {
+     "w": "the",
+     "s": 12.222,
+     "e": 12.28
+    },
+    {
+     "w": "Bruce",
+     "s": 12.345,
+     "e": 12.668
+    },
+    {
+     "w": "Highway",
+     "s": 12.717,
+     "e": 13.057
+    },
+    {
+     "w": "citybound",
+     "s": 13.15,
+     "e": 13.834
+    },
+    {
+     "w": "at",
+     "s": 13.886,
+     "e": 13.99
+    },
+    {
+     "w": "Gillies",
+     "s": 14.052,
+     "e": 14.456
+    },
+    {
+     "w": "Highway,",
+     "s": 14.505,
+     "e": 15.155
+    },
+    {
+     "w": "affecting",
+     "s": 15.21,
+     "e": 15.699
+    },
+    {
+     "w": "about",
+     "s": 15.765,
+     "e": 16.088
+    },
+    {
+     "w": "two",
+     "s": 16.146,
+     "e": 16.321
+    },
+    {
+     "w": "kays.",
+     "s": 16.399,
+     "e": 17.254
+    },
+    {
+     "w": "Mulgrave",
+     "s": 17.332,
+     "e": 17.876
+    },
+    {
+     "w": "Road's",
+     "s": 17.938,
+     "e": 18.264
+    },
+    {
+     "w": "got",
+     "s": 18.303,
+     "e": 18.42
+    },
+    {
+     "w": "a",
+     "s": 18.459,
+     "e": 18.497
+    },
+    {
+     "w": "short",
+     "s": 18.549,
+     "e": 18.808
+    },
+    {
+     "w": "work",
+     "s": 18.855,
+     "e": 19.041
+    },
+    {
+     "w": "zone",
+     "s": 19.104,
+     "e": 19.352
+    },
+    {
+     "w": "between",
+     "s": 19.411,
+     "e": 19.819
+    },
+    {
+     "w": "Toogood",
+     "s": 19.87,
+     "e": 20.285
+    },
+    {
+     "w": "Road",
+     "s": 20.347,
+     "e": 20.596
+    },
+    {
+     "w": "and",
+     "s": 20.654,
+     "e": 20.829
+    },
+    {
+     "w": "McCoombe",
+     "s": 20.887,
+     "e": 21.218
+    },
+    {
+     "w": "Street.",
+     "s": 21.273,
+     "e": 21.762
+    },
+    {
+     "w": "It's",
+     "s": 21.969,
+     "e": 22.461
+    },
+    {
+     "w": "sunny,",
+     "s": 22.526,
+     "e": 23.005
+    },
+    {
+     "w": "25",
+     "s": 23.05,
+     "e": 23.549
+    },
+    {
+     "w": "degrees.",
+     "s": 23.617,
+     "e": 24.171
+    },
+    {
+     "w": "Unleaded's",
+     "s": 24.326,
+     "e": 25.142
+    },
+    {
+     "w": "cheapest",
+     "s": 25.173,
+     "e": 25.415
+    },
+    {
+     "w": "at",
+     "s": 25.466,
+     "e": 25.57
+    },
+    {
+     "w": "a",
+     "s": 25.609,
+     "e": 25.648
+    },
+    {
+     "w": "dollar",
+     "s": 25.692,
+     "e": 25.959
+    },
+    {
+     "w": "ninety-six",
+     "s": 25.992,
+     "e": 26.58
+    },
+    {
+     "w": "in",
+     "s": 26.658,
+     "e": 26.813
+    },
+    {
+     "w": "Edge",
+     "s": 26.86,
+     "e": 27.047
+    },
+    {
+     "w": "Hill,",
+     "s": 27.109,
+     "e": 27.668
+    },
+    {
+     "w": "diesel's",
+     "s": 27.724,
+     "e": 28.135
+    },
+    {
+     "w": "two",
+     "s": 28.174,
+     "e": 28.29
+    },
+    {
+     "w": "dollars",
+     "s": 28.339,
+     "e": 28.679
+    },
+    {
+     "w": "thirty-five",
+     "s": 28.712,
+     "e": 29.223
+    },
+    {
+     "w": "there",
+     "s": 29.274,
+     "e": 29.534
+    },
+    {
+     "w": "too.",
+     "s": 29.611,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "0b5332ef8f8b41b59869b72a25c0912d",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 23.0,
+   "fittedSec": 22,
+   "stretch": 1.04545,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Kennedy Highway's chockers northbound from roadworks and a road hazard at Myola Road, with queues back about ten kays. Captain Cook Highway's a slow run northbound at Port Douglas Road. Sheridan Street's moving slowly. Unleaded's one-ninety-six in Edge Hill, diesel two-thirty-five there too. [brightly] Sunny, twenty-five degrees!",
+   "features": {
+    "syl": 78,
+    "words": 47,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.153
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.201,
+     "e": 0.535
+    },
+    {
+     "w": "Highway's",
+     "s": 0.592,
+     "e": 1.146
+    },
+    {
+     "w": "chockers",
+     "s": 1.197,
+     "e": 1.604
+    },
+    {
+     "w": "northbound",
+     "s": 1.668,
+     "e": 2.292
+    },
+    {
+     "w": "from",
+     "s": 2.368,
+     "e": 2.674
+    },
+    {
+     "w": "roadworks",
+     "s": 2.735,
+     "e": 3.285
+    },
+    {
+     "w": "and",
+     "s": 3.342,
+     "e": 3.514
+    },
+    {
+     "w": "a",
+     "s": 3.552,
+     "e": 3.591
+    },
+    {
+     "w": "road",
+     "s": 3.652,
+     "e": 3.896
+    },
+    {
+     "w": "hazard",
+     "s": 3.951,
+     "e": 4.278
+    },
+    {
+     "w": "at",
+     "s": 4.355,
+     "e": 4.507
+    },
+    {
+     "w": "Myola",
+     "s": 4.584,
+     "e": 4.966
+    },
+    {
+     "w": "Road,",
+     "s": 5.057,
+     "e": 5.653
+    },
+    {
+     "w": "with",
+     "s": 5.684,
+     "e": 5.806
+    },
+    {
+     "w": "queues",
+     "s": 5.86,
+     "e": 6.188
+    },
+    {
+     "w": "back",
+     "s": 6.249,
+     "e": 6.494
+    },
+    {
+     "w": "about",
+     "s": 6.544,
+     "e": 6.799
+    },
+    {
+     "w": "ten",
+     "s": 6.876,
+     "e": 7.105
+    },
+    {
+     "w": "kays.",
+     "s": 7.181,
+     "e": 7.716
+    },
+    {
+     "w": "Captain",
+     "s": 7.821,
+     "e": 8.556
+    },
+    {
+     "w": "Cook",
+     "s": 8.602,
+     "e": 8.785
+    },
+    {
+     "w": "Highway's",
+     "s": 8.833,
+     "e": 9.244
+    },
+    {
+     "w": "a",
+     "s": 9.282,
+     "e": 9.32
+    },
+    {
+     "w": "slow",
+     "s": 9.381,
+     "e": 9.626
+    },
+    {
+     "w": "run",
+     "s": 9.702,
+     "e": 9.931
+    },
+    {
+     "w": "northbound",
+     "s": 9.995,
+     "e": 10.619
+    },
+    {
+     "w": "at",
+     "s": 10.695,
+     "e": 10.848
+    },
+    {
+     "w": "Port",
+     "s": 10.894,
+     "e": 11.077
+    },
+    {
+     "w": "Douglas",
+     "s": 11.135,
+     "e": 11.536
+    },
+    {
+     "w": "Road.",
+     "s": 11.627,
+     "e": 12.147
+    },
+    {
+     "w": "Sheridan",
+     "s": 12.258,
+     "e": 13.14
+    },
+    {
+     "w": "Street's",
+     "s": 13.194,
+     "e": 13.598
+    },
+    {
+     "w": "moving",
+     "s": 13.653,
+     "e": 13.98
+    },
+    {
+     "w": "slowly.",
+     "s": 14.057,
+     "e": 14.592
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.821,
+     "e": 15.661
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 15.699,
+     "e": 16.501
+    },
+    {
+     "w": "in",
+     "s": 16.578,
+     "e": 16.731
+    },
+    {
+     "w": "Edge",
+     "s": 16.776,
+     "e": 16.96
+    },
+    {
+     "w": "Hill,",
+     "s": 17.021,
+     "e": 17.571
+    },
+    {
+     "w": "diesel",
+     "s": 17.625,
+     "e": 17.953
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.029,
+     "e": 18.793
+    },
+    {
+     "w": "there",
+     "s": 18.857,
+     "e": 19.175
+    },
+    {
+     "w": "too.",
+     "s": 19.252,
+     "e": 19.557
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.316,
+     "e": 20.478
+    },
+    {
+     "w": "twenty-five",
+     "s": 20.554,
+     "e": 21.242
+    },
+    {
+     "w": "degrees!",
+     "s": 21.328,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "12760610ae8848f1a44d79b3545cde23",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 23.0,
+   "fittedSec": 22,
+   "stretch": 1.04545,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Kennedy Highway's queuing northbound at Myola Road, with a hazard holding traffic back about ten kays. Captain Cook Highway has breakdown delays at Cairns Western Arterial Road and Port Douglas Road. Sheridan Street's a bit slow. Works are underway on Mulgrave Road and Bruce Highway, with minor works around town on Whitfield Street and Riverstone Road.",
+   "features": {
+    "syl": 85,
+    "words": 57,
+    "ellipsis": 0,
+    "period": 4,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.076
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.124,
+     "e": 0.459
+    },
+    {
+     "w": "Highway's",
+     "s": 0.506,
+     "e": 0.994
+    },
+    {
+     "w": "queuing",
+     "s": 1.032,
+     "e": 1.299
+    },
+    {
+     "w": "northbound",
+     "s": 1.35,
+     "e": 1.911
+    },
+    {
+     "w": "at",
+     "s": 1.961,
+     "e": 2.064
+    },
+    {
+     "w": "Myola",
+     "s": 2.14,
+     "e": 2.446
+    },
+    {
+     "w": "Road,",
+     "s": 2.537,
+     "e": 3.134
+    },
+    {
+     "w": "with",
+     "s": 3.164,
+     "e": 3.287
+    },
+    {
+     "w": "a",
+     "s": 3.325,
+     "e": 3.363
+    },
+    {
+     "w": "hazard",
+     "s": 3.407,
+     "e": 3.669
+    },
+    {
+     "w": "holding",
+     "s": 3.716,
+     "e": 4.051
+    },
+    {
+     "w": "traffic",
+     "s": 4.089,
+     "e": 4.357
+    },
+    {
+     "w": "back",
+     "s": 4.433,
+     "e": 4.739
+    },
+    {
+     "w": "about",
+     "s": 4.803,
+     "e": 5.121
+    },
+    {
+     "w": "ten",
+     "s": 5.197,
+     "e": 5.427
+    },
+    {
+     "w": "kays.",
+     "s": 5.503,
+     "e": 6.038
+    },
+    {
+     "w": "Captain",
+     "s": 6.162,
+     "e": 7.032
+    },
+    {
+     "w": "Cook",
+     "s": 7.077,
+     "e": 7.261
+    },
+    {
+     "w": "Highway",
+     "s": 7.328,
+     "e": 7.796
+    },
+    {
+     "w": "has",
+     "s": 7.853,
+     "e": 8.025
+    },
+    {
+     "w": "breakdown",
+     "s": 8.079,
+     "e": 8.56
+    },
+    {
+     "w": "delays",
+     "s": 8.626,
+     "e": 9.019
+    },
+    {
+     "w": "at",
+     "s": 9.045,
+     "e": 9.095
+    },
+    {
+     "w": "Cairns",
+     "s": 9.156,
+     "e": 9.554
+    },
+    {
+     "w": "Western",
+     "s": 9.602,
+     "e": 9.936
+    },
+    {
+     "w": "Arterial",
+     "s": 10.012,
+     "e": 10.547
+    },
+    {
+     "w": "Road",
+     "s": 10.624,
+     "e": 10.93
+    },
+    {
+     "w": "and",
+     "s": 11.025,
+     "e": 11.312
+    },
+    {
+     "w": "Port",
+     "s": 11.373,
+     "e": 11.617
+    },
+    {
+     "w": "Douglas",
+     "s": 11.675,
+     "e": 12.076
+    },
+    {
+     "w": "Road.",
+     "s": 12.152,
+     "e": 12.535
+    },
+    {
+     "w": "Sheridan",
+     "s": 12.662,
+     "e": 13.681
+    },
+    {
+     "w": "Street's",
+     "s": 13.725,
+     "e": 14.063
+    },
+    {
+     "w": "a",
+     "s": 14.101,
+     "e": 14.14
+    },
+    {
+     "w": "bit",
+     "s": 14.178,
+     "e": 14.292
+    },
+    {
+     "w": "slow.",
+     "s": 14.369,
+     "e": 14.751
+    },
+    {
+     "w": "Works",
+     "s": 14.84,
+     "e": 15.286
+    },
+    {
+     "w": "are",
+     "s": 15.305,
+     "e": 15.363
+    },
+    {
+     "w": "underway",
+     "s": 15.413,
+     "e": 15.821
+    },
+    {
+     "w": "on",
+     "s": 15.898,
+     "e": 16.05
+    },
+    {
+     "w": "Mulgrave",
+     "s": 16.108,
+     "e": 16.585
+    },
+    {
+     "w": "Road",
+     "s": 16.647,
+     "e": 16.891
+    },
+    {
+     "w": "and",
+     "s": 16.929,
+     "e": 17.044
+    },
+    {
+     "w": "Bruce",
+     "s": 17.108,
+     "e": 17.426
+    },
+    {
+     "w": "Highway,",
+     "s": 17.483,
+     "e": 18.114
+    },
+    {
+     "w": "with",
+     "s": 18.145,
+     "e": 18.267
+    },
+    {
+     "w": "minor",
+     "s": 18.331,
+     "e": 18.649
+    },
+    {
+     "w": "works",
+     "s": 18.7,
+     "e": 18.955
+    },
+    {
+     "w": "around",
+     "s": 18.987,
+     "e": 19.184
+    },
+    {
+     "w": "town",
+     "s": 19.276,
+     "e": 19.643
+    },
+    {
+     "w": "on",
+     "s": 19.693,
+     "e": 19.795
+    },
+    {
+     "w": "Whitfield",
+     "s": 19.857,
+     "e": 20.33
+    },
+    {
+     "w": "Street",
+     "s": 20.385,
+     "e": 20.713
+    },
+    {
+     "w": "and",
+     "s": 20.751,
+     "e": 20.866
+    },
+    {
+     "w": "Riverstone",
+     "s": 20.93,
+     "e": 21.477
+    },
+    {
+     "w": "Road.",
+     "s": 21.553,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "22cd7f69070c46c284df039b2e8d7da0",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 22.0,
+   "fittedSec": 22,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "A long queue's hit the Kennedy Highway northbound at Myola Road with roadworks, back about ten kays. James Street's at a standstill. [brightly] Cairns Western Arterial Road and Sheridan Street are moving NICELY, while Draper Street and Spence Street are looking good! Unleaded's cheapest at one-ninety-six in Edge Hill, diesel two-thirty-five there too. Sunny, twenty-six degrees.",
+   "features": {
+    "syl": 89,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "A",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "long",
+     "s": 0.126,
+     "e": 0.35
+    },
+    {
+     "w": "queue's",
+     "s": 0.397,
+     "e": 0.701
+    },
+    {
+     "w": "hit",
+     "s": 0.736,
+     "e": 0.841
+    },
+    {
+     "w": "the",
+     "s": 0.876,
+     "e": 0.981
+    },
+    {
+     "w": "Kennedy",
+     "s": 1.016,
+     "e": 1.262
+    },
+    {
+     "w": "Highway",
+     "s": 1.314,
+     "e": 1.682
+    },
+    {
+     "w": "northbound",
+     "s": 1.741,
+     "e": 2.313
+    },
+    {
+     "w": "at",
+     "s": 2.337,
+     "e": 2.383
+    },
+    {
+     "w": "Myola",
+     "s": 2.453,
+     "e": 2.804
+    },
+    {
+     "w": "Road",
+     "s": 2.874,
+     "e": 3.154
+    },
+    {
+     "w": "with",
+     "s": 3.225,
+     "e": 3.505
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.561,
+     "e": 4.276
+    },
+    {
+     "w": "back",
+     "s": 4.318,
+     "e": 4.486
+    },
+    {
+     "w": "about",
+     "s": 4.533,
+     "e": 4.767
+    },
+    {
+     "w": "ten",
+     "s": 4.819,
+     "e": 4.977
+    },
+    {
+     "w": "kays.",
+     "s": 5.047,
+     "e": 5.538
+    },
+    {
+     "w": "James",
+     "s": 5.643,
+     "e": 6.169
+    },
+    {
+     "w": "Street's",
+     "s": 6.199,
+     "e": 6.519
+    },
+    {
+     "w": "at",
+     "s": 6.543,
+     "e": 6.589
+    },
+    {
+     "w": "a",
+     "s": 6.624,
+     "e": 6.659
+    },
+    {
+     "w": "standstill.",
+     "s": 6.73,
+     "e": 7.431
+    },
+    {
+     "w": "Cairns",
+     "s": 8.11,
+     "e": 8.418
+    },
+    {
+     "w": "Western",
+     "s": 8.453,
+     "e": 8.698
+    },
+    {
+     "w": "Arterial",
+     "s": 8.769,
+     "e": 9.259
+    },
+    {
+     "w": "Road",
+     "s": 9.329,
+     "e": 9.61
+    },
+    {
+     "w": "and",
+     "s": 9.645,
+     "e": 9.75
+    },
+    {
+     "w": "Sheridan",
+     "s": 9.796,
+     "e": 10.171
+    },
+    {
+     "w": "Street",
+     "s": 10.221,
+     "e": 10.521
+    },
+    {
+     "w": "are",
+     "s": 10.574,
+     "e": 10.731
+    },
+    {
+     "w": "moving",
+     "s": 10.772,
+     "e": 11.012
+    },
+    {
+     "w": "NICELY,",
+     "s": 11.117,
+     "e": 11.993
+    },
+    {
+     "w": "while",
+     "s": 12.017,
+     "e": 12.133
+    },
+    {
+     "w": "Draper",
+     "s": 12.203,
+     "e": 12.554
+    },
+    {
+     "w": "Street",
+     "s": 12.604,
+     "e": 12.904
+    },
+    {
+     "w": "and",
+     "s": 12.922,
+     "e": 12.975
+    },
+    {
+     "w": "Spence",
+     "s": 13.045,
+     "e": 13.395
+    },
+    {
+     "w": "Street",
+     "s": 13.435,
+     "e": 13.676
+    },
+    {
+     "w": "are",
+     "s": 13.711,
+     "e": 13.816
+    },
+    {
+     "w": "looking",
+     "s": 13.851,
+     "e": 14.096
+    },
+    {
+     "w": "good!",
+     "s": 14.166,
+     "e": 14.587
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.821,
+     "e": 15.638
+    },
+    {
+     "w": "cheapest",
+     "s": 15.685,
+     "e": 16.059
+    },
+    {
+     "w": "at",
+     "s": 16.105,
+     "e": 16.199
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 16.252,
+     "e": 17.11
+    },
+    {
+     "w": "in",
+     "s": 17.157,
+     "e": 17.251
+    },
+    {
+     "w": "Edge",
+     "s": 17.293,
+     "e": 17.461
+    },
+    {
+     "w": "Hill,",
+     "s": 17.517,
+     "e": 18.092
+    },
+    {
+     "w": "diesel",
+     "s": 18.142,
+     "e": 18.442
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.495,
+     "e": 19.213
+    },
+    {
+     "w": "there",
+     "s": 19.272,
+     "e": 19.564
+    },
+    {
+     "w": "too.",
+     "s": 19.634,
+     "e": 19.914
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.043,
+     "e": 20.756
+    },
+    {
+     "w": "twenty-six",
+     "s": 20.796,
+     "e": 21.316
+    },
+    {
+     "w": "degrees.",
+     "s": 21.386,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "299c59f1b7b04ab2bb844ca00929fc08",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 22.1,
+   "fittedSec": 22,
+   "stretch": 1.00455,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Kennedy Highway's got roadworks and a HAZARD northbound at Myola Road, with queues back about ten kays. Captain Cook Highway's a bit slow northbound at Port Douglas Road. Works are underway on Mulgrave Road and the Bruce Highway. [brightly] Unleaded's a dollar ninety-six in Edge Hill, diesel two dollars thirty-five there too! Sunny, 25 degrees.",
+   "features": {
+    "syl": 83,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.159
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.199,
+     "e": 0.477
+    },
+    {
+     "w": "Highway's",
+     "s": 0.546,
+     "e": 1.112
+    },
+    {
+     "w": "got",
+     "s": 1.172,
+     "e": 1.351
+    },
+    {
+     "w": "roadworks",
+     "s": 1.43,
+     "e": 2.066
+    },
+    {
+     "w": "and",
+     "s": 2.126,
+     "e": 2.304
+    },
+    {
+     "w": "a",
+     "s": 2.344,
+     "e": 2.384
+    },
+    {
+     "w": "HAZARD",
+     "s": 2.463,
+     "e": 2.94
+    },
+    {
+     "w": "northbound",
+     "s": 2.993,
+     "e": 3.576
+    },
+    {
+     "w": "at",
+     "s": 3.628,
+     "e": 3.735
+    },
+    {
+     "w": "Myola",
+     "s": 3.814,
+     "e": 4.211
+    },
+    {
+     "w": "Road,",
+     "s": 4.291,
+     "e": 4.847
+    },
+    {
+     "w": "with",
+     "s": 4.879,
+     "e": 5.006
+    },
+    {
+     "w": "queues",
+     "s": 5.052,
+     "e": 5.324
+    },
+    {
+     "w": "back",
+     "s": 5.387,
+     "e": 5.642
+    },
+    {
+     "w": "about",
+     "s": 5.708,
+     "e": 6.039
+    },
+    {
+     "w": "ten",
+     "s": 6.099,
+     "e": 6.277
+    },
+    {
+     "w": "kays.",
+     "s": 6.357,
+     "e": 7.151
+    },
+    {
+     "w": "Captain",
+     "s": 7.211,
+     "e": 7.628
+    },
+    {
+     "w": "Cook",
+     "s": 7.676,
+     "e": 7.867
+    },
+    {
+     "w": "Highway's",
+     "s": 7.916,
+     "e": 8.343
+    },
+    {
+     "w": "a",
+     "s": 8.423,
+     "e": 8.502
+    },
+    {
+     "w": "bit",
+     "s": 8.562,
+     "e": 8.741
+    },
+    {
+     "w": "slow",
+     "s": 8.804,
+     "e": 9.058
+    },
+    {
+     "w": "northbound",
+     "s": 9.125,
+     "e": 9.774
+    },
+    {
+     "w": "at",
+     "s": 9.826,
+     "e": 9.932
+    },
+    {
+     "w": "Port",
+     "s": 9.98,
+     "e": 10.171
+    },
+    {
+     "w": "Douglas",
+     "s": 10.221,
+     "e": 10.568
+    },
+    {
+     "w": "Road.",
+     "s": 10.648,
+     "e": 11.045
+    },
+    {
+     "w": "Works",
+     "s": 11.151,
+     "e": 11.681
+    },
+    {
+     "w": "are",
+     "s": 11.7,
+     "e": 11.76
+    },
+    {
+     "w": "underway",
+     "s": 11.813,
+     "e": 12.237
+    },
+    {
+     "w": "on",
+     "s": 12.289,
+     "e": 12.396
+    },
+    {
+     "w": "Mulgrave",
+     "s": 12.455,
+     "e": 12.952
+    },
+    {
+     "w": "Road",
+     "s": 13.016,
+     "e": 13.27
+    },
+    {
+     "w": "and",
+     "s": 13.349,
+     "e": 13.588
+    },
+    {
+     "w": "the",
+     "s": 13.608,
+     "e": 13.667
+    },
+    {
+     "w": "Bruce",
+     "s": 13.72,
+     "e": 13.985
+    },
+    {
+     "w": "Highway.",
+     "s": 14.045,
+     "e": 14.621
+    },
+    {
+     "w": "Unleaded's",
+     "s": 15.071,
+     "e": 15.415
+    },
+    {
+     "w": "a",
+     "s": 15.455,
+     "e": 15.495
+    },
+    {
+     "w": "dollar",
+     "s": 15.528,
+     "e": 15.733
+    },
+    {
+     "w": "ninety-six",
+     "s": 15.779,
+     "e": 16.369
+    },
+    {
+     "w": "in",
+     "s": 16.421,
+     "e": 16.528
+    },
+    {
+     "w": "Edge",
+     "s": 16.575,
+     "e": 16.766
+    },
+    {
+     "w": "Hill,",
+     "s": 16.83,
+     "e": 17.402
+    },
+    {
+     "w": "diesel",
+     "s": 17.47,
+     "e": 17.878
+    },
+    {
+     "w": "two",
+     "s": 17.918,
+     "e": 18.037
+    },
+    {
+     "w": "dollars",
+     "s": 18.077,
+     "e": 18.355
+    },
+    {
+     "w": "thirty-five",
+     "s": 18.401,
+     "e": 18.911
+    },
+    {
+     "w": "there",
+     "s": 18.978,
+     "e": 19.309
+    },
+    {
+     "w": "too!",
+     "s": 19.388,
+     "e": 19.706
+    },
+    {
+     "w": "Sunny,",
+     "s": 19.838,
+     "e": 20.699
+    },
+    {
+     "w": "25",
+     "s": 20.728,
+     "e": 21.136
+    },
+    {
+     "w": "degrees.",
+     "s": 21.226,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "2bf7bc9398264dcead702c4ecce89882",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 22.0,
+   "fittedSec": 22,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched"
+   ],
+   "spokenText": "The Kennedy Highway's got roadworks and a hazard northbound at Myola Road, with queues back about ten kays. The Bruce Highway is the main artery south to Innisfail and north through the city \u2014 expect delays at the Draper Street and Lyons Street intersections during peak. Roadworks and changed traffic conditions are updated weekly on the Cairns Regional Council website.",
+   "features": {
+    "syl": 93,
+    "words": 60,
+    "ellipsis": 0,
+    "period": 3,
+    "comma": 1,
+    "dash": 1,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.152
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.2,
+     "e": 0.532
+    },
+    {
+     "w": "Highway's",
+     "s": 0.589,
+     "e": 1.064
+    },
+    {
+     "w": "got",
+     "s": 1.121,
+     "e": 1.292
+    },
+    {
+     "w": "roadworks",
+     "s": 1.353,
+     "e": 1.901
+    },
+    {
+     "w": "and",
+     "s": 1.958,
+     "e": 2.129
+    },
+    {
+     "w": "a",
+     "s": 2.167,
+     "e": 2.205
+    },
+    {
+     "w": "hazard",
+     "s": 2.27,
+     "e": 2.661
+    },
+    {
+     "w": "northbound",
+     "s": 2.724,
+     "e": 3.269
+    },
+    {
+     "w": "at",
+     "s": 3.319,
+     "e": 3.421
+    },
+    {
+     "w": "Myola",
+     "s": 3.471,
+     "e": 3.877
+    },
+    {
+     "w": "Road,",
+     "s": 3.953,
+     "e": 4.485
+    },
+    {
+     "w": "with",
+     "s": 4.516,
+     "e": 4.637
+    },
+    {
+     "w": "queues",
+     "s": 4.691,
+     "e": 5.017
+    },
+    {
+     "w": "back",
+     "s": 5.078,
+     "e": 5.321
+    },
+    {
+     "w": "about",
+     "s": 5.36,
+     "e": 5.55
+    },
+    {
+     "w": "ten",
+     "s": 5.645,
+     "e": 5.93
+    },
+    {
+     "w": "kays.",
+     "s": 5.968,
+     "e": 6.462
+    },
+    {
+     "w": "The",
+     "s": 7.098,
+     "e": 7.266
+    },
+    {
+     "w": "Bruce",
+     "s": 7.298,
+     "e": 7.457
+    },
+    {
+     "w": "Highway",
+     "s": 7.504,
+     "e": 7.837
+    },
+    {
+     "w": "is",
+     "s": 7.887,
+     "e": 7.989
+    },
+    {
+     "w": "the",
+     "s": 8.027,
+     "e": 8.141
+    },
+    {
+     "w": "main",
+     "s": 8.186,
+     "e": 8.369
+    },
+    {
+     "w": "artery",
+     "s": 8.434,
+     "e": 8.825
+    },
+    {
+     "w": "south",
+     "s": 8.875,
+     "e": 9.129
+    },
+    {
+     "w": "to",
+     "s": 9.179,
+     "e": 9.281
+    },
+    {
+     "w": "Innisfail",
+     "s": 9.319,
+     "e": 9.813
+    },
+    {
+     "w": "and",
+     "s": 9.889,
+     "e": 10.117
+    },
+    {
+     "w": "north",
+     "s": 10.181,
+     "e": 10.497
+    },
+    {
+     "w": "through",
+     "s": 10.526,
+     "e": 10.725
+    },
+    {
+     "w": "the",
+     "s": 10.744,
+     "e": 10.801
+    },
+    {
+     "w": "city",
+     "s": 10.878,
+     "e": 11.182
+    },
+    {
+     "w": "\u2014",
+     "s": 11.41,
+     "e": 11.638
+    },
+    {
+     "w": "expect",
+     "s": 11.692,
+     "e": 12.018
+    },
+    {
+     "w": "delays",
+     "s": 12.072,
+     "e": 12.398
+    },
+    {
+     "w": "at",
+     "s": 12.424,
+     "e": 12.474
+    },
+    {
+     "w": "the",
+     "s": 12.493,
+     "e": 12.55
+    },
+    {
+     "w": "Draper",
+     "s": 12.6,
+     "e": 13.006
+    },
+    {
+     "w": "Street",
+     "s": 13.06,
+     "e": 13.386
+    },
+    {
+     "w": "and",
+     "s": 13.443,
+     "e": 13.614
+    },
+    {
+     "w": "Lyons",
+     "s": 13.678,
+     "e": 13.994
+    },
+    {
+     "w": "Street",
+     "s": 14.038,
+     "e": 14.298
+    },
+    {
+     "w": "intersections",
+     "s": 14.353,
+     "e": 15.059
+    },
+    {
+     "w": "during",
+     "s": 15.102,
+     "e": 15.363
+    },
+    {
+     "w": "peak.",
+     "s": 15.439,
+     "e": 15.895
+    },
+    {
+     "w": "Roadworks",
+     "s": 16.227,
+     "e": 16.831
+    },
+    {
+     "w": "and",
+     "s": 16.869,
+     "e": 16.983
+    },
+    {
+     "w": "changed",
+     "s": 17.049,
+     "e": 17.515
+    },
+    {
+     "w": "traffic",
+     "s": 17.563,
+     "e": 17.895
+    },
+    {
+     "w": "conditions",
+     "s": 17.95,
+     "e": 18.503
+    },
+    {
+     "w": "are",
+     "s": 18.541,
+     "e": 18.655
+    },
+    {
+     "w": "updated",
+     "s": 18.722,
+     "e": 19.188
+    },
+    {
+     "w": "weekly",
+     "s": 19.253,
+     "e": 19.644
+    },
+    {
+     "w": "on",
+     "s": 19.72,
+     "e": 19.872
+    },
+    {
+     "w": "the",
+     "s": 19.891,
+     "e": 19.948
+    },
+    {
+     "w": "Cairns",
+     "s": 20.009,
+     "e": 20.404
+    },
+    {
+     "w": "Regional",
+     "s": 20.446,
+     "e": 20.784
+    },
+    {
+     "w": "Council",
+     "s": 20.841,
+     "e": 21.24
+    },
+    {
+     "w": "website.",
+     "s": 21.316,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "3209285bc5a64bc0a655ab7a7c2fbba8",
+   "market": "cairns-4ca",
+   "targetSec": 30.0,
+   "naturalSec": 30.3,
+   "fittedSec": 30,
+   "stretch": 1.01,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Kennedy Highway's got roadworks and a hazard northbound at Myola Road, with queues back about ten kays. Captain Cook Highway's a little slow northbound at Port Douglas Road. Works are underway on the Bruce Highway citybound at Gillies Highway, affecting about two kays. Mulgrave Road's got a short work zone between Toogood Road and McCoombe Street. Cairns Western Arterial Road and Sheridan Street are moving nicely, with cloudy skies and 22 degrees.",
+   "features": {
+    "syl": 108,
+    "words": 73,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.079
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.129,
+     "e": 0.475
+    },
+    {
+     "w": "Highway's",
+     "s": 0.524,
+     "e": 1.029
+    },
+    {
+     "w": "got",
+     "s": 1.088,
+     "e": 1.266
+    },
+    {
+     "w": "roadworks",
+     "s": 1.33,
+     "e": 1.979
+    },
+    {
+     "w": "and",
+     "s": 2.038,
+     "e": 2.216
+    },
+    {
+     "w": "a",
+     "s": 2.256,
+     "e": 2.296
+    },
+    {
+     "w": "hazard",
+     "s": 2.364,
+     "e": 2.77
+    },
+    {
+     "w": "northbound",
+     "s": 2.823,
+     "e": 3.404
+    },
+    {
+     "w": "at",
+     "s": 3.456,
+     "e": 3.562
+    },
+    {
+     "w": "Myola",
+     "s": 3.641,
+     "e": 4.037
+    },
+    {
+     "w": "Road,",
+     "s": 4.116,
+     "e": 4.67
+    },
+    {
+     "w": "with",
+     "s": 4.718,
+     "e": 4.908
+    },
+    {
+     "w": "queues",
+     "s": 4.953,
+     "e": 5.224
+    },
+    {
+     "w": "back",
+     "s": 5.272,
+     "e": 5.462
+    },
+    {
+     "w": "about",
+     "s": 5.514,
+     "e": 5.778
+    },
+    {
+     "w": "ten",
+     "s": 5.858,
+     "e": 6.095
+    },
+    {
+     "w": "kays.",
+     "s": 6.174,
+     "e": 6.807
+    },
+    {
+     "w": "Captain",
+     "s": 6.916,
+     "e": 7.678
+    },
+    {
+     "w": "Cook",
+     "s": 7.726,
+     "e": 7.916
+    },
+    {
+     "w": "Highway's",
+     "s": 7.975,
+     "e": 8.47
+    },
+    {
+     "w": "a",
+     "s": 8.509,
+     "e": 8.549
+    },
+    {
+     "w": "little",
+     "s": 8.594,
+     "e": 8.865
+    },
+    {
+     "w": "slow",
+     "s": 8.945,
+     "e": 9.261
+    },
+    {
+     "w": "northbound",
+     "s": 9.314,
+     "e": 9.894
+    },
+    {
+     "w": "at",
+     "s": 9.921,
+     "e": 9.974
+    },
+    {
+     "w": "Port",
+     "s": 10.037,
+     "e": 10.29
+    },
+    {
+     "w": "Douglas",
+     "s": 10.34,
+     "e": 10.686
+    },
+    {
+     "w": "Road.",
+     "s": 10.781,
+     "e": 11.319
+    },
+    {
+     "w": "Works",
+     "s": 11.425,
+     "e": 11.952
+    },
+    {
+     "w": "are",
+     "s": 11.992,
+     "e": 12.111
+    },
+    {
+     "w": "underway",
+     "s": 12.163,
+     "e": 12.586
+    },
+    {
+     "w": "on",
+     "s": 12.612,
+     "e": 12.665
+    },
+    {
+     "w": "the",
+     "s": 12.685,
+     "e": 12.744
+    },
+    {
+     "w": "Bruce",
+     "s": 12.81,
+     "e": 13.14
+    },
+    {
+     "w": "Highway",
+     "s": 13.189,
+     "e": 13.536
+    },
+    {
+     "w": "citybound",
+     "s": 13.631,
+     "e": 14.327
+    },
+    {
+     "w": "at",
+     "s": 14.38,
+     "e": 14.485
+    },
+    {
+     "w": "Gillies",
+     "s": 14.533,
+     "e": 14.881
+    },
+    {
+     "w": "Highway,",
+     "s": 14.941,
+     "e": 15.594
+    },
+    {
+     "w": "affecting",
+     "s": 15.649,
+     "e": 16.148
+    },
+    {
+     "w": "about",
+     "s": 16.2,
+     "e": 16.464
+    },
+    {
+     "w": "two",
+     "s": 16.504,
+     "e": 16.623
+    },
+    {
+     "w": "kays.",
+     "s": 16.741,
+     "e": 17.335
+    },
+    {
+     "w": "Mulgrave",
+     "s": 17.533,
+     "e": 18.522
+    },
+    {
+     "w": "Road's",
+     "s": 18.586,
+     "e": 18.918
+    },
+    {
+     "w": "got",
+     "s": 18.958,
+     "e": 19.076
+    },
+    {
+     "w": "a",
+     "s": 19.116,
+     "e": 19.156
+    },
+    {
+     "w": "short",
+     "s": 19.208,
+     "e": 19.472
+    },
+    {
+     "w": "work",
+     "s": 19.536,
+     "e": 19.789
+    },
+    {
+     "w": "zone",
+     "s": 19.852,
+     "e": 20.105
+    },
+    {
+     "w": "between",
+     "s": 20.165,
+     "e": 20.58
+    },
+    {
+     "w": "Toogood",
+     "s": 20.633,
+     "e": 20.976
+    },
+    {
+     "w": "Road",
+     "s": 21.055,
+     "e": 21.372
+    },
+    {
+     "w": "and",
+     "s": 21.412,
+     "e": 21.53
+    },
+    {
+     "w": "McCoombe",
+     "s": 21.609,
+     "e": 22.005
+    },
+    {
+     "w": "Street.",
+     "s": 22.062,
+     "e": 22.559
+    },
+    {
+     "w": "Cairns",
+     "s": 22.718,
+     "e": 23.43
+    },
+    {
+     "w": "Western",
+     "s": 23.479,
+     "e": 23.826
+    },
+    {
+     "w": "Arterial",
+     "s": 23.905,
+     "e": 24.459
+    },
+    {
+     "w": "Road",
+     "s": 24.538,
+     "e": 24.855
+    },
+    {
+     "w": "and",
+     "s": 24.894,
+     "e": 25.013
+    },
+    {
+     "w": "Sheridan",
+     "s": 25.066,
+     "e": 25.488
+    },
+    {
+     "w": "Street",
+     "s": 25.544,
+     "e": 25.884
+    },
+    {
+     "w": "are",
+     "s": 25.943,
+     "e": 26.121
+    },
+    {
+     "w": "moving",
+     "s": 26.167,
+     "e": 26.438
+    },
+    {
+     "w": "nicely,",
+     "s": 26.517,
+     "e": 27.309
+    },
+    {
+     "w": "with",
+     "s": 27.34,
+     "e": 27.467
+    },
+    {
+     "w": "cloudy",
+     "s": 27.535,
+     "e": 27.942
+    },
+    {
+     "w": "skies",
+     "s": 28.021,
+     "e": 28.417
+    },
+    {
+     "w": "and",
+     "s": 28.456,
+     "e": 28.575
+    },
+    {
+     "w": "22",
+     "s": 28.632,
+     "e": 29.208
+    },
+    {
+     "w": "degrees.",
+     "s": 29.288,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "320f25c610d647ecae9e8c9b6746e0a5",
+   "market": "cairns-4ca",
+   "targetSec": 30.0,
+   "naturalSec": 31.8,
+   "fittedSec": 30,
+   "stretch": 1.06,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Kennedy Highway's got roadworks and a hazard northbound at Myola Road, with queues back about ten kays. The Captain Cook Highway's a bit slow northbound at Port Douglas Road. Works are underway on the Mulgrave Road eastbound between Toogood Road and McCoombe Street, and the Bruce Highway's got works citybound at Gillies Highway, over about two kays. Sunny in Cairns, 25 degrees. Unleaded's cheapest at a dollar ninety-six in Edge Hill, with diesel two dollars thirty-five there too.",
+   "features": {
+    "syl": 117,
+    "words": 79,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 5,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.153
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.191,
+     "e": 0.458
+    },
+    {
+     "w": "Highway's",
+     "s": 0.515,
+     "e": 0.992
+    },
+    {
+     "w": "got",
+     "s": 1.031,
+     "e": 1.145
+    },
+    {
+     "w": "roadworks",
+     "s": 1.221,
+     "e": 1.908
+    },
+    {
+     "w": "and",
+     "s": 1.966,
+     "e": 2.137
+    },
+    {
+     "w": "a",
+     "s": 2.176,
+     "e": 2.214
+    },
+    {
+     "w": "hazard",
+     "s": 2.28,
+     "e": 2.672
+    },
+    {
+     "w": "northbound",
+     "s": 2.722,
+     "e": 3.282
+    },
+    {
+     "w": "at",
+     "s": 3.333,
+     "e": 3.435
+    },
+    {
+     "w": "Myola",
+     "s": 3.511,
+     "e": 3.893
+    },
+    {
+     "w": "Road,",
+     "s": 3.969,
+     "e": 4.58
+    },
+    {
+     "w": "with",
+     "s": 4.611,
+     "e": 4.733
+    },
+    {
+     "w": "queues",
+     "s": 4.777,
+     "e": 5.038
+    },
+    {
+     "w": "back",
+     "s": 5.099,
+     "e": 5.344
+    },
+    {
+     "w": "about",
+     "s": 5.407,
+     "e": 5.725
+    },
+    {
+     "w": "ten",
+     "s": 5.763,
+     "e": 5.878
+    },
+    {
+     "w": "kays.",
+     "s": 5.992,
+     "e": 6.947
+    },
+    {
+     "w": "The",
+     "s": 6.966,
+     "e": 7.023
+    },
+    {
+     "w": "Captain",
+     "s": 7.061,
+     "e": 7.328
+    },
+    {
+     "w": "Cook",
+     "s": 7.389,
+     "e": 7.634
+    },
+    {
+     "w": "Highway's",
+     "s": 7.672,
+     "e": 8.092
+    },
+    {
+     "w": "a",
+     "s": 8.13,
+     "e": 8.168
+    },
+    {
+     "w": "bit",
+     "s": 8.206,
+     "e": 8.321
+    },
+    {
+     "w": "slow",
+     "s": 8.382,
+     "e": 8.626
+    },
+    {
+     "w": "northbound",
+     "s": 8.69,
+     "e": 9.313
+    },
+    {
+     "w": "at",
+     "s": 9.364,
+     "e": 9.466
+    },
+    {
+     "w": "Port",
+     "s": 9.527,
+     "e": 9.771
+    },
+    {
+     "w": "Douglas",
+     "s": 9.819,
+     "e": 10.153
+    },
+    {
+     "w": "Road.",
+     "s": 10.229,
+     "e": 10.611
+    },
+    {
+     "w": "Works",
+     "s": 10.725,
+     "e": 11.298
+    },
+    {
+     "w": "are",
+     "s": 11.317,
+     "e": 11.374
+    },
+    {
+     "w": "underway",
+     "s": 11.433,
+     "e": 11.908
+    },
+    {
+     "w": "on",
+     "s": 11.934,
+     "e": 11.985
+    },
+    {
+     "w": "the",
+     "s": 12.004,
+     "e": 12.061
+    },
+    {
+     "w": "Mulgrave",
+     "s": 12.118,
+     "e": 12.595
+    },
+    {
+     "w": "Road",
+     "s": 12.656,
+     "e": 12.901
+    },
+    {
+     "w": "eastbound",
+     "s": 12.962,
+     "e": 13.511
+    },
+    {
+     "w": "between",
+     "s": 13.559,
+     "e": 13.893
+    },
+    {
+     "w": "Toogood",
+     "s": 13.944,
+     "e": 14.275
+    },
+    {
+     "w": "Road",
+     "s": 14.351,
+     "e": 14.656
+    },
+    {
+     "w": "and",
+     "s": 14.714,
+     "e": 14.885
+    },
+    {
+     "w": "McCoombe",
+     "s": 14.962,
+     "e": 15.344
+    },
+    {
+     "w": "Street,",
+     "s": 15.398,
+     "e": 16.107
+    },
+    {
+     "w": "and",
+     "s": 16.164,
+     "e": 16.336
+    },
+    {
+     "w": "the",
+     "s": 16.355,
+     "e": 16.412
+    },
+    {
+     "w": "Bruce",
+     "s": 16.476,
+     "e": 16.794
+    },
+    {
+     "w": "Highway's",
+     "s": 16.842,
+     "e": 17.252
+    },
+    {
+     "w": "got",
+     "s": 17.309,
+     "e": 17.481
+    },
+    {
+     "w": "works",
+     "s": 17.545,
+     "e": 17.863
+    },
+    {
+     "w": "citybound",
+     "s": 17.939,
+     "e": 18.626
+    },
+    {
+     "w": "at",
+     "s": 18.677,
+     "e": 18.779
+    },
+    {
+     "w": "Gillies",
+     "s": 18.824,
+     "e": 19.16
+    },
+    {
+     "w": "Highway,",
+     "s": 19.218,
+     "e": 19.847
+    },
+    {
+     "w": "over",
+     "s": 19.908,
+     "e": 20.153
+    },
+    {
+     "w": "about",
+     "s": 20.203,
+     "e": 20.458
+    },
+    {
+     "w": "two",
+     "s": 20.515,
+     "e": 20.687
+    },
+    {
+     "w": "kays.",
+     "s": 20.763,
+     "e": 21.374
+    },
+    {
+     "w": "Sunny",
+     "s": 21.476,
+     "e": 21.985
+    },
+    {
+     "w": "in",
+     "s": 22.01,
+     "e": 22.061
+    },
+    {
+     "w": "Cairns,",
+     "s": 22.122,
+     "e": 22.672
+    },
+    {
+     "w": "25",
+     "s": 22.716,
+     "e": 23.206
+    },
+    {
+     "w": "degrees.",
+     "s": 23.292,
+     "e": 24.046
+    },
+    {
+     "w": "Unleaded's",
+     "s": 24.224,
+     "e": 24.962
+    },
+    {
+     "w": "cheapest",
+     "s": 25.012,
+     "e": 25.42
+    },
+    {
+     "w": "at",
+     "s": 25.47,
+     "e": 25.573
+    },
+    {
+     "w": "a",
+     "s": 25.611,
+     "e": 25.649
+    },
+    {
+     "w": "dollar",
+     "s": 25.681,
+     "e": 25.878
+    },
+    {
+     "w": "ninety-six",
+     "s": 25.932,
+     "e": 26.489
+    },
+    {
+     "w": "in",
+     "s": 26.565,
+     "e": 26.718
+    },
+    {
+     "w": "Edge",
+     "s": 26.763,
+     "e": 26.947
+    },
+    {
+     "w": "Hill,",
+     "s": 27.008,
+     "e": 27.557
+    },
+    {
+     "w": "with",
+     "s": 27.588,
+     "e": 27.71
+    },
+    {
+     "w": "diesel",
+     "s": 27.764,
+     "e": 28.092
+    },
+    {
+     "w": "two",
+     "s": 28.149,
+     "e": 28.321
+    },
+    {
+     "w": "dollars",
+     "s": 28.368,
+     "e": 28.702
+    },
+    {
+     "w": "thirty-five",
+     "s": 28.735,
+     "e": 29.237
+    },
+    {
+     "w": "there",
+     "s": 29.287,
+     "e": 29.542
+    },
+    {
+     "w": "too.",
+     "s": 29.637,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "3e589abddd004b6fa20207bec6416f7a",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 23.3,
+   "fittedSec": 22,
+   "stretch": 1.05909,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "[exhales sharply] A long queue's holding up the Kennedy Highway northbound at Myola Road, with a HAZARD. [whispering] There's a breakdown amid construction on the Captain Cook Highway at Cairns Western Arterial Road, with minor delays, and more activity at Port Douglas Road. Unleaded's one-ninety-six in Edge Hill, diesel two-thirty-five there too. [brightly] Cloudy, twenty-six degrees!",
+   "features": {
+    "syl": 89,
+    "words": 52,
+    "ellipsis": 0,
+    "period": 4,
+    "comma": 5,
+    "dash": 0,
+    "costlyTags": 1,
+    "tags": 3
+   },
+   "tokens": [
+    {
+     "w": "A",
+     "s": 0.429,
+     "e": 0.468
+    },
+    {
+     "w": "long",
+     "s": 0.499,
+     "e": 0.624
+    },
+    {
+     "w": "queue's",
+     "s": 0.675,
+     "e": 1.091
+    },
+    {
+     "w": "holding",
+     "s": 1.13,
+     "e": 1.403
+    },
+    {
+     "w": "up",
+     "s": 1.455,
+     "e": 1.559
+    },
+    {
+     "w": "the",
+     "s": 1.578,
+     "e": 1.637
+    },
+    {
+     "w": "Kennedy",
+     "s": 1.685,
+     "e": 2.026
+    },
+    {
+     "w": "Highway",
+     "s": 2.085,
+     "e": 2.494
+    },
+    {
+     "w": "northbound",
+     "s": 2.559,
+     "e": 3.195
+    },
+    {
+     "w": "at",
+     "s": 3.247,
+     "e": 3.351
+    },
+    {
+     "w": "Myola",
+     "s": 3.429,
+     "e": 3.819
+    },
+    {
+     "w": "Road,",
+     "s": 3.897,
+     "e": 4.52
+    },
+    {
+     "w": "with",
+     "s": 4.552,
+     "e": 4.676
+    },
+    {
+     "w": "a",
+     "s": 4.715,
+     "e": 4.754
+    },
+    {
+     "w": "HAZARD.",
+     "s": 4.832,
+     "e": 5.3
+    },
+    {
+     "w": "There's",
+     "s": 5.829,
+     "e": 5.923
+    },
+    {
+     "w": "a",
+     "s": 6.099,
+     "e": 6.274
+    },
+    {
+     "w": "breakdown",
+     "s": 6.309,
+     "e": 6.625
+    },
+    {
+     "w": "amid",
+     "s": 6.687,
+     "e": 6.937
+    },
+    {
+     "w": "construction",
+     "s": 6.984,
+     "e": 7.56
+    },
+    {
+     "w": "on",
+     "s": 7.586,
+     "e": 7.638
+    },
+    {
+     "w": "the",
+     "s": 7.657,
+     "e": 7.716
+    },
+    {
+     "w": "Captain",
+     "s": 7.765,
+     "e": 8.106
+    },
+    {
+     "w": "Cook",
+     "s": 8.152,
+     "e": 8.339
+    },
+    {
+     "w": "Highway",
+     "s": 8.398,
+     "e": 8.807
+    },
+    {
+     "w": "at",
+     "s": 8.937,
+     "e": 9.197
+    },
+    {
+     "w": "Cairns",
+     "s": 9.259,
+     "e": 9.586
+    },
+    {
+     "w": "Western",
+     "s": 9.635,
+     "e": 9.976
+    },
+    {
+     "w": "Arterial",
+     "s": 10.028,
+     "e": 10.522
+    },
+    {
+     "w": "Road,",
+     "s": 10.615,
+     "e": 11.223
+    },
+    {
+     "w": "with",
+     "s": 11.254,
+     "e": 11.379
+    },
+    {
+     "w": "minor",
+     "s": 11.444,
+     "e": 11.769
+    },
+    {
+     "w": "delays,",
+     "s": 11.847,
+     "e": 12.392
+    },
+    {
+     "w": "and",
+     "s": 12.49,
+     "e": 12.782
+    },
+    {
+     "w": "more",
+     "s": 12.844,
+     "e": 13.094
+    },
+    {
+     "w": "activity",
+     "s": 13.163,
+     "e": 13.717
+    },
+    {
+     "w": "at",
+     "s": 13.769,
+     "e": 13.873
+    },
+    {
+     "w": "Port",
+     "s": 13.935,
+     "e": 14.185
+    },
+    {
+     "w": "Douglas",
+     "s": 14.243,
+     "e": 14.652
+    },
+    {
+     "w": "Road.",
+     "s": 14.73,
+     "e": 15.198
+    },
+    {
+     "w": "Unleaded's",
+     "s": 15.432,
+     "e": 16.211
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 16.25,
+     "e": 16.913
+    },
+    {
+     "w": "in",
+     "s": 16.964,
+     "e": 17.069
+    },
+    {
+     "w": "Edge",
+     "s": 17.115,
+     "e": 17.302
+    },
+    {
+     "w": "Hill,",
+     "s": 17.349,
+     "e": 17.848
+    },
+    {
+     "w": "diesel",
+     "s": 17.904,
+     "e": 18.238
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.316,
+     "e": 19.017
+    },
+    {
+     "w": "there",
+     "s": 19.069,
+     "e": 19.329
+    },
+    {
+     "w": "too.",
+     "s": 19.426,
+     "e": 19.796
+    },
+    {
+     "w": "Cloudy,",
+     "s": 20.31,
+     "e": 20.739
+    },
+    {
+     "w": "twenty-six",
+     "s": 20.783,
+     "e": 21.284
+    },
+    {
+     "w": "degrees!",
+     "s": 21.372,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "41a681b2ad6f4c18a194eb6fe9322de6",
+   "market": "cairns-4ca",
+   "targetSec": 30.0,
+   "naturalSec": 31.8,
+   "fittedSec": 30,
+   "stretch": 1.06,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Kennedy Highway's got a hazard and roadworks northbound at Myola Road, with a queue back about ten kays. The Captain Cook Highway's a bit slow northbound at Port Douglas Road, and Toogood Road's got minor delays. There's construction slowing the Bruce Highway citybound at Gillies Highway. Mulgrave Road's got a short work zone eastbound between Toogood Road and McCoombe Street. It's cloudy and 23 degrees. Unleaded's a dollar ninety-six in Edge Hill, diesel's two dollars thirty-five there too.",
+   "features": {
+    "syl": 119,
+    "words": 79,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.151
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.198,
+     "e": 0.528
+    },
+    {
+     "w": "Highway's",
+     "s": 0.584,
+     "e": 1.055
+    },
+    {
+     "w": "got",
+     "s": 1.112,
+     "e": 1.281
+    },
+    {
+     "w": "a",
+     "s": 1.319,
+     "e": 1.357
+    },
+    {
+     "w": "hazard",
+     "s": 1.41,
+     "e": 1.734
+    },
+    {
+     "w": "and",
+     "s": 1.809,
+     "e": 2.035
+    },
+    {
+     "w": "roadworks",
+     "s": 2.095,
+     "e": 2.714
+    },
+    {
+     "w": "northbound",
+     "s": 2.777,
+     "e": 3.317
+    },
+    {
+     "w": "at",
+     "s": 3.367,
+     "e": 3.467
+    },
+    {
+     "w": "Myola",
+     "s": 3.568,
+     "e": 3.92
+    },
+    {
+     "w": "Road,",
+     "s": 3.995,
+     "e": 4.598
+    },
+    {
+     "w": "with",
+     "s": 4.628,
+     "e": 4.749
+    },
+    {
+     "w": "a",
+     "s": 4.786,
+     "e": 4.824
+    },
+    {
+     "w": "queue",
+     "s": 4.862,
+     "e": 5.05
+    },
+    {
+     "w": "back",
+     "s": 5.095,
+     "e": 5.276
+    },
+    {
+     "w": "about",
+     "s": 5.326,
+     "e": 5.578
+    },
+    {
+     "w": "ten",
+     "s": 5.634,
+     "e": 5.804
+    },
+    {
+     "w": "kays.",
+     "s": 5.917,
+     "e": 6.558
+    },
+    {
+     "w": "The",
+     "s": 6.69,
+     "e": 7.085
+    },
+    {
+     "w": "Captain",
+     "s": 7.123,
+     "e": 7.387
+    },
+    {
+     "w": "Cook",
+     "s": 7.432,
+     "e": 7.613
+    },
+    {
+     "w": "Highway's",
+     "s": 7.66,
+     "e": 8.065
+    },
+    {
+     "w": "a",
+     "s": 8.103,
+     "e": 8.141
+    },
+    {
+     "w": "bit",
+     "s": 8.197,
+     "e": 8.367
+    },
+    {
+     "w": "slow",
+     "s": 8.427,
+     "e": 8.668
+    },
+    {
+     "w": "northbound",
+     "s": 8.731,
+     "e": 9.347
+    },
+    {
+     "w": "at",
+     "s": 9.397,
+     "e": 9.497
+    },
+    {
+     "w": "Port",
+     "s": 9.543,
+     "e": 9.724
+    },
+    {
+     "w": "Douglas",
+     "s": 9.78,
+     "e": 10.176
+    },
+    {
+     "w": "Road,",
+     "s": 10.251,
+     "e": 10.854
+    },
+    {
+     "w": "and",
+     "s": 10.911,
+     "e": 11.08
+    },
+    {
+     "w": "Toogood",
+     "s": 11.156,
+     "e": 11.533
+    },
+    {
+     "w": "Road's",
+     "s": 11.593,
+     "e": 11.91
+    },
+    {
+     "w": "got",
+     "s": 11.966,
+     "e": 12.136
+    },
+    {
+     "w": "minor",
+     "s": 12.186,
+     "e": 12.437
+    },
+    {
+     "w": "delays.",
+     "s": 12.513,
+     "e": 13.04
+    },
+    {
+     "w": "There's",
+     "s": 13.141,
+     "e": 13.719
+    },
+    {
+     "w": "construction",
+     "s": 13.765,
+     "e": 14.322
+    },
+    {
+     "w": "slowing",
+     "s": 14.369,
+     "e": 14.698
+    },
+    {
+     "w": "the",
+     "s": 14.717,
+     "e": 14.774
+    },
+    {
+     "w": "Bruce",
+     "s": 14.824,
+     "e": 15.075
+    },
+    {
+     "w": "Highway",
+     "s": 15.122,
+     "e": 15.452
+    },
+    {
+     "w": "citybound",
+     "s": 15.543,
+     "e": 16.206
+    },
+    {
+     "w": "at",
+     "s": 16.256,
+     "e": 16.357
+    },
+    {
+     "w": "Gillies",
+     "s": 16.417,
+     "e": 16.809
+    },
+    {
+     "w": "Highway.",
+     "s": 16.866,
+     "e": 17.412
+    },
+    {
+     "w": "Mulgrave",
+     "s": 17.582,
+     "e": 18.317
+    },
+    {
+     "w": "Road's",
+     "s": 18.377,
+     "e": 18.693
+    },
+    {
+     "w": "got",
+     "s": 18.731,
+     "e": 18.844
+    },
+    {
+     "w": "a",
+     "s": 18.92,
+     "e": 18.995
+    },
+    {
+     "w": "short",
+     "s": 19.033,
+     "e": 19.221
+    },
+    {
+     "w": "work",
+     "s": 19.266,
+     "e": 19.447
+    },
+    {
+     "w": "zone",
+     "s": 19.508,
+     "e": 19.749
+    },
+    {
+     "w": "eastbound",
+     "s": 19.809,
+     "e": 20.352
+    },
+    {
+     "w": "between",
+     "s": 20.399,
+     "e": 20.729
+    },
+    {
+     "w": "Toogood",
+     "s": 20.779,
+     "e": 21.106
+    },
+    {
+     "w": "Road",
+     "s": 21.181,
+     "e": 21.482
+    },
+    {
+     "w": "and",
+     "s": 21.539,
+     "e": 21.709
+    },
+    {
+     "w": "McCoombe",
+     "s": 21.765,
+     "e": 22.312
+    },
+    {
+     "w": "Street.",
+     "s": 22.344,
+     "e": 22.613
+    },
+    {
+     "w": "It's",
+     "s": 22.814,
+     "e": 23.291
+    },
+    {
+     "w": "cloudy",
+     "s": 23.356,
+     "e": 23.744
+    },
+    {
+     "w": "and",
+     "s": 23.781,
+     "e": 23.894
+    },
+    {
+     "w": "23",
+     "s": 23.948,
+     "e": 24.497
+    },
+    {
+     "w": "degrees.",
+     "s": 24.573,
+     "e": 25.176
+    },
+    {
+     "w": "Unleaded's",
+     "s": 25.327,
+     "e": 25.855
+    },
+    {
+     "w": "a",
+     "s": 25.892,
+     "e": 25.93
+    },
+    {
+     "w": "dollar",
+     "s": 25.962,
+     "e": 26.156
+    },
+    {
+     "w": "ninety-six",
+     "s": 26.221,
+     "e": 26.759
+    },
+    {
+     "w": "in",
+     "s": 26.809,
+     "e": 26.91
+    },
+    {
+     "w": "Edge",
+     "s": 26.955,
+     "e": 27.136
+    },
+    {
+     "w": "Hill,",
+     "s": 27.196,
+     "e": 27.776
+    },
+    {
+     "w": "diesel's",
+     "s": 27.824,
+     "e": 28.191
+    },
+    {
+     "w": "two",
+     "s": 28.229,
+     "e": 28.342
+    },
+    {
+     "w": "dollars",
+     "s": 28.379,
+     "e": 28.643
+    },
+    {
+     "w": "thirty-five",
+     "s": 28.708,
+     "e": 29.246
+    },
+    {
+     "w": "there",
+     "s": 29.296,
+     "e": 29.548
+    },
+    {
+     "w": "too.",
+     "s": 29.623,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "553741ae71a7488b88d75830647a4cb5",
+   "market": "cairns-4ca",
+   "targetSec": 30.0,
+   "naturalSec": 31.7,
+   "fittedSec": 30,
+   "stretch": 1.05667,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Opener only for Cairns. Bumper to bumper on the KENNEDY Highway northbound, with a road hazard and works at Myola Road \u2014 queues back about ten kays. The Captain Cook Highway's got construction northbound at Port Douglas Road, with a slow patch. Works are underway on Mulgrave Road eastbound between Toogood Road and McCoombe Street, and on the Bruce Highway citybound at Gillies Highway. [/brightly] Sunny, 25 degrees. Cheapest unleaded's a dollar ninety in Manoora, with diesel at two twenty-nine there too.",
+   "features": {
+    "syl": 123,
+    "words": 81,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 5,
+    "dash": 1,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Opener",
+     "s": 0,
+     "e": 0.303
+    },
+    {
+     "w": "only",
+     "s": 0.379,
+     "e": 0.682
+    },
+    {
+     "w": "for",
+     "s": 0.739,
+     "e": 0.909
+    },
+    {
+     "w": "Cairns.",
+     "s": 0.97,
+     "e": 1.591
+    },
+    {
+     "w": "Bumper",
+     "s": 1.818,
+     "e": 2.273
+    },
+    {
+     "w": "to",
+     "s": 2.298,
+     "e": 2.349
+    },
+    {
+     "w": "bumper",
+     "s": 2.403,
+     "e": 2.727
+    },
+    {
+     "w": "on",
+     "s": 2.778,
+     "e": 2.879
+    },
+    {
+     "w": "the",
+     "s": 2.898,
+     "e": 2.955
+    },
+    {
+     "w": "KENNEDY",
+     "s": 3.031,
+     "e": 3.334
+    },
+    {
+     "w": "Highway",
+     "s": 3.381,
+     "e": 3.712
+    },
+    {
+     "w": "northbound,",
+     "s": 3.776,
+     "e": 4.47
+    },
+    {
+     "w": "with",
+     "s": 4.531,
+     "e": 4.773
+    },
+    {
+     "w": "a",
+     "s": 4.811,
+     "e": 4.849
+    },
+    {
+     "w": "road",
+     "s": 4.909,
+     "e": 5.152
+    },
+    {
+     "w": "hazard",
+     "s": 5.195,
+     "e": 5.455
+    },
+    {
+     "w": "and",
+     "s": 5.512,
+     "e": 5.682
+    },
+    {
+     "w": "works",
+     "s": 5.746,
+     "e": 6.061
+    },
+    {
+     "w": "at",
+     "s": 6.111,
+     "e": 6.213
+    },
+    {
+     "w": "Myola",
+     "s": 6.288,
+     "e": 6.591
+    },
+    {
+     "w": "Road",
+     "s": 6.682,
+     "e": 7.046
+    },
+    {
+     "w": "\u2014",
+     "s": 7.235,
+     "e": 7.425
+    },
+    {
+     "w": "queues",
+     "s": 7.468,
+     "e": 7.728
+    },
+    {
+     "w": "back",
+     "s": 7.788,
+     "e": 8.031
+    },
+    {
+     "w": "about",
+     "s": 8.081,
+     "e": 8.334
+    },
+    {
+     "w": "ten",
+     "s": 8.41,
+     "e": 8.637
+    },
+    {
+     "w": "kays.",
+     "s": 8.713,
+     "e": 9.243
+    },
+    {
+     "w": "The",
+     "s": 9.357,
+     "e": 9.698
+    },
+    {
+     "w": "Captain",
+     "s": 9.736,
+     "e": 10.001
+    },
+    {
+     "w": "Cook",
+     "s": 10.061,
+     "e": 10.304
+    },
+    {
+     "w": "Highway's",
+     "s": 10.351,
+     "e": 10.758
+    },
+    {
+     "w": "got",
+     "s": 10.796,
+     "e": 10.91
+    },
+    {
+     "w": "construction",
+     "s": 10.956,
+     "e": 11.516
+    },
+    {
+     "w": "northbound",
+     "s": 11.579,
+     "e": 12.122
+    },
+    {
+     "w": "at",
+     "s": 12.172,
+     "e": 12.274
+    },
+    {
+     "w": "Port",
+     "s": 12.304,
+     "e": 12.425
+    },
+    {
+     "w": "Douglas",
+     "s": 12.473,
+     "e": 12.804
+    },
+    {
+     "w": "Road,",
+     "s": 12.895,
+     "e": 13.41
+    },
+    {
+     "w": "with",
+     "s": 13.44,
+     "e": 13.562
+    },
+    {
+     "w": "a",
+     "s": 13.6,
+     "e": 13.637
+    },
+    {
+     "w": "slow",
+     "s": 13.698,
+     "e": 13.94
+    },
+    {
+     "w": "patch.",
+     "s": 14.016,
+     "e": 14.774
+    },
+    {
+     "w": "Works",
+     "s": 14.837,
+     "e": 15.153
+    },
+    {
+     "w": "are",
+     "s": 15.172,
+     "e": 15.228
+    },
+    {
+     "w": "underway",
+     "s": 15.287,
+     "e": 15.759
+    },
+    {
+     "w": "on",
+     "s": 15.809,
+     "e": 15.91
+    },
+    {
+     "w": "Mulgrave",
+     "s": 15.967,
+     "e": 16.441
+    },
+    {
+     "w": "Road",
+     "s": 16.486,
+     "e": 16.668
+    },
+    {
+     "w": "eastbound",
+     "s": 16.744,
+     "e": 17.35
+    },
+    {
+     "w": "between",
+     "s": 17.397,
+     "e": 17.729
+    },
+    {
+     "w": "Toogood",
+     "s": 17.804,
+     "e": 18.183
+    },
+    {
+     "w": "Road",
+     "s": 18.259,
+     "e": 18.562
+    },
+    {
+     "w": "and",
+     "s": 18.6,
+     "e": 18.714
+    },
+    {
+     "w": "McCoombe",
+     "s": 18.77,
+     "e": 19.282
+    },
+    {
+     "w": "Street,",
+     "s": 19.309,
+     "e": 19.547
+    },
+    {
+     "w": "and",
+     "s": 19.642,
+     "e": 19.926
+    },
+    {
+     "w": "on",
+     "s": 19.976,
+     "e": 20.077
+    },
+    {
+     "w": "the",
+     "s": 20.096,
+     "e": 20.153
+    },
+    {
+     "w": "Bruce",
+     "s": 20.203,
+     "e": 20.456
+    },
+    {
+     "w": "Highway",
+     "s": 20.503,
+     "e": 20.835
+    },
+    {
+     "w": "citybound",
+     "s": 20.926,
+     "e": 21.593
+    },
+    {
+     "w": "at",
+     "s": 21.643,
+     "e": 21.744
+    },
+    {
+     "w": "Gillies",
+     "s": 21.805,
+     "e": 22.199
+    },
+    {
+     "w": "Highway.",
+     "s": 22.256,
+     "e": 22.805
+    },
+    {
+     "w": "Sunny,",
+     "s": 23.364,
+     "e": 23.562
+    },
+    {
+     "w": "25",
+     "s": 23.595,
+     "e": 24.017
+    },
+    {
+     "w": "degrees.",
+     "s": 24.093,
+     "e": 24.699
+    },
+    {
+     "w": "Cheapest",
+     "s": 24.794,
+     "e": 25.381
+    },
+    {
+     "w": "unleaded's",
+     "s": 25.426,
+     "e": 25.911
+    },
+    {
+     "w": "a",
+     "s": 25.949,
+     "e": 25.987
+    },
+    {
+     "w": "dollar",
+     "s": 26.03,
+     "e": 26.29
+    },
+    {
+     "w": "ninety",
+     "s": 26.344,
+     "e": 26.669
+    },
+    {
+     "w": "in",
+     "s": 26.744,
+     "e": 26.896
+    },
+    {
+     "w": "Manoora,",
+     "s": 26.953,
+     "e": 27.502
+    },
+    {
+     "w": "with",
+     "s": 27.563,
+     "e": 27.805
+    },
+    {
+     "w": "diesel",
+     "s": 27.871,
+     "e": 28.26
+    },
+    {
+     "w": "at",
+     "s": 28.336,
+     "e": 28.487
+    },
+    {
+     "w": "two",
+     "s": 28.525,
+     "e": 28.639
+    },
+    {
+     "w": "twenty-nine",
+     "s": 28.704,
+     "e": 29.245
+    },
+    {
+     "w": "there",
+     "s": 29.295,
+     "e": 29.548
+    },
+    {
+     "w": "too.",
+     "s": 29.624,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "55734a695c764cfbbcfc662dfa9abe97",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 22.0,
+   "fittedSec": 22,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "A long queue's hit the Kennedy Highway northbound at Myola Road with roadworks, back about ten kays. James Street's at a standstill. [brightly] Cairns Western Arterial Road and Sheridan Street are moving NICELY, while Draper Street and Spence Street are looking good! Unleaded's cheapest at one-ninety-six in Edge Hill, diesel two-thirty-five there too. Sunny, twenty-six degrees.",
+   "features": {
+    "syl": 89,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "A",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "long",
+     "s": 0.126,
+     "e": 0.35
+    },
+    {
+     "w": "queue's",
+     "s": 0.397,
+     "e": 0.701
+    },
+    {
+     "w": "hit",
+     "s": 0.736,
+     "e": 0.841
+    },
+    {
+     "w": "the",
+     "s": 0.876,
+     "e": 0.981
+    },
+    {
+     "w": "Kennedy",
+     "s": 1.016,
+     "e": 1.262
+    },
+    {
+     "w": "Highway",
+     "s": 1.314,
+     "e": 1.682
+    },
+    {
+     "w": "northbound",
+     "s": 1.741,
+     "e": 2.313
+    },
+    {
+     "w": "at",
+     "s": 2.337,
+     "e": 2.383
+    },
+    {
+     "w": "Myola",
+     "s": 2.453,
+     "e": 2.804
+    },
+    {
+     "w": "Road",
+     "s": 2.874,
+     "e": 3.154
+    },
+    {
+     "w": "with",
+     "s": 3.225,
+     "e": 3.505
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.561,
+     "e": 4.276
+    },
+    {
+     "w": "back",
+     "s": 4.318,
+     "e": 4.486
+    },
+    {
+     "w": "about",
+     "s": 4.533,
+     "e": 4.767
+    },
+    {
+     "w": "ten",
+     "s": 4.819,
+     "e": 4.977
+    },
+    {
+     "w": "kays.",
+     "s": 5.047,
+     "e": 5.538
+    },
+    {
+     "w": "James",
+     "s": 5.643,
+     "e": 6.169
+    },
+    {
+     "w": "Street's",
+     "s": 6.199,
+     "e": 6.519
+    },
+    {
+     "w": "at",
+     "s": 6.543,
+     "e": 6.589
+    },
+    {
+     "w": "a",
+     "s": 6.624,
+     "e": 6.659
+    },
+    {
+     "w": "standstill.",
+     "s": 6.73,
+     "e": 7.431
+    },
+    {
+     "w": "Cairns",
+     "s": 8.11,
+     "e": 8.418
+    },
+    {
+     "w": "Western",
+     "s": 8.453,
+     "e": 8.698
+    },
+    {
+     "w": "Arterial",
+     "s": 8.769,
+     "e": 9.259
+    },
+    {
+     "w": "Road",
+     "s": 9.329,
+     "e": 9.61
+    },
+    {
+     "w": "and",
+     "s": 9.645,
+     "e": 9.75
+    },
+    {
+     "w": "Sheridan",
+     "s": 9.796,
+     "e": 10.171
+    },
+    {
+     "w": "Street",
+     "s": 10.221,
+     "e": 10.521
+    },
+    {
+     "w": "are",
+     "s": 10.574,
+     "e": 10.731
+    },
+    {
+     "w": "moving",
+     "s": 10.772,
+     "e": 11.012
+    },
+    {
+     "w": "NICELY,",
+     "s": 11.117,
+     "e": 11.993
+    },
+    {
+     "w": "while",
+     "s": 12.017,
+     "e": 12.133
+    },
+    {
+     "w": "Draper",
+     "s": 12.203,
+     "e": 12.554
+    },
+    {
+     "w": "Street",
+     "s": 12.604,
+     "e": 12.904
+    },
+    {
+     "w": "and",
+     "s": 12.922,
+     "e": 12.975
+    },
+    {
+     "w": "Spence",
+     "s": 13.045,
+     "e": 13.395
+    },
+    {
+     "w": "Street",
+     "s": 13.435,
+     "e": 13.676
+    },
+    {
+     "w": "are",
+     "s": 13.711,
+     "e": 13.816
+    },
+    {
+     "w": "looking",
+     "s": 13.851,
+     "e": 14.096
+    },
+    {
+     "w": "good!",
+     "s": 14.166,
+     "e": 14.587
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.821,
+     "e": 15.638
+    },
+    {
+     "w": "cheapest",
+     "s": 15.685,
+     "e": 16.059
+    },
+    {
+     "w": "at",
+     "s": 16.105,
+     "e": 16.199
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 16.252,
+     "e": 17.11
+    },
+    {
+     "w": "in",
+     "s": 17.157,
+     "e": 17.251
+    },
+    {
+     "w": "Edge",
+     "s": 17.293,
+     "e": 17.461
+    },
+    {
+     "w": "Hill,",
+     "s": 17.517,
+     "e": 18.092
+    },
+    {
+     "w": "diesel",
+     "s": 18.142,
+     "e": 18.442
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.495,
+     "e": 19.213
+    },
+    {
+     "w": "there",
+     "s": 19.272,
+     "e": 19.564
+    },
+    {
+     "w": "too.",
+     "s": 19.634,
+     "e": 19.914
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.043,
+     "e": 20.756
+    },
+    {
+     "w": "twenty-six",
+     "s": 20.796,
+     "e": 21.316
+    },
+    {
+     "w": "degrees.",
+     "s": 21.386,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "56ad3918eb824778a7609b88a5775e13",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 25.0,
+   "fittedSec": 22,
+   "stretch": 1.13636,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "A long queue's hit the Kennedy Highway northbound at Myola Road with roadworks, back about ten kays. James Street's at a standstill. [brightly] Cairns Western Arterial Road and Sheridan Street are moving NICELY, while Draper Street and Spence Street are looking good! Unleaded's cheapest at one-ninety-six in Edge Hill, diesel two-thirty-five there too. Sunny, twenty-six degrees.",
+   "features": {
+    "syl": 89,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "A",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "long",
+     "s": 0.126,
+     "e": 0.35
+    },
+    {
+     "w": "queue's",
+     "s": 0.397,
+     "e": 0.701
+    },
+    {
+     "w": "hit",
+     "s": 0.736,
+     "e": 0.841
+    },
+    {
+     "w": "the",
+     "s": 0.876,
+     "e": 0.981
+    },
+    {
+     "w": "Kennedy",
+     "s": 1.016,
+     "e": 1.262
+    },
+    {
+     "w": "Highway",
+     "s": 1.314,
+     "e": 1.682
+    },
+    {
+     "w": "northbound",
+     "s": 1.741,
+     "e": 2.313
+    },
+    {
+     "w": "at",
+     "s": 2.337,
+     "e": 2.383
+    },
+    {
+     "w": "Myola",
+     "s": 2.453,
+     "e": 2.804
+    },
+    {
+     "w": "Road",
+     "s": 2.874,
+     "e": 3.154
+    },
+    {
+     "w": "with",
+     "s": 3.225,
+     "e": 3.505
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.561,
+     "e": 4.276
+    },
+    {
+     "w": "back",
+     "s": 4.318,
+     "e": 4.486
+    },
+    {
+     "w": "about",
+     "s": 4.533,
+     "e": 4.767
+    },
+    {
+     "w": "ten",
+     "s": 4.819,
+     "e": 4.977
+    },
+    {
+     "w": "kays.",
+     "s": 5.047,
+     "e": 5.538
+    },
+    {
+     "w": "James",
+     "s": 5.643,
+     "e": 6.169
+    },
+    {
+     "w": "Street's",
+     "s": 6.199,
+     "e": 6.519
+    },
+    {
+     "w": "at",
+     "s": 6.543,
+     "e": 6.589
+    },
+    {
+     "w": "a",
+     "s": 6.624,
+     "e": 6.659
+    },
+    {
+     "w": "standstill.",
+     "s": 6.73,
+     "e": 7.431
+    },
+    {
+     "w": "Cairns",
+     "s": 8.11,
+     "e": 8.418
+    },
+    {
+     "w": "Western",
+     "s": 8.453,
+     "e": 8.698
+    },
+    {
+     "w": "Arterial",
+     "s": 8.769,
+     "e": 9.259
+    },
+    {
+     "w": "Road",
+     "s": 9.329,
+     "e": 9.61
+    },
+    {
+     "w": "and",
+     "s": 9.645,
+     "e": 9.75
+    },
+    {
+     "w": "Sheridan",
+     "s": 9.796,
+     "e": 10.171
+    },
+    {
+     "w": "Street",
+     "s": 10.221,
+     "e": 10.521
+    },
+    {
+     "w": "are",
+     "s": 10.574,
+     "e": 10.731
+    },
+    {
+     "w": "moving",
+     "s": 10.772,
+     "e": 11.012
+    },
+    {
+     "w": "NICELY,",
+     "s": 11.117,
+     "e": 11.993
+    },
+    {
+     "w": "while",
+     "s": 12.017,
+     "e": 12.133
+    },
+    {
+     "w": "Draper",
+     "s": 12.203,
+     "e": 12.554
+    },
+    {
+     "w": "Street",
+     "s": 12.604,
+     "e": 12.904
+    },
+    {
+     "w": "and",
+     "s": 12.922,
+     "e": 12.975
+    },
+    {
+     "w": "Spence",
+     "s": 13.045,
+     "e": 13.395
+    },
+    {
+     "w": "Street",
+     "s": 13.435,
+     "e": 13.676
+    },
+    {
+     "w": "are",
+     "s": 13.711,
+     "e": 13.816
+    },
+    {
+     "w": "looking",
+     "s": 13.851,
+     "e": 14.096
+    },
+    {
+     "w": "good!",
+     "s": 14.166,
+     "e": 14.587
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.821,
+     "e": 15.638
+    },
+    {
+     "w": "cheapest",
+     "s": 15.685,
+     "e": 16.059
+    },
+    {
+     "w": "at",
+     "s": 16.105,
+     "e": 16.199
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 16.252,
+     "e": 17.11
+    },
+    {
+     "w": "in",
+     "s": 17.157,
+     "e": 17.251
+    },
+    {
+     "w": "Edge",
+     "s": 17.293,
+     "e": 17.461
+    },
+    {
+     "w": "Hill,",
+     "s": 17.517,
+     "e": 18.092
+    },
+    {
+     "w": "diesel",
+     "s": 18.142,
+     "e": 18.442
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.495,
+     "e": 19.213
+    },
+    {
+     "w": "there",
+     "s": 19.272,
+     "e": 19.564
+    },
+    {
+     "w": "too.",
+     "s": 19.634,
+     "e": 19.914
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.043,
+     "e": 20.756
+    },
+    {
+     "w": "twenty-six",
+     "s": 20.796,
+     "e": 21.316
+    },
+    {
+     "w": "degrees.",
+     "s": 21.386,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "6ac4cf0fce204ea28602f268abbb93e5",
+   "market": "cairns-4ca",
+   "targetSec": 30.0,
+   "naturalSec": 33.2,
+   "fittedSec": 30,
+   "stretch": 1.10667,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Kennedy Highway's got roadworks and a hazard northbound at Myola Road, with queues back about ten kays. The Captain Cook Highway's a bit slow through construction at Port Douglas Road. Works are underway on the Bruce Highway citybound at Gillies Highway, with about two kays affected. Mulgrave Road has a short work zone between Toogood Road and McCoombe Street. There are also works on Whitfield Street at Stratford Connection Road. Cairns Western Arterial Road and Sheridan Street are moving nicely. It's sunny, 26 degrees.",
+   "features": {
+    "syl": 126,
+    "words": 85,
+    "ellipsis": 0,
+    "period": 7,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.071
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.115,
+     "e": 0.426
+    },
+    {
+     "w": "Highway's",
+     "s": 0.47,
+     "e": 0.922
+    },
+    {
+     "w": "got",
+     "s": 0.975,
+     "e": 1.135
+    },
+    {
+     "w": "roadworks",
+     "s": 1.191,
+     "e": 1.773
+    },
+    {
+     "w": "and",
+     "s": 1.826,
+     "e": 1.986
+    },
+    {
+     "w": "a",
+     "s": 2.021,
+     "e": 2.057
+    },
+    {
+     "w": "hazard",
+     "s": 2.118,
+     "e": 2.482
+    },
+    {
+     "w": "northbound",
+     "s": 2.529,
+     "e": 3.05
+    },
+    {
+     "w": "at",
+     "s": 3.097,
+     "e": 3.191
+    },
+    {
+     "w": "Myola",
+     "s": 3.262,
+     "e": 3.617
+    },
+    {
+     "w": "Road,",
+     "s": 3.688,
+     "e": 4.184
+    },
+    {
+     "w": "with",
+     "s": 4.227,
+     "e": 4.397
+    },
+    {
+     "w": "queues",
+     "s": 4.438,
+     "e": 4.681
+    },
+    {
+     "w": "back",
+     "s": 4.723,
+     "e": 4.894
+    },
+    {
+     "w": "about",
+     "s": 4.941,
+     "e": 5.177
+    },
+    {
+     "w": "ten",
+     "s": 5.248,
+     "e": 5.461
+    },
+    {
+     "w": "kays.",
+     "s": 5.532,
+     "e": 6.099
+    },
+    {
+     "w": "The",
+     "s": 6.206,
+     "e": 6.525
+    },
+    {
+     "w": "Captain",
+     "s": 6.569,
+     "e": 6.879
+    },
+    {
+     "w": "Cook",
+     "s": 6.922,
+     "e": 7.092
+    },
+    {
+     "w": "Highway's",
+     "s": 7.137,
+     "e": 7.518
+    },
+    {
+     "w": "a",
+     "s": 7.553,
+     "e": 7.589
+    },
+    {
+     "w": "bit",
+     "s": 7.642,
+     "e": 7.801
+    },
+    {
+     "w": "slow",
+     "s": 7.872,
+     "e": 8.156
+    },
+    {
+     "w": "through",
+     "s": 8.191,
+     "e": 8.44
+    },
+    {
+     "w": "construction",
+     "s": 8.478,
+     "e": 8.936
+    },
+    {
+     "w": "at",
+     "s": 8.983,
+     "e": 9.078
+    },
+    {
+     "w": "Port",
+     "s": 9.106,
+     "e": 9.22
+    },
+    {
+     "w": "Douglas",
+     "s": 9.273,
+     "e": 9.645
+    },
+    {
+     "w": "Road.",
+     "s": 9.716,
+     "e": 10.142
+    },
+    {
+     "w": "Works",
+     "s": 10.248,
+     "e": 10.78
+    },
+    {
+     "w": "are",
+     "s": 10.816,
+     "e": 10.922
+    },
+    {
+     "w": "underway",
+     "s": 10.969,
+     "e": 11.348
+    },
+    {
+     "w": "on",
+     "s": 11.395,
+     "e": 11.489
+    },
+    {
+     "w": "the",
+     "s": 11.507,
+     "e": 11.56
+    },
+    {
+     "w": "Bruce",
+     "s": 11.607,
+     "e": 11.844
+    },
+    {
+     "w": "Highway",
+     "s": 11.888,
+     "e": 12.199
+    },
+    {
+     "w": "citybound",
+     "s": 12.284,
+     "e": 12.908
+    },
+    {
+     "w": "at",
+     "s": 12.955,
+     "e": 13.05
+    },
+    {
+     "w": "Gillies",
+     "s": 13.106,
+     "e": 13.475
+    },
+    {
+     "w": "Highway,",
+     "s": 13.52,
+     "e": 14.113
+    },
+    {
+     "w": "with",
+     "s": 14.128,
+     "e": 14.184
+    },
+    {
+     "w": "about",
+     "s": 14.231,
+     "e": 14.468
+    },
+    {
+     "w": "two",
+     "s": 14.521,
+     "e": 14.681
+    },
+    {
+     "w": "kays",
+     "s": 14.752,
+     "e": 14.965
+    },
+    {
+     "w": "affected.",
+     "s": 15.02,
+     "e": 15.603
+    },
+    {
+     "w": "Mulgrave",
+     "s": 15.745,
+     "e": 16.454
+    },
+    {
+     "w": "Road",
+     "s": 16.525,
+     "e": 16.809
+    },
+    {
+     "w": "has",
+     "s": 16.844,
+     "e": 16.95
+    },
+    {
+     "w": "a",
+     "s": 16.986,
+     "e": 17.021
+    },
+    {
+     "w": "short",
+     "s": 17.081,
+     "e": 17.376
+    },
+    {
+     "w": "work",
+     "s": 17.418,
+     "e": 17.589
+    },
+    {
+     "w": "zone",
+     "s": 17.645,
+     "e": 17.872
+    },
+    {
+     "w": "between",
+     "s": 17.917,
+     "e": 18.227
+    },
+    {
+     "w": "Toogood",
+     "s": 18.274,
+     "e": 18.652
+    },
+    {
+     "w": "Road",
+     "s": 18.709,
+     "e": 18.936
+    },
+    {
+     "w": "and",
+     "s": 18.972,
+     "e": 19.078
+    },
+    {
+     "w": "McCoombe",
+     "s": 19.149,
+     "e": 19.504
+    },
+    {
+     "w": "Street.",
+     "s": 19.554,
+     "e": 19.929
+    },
+    {
+     "w": "There",
+     "s": 20,
+     "e": 20.355
+    },
+    {
+     "w": "are",
+     "s": 20.372,
+     "e": 20.426
+    },
+    {
+     "w": "also",
+     "s": 20.482,
+     "e": 20.709
+    },
+    {
+     "w": "works",
+     "s": 20.769,
+     "e": 21.064
+    },
+    {
+     "w": "on",
+     "s": 21.111,
+     "e": 21.206
+    },
+    {
+     "w": "Whitfield",
+     "s": 21.262,
+     "e": 21.631
+    },
+    {
+     "w": "Street",
+     "s": 21.692,
+     "e": 22.057
+    },
+    {
+     "w": "at",
+     "s": 22.104,
+     "e": 22.199
+    },
+    {
+     "w": "Stratford",
+     "s": 22.258,
+     "e": 22.695
+    },
+    {
+     "w": "Connection",
+     "s": 22.727,
+     "e": 23.05
+    },
+    {
+     "w": "Road.",
+     "s": 23.135,
+     "e": 23.617
+    },
+    {
+     "w": "Cairns",
+     "s": 23.73,
+     "e": 24.326
+    },
+    {
+     "w": "Western",
+     "s": 24.371,
+     "e": 24.681
+    },
+    {
+     "w": "Arterial",
+     "s": 24.728,
+     "e": 25.177
+    },
+    {
+     "w": "Road",
+     "s": 25.248,
+     "e": 25.532
+    },
+    {
+     "w": "and",
+     "s": 25.567,
+     "e": 25.674
+    },
+    {
+     "w": "Sheridan",
+     "s": 25.721,
+     "e": 26.099
+    },
+    {
+     "w": "Street",
+     "s": 26.16,
+     "e": 26.525
+    },
+    {
+     "w": "are",
+     "s": 26.56,
+     "e": 26.667
+    },
+    {
+     "w": "moving",
+     "s": 26.717,
+     "e": 27.021
+    },
+    {
+     "w": "nicely.",
+     "s": 27.102,
+     "e": 27.66
+    },
+    {
+     "w": "It's",
+     "s": 27.825,
+     "e": 28.227
+    },
+    {
+     "w": "sunny,",
+     "s": 28.274,
+     "e": 28.723
+    },
+    {
+     "w": "26",
+     "s": 28.764,
+     "e": 29.291
+    },
+    {
+     "w": "degrees.",
+     "s": 29.362,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "701b68b2adc94127873c2cb58a47cf87",
+   "market": "cairns-4ca",
+   "targetSec": 30.0,
+   "naturalSec": 33.8,
+   "fittedSec": 30,
+   "stretch": 1.12667,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Kennedy Highway's got roadworks and a hazard northbound at Myola Road, with queues back about ten kays. The Captain Cook Highway's a bit slow through construction at Port Douglas Road. Works are underway on the Bruce Highway citybound at Gillies Highway, with about two kays affected. Mulgrave Road has a short work zone between Toogood Road and McCoombe Street. There are also works on Whitfield Street at Stratford Connection Road. Cairns Western Arterial Road and Sheridan Street are moving nicely. It's sunny, 26 degrees.",
+   "features": {
+    "syl": 126,
+    "words": 85,
+    "ellipsis": 0,
+    "period": 7,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.071
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.115,
+     "e": 0.426
+    },
+    {
+     "w": "Highway's",
+     "s": 0.47,
+     "e": 0.922
+    },
+    {
+     "w": "got",
+     "s": 0.975,
+     "e": 1.135
+    },
+    {
+     "w": "roadworks",
+     "s": 1.191,
+     "e": 1.773
+    },
+    {
+     "w": "and",
+     "s": 1.826,
+     "e": 1.986
+    },
+    {
+     "w": "a",
+     "s": 2.021,
+     "e": 2.057
+    },
+    {
+     "w": "hazard",
+     "s": 2.118,
+     "e": 2.482
+    },
+    {
+     "w": "northbound",
+     "s": 2.529,
+     "e": 3.05
+    },
+    {
+     "w": "at",
+     "s": 3.097,
+     "e": 3.191
+    },
+    {
+     "w": "Myola",
+     "s": 3.262,
+     "e": 3.617
+    },
+    {
+     "w": "Road,",
+     "s": 3.688,
+     "e": 4.184
+    },
+    {
+     "w": "with",
+     "s": 4.227,
+     "e": 4.397
+    },
+    {
+     "w": "queues",
+     "s": 4.438,
+     "e": 4.681
+    },
+    {
+     "w": "back",
+     "s": 4.723,
+     "e": 4.894
+    },
+    {
+     "w": "about",
+     "s": 4.941,
+     "e": 5.177
+    },
+    {
+     "w": "ten",
+     "s": 5.248,
+     "e": 5.461
+    },
+    {
+     "w": "kays.",
+     "s": 5.532,
+     "e": 6.099
+    },
+    {
+     "w": "The",
+     "s": 6.206,
+     "e": 6.525
+    },
+    {
+     "w": "Captain",
+     "s": 6.569,
+     "e": 6.879
+    },
+    {
+     "w": "Cook",
+     "s": 6.922,
+     "e": 7.092
+    },
+    {
+     "w": "Highway's",
+     "s": 7.137,
+     "e": 7.518
+    },
+    {
+     "w": "a",
+     "s": 7.553,
+     "e": 7.589
+    },
+    {
+     "w": "bit",
+     "s": 7.642,
+     "e": 7.801
+    },
+    {
+     "w": "slow",
+     "s": 7.872,
+     "e": 8.156
+    },
+    {
+     "w": "through",
+     "s": 8.191,
+     "e": 8.44
+    },
+    {
+     "w": "construction",
+     "s": 8.478,
+     "e": 8.936
+    },
+    {
+     "w": "at",
+     "s": 8.983,
+     "e": 9.078
+    },
+    {
+     "w": "Port",
+     "s": 9.106,
+     "e": 9.22
+    },
+    {
+     "w": "Douglas",
+     "s": 9.273,
+     "e": 9.645
+    },
+    {
+     "w": "Road.",
+     "s": 9.716,
+     "e": 10.142
+    },
+    {
+     "w": "Works",
+     "s": 10.248,
+     "e": 10.78
+    },
+    {
+     "w": "are",
+     "s": 10.816,
+     "e": 10.922
+    },
+    {
+     "w": "underway",
+     "s": 10.969,
+     "e": 11.348
+    },
+    {
+     "w": "on",
+     "s": 11.395,
+     "e": 11.489
+    },
+    {
+     "w": "the",
+     "s": 11.507,
+     "e": 11.56
+    },
+    {
+     "w": "Bruce",
+     "s": 11.607,
+     "e": 11.844
+    },
+    {
+     "w": "Highway",
+     "s": 11.888,
+     "e": 12.199
+    },
+    {
+     "w": "citybound",
+     "s": 12.284,
+     "e": 12.908
+    },
+    {
+     "w": "at",
+     "s": 12.955,
+     "e": 13.05
+    },
+    {
+     "w": "Gillies",
+     "s": 13.106,
+     "e": 13.475
+    },
+    {
+     "w": "Highway,",
+     "s": 13.52,
+     "e": 14.113
+    },
+    {
+     "w": "with",
+     "s": 14.128,
+     "e": 14.184
+    },
+    {
+     "w": "about",
+     "s": 14.231,
+     "e": 14.468
+    },
+    {
+     "w": "two",
+     "s": 14.521,
+     "e": 14.681
+    },
+    {
+     "w": "kays",
+     "s": 14.752,
+     "e": 14.965
+    },
+    {
+     "w": "affected.",
+     "s": 15.02,
+     "e": 15.603
+    },
+    {
+     "w": "Mulgrave",
+     "s": 15.745,
+     "e": 16.454
+    },
+    {
+     "w": "Road",
+     "s": 16.525,
+     "e": 16.809
+    },
+    {
+     "w": "has",
+     "s": 16.844,
+     "e": 16.95
+    },
+    {
+     "w": "a",
+     "s": 16.986,
+     "e": 17.021
+    },
+    {
+     "w": "short",
+     "s": 17.081,
+     "e": 17.376
+    },
+    {
+     "w": "work",
+     "s": 17.418,
+     "e": 17.589
+    },
+    {
+     "w": "zone",
+     "s": 17.645,
+     "e": 17.872
+    },
+    {
+     "w": "between",
+     "s": 17.917,
+     "e": 18.227
+    },
+    {
+     "w": "Toogood",
+     "s": 18.274,
+     "e": 18.652
+    },
+    {
+     "w": "Road",
+     "s": 18.709,
+     "e": 18.936
+    },
+    {
+     "w": "and",
+     "s": 18.972,
+     "e": 19.078
+    },
+    {
+     "w": "McCoombe",
+     "s": 19.149,
+     "e": 19.504
+    },
+    {
+     "w": "Street.",
+     "s": 19.554,
+     "e": 19.929
+    },
+    {
+     "w": "There",
+     "s": 20,
+     "e": 20.355
+    },
+    {
+     "w": "are",
+     "s": 20.372,
+     "e": 20.426
+    },
+    {
+     "w": "also",
+     "s": 20.482,
+     "e": 20.709
+    },
+    {
+     "w": "works",
+     "s": 20.769,
+     "e": 21.064
+    },
+    {
+     "w": "on",
+     "s": 21.111,
+     "e": 21.206
+    },
+    {
+     "w": "Whitfield",
+     "s": 21.262,
+     "e": 21.631
+    },
+    {
+     "w": "Street",
+     "s": 21.692,
+     "e": 22.057
+    },
+    {
+     "w": "at",
+     "s": 22.104,
+     "e": 22.199
+    },
+    {
+     "w": "Stratford",
+     "s": 22.258,
+     "e": 22.695
+    },
+    {
+     "w": "Connection",
+     "s": 22.727,
+     "e": 23.05
+    },
+    {
+     "w": "Road.",
+     "s": 23.135,
+     "e": 23.617
+    },
+    {
+     "w": "Cairns",
+     "s": 23.73,
+     "e": 24.326
+    },
+    {
+     "w": "Western",
+     "s": 24.371,
+     "e": 24.681
+    },
+    {
+     "w": "Arterial",
+     "s": 24.728,
+     "e": 25.177
+    },
+    {
+     "w": "Road",
+     "s": 25.248,
+     "e": 25.532
+    },
+    {
+     "w": "and",
+     "s": 25.567,
+     "e": 25.674
+    },
+    {
+     "w": "Sheridan",
+     "s": 25.721,
+     "e": 26.099
+    },
+    {
+     "w": "Street",
+     "s": 26.16,
+     "e": 26.525
+    },
+    {
+     "w": "are",
+     "s": 26.56,
+     "e": 26.667
+    },
+    {
+     "w": "moving",
+     "s": 26.717,
+     "e": 27.021
+    },
+    {
+     "w": "nicely.",
+     "s": 27.102,
+     "e": 27.66
+    },
+    {
+     "w": "It's",
+     "s": 27.825,
+     "e": 28.227
+    },
+    {
+     "w": "sunny,",
+     "s": 28.274,
+     "e": 28.723
+    },
+    {
+     "w": "26",
+     "s": 28.764,
+     "e": 29.291
+    },
+    {
+     "w": "degrees.",
+     "s": 29.362,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "789a58b9b54e4169bfd22bdb8ee0762a",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 25.0,
+   "fittedSec": 22,
+   "stretch": 1.13636,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Kennedy Highway's chockers northbound at Myola Road with roadworks, queues back about ten kays. There's a slow patch on the Captain Cook Highway northbound at Port Douglas Road. Works are underway on Mulgrave Road eastbound between Toogood Road and McCoombe Street. Cairns Western Arterial Road and Sheridan Street are moving nicely. More clouds than sun, 26 degrees.",
+   "features": {
+    "syl": 86,
+    "words": 58,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.114,
+     "e": 0.422
+    },
+    {
+     "w": "Highway's",
+     "s": 0.466,
+     "e": 0.914
+    },
+    {
+     "w": "chockers",
+     "s": 0.984,
+     "e": 1.406
+    },
+    {
+     "w": "northbound",
+     "s": 1.465,
+     "e": 1.968
+    },
+    {
+     "w": "at",
+     "s": 1.992,
+     "e": 2.038
+    },
+    {
+     "w": "Myola",
+     "s": 2.109,
+     "e": 2.46
+    },
+    {
+     "w": "Road",
+     "s": 2.516,
+     "e": 2.741
+    },
+    {
+     "w": "with",
+     "s": 2.769,
+     "e": 2.882
+    },
+    {
+     "w": "roadworks,",
+     "s": 2.938,
+     "e": 3.725
+    },
+    {
+     "w": "queues",
+     "s": 3.766,
+     "e": 4.006
+    },
+    {
+     "w": "back",
+     "s": 4.049,
+     "e": 4.217
+    },
+    {
+     "w": "about",
+     "s": 4.264,
+     "e": 4.498
+    },
+    {
+     "w": "ten",
+     "s": 4.586,
+     "e": 4.85
+    },
+    {
+     "w": "kays.",
+     "s": 4.92,
+     "e": 5.482
+    },
+    {
+     "w": "There's",
+     "s": 5.564,
+     "e": 6.045
+    },
+    {
+     "w": "a",
+     "s": 6.08,
+     "e": 6.115
+    },
+    {
+     "w": "slow",
+     "s": 6.157,
+     "e": 6.326
+    },
+    {
+     "w": "patch",
+     "s": 6.385,
+     "e": 6.677
+    },
+    {
+     "w": "on",
+     "s": 6.701,
+     "e": 6.748
+    },
+    {
+     "w": "the",
+     "s": 6.783,
+     "e": 6.888
+    },
+    {
+     "w": "Captain",
+     "s": 6.923,
+     "e": 7.169
+    },
+    {
+     "w": "Cook",
+     "s": 7.226,
+     "e": 7.45
+    },
+    {
+     "w": "Highway",
+     "s": 7.494,
+     "e": 7.802
+    },
+    {
+     "w": "northbound",
+     "s": 7.872,
+     "e": 8.505
+    },
+    {
+     "w": "at",
+     "s": 8.529,
+     "e": 8.575
+    },
+    {
+     "w": "Port",
+     "s": 8.631,
+     "e": 8.856
+    },
+    {
+     "w": "Douglas",
+     "s": 8.9,
+     "e": 9.208
+    },
+    {
+     "w": "Road.",
+     "s": 9.292,
+     "e": 9.7
+    },
+    {
+     "w": "Works",
+     "s": 9.817,
+     "e": 10.403
+    },
+    {
+     "w": "are",
+     "s": 10.438,
+     "e": 10.543
+    },
+    {
+     "w": "underway",
+     "s": 10.582,
+     "e": 10.895
+    },
+    {
+     "w": "on",
+     "s": 10.941,
+     "e": 11.035
+    },
+    {
+     "w": "Mulgrave",
+     "s": 11.088,
+     "e": 11.527
+    },
+    {
+     "w": "Road",
+     "s": 11.583,
+     "e": 11.808
+    },
+    {
+     "w": "eastbound",
+     "s": 11.879,
+     "e": 12.511
+    },
+    {
+     "w": "between",
+     "s": 12.573,
+     "e": 13.003
+    },
+    {
+     "w": "Toogood",
+     "s": 13.05,
+     "e": 13.355
+    },
+    {
+     "w": "Road",
+     "s": 13.425,
+     "e": 13.706
+    },
+    {
+     "w": "and",
+     "s": 13.741,
+     "e": 13.847
+    },
+    {
+     "w": "McCoombe",
+     "s": 13.917,
+     "e": 14.268
+    },
+    {
+     "w": "Street.",
+     "s": 14.329,
+     "e": 14.831
+    },
+    {
+     "w": "Cairns",
+     "s": 14.971,
+     "e": 15.674
+    },
+    {
+     "w": "Western",
+     "s": 15.718,
+     "e": 16.026
+    },
+    {
+     "w": "Arterial",
+     "s": 16.096,
+     "e": 16.518
+    },
+    {
+     "w": "Road",
+     "s": 16.602,
+     "e": 16.939
+    },
+    {
+     "w": "and",
+     "s": 16.957,
+     "e": 17.01
+    },
+    {
+     "w": "Sheridan",
+     "s": 17.064,
+     "e": 17.502
+    },
+    {
+     "w": "Street",
+     "s": 17.542,
+     "e": 17.783
+    },
+    {
+     "w": "are",
+     "s": 17.818,
+     "e": 17.923
+    },
+    {
+     "w": "moving",
+     "s": 17.964,
+     "e": 18.204
+    },
+    {
+     "w": "nicely.",
+     "s": 18.284,
+     "e": 18.907
+    },
+    {
+     "w": "More",
+     "s": 19.034,
+     "e": 19.54
+    },
+    {
+     "w": "clouds",
+     "s": 19.59,
+     "e": 19.891
+    },
+    {
+     "w": "than",
+     "s": 19.919,
+     "e": 20.032
+    },
+    {
+     "w": "sun,",
+     "s": 20.137,
+     "e": 20.524
+    },
+    {
+     "w": "26",
+     "s": 20.594,
+     "e": 21.227
+    },
+    {
+     "w": "degrees.",
+     "s": 21.315,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "837dc04a9b6e40c1926407a2a0ac5a08",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 22.7,
+   "fittedSec": 22,
+   "stretch": 1.03182,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "A long queue's hit the Kennedy Highway northbound at Myola Road with roadworks, back about ten kays. James Street's at a standstill. [brightly] Cairns Western Arterial Road and Sheridan Street are moving NICELY, while Draper Street and Spence Street are looking good! Unleaded's cheapest at one-ninety-six in Edge Hill, diesel two-thirty-five there too. Sunny, twenty-six degrees.",
+   "features": {
+    "syl": 89,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "A",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "long",
+     "s": 0.126,
+     "e": 0.35
+    },
+    {
+     "w": "queue's",
+     "s": 0.397,
+     "e": 0.701
+    },
+    {
+     "w": "hit",
+     "s": 0.736,
+     "e": 0.841
+    },
+    {
+     "w": "the",
+     "s": 0.876,
+     "e": 0.981
+    },
+    {
+     "w": "Kennedy",
+     "s": 1.016,
+     "e": 1.262
+    },
+    {
+     "w": "Highway",
+     "s": 1.314,
+     "e": 1.682
+    },
+    {
+     "w": "northbound",
+     "s": 1.741,
+     "e": 2.313
+    },
+    {
+     "w": "at",
+     "s": 2.337,
+     "e": 2.383
+    },
+    {
+     "w": "Myola",
+     "s": 2.453,
+     "e": 2.804
+    },
+    {
+     "w": "Road",
+     "s": 2.874,
+     "e": 3.154
+    },
+    {
+     "w": "with",
+     "s": 3.225,
+     "e": 3.505
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.561,
+     "e": 4.276
+    },
+    {
+     "w": "back",
+     "s": 4.318,
+     "e": 4.486
+    },
+    {
+     "w": "about",
+     "s": 4.533,
+     "e": 4.767
+    },
+    {
+     "w": "ten",
+     "s": 4.819,
+     "e": 4.977
+    },
+    {
+     "w": "kays.",
+     "s": 5.047,
+     "e": 5.538
+    },
+    {
+     "w": "James",
+     "s": 5.643,
+     "e": 6.169
+    },
+    {
+     "w": "Street's",
+     "s": 6.199,
+     "e": 6.519
+    },
+    {
+     "w": "at",
+     "s": 6.543,
+     "e": 6.589
+    },
+    {
+     "w": "a",
+     "s": 6.624,
+     "e": 6.659
+    },
+    {
+     "w": "standstill.",
+     "s": 6.73,
+     "e": 7.431
+    },
+    {
+     "w": "Cairns",
+     "s": 8.11,
+     "e": 8.418
+    },
+    {
+     "w": "Western",
+     "s": 8.453,
+     "e": 8.698
+    },
+    {
+     "w": "Arterial",
+     "s": 8.769,
+     "e": 9.259
+    },
+    {
+     "w": "Road",
+     "s": 9.329,
+     "e": 9.61
+    },
+    {
+     "w": "and",
+     "s": 9.645,
+     "e": 9.75
+    },
+    {
+     "w": "Sheridan",
+     "s": 9.796,
+     "e": 10.171
+    },
+    {
+     "w": "Street",
+     "s": 10.221,
+     "e": 10.521
+    },
+    {
+     "w": "are",
+     "s": 10.574,
+     "e": 10.731
+    },
+    {
+     "w": "moving",
+     "s": 10.772,
+     "e": 11.012
+    },
+    {
+     "w": "NICELY,",
+     "s": 11.117,
+     "e": 11.993
+    },
+    {
+     "w": "while",
+     "s": 12.017,
+     "e": 12.133
+    },
+    {
+     "w": "Draper",
+     "s": 12.203,
+     "e": 12.554
+    },
+    {
+     "w": "Street",
+     "s": 12.604,
+     "e": 12.904
+    },
+    {
+     "w": "and",
+     "s": 12.922,
+     "e": 12.975
+    },
+    {
+     "w": "Spence",
+     "s": 13.045,
+     "e": 13.395
+    },
+    {
+     "w": "Street",
+     "s": 13.435,
+     "e": 13.676
+    },
+    {
+     "w": "are",
+     "s": 13.711,
+     "e": 13.816
+    },
+    {
+     "w": "looking",
+     "s": 13.851,
+     "e": 14.096
+    },
+    {
+     "w": "good!",
+     "s": 14.166,
+     "e": 14.587
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.821,
+     "e": 15.638
+    },
+    {
+     "w": "cheapest",
+     "s": 15.685,
+     "e": 16.059
+    },
+    {
+     "w": "at",
+     "s": 16.105,
+     "e": 16.199
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 16.252,
+     "e": 17.11
+    },
+    {
+     "w": "in",
+     "s": 17.157,
+     "e": 17.251
+    },
+    {
+     "w": "Edge",
+     "s": 17.293,
+     "e": 17.461
+    },
+    {
+     "w": "Hill,",
+     "s": 17.517,
+     "e": 18.092
+    },
+    {
+     "w": "diesel",
+     "s": 18.142,
+     "e": 18.442
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.495,
+     "e": 19.213
+    },
+    {
+     "w": "there",
+     "s": 19.272,
+     "e": 19.564
+    },
+    {
+     "w": "too.",
+     "s": 19.634,
+     "e": 19.914
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.043,
+     "e": 20.756
+    },
+    {
+     "w": "twenty-six",
+     "s": 20.796,
+     "e": 21.316
+    },
+    {
+     "w": "degrees.",
+     "s": 21.386,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "9095003cb37c42a1b4ffad77ac4a2da2",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 22.6,
+   "fittedSec": 22,
+   "stretch": 1.02727,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Kennedy Highway's slow going northbound at Myola Road with roadworks and a queue back about ten kays. The Captain Cook Highway's a bit slow northbound at Port Douglas Road. Works are underway on Mulgrave Road eastbound. [brightly] Unleaded's a dollar ninety-six in Edge Hill, diesel two thirty-five there too. [delighted] Sunny, TWENTY-SIX!",
+   "features": {
+    "syl": 78,
+    "words": 51,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 2
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.155
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.204,
+     "e": 0.544
+    },
+    {
+     "w": "Highway's",
+     "s": 0.602,
+     "e": 1.166
+    },
+    {
+     "w": "slow",
+     "s": 1.228,
+     "e": 1.477
+    },
+    {
+     "w": "going",
+     "s": 1.542,
+     "e": 1.865
+    },
+    {
+     "w": "northbound",
+     "s": 1.93,
+     "e": 2.487
+    },
+    {
+     "w": "at",
+     "s": 2.538,
+     "e": 2.642
+    },
+    {
+     "w": "Myola",
+     "s": 2.72,
+     "e": 3.031
+    },
+    {
+     "w": "Road",
+     "s": 3.124,
+     "e": 3.497
+    },
+    {
+     "w": "with",
+     "s": 3.575,
+     "e": 3.886
+    },
+    {
+     "w": "roadworks",
+     "s": 3.964,
+     "e": 4.663
+    },
+    {
+     "w": "and",
+     "s": 4.683,
+     "e": 4.741
+    },
+    {
+     "w": "a",
+     "s": 4.819,
+     "e": 4.896
+    },
+    {
+     "w": "queue",
+     "s": 4.961,
+     "e": 5.285
+    },
+    {
+     "w": "back",
+     "s": 5.332,
+     "e": 5.518
+    },
+    {
+     "w": "about",
+     "s": 5.57,
+     "e": 5.829
+    },
+    {
+     "w": "ten",
+     "s": 5.887,
+     "e": 6.062
+    },
+    {
+     "w": "kays.",
+     "s": 6.179,
+     "e": 6.839
+    },
+    {
+     "w": "The",
+     "s": 7.053,
+     "e": 7.694
+    },
+    {
+     "w": "Captain",
+     "s": 7.733,
+     "e": 8.005
+    },
+    {
+     "w": "Cook",
+     "s": 8.067,
+     "e": 8.316
+    },
+    {
+     "w": "Highway's",
+     "s": 8.364,
+     "e": 8.782
+    },
+    {
+     "w": "a",
+     "s": 8.821,
+     "e": 8.86
+    },
+    {
+     "w": "bit",
+     "s": 8.899,
+     "e": 9.015
+    },
+    {
+     "w": "slow",
+     "s": 9.078,
+     "e": 9.326
+    },
+    {
+     "w": "northbound",
+     "s": 9.391,
+     "e": 10.026
+    },
+    {
+     "w": "at",
+     "s": 10.052,
+     "e": 10.103
+    },
+    {
+     "w": "Port",
+     "s": 10.15,
+     "e": 10.337
+    },
+    {
+     "w": "Douglas",
+     "s": 10.395,
+     "e": 10.803
+    },
+    {
+     "w": "Road.",
+     "s": 10.881,
+     "e": 11.269
+    },
+    {
+     "w": "Works",
+     "s": 11.386,
+     "e": 11.969
+    },
+    {
+     "w": "are",
+     "s": 11.988,
+     "e": 12.046
+    },
+    {
+     "w": "underway",
+     "s": 12.107,
+     "e": 12.59
+    },
+    {
+     "w": "on",
+     "s": 12.642,
+     "e": 12.746
+    },
+    {
+     "w": "Mulgrave",
+     "s": 12.804,
+     "e": 13.368
+    },
+    {
+     "w": "Road",
+     "s": 13.43,
+     "e": 13.679
+    },
+    {
+     "w": "eastbound.",
+     "s": 13.741,
+     "e": 14.533
+    },
+    {
+     "w": "Unleaded's",
+     "s": 15.427,
+     "e": 15.777
+    },
+    {
+     "w": "a",
+     "s": 15.816,
+     "e": 15.855
+    },
+    {
+     "w": "dollar",
+     "s": 15.888,
+     "e": 16.088
+    },
+    {
+     "w": "ninety-six",
+     "s": 16.132,
+     "e": 16.787
+    },
+    {
+     "w": "in",
+     "s": 16.865,
+     "e": 17.02
+    },
+    {
+     "w": "Edge",
+     "s": 17.067,
+     "e": 17.254
+    },
+    {
+     "w": "Hill,",
+     "s": 17.316,
+     "e": 17.875
+    },
+    {
+     "w": "diesel",
+     "s": 17.931,
+     "e": 18.264
+    },
+    {
+     "w": "two",
+     "s": 18.322,
+     "e": 18.497
+    },
+    {
+     "w": "thirty-five",
+     "s": 18.552,
+     "e": 19.119
+    },
+    {
+     "w": "there",
+     "s": 19.17,
+     "e": 19.43
+    },
+    {
+     "w": "too.",
+     "s": 19.527,
+     "e": 19.896
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.841,
+     "e": 21.062
+    },
+    {
+     "w": "TWENTY-SIX!",
+     "s": 21.113,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "9bfa4010d20b43d5ac9c8dfc61d1d3f9",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 23.8,
+   "fittedSec": 22,
+   "stretch": 1.08182,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "A long queue's hit the Kennedy Highway northbound at Myola Road with roadworks, back about ten kays. James Street's at a standstill. [brightly] Cairns Western Arterial Road and Sheridan Street are moving NICELY, while Draper Street and Spence Street are looking good! Unleaded's cheapest at one-ninety-six in Edge Hill, diesel two-thirty-five there too. Sunny, twenty-six degrees.",
+   "features": {
+    "syl": 89,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "A",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "long",
+     "s": 0.126,
+     "e": 0.35
+    },
+    {
+     "w": "queue's",
+     "s": 0.397,
+     "e": 0.701
+    },
+    {
+     "w": "hit",
+     "s": 0.736,
+     "e": 0.841
+    },
+    {
+     "w": "the",
+     "s": 0.876,
+     "e": 0.981
+    },
+    {
+     "w": "Kennedy",
+     "s": 1.016,
+     "e": 1.262
+    },
+    {
+     "w": "Highway",
+     "s": 1.314,
+     "e": 1.682
+    },
+    {
+     "w": "northbound",
+     "s": 1.741,
+     "e": 2.313
+    },
+    {
+     "w": "at",
+     "s": 2.337,
+     "e": 2.383
+    },
+    {
+     "w": "Myola",
+     "s": 2.453,
+     "e": 2.804
+    },
+    {
+     "w": "Road",
+     "s": 2.874,
+     "e": 3.154
+    },
+    {
+     "w": "with",
+     "s": 3.225,
+     "e": 3.505
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.561,
+     "e": 4.276
+    },
+    {
+     "w": "back",
+     "s": 4.318,
+     "e": 4.486
+    },
+    {
+     "w": "about",
+     "s": 4.533,
+     "e": 4.767
+    },
+    {
+     "w": "ten",
+     "s": 4.819,
+     "e": 4.977
+    },
+    {
+     "w": "kays.",
+     "s": 5.047,
+     "e": 5.538
+    },
+    {
+     "w": "James",
+     "s": 5.643,
+     "e": 6.169
+    },
+    {
+     "w": "Street's",
+     "s": 6.199,
+     "e": 6.519
+    },
+    {
+     "w": "at",
+     "s": 6.543,
+     "e": 6.589
+    },
+    {
+     "w": "a",
+     "s": 6.624,
+     "e": 6.659
+    },
+    {
+     "w": "standstill.",
+     "s": 6.73,
+     "e": 7.431
+    },
+    {
+     "w": "Cairns",
+     "s": 8.11,
+     "e": 8.418
+    },
+    {
+     "w": "Western",
+     "s": 8.453,
+     "e": 8.698
+    },
+    {
+     "w": "Arterial",
+     "s": 8.769,
+     "e": 9.259
+    },
+    {
+     "w": "Road",
+     "s": 9.329,
+     "e": 9.61
+    },
+    {
+     "w": "and",
+     "s": 9.645,
+     "e": 9.75
+    },
+    {
+     "w": "Sheridan",
+     "s": 9.796,
+     "e": 10.171
+    },
+    {
+     "w": "Street",
+     "s": 10.221,
+     "e": 10.521
+    },
+    {
+     "w": "are",
+     "s": 10.574,
+     "e": 10.731
+    },
+    {
+     "w": "moving",
+     "s": 10.772,
+     "e": 11.012
+    },
+    {
+     "w": "NICELY,",
+     "s": 11.117,
+     "e": 11.993
+    },
+    {
+     "w": "while",
+     "s": 12.017,
+     "e": 12.133
+    },
+    {
+     "w": "Draper",
+     "s": 12.203,
+     "e": 12.554
+    },
+    {
+     "w": "Street",
+     "s": 12.604,
+     "e": 12.904
+    },
+    {
+     "w": "and",
+     "s": 12.922,
+     "e": 12.975
+    },
+    {
+     "w": "Spence",
+     "s": 13.045,
+     "e": 13.395
+    },
+    {
+     "w": "Street",
+     "s": 13.435,
+     "e": 13.676
+    },
+    {
+     "w": "are",
+     "s": 13.711,
+     "e": 13.816
+    },
+    {
+     "w": "looking",
+     "s": 13.851,
+     "e": 14.096
+    },
+    {
+     "w": "good!",
+     "s": 14.166,
+     "e": 14.587
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.821,
+     "e": 15.638
+    },
+    {
+     "w": "cheapest",
+     "s": 15.685,
+     "e": 16.059
+    },
+    {
+     "w": "at",
+     "s": 16.105,
+     "e": 16.199
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 16.252,
+     "e": 17.11
+    },
+    {
+     "w": "in",
+     "s": 17.157,
+     "e": 17.251
+    },
+    {
+     "w": "Edge",
+     "s": 17.293,
+     "e": 17.461
+    },
+    {
+     "w": "Hill,",
+     "s": 17.517,
+     "e": 18.092
+    },
+    {
+     "w": "diesel",
+     "s": 18.142,
+     "e": 18.442
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.495,
+     "e": 19.213
+    },
+    {
+     "w": "there",
+     "s": 19.272,
+     "e": 19.564
+    },
+    {
+     "w": "too.",
+     "s": 19.634,
+     "e": 19.914
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.043,
+     "e": 20.756
+    },
+    {
+     "w": "twenty-six",
+     "s": 20.796,
+     "e": 21.316
+    },
+    {
+     "w": "degrees.",
+     "s": 21.386,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "a083dacd4f444b5f89313c4378d1837e",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 22.0,
+   "fittedSec": 22,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched"
+   ],
+   "spokenText": "A long queue's hit the Kennedy Highway northbound at Myola Road with roadworks, back about ten kays. James Street's at a standstill. [brightly] Cairns Western Arterial Road and Sheridan Street are moving NICELY, while Draper Street and Spence Street are looking good! Unleaded's cheapest at one-ninety-six in Edge Hill, diesel two-thirty-five there too. Sunny, twenty-six degrees.",
+   "features": {
+    "syl": 89,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "A",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "long",
+     "s": 0.126,
+     "e": 0.35
+    },
+    {
+     "w": "queue's",
+     "s": 0.397,
+     "e": 0.701
+    },
+    {
+     "w": "hit",
+     "s": 0.736,
+     "e": 0.841
+    },
+    {
+     "w": "the",
+     "s": 0.876,
+     "e": 0.981
+    },
+    {
+     "w": "Kennedy",
+     "s": 1.016,
+     "e": 1.262
+    },
+    {
+     "w": "Highway",
+     "s": 1.314,
+     "e": 1.682
+    },
+    {
+     "w": "northbound",
+     "s": 1.741,
+     "e": 2.313
+    },
+    {
+     "w": "at",
+     "s": 2.337,
+     "e": 2.383
+    },
+    {
+     "w": "Myola",
+     "s": 2.453,
+     "e": 2.804
+    },
+    {
+     "w": "Road",
+     "s": 2.874,
+     "e": 3.154
+    },
+    {
+     "w": "with",
+     "s": 3.225,
+     "e": 3.505
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.561,
+     "e": 4.276
+    },
+    {
+     "w": "back",
+     "s": 4.318,
+     "e": 4.486
+    },
+    {
+     "w": "about",
+     "s": 4.533,
+     "e": 4.767
+    },
+    {
+     "w": "ten",
+     "s": 4.819,
+     "e": 4.977
+    },
+    {
+     "w": "kays.",
+     "s": 5.047,
+     "e": 5.538
+    },
+    {
+     "w": "James",
+     "s": 5.643,
+     "e": 6.169
+    },
+    {
+     "w": "Street's",
+     "s": 6.199,
+     "e": 6.519
+    },
+    {
+     "w": "at",
+     "s": 6.543,
+     "e": 6.589
+    },
+    {
+     "w": "a",
+     "s": 6.624,
+     "e": 6.659
+    },
+    {
+     "w": "standstill.",
+     "s": 6.73,
+     "e": 7.431
+    },
+    {
+     "w": "Cairns",
+     "s": 8.11,
+     "e": 8.418
+    },
+    {
+     "w": "Western",
+     "s": 8.453,
+     "e": 8.698
+    },
+    {
+     "w": "Arterial",
+     "s": 8.769,
+     "e": 9.259
+    },
+    {
+     "w": "Road",
+     "s": 9.329,
+     "e": 9.61
+    },
+    {
+     "w": "and",
+     "s": 9.645,
+     "e": 9.75
+    },
+    {
+     "w": "Sheridan",
+     "s": 9.796,
+     "e": 10.171
+    },
+    {
+     "w": "Street",
+     "s": 10.221,
+     "e": 10.521
+    },
+    {
+     "w": "are",
+     "s": 10.574,
+     "e": 10.731
+    },
+    {
+     "w": "moving",
+     "s": 10.772,
+     "e": 11.012
+    },
+    {
+     "w": "NICELY,",
+     "s": 11.117,
+     "e": 11.993
+    },
+    {
+     "w": "while",
+     "s": 12.017,
+     "e": 12.133
+    },
+    {
+     "w": "Draper",
+     "s": 12.203,
+     "e": 12.554
+    },
+    {
+     "w": "Street",
+     "s": 12.604,
+     "e": 12.904
+    },
+    {
+     "w": "and",
+     "s": 12.922,
+     "e": 12.975
+    },
+    {
+     "w": "Spence",
+     "s": 13.045,
+     "e": 13.395
+    },
+    {
+     "w": "Street",
+     "s": 13.435,
+     "e": 13.676
+    },
+    {
+     "w": "are",
+     "s": 13.711,
+     "e": 13.816
+    },
+    {
+     "w": "looking",
+     "s": 13.851,
+     "e": 14.096
+    },
+    {
+     "w": "good!",
+     "s": 14.166,
+     "e": 14.587
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.821,
+     "e": 15.638
+    },
+    {
+     "w": "cheapest",
+     "s": 15.685,
+     "e": 16.059
+    },
+    {
+     "w": "at",
+     "s": 16.105,
+     "e": 16.199
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 16.252,
+     "e": 17.11
+    },
+    {
+     "w": "in",
+     "s": 17.157,
+     "e": 17.251
+    },
+    {
+     "w": "Edge",
+     "s": 17.293,
+     "e": 17.461
+    },
+    {
+     "w": "Hill,",
+     "s": 17.517,
+     "e": 18.092
+    },
+    {
+     "w": "diesel",
+     "s": 18.142,
+     "e": 18.442
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.495,
+     "e": 19.213
+    },
+    {
+     "w": "there",
+     "s": 19.272,
+     "e": 19.564
+    },
+    {
+     "w": "too.",
+     "s": 19.634,
+     "e": 19.914
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.043,
+     "e": 20.756
+    },
+    {
+     "w": "twenty-six",
+     "s": 20.796,
+     "e": 21.316
+    },
+    {
+     "w": "degrees.",
+     "s": 21.386,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "a392c8a1614d4b6995a379db2b44ed3e",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 22.0,
+   "fittedSec": 22,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Bruce Highway's got construction citybound at Gillies Highway, with about two kays affected. There's a slow patch on the Captain Cook Highway northbound at Port Douglas Road, with works. It's sunny, 25 degrees, and unleaded's cheapest at a dollar ninety-six in Edge Hill. Roadworks and changed traffic conditions are updated weekly on the Cairns Regional Council website.",
+   "features": {
+    "syl": 94,
+    "words": 58,
+    "ellipsis": 0,
+    "period": 4,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.074
+    },
+    {
+     "w": "Bruce",
+     "s": 0.136,
+     "e": 0.442
+    },
+    {
+     "w": "Highway's",
+     "s": 0.489,
+     "e": 0.959
+    },
+    {
+     "w": "got",
+     "s": 1.014,
+     "e": 1.18
+    },
+    {
+     "w": "construction",
+     "s": 1.231,
+     "e": 1.844
+    },
+    {
+     "w": "citybound",
+     "s": 1.917,
+     "e": 2.507
+    },
+    {
+     "w": "at",
+     "s": 2.532,
+     "e": 2.581
+    },
+    {
+     "w": "Gillies",
+     "s": 2.625,
+     "e": 2.95
+    },
+    {
+     "w": "Highway,",
+     "s": 3.005,
+     "e": 3.614
+    },
+    {
+     "w": "with",
+     "s": 3.643,
+     "e": 3.761
+    },
+    {
+     "w": "about",
+     "s": 3.81,
+     "e": 4.056
+    },
+    {
+     "w": "two",
+     "s": 4.112,
+     "e": 4.277
+    },
+    {
+     "w": "kays",
+     "s": 4.351,
+     "e": 4.572
+    },
+    {
+     "w": "affected.",
+     "s": 4.63,
+     "e": 5.162
+    },
+    {
+     "w": "There's",
+     "s": 5.224,
+     "e": 5.605
+    },
+    {
+     "w": "a",
+     "s": 5.642,
+     "e": 5.679
+    },
+    {
+     "w": "slow",
+     "s": 5.723,
+     "e": 5.9
+    },
+    {
+     "w": "patch",
+     "s": 5.962,
+     "e": 6.269
+    },
+    {
+     "w": "on",
+     "s": 6.294,
+     "e": 6.342
+    },
+    {
+     "w": "the",
+     "s": 6.361,
+     "e": 6.416
+    },
+    {
+     "w": "Captain",
+     "s": 6.453,
+     "e": 6.711
+    },
+    {
+     "w": "Cook",
+     "s": 6.77,
+     "e": 7.006
+    },
+    {
+     "w": "Highway",
+     "s": 7.052,
+     "e": 7.375
+    },
+    {
+     "w": "northbound",
+     "s": 7.437,
+     "e": 8.039
+    },
+    {
+     "w": "at",
+     "s": 8.137,
+     "e": 8.334
+    },
+    {
+     "w": "Port",
+     "s": 8.378,
+     "e": 8.555
+    },
+    {
+     "w": "Douglas",
+     "s": 8.61,
+     "e": 8.997
+    },
+    {
+     "w": "Road,",
+     "s": 9.056,
+     "e": 9.44
+    },
+    {
+     "w": "with",
+     "s": 9.469,
+     "e": 9.587
+    },
+    {
+     "w": "works.",
+     "s": 9.673,
+     "e": 10.177
+    },
+    {
+     "w": "It's",
+     "s": 10.424,
+     "e": 10.989
+    },
+    {
+     "w": "sunny,",
+     "s": 11.037,
+     "e": 11.431
+    },
+    {
+     "w": "25",
+     "s": 11.474,
+     "e": 11.947
+    },
+    {
+     "w": "degrees,",
+     "s": 12.012,
+     "e": 12.685
+    },
+    {
+     "w": "and",
+     "s": 12.74,
+     "e": 12.906
+    },
+    {
+     "w": "unleaded's",
+     "s": 12.965,
+     "e": 13.422
+    },
+    {
+     "w": "cheapest",
+     "s": 13.479,
+     "e": 13.939
+    },
+    {
+     "w": "at",
+     "s": 13.987,
+     "e": 14.086
+    },
+    {
+     "w": "a",
+     "s": 14.16,
+     "e": 14.234
+    },
+    {
+     "w": "dollar",
+     "s": 14.276,
+     "e": 14.529
+    },
+    {
+     "w": "ninety-six",
+     "s": 14.581,
+     "e": 15.119
+    },
+    {
+     "w": "in",
+     "s": 15.192,
+     "e": 15.34
+    },
+    {
+     "w": "Edge",
+     "s": 15.399,
+     "e": 15.635
+    },
+    {
+     "w": "Hill.",
+     "s": 15.694,
+     "e": 16.077
+    },
+    {
+     "w": "Roadworks",
+     "s": 16.4,
+     "e": 16.985
+    },
+    {
+     "w": "and",
+     "s": 17.022,
+     "e": 17.133
+    },
+    {
+     "w": "changed",
+     "s": 17.197,
+     "e": 17.649
+    },
+    {
+     "w": "traffic",
+     "s": 17.695,
+     "e": 18.018
+    },
+    {
+     "w": "conditions",
+     "s": 18.071,
+     "e": 18.608
+    },
+    {
+     "w": "are",
+     "s": 18.645,
+     "e": 18.755
+    },
+    {
+     "w": "updated",
+     "s": 18.82,
+     "e": 19.272
+    },
+    {
+     "w": "weekly",
+     "s": 19.335,
+     "e": 19.714
+    },
+    {
+     "w": "on",
+     "s": 19.788,
+     "e": 19.935
+    },
+    {
+     "w": "the",
+     "s": 19.954,
+     "e": 20.009
+    },
+    {
+     "w": "Cairns",
+     "s": 20.068,
+     "e": 20.452
+    },
+    {
+     "w": "Regional",
+     "s": 20.492,
+     "e": 20.82
+    },
+    {
+     "w": "Council",
+     "s": 20.876,
+     "e": 21.263
+    },
+    {
+     "w": "website.",
+     "s": 21.337,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "a60497bd9fd84f8b87306e9ef0163cf2",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 25.1,
+   "fittedSec": 22,
+   "stretch": 1.14091,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched"
+   ],
+   "spokenText": "A long queue's hit the Kennedy Highway northbound at Myola Road with roadworks, back about ten kays. James Street's at a standstill. [brightly] Cairns Western Arterial Road and Sheridan Street are moving NICELY, while Draper Street and Spence Street are looking good! Unleaded's cheapest at one-ninety-six in Edge Hill, diesel two-thirty-five there too. Sunny, twenty-six degrees.",
+   "features": {
+    "syl": 89,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "A",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "long",
+     "s": 0.126,
+     "e": 0.35
+    },
+    {
+     "w": "queue's",
+     "s": 0.397,
+     "e": 0.701
+    },
+    {
+     "w": "hit",
+     "s": 0.736,
+     "e": 0.841
+    },
+    {
+     "w": "the",
+     "s": 0.876,
+     "e": 0.981
+    },
+    {
+     "w": "Kennedy",
+     "s": 1.016,
+     "e": 1.262
+    },
+    {
+     "w": "Highway",
+     "s": 1.314,
+     "e": 1.682
+    },
+    {
+     "w": "northbound",
+     "s": 1.741,
+     "e": 2.313
+    },
+    {
+     "w": "at",
+     "s": 2.337,
+     "e": 2.383
+    },
+    {
+     "w": "Myola",
+     "s": 2.453,
+     "e": 2.804
+    },
+    {
+     "w": "Road",
+     "s": 2.874,
+     "e": 3.154
+    },
+    {
+     "w": "with",
+     "s": 3.225,
+     "e": 3.505
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.561,
+     "e": 4.276
+    },
+    {
+     "w": "back",
+     "s": 4.318,
+     "e": 4.486
+    },
+    {
+     "w": "about",
+     "s": 4.533,
+     "e": 4.767
+    },
+    {
+     "w": "ten",
+     "s": 4.819,
+     "e": 4.977
+    },
+    {
+     "w": "kays.",
+     "s": 5.047,
+     "e": 5.538
+    },
+    {
+     "w": "James",
+     "s": 5.643,
+     "e": 6.169
+    },
+    {
+     "w": "Street's",
+     "s": 6.199,
+     "e": 6.519
+    },
+    {
+     "w": "at",
+     "s": 6.543,
+     "e": 6.589
+    },
+    {
+     "w": "a",
+     "s": 6.624,
+     "e": 6.659
+    },
+    {
+     "w": "standstill.",
+     "s": 6.73,
+     "e": 7.431
+    },
+    {
+     "w": "Cairns",
+     "s": 8.11,
+     "e": 8.418
+    },
+    {
+     "w": "Western",
+     "s": 8.453,
+     "e": 8.698
+    },
+    {
+     "w": "Arterial",
+     "s": 8.769,
+     "e": 9.259
+    },
+    {
+     "w": "Road",
+     "s": 9.329,
+     "e": 9.61
+    },
+    {
+     "w": "and",
+     "s": 9.645,
+     "e": 9.75
+    },
+    {
+     "w": "Sheridan",
+     "s": 9.796,
+     "e": 10.171
+    },
+    {
+     "w": "Street",
+     "s": 10.221,
+     "e": 10.521
+    },
+    {
+     "w": "are",
+     "s": 10.574,
+     "e": 10.731
+    },
+    {
+     "w": "moving",
+     "s": 10.772,
+     "e": 11.012
+    },
+    {
+     "w": "NICELY,",
+     "s": 11.117,
+     "e": 11.993
+    },
+    {
+     "w": "while",
+     "s": 12.017,
+     "e": 12.133
+    },
+    {
+     "w": "Draper",
+     "s": 12.203,
+     "e": 12.554
+    },
+    {
+     "w": "Street",
+     "s": 12.604,
+     "e": 12.904
+    },
+    {
+     "w": "and",
+     "s": 12.922,
+     "e": 12.975
+    },
+    {
+     "w": "Spence",
+     "s": 13.045,
+     "e": 13.395
+    },
+    {
+     "w": "Street",
+     "s": 13.435,
+     "e": 13.676
+    },
+    {
+     "w": "are",
+     "s": 13.711,
+     "e": 13.816
+    },
+    {
+     "w": "looking",
+     "s": 13.851,
+     "e": 14.096
+    },
+    {
+     "w": "good!",
+     "s": 14.166,
+     "e": 14.587
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.821,
+     "e": 15.638
+    },
+    {
+     "w": "cheapest",
+     "s": 15.685,
+     "e": 16.059
+    },
+    {
+     "w": "at",
+     "s": 16.105,
+     "e": 16.199
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 16.252,
+     "e": 17.11
+    },
+    {
+     "w": "in",
+     "s": 17.157,
+     "e": 17.251
+    },
+    {
+     "w": "Edge",
+     "s": 17.293,
+     "e": 17.461
+    },
+    {
+     "w": "Hill,",
+     "s": 17.517,
+     "e": 18.092
+    },
+    {
+     "w": "diesel",
+     "s": 18.142,
+     "e": 18.442
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.495,
+     "e": 19.213
+    },
+    {
+     "w": "there",
+     "s": 19.272,
+     "e": 19.564
+    },
+    {
+     "w": "too.",
+     "s": 19.634,
+     "e": 19.914
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.043,
+     "e": 20.756
+    },
+    {
+     "w": "twenty-six",
+     "s": 20.796,
+     "e": 21.316
+    },
+    {
+     "w": "degrees.",
+     "s": 21.386,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "aa5ef25b4ac041a09bd4c16ae696e039",
+   "market": "cairns-4ca",
+   "targetSec": 30.0,
+   "naturalSec": 33.5,
+   "fittedSec": 30,
+   "stretch": 1.11667,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Kennedy Highway's got a long QUEUE northbound at Myola Road with roadworks, stretching back about ten kays. Captain Cook Highway's a bit slow northbound at Port Douglas Road for construction. There's also works on Mulgrave Road eastbound between Toogood Road and McCoombe Street, and the Bruce Highway citybound at Gillies Highway. Whitfield Street's got construction at Stratford Connection Road. More clouds than sun, 26 degrees. Unleaded's cheapest at a dollar ninety-six in Edge Hill; diesel's two dollars thirty-five there too.",
+   "features": {
+    "syl": 124,
+    "words": 81,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.072
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.116,
+     "e": 0.43
+    },
+    {
+     "w": "Highway's",
+     "s": 0.474,
+     "e": 0.931
+    },
+    {
+     "w": "got",
+     "s": 0.984,
+     "e": 1.146
+    },
+    {
+     "w": "a",
+     "s": 1.217,
+     "e": 1.289
+    },
+    {
+     "w": "long",
+     "s": 1.36,
+     "e": 1.647
+    },
+    {
+     "w": "QUEUE",
+     "s": 1.707,
+     "e": 2.005
+    },
+    {
+     "w": "northbound",
+     "s": 2.065,
+     "e": 2.578
+    },
+    {
+     "w": "at",
+     "s": 2.602,
+     "e": 2.649
+    },
+    {
+     "w": "Myola",
+     "s": 2.745,
+     "e": 3.15
+    },
+    {
+     "w": "Road",
+     "s": 3.222,
+     "e": 3.508
+    },
+    {
+     "w": "with",
+     "s": 3.566,
+     "e": 3.795
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.866,
+     "e": 4.582
+    },
+    {
+     "w": "stretching",
+     "s": 4.615,
+     "e": 4.94
+    },
+    {
+     "w": "back",
+     "s": 4.998,
+     "e": 5.227
+    },
+    {
+     "w": "about",
+     "s": 5.287,
+     "e": 5.585
+    },
+    {
+     "w": "ten",
+     "s": 5.656,
+     "e": 5.871
+    },
+    {
+     "w": "kays.",
+     "s": 5.943,
+     "e": 6.444
+    },
+    {
+     "w": "Captain",
+     "s": 6.516,
+     "e": 7.017
+    },
+    {
+     "w": "Cook",
+     "s": 7.06,
+     "e": 7.232
+    },
+    {
+     "w": "Highway's",
+     "s": 7.276,
+     "e": 7.661
+    },
+    {
+     "w": "a",
+     "s": 7.697,
+     "e": 7.733
+    },
+    {
+     "w": "bit",
+     "s": 7.768,
+     "e": 7.876
+    },
+    {
+     "w": "slow",
+     "s": 7.947,
+     "e": 8.234
+    },
+    {
+     "w": "northbound",
+     "s": 8.294,
+     "e": 8.807
+    },
+    {
+     "w": "at",
+     "s": 8.854,
+     "e": 8.95
+    },
+    {
+     "w": "Port",
+     "s": 8.979,
+     "e": 9.093
+    },
+    {
+     "w": "Douglas",
+     "s": 9.138,
+     "e": 9.451
+    },
+    {
+     "w": "Road",
+     "s": 9.523,
+     "e": 9.809
+    },
+    {
+     "w": "for",
+     "s": 9.845,
+     "e": 9.952
+    },
+    {
+     "w": "construction.",
+     "s": 9.996,
+     "e": 10.597
+    },
+    {
+     "w": "There's",
+     "s": 10.657,
+     "e": 11.026
+    },
+    {
+     "w": "also",
+     "s": 11.084,
+     "e": 11.313
+    },
+    {
+     "w": "works",
+     "s": 11.384,
+     "e": 11.742
+    },
+    {
+     "w": "on",
+     "s": 11.766,
+     "e": 11.814
+    },
+    {
+     "w": "Mulgrave",
+     "s": 11.868,
+     "e": 12.315
+    },
+    {
+     "w": "Road",
+     "s": 12.358,
+     "e": 12.53
+    },
+    {
+     "w": "eastbound",
+     "s": 12.601,
+     "e": 13.174
+    },
+    {
+     "w": "between",
+     "s": 13.237,
+     "e": 13.675
+    },
+    {
+     "w": "Toogood",
+     "s": 13.723,
+     "e": 14.033
+    },
+    {
+     "w": "Road",
+     "s": 14.105,
+     "e": 14.391
+    },
+    {
+     "w": "and",
+     "s": 14.427,
+     "e": 14.535
+    },
+    {
+     "w": "McCoombe",
+     "s": 14.606,
+     "e": 14.964
+    },
+    {
+     "w": "Street,",
+     "s": 15.015,
+     "e": 15.394
+    },
+    {
+     "w": "and",
+     "s": 15.501,
+     "e": 15.823
+    },
+    {
+     "w": "the",
+     "s": 15.841,
+     "e": 15.895
+    },
+    {
+     "w": "Bruce",
+     "s": 15.955,
+     "e": 16.253
+    },
+    {
+     "w": "Highway",
+     "s": 16.298,
+     "e": 16.611
+    },
+    {
+     "w": "citybound",
+     "s": 16.697,
+     "e": 17.327
+    },
+    {
+     "w": "at",
+     "s": 17.423,
+     "e": 17.613
+    },
+    {
+     "w": "Gillies",
+     "s": 17.656,
+     "e": 17.971
+    },
+    {
+     "w": "Highway.",
+     "s": 18.034,
+     "e": 18.544
+    },
+    {
+     "w": "Whitfield",
+     "s": 18.659,
+     "e": 19.332
+    },
+    {
+     "w": "Street's",
+     "s": 19.373,
+     "e": 19.69
+    },
+    {
+     "w": "got",
+     "s": 19.726,
+     "e": 19.833
+    },
+    {
+     "w": "construction",
+     "s": 19.882,
+     "e": 20.477
+    },
+    {
+     "w": "at",
+     "s": 20.501,
+     "e": 20.549
+    },
+    {
+     "w": "Stratford",
+     "s": 20.609,
+     "e": 20.979
+    },
+    {
+     "w": "Connection",
+     "s": 21.018,
+     "e": 21.408
+    },
+    {
+     "w": "Road.",
+     "s": 21.494,
+     "e": 21.909
+    },
+    {
+     "w": "More",
+     "s": 22.01,
+     "e": 22.411
+    },
+    {
+     "w": "clouds",
+     "s": 22.462,
+     "e": 22.768
+    },
+    {
+     "w": "than",
+     "s": 22.797,
+     "e": 22.912
+    },
+    {
+     "w": "sun,",
+     "s": 23.001,
+     "e": 23.341
+    },
+    {
+     "w": "26",
+     "s": 23.392,
+     "e": 23.914
+    },
+    {
+     "w": "degrees.",
+     "s": 23.995,
+     "e": 24.63
+    },
+    {
+     "w": "Unleaded's",
+     "s": 24.749,
+     "e": 25.346
+    },
+    {
+     "w": "cheapest",
+     "s": 25.402,
+     "e": 25.847
+    },
+    {
+     "w": "at",
+     "s": 25.895,
+     "e": 25.99
+    },
+    {
+     "w": "a",
+     "s": 26.026,
+     "e": 26.062
+    },
+    {
+     "w": "dollar",
+     "s": 26.092,
+     "e": 26.277
+    },
+    {
+     "w": "ninety-six",
+     "s": 26.318,
+     "e": 26.85
+    },
+    {
+     "w": "in",
+     "s": 26.921,
+     "e": 27.064
+    },
+    {
+     "w": "Edge",
+     "s": 27.107,
+     "e": 27.279
+    },
+    {
+     "w": "Hill;",
+     "s": 27.337,
+     "e": 27.924
+    },
+    {
+     "w": "diesel's",
+     "s": 27.965,
+     "e": 28.282
+    },
+    {
+     "w": "two",
+     "s": 28.317,
+     "e": 28.425
+    },
+    {
+     "w": "dollars",
+     "s": 28.47,
+     "e": 28.783
+    },
+    {
+     "w": "thirty-five",
+     "s": 28.824,
+     "e": 29.212
+    },
+    {
+     "w": "there",
+     "s": 29.272,
+     "e": 29.57
+    },
+    {
+     "w": "too.",
+     "s": 29.66,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "ab0e570610384c799fb17cbf56a3bae8",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 24.1,
+   "fittedSec": 22,
+   "stretch": 1.09545,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "At a standstill on Port Douglas Road, with the queue stretching about forty-five kays. McGregor Road's also stopped solid, with queues back about forty-five kays. Captain Cook Highway's CLOSED outbound after an accident. There's a short queue from a hazard on Kennedy Highway northbound at Myola Road. It's [brightly] clear and eighteen degrees, with unleaded at one-ninety-six in Edge Hill.",
+   "features": {
+    "syl": 94,
+    "words": 59,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "At",
+     "s": 0,
+     "e": 0.073
+    },
+    {
+     "w": "a",
+     "s": 0.146,
+     "e": 0.219
+    },
+    {
+     "w": "standstill",
+     "s": 0.28,
+     "e": 0.877
+    },
+    {
+     "w": "on",
+     "s": 0.902,
+     "e": 0.95
+    },
+    {
+     "w": "Port",
+     "s": 1.009,
+     "e": 1.243
+    },
+    {
+     "w": "Douglas",
+     "s": 1.297,
+     "e": 1.681
+    },
+    {
+     "w": "Road,",
+     "s": 1.754,
+     "e": 2.266
+    },
+    {
+     "w": "with",
+     "s": 2.295,
+     "e": 2.412
+    },
+    {
+     "w": "the",
+     "s": 2.43,
+     "e": 2.485
+    },
+    {
+     "w": "queue",
+     "s": 2.533,
+     "e": 2.777
+    },
+    {
+     "w": "stretching",
+     "s": 2.824,
+     "e": 3.289
+    },
+    {
+     "w": "about",
+     "s": 3.337,
+     "e": 3.581
+    },
+    {
+     "w": "forty-five",
+     "s": 3.643,
+     "e": 4.239
+    },
+    {
+     "w": "kays.",
+     "s": 4.349,
+     "e": 4.897
+    },
+    {
+     "w": "McGregor",
+     "s": 4.987,
+     "e": 5.701
+    },
+    {
+     "w": "Road's",
+     "s": 5.745,
+     "e": 6.066
+    },
+    {
+     "w": "also",
+     "s": 6.125,
+     "e": 6.359
+    },
+    {
+     "w": "stopped",
+     "s": 6.395,
+     "e": 6.651
+    },
+    {
+     "w": "solid,",
+     "s": 6.712,
+     "e": 7.236
+    },
+    {
+     "w": "with",
+     "s": 7.28,
+     "e": 7.455
+    },
+    {
+     "w": "queues",
+     "s": 7.497,
+     "e": 7.748
+    },
+    {
+     "w": "back",
+     "s": 7.791,
+     "e": 7.967
+    },
+    {
+     "w": "about",
+     "s": 8.015,
+     "e": 8.259
+    },
+    {
+     "w": "forty-five",
+     "s": 8.32,
+     "e": 8.844
+    },
+    {
+     "w": "kays.",
+     "s": 8.954,
+     "e": 9.502
+    },
+    {
+     "w": "Captain",
+     "s": 9.575,
+     "e": 10.086
+    },
+    {
+     "w": "Cook",
+     "s": 10.13,
+     "e": 10.306
+    },
+    {
+     "w": "Highway's",
+     "s": 10.351,
+     "e": 10.744
+    },
+    {
+     "w": "CLOSED",
+     "s": 10.827,
+     "e": 11.329
+    },
+    {
+     "w": "outbound",
+     "s": 11.394,
+     "e": 11.914
+    },
+    {
+     "w": "after",
+     "s": 11.962,
+     "e": 12.206
+    },
+    {
+     "w": "an",
+     "s": 12.254,
+     "e": 12.352
+    },
+    {
+     "w": "accident.",
+     "s": 12.409,
+     "e": 12.937
+    },
+    {
+     "w": "There's",
+     "s": 12.998,
+     "e": 13.375
+    },
+    {
+     "w": "a",
+     "s": 13.375,
+     "e": 13.376
+    },
+    {
+     "w": "short",
+     "s": 13.425,
+     "e": 13.669
+    },
+    {
+     "w": "queue",
+     "s": 13.717,
+     "e": 13.961
+    },
+    {
+     "w": "from",
+     "s": 14.005,
+     "e": 14.18
+    },
+    {
+     "w": "a",
+     "s": 14.217,
+     "e": 14.253
+    },
+    {
+     "w": "hazard",
+     "s": 14.306,
+     "e": 14.619
+    },
+    {
+     "w": "on",
+     "s": 14.644,
+     "e": 14.692
+    },
+    {
+     "w": "Kennedy",
+     "s": 14.738,
+     "e": 15.057
+    },
+    {
+     "w": "Highway",
+     "s": 15.112,
+     "e": 15.496
+    },
+    {
+     "w": "northbound",
+     "s": 15.557,
+     "e": 16.154
+    },
+    {
+     "w": "at",
+     "s": 16.252,
+     "e": 16.446
+    },
+    {
+     "w": "Myola",
+     "s": 16.544,
+     "e": 16.885
+    },
+    {
+     "w": "Road.",
+     "s": 16.972,
+     "e": 17.396
+    },
+    {
+     "w": "It's",
+     "s": 17.543,
+     "e": 17.908
+    },
+    {
+     "w": "clear",
+     "s": 18.212,
+     "e": 18.273
+    },
+    {
+     "w": "and",
+     "s": 18.328,
+     "e": 18.493
+    },
+    {
+     "w": "eighteen",
+     "s": 18.533,
+     "e": 18.858
+    },
+    {
+     "w": "degrees,",
+     "s": 18.931,
+     "e": 19.662
+    },
+    {
+     "w": "with",
+     "s": 19.691,
+     "e": 19.808
+    },
+    {
+     "w": "unleaded",
+     "s": 19.852,
+     "e": 20.174
+    },
+    {
+     "w": "at",
+     "s": 20.222,
+     "e": 20.32
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 20.375,
+     "e": 21.197
+    },
+    {
+     "w": "in",
+     "s": 21.27,
+     "e": 21.416
+    },
+    {
+     "w": "Edge",
+     "s": 21.46,
+     "e": 21.636
+    },
+    {
+     "w": "Hill.",
+     "s": 21.694,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "ad18b2d70dd848ddb29e73d6921bb3aa",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 22.0,
+   "fittedSec": 22,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched"
+   ],
+   "spokenText": "A long queue's hit the Kennedy Highway northbound at Myola Road with roadworks, back about ten kays. James Street's at a standstill. [brightly] Cairns Western Arterial Road and Sheridan Street are moving NICELY, while Draper Street and Spence Street are looking good! Unleaded's cheapest at one-ninety-six in Edge Hill, diesel two-thirty-five there too. Sunny, twenty-six degrees.",
+   "features": {
+    "syl": 89,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "A",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "long",
+     "s": 0.126,
+     "e": 0.35
+    },
+    {
+     "w": "queue's",
+     "s": 0.397,
+     "e": 0.701
+    },
+    {
+     "w": "hit",
+     "s": 0.736,
+     "e": 0.841
+    },
+    {
+     "w": "the",
+     "s": 0.876,
+     "e": 0.981
+    },
+    {
+     "w": "Kennedy",
+     "s": 1.016,
+     "e": 1.262
+    },
+    {
+     "w": "Highway",
+     "s": 1.314,
+     "e": 1.682
+    },
+    {
+     "w": "northbound",
+     "s": 1.741,
+     "e": 2.313
+    },
+    {
+     "w": "at",
+     "s": 2.337,
+     "e": 2.383
+    },
+    {
+     "w": "Myola",
+     "s": 2.453,
+     "e": 2.804
+    },
+    {
+     "w": "Road",
+     "s": 2.874,
+     "e": 3.154
+    },
+    {
+     "w": "with",
+     "s": 3.225,
+     "e": 3.505
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.561,
+     "e": 4.276
+    },
+    {
+     "w": "back",
+     "s": 4.318,
+     "e": 4.486
+    },
+    {
+     "w": "about",
+     "s": 4.533,
+     "e": 4.767
+    },
+    {
+     "w": "ten",
+     "s": 4.819,
+     "e": 4.977
+    },
+    {
+     "w": "kays.",
+     "s": 5.047,
+     "e": 5.538
+    },
+    {
+     "w": "James",
+     "s": 5.643,
+     "e": 6.169
+    },
+    {
+     "w": "Street's",
+     "s": 6.199,
+     "e": 6.519
+    },
+    {
+     "w": "at",
+     "s": 6.543,
+     "e": 6.589
+    },
+    {
+     "w": "a",
+     "s": 6.624,
+     "e": 6.659
+    },
+    {
+     "w": "standstill.",
+     "s": 6.73,
+     "e": 7.431
+    },
+    {
+     "w": "Cairns",
+     "s": 8.11,
+     "e": 8.418
+    },
+    {
+     "w": "Western",
+     "s": 8.453,
+     "e": 8.698
+    },
+    {
+     "w": "Arterial",
+     "s": 8.769,
+     "e": 9.259
+    },
+    {
+     "w": "Road",
+     "s": 9.329,
+     "e": 9.61
+    },
+    {
+     "w": "and",
+     "s": 9.645,
+     "e": 9.75
+    },
+    {
+     "w": "Sheridan",
+     "s": 9.796,
+     "e": 10.171
+    },
+    {
+     "w": "Street",
+     "s": 10.221,
+     "e": 10.521
+    },
+    {
+     "w": "are",
+     "s": 10.574,
+     "e": 10.731
+    },
+    {
+     "w": "moving",
+     "s": 10.772,
+     "e": 11.012
+    },
+    {
+     "w": "NICELY,",
+     "s": 11.117,
+     "e": 11.993
+    },
+    {
+     "w": "while",
+     "s": 12.017,
+     "e": 12.133
+    },
+    {
+     "w": "Draper",
+     "s": 12.203,
+     "e": 12.554
+    },
+    {
+     "w": "Street",
+     "s": 12.604,
+     "e": 12.904
+    },
+    {
+     "w": "and",
+     "s": 12.922,
+     "e": 12.975
+    },
+    {
+     "w": "Spence",
+     "s": 13.045,
+     "e": 13.395
+    },
+    {
+     "w": "Street",
+     "s": 13.435,
+     "e": 13.676
+    },
+    {
+     "w": "are",
+     "s": 13.711,
+     "e": 13.816
+    },
+    {
+     "w": "looking",
+     "s": 13.851,
+     "e": 14.096
+    },
+    {
+     "w": "good!",
+     "s": 14.166,
+     "e": 14.587
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.821,
+     "e": 15.638
+    },
+    {
+     "w": "cheapest",
+     "s": 15.685,
+     "e": 16.059
+    },
+    {
+     "w": "at",
+     "s": 16.105,
+     "e": 16.199
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 16.252,
+     "e": 17.11
+    },
+    {
+     "w": "in",
+     "s": 17.157,
+     "e": 17.251
+    },
+    {
+     "w": "Edge",
+     "s": 17.293,
+     "e": 17.461
+    },
+    {
+     "w": "Hill,",
+     "s": 17.517,
+     "e": 18.092
+    },
+    {
+     "w": "diesel",
+     "s": 18.142,
+     "e": 18.442
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.495,
+     "e": 19.213
+    },
+    {
+     "w": "there",
+     "s": 19.272,
+     "e": 19.564
+    },
+    {
+     "w": "too.",
+     "s": 19.634,
+     "e": 19.914
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.043,
+     "e": 20.756
+    },
+    {
+     "w": "twenty-six",
+     "s": 20.796,
+     "e": 21.316
+    },
+    {
+     "w": "degrees.",
+     "s": 21.386,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "ada67d2d95814715aed07ad2c6584654",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 22.3,
+   "fittedSec": 22,
+   "stretch": 1.01364,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "A long queue's hit the Kennedy Highway northbound at Myola Road with roadworks, back about ten kays. James Street's at a standstill. [brightly] Cairns Western Arterial Road and Sheridan Street are moving NICELY, while Draper Street and Spence Street are looking good! Unleaded's cheapest at one-ninety-six in Edge Hill, diesel two-thirty-five there too. Sunny, twenty-six degrees.",
+   "features": {
+    "syl": 89,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "A",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "long",
+     "s": 0.126,
+     "e": 0.35
+    },
+    {
+     "w": "queue's",
+     "s": 0.397,
+     "e": 0.701
+    },
+    {
+     "w": "hit",
+     "s": 0.736,
+     "e": 0.841
+    },
+    {
+     "w": "the",
+     "s": 0.876,
+     "e": 0.981
+    },
+    {
+     "w": "Kennedy",
+     "s": 1.016,
+     "e": 1.262
+    },
+    {
+     "w": "Highway",
+     "s": 1.314,
+     "e": 1.682
+    },
+    {
+     "w": "northbound",
+     "s": 1.741,
+     "e": 2.313
+    },
+    {
+     "w": "at",
+     "s": 2.337,
+     "e": 2.383
+    },
+    {
+     "w": "Myola",
+     "s": 2.453,
+     "e": 2.804
+    },
+    {
+     "w": "Road",
+     "s": 2.874,
+     "e": 3.154
+    },
+    {
+     "w": "with",
+     "s": 3.225,
+     "e": 3.505
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.561,
+     "e": 4.276
+    },
+    {
+     "w": "back",
+     "s": 4.318,
+     "e": 4.486
+    },
+    {
+     "w": "about",
+     "s": 4.533,
+     "e": 4.767
+    },
+    {
+     "w": "ten",
+     "s": 4.819,
+     "e": 4.977
+    },
+    {
+     "w": "kays.",
+     "s": 5.047,
+     "e": 5.538
+    },
+    {
+     "w": "James",
+     "s": 5.643,
+     "e": 6.169
+    },
+    {
+     "w": "Street's",
+     "s": 6.199,
+     "e": 6.519
+    },
+    {
+     "w": "at",
+     "s": 6.543,
+     "e": 6.589
+    },
+    {
+     "w": "a",
+     "s": 6.624,
+     "e": 6.659
+    },
+    {
+     "w": "standstill.",
+     "s": 6.73,
+     "e": 7.431
+    },
+    {
+     "w": "Cairns",
+     "s": 8.11,
+     "e": 8.418
+    },
+    {
+     "w": "Western",
+     "s": 8.453,
+     "e": 8.698
+    },
+    {
+     "w": "Arterial",
+     "s": 8.769,
+     "e": 9.259
+    },
+    {
+     "w": "Road",
+     "s": 9.329,
+     "e": 9.61
+    },
+    {
+     "w": "and",
+     "s": 9.645,
+     "e": 9.75
+    },
+    {
+     "w": "Sheridan",
+     "s": 9.796,
+     "e": 10.171
+    },
+    {
+     "w": "Street",
+     "s": 10.221,
+     "e": 10.521
+    },
+    {
+     "w": "are",
+     "s": 10.574,
+     "e": 10.731
+    },
+    {
+     "w": "moving",
+     "s": 10.772,
+     "e": 11.012
+    },
+    {
+     "w": "NICELY,",
+     "s": 11.117,
+     "e": 11.993
+    },
+    {
+     "w": "while",
+     "s": 12.017,
+     "e": 12.133
+    },
+    {
+     "w": "Draper",
+     "s": 12.203,
+     "e": 12.554
+    },
+    {
+     "w": "Street",
+     "s": 12.604,
+     "e": 12.904
+    },
+    {
+     "w": "and",
+     "s": 12.922,
+     "e": 12.975
+    },
+    {
+     "w": "Spence",
+     "s": 13.045,
+     "e": 13.395
+    },
+    {
+     "w": "Street",
+     "s": 13.435,
+     "e": 13.676
+    },
+    {
+     "w": "are",
+     "s": 13.711,
+     "e": 13.816
+    },
+    {
+     "w": "looking",
+     "s": 13.851,
+     "e": 14.096
+    },
+    {
+     "w": "good!",
+     "s": 14.166,
+     "e": 14.587
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.821,
+     "e": 15.638
+    },
+    {
+     "w": "cheapest",
+     "s": 15.685,
+     "e": 16.059
+    },
+    {
+     "w": "at",
+     "s": 16.105,
+     "e": 16.199
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 16.252,
+     "e": 17.11
+    },
+    {
+     "w": "in",
+     "s": 17.157,
+     "e": 17.251
+    },
+    {
+     "w": "Edge",
+     "s": 17.293,
+     "e": 17.461
+    },
+    {
+     "w": "Hill,",
+     "s": 17.517,
+     "e": 18.092
+    },
+    {
+     "w": "diesel",
+     "s": 18.142,
+     "e": 18.442
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.495,
+     "e": 19.213
+    },
+    {
+     "w": "there",
+     "s": 19.272,
+     "e": 19.564
+    },
+    {
+     "w": "too.",
+     "s": 19.634,
+     "e": 19.914
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.043,
+     "e": 20.756
+    },
+    {
+     "w": "twenty-six",
+     "s": 20.796,
+     "e": 21.316
+    },
+    {
+     "w": "degrees.",
+     "s": 21.386,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "b44b3898975649b08de37d6433582efc",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 22.2,
+   "fittedSec": 22,
+   "stretch": 1.00909,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Kennedy Highway's chockers northbound at Myola Road with roadworks, queues back about ten kays. Works are underway on the Bruce Highway citybound at Gillies Highway and Captain Cook Highway northbound at Port Douglas Road. Unleaded's a dollar ninety-six in Edge Hill, diesel two dollars thirty-five there too. Sunny, 22 degrees.",
+   "features": {
+    "syl": 82,
+    "words": 51,
+    "ellipsis": 0,
+    "period": 4,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 0
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.079
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.129,
+     "e": 0.475
+    },
+    {
+     "w": "Highway's",
+     "s": 0.525,
+     "e": 1.029
+    },
+    {
+     "w": "chockers",
+     "s": 1.108,
+     "e": 1.584
+    },
+    {
+     "w": "northbound",
+     "s": 1.65,
+     "e": 2.217
+    },
+    {
+     "w": "at",
+     "s": 2.244,
+     "e": 2.296
+    },
+    {
+     "w": "Myola",
+     "s": 2.375,
+     "e": 2.771
+    },
+    {
+     "w": "Road",
+     "s": 2.835,
+     "e": 3.088
+    },
+    {
+     "w": "with",
+     "s": 3.12,
+     "e": 3.246
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.31,
+     "e": 4.196
+    },
+    {
+     "w": "queues",
+     "s": 4.242,
+     "e": 4.513
+    },
+    {
+     "w": "back",
+     "s": 4.561,
+     "e": 4.751
+    },
+    {
+     "w": "about",
+     "s": 4.803,
+     "e": 5.067
+    },
+    {
+     "w": "ten",
+     "s": 5.166,
+     "e": 5.463
+    },
+    {
+     "w": "kays.",
+     "s": 5.503,
+     "e": 6.097
+    },
+    {
+     "w": "Works",
+     "s": 6.242,
+     "e": 6.968
+    },
+    {
+     "w": "are",
+     "s": 7.007,
+     "e": 7.126
+    },
+    {
+     "w": "underway",
+     "s": 7.178,
+     "e": 7.601
+    },
+    {
+     "w": "on",
+     "s": 7.653,
+     "e": 7.759
+    },
+    {
+     "w": "the",
+     "s": 7.779,
+     "e": 7.839
+    },
+    {
+     "w": "Bruce",
+     "s": 7.891,
+     "e": 8.155
+    },
+    {
+     "w": "Highway",
+     "s": 8.205,
+     "e": 8.551
+    },
+    {
+     "w": "citybound",
+     "s": 8.646,
+     "e": 9.264
+    },
+    {
+     "w": "at",
+     "s": 9.316,
+     "e": 9.422
+    },
+    {
+     "w": "Gillies",
+     "s": 9.47,
+     "e": 9.818
+    },
+    {
+     "w": "Highway",
+     "s": 9.877,
+     "e": 10.293
+    },
+    {
+     "w": "and",
+     "s": 10.432,
+     "e": 10.847
+    },
+    {
+     "w": "Captain",
+     "s": 10.897,
+     "e": 11.243
+    },
+    {
+     "w": "Cook",
+     "s": 11.306,
+     "e": 11.56
+    },
+    {
+     "w": "Highway",
+     "s": 11.609,
+     "e": 11.956
+    },
+    {
+     "w": "northbound",
+     "s": 12.022,
+     "e": 12.668
+    },
+    {
+     "w": "at",
+     "s": 12.747,
+     "e": 12.906
+    },
+    {
+     "w": "Port",
+     "s": 12.969,
+     "e": 13.223
+    },
+    {
+     "w": "Douglas",
+     "s": 13.282,
+     "e": 13.698
+    },
+    {
+     "w": "Road.",
+     "s": 13.777,
+     "e": 14.252
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.542,
+     "e": 15.44
+    },
+    {
+     "w": "a",
+     "s": 15.479,
+     "e": 15.519
+    },
+    {
+     "w": "dollar",
+     "s": 15.564,
+     "e": 15.835
+    },
+    {
+     "w": "ninety-six",
+     "s": 15.881,
+     "e": 16.469
+    },
+    {
+     "w": "in",
+     "s": 16.521,
+     "e": 16.627
+    },
+    {
+     "w": "Edge",
+     "s": 16.69,
+     "e": 16.944
+    },
+    {
+     "w": "Hill,",
+     "s": 16.991,
+     "e": 17.498
+    },
+    {
+     "w": "diesel",
+     "s": 17.555,
+     "e": 17.894
+    },
+    {
+     "w": "two",
+     "s": 17.953,
+     "e": 18.132
+    },
+    {
+     "w": "dollars",
+     "s": 18.191,
+     "e": 18.607
+    },
+    {
+     "w": "thirty-five",
+     "s": 18.64,
+     "e": 19.082
+    },
+    {
+     "w": "there",
+     "s": 19.148,
+     "e": 19.478
+    },
+    {
+     "w": "too.",
+     "s": 19.557,
+     "e": 19.873
+    },
+    {
+     "w": "Sunny,",
+     "s": 19.992,
+     "e": 20.665
+    },
+    {
+     "w": "22",
+     "s": 20.722,
+     "e": 21.14
+    },
+    {
+     "w": "degrees.",
+     "s": 21.229,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "b5cfa34cabdc42ad8e53e71b47104706",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 22.0,
+   "fittedSec": 22,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched"
+   ],
+   "spokenText": "A long queue's hit the Kennedy Highway northbound at Myola Road with roadworks, back about ten kays. James Street's at a standstill. [brightly] Cairns Western Arterial Road and Sheridan Street are moving NICELY, while Draper Street and Spence Street are looking good! Unleaded's cheapest at one-ninety-six in Edge Hill, diesel two-thirty-five there too. Sunny, twenty-six degrees.",
+   "features": {
+    "syl": 89,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "A",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "long",
+     "s": 0.126,
+     "e": 0.35
+    },
+    {
+     "w": "queue's",
+     "s": 0.397,
+     "e": 0.701
+    },
+    {
+     "w": "hit",
+     "s": 0.736,
+     "e": 0.841
+    },
+    {
+     "w": "the",
+     "s": 0.876,
+     "e": 0.981
+    },
+    {
+     "w": "Kennedy",
+     "s": 1.016,
+     "e": 1.262
+    },
+    {
+     "w": "Highway",
+     "s": 1.314,
+     "e": 1.682
+    },
+    {
+     "w": "northbound",
+     "s": 1.741,
+     "e": 2.313
+    },
+    {
+     "w": "at",
+     "s": 2.337,
+     "e": 2.383
+    },
+    {
+     "w": "Myola",
+     "s": 2.453,
+     "e": 2.804
+    },
+    {
+     "w": "Road",
+     "s": 2.874,
+     "e": 3.154
+    },
+    {
+     "w": "with",
+     "s": 3.225,
+     "e": 3.505
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.561,
+     "e": 4.276
+    },
+    {
+     "w": "back",
+     "s": 4.318,
+     "e": 4.486
+    },
+    {
+     "w": "about",
+     "s": 4.533,
+     "e": 4.767
+    },
+    {
+     "w": "ten",
+     "s": 4.819,
+     "e": 4.977
+    },
+    {
+     "w": "kays.",
+     "s": 5.047,
+     "e": 5.538
+    },
+    {
+     "w": "James",
+     "s": 5.643,
+     "e": 6.169
+    },
+    {
+     "w": "Street's",
+     "s": 6.199,
+     "e": 6.519
+    },
+    {
+     "w": "at",
+     "s": 6.543,
+     "e": 6.589
+    },
+    {
+     "w": "a",
+     "s": 6.624,
+     "e": 6.659
+    },
+    {
+     "w": "standstill.",
+     "s": 6.73,
+     "e": 7.431
+    },
+    {
+     "w": "Cairns",
+     "s": 8.11,
+     "e": 8.418
+    },
+    {
+     "w": "Western",
+     "s": 8.453,
+     "e": 8.698
+    },
+    {
+     "w": "Arterial",
+     "s": 8.769,
+     "e": 9.259
+    },
+    {
+     "w": "Road",
+     "s": 9.329,
+     "e": 9.61
+    },
+    {
+     "w": "and",
+     "s": 9.645,
+     "e": 9.75
+    },
+    {
+     "w": "Sheridan",
+     "s": 9.796,
+     "e": 10.171
+    },
+    {
+     "w": "Street",
+     "s": 10.221,
+     "e": 10.521
+    },
+    {
+     "w": "are",
+     "s": 10.574,
+     "e": 10.731
+    },
+    {
+     "w": "moving",
+     "s": 10.772,
+     "e": 11.012
+    },
+    {
+     "w": "NICELY,",
+     "s": 11.117,
+     "e": 11.993
+    },
+    {
+     "w": "while",
+     "s": 12.017,
+     "e": 12.133
+    },
+    {
+     "w": "Draper",
+     "s": 12.203,
+     "e": 12.554
+    },
+    {
+     "w": "Street",
+     "s": 12.604,
+     "e": 12.904
+    },
+    {
+     "w": "and",
+     "s": 12.922,
+     "e": 12.975
+    },
+    {
+     "w": "Spence",
+     "s": 13.045,
+     "e": 13.395
+    },
+    {
+     "w": "Street",
+     "s": 13.435,
+     "e": 13.676
+    },
+    {
+     "w": "are",
+     "s": 13.711,
+     "e": 13.816
+    },
+    {
+     "w": "looking",
+     "s": 13.851,
+     "e": 14.096
+    },
+    {
+     "w": "good!",
+     "s": 14.166,
+     "e": 14.587
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.821,
+     "e": 15.638
+    },
+    {
+     "w": "cheapest",
+     "s": 15.685,
+     "e": 16.059
+    },
+    {
+     "w": "at",
+     "s": 16.105,
+     "e": 16.199
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 16.252,
+     "e": 17.11
+    },
+    {
+     "w": "in",
+     "s": 17.157,
+     "e": 17.251
+    },
+    {
+     "w": "Edge",
+     "s": 17.293,
+     "e": 17.461
+    },
+    {
+     "w": "Hill,",
+     "s": 17.517,
+     "e": 18.092
+    },
+    {
+     "w": "diesel",
+     "s": 18.142,
+     "e": 18.442
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.495,
+     "e": 19.213
+    },
+    {
+     "w": "there",
+     "s": 19.272,
+     "e": 19.564
+    },
+    {
+     "w": "too.",
+     "s": 19.634,
+     "e": 19.914
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.043,
+     "e": 20.756
+    },
+    {
+     "w": "twenty-six",
+     "s": 20.796,
+     "e": 21.316
+    },
+    {
+     "w": "degrees.",
+     "s": 21.386,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "e33e5bee74cd4161aa3e13466a38715f",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 22.8,
+   "fittedSec": 22,
+   "stretch": 1.03636,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "A long queue's hit the Kennedy Highway northbound at Myola Road with roadworks, back about ten kays. James Street's at a standstill. [brightly] Cairns Western Arterial Road and Sheridan Street are moving NICELY, while Draper Street and Spence Street are looking good! Unleaded's cheapest at one-ninety-six in Edge Hill, diesel two-thirty-five there too. Sunny, twenty-six degrees.",
+   "features": {
+    "syl": 89,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "A",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "long",
+     "s": 0.126,
+     "e": 0.35
+    },
+    {
+     "w": "queue's",
+     "s": 0.397,
+     "e": 0.701
+    },
+    {
+     "w": "hit",
+     "s": 0.736,
+     "e": 0.841
+    },
+    {
+     "w": "the",
+     "s": 0.876,
+     "e": 0.981
+    },
+    {
+     "w": "Kennedy",
+     "s": 1.016,
+     "e": 1.262
+    },
+    {
+     "w": "Highway",
+     "s": 1.314,
+     "e": 1.682
+    },
+    {
+     "w": "northbound",
+     "s": 1.741,
+     "e": 2.313
+    },
+    {
+     "w": "at",
+     "s": 2.337,
+     "e": 2.383
+    },
+    {
+     "w": "Myola",
+     "s": 2.453,
+     "e": 2.804
+    },
+    {
+     "w": "Road",
+     "s": 2.874,
+     "e": 3.154
+    },
+    {
+     "w": "with",
+     "s": 3.225,
+     "e": 3.505
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.561,
+     "e": 4.276
+    },
+    {
+     "w": "back",
+     "s": 4.318,
+     "e": 4.486
+    },
+    {
+     "w": "about",
+     "s": 4.533,
+     "e": 4.767
+    },
+    {
+     "w": "ten",
+     "s": 4.819,
+     "e": 4.977
+    },
+    {
+     "w": "kays.",
+     "s": 5.047,
+     "e": 5.538
+    },
+    {
+     "w": "James",
+     "s": 5.643,
+     "e": 6.169
+    },
+    {
+     "w": "Street's",
+     "s": 6.199,
+     "e": 6.519
+    },
+    {
+     "w": "at",
+     "s": 6.543,
+     "e": 6.589
+    },
+    {
+     "w": "a",
+     "s": 6.624,
+     "e": 6.659
+    },
+    {
+     "w": "standstill.",
+     "s": 6.73,
+     "e": 7.431
+    },
+    {
+     "w": "Cairns",
+     "s": 8.11,
+     "e": 8.418
+    },
+    {
+     "w": "Western",
+     "s": 8.453,
+     "e": 8.698
+    },
+    {
+     "w": "Arterial",
+     "s": 8.769,
+     "e": 9.259
+    },
+    {
+     "w": "Road",
+     "s": 9.329,
+     "e": 9.61
+    },
+    {
+     "w": "and",
+     "s": 9.645,
+     "e": 9.75
+    },
+    {
+     "w": "Sheridan",
+     "s": 9.796,
+     "e": 10.171
+    },
+    {
+     "w": "Street",
+     "s": 10.221,
+     "e": 10.521
+    },
+    {
+     "w": "are",
+     "s": 10.574,
+     "e": 10.731
+    },
+    {
+     "w": "moving",
+     "s": 10.772,
+     "e": 11.012
+    },
+    {
+     "w": "NICELY,",
+     "s": 11.117,
+     "e": 11.993
+    },
+    {
+     "w": "while",
+     "s": 12.017,
+     "e": 12.133
+    },
+    {
+     "w": "Draper",
+     "s": 12.203,
+     "e": 12.554
+    },
+    {
+     "w": "Street",
+     "s": 12.604,
+     "e": 12.904
+    },
+    {
+     "w": "and",
+     "s": 12.922,
+     "e": 12.975
+    },
+    {
+     "w": "Spence",
+     "s": 13.045,
+     "e": 13.395
+    },
+    {
+     "w": "Street",
+     "s": 13.435,
+     "e": 13.676
+    },
+    {
+     "w": "are",
+     "s": 13.711,
+     "e": 13.816
+    },
+    {
+     "w": "looking",
+     "s": 13.851,
+     "e": 14.096
+    },
+    {
+     "w": "good!",
+     "s": 14.166,
+     "e": 14.587
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.821,
+     "e": 15.638
+    },
+    {
+     "w": "cheapest",
+     "s": 15.685,
+     "e": 16.059
+    },
+    {
+     "w": "at",
+     "s": 16.105,
+     "e": 16.199
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 16.252,
+     "e": 17.11
+    },
+    {
+     "w": "in",
+     "s": 17.157,
+     "e": 17.251
+    },
+    {
+     "w": "Edge",
+     "s": 17.293,
+     "e": 17.461
+    },
+    {
+     "w": "Hill,",
+     "s": 17.517,
+     "e": 18.092
+    },
+    {
+     "w": "diesel",
+     "s": 18.142,
+     "e": 18.442
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.495,
+     "e": 19.213
+    },
+    {
+     "w": "there",
+     "s": 19.272,
+     "e": 19.564
+    },
+    {
+     "w": "too.",
+     "s": 19.634,
+     "e": 19.914
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.043,
+     "e": 20.756
+    },
+    {
+     "w": "twenty-six",
+     "s": 20.796,
+     "e": 21.316
+    },
+    {
+     "w": "degrees.",
+     "s": 21.386,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "e7e5ded0b6284791bbf5eed54a84d655",
+   "market": "cairns-4ca",
+   "targetSec": 22.0,
+   "naturalSec": 21.8,
+   "fittedSec": 22,
+   "stretch": 0.99091,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "A long queue's hit the Kennedy Highway northbound at Myola Road with roadworks, back about ten kays. James Street's at a standstill. [brightly] Cairns Western Arterial Road and Sheridan Street are moving NICELY, while Draper Street and Spence Street are looking good! Unleaded's cheapest at one-ninety-six in Edge Hill, diesel two-thirty-five there too. Sunny, twenty-six degrees.",
+   "features": {
+    "syl": 89,
+    "words": 55,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "A",
+     "s": 0,
+     "e": 0.07
+    },
+    {
+     "w": "long",
+     "s": 0.126,
+     "e": 0.35
+    },
+    {
+     "w": "queue's",
+     "s": 0.397,
+     "e": 0.701
+    },
+    {
+     "w": "hit",
+     "s": 0.736,
+     "e": 0.841
+    },
+    {
+     "w": "the",
+     "s": 0.876,
+     "e": 0.981
+    },
+    {
+     "w": "Kennedy",
+     "s": 1.016,
+     "e": 1.262
+    },
+    {
+     "w": "Highway",
+     "s": 1.314,
+     "e": 1.682
+    },
+    {
+     "w": "northbound",
+     "s": 1.741,
+     "e": 2.313
+    },
+    {
+     "w": "at",
+     "s": 2.337,
+     "e": 2.383
+    },
+    {
+     "w": "Myola",
+     "s": 2.453,
+     "e": 2.804
+    },
+    {
+     "w": "Road",
+     "s": 2.874,
+     "e": 3.154
+    },
+    {
+     "w": "with",
+     "s": 3.225,
+     "e": 3.505
+    },
+    {
+     "w": "roadworks,",
+     "s": 3.561,
+     "e": 4.276
+    },
+    {
+     "w": "back",
+     "s": 4.318,
+     "e": 4.486
+    },
+    {
+     "w": "about",
+     "s": 4.533,
+     "e": 4.767
+    },
+    {
+     "w": "ten",
+     "s": 4.819,
+     "e": 4.977
+    },
+    {
+     "w": "kays.",
+     "s": 5.047,
+     "e": 5.538
+    },
+    {
+     "w": "James",
+     "s": 5.643,
+     "e": 6.169
+    },
+    {
+     "w": "Street's",
+     "s": 6.199,
+     "e": 6.519
+    },
+    {
+     "w": "at",
+     "s": 6.543,
+     "e": 6.589
+    },
+    {
+     "w": "a",
+     "s": 6.624,
+     "e": 6.659
+    },
+    {
+     "w": "standstill.",
+     "s": 6.73,
+     "e": 7.431
+    },
+    {
+     "w": "Cairns",
+     "s": 8.11,
+     "e": 8.418
+    },
+    {
+     "w": "Western",
+     "s": 8.453,
+     "e": 8.698
+    },
+    {
+     "w": "Arterial",
+     "s": 8.769,
+     "e": 9.259
+    },
+    {
+     "w": "Road",
+     "s": 9.329,
+     "e": 9.61
+    },
+    {
+     "w": "and",
+     "s": 9.645,
+     "e": 9.75
+    },
+    {
+     "w": "Sheridan",
+     "s": 9.796,
+     "e": 10.171
+    },
+    {
+     "w": "Street",
+     "s": 10.221,
+     "e": 10.521
+    },
+    {
+     "w": "are",
+     "s": 10.574,
+     "e": 10.731
+    },
+    {
+     "w": "moving",
+     "s": 10.772,
+     "e": 11.012
+    },
+    {
+     "w": "NICELY,",
+     "s": 11.117,
+     "e": 11.993
+    },
+    {
+     "w": "while",
+     "s": 12.017,
+     "e": 12.133
+    },
+    {
+     "w": "Draper",
+     "s": 12.203,
+     "e": 12.554
+    },
+    {
+     "w": "Street",
+     "s": 12.604,
+     "e": 12.904
+    },
+    {
+     "w": "and",
+     "s": 12.922,
+     "e": 12.975
+    },
+    {
+     "w": "Spence",
+     "s": 13.045,
+     "e": 13.395
+    },
+    {
+     "w": "Street",
+     "s": 13.435,
+     "e": 13.676
+    },
+    {
+     "w": "are",
+     "s": 13.711,
+     "e": 13.816
+    },
+    {
+     "w": "looking",
+     "s": 13.851,
+     "e": 14.096
+    },
+    {
+     "w": "good!",
+     "s": 14.166,
+     "e": 14.587
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.821,
+     "e": 15.638
+    },
+    {
+     "w": "cheapest",
+     "s": 15.685,
+     "e": 16.059
+    },
+    {
+     "w": "at",
+     "s": 16.105,
+     "e": 16.199
+    },
+    {
+     "w": "one-ninety-six",
+     "s": 16.252,
+     "e": 17.11
+    },
+    {
+     "w": "in",
+     "s": 17.157,
+     "e": 17.251
+    },
+    {
+     "w": "Edge",
+     "s": 17.293,
+     "e": 17.461
+    },
+    {
+     "w": "Hill,",
+     "s": 17.517,
+     "e": 18.092
+    },
+    {
+     "w": "diesel",
+     "s": 18.142,
+     "e": 18.442
+    },
+    {
+     "w": "two-thirty-five",
+     "s": 18.495,
+     "e": 19.213
+    },
+    {
+     "w": "there",
+     "s": 19.272,
+     "e": 19.564
+    },
+    {
+     "w": "too.",
+     "s": 19.634,
+     "e": 19.914
+    },
+    {
+     "w": "Sunny,",
+     "s": 20.043,
+     "e": 20.756
+    },
+    {
+     "w": "twenty-six",
+     "s": 20.796,
+     "e": 21.316
+    },
+    {
+     "w": "degrees.",
+     "s": 21.386,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "e55126bace234df0a76c8ddeea78bdc3",
+   "market": "cairns-star1027",
+   "targetSec": 22.0,
+   "naturalSec": 23.5,
+   "fittedSec": 22,
+   "stretch": 1.06818,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "The Kennedy Highway's slow going northbound at Myola Road, with roadworks and a queue back about ten kays. The Captain Cook Highway's a bit slow at Port Douglas Road. Works affect the Bruce Highway at Gillies Highway, Mulgrave Road between Toogood Road and McCoombe Street, and Whitfield Street at Stratford Connection Road. [brightly]It's SUNNY, 27 degrees.",
+   "features": {
+    "syl": 79,
+    "words": 56,
+    "ellipsis": 0,
+    "period": 4,
+    "comma": 4,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.075
+    },
+    {
+     "w": "Kennedy",
+     "s": 0.122,
+     "e": 0.449
+    },
+    {
+     "w": "Highway's",
+     "s": 0.515,
+     "e": 1.123
+    },
+    {
+     "w": "slow",
+     "s": 1.168,
+     "e": 1.348
+    },
+    {
+     "w": "going",
+     "s": 1.398,
+     "e": 1.648
+    },
+    {
+     "w": "northbound",
+     "s": 1.71,
+     "e": 2.322
+    },
+    {
+     "w": "at",
+     "s": 2.371,
+     "e": 2.471
+    },
+    {
+     "w": "Myola",
+     "s": 2.546,
+     "e": 2.921
+    },
+    {
+     "w": "Road,",
+     "s": 2.996,
+     "e": 3.52
+    },
+    {
+     "w": "with",
+     "s": 3.55,
+     "e": 3.67
+    },
+    {
+     "w": "roadworks",
+     "s": 3.745,
+     "e": 4.344
+    },
+    {
+     "w": "and",
+     "s": 4.4,
+     "e": 4.569
+    },
+    {
+     "w": "a",
+     "s": 4.643,
+     "e": 4.718
+    },
+    {
+     "w": "queue",
+     "s": 4.768,
+     "e": 5.018
+    },
+    {
+     "w": "back",
+     "s": 5.078,
+     "e": 5.317
+    },
+    {
+     "w": "about",
+     "s": 5.355,
+     "e": 5.542
+    },
+    {
+     "w": "ten",
+     "s": 5.617,
+     "e": 5.842
+    },
+    {
+     "w": "kays.",
+     "s": 5.954,
+     "e": 6.89
+    },
+    {
+     "w": "The",
+     "s": 6.909,
+     "e": 6.965
+    },
+    {
+     "w": "Captain",
+     "s": 7.012,
+     "e": 7.34
+    },
+    {
+     "w": "Cook",
+     "s": 7.4,
+     "e": 7.639
+    },
+    {
+     "w": "Highway's",
+     "s": 7.686,
+     "e": 8.089
+    },
+    {
+     "w": "a",
+     "s": 8.126,
+     "e": 8.163
+    },
+    {
+     "w": "bit",
+     "s": 8.22,
+     "e": 8.388
+    },
+    {
+     "w": "slow",
+     "s": 8.463,
+     "e": 8.763
+    },
+    {
+     "w": "at",
+     "s": 8.812,
+     "e": 8.912
+    },
+    {
+     "w": "Port",
+     "s": 8.972,
+     "e": 9.212
+    },
+    {
+     "w": "Douglas",
+     "s": 9.268,
+     "e": 9.661
+    },
+    {
+     "w": "Road.",
+     "s": 9.736,
+     "e": 10.111
+    },
+    {
+     "w": "Works",
+     "s": 10.211,
+     "e": 10.71
+    },
+    {
+     "w": "affect",
+     "s": 10.753,
+     "e": 11.009
+    },
+    {
+     "w": "the",
+     "s": 11.028,
+     "e": 11.084
+    },
+    {
+     "w": "Bruce",
+     "s": 11.147,
+     "e": 11.459
+    },
+    {
+     "w": "Highway",
+     "s": 11.506,
+     "e": 11.833
+    },
+    {
+     "w": "at",
+     "s": 11.908,
+     "e": 12.058
+    },
+    {
+     "w": "Gillies",
+     "s": 12.118,
+     "e": 12.507
+    },
+    {
+     "w": "Highway,",
+     "s": 12.554,
+     "e": 13.181
+    },
+    {
+     "w": "Mulgrave",
+     "s": 13.219,
+     "e": 13.631
+    },
+    {
+     "w": "Road",
+     "s": 13.706,
+     "e": 14.005
+    },
+    {
+     "w": "between",
+     "s": 14.052,
+     "e": 14.38
+    },
+    {
+     "w": "Toogood",
+     "s": 14.455,
+     "e": 14.829
+    },
+    {
+     "w": "Road",
+     "s": 14.889,
+     "e": 15.129
+    },
+    {
+     "w": "and",
+     "s": 15.166,
+     "e": 15.278
+    },
+    {
+     "w": "McCoombe",
+     "s": 15.353,
+     "e": 15.915
+    },
+    {
+     "w": "Street,",
+     "s": 15.942,
+     "e": 16.177
+    },
+    {
+     "w": "and",
+     "s": 16.308,
+     "e": 16.701
+    },
+    {
+     "w": "Whitfield",
+     "s": 16.761,
+     "e": 17.226
+    },
+    {
+     "w": "Street",
+     "s": 17.279,
+     "e": 17.6
+    },
+    {
+     "w": "at",
+     "s": 17.675,
+     "e": 17.825
+    },
+    {
+     "w": "Stratford",
+     "s": 17.887,
+     "e": 18.349
+    },
+    {
+     "w": "Connection",
+     "s": 18.39,
+     "e": 18.798
+    },
+    {
+     "w": "Road.",
+     "s": 18.903,
+     "e": 19.472
+    },
+    {
+     "w": "It's",
+     "s": 19.809,
+     "e": 19.997
+    },
+    {
+     "w": "SUNNY,",
+     "s": 20.053,
+     "e": 20.446
+    },
+    {
+     "w": "27",
+     "s": 20.511,
+     "e": 21.195
+    },
+    {
+     "w": "degrees.",
+     "s": 21.279,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "2b1d39fd11ed41619b7b4603dc4a5591",
+   "market": "mildura",
+   "targetSec": 30.0,
+   "naturalSec": 30.0,
+   "fittedSec": 30,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "[gently] Walker Road's closed outbound, with Lock 10 Road also blocked outbound and Old Mail Road closed citybound\u2026 Werrimull North Road and Tapaulin Road are both moving nicely. It's partly sunny in Mildura at twelve degrees. Cheapest unleaded's two dollars two a litre in Mildura, with diesel at two dollars forty-eight there too. The Sturt Highway and Calder Highway are Mildura's two main links to the rest of the state \u2014 plan around them if one's affected. Take it easy out there. Drive safe, Mildura.",
+   "features": {
+    "syl": 127,
+    "words": 84,
+    "ellipsis": 1,
+    "period": 6,
+    "comma": 3,
+    "dash": 1,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Walker",
+     "s": 0.233,
+     "e": 0.297
+    },
+    {
+     "w": "Road's",
+     "s": 0.356,
+     "e": 0.668
+    },
+    {
+     "w": "closed",
+     "s": 0.721,
+     "e": 1.039
+    },
+    {
+     "w": "outbound,",
+     "s": 1.097,
+     "e": 1.633
+    },
+    {
+     "w": "with",
+     "s": 1.663,
+     "e": 1.782
+    },
+    {
+     "w": "Lock",
+     "s": 1.826,
+     "e": 2.005
+    },
+    {
+     "w": "10",
+     "s": 2.079,
+     "e": 2.302
+    },
+    {
+     "w": "Road",
+     "s": 2.361,
+     "e": 2.599
+    },
+    {
+     "w": "also",
+     "s": 2.673,
+     "e": 2.97
+    },
+    {
+     "w": "blocked",
+     "s": 3.007,
+     "e": 3.267
+    },
+    {
+     "w": "outbound",
+     "s": 3.333,
+     "e": 3.861
+    },
+    {
+     "w": "and",
+     "s": 3.953,
+     "e": 4.232
+    },
+    {
+     "w": "Old",
+     "s": 4.288,
+     "e": 4.455
+    },
+    {
+     "w": "Mail",
+     "s": 4.514,
+     "e": 4.752
+    },
+    {
+     "w": "Road",
+     "s": 4.811,
+     "e": 5.049
+    },
+    {
+     "w": "closed",
+     "s": 5.101,
+     "e": 5.42
+    },
+    {
+     "w": "citybound\u2026",
+     "s": 5.494,
+     "e": 6.533
+    },
+    {
+     "w": "Werrimull",
+     "s": 6.571,
+     "e": 6.905
+    },
+    {
+     "w": "North",
+     "s": 6.954,
+     "e": 7.202
+    },
+    {
+     "w": "Road",
+     "s": 7.261,
+     "e": 7.499
+    },
+    {
+     "w": "and",
+     "s": 7.536,
+     "e": 7.647
+    },
+    {
+     "w": "Tapaulin",
+     "s": 7.703,
+     "e": 8.167
+    },
+    {
+     "w": "Road",
+     "s": 8.226,
+     "e": 8.464
+    },
+    {
+     "w": "are",
+     "s": 8.501,
+     "e": 8.612
+    },
+    {
+     "w": "both",
+     "s": 8.672,
+     "e": 8.909
+    },
+    {
+     "w": "moving",
+     "s": 8.962,
+     "e": 9.28
+    },
+    {
+     "w": "nicely.",
+     "s": 9.344,
+     "e": 9.8
+    },
+    {
+     "w": "It's",
+     "s": 9.998,
+     "e": 10.468
+    },
+    {
+     "w": "partly",
+     "s": 10.511,
+     "e": 10.765
+    },
+    {
+     "w": "sunny",
+     "s": 10.84,
+     "e": 11.211
+    },
+    {
+     "w": "in",
+     "s": 11.26,
+     "e": 11.359
+    },
+    {
+     "w": "Mildura",
+     "s": 11.396,
+     "e": 11.953
+    },
+    {
+     "w": "at",
+     "s": 12.002,
+     "e": 12.102
+    },
+    {
+     "w": "twelve",
+     "s": 12.144,
+     "e": 12.399
+    },
+    {
+     "w": "degrees.",
+     "s": 12.473,
+     "e": 13.067
+    },
+    {
+     "w": "Cheapest",
+     "s": 13.16,
+     "e": 13.661
+    },
+    {
+     "w": "unleaded's",
+     "s": 13.72,
+     "e": 14.255
+    },
+    {
+     "w": "two",
+     "s": 14.292,
+     "e": 14.403
+    },
+    {
+     "w": "dollars",
+     "s": 14.44,
+     "e": 14.7
+    },
+    {
+     "w": "two",
+     "s": 14.756,
+     "e": 14.923
+    },
+    {
+     "w": "a",
+     "s": 14.96,
+     "e": 14.997
+    },
+    {
+     "w": "litre",
+     "s": 15.059,
+     "e": 15.368
+    },
+    {
+     "w": "in",
+     "s": 15.418,
+     "e": 15.517
+    },
+    {
+     "w": "Mildura,",
+     "s": 15.554,
+     "e": 16.334
+    },
+    {
+     "w": "with",
+     "s": 16.363,
+     "e": 16.482
+    },
+    {
+     "w": "diesel",
+     "s": 16.546,
+     "e": 16.928
+    },
+    {
+     "w": "at",
+     "s": 16.977,
+     "e": 17.076
+    },
+    {
+     "w": "two",
+     "s": 17.132,
+     "e": 17.299
+    },
+    {
+     "w": "dollars",
+     "s": 17.345,
+     "e": 17.67
+    },
+    {
+     "w": "forty-eight",
+     "s": 17.732,
+     "e": 18.19
+    },
+    {
+     "w": "there",
+     "s": 18.227,
+     "e": 18.412
+    },
+    {
+     "w": "too.",
+     "s": 18.505,
+     "e": 18.932
+    },
+    {
+     "w": "The",
+     "s": 19.257,
+     "e": 19.344
+    },
+    {
+     "w": "Sturt",
+     "s": 19.432,
+     "e": 19.782
+    },
+    {
+     "w": "Highway",
+     "s": 19.859,
+     "e": 20.395
+    },
+    {
+     "w": "and",
+     "s": 20.417,
+     "e": 20.483
+    },
+    {
+     "w": "Calder",
+     "s": 20.558,
+     "e": 21.008
+    },
+    {
+     "w": "Highway",
+     "s": 21.074,
+     "e": 21.533
+    },
+    {
+     "w": "are",
+     "s": 21.577,
+     "e": 21.708
+    },
+    {
+     "w": "Mildura's",
+     "s": 21.761,
+     "e": 22.321
+    },
+    {
+     "w": "two",
+     "s": 22.365,
+     "e": 22.496
+    },
+    {
+     "w": "main",
+     "s": 22.566,
+     "e": 22.847
+    },
+    {
+     "w": "links",
+     "s": 22.905,
+     "e": 23.197
+    },
+    {
+     "w": "to",
+     "s": 23.226,
+     "e": 23.284
+    },
+    {
+     "w": "the",
+     "s": 23.306,
+     "e": 23.372
+    },
+    {
+     "w": "rest",
+     "s": 23.424,
+     "e": 23.634
+    },
+    {
+     "w": "of",
+     "s": 23.692,
+     "e": 23.81
+    },
+    {
+     "w": "the",
+     "s": 23.831,
+     "e": 23.897
+    },
+    {
+     "w": "state",
+     "s": 23.97,
+     "e": 24.335
+    },
+    {
+     "w": "\u2014",
+     "s": 24.554,
+     "e": 24.773
+    },
+    {
+     "w": "plan",
+     "s": 24.843,
+     "e": 25.123
+    },
+    {
+     "w": "around",
+     "s": 25.173,
+     "e": 25.473
+    },
+    {
+     "w": "them",
+     "s": 25.526,
+     "e": 25.736
+    },
+    {
+     "w": "if",
+     "s": 25.794,
+     "e": 25.911
+    },
+    {
+     "w": "one's",
+     "s": 25.976,
+     "e": 26.261
+    },
+    {
+     "w": "affected.",
+     "s": 26.329,
+     "e": 26.961
+    },
+    {
+     "w": "Take",
+     "s": 27.286,
+     "e": 27.421
+    },
+    {
+     "w": "it",
+     "s": 27.45,
+     "e": 27.507
+    },
+    {
+     "w": "easy",
+     "s": 27.576,
+     "e": 27.851
+    },
+    {
+     "w": "out",
+     "s": 27.894,
+     "e": 28.022
+    },
+    {
+     "w": "there.",
+     "s": 28.079,
+     "e": 28.623
+    },
+    {
+     "w": "Drive",
+     "s": 28.948,
+     "e": 29.134
+    },
+    {
+     "w": "safe,",
+     "s": 29.196,
+     "e": 29.567
+    },
+    {
+     "w": "Mildura.",
+     "s": 29.592,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "761841eb6a7348319a7bf4afe5bb87e0",
+   "market": "mildura",
+   "targetSec": 30.0,
+   "naturalSec": 30.0,
+   "fittedSec": 30,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "[gently] Walker Road's closed outbound, with Lock 10 Road also closed outbound. Old Mail Road's blocked citybound as well. Werrimull North Road and Tapaulin Road are both moving nicely. It's cloudy in Mildura, 17 degrees, with unleaded 91 at two dollars two a litre. Diesel is two dollars forty-eight there too. The Sturt Highway and Calder Highway are Mildura's two main links to the rest of the state \u2014 plan around them if one's affected. Take it easy out there. Drive safe, Mildura.",
+   "features": {
+    "syl": 121,
+    "words": 82,
+    "ellipsis": 0,
+    "period": 8,
+    "comma": 4,
+    "dash": 1,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Walker",
+     "s": 0.246,
+     "e": 0.314
+    },
+    {
+     "w": "Road's",
+     "s": 0.377,
+     "e": 0.707
+    },
+    {
+     "w": "closed",
+     "s": 0.763,
+     "e": 1.1
+    },
+    {
+     "w": "outbound,",
+     "s": 1.161,
+     "e": 1.728
+    },
+    {
+     "w": "with",
+     "s": 1.76,
+     "e": 1.886
+    },
+    {
+     "w": "Lock",
+     "s": 1.948,
+     "e": 2.2
+    },
+    {
+     "w": "10",
+     "s": 2.259,
+     "e": 2.436
+    },
+    {
+     "w": "Road",
+     "s": 2.514,
+     "e": 2.828
+    },
+    {
+     "w": "also",
+     "s": 2.907,
+     "e": 3.221
+    },
+    {
+     "w": "closed",
+     "s": 3.289,
+     "e": 3.693
+    },
+    {
+     "w": "outbound.",
+     "s": 3.753,
+     "e": 4.321
+    },
+    {
+     "w": "Old",
+     "s": 4.459,
+     "e": 4.871
+    },
+    {
+     "w": "Mail",
+     "s": 4.934,
+     "e": 5.185
+    },
+    {
+     "w": "Road's",
+     "s": 5.248,
+     "e": 5.578
+    },
+    {
+     "w": "blocked",
+     "s": 5.617,
+     "e": 5.892
+    },
+    {
+     "w": "citybound",
+     "s": 5.955,
+     "e": 6.442
+    },
+    {
+     "w": "as",
+     "s": 6.494,
+     "e": 6.599
+    },
+    {
+     "w": "well.",
+     "s": 6.678,
+     "e": 7.307
+    },
+    {
+     "w": "Werrimull",
+     "s": 7.346,
+     "e": 7.699
+    },
+    {
+     "w": "North",
+     "s": 7.751,
+     "e": 8.014
+    },
+    {
+     "w": "Road",
+     "s": 8.076,
+     "e": 8.328
+    },
+    {
+     "w": "and",
+     "s": 8.367,
+     "e": 8.485
+    },
+    {
+     "w": "Tapaulin",
+     "s": 8.564,
+     "e": 9.035
+    },
+    {
+     "w": "Road",
+     "s": 9.114,
+     "e": 9.428
+    },
+    {
+     "w": "are",
+     "s": 9.467,
+     "e": 9.585
+    },
+    {
+     "w": "both",
+     "s": 9.632,
+     "e": 9.821
+    },
+    {
+     "w": "moving",
+     "s": 9.877,
+     "e": 10.213
+    },
+    {
+     "w": "nicely.",
+     "s": 10.281,
+     "e": 11.078
+    },
+    {
+     "w": "It's",
+     "s": 11.13,
+     "e": 11.313
+    },
+    {
+     "w": "cloudy",
+     "s": 11.369,
+     "e": 11.706
+    },
+    {
+     "w": "in",
+     "s": 11.733,
+     "e": 11.785
+    },
+    {
+     "w": "Mildura,",
+     "s": 11.844,
+     "e": 12.57
+    },
+    {
+     "w": "17",
+     "s": 12.618,
+     "e": 13.042
+    },
+    {
+     "w": "degrees,",
+     "s": 13.12,
+     "e": 13.867
+    },
+    {
+     "w": "with",
+     "s": 13.906,
+     "e": 14.063
+    },
+    {
+     "w": "unleaded",
+     "s": 14.11,
+     "e": 14.456
+    },
+    {
+     "w": "91",
+     "s": 14.501,
+     "e": 15.084
+    },
+    {
+     "w": "at",
+     "s": 15.215,
+     "e": 15.477
+    },
+    {
+     "w": "two",
+     "s": 15.497,
+     "e": 15.556
+    },
+    {
+     "w": "dollars",
+     "s": 15.595,
+     "e": 15.87
+    },
+    {
+     "w": "two",
+     "s": 15.929,
+     "e": 16.106
+    },
+    {
+     "w": "a",
+     "s": 16.184,
+     "e": 16.263
+    },
+    {
+     "w": "litre.",
+     "s": 16.329,
+     "e": 17.049
+    },
+    {
+     "w": "Diesel",
+     "s": 17.105,
+     "e": 17.441
+    },
+    {
+     "w": "is",
+     "s": 17.52,
+     "e": 17.677
+    },
+    {
+     "w": "two",
+     "s": 17.716,
+     "e": 17.834
+    },
+    {
+     "w": "dollars",
+     "s": 17.873,
+     "e": 18.148
+    },
+    {
+     "w": "forty-eight",
+     "s": 18.214,
+     "e": 18.698
+    },
+    {
+     "w": "there",
+     "s": 18.764,
+     "e": 19.091
+    },
+    {
+     "w": "too.",
+     "s": 19.17,
+     "e": 19.563
+    },
+    {
+     "w": "The",
+     "s": 19.906,
+     "e": 19.986
+    },
+    {
+     "w": "Sturt",
+     "s": 20.066,
+     "e": 20.385
+    },
+    {
+     "w": "Highway",
+     "s": 20.455,
+     "e": 20.943
+    },
+    {
+     "w": "and",
+     "s": 20.963,
+     "e": 21.023
+    },
+    {
+     "w": "Calder",
+     "s": 21.092,
+     "e": 21.501
+    },
+    {
+     "w": "Highway",
+     "s": 21.561,
+     "e": 21.98
+    },
+    {
+     "w": "are",
+     "s": 22.02,
+     "e": 22.139
+    },
+    {
+     "w": "Mildura's",
+     "s": 22.187,
+     "e": 22.697
+    },
+    {
+     "w": "two",
+     "s": 22.737,
+     "e": 22.857
+    },
+    {
+     "w": "main",
+     "s": 22.921,
+     "e": 23.176
+    },
+    {
+     "w": "links",
+     "s": 23.229,
+     "e": 23.495
+    },
+    {
+     "w": "to",
+     "s": 23.522,
+     "e": 23.575
+    },
+    {
+     "w": "the",
+     "s": 23.594,
+     "e": 23.654
+    },
+    {
+     "w": "rest",
+     "s": 23.702,
+     "e": 23.894
+    },
+    {
+     "w": "of",
+     "s": 23.946,
+     "e": 24.053
+    },
+    {
+     "w": "the",
+     "s": 24.073,
+     "e": 24.133
+    },
+    {
+     "w": "state",
+     "s": 24.2,
+     "e": 24.531
+    },
+    {
+     "w": "\u2014",
+     "s": 24.731,
+     "e": 24.93
+    },
+    {
+     "w": "plan",
+     "s": 24.994,
+     "e": 25.249
+    },
+    {
+     "w": "around",
+     "s": 25.295,
+     "e": 25.568
+    },
+    {
+     "w": "them",
+     "s": 25.616,
+     "e": 25.807
+    },
+    {
+     "w": "if",
+     "s": 25.86,
+     "e": 25.967
+    },
+    {
+     "w": "one's",
+     "s": 26.027,
+     "e": 26.286
+    },
+    {
+     "w": "affected.",
+     "s": 26.348,
+     "e": 26.924
+    },
+    {
+     "w": "Take",
+     "s": 27.267,
+     "e": 27.396
+    },
+    {
+     "w": "it",
+     "s": 27.424,
+     "e": 27.478
+    },
+    {
+     "w": "easy",
+     "s": 27.544,
+     "e": 27.806
+    },
+    {
+     "w": "out",
+     "s": 27.847,
+     "e": 27.97
+    },
+    {
+     "w": "there.",
+     "s": 28.024,
+     "e": 28.543
+    },
+    {
+     "w": "Drive",
+     "s": 28.887,
+     "e": 29.083
+    },
+    {
+     "w": "safe,",
+     "s": 29.149,
+     "e": 29.542
+    },
+    {
+     "w": "Mildura.",
+     "s": 29.568,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "83a8867f3f6646dca0c516b14b93a791",
+   "market": "mildura",
+   "targetSec": 30.0,
+   "naturalSec": 30.0,
+   "fittedSec": 30,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "[gently] Walker Road's closed outbound, and Lock 10 Road's closed outbound\u2026 Old Mail Road's blocked citybound as well. Werrimull North Road and Tapaulin Road are both moving nicely\u2026 It's partly sunny in Mildura, 12 degrees. Unleaded's cheapest at two dollars two a litre in Mildura, with diesel at two dollars forty-eight there too. The Sturt Highway and Calder Highway are Mildura's two main links to the rest of the state \u2014 plan around them if one's affected.",
+   "features": {
+    "syl": 115,
+    "words": 76,
+    "ellipsis": 2,
+    "period": 4,
+    "comma": 3,
+    "dash": 1,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Walker",
+     "s": 0.251,
+     "e": 0.319
+    },
+    {
+     "w": "Road's",
+     "s": 0.383,
+     "e": 0.718
+    },
+    {
+     "w": "closed",
+     "s": 0.787,
+     "e": 1.197
+    },
+    {
+     "w": "outbound,",
+     "s": 1.25,
+     "e": 1.914
+    },
+    {
+     "w": "and",
+     "s": 1.954,
+     "e": 2.074
+    },
+    {
+     "w": "Lock",
+     "s": 2.122,
+     "e": 2.314
+    },
+    {
+     "w": "10",
+     "s": 2.373,
+     "e": 2.552
+    },
+    {
+     "w": "Road's",
+     "s": 2.616,
+     "e": 2.952
+    },
+    {
+     "w": "closed",
+     "s": 3.02,
+     "e": 3.43
+    },
+    {
+     "w": "outbound\u2026",
+     "s": 3.492,
+     "e": 4.547
+    },
+    {
+     "w": "Old",
+     "s": 4.607,
+     "e": 4.786
+    },
+    {
+     "w": "Mail",
+     "s": 4.85,
+     "e": 5.106
+    },
+    {
+     "w": "Road's",
+     "s": 5.153,
+     "e": 5.504
+    },
+    {
+     "w": "blocked",
+     "s": 5.544,
+     "e": 5.823
+    },
+    {
+     "w": "citybound",
+     "s": 5.903,
+     "e": 6.461
+    },
+    {
+     "w": "as",
+     "s": 6.514,
+     "e": 6.621
+    },
+    {
+     "w": "well.",
+     "s": 6.685,
+     "e": 7.219
+    },
+    {
+     "w": "Werrimull",
+     "s": 7.358,
+     "e": 7.897
+    },
+    {
+     "w": "North",
+     "s": 7.949,
+     "e": 8.216
+    },
+    {
+     "w": "Road",
+     "s": 8.296,
+     "e": 8.615
+    },
+    {
+     "w": "and",
+     "s": 8.655,
+     "e": 8.775
+    },
+    {
+     "w": "Tapaulin",
+     "s": 8.854,
+     "e": 9.413
+    },
+    {
+     "w": "Road",
+     "s": 9.477,
+     "e": 9.732
+    },
+    {
+     "w": "are",
+     "s": 9.791,
+     "e": 9.971
+    },
+    {
+     "w": "both",
+     "s": 10.019,
+     "e": 10.21
+    },
+    {
+     "w": "moving",
+     "s": 10.267,
+     "e": 10.61
+    },
+    {
+     "w": "nicely\u2026",
+     "s": 10.678,
+     "e": 11.725
+    },
+    {
+     "w": "It's",
+     "s": 11.778,
+     "e": 11.965
+    },
+    {
+     "w": "partly",
+     "s": 12.022,
+     "e": 12.364
+    },
+    {
+     "w": "sunny",
+     "s": 12.417,
+     "e": 12.683
+    },
+    {
+     "w": "in",
+     "s": 12.736,
+     "e": 12.842
+    },
+    {
+     "w": "Mildura,",
+     "s": 12.882,
+     "e": 13.72
+    },
+    {
+     "w": "12",
+     "s": 13.754,
+     "e": 13.959
+    },
+    {
+     "w": "degrees.",
+     "s": 14.039,
+     "e": 14.996
+    },
+    {
+     "w": "Unleaded's",
+     "s": 15.049,
+     "e": 15.554
+    },
+    {
+     "w": "cheapest",
+     "s": 15.598,
+     "e": 15.954
+    },
+    {
+     "w": "at",
+     "s": 16.034,
+     "e": 16.193
+    },
+    {
+     "w": "two",
+     "s": 16.213,
+     "e": 16.272
+    },
+    {
+     "w": "dollars",
+     "s": 16.312,
+     "e": 16.592
+    },
+    {
+     "w": "two",
+     "s": 16.651,
+     "e": 16.831
+    },
+    {
+     "w": "a",
+     "s": 16.871,
+     "e": 16.911
+    },
+    {
+     "w": "litre",
+     "s": 16.978,
+     "e": 17.309
+    },
+    {
+     "w": "in",
+     "s": 17.389,
+     "e": 17.549
+    },
+    {
+     "w": "Mildura,",
+     "s": 17.589,
+     "e": 18.426
+    },
+    {
+     "w": "with",
+     "s": 18.458,
+     "e": 18.586
+    },
+    {
+     "w": "diesel",
+     "s": 18.643,
+     "e": 18.985
+    },
+    {
+     "w": "at",
+     "s": 19.064,
+     "e": 19.224
+    },
+    {
+     "w": "two",
+     "s": 19.264,
+     "e": 19.383
+    },
+    {
+     "w": "dollars",
+     "s": 19.433,
+     "e": 19.783
+    },
+    {
+     "w": "forty-eight",
+     "s": 19.85,
+     "e": 20.341
+    },
+    {
+     "w": "there",
+     "s": 20.381,
+     "e": 20.58
+    },
+    {
+     "w": "too.",
+     "s": 20.68,
+     "e": 21.218
+    },
+    {
+     "w": "The",
+     "s": 21.568,
+     "e": 21.663
+    },
+    {
+     "w": "Sturt",
+     "s": 21.759,
+     "e": 22.142
+    },
+    {
+     "w": "Highway",
+     "s": 22.226,
+     "e": 22.813
+    },
+    {
+     "w": "and",
+     "s": 22.837,
+     "e": 22.909
+    },
+    {
+     "w": "Calder",
+     "s": 22.992,
+     "e": 23.484
+    },
+    {
+     "w": "Highway",
+     "s": 23.556,
+     "e": 24.059
+    },
+    {
+     "w": "are",
+     "s": 24.107,
+     "e": 24.251
+    },
+    {
+     "w": "Mildura's",
+     "s": 24.308,
+     "e": 24.921
+    },
+    {
+     "w": "two",
+     "s": 24.969,
+     "e": 25.113
+    },
+    {
+     "w": "main",
+     "s": 25.19,
+     "e": 25.496
+    },
+    {
+     "w": "links",
+     "s": 25.56,
+     "e": 25.88
+    },
+    {
+     "w": "to",
+     "s": 25.912,
+     "e": 25.975
+    },
+    {
+     "w": "the",
+     "s": 25.999,
+     "e": 26.071
+    },
+    {
+     "w": "rest",
+     "s": 26.129,
+     "e": 26.359
+    },
+    {
+     "w": "of",
+     "s": 26.422,
+     "e": 26.55
+    },
+    {
+     "w": "the",
+     "s": 26.574,
+     "e": 26.646
+    },
+    {
+     "w": "state",
+     "s": 26.726,
+     "e": 27.125
+    },
+    {
+     "w": "\u2014",
+     "s": 27.365,
+     "e": 27.604
+    },
+    {
+     "w": "plan",
+     "s": 27.681,
+     "e": 27.988
+    },
+    {
+     "w": "around",
+     "s": 28.043,
+     "e": 28.371
+    },
+    {
+     "w": "them",
+     "s": 28.429,
+     "e": 28.658
+    },
+    {
+     "w": "if",
+     "s": 28.722,
+     "e": 28.85
+    },
+    {
+     "w": "one's",
+     "s": 28.922,
+     "e": 29.233
+    },
+    {
+     "w": "affected.",
+     "s": 29.308,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "16f5f75a28d1455bb187bf95376d85d7",
+   "market": "portlincoln",
+   "targetSec": 15.0,
+   "naturalSec": 15.0,
+   "fittedSec": 15,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Porter Street and Railway Place have construction works with contraflow. [gently] Cool, 11 degrees. Unleaded's cheapest at two dollars twenty-three in Cummins\u2026 diesel's two forty-six there too. Please stay alert out there and stick to the speed limit.",
+   "features": {
+    "syl": 56,
+    "words": 37,
+    "ellipsis": 1,
+    "period": 4,
+    "comma": 1,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Porter",
+     "s": 0,
+     "e": 0.229
+    },
+    {
+     "w": "Street",
+     "s": 0.283,
+     "e": 0.609
+    },
+    {
+     "w": "and",
+     "s": 0.647,
+     "e": 0.762
+    },
+    {
+     "w": "Railway",
+     "s": 0.809,
+     "e": 1.143
+    },
+    {
+     "w": "Place",
+     "s": 1.219,
+     "e": 1.6
+    },
+    {
+     "w": "have",
+     "s": 1.645,
+     "e": 1.828
+    },
+    {
+     "w": "construction",
+     "s": 1.869,
+     "e": 2.361
+    },
+    {
+     "w": "works",
+     "s": 2.425,
+     "e": 2.742
+    },
+    {
+     "w": "with",
+     "s": 2.773,
+     "e": 2.894
+    },
+    {
+     "w": "contraflow.",
+     "s": 2.96,
+     "e": 3.732
+    },
+    {
+     "w": "Cool,",
+     "s": 4.433,
+     "e": 4.57
+    },
+    {
+     "w": "11",
+     "s": 4.636,
+     "e": 5.027
+    },
+    {
+     "w": "degrees.",
+     "s": 5.103,
+     "e": 5.713
+    },
+    {
+     "w": "Unleaded's",
+     "s": 5.839,
+     "e": 6.398
+    },
+    {
+     "w": "cheapest",
+     "s": 6.457,
+     "e": 6.931
+    },
+    {
+     "w": "at",
+     "s": 6.982,
+     "e": 7.084
+    },
+    {
+     "w": "two",
+     "s": 7.141,
+     "e": 7.312
+    },
+    {
+     "w": "dollars",
+     "s": 7.35,
+     "e": 7.617
+    },
+    {
+     "w": "twenty-three",
+     "s": 7.661,
+     "e": 8.226
+    },
+    {
+     "w": "in",
+     "s": 8.277,
+     "e": 8.379
+    },
+    {
+     "w": "Cummins\u2026",
+     "s": 8.455,
+     "e": 9.293
+    },
+    {
+     "w": "diesel's",
+     "s": 9.336,
+     "e": 9.75
+    },
+    {
+     "w": "two",
+     "s": 9.769,
+     "e": 9.826
+    },
+    {
+     "w": "forty-six",
+     "s": 9.889,
+     "e": 10.511
+    },
+    {
+     "w": "there",
+     "s": 10.549,
+     "e": 10.74
+    },
+    {
+     "w": "too.",
+     "s": 10.835,
+     "e": 11.425
+    },
+    {
+     "w": "Please",
+     "s": 11.589,
+     "e": 11.852
+    },
+    {
+     "w": "stay",
+     "s": 11.887,
+     "e": 12.026
+    },
+    {
+     "w": "alert",
+     "s": 12.1,
+     "e": 12.464
+    },
+    {
+     "w": "out",
+     "s": 12.508,
+     "e": 12.639
+    },
+    {
+     "w": "there",
+     "s": 12.697,
+     "e": 12.989
+    },
+    {
+     "w": "and",
+     "s": 13.076,
+     "e": 13.338
+    },
+    {
+     "w": "stick",
+     "s": 13.412,
+     "e": 13.776
+    },
+    {
+     "w": "to",
+     "s": 13.834,
+     "e": 13.951
+    },
+    {
+     "w": "the",
+     "s": 13.972,
+     "e": 14.038
+    },
+    {
+     "w": "speed",
+     "s": 14.096,
+     "e": 14.388
+    },
+    {
+     "w": "limit.",
+     "s": 14.461,
+     "e": 15
+    }
+   ]
+  },
+  {
+   "jobId": "50803125890e417b82b233f283b837e4",
+   "market": "queenstown",
+   "targetSec": 30.0,
+   "naturalSec": 30.0,
+   "fittedSec": 30,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "[gently] No major delays across Queenstown this evening, with the Zeehan Highway and Bradshaw Bridge moving nicely\u2026 Lake St Clair Road's looking good, and the Murchison Highway's a clear run. Cloudy skies and ten degrees, with heavy rain anticipated. It's a long stretch of highway between towns out here \u2014 pull over for a break if you're feeling fatigued. The Lyell Highway is the main route in and out of Queenstown, winding through some steep and narrow sections. Please stay alert out there and stick to the speed limit.",
+   "features": {
+    "syl": 124,
+    "words": 88,
+    "ellipsis": 1,
+    "period": 5,
+    "comma": 4,
+    "dash": 1,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "No",
+     "s": 0.126,
+     "e": 0.152
+    },
+    {
+     "w": "major",
+     "s": 0.202,
+     "e": 0.456
+    },
+    {
+     "w": "delays",
+     "s": 0.51,
+     "e": 0.836
+    },
+    {
+     "w": "across",
+     "s": 0.89,
+     "e": 1.216
+    },
+    {
+     "w": "Queenstown",
+     "s": 1.254,
+     "e": 1.749
+    },
+    {
+     "w": "this",
+     "s": 1.779,
+     "e": 1.901
+    },
+    {
+     "w": "evening,",
+     "s": 1.948,
+     "e": 2.509
+    },
+    {
+     "w": "with",
+     "s": 2.539,
+     "e": 2.661
+    },
+    {
+     "w": "the",
+     "s": 2.68,
+     "e": 2.737
+    },
+    {
+     "w": "Zeehan",
+     "s": 2.813,
+     "e": 3.041
+    },
+    {
+     "w": "Highway",
+     "s": 3.108,
+     "e": 3.573
+    },
+    {
+     "w": "and",
+     "s": 3.611,
+     "e": 3.725
+    },
+    {
+     "w": "Bradshaw",
+     "s": 3.786,
+     "e": 4.258
+    },
+    {
+     "w": "Bridge",
+     "s": 4.301,
+     "e": 4.562
+    },
+    {
+     "w": "moving",
+     "s": 4.616,
+     "e": 4.942
+    },
+    {
+     "w": "nicely\u2026",
+     "s": 5.007,
+     "e": 5.93
+    },
+    {
+     "w": "Lake",
+     "s": 5.976,
+     "e": 6.158
+    },
+    {
+     "w": "St",
+     "s": 6.196,
+     "e": 6.386
+    },
+    {
+     "w": "Clair",
+     "s": 6.424,
+     "e": 6.614
+    },
+    {
+     "w": "Road's",
+     "s": 6.66,
+     "e": 6.918
+    },
+    {
+     "w": "looking",
+     "s": 6.956,
+     "e": 7.223
+    },
+    {
+     "w": "good,",
+     "s": 7.283,
+     "e": 7.831
+    },
+    {
+     "w": "and",
+     "s": 7.869,
+     "e": 7.983
+    },
+    {
+     "w": "the",
+     "s": 8.002,
+     "e": 8.059
+    },
+    {
+     "w": "Murchison",
+     "s": 8.097,
+     "e": 8.515
+    },
+    {
+     "w": "Highway's",
+     "s": 8.563,
+     "e": 9.047
+    },
+    {
+     "w": "a",
+     "s": 9.123,
+     "e": 9.199
+    },
+    {
+     "w": "clear",
+     "s": 9.237,
+     "e": 9.427
+    },
+    {
+     "w": "run.",
+     "s": 9.522,
+     "e": 10.226
+    },
+    {
+     "w": "Cloudy",
+     "s": 10.295,
+     "e": 10.72
+    },
+    {
+     "w": "skies",
+     "s": 10.796,
+     "e": 11.176
+    },
+    {
+     "w": "and",
+     "s": 11.214,
+     "e": 11.328
+    },
+    {
+     "w": "ten",
+     "s": 11.366,
+     "e": 11.48
+    },
+    {
+     "w": "degrees,",
+     "s": 11.556,
+     "e": 12.088
+    },
+    {
+     "w": "with",
+     "s": 12.134,
+     "e": 12.316
+    },
+    {
+     "w": "heavy",
+     "s": 12.367,
+     "e": 12.621
+    },
+    {
+     "w": "rain",
+     "s": 12.681,
+     "e": 12.925
+    },
+    {
+     "w": "anticipated.",
+     "s": 13.001,
+     "e": 13.989
+    },
+    {
+     "w": "It's",
+     "s": 14.298,
+     "e": 14.561
+    },
+    {
+     "w": "a",
+     "s": 14.605,
+     "e": 14.649
+    },
+    {
+     "w": "long",
+     "s": 14.702,
+     "e": 14.913
+    },
+    {
+     "w": "stretch",
+     "s": 14.967,
+     "e": 15.352
+    },
+    {
+     "w": "of",
+     "s": 15.381,
+     "e": 15.439
+    },
+    {
+     "w": "highway",
+     "s": 15.505,
+     "e": 15.966
+    },
+    {
+     "w": "between",
+     "s": 16.021,
+     "e": 16.405
+    },
+    {
+     "w": "towns",
+     "s": 16.479,
+     "e": 16.844
+    },
+    {
+     "w": "out",
+     "s": 16.888,
+     "e": 17.02
+    },
+    {
+     "w": "here",
+     "s": 17.09,
+     "e": 17.371
+    },
+    {
+     "w": "\u2014",
+     "s": 17.634,
+     "e": 17.898
+    },
+    {
+     "w": "pull",
+     "s": 17.933,
+     "e": 18.073
+    },
+    {
+     "w": "over",
+     "s": 18.126,
+     "e": 18.337
+    },
+    {
+     "w": "for",
+     "s": 18.402,
+     "e": 18.6
+    },
+    {
+     "w": "a",
+     "s": 18.644,
+     "e": 18.688
+    },
+    {
+     "w": "break",
+     "s": 18.761,
+     "e": 19.127
+    },
+    {
+     "w": "if",
+     "s": 19.215,
+     "e": 19.39
+    },
+    {
+     "w": "you're",
+     "s": 19.412,
+     "e": 19.566
+    },
+    {
+     "w": "feeling",
+     "s": 19.61,
+     "e": 19.917
+    },
+    {
+     "w": "fatigued.",
+     "s": 20.005,
+     "e": 20.672
+    },
+    {
+     "w": "The",
+     "s": 21.005,
+     "e": 21.051
+    },
+    {
+     "w": "Lyell",
+     "s": 21.123,
+     "e": 21.41
+    },
+    {
+     "w": "Highway",
+     "s": 21.464,
+     "e": 21.842
+    },
+    {
+     "w": "is",
+     "s": 21.914,
+     "e": 22.058
+    },
+    {
+     "w": "the",
+     "s": 22.076,
+     "e": 22.13
+    },
+    {
+     "w": "main",
+     "s": 22.173,
+     "e": 22.346
+    },
+    {
+     "w": "route",
+     "s": 22.406,
+     "e": 22.706
+    },
+    {
+     "w": "in",
+     "s": 22.754,
+     "e": 22.85
+    },
+    {
+     "w": "and",
+     "s": 22.868,
+     "e": 22.922
+    },
+    {
+     "w": "out",
+     "s": 22.976,
+     "e": 23.138
+    },
+    {
+     "w": "of",
+     "s": 23.162,
+     "e": 23.21
+    },
+    {
+     "w": "Queenstown,",
+     "s": 23.257,
+     "e": 24.073
+    },
+    {
+     "w": "winding",
+     "s": 24.118,
+     "e": 24.433
+    },
+    {
+     "w": "through",
+     "s": 24.46,
+     "e": 24.649
+    },
+    {
+     "w": "some",
+     "s": 24.692,
+     "e": 24.865
+    },
+    {
+     "w": "steep",
+     "s": 24.937,
+     "e": 25.297
+    },
+    {
+     "w": "and",
+     "s": 25.333,
+     "e": 25.441
+    },
+    {
+     "w": "narrow",
+     "s": 25.492,
+     "e": 25.8
+    },
+    {
+     "w": "sections.",
+     "s": 25.872,
+     "e": 26.578
+    },
+    {
+     "w": "Please",
+     "s": 26.911,
+     "e": 27.118
+    },
+    {
+     "w": "stay",
+     "s": 27.15,
+     "e": 27.279
+    },
+    {
+     "w": "alert",
+     "s": 27.346,
+     "e": 27.682
+    },
+    {
+     "w": "out",
+     "s": 27.722,
+     "e": 27.843
+    },
+    {
+     "w": "there",
+     "s": 27.896,
+     "e": 28.165
+    },
+    {
+     "w": "and",
+     "s": 28.245,
+     "e": 28.487
+    },
+    {
+     "w": "stick",
+     "s": 28.554,
+     "e": 28.889
+    },
+    {
+     "w": "to",
+     "s": 28.943,
+     "e": 29.05
+    },
+    {
+     "w": "the",
+     "s": 29.07,
+     "e": 29.131
+    },
+    {
+     "w": "speed",
+     "s": 29.184,
+     "e": 29.453
+    },
+    {
+     "w": "limit.",
+     "s": 29.52,
+     "e": 30
+    }
+   ]
+  }
+ ]
+}

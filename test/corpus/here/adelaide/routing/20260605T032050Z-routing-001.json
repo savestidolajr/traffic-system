@@ -1,0 +1,66 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "routing",
+  "SessionId": "20260605T032050Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:51.6975483+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-35.050630,138.829800\u0026destination=-34.966840,138.572760\u0026departureTime=2026-06-05T03:20:51.4938617\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "routes": [
+        {
+          "id": "193af385-cf43-4452-b0b5-d2ac386083c3",
+          "sections": [
+            {
+              "id": "52ea6628-80f9-4020-9b77-520448f0c490",
+              "type": "vehicle",
+              "departure": {
+                "time": "2026-06-05T12:50:51\u002B09:30",
+                "place": {
+                  "type": "place",
+                  "location": {
+                    "lat": -35.0506301,
+                    "lng": 138.8297999
+                  },
+                  "originalLocation": {
+                    "lat": -35.0506301,
+                    "lng": 138.8297999
+                  }
+                }
+              },
+              "arrival": {
+                "time": "2026-06-05T13:21:35\u002B09:30",
+                "place": {
+                  "type": "place",
+                  "location": {
+                    "lat": -34.96684,
+                    "lng": 138.57276
+                  },
+                  "originalLocation": {
+                    "lat": -34.96684,
+                    "lng": 138.57276
+                  }
+                }
+              },
+              "summary": {
+                "duration": 1844,
+                "length": 34216,
+                "baseDuration": 1582,
+                "typicalDuration": 1735
+              },
+              "transport": {
+                "mode": "car"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

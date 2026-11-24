@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.7985195+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.06363,115.80056\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Terrene Ln, O\u0027Connor WA 6163, Australia",
+          "id": "here:af:streetsection:ssBv3itKH7Du1yavWRgTCA",
+          "resultType": "street",
+          "address": {
+            "label": "Terrene Ln, O\u0027Connor WA 6163, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "O\u0027Connor",
+            "street": "Terrene Ln",
+            "postalCode": "6163"
+          },
+          "position": {
+            "lat": -32.06363,
+            "lng": 115.80056
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.80056,
+            "south": -32.06439,
+            "east": 115.80141,
+            "north": -32.06363
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

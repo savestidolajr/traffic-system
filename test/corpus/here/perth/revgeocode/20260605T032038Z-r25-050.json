@@ -1,0 +1,55 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.9071071+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.87006,116.03928\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "11 Garnsworthy Grv, Stratton WA 6056, Australia",
+          "id": "here:af:streetsection:YdE3o8yCMzpjipdGtstISA:CggIBCC409-hARABGgIxMQ",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "11 Garnsworthy Grv, Stratton WA 6056, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Stratton",
+            "street": "Garnsworthy Grv",
+            "postalCode": "6056",
+            "houseNumber": "11"
+          },
+          "position": {
+            "lat": -31.87011,
+            "lng": 116.03911
+          },
+          "access": [
+            {
+              "lat": -31.87012,
+              "lng": 116.03927
+            }
+          ],
+          "distance": 7,
+          "mapView": {
+            "west": 116.03809,
+            "south": -31.87064,
+            "east": 116.03928,
+            "north": -31.86998
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

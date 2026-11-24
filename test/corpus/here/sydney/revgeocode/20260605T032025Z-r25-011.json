@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.0677196+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.67809,151.29858\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "44A Mona Vale Rd, Mona Vale NSW 2103, Australia",
+          "id": "here:af:streetsection:shHiLeieguz4s-ZsT6l30B:CggIBCCEjdaeARABGgM0NEE",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "44A Mona Vale Rd, Mona Vale NSW 2103, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Mona Vale",
+            "street": "Mona Vale Rd",
+            "postalCode": "2103",
+            "houseNumber": "44A"
+          },
+          "position": {
+            "lat": -33.67844,
+            "lng": 151.29872
+          },
+          "access": [
+            {
+              "lat": -33.67809,
+              "lng": 151.29873
+            }
+          ],
+          "distance": 14,
+          "mapView": {
+            "west": 151.28195,
+            "south": -33.68045,
+            "east": 151.30321,
+            "north": -33.67537
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

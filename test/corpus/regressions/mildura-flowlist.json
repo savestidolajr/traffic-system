@@ -1,0 +1,251 @@
+{
+  "Label": "mildura-flowlist",
+  "Reason": "flowing-well roads read as a long flat enumerated list; fuel recited robotically; weather not elaborated (no later/outlook)",
+  "SourceJobId": "62475adce79e4c77a03f138430a89d6b",
+  "OriginalScript": "Walker Road\u2019s shut both ways, citybound and outbound, with a long queue. Burns Street citybound\u2019s also dealing with construction. It\u2019s foggy and quite cool at 5 degrees. Running well, Werrimull North Road, Tapaulin Road, Fletchers Lake Road, Benetook Avenue, Paschendael Avenue, Brownport Road, Silver City Highway and Wentworth Street. Unleaded\u2019s cheapest at $1.59 a litre, with diesel from $1.78, average $1.68.",
+  "CapturedAtUtc": "2026-06-25T00:20:22+00:00",
+  "Snapshot": {
+    "TargetDurationSeconds": 30,
+    "Location": "Mildura",
+    "City": "Mildura",
+    "MarketId": "mildura",
+    "Content": {
+      "Traffic": true,
+      "Weather": true,
+      "Fuel": true,
+      "HasAnySource": true
+    },
+    "Corridors": [
+      {
+        "RoadName": "Burns Street",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 200,
+        "ImpactScore": 169.46,
+        "PrimaryType": "construction",
+        "Description": "roadworks citybound",
+        "Incidents": [
+          {
+            "Id": "3164554483528938899",
+            "Description": "Road construction at Wentworth Street",
+            "Severity": 1,
+            "Location": "Burns St",
+            "Type": "construction",
+            "LengthMeters": 232,
+            "FunctionalClass": 2,
+            "Latitude": null,
+            "Longitude": null,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": "At Wentworth Street - Road construction",
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": null
+          }
+        ],
+        "Suburb": null,
+        "Direction": "citybound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": null
+      },
+      {
+        "RoadName": "Walker Road",
+        "Severity": 3,
+        "FunctionalClass": 5,
+        "TotalLengthMeters": 3500,
+        "ImpactScore": 85,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure citybound",
+        "Incidents": [
+          {
+            "Id": "4317557250287830989",
+            "Description": "Road closed",
+            "Severity": 3,
+            "Location": "Walker Rd",
+            "Type": "roadClosure",
+            "LengthMeters": 3505,
+            "FunctionalClass": 5,
+            "Latitude": null,
+            "Longitude": null,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": "Closed",
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": null
+          }
+        ],
+        "Suburb": null,
+        "Direction": "citybound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": null
+      },
+      {
+        "RoadName": "Walker Road",
+        "Severity": 3,
+        "FunctionalClass": 5,
+        "TotalLengthMeters": 3500,
+        "ImpactScore": 85,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure outbound",
+        "Incidents": [
+          {
+            "Id": "2061294591887963194",
+            "Description": "Road closed",
+            "Severity": 3,
+            "Location": "Walker Rd",
+            "Type": "roadClosure",
+            "LengthMeters": 3505,
+            "FunctionalClass": 5,
+            "Latitude": null,
+            "Longitude": null,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "outbound",
+            "Summary": "Closed",
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": null
+          }
+        ],
+        "Suburb": null,
+        "Direction": "outbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": null
+      }
+    ],
+    "MonitoredRoutes": [],
+    "GoodRunRoads": [
+      "Werrimull North Road",
+      "Tapaulin Road",
+      "Fletchers Lake Road",
+      "Benetook Avenue",
+      "Paschendael Avenue",
+      "Brownport Road",
+      "Silver City Highway",
+      "Wentworth Street"
+    ],
+    "FlowPool": [
+      {
+        "RoadName": "Werrimull North Road",
+        "JamFactor": 0.3,
+        "LengthMeters": 50000,
+        "IsWeighted": false
+      },
+      {
+        "RoadName": "Tapaulin Road",
+        "JamFactor": 0.3,
+        "LengthMeters": 50000,
+        "IsWeighted": false
+      },
+      {
+        "RoadName": "Fletchers Lake Road",
+        "JamFactor": 0.7,
+        "LengthMeters": 50000,
+        "IsWeighted": false
+      },
+      {
+        "RoadName": "Benetook Avenue",
+        "JamFactor": 1.7,
+        "LengthMeters": 50000,
+        "IsWeighted": false
+      },
+      {
+        "RoadName": "Paschendael Avenue",
+        "JamFactor": 1.1,
+        "LengthMeters": 50000,
+        "IsWeighted": false
+      },
+      {
+        "RoadName": "Brownport Road",
+        "JamFactor": 1.5,
+        "LengthMeters": 50000,
+        "IsWeighted": false
+      },
+      {
+        "RoadName": "Silver City Highway",
+        "JamFactor": 0.4,
+        "LengthMeters": 50000,
+        "IsWeighted": false
+      },
+      {
+        "RoadName": "Wentworth Street",
+        "JamFactor": 0.5,
+        "LengthMeters": 50000,
+        "IsWeighted": false
+      }
+    ],
+    "Weather": {
+      "Conditions": "Fog. Quite cool.",
+      "TemperatureC": 5,
+      "WindDescription": null,
+      "PrecipitationProbabilityPercent": 18,
+      "Alerts": [],
+      "Outlook": null,
+      "HasMajorAlert": false
+    },
+    "Fuel": {
+      "Summaries": [
+        {
+          "FuelType": "Unleaded 91",
+          "MinPrice": 1.595,
+          "AveragePrice": 1.68,
+          "StationCount": 24,
+          "LatestModifiedUtc": "2026-06-24T23:31:05+00:00"
+        },
+        {
+          "FuelType": "Diesel",
+          "MinPrice": 1.785,
+          "AveragePrice": 1.88,
+          "StationCount": 18,
+          "LatestModifiedUtc": "2026-06-24T23:31:05+00:00"
+        }
+      ],
+      "HasPrices": true
+    },
+    "ConfiguredGoodRunRoads": [],
+    "IncidentChanges": null,
+    "Guidance": {
+      "Entries": [],
+      "DroppedCount": 0,
+      "Count": 0,
+      "HasEntries": false
+    },
+    "MarketFeedback": []
+  }
+}

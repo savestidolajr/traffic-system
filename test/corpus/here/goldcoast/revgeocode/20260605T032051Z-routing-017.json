@@ -1,0 +1,47 @@
+{
+  "Market": "goldcoast",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032051Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:52.311953+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.12221,153.29555\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "99, Neranwood QLD 4213, Australia",
+          "id": "here:af:streetsection:9NWoEsIvWVjOguZ7JmNyUD",
+          "resultType": "street",
+          "address": {
+            "label": "99, Neranwood QLD 4213, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Gold Coast",
+            "district": "Neranwood",
+            "street": "99",
+            "postalCode": "4213"
+          },
+          "position": {
+            "lat": -28.12221,
+            "lng": 153.29555
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 153.2891,
+            "south": -28.12851,
+            "east": 153.31834,
+            "north": -28.11364
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

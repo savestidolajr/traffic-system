@@ -1,0 +1,1852 @@
+{
+  "Label": "citation-crossing",
+  "Reason": "crossed citations",
+  "SourceJobId": "cb5ada8ae41e45e7a80161ba667f46c1",
+  "OriginalScript": "Now looking over Sydney. There\u0027s another closure on Sir Reginald Ansett Drive in Mascot. Partly cloudy, 15 degrees. A reminder that speed restrictions apply through the signed roadworks zones, take it easy through the cones. Please stay alert out there and stick to the speed limit. That\u0027s KIIS traffic and weather together, powered by",
+  "CapturedAtUtc": "2026-08-24T06:06:37.352382+00:00",
+  "Snapshot": {
+    "TargetDurationSeconds": 22,
+    "Location": "KIIS 90s",
+    "City": null,
+    "MarketId": "sydney",
+    "Content": {
+      "Traffic": true,
+      "Weather": false,
+      "Fuel": false,
+      "WeatherRequired": false,
+      "FuelRequired": false,
+      "HasAnySource": true,
+      "RequiresWeather": false,
+      "RequiresFuel": false
+    },
+    "Bookends": null,
+    "FillerStatements": [],
+    "SharedRules": null,
+    "RoadFeelPalette": null,
+    "EditorialSettings": {
+      "Scope": 0,
+      "ScopeId": "",
+      "DriveTimeHeadlineThresholdMinutes": null,
+      "MaxCorridors": null,
+      "MajorTierCap": null,
+      "ModerateTierCap": null,
+      "MinorTierCap": null,
+      "ContinuityNewCap": null,
+      "ContinuityOngoingCap": null,
+      "ContinuityClearedCap": null,
+      "ContinuityUpdatedCap": null,
+      "GuidanceMaxDirectives": null,
+      "CreatedAtUtc": "0001-01-01T00:00:00",
+      "UpdatedAtUtc": "0001-01-01T00:00:00",
+      "UpdatedBy": null,
+      "MaxSlowDownFactor": null,
+      "MaxSpeedUpFactor": null,
+      "MaxSilencePadSeconds": null,
+      "MaxSafeOverrunTrimSeconds": null
+    },
+    "CuratedCorridorRoads": null,
+    "CuratedGoodRunRoads": null,
+    "ExcludedIncidentKeys": null,
+    "WriterPrompt": null,
+    "FillOrder": [
+      "Weather",
+      "Fuel",
+      "MinorTraffic",
+      "Filler"
+    ],
+    "Corridors": [
+      {
+        "RoadName": "Warringah Freeway",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 500,
+        "ImpactScore": 399.75,
+        "PrimaryType": "construction",
+        "Description": "road closure eastbound",
+        "Incidents": [
+          {
+            "Id": "3414008362148100287",
+            "Description": "Closed",
+            "Severity": 1,
+            "Location": "Warringah Fwy",
+            "Type": "construction",
+            "LengthMeters": 451,
+            "FunctionalClass": 1,
+            "Latitude": -33.82718,
+            "Longitude": 151.21387,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "eastbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.82718,
+                "Lng": 151.21387
+              },
+              {
+                "Lat": -33.82706,
+                "Lng": 151.21376
+              },
+              {
+                "Lat": -33.82584,
+                "Lng": 151.21289
+              },
+              {
+                "Lat": -33.8254,
+                "Lng": 151.21243
+              },
+              {
+                "Lat": -33.8254,
+                "Lng": 151.21243
+              },
+              {
+                "Lat": -33.82517,
+                "Lng": 151.21215
+              },
+              {
+                "Lat": -33.82503,
+                "Lng": 151.21195
+              },
+              {
+                "Lat": -33.82503,
+                "Lng": 151.21195
+              },
+              {
+                "Lat": -33.8248,
+                "Lng": 151.21156
+              },
+              {
+                "Lat": -33.82457,
+                "Lng": 151.21105
+              },
+              {
+                "Lat": -33.82457,
+                "Lng": 151.21105
+              },
+              {
+                "Lat": -33.82444,
+                "Lng": 151.21069
+              },
+              {
+                "Lat": -33.82444,
+                "Lng": 151.21047
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-08-24T04:49:21+00:00",
+            "OriginalId": "3414008362148100287",
+            "HereFunctionalClass": 5,
+            "Suburb": null,
+            "HereSegmentSpans": null,
+            "RoadNameVerified": false,
+            "StartTimeUtc": "2026-08-24T04:49:21+00:00",
+            "EndTimeUtc": "2026-08-25T04:49:21+00:00",
+            "Codes": null,
+            "ClosedAsset": null,
+            "SegmentIsRamp": false,
+            "DirectionSource": 0,
+            "Fact": null,
+            "WithheldReason": null,
+            "AuthorityPriority": null,
+            "Sources": [
+              "here",
+              "livetraffic-nsw"
+            ],
+            "ProseFields": null,
+            "SourceRecordIdentities": [
+              {
+                "SourceId": "here",
+                "RecordId": "3414008362148100287",
+                "OriginalRecordId": "3414008362148100287"
+              },
+              {
+                "SourceId": "livetraffic-nsw",
+                "RecordId": "214849",
+                "OriginalRecordId": null
+              }
+            ]
+          }
+        ],
+        "Suburb": "Cammeray",
+        "Direction": "eastbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here",
+          "livetraffic-nsw"
+        ],
+        "OfficialHeadline": "SCHEDULED ROADWORK Warringah Freeway Upgrade/Western Harbour Tunnel Project",
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": [
+          {
+            "SourceId": "livetraffic-nsw",
+            "Headline": "SCHEDULED ROADWORK Warringah Freeway Upgrade/Western Harbour Tunnel Project",
+            "IsIncidentClass": false,
+            "RoadName": "Warringah Freeway Southbound",
+            "CrossStreet": "",
+            "Suburb": "Cammeray to North Sydney",
+            "Direction": null,
+            "Description": "Plan your journey",
+            "StartTime": "2023-12-31T13:00:00+00:00",
+            "EndTime": "2026-12-31T08:21:00+00:00",
+            "PublishedTime": "2024-11-20T09:13:08+00:00",
+            "ShapePointCount": 1,
+            "MatchBasis": "road-name",
+            "AuthorityPriority": null,
+            "Category": "SCHEDULED ROADWORK",
+            "SubCategory": "null",
+            "IsStateRoad": true,
+            "IsPlanned": true,
+            "AdviceTags": [
+              "Plan your journey",
+              "Exercise caution",
+              "Expect delays"
+            ],
+            "ImpactType": null,
+            "ImpactSubtype": null,
+            "QualitativeDelay": null,
+            "SpeedLimitKph": null,
+            "LastUpdated": "2026-08-12T09:44:11.228+00:00",
+            "SourceRecordId": "214849",
+            "LanesClosed": null,
+            "LanesTotal": null
+          }
+        ],
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 1,
+        "VoicedExtentMeters": 451
+      },
+      {
+        "RoadName": "M5",
+        "Severity": 2,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 3600,
+        "ImpactScore": 240.5,
+        "PrimaryType": "congestion",
+        "Description": "heavy congestion",
+        "Incidents": [],
+        "Suburb": "Milperra",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 13,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 13,
+        "VoicedExtentMeters": 3600
+      },
+      {
+        "RoadName": "Mitchell Road",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 300,
+        "ImpactScore": 217.22163942753457,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure",
+        "Incidents": [
+          {
+            "Id": "2374869809751901476",
+            "Description": "Between Sydney Park Road and Maddox Street - Closed",
+            "Severity": 2,
+            "Location": "Mitchell Rd",
+            "Type": "roadClosure",
+            "LengthMeters": 303,
+            "FunctionalClass": 3,
+            "Latitude": -33.90705,
+            "Longitude": 151.18747,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.90705,
+                "Lng": 151.18747
+              },
+              {
+                "Lat": -33.90701,
+                "Lng": 151.18755
+              },
+              {
+                "Lat": -33.90701,
+                "Lng": 151.18755
+              },
+              {
+                "Lat": -33.90684,
+                "Lng": 151.18772
+              },
+              {
+                "Lat": -33.90684,
+                "Lng": 151.18772
+              },
+              {
+                "Lat": -33.9067,
+                "Lng": 151.18786
+              },
+              {
+                "Lat": -33.9067,
+                "Lng": 151.18786
+              },
+              {
+                "Lat": -33.90662,
+                "Lng": 151.18794
+              },
+              {
+                "Lat": -33.90662,
+                "Lng": 151.18794
+              },
+              {
+                "Lat": -33.90645,
+                "Lng": 151.18809
+              },
+              {
+                "Lat": -33.90645,
+                "Lng": 151.18809
+              },
+              {
+                "Lat": -33.905,
+                "Lng": 151.18944
+              },
+              {
+                "Lat": -33.905,
+                "Lng": 151.18944
+              },
+              {
+                "Lat": -33.90491,
+                "Lng": 151.18952
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-08-24T04:57:22+00:00",
+            "OriginalId": "1337132862205035110",
+            "HereFunctionalClass": 5,
+            "Suburb": null,
+            "HereSegmentSpans": null,
+            "RoadNameVerified": false,
+            "StartTimeUtc": "2026-08-24T04:33:22+00:00",
+            "EndTimeUtc": "2026-08-25T04:33:22+00:00",
+            "Codes": null,
+            "ClosedAsset": null,
+            "SegmentIsRamp": false,
+            "DirectionSource": 0,
+            "Fact": null,
+            "WithheldReason": null,
+            "AuthorityPriority": null,
+            "Sources": [
+              "here"
+            ],
+            "ProseFields": null,
+            "SourceRecordIdentities": [
+              {
+                "SourceId": "here",
+                "RecordId": "2374869809751901476",
+                "OriginalRecordId": "1337132862205035110"
+              }
+            ]
+          }
+        ],
+        "Suburb": "Erskineville",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 2,
+        "VoicedExtentMeters": 303
+      },
+      {
+        "RoadName": "M4",
+        "Severity": 3,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 2300,
+        "ImpactScore": 214.5,
+        "PrimaryType": "congestion",
+        "Description": "slow-moving",
+        "Incidents": [],
+        "Suburb": "Homebush",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 9,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 9,
+        "VoicedExtentMeters": 2300
+      },
+      {
+        "RoadName": "Sir Reginald Ansett Drive",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 100,
+        "ImpactScore": 211.45365019512084,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure",
+        "Incidents": [
+          {
+            "Id": "527587170992833644",
+            "Description": "Closed",
+            "Severity": 2,
+            "Location": "Sir Reginald Ansett Dr",
+            "Type": "roadClosure",
+            "LengthMeters": 125,
+            "FunctionalClass": 3,
+            "Latitude": -33.93248,
+            "Longitude": 151.18608,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.93248,
+                "Lng": 151.18608
+              },
+              {
+                "Lat": -33.93284,
+                "Lng": 151.186
+              },
+              {
+                "Lat": -33.93284,
+                "Lng": 151.186
+              },
+              {
+                "Lat": -33.93302,
+                "Lng": 151.18597
+              },
+              {
+                "Lat": -33.93302,
+                "Lng": 151.18597
+              },
+              {
+                "Lat": -33.93331,
+                "Lng": 151.18594
+              },
+              {
+                "Lat": -33.93331,
+                "Lng": 151.18594
+              },
+              {
+                "Lat": -33.93347,
+                "Lng": 151.18593
+              },
+              {
+                "Lat": -33.93359,
+                "Lng": 151.18589
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-08-24T04:28:21+00:00",
+            "OriginalId": "527587170992833644",
+            "HereFunctionalClass": 5,
+            "Suburb": null,
+            "HereSegmentSpans": null,
+            "RoadNameVerified": false,
+            "StartTimeUtc": "2026-08-24T04:28:21+00:00",
+            "EndTimeUtc": "2026-08-25T04:28:21+00:00",
+            "Codes": null,
+            "ClosedAsset": null,
+            "SegmentIsRamp": false,
+            "DirectionSource": 0,
+            "Fact": null,
+            "WithheldReason": null,
+            "AuthorityPriority": null,
+            "Sources": [
+              "here"
+            ],
+            "ProseFields": null,
+            "SourceRecordIdentities": [
+              {
+                "SourceId": "here",
+                "RecordId": "527587170992833644",
+                "OriginalRecordId": "527587170992833644"
+              }
+            ]
+          }
+        ],
+        "Suburb": "Mascot",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": null,
+        "VoicedExtentMeters": 125
+      },
+      {
+        "RoadName": "Church Street",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 700,
+        "ImpactScore": 209.26466250649042,
+        "PrimaryType": "construction",
+        "Description": "roadworks northbound",
+        "Incidents": [
+          {
+            "Id": "4021163310322524631",
+            "Description": "Between M4 Western Motorway and Church Street - Roadworks",
+            "Severity": 2,
+            "Location": "Church St",
+            "Type": "construction",
+            "LengthMeters": 639,
+            "FunctionalClass": 3,
+            "Latitude": -33.8259,
+            "Longitude": 151.00467,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "northbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.8259,
+                "Lng": 151.00467
+              },
+              {
+                "Lat": -33.82524,
+                "Lng": 151.00459
+              },
+              {
+                "Lat": -33.82494,
+                "Lng": 151.00455
+              },
+              {
+                "Lat": -33.82494,
+                "Lng": 151.00455
+              },
+              {
+                "Lat": -33.82478,
+                "Lng": 151.00454
+              },
+              {
+                "Lat": -33.82427,
+                "Lng": 151.00447
+              },
+              {
+                "Lat": -33.82396,
+                "Lng": 151.00444
+              },
+              {
+                "Lat": -33.82396,
+                "Lng": 151.00444
+              },
+              {
+                "Lat": -33.82307,
+                "Lng": 151.00433
+              },
+              {
+                "Lat": -33.82243,
+                "Lng": 151.00424
+              },
+              {
+                "Lat": -33.82192,
+                "Lng": 151.00415
+              },
+              {
+                "Lat": -33.82192,
+                "Lng": 151.00415
+              },
+              {
+                "Lat": -33.82162,
+                "Lng": 151.00409
+              },
+              {
+                "Lat": -33.82135,
+                "Lng": 151.00405
+              },
+              {
+                "Lat": -33.82048,
+                "Lng": 151.00396
+              },
+              {
+                "Lat": -33.82019,
+                "Lng": 151.00397
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-08-18T13:24:57+00:00",
+            "OriginalId": "4021163310322524631",
+            "HereFunctionalClass": 5,
+            "Suburb": null,
+            "HereSegmentSpans": null,
+            "RoadNameVerified": false,
+            "StartTimeUtc": "2026-08-12T16:52:00+00:00",
+            "EndTimeUtc": "2026-09-17T19:00:00+00:00",
+            "Codes": null,
+            "ClosedAsset": null,
+            "SegmentIsRamp": false,
+            "DirectionSource": 0,
+            "Fact": null,
+            "WithheldReason": null,
+            "AuthorityPriority": null,
+            "Sources": [
+              "here",
+              "livetraffic-nsw"
+            ],
+            "ProseFields": null,
+            "SourceRecordIdentities": [
+              {
+                "SourceId": "here",
+                "RecordId": "4021163310322524631",
+                "OriginalRecordId": "4021163310322524631"
+              },
+              {
+                "SourceId": "livetraffic-nsw",
+                "RecordId": "272218",
+                "OriginalRecordId": null
+              }
+            ]
+          },
+          {
+            "Id": "2811382038848349350",
+            "Description": "Roadworks",
+            "Severity": 3,
+            "Location": "Church St",
+            "Type": "construction",
+            "LengthMeters": 20,
+            "FunctionalClass": 4,
+            "Latitude": -33.86168,
+            "Longitude": 151.04229,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.86168,
+                "Lng": 151.04229
+              },
+              {
+                "Lat": -33.86154,
+                "Lng": 151.04216
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-08-24T02:00:10+00:00",
+            "OriginalId": "546436053343998377",
+            "HereFunctionalClass": 5,
+            "Suburb": null,
+            "HereSegmentSpans": null,
+            "RoadNameVerified": false,
+            "StartTimeUtc": "2026-08-24T02:00:00+00:00",
+            "EndTimeUtc": "2026-08-24T19:00:00+00:00",
+            "Codes": null,
+            "ClosedAsset": null,
+            "SegmentIsRamp": false,
+            "DirectionSource": 0,
+            "Fact": null,
+            "WithheldReason": null,
+            "AuthorityPriority": null,
+            "Sources": [
+              "here"
+            ],
+            "ProseFields": null,
+            "SourceRecordIdentities": [
+              {
+                "SourceId": "here",
+                "RecordId": "2811382038848349350",
+                "OriginalRecordId": "546436053343998377"
+              }
+            ]
+          },
+          {
+            "Id": "418437814960187338",
+            "Description": "Roadworks",
+            "Severity": 3,
+            "Location": "Church St",
+            "Type": "construction",
+            "LengthMeters": 20,
+            "FunctionalClass": 4,
+            "Latitude": -33.86154,
+            "Longitude": 151.04216,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.86154,
+                "Lng": 151.04216
+              },
+              {
+                "Lat": -33.86168,
+                "Lng": 151.04229
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-08-24T02:00:10+00:00",
+            "OriginalId": "1460628680443623881",
+            "HereFunctionalClass": 5,
+            "Suburb": null,
+            "HereSegmentSpans": null,
+            "RoadNameVerified": false,
+            "StartTimeUtc": "2026-08-24T02:00:00+00:00",
+            "EndTimeUtc": "2026-08-24T19:00:00+00:00",
+            "Codes": null,
+            "ClosedAsset": null,
+            "SegmentIsRamp": false,
+            "DirectionSource": 0,
+            "Fact": null,
+            "WithheldReason": null,
+            "AuthorityPriority": null,
+            "Sources": [
+              "here"
+            ],
+            "ProseFields": null,
+            "SourceRecordIdentities": [
+              {
+                "SourceId": "here",
+                "RecordId": "418437814960187338",
+                "OriginalRecordId": "1460628680443623881"
+              }
+            ]
+          }
+        ],
+        "Suburb": "Granville",
+        "Direction": "northbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 4,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here",
+          "livetraffic-nsw"
+        ],
+        "OfficialHeadline": "SCHEDULED ROADWORK Resurfacing",
+        "OfficialCrossStreet": "Great Western Highway",
+        "OfficialEvidences": [
+          {
+            "SourceId": "livetraffic-nsw",
+            "Headline": "SCHEDULED ROADWORK Resurfacing",
+            "IsIncidentClass": false,
+            "RoadName": "Church Street",
+            "CrossStreet": "Great Western Highway",
+            "Suburb": "Parramatta",
+            "Direction": null,
+            "Description": "Allow extra travel time",
+            "StartTime": "2026-06-17T12:00:00+00:00",
+            "EndTime": "2026-09-17T19:15:00+00:00",
+            "PublishedTime": "2026-04-24T10:26:46+00:00",
+            "ShapePointCount": 1,
+            "MatchBasis": "road-name",
+            "AuthorityPriority": null,
+            "Category": "SCHEDULED ROADWORK",
+            "SubCategory": "Resurfacing",
+            "IsStateRoad": true,
+            "IsPlanned": true,
+            "AdviceTags": [
+              "Allow extra travel time",
+              "Check signage",
+              "Reduced speed limit"
+            ],
+            "ImpactType": "ROAD_CLOSURE",
+            "ImpactSubtype": "Affected",
+            "QualitativeDelay": null,
+            "SpeedLimitKph": 40,
+            "LastUpdated": "2026-08-02T23:32:31.964+00:00",
+            "SourceRecordId": "272218",
+            "LanesClosed": null,
+            "LanesTotal": null
+          }
+        ],
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 4,
+        "VoicedExtentMeters": 639
+      },
+      {
+        "RoadName": "Dacey Avenue",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 300,
+        "ImpactScore": 203.9143285588895,
+        "PrimaryType": "construction",
+        "Description": "roadworks eastbound",
+        "Incidents": [
+          {
+            "Id": "1573868983957466358",
+            "Description": "At Anzac Parade - Roadworks",
+            "Severity": 2,
+            "Location": "Dacey Ave",
+            "Type": "construction",
+            "LengthMeters": 153,
+            "FunctionalClass": 3,
+            "Latitude": -33.90107,
+            "Longitude": 151.21735,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "eastbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.90107,
+                "Lng": 151.21735
+              },
+              {
+                "Lat": -33.90119,
+                "Lng": 151.21902
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-08-24T02:00:10+00:00",
+            "OriginalId": "3984039885320323215",
+            "HereFunctionalClass": 5,
+            "Suburb": null,
+            "HereSegmentSpans": null,
+            "RoadNameVerified": false,
+            "StartTimeUtc": "2026-08-24T02:00:00+00:00",
+            "EndTimeUtc": "2026-08-24T19:00:00+00:00",
+            "Codes": null,
+            "ClosedAsset": null,
+            "SegmentIsRamp": false,
+            "DirectionSource": 0,
+            "Fact": null,
+            "WithheldReason": null,
+            "AuthorityPriority": null,
+            "Sources": [
+              "here",
+              "livetraffic-nsw"
+            ],
+            "ProseFields": null,
+            "SourceRecordIdentities": [
+              {
+                "SourceId": "here",
+                "RecordId": "1573868983957466358",
+                "OriginalRecordId": "3984039885320323215"
+              },
+              {
+                "SourceId": "livetraffic-nsw",
+                "RecordId": "284411",
+                "OriginalRecordId": null
+              }
+            ]
+          },
+          {
+            "Id": "1470463290143291074",
+            "Description": "At Supa Centre - Roadworks",
+            "Severity": 2,
+            "Location": "Dacey Ave",
+            "Type": "construction",
+            "LengthMeters": 153,
+            "FunctionalClass": 3,
+            "Latitude": -33.90119,
+            "Longitude": 151.21902,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "eastbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.90119,
+                "Lng": 151.21902
+              },
+              {
+                "Lat": -33.90107,
+                "Lng": 151.21735
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-08-24T02:00:10+00:00",
+            "OriginalId": "3312664885097304656",
+            "HereFunctionalClass": 5,
+            "Suburb": null,
+            "HereSegmentSpans": null,
+            "RoadNameVerified": false,
+            "StartTimeUtc": "2026-08-24T02:00:00+00:00",
+            "EndTimeUtc": "2026-08-24T19:00:00+00:00",
+            "Codes": null,
+            "ClosedAsset": null,
+            "SegmentIsRamp": false,
+            "DirectionSource": 0,
+            "Fact": null,
+            "WithheldReason": null,
+            "AuthorityPriority": null,
+            "Sources": [
+              "here"
+            ],
+            "ProseFields": null,
+            "SourceRecordIdentities": [
+              {
+                "SourceId": "here",
+                "RecordId": "1470463290143291074",
+                "OriginalRecordId": "3312664885097304656"
+              }
+            ]
+          }
+        ],
+        "Suburb": "Moore Park",
+        "Direction": "eastbound",
+        "Extent": null,
+        "DriveTimeMinutes": 1,
+        "NormalDriveTimeMinutes": 1,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here",
+          "livetraffic-nsw"
+        ],
+        "OfficialHeadline": "SCHEDULED ROADWORK",
+        "OfficialCrossStreet": "Lachlan Street",
+        "OfficialEvidences": [
+          {
+            "SourceId": "livetraffic-nsw",
+            "Headline": "SCHEDULED ROADWORK",
+            "IsIncidentClass": false,
+            "RoadName": "Dacey Avenue",
+            "CrossStreet": "Lachlan Street",
+            "Suburb": "Waterloo to Kensington",
+            "Direction": null,
+            "Description": "Reduced speed limit",
+            "StartTime": "2026-08-21T12:00:00+00:00",
+            "EndTime": "2026-08-27T19:15:00+00:00",
+            "PublishedTime": "2026-08-11T12:48:52+00:00",
+            "ShapePointCount": 1,
+            "MatchBasis": "road-name",
+            "AuthorityPriority": null,
+            "Category": "SCHEDULED ROADWORK",
+            "SubCategory": "null",
+            "IsStateRoad": true,
+            "IsPlanned": true,
+            "AdviceTags": [
+              "Reduced speed limit",
+              "Allow extra travel time"
+            ],
+            "ImpactType": "ROAD_CLOSURE",
+            "ImpactSubtype": "Affected",
+            "QualitativeDelay": null,
+            "SpeedLimitKph": 40,
+            "LastUpdated": "2026-08-19T19:45:01.588+00:00",
+            "SourceRecordId": "284411",
+            "LanesClosed": null,
+            "LanesTotal": null
+          }
+        ],
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 0,
+        "VoicedExtentMeters": 153
+      },
+      {
+        "RoadName": "Windsor Rd",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 1200,
+        "ImpactScore": 185,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": "Rouse Hill",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 17,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 17,
+        "VoicedExtentMeters": 1200
+      },
+      {
+        "RoadName": "Parker St",
+        "Severity": 2,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 800,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "heavy congestion",
+        "Incidents": [],
+        "Suburb": "Penrith",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 8,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 8,
+        "VoicedExtentMeters": 800
+      },
+      {
+        "RoadName": "Garfield Rd W",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 3500,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": "Marsden Park",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 9,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 9,
+        "VoicedExtentMeters": 3500
+      },
+      {
+        "RoadName": "Copeland St",
+        "Severity": 2,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 500,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "heavy congestion",
+        "Incidents": [],
+        "Suburb": "Liverpool",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 8,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 8,
+        "VoicedExtentMeters": 500
+      },
+      {
+        "RoadName": "Cowpasture Rd",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 2200,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": "Cecil Hills",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 12,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 12,
+        "VoicedExtentMeters": 2200
+      },
+      {
+        "RoadName": "Parramatta Rd",
+        "Severity": 2,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 700,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "heavy congestion",
+        "Incidents": [],
+        "Suburb": "Petersham",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 12,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 12,
+        "VoicedExtentMeters": 700
+      },
+      {
+        "RoadName": "Glenhaven Rd",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 4700,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 8,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 8,
+        "VoicedExtentMeters": 4700
+      },
+      {
+        "RoadName": "Pacific Hwy",
+        "Severity": 3,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 600,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "slow-moving",
+        "Incidents": [],
+        "Suburb": "Pymble",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 7,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here",
+          "livetraffic-nsw"
+        ],
+        "OfficialHeadline": "SCHEDULED ROADWORK Bridge work",
+        "OfficialCrossStreet": "Livingstone Avenue",
+        "OfficialEvidences": [
+          {
+            "SourceId": "livetraffic-nsw",
+            "Headline": "SCHEDULED ROADWORK Bridge work",
+            "IsIncidentClass": false,
+            "RoadName": "Pacific Highway",
+            "CrossStreet": "Livingstone Avenue",
+            "Suburb": "Pymble to Gordon",
+            "Direction": null,
+            "Description": "Allow extra travel time",
+            "StartTime": "2026-08-06T12:30:00+00:00",
+            "EndTime": "2026-08-31T19:15:00+00:00",
+            "PublishedTime": "2026-08-06T08:59:49+00:00",
+            "ShapePointCount": 1,
+            "MatchBasis": "road-name",
+            "AuthorityPriority": null,
+            "Category": "SCHEDULED ROADWORK",
+            "SubCategory": "Bridge work",
+            "IsStateRoad": true,
+            "IsPlanned": true,
+            "AdviceTags": [
+              "Allow extra travel time",
+              "Check signage",
+              "Reduced speed limit"
+            ],
+            "ImpactType": "ROAD_CLOSURE",
+            "ImpactSubtype": "Affected",
+            "QualitativeDelay": null,
+            "SpeedLimitKph": 40,
+            "LastUpdated": "2026-08-06T08:59:49.605+00:00",
+            "SourceRecordId": "283741",
+            "LanesClosed": null,
+            "LanesTotal": null
+          }
+        ],
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 7,
+        "VoicedExtentMeters": 600
+      },
+      {
+        "RoadName": "Centenary Dr",
+        "Severity": 2,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 900,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "heavy congestion",
+        "Incidents": [],
+        "Suburb": "Strathfield",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 8,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 8,
+        "VoicedExtentMeters": 900
+      },
+      {
+        "RoadName": "Lyons Rd",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 500,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": "Russell Lea",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 7,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 7,
+        "VoicedExtentMeters": 500
+      },
+      {
+        "RoadName": "Military Rd",
+        "Severity": 2,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 600,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "heavy congestion",
+        "Incidents": [],
+        "Suburb": "Mosman",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 11,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 11,
+        "VoicedExtentMeters": 600
+      },
+      {
+        "RoadName": "Old South Head Rd",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 500,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": "North Bondi",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 15,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 15,
+        "VoicedExtentMeters": 500
+      },
+      {
+        "RoadName": "Lyons Road",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 0,
+        "ImpactScore": 160,
+        "PrimaryType": "accident",
+        "Description": "crash",
+        "Incidents": [
+          {
+            "Id": "official-livetraffic-nsw-285816",
+            "Description": "CRASH 2 cars",
+            "Severity": 1,
+            "Location": "Lyons Road",
+            "Type": "accident",
+            "LengthMeters": 0,
+            "FunctionalClass": 2,
+            "Latitude": -33.859732,
+            "Longitude": 151.142095,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": null,
+            "RoadClosed": false,
+            "EntryTimeUtc": null,
+            "OriginalId": "",
+            "HereFunctionalClass": 5,
+            "Suburb": null,
+            "HereSegmentSpans": null,
+            "RoadNameVerified": false,
+            "StartTimeUtc": null,
+            "EndTimeUtc": null,
+            "Codes": null,
+            "ClosedAsset": null,
+            "SegmentIsRamp": false,
+            "DirectionSource": 0,
+            "Fact": null,
+            "WithheldReason": null,
+            "AuthorityPriority": null,
+            "Sources": [
+              "livetraffic-nsw"
+            ],
+            "ProseFields": null,
+            "SourceRecordIdentities": [
+              {
+                "SourceId": "livetraffic-nsw",
+                "RecordId": "285816",
+                "OriginalRecordId": null
+              }
+            ]
+          }
+        ],
+        "Suburb": "Russell Lea",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "livetraffic-nsw"
+        ],
+        "OfficialHeadline": "CRASH 2 cars",
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": [
+          {
+            "SourceId": "livetraffic-nsw",
+            "Headline": "CRASH 2 cars",
+            "IsIncidentClass": true,
+            "RoadName": "Lyons Road",
+            "CrossStreet": "Russell Street",
+            "Suburb": "Russell Lea",
+            "Direction": null,
+            "Description": "Reduce your speed",
+            "StartTime": null,
+            "EndTime": null,
+            "PublishedTime": "2026-08-24T05:38:50+00:00",
+            "ShapePointCount": 1,
+            "MatchBasis": "official-only",
+            "AuthorityPriority": null,
+            "Category": "CRASH",
+            "SubCategory": "2 cars",
+            "IsStateRoad": true,
+            "IsPlanned": false,
+            "AdviceTags": [
+              "Reduce your speed",
+              "Prepare to merge"
+            ],
+            "ImpactType": null,
+            "ImpactSubtype": null,
+            "QualitativeDelay": null,
+            "SpeedLimitKph": null,
+            "LastUpdated": "2026-08-24T05:38:50.748+00:00",
+            "SourceRecordId": "285816",
+            "LanesClosed": 1,
+            "LanesTotal": 2
+          }
+        ],
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": null,
+        "VoicedExtentMeters": 0
+      },
+      {
+        "RoadName": "Mamre Road",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 500,
+        "ImpactScore": 10,
+        "PrimaryType": "construction",
+        "Description": "road closure",
+        "Incidents": [
+          {
+            "Id": "1603459432390544747",
+            "Description": "At Solander Drive - Closed",
+            "Severity": 2,
+            "Location": "Mamre Rd",
+            "Type": "construction",
+            "LengthMeters": 496,
+            "FunctionalClass": 3,
+            "Latitude": -33.80254,
+            "Longitude": 150.76875,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": null,
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.80254,
+                "Lng": 150.76875
+              },
+              {
+                "Lat": -33.80216,
+                "Lng": 150.76857
+              },
+              {
+                "Lat": -33.80216,
+                "Lng": 150.76857
+              },
+              {
+                "Lat": -33.80133,
+                "Lng": 150.76832
+              },
+              {
+                "Lat": -33.80133,
+                "Lng": 150.76832
+              },
+              {
+                "Lat": -33.80106,
+                "Lng": 150.76828
+              },
+              {
+                "Lat": -33.80106,
+                "Lng": 150.76828
+              },
+              {
+                "Lat": -33.80099,
+                "Lng": 150.76827
+              },
+              {
+                "Lat": -33.80069,
+                "Lng": 150.76825
+              },
+              {
+                "Lat": -33.80049,
+                "Lng": 150.76826
+              },
+              {
+                "Lat": -33.80011,
+                "Lng": 150.7683
+              },
+              {
+                "Lat": -33.79993,
+                "Lng": 150.76834
+              },
+              {
+                "Lat": -33.79953,
+                "Lng": 150.7684
+              },
+              {
+                "Lat": -33.79879,
+                "Lng": 150.76854
+              },
+              {
+                "Lat": -33.79879,
+                "Lng": 150.76854
+              },
+              {
+                "Lat": -33.79815,
+                "Lng": 150.76866
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-08-24T05:13:22+00:00",
+            "OriginalId": "1603459432390544747",
+            "HereFunctionalClass": 5,
+            "Suburb": null,
+            "HereSegmentSpans": null,
+            "RoadNameVerified": false,
+            "StartTimeUtc": "2026-08-24T05:13:22+00:00",
+            "EndTimeUtc": "2026-08-25T05:13:22+00:00",
+            "Codes": null,
+            "ClosedAsset": null,
+            "SegmentIsRamp": false,
+            "DirectionSource": 0,
+            "Fact": null,
+            "WithheldReason": null,
+            "AuthorityPriority": null,
+            "Sources": [
+              "here"
+            ],
+            "ProseFields": null,
+            "SourceRecordIdentities": [
+              {
+                "SourceId": "here",
+                "RecordId": "1603459432390544747",
+                "OriginalRecordId": "1603459432390544747"
+              }
+            ]
+          }
+        ],
+        "Suburb": "St Clair",
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 7,
+        "PriorityBoosted": false,
+        "BaseScore": null,
+        "BoostAmount": null,
+        "Detour": null,
+        "MaxObservationMeters": null,
+        "HotSpotMeters": null,
+        "Sources": [
+          "here"
+        ],
+        "OfficialHeadline": null,
+        "OfficialCrossStreet": null,
+        "OfficialEvidences": null,
+        "CorroboratingSourceCount": 1,
+        "CorroborationCount": 1,
+        "DelayMinutes": 7,
+        "VoicedExtentMeters": 496
+      }
+    ],
+    "MonitoredRoutes": [
+      {
+        "Name": "the M4 from Parramatta to the city",
+        "Origin": {
+          "Lat": -33.8148,
+          "Lng": 151.0017
+        },
+        "Destination": {
+          "Lat": -33.8688,
+          "Lng": 151.2093
+        },
+        "DriveTimeMinutes": 30,
+        "NormalDriveTimeMinutes": 29,
+        "DistanceKm": 23.946,
+        "DelayMinutes": 1
+      },
+      {
+        "Name": "the Warringah Freeway into the city",
+        "Origin": {
+          "Lat": -33.8,
+          "Lng": 151.21
+        },
+        "Destination": {
+          "Lat": -33.8688,
+          "Lng": 151.2093
+        },
+        "DriveTimeMinutes": 15,
+        "NormalDriveTimeMinutes": 15,
+        "DistanceKm": 9.247,
+        "DelayMinutes": 0
+      }
+    ],
+    "GoodRunRoads": [],
+    "FlowPool": [],
+    "Weather": null,
+    "Fuel": null,
+    "IncidentChanges": null,
+    "Guidance": {
+      "Entries": [],
+      "DroppedCount": 0,
+      "Count": 0,
+      "HasEntries": false
+    },
+    "EditedIncidents": [],
+    "FutureLessons": []
+  }
+}

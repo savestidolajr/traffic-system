@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:33.8799305+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.7267,144.70893\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "139 Sinclairs Rd, Deanside VIC 3336, Australia",
+          "id": "here:af:streetsection:zkN1JEEcpmIt6IwYlUiLzB:CggIBCCi1qXaAxABGgMxMzk",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "139 Sinclairs Rd, Deanside VIC 3336, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Deanside",
+            "district": "Deanside",
+            "street": "Sinclairs Rd",
+            "postalCode": "3336",
+            "houseNumber": "139"
+          },
+          "position": {
+            "lat": -37.72678,
+            "lng": 144.70918
+          },
+          "access": [
+            {
+              "lat": -37.72675,
+              "lng": 144.70892
+            }
+          ],
+          "distance": 6,
+          "mapView": {
+            "west": 144.7055,
+            "south": -37.74661,
+            "east": 144.71051,
+            "north": -37.71884
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

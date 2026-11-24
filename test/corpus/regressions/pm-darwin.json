@@ -1,0 +1,58 @@
+{
+  "Label": "pm-darwin",
+  "Reason": "true sample wave 3 (afternoon): traffic\u002Bweather\u002Bfuel",
+  "SourceJobId": "90c10518233d4f87860cabdf953c697c",
+  "OriginalScript": "",
+  "CapturedAtUtc": "2026-07-10T04:18:54.397279+00:00",
+  "Snapshot": {
+    "TargetDurationSeconds": 30,
+    "Location": "darwin",
+    "City": null,
+    "MarketId": "darwin",
+    "Content": {
+      "Traffic": true,
+      "Weather": true,
+      "Fuel": true,
+      "HasAnySource": true
+    },
+    "Corridors": [
+      {
+        "RoadName": "Garamilla Boulevard",
+        "Severity": 3,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 300,
+        "ImpactScore": 124.57881896733993,
+        "PrimaryType": "congestion",
+        "Description": "slow-moving",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 1
+      }
+    ],
+    "MonitoredRoutes": [],
+    "GoodRunRoads": [],
+    "FlowPool": [],
+    "Weather": null,
+    "Fuel": null,
+    "IncidentChanges": null,
+    "Guidance": {
+      "Entries": [],
+      "DroppedCount": 0,
+      "Count": 0,
+      "HasEntries": false
+    },
+    "MarketFeedback": []
+  }
+}

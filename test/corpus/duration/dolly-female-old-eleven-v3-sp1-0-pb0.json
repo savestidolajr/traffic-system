@@ -1,0 +1,1442 @@
+{
+ "voiceId": "EL6XrRSm7bY124NCgVxf",
+ "voiceName": "Dolly Female Old",
+ "modelId": "eleven_v3",
+ "stability": 0.5,
+ "similarityBoost": 0.75,
+ "style": 0.0,
+ "speed": 1.0,
+ "paceBoostWpm": 0.0,
+ "total": 4,
+ "clean": 2,
+ "tokens": 266,
+ "bulletins": [
+  {
+   "jobId": "733c99d4b90b4f65adf0b390a3abb3e9",
+   "market": "goldcoast",
+   "targetSec": 30.0,
+   "naturalSec": 33.0,
+   "fittedSec": 30,
+   "stretch": 1.1,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "Looking over the Gold Coast today, here's your traffic. [brightly]Christine Avenue's at a standstill. Smith Street's stopped solid as well. West Burleigh Road's under construction citybound near Starling Street, with traffic under the pump. Southport-Nerang Road's a bit slow, and the Smith Street Motorway's moving slowly. There's minor delays on Nerang Broadbeach Road through roadworks, Skyline Terrace is slow going, and Bermuda Street's got works outbound over about three kays. That's it for the Gold Coast traffic on Hot Tomato 102.9.",
+   "features": {
+    "syl": 125,
+    "words": 81,
+    "ellipsis": 0,
+    "period": 8,
+    "comma": 5,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Looking",
+     "s": 0,
+     "e": 0.218
+    },
+    {
+     "w": "over",
+     "s": 0.247,
+     "e": 0.363
+    },
+    {
+     "w": "the",
+     "s": 0.4,
+     "e": 0.509
+    },
+    {
+     "w": "Gold",
+     "s": 0.538,
+     "e": 0.654
+    },
+    {
+     "w": "Coast",
+     "s": 0.715,
+     "e": 1.018
+    },
+    {
+     "w": "today,",
+     "s": 1.078,
+     "e": 1.526
+    },
+    {
+     "w": "here's",
+     "s": 1.555,
+     "e": 1.744
+    },
+    {
+     "w": "your",
+     "s": 1.773,
+     "e": 1.89
+    },
+    {
+     "w": "traffic.",
+     "s": 1.944,
+     "e": 2.399
+    },
+    {
+     "w": "Christine",
+     "s": 2.853,
+     "e": 3.053
+    },
+    {
+     "w": "Avenue's",
+     "s": 3.105,
+     "e": 3.489
+    },
+    {
+     "w": "at",
+     "s": 3.537,
+     "e": 3.634
+    },
+    {
+     "w": "a",
+     "s": 3.671,
+     "e": 3.707
+    },
+    {
+     "w": "standstill.",
+     "s": 3.768,
+     "e": 4.434
+    },
+    {
+     "w": "Smith",
+     "s": 4.531,
+     "e": 5.015
+    },
+    {
+     "w": "Street's",
+     "s": 5.057,
+     "e": 5.379
+    },
+    {
+     "w": "stopped",
+     "s": 5.424,
+     "e": 5.742
+    },
+    {
+     "w": "solid",
+     "s": 5.803,
+     "e": 6.105
+    },
+    {
+     "w": "as",
+     "s": 6.154,
+     "e": 6.251
+    },
+    {
+     "w": "well.",
+     "s": 6.309,
+     "e": 6.614
+    },
+    {
+     "w": "West",
+     "s": 6.716,
+     "e": 7.123
+    },
+    {
+     "w": "Burleigh",
+     "s": 7.178,
+     "e": 7.414
+    },
+    {
+     "w": "Road's",
+     "s": 7.486,
+     "e": 7.85
+    },
+    {
+     "w": "under",
+     "s": 7.874,
+     "e": 7.995
+    },
+    {
+     "w": "construction",
+     "s": 8.04,
+     "e": 8.577
+    },
+    {
+     "w": "citybound",
+     "s": 8.649,
+     "e": 9.231
+    },
+    {
+     "w": "near",
+     "s": 9.274,
+     "e": 9.449
+    },
+    {
+     "w": "Starling",
+     "s": 9.522,
+     "e": 9.958
+    },
+    {
+     "w": "Street,",
+     "s": 10,
+     "e": 10.321
+    },
+    {
+     "w": "with",
+     "s": 10.379,
+     "e": 10.612
+    },
+    {
+     "w": "traffic",
+     "s": 10.666,
+     "e": 11.048
+    },
+    {
+     "w": "under",
+     "s": 11.096,
+     "e": 11.339
+    },
+    {
+     "w": "the",
+     "s": 11.357,
+     "e": 11.411
+    },
+    {
+     "w": "pump.",
+     "s": 11.484,
+     "e": 11.847
+    },
+    {
+     "w": "Southport-Nerang",
+     "s": 11.968,
+     "e": 13.083
+    },
+    {
+     "w": "Road's",
+     "s": 13.127,
+     "e": 13.374
+    },
+    {
+     "w": "a",
+     "s": 13.428,
+     "e": 13.483
+    },
+    {
+     "w": "bit",
+     "s": 13.51,
+     "e": 13.592
+    },
+    {
+     "w": "slow,",
+     "s": 13.679,
+     "e": 14.319
+    },
+    {
+     "w": "and",
+     "s": 14.337,
+     "e": 14.391
+    },
+    {
+     "w": "the",
+     "s": 14.41,
+     "e": 14.464
+    },
+    {
+     "w": "Smith",
+     "s": 14.512,
+     "e": 14.755
+    },
+    {
+     "w": "Street",
+     "s": 14.786,
+     "e": 14.973
+    },
+    {
+     "w": "Motorway's",
+     "s": 15.034,
+     "e": 15.554
+    },
+    {
+     "w": "moving",
+     "s": 15.596,
+     "e": 15.845
+    },
+    {
+     "w": "slowly.",
+     "s": 15.928,
+     "e": 16.499
+    },
+    {
+     "w": "There's",
+     "s": 16.572,
+     "e": 17.008
+    },
+    {
+     "w": "minor",
+     "s": 17.056,
+     "e": 17.299
+    },
+    {
+     "w": "delays",
+     "s": 17.361,
+     "e": 17.735
+    },
+    {
+     "w": "on",
+     "s": 17.783,
+     "e": 17.88
+    },
+    {
+     "w": "Nerang",
+     "s": 17.935,
+     "e": 18.244
+    },
+    {
+     "w": "Broadbeach",
+     "s": 18.292,
+     "e": 18.752
+    },
+    {
+     "w": "Road",
+     "s": 18.825,
+     "e": 19.116
+    },
+    {
+     "w": "through",
+     "s": 19.143,
+     "e": 19.334
+    },
+    {
+     "w": "roadworks,",
+     "s": 19.392,
+     "e": 20.279
+    },
+    {
+     "w": "Skyline",
+     "s": 20.352,
+     "e": 20.788
+    },
+    {
+     "w": "Terrace",
+     "s": 20.833,
+     "e": 21.151
+    },
+    {
+     "w": "is",
+     "s": 21.199,
+     "e": 21.296
+    },
+    {
+     "w": "slow",
+     "s": 21.34,
+     "e": 21.514
+    },
+    {
+     "w": "going,",
+     "s": 21.575,
+     "e": 22.169
+    },
+    {
+     "w": "and",
+     "s": 22.205,
+     "e": 22.314
+    },
+    {
+     "w": "Bermuda",
+     "s": 22.359,
+     "e": 22.677
+    },
+    {
+     "w": "Street's",
+     "s": 22.719,
+     "e": 23.041
+    },
+    {
+     "w": "got",
+     "s": 23.077,
+     "e": 23.186
+    },
+    {
+     "w": "works",
+     "s": 23.234,
+     "e": 23.477
+    },
+    {
+     "w": "outbound",
+     "s": 23.533,
+     "e": 23.986
+    },
+    {
+     "w": "over",
+     "s": 24.044,
+     "e": 24.276
+    },
+    {
+     "w": "about",
+     "s": 24.313,
+     "e": 24.495
+    },
+    {
+     "w": "three",
+     "s": 24.543,
+     "e": 24.785
+    },
+    {
+     "w": "kays.",
+     "s": 24.894,
+     "e": 25.439
+    },
+    {
+     "w": "That's",
+     "s": 25.541,
+     "e": 26.021
+    },
+    {
+     "w": "it",
+     "s": 26.045,
+     "e": 26.094
+    },
+    {
+     "w": "for",
+     "s": 26.13,
+     "e": 26.239
+    },
+    {
+     "w": "the",
+     "s": 26.257,
+     "e": 26.312
+    },
+    {
+     "w": "Gold",
+     "s": 26.355,
+     "e": 26.53
+    },
+    {
+     "w": "Coast",
+     "s": 26.578,
+     "e": 26.82
+    },
+    {
+     "w": "traffic",
+     "s": 26.875,
+     "e": 27.257
+    },
+    {
+     "w": "on",
+     "s": 27.402,
+     "e": 27.693
+    },
+    {
+     "w": "Hot",
+     "s": 27.747,
+     "e": 27.911
+    },
+    {
+     "w": "Tomato",
+     "s": 27.973,
+     "e": 28.347
+    },
+    {
+     "w": "102.9.",
+     "s": 28.419,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "275cc0ede6e244a599bfca681491be3c",
+   "market": "mildura",
+   "targetSec": 30.0,
+   "naturalSec": 30.0,
+   "fittedSec": 30,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "[gently] Walker Road's closed outbound, and Lock 10 Road's closed outbound\u2026 Old Mail Road's blocked citybound. Werrimull North Road and Tapaulin Road are both moving nicely. Partly sunny in Mildura, 12 degrees. Unleaded's cheapest at two dollars two a litre in Mildura, with diesel at two dollars forty-eight there too. The Sturt Highway and Calder Highway are Mildura's two main links to the rest of the state \u2014 plan around them if one's affected.",
+   "features": {
+    "syl": 112,
+    "words": 73,
+    "ellipsis": 1,
+    "period": 5,
+    "comma": 3,
+    "dash": 1,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Walker",
+     "s": 0.245,
+     "e": 0.312
+    },
+    {
+     "w": "Road's",
+     "s": 0.374,
+     "e": 0.702
+    },
+    {
+     "w": "closed",
+     "s": 0.758,
+     "e": 1.092
+    },
+    {
+     "w": "outbound,",
+     "s": 1.171,
+     "e": 2.107
+    },
+    {
+     "w": "and",
+     "s": 2.165,
+     "e": 2.341
+    },
+    {
+     "w": "Lock",
+     "s": 2.387,
+     "e": 2.575
+    },
+    {
+     "w": "10",
+     "s": 2.653,
+     "e": 2.887
+    },
+    {
+     "w": "Road's",
+     "s": 2.949,
+     "e": 3.277
+    },
+    {
+     "w": "closed",
+     "s": 3.333,
+     "e": 3.667
+    },
+    {
+     "w": "outbound\u2026",
+     "s": 3.754,
+     "e": 4.76
+    },
+    {
+     "w": "Old",
+     "s": 4.838,
+     "e": 5.071
+    },
+    {
+     "w": "Mail",
+     "s": 5.119,
+     "e": 5.306
+    },
+    {
+     "w": "Road's",
+     "s": 5.368,
+     "e": 5.696
+    },
+    {
+     "w": "blocked",
+     "s": 5.735,
+     "e": 6.008
+    },
+    {
+     "w": "citybound.",
+     "s": 6.086,
+     "e": 7.023
+    },
+    {
+     "w": "Werrimull",
+     "s": 7.14,
+     "e": 7.646
+    },
+    {
+     "w": "North",
+     "s": 7.698,
+     "e": 7.959
+    },
+    {
+     "w": "Road",
+     "s": 8.037,
+     "e": 8.35
+    },
+    {
+     "w": "and",
+     "s": 8.368,
+     "e": 8.427
+    },
+    {
+     "w": "Tapaulin",
+     "s": 8.486,
+     "e": 8.973
+    },
+    {
+     "w": "Road",
+     "s": 9.052,
+     "e": 9.363
+    },
+    {
+     "w": "are",
+     "s": 9.461,
+     "e": 9.754
+    },
+    {
+     "w": "both",
+     "s": 9.8,
+     "e": 9.988
+    },
+    {
+     "w": "moving",
+     "s": 10.044,
+     "e": 10.377
+    },
+    {
+     "w": "nicely.",
+     "s": 10.467,
+     "e": 11.08
+    },
+    {
+     "w": "Partly",
+     "s": 11.236,
+     "e": 11.938
+    },
+    {
+     "w": "sunny",
+     "s": 12.004,
+     "e": 12.329
+    },
+    {
+     "w": "in",
+     "s": 12.38,
+     "e": 12.485
+    },
+    {
+     "w": "Mildura,",
+     "s": 12.523,
+     "e": 13.187
+    },
+    {
+     "w": "12",
+     "s": 13.242,
+     "e": 13.577
+    },
+    {
+     "w": "degrees.",
+     "s": 13.664,
+     "e": 14.435
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.592,
+     "e": 15.294
+    },
+    {
+     "w": "cheapest",
+     "s": 15.337,
+     "e": 15.684
+    },
+    {
+     "w": "at",
+     "s": 15.762,
+     "e": 15.917
+    },
+    {
+     "w": "two",
+     "s": 15.957,
+     "e": 16.073
+    },
+    {
+     "w": "dollars",
+     "s": 16.113,
+     "e": 16.386
+    },
+    {
+     "w": "two",
+     "s": 16.425,
+     "e": 16.542
+    },
+    {
+     "w": "a",
+     "s": 16.62,
+     "e": 16.698
+    },
+    {
+     "w": "litre",
+     "s": 16.75,
+     "e": 17.01
+    },
+    {
+     "w": "in",
+     "s": 17.061,
+     "e": 17.166
+    },
+    {
+     "w": "Mildura,",
+     "s": 17.205,
+     "e": 17.869
+    },
+    {
+     "w": "with",
+     "s": 17.946,
+     "e": 18.259
+    },
+    {
+     "w": "diesel",
+     "s": 18.337,
+     "e": 18.805
+    },
+    {
+     "w": "at",
+     "s": 18.857,
+     "e": 18.961
+    },
+    {
+     "w": "two",
+     "s": 19.02,
+     "e": 19.195
+    },
+    {
+     "w": "dollars",
+     "s": 19.244,
+     "e": 19.585
+    },
+    {
+     "w": "forty-eight",
+     "s": 19.636,
+     "e": 20.054
+    },
+    {
+     "w": "there",
+     "s": 20.092,
+     "e": 20.287
+    },
+    {
+     "w": "too.",
+     "s": 20.404,
+     "e": 20.834
+    },
+    {
+     "w": "The",
+     "s": 21.181,
+     "e": 21.275
+    },
+    {
+     "w": "Sturt",
+     "s": 21.337,
+     "e": 21.651
+    },
+    {
+     "w": "Highway",
+     "s": 21.709,
+     "e": 22.12
+    },
+    {
+     "w": "and",
+     "s": 22.167,
+     "e": 22.308
+    },
+    {
+     "w": "Calder",
+     "s": 22.375,
+     "e": 22.778
+    },
+    {
+     "w": "Highway",
+     "s": 22.86,
+     "e": 23.435
+    },
+    {
+     "w": "are",
+     "s": 23.552,
+     "e": 23.905
+    },
+    {
+     "w": "Mildura's",
+     "s": 23.961,
+     "e": 24.656
+    },
+    {
+     "w": "two",
+     "s": 24.726,
+     "e": 24.938
+    },
+    {
+     "w": "main",
+     "s": 25.013,
+     "e": 25.313
+    },
+    {
+     "w": "links",
+     "s": 25.392,
+     "e": 25.783
+    },
+    {
+     "w": "to",
+     "s": 25.814,
+     "e": 25.877
+    },
+    {
+     "w": "the",
+     "s": 25.9,
+     "e": 25.971
+    },
+    {
+     "w": "rest",
+     "s": 26.027,
+     "e": 26.252
+    },
+    {
+     "w": "of",
+     "s": 26.315,
+     "e": 26.44
+    },
+    {
+     "w": "the",
+     "s": 26.464,
+     "e": 26.534
+    },
+    {
+     "w": "state",
+     "s": 26.675,
+     "e": 27.379
+    },
+    {
+     "w": "\u2014",
+     "s": 27.473,
+     "e": 27.567
+    },
+    {
+     "w": "plan",
+     "s": 27.623,
+     "e": 27.849
+    },
+    {
+     "w": "around",
+     "s": 27.916,
+     "e": 28.318
+    },
+    {
+     "w": "them",
+     "s": 28.356,
+     "e": 28.506
+    },
+    {
+     "w": "if",
+     "s": 28.6,
+     "e": 28.788
+    },
+    {
+     "w": "one's",
+     "s": 28.858,
+     "e": 29.164
+    },
+    {
+     "w": "affected.",
+     "s": 29.236,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "f85b6412611d47fc9e590172ab8b9591",
+   "market": "mildura",
+   "targetSec": 30.0,
+   "naturalSec": 30.0,
+   "fittedSec": 30,
+   "stretch": 1.0,
+   "clean": false,
+   "excludedBecause": [
+    "filler-stitched",
+    "trimmed-during-synthesis"
+   ],
+   "spokenText": "Walker Road's closed outbound, with Lock 10 Road also closed in the same direction\u2026 Old Mail Road's closed citybound. Werrimull North Road and Tapaulin Road are both moving nicely. It's cloudy in Mildura at seventeen degrees. Unleaded's cheapest at two dollars two a litre in Mildura, with diesel at two dollars forty-eight there too. [gently] School zones carry reduced speed limits on every school day \u2014 worth slowing down for. Take it easy out there. Drive safe, Mildura.",
+   "features": {
+    "syl": 121,
+    "words": 77,
+    "ellipsis": 1,
+    "period": 7,
+    "comma": 3,
+    "dash": 1,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "Walker",
+     "s": 0,
+     "e": 0.238
+    },
+    {
+     "w": "Road's",
+     "s": 0.318,
+     "e": 0.715
+    },
+    {
+     "w": "closed",
+     "s": 0.772,
+     "e": 1.113
+    },
+    {
+     "w": "outbound,",
+     "s": 1.183,
+     "e": 2.066
+    },
+    {
+     "w": "with",
+     "s": 2.082,
+     "e": 2.146
+    },
+    {
+     "w": "Lock",
+     "s": 2.21,
+     "e": 2.464
+    },
+    {
+     "w": "10",
+     "s": 2.523,
+     "e": 2.702
+    },
+    {
+     "w": "Road",
+     "s": 2.766,
+     "e": 3.02
+    },
+    {
+     "w": "also",
+     "s": 3.1,
+     "e": 3.418
+    },
+    {
+     "w": "closed",
+     "s": 3.474,
+     "e": 3.815
+    },
+    {
+     "w": "in",
+     "s": 3.842,
+     "e": 3.894
+    },
+    {
+     "w": "the",
+     "s": 3.934,
+     "e": 4.053
+    },
+    {
+     "w": "same",
+     "s": 4.085,
+     "e": 4.212
+    },
+    {
+     "w": "direction\u2026",
+     "s": 4.284,
+     "e": 5.325
+    },
+    {
+     "w": "Old",
+     "s": 5.385,
+     "e": 5.564
+    },
+    {
+     "w": "Mail",
+     "s": 5.627,
+     "e": 5.881
+    },
+    {
+     "w": "Road's",
+     "s": 5.945,
+     "e": 6.279
+    },
+    {
+     "w": "closed",
+     "s": 6.325,
+     "e": 6.597
+    },
+    {
+     "w": "citybound.",
+     "s": 6.676,
+     "e": 7.709
+    },
+    {
+     "w": "Werrimull",
+     "s": 7.749,
+     "e": 8.186
+    },
+    {
+     "w": "North",
+     "s": 8.239,
+     "e": 8.504
+    },
+    {
+     "w": "Road",
+     "s": 8.568,
+     "e": 8.822
+    },
+    {
+     "w": "and",
+     "s": 8.862,
+     "e": 8.981
+    },
+    {
+     "w": "Tapaulin",
+     "s": 9.041,
+     "e": 9.537
+    },
+    {
+     "w": "Road",
+     "s": 9.601,
+     "e": 9.855
+    },
+    {
+     "w": "are",
+     "s": 9.895,
+     "e": 10.014
+    },
+    {
+     "w": "both",
+     "s": 10.062,
+     "e": 10.253
+    },
+    {
+     "w": "moving",
+     "s": 10.309,
+     "e": 10.65
+    },
+    {
+     "w": "nicely.",
+     "s": 10.73,
+     "e": 11.286
+    },
+    {
+     "w": "It's",
+     "s": 11.472,
+     "e": 11.922
+    },
+    {
+     "w": "cloudy",
+     "s": 11.99,
+     "e": 12.399
+    },
+    {
+     "w": "in",
+     "s": 12.426,
+     "e": 12.478
+    },
+    {
+     "w": "Mildura",
+     "s": 12.538,
+     "e": 13.114
+    },
+    {
+     "w": "at",
+     "s": 13.167,
+     "e": 13.273
+    },
+    {
+     "w": "seventeen",
+     "s": 13.329,
+     "e": 13.829
+    },
+    {
+     "w": "degrees.",
+     "s": 13.919,
+     "e": 14.823
+    },
+    {
+     "w": "Unleaded's",
+     "s": 14.915,
+     "e": 15.498
+    },
+    {
+     "w": "cheapest",
+     "s": 15.56,
+     "e": 16.055
+    },
+    {
+     "w": "at",
+     "s": 16.107,
+     "e": 16.214
+    },
+    {
+     "w": "two",
+     "s": 16.253,
+     "e": 16.373
+    },
+    {
+     "w": "dollars",
+     "s": 16.412,
+     "e": 16.691
+    },
+    {
+     "w": "two",
+     "s": 16.75,
+     "e": 16.929
+    },
+    {
+     "w": "a",
+     "s": 17.009,
+     "e": 17.088
+    },
+    {
+     "w": "litre",
+     "s": 17.141,
+     "e": 17.406
+    },
+    {
+     "w": "in",
+     "s": 17.459,
+     "e": 17.565
+    },
+    {
+     "w": "Mildura,",
+     "s": 17.605,
+     "e": 18.598
+    },
+    {
+     "w": "with",
+     "s": 18.63,
+     "e": 18.757
+    },
+    {
+     "w": "diesel",
+     "s": 18.826,
+     "e": 19.234
+    },
+    {
+     "w": "at",
+     "s": 19.287,
+     "e": 19.393
+    },
+    {
+     "w": "two",
+     "s": 19.433,
+     "e": 19.552
+    },
+    {
+     "w": "dollars",
+     "s": 19.602,
+     "e": 19.949
+    },
+    {
+     "w": "forty-eight",
+     "s": 20.002,
+     "e": 20.426
+    },
+    {
+     "w": "there",
+     "s": 20.493,
+     "e": 20.824
+    },
+    {
+     "w": "too.",
+     "s": 20.923,
+     "e": 21.261
+    },
+    {
+     "w": "School",
+     "s": 21.807,
+     "e": 22.007
+    },
+    {
+     "w": "zones",
+     "s": 22.073,
+     "e": 22.406
+    },
+    {
+     "w": "carry",
+     "s": 22.45,
+     "e": 22.672
+    },
+    {
+     "w": "reduced",
+     "s": 22.73,
+     "e": 23.138
+    },
+    {
+     "w": "speed",
+     "s": 23.194,
+     "e": 23.471
+    },
+    {
+     "w": "limits",
+     "s": 23.518,
+     "e": 23.803
+    },
+    {
+     "w": "on",
+     "s": 23.87,
+     "e": 24.003
+    },
+    {
+     "w": "every",
+     "s": 24.059,
+     "e": 24.336
+    },
+    {
+     "w": "school",
+     "s": 24.383,
+     "e": 24.668
+    },
+    {
+     "w": "day",
+     "s": 24.735,
+     "e": 24.934
+    },
+    {
+     "w": "\u2014",
+     "s": 25.101,
+     "e": 25.267
+    },
+    {
+     "w": "worth",
+     "s": 25.311,
+     "e": 25.533
+    },
+    {
+     "w": "slowing",
+     "s": 25.575,
+     "e": 25.866
+    },
+    {
+     "w": "down",
+     "s": 25.932,
+     "e": 26.199
+    },
+    {
+     "w": "for.",
+     "s": 26.265,
+     "e": 26.598
+    },
+    {
+     "w": "Take",
+     "s": 26.945,
+     "e": 27.166
+    },
+    {
+     "w": "it",
+     "s": 27.191,
+     "e": 27.24
+    },
+    {
+     "w": "easy",
+     "s": 27.298,
+     "e": 27.534
+    },
+    {
+     "w": "out",
+     "s": 27.57,
+     "e": 27.681
+    },
+    {
+     "w": "there.",
+     "s": 27.742,
+     "e": 28.195
+    },
+    {
+     "w": "Drive",
+     "s": 28.543,
+     "e": 28.808
+    },
+    {
+     "w": "safe,",
+     "s": 28.887,
+     "e": 29.338
+    },
+    {
+     "w": "Mildura.",
+     "s": 29.364,
+     "e": 30
+    }
+   ]
+  },
+  {
+   "jobId": "71568e4eac444b6db2a06fe24f92f2bc",
+   "market": "portlincoln",
+   "targetSec": 15.0,
+   "naturalSec": 15.0,
+   "fittedSec": 15,
+   "stretch": 1.0,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "[gently]The Birdseye Highway and Tod Highway are moving nicely, with a clear run on Port Kenny Road\u2026 Road construction and contraflow are underway on Porter Street and Railway Place. Cool in Port Lincoln, eleven degrees.",
+   "features": {
+    "syl": 53,
+    "words": 35,
+    "ellipsis": 1,
+    "period": 2,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0.08,
+     "e": 0.24
+    },
+    {
+     "w": "Birdseye",
+     "s": 0.271,
+     "e": 0.838
+    },
+    {
+     "w": "Highway",
+     "s": 0.873,
+     "e": 1.118
+    },
+    {
+     "w": "and",
+     "s": 1.178,
+     "e": 1.357
+    },
+    {
+     "w": "Tod",
+     "s": 1.437,
+     "e": 1.677
+    },
+    {
+     "w": "Highway",
+     "s": 1.746,
+     "e": 2.235
+    },
+    {
+     "w": "are",
+     "s": 2.295,
+     "e": 2.475
+    },
+    {
+     "w": "moving",
+     "s": 2.521,
+     "e": 2.794
+    },
+    {
+     "w": "nicely,",
+     "s": 2.874,
+     "e": 3.673
+    },
+    {
+     "w": "with",
+     "s": 3.689,
+     "e": 3.752
+    },
+    {
+     "w": "a",
+     "s": 3.832,
+     "e": 3.912
+    },
+    {
+     "w": "clear",
+     "s": 3.952,
+     "e": 4.152
+    },
+    {
+     "w": "run",
+     "s": 4.251,
+     "e": 4.551
+    },
+    {
+     "w": "on",
+     "s": 4.604,
+     "e": 4.71
+    },
+    {
+     "w": "Port",
+     "s": 4.774,
+     "e": 5.03
+    },
+    {
+     "w": "Kenny",
+     "s": 5.083,
+     "e": 5.349
+    },
+    {
+     "w": "Road\u2026",
+     "s": 5.461,
+     "e": 6.227
+    },
+    {
+     "w": "Road",
+     "s": 6.291,
+     "e": 6.547
+    },
+    {
+     "w": "construction",
+     "s": 6.602,
+     "e": 7.265
+    },
+    {
+     "w": "and",
+     "s": 7.305,
+     "e": 7.425
+    },
+    {
+     "w": "contraflow",
+     "s": 7.505,
+     "e": 8.223
+    },
+    {
+     "w": "are",
+     "s": 8.283,
+     "e": 8.463
+    },
+    {
+     "w": "underway",
+     "s": 8.525,
+     "e": 9.022
+    },
+    {
+     "w": "on",
+     "s": 9.208,
+     "e": 9.581
+    },
+    {
+     "w": "Porter",
+     "s": 9.627,
+     "e": 9.9
+    },
+    {
+     "w": "Street",
+     "s": 9.957,
+     "e": 10.299
+    },
+    {
+     "w": "and",
+     "s": 10.359,
+     "e": 10.539
+    },
+    {
+     "w": "Railway",
+     "s": 10.589,
+     "e": 10.938
+    },
+    {
+     "w": "Place.",
+     "s": 11.045,
+     "e": 11.656
+    },
+    {
+     "w": "Cool",
+     "s": 11.816,
+     "e": 12.455
+    },
+    {
+     "w": "in",
+     "s": 12.508,
+     "e": 12.615
+    },
+    {
+     "w": "Port",
+     "s": 12.678,
+     "e": 12.934
+    },
+    {
+     "w": "Lincoln,",
+     "s": 12.994,
+     "e": 13.852
+    },
+    {
+     "w": "eleven",
+     "s": 13.892,
+     "e": 14.131
+    },
+    {
+     "w": "degrees.",
+     "s": 14.221,
+     "e": 15
+    }
+   ]
+  }
+ ]
+}

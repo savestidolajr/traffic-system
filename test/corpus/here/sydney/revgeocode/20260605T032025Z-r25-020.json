@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.2605688+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.84859,151.06091\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "5 Paddock St, Lidcombe NSW 2141, Australia",
+          "id": "here:af:streetsection:hUzeMkwe-TmDyPpGSD2jsD:EAIaATU",
+          "resultType": "houseNumber",
+          "houseNumberType": "interpolated",
+          "address": {
+            "label": "5 Paddock St, Lidcombe NSW 2141, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Lidcombe",
+            "street": "Paddock St",
+            "postalCode": "2141",
+            "houseNumber": "5"
+          },
+          "position": {
+            "lat": -33.84852,
+            "lng": 151.06071
+          },
+          "access": [
+            {
+              "lat": -33.84846,
+              "lng": 151.06086
+            }
+          ],
+          "distance": 15,
+          "mapView": {
+            "west": 151.06035,
+            "south": -33.8498,
+            "east": 151.06159,
+            "north": -33.8476
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

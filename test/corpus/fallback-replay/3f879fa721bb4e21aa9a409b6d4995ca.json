@@ -1,0 +1,2460 @@
+{
+ "JobId": "3f879fa721bb4e21aa9a409b6d4995ca",
+ "Market": "goldcoast",
+ "Station": "Hot Tomato 102.9",
+ "CapturedAtUtc": "2026-08-10T08:14:35.5919256Z",
+ "DevOutcome": {
+  "Status": "Published",
+  "FallbackKind": null,
+  "Attempts": 1,
+  "TargetWordsSeq": [
+   66
+  ],
+  "SynthWordsSeq": [
+   94
+  ],
+  "NaturalSecSeq": [
+   31.5
+  ],
+  "BestNaturalSec": 31.5,
+  "ReviewFeedbackCount": 1,
+  "SynthFailures": []
+ },
+ "Fidelity": {
+  "IncidentsRecovered": 12,
+  "IncidentsSynthesized": 0,
+  "WeatherSource": "job",
+  "FuelSource": "job",
+  "GoodRunsAndFlowPoolLost": false,
+  "StationConfigSource": "none"
+ },
+ "VoiceConfig": {
+  "Provider": "",
+  "VoiceId": "a1SQPk93LAMHsGM41p6S",
+  "VoiceName": "Jeffrey (original)",
+  "Model": "eleven_multilingual_v2",
+  "Settings": {
+   "Stability": 0.7,
+   "SimilarityBoost": 0.7,
+   "Style": 0,
+   "UseSpeakerBoost": true,
+   "Speed": 0.97
+  },
+  "PaceBoostWpm": 0
+ },
+ "Snapshot": {
+  "TargetDurationSeconds": 30,
+  "Location": "goldcoast",
+  "City": null,
+  "MarketId": "goldcoast",
+  "Content": {
+   "Traffic": true,
+   "Weather": true,
+   "Fuel": true,
+   "WeatherRequired": true,
+   "FuelRequired": true,
+   "HasAnySource": true,
+   "RequiresWeather": true,
+   "RequiresFuel": true
+  },
+  "FillOrder": [
+   "Weather",
+   "Fuel",
+   "MinorTraffic",
+   "Filler"
+  ],
+  "Corridors": [
+   {
+    "RoadName": "Bermuda Street",
+    "Severity": 1,
+    "FunctionalClass": 2,
+    "TotalLengthMeters": 3004,
+    "ImpactScore": 354.90000000000003,
+    "PrimaryType": "construction",
+    "Description": "roadworks outbound",
+    "Incidents": [
+     {
+      "Id": "1177663216436551379",
+      "Description": "Between Rudd Street and Markeri Street - Road construction",
+      "Severity": 1,
+      "Location": "Bermuda St",
+      "Type": "construction",
+      "LengthMeters": 1474,
+      "FunctionalClass": 2,
+      "Latitude": -28.03537,
+      "Longitude": 153.40878,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "outbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365891633:$1:216573317#-0..1",
+       "$0:365891633:$1:221049668#+0..1",
+       "$0:365891611:$1:878140925#-0..1",
+       "$0:365891611:$1:878140672#-0..1",
+       "$0:365891611:$1:216305651#-0..1",
+       "$0:365891611:$1:215431462#-0..1",
+       "$0:365891611:$1:219397242#-0..1",
+       "$0:365891611:$1:499313427#-0..1",
+       "$0:365891611:$1:736253651#-0..1",
+       "$0:365891611:$1:736253576#+0..1",
+       "$0:365891611:$1:221053258#-0..1",
+       "$0:365891611:$1:216445215#-0..1"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -28.03537,
+        "Lng": 153.40878
+       },
+       {
+        "Lat": -28.03609,
+        "Lng": 153.40874
+       },
+       {
+        "Lat": -28.03673,
+        "Lng": 153.40862
+       },
+       {
+        "Lat": -28.03872,
+        "Lng": 153.40822
+       },
+       {
+        "Lat": -28.04016,
+        "Lng": 153.4079
+       },
+       {
+        "Lat": -28.0407,
+        "Lng": 153.40779
+       },
+       {
+        "Lat": -28.04141,
+        "Lng": 153.40764
+       },
+       {
+        "Lat": -28.04203,
+        "Lng": 153.4075
+       },
+       {
+        "Lat": -28.04276,
+        "Lng": 153.40734
+       },
+       {
+        "Lat": -28.04358,
+        "Lng": 153.40717
+       },
+       {
+        "Lat": -28.04428,
+        "Lng": 153.40702
+       },
+       {
+        "Lat": -28.04558,
+        "Lng": 153.40677
+       },
+       {
+        "Lat": -28.04671,
+        "Lng": 153.40679
+       },
+       {
+        "Lat": -28.0471,
+        "Lng": 153.40687
+       },
+       {
+        "Lat": -28.04749,
+        "Lng": 153.40698
+       },
+       {
+        "Lat": -28.04844,
+        "Lng": 153.40726
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-26T23:50:25+00:00"
+     },
+     {
+      "Id": "1987025085350048286",
+      "Description": "Between Cottesloe Drive and Nerang-Broadbeach Road - Road construction",
+      "Severity": 1,
+      "Location": "Bermuda St",
+      "Type": "construction",
+      "LengthMeters": 1415,
+      "FunctionalClass": 2,
+      "Latitude": -28.04768,
+      "Longitude": 153.40684,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "citybound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365891611:$1:220676676#+0..1",
+       "$0:365891611:$1:247953051#+0..1",
+       "$0:365891611:$1:216868196#+0..1",
+       "$0:365891611:$1:221729095#+0..1",
+       "$0:365891633:$1:220456559#+0..1",
+       "$0:365891633:$1:216434419#+0..1",
+       "$0:365891633:$1:215982690#+0..1"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -28.04768,
+        "Lng": 153.40684
+       },
+       {
+        "Lat": -28.04714,
+        "Lng": 153.40669
+       },
+       {
+        "Lat": -28.04673,
+        "Lng": 153.40659
+       },
+       {
+        "Lat": -28.04471,
+        "Lng": 153.4064
+       },
+       {
+        "Lat": -28.04391,
+        "Lng": 153.40648
+       },
+       {
+        "Lat": -28.04329,
+        "Lng": 153.4066
+       },
+       {
+        "Lat": -28.04264,
+        "Lng": 153.40674
+       },
+       {
+        "Lat": -28.04094,
+        "Lng": 153.40711
+       },
+       {
+        "Lat": -28.03979,
+        "Lng": 153.40738
+       },
+       {
+        "Lat": -28.0392,
+        "Lng": 153.40752
+       },
+       {
+        "Lat": -28.03855,
+        "Lng": 153.40766
+       },
+       {
+        "Lat": -28.03732,
+        "Lng": 153.40802
+       },
+       {
+        "Lat": -28.03675,
+        "Lng": 153.40824
+       },
+       {
+        "Lat": -28.0361,
+        "Lng": 153.4085
+       },
+       {
+        "Lat": -28.0355,
+        "Lng": 153.40857
+       },
+       {
+        "Lat": -28.0352,
+        "Lng": 153.40858
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-26T23:50:25+00:00"
+     },
+     {
+      "Id": "933234267647994411",
+      "Description": "Road construction",
+      "Severity": 2,
+      "Location": "Bermuda St",
+      "Type": "construction",
+      "LengthMeters": 95,
+      "FunctionalClass": 3,
+      "Latitude": -28.03567,
+      "Longitude": 153.40969,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365891633:$1:221125671#+0.66922..1"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -28.03567,
+        "Lng": 153.40969
+       },
+       {
+        "Lat": -28.03554,
+        "Lng": 153.40921
+       },
+       {
+        "Lat": -28.03546,
+        "Lng": 153.40898
+       },
+       {
+        "Lat": -28.03537,
+        "Lng": 153.40878
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-26T23:50:25+00:00"
+     },
+     {
+      "Id": "3019816116034843735",
+      "Description": "At Burleigh Road - Road construction",
+      "Severity": 3,
+      "Location": "Bermuda St",
+      "Type": "construction",
+      "LengthMeters": 20,
+      "FunctionalClass": 4,
+      "Latitude": -28.04844,
+      "Longitude": 153.40726,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365891611:$1:216856432#-0..0.95"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -28.04844,
+        "Lng": 153.40726
+       },
+       {
+        "Lat": -28.0485,
+        "Lng": 153.40707
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-26T23:50:25+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "outbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -28.03537,
+    "Longitude": 153.40878,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   },
+   {
+    "RoadName": "Pacific Motorway",
+    "Severity": 3,
+    "FunctionalClass": 4,
+    "TotalLengthMeters": 661,
+    "ImpactScore": 234,
+    "PrimaryType": "roadClosure",
+    "Description": "road closure citybound",
+    "Incidents": [
+     {
+      "Id": "518191865332446184",
+      "Description": "Closed",
+      "Severity": 3,
+      "Location": "Pacific Mwy",
+      "Type": "roadClosure",
+      "LengthMeters": 608,
+      "FunctionalClass": 4,
+      "Latitude": -28.12729,
+      "Longitude": 153.46629,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "citybound",
+      "Summary": null,
+      "JunctionTraversability": "intermediateClosedEdgeOpen",
+      "SegmentRefs": [
+       "$0:365804266:$1:914510457#+0.01644..0.98331"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -28.12729,
+        "Lng": 153.46629
+       },
+       {
+        "Lat": -28.1272,
+        "Lng": 153.46616
+       },
+       {
+        "Lat": -28.12621,
+        "Lng": 153.46549
+       },
+       {
+        "Lat": -28.12564,
+        "Lng": 153.46512
+       },
+       {
+        "Lat": -28.12486,
+        "Lng": 153.46469
+       },
+       {
+        "Lat": -28.12456,
+        "Lng": 153.46454
+       },
+       {
+        "Lat": -28.12385,
+        "Lng": 153.46409
+       },
+       {
+        "Lat": -28.12277,
+        "Lng": 153.46322
+       },
+       {
+        "Lat": -28.12277,
+        "Lng": 153.46322
+       },
+       {
+        "Lat": -28.12264,
+        "Lng": 153.46306
+       }
+      ],
+      "RoadClosed": true,
+      "EntryTimeUtc": "2026-08-10T07:26:22+00:00"
+     },
+     {
+      "Id": "4579161672113484121",
+      "Description": "Closed",
+      "Severity": 3,
+      "Location": "Pacific Mwy",
+      "Type": "roadClosure",
+      "LengthMeters": 53,
+      "FunctionalClass": 4,
+      "Latitude": -28.12264,
+      "Longitude": 153.46306,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": "intermediateClosedEdgeOpen",
+      "SegmentRefs": [
+       "$0:365891648:$1:914510427#+0.18868..0.84692"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -28.12264,
+        "Lng": 153.46306
+       },
+       {
+        "Lat": -28.1226,
+        "Lng": 153.46303
+       },
+       {
+        "Lat": -28.12258,
+        "Lng": 153.46298
+       },
+       {
+        "Lat": -28.12255,
+        "Lng": 153.46282
+       },
+       {
+        "Lat": -28.12257,
+        "Lng": 153.46268
+       },
+       {
+        "Lat": -28.12262,
+        "Lng": 153.46257
+       }
+      ],
+      "RoadClosed": true,
+      "EntryTimeUtc": "2026-08-10T07:26:22+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "citybound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -28.12729,
+    "Longitude": 153.46629,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 4,
+    "PriorityBoosted": true,
+    "Detour": null,
+    "DelayMinutes": 4
+   },
+   {
+    "RoadName": "Arundel",
+    "Severity": 2,
+    "FunctionalClass": 3,
+    "TotalLengthMeters": 530,
+    "ImpactScore": 217.5,
+    "PrimaryType": "roadClosure",
+    "Description": "road closure northbound",
+    "Incidents": [
+     {
+      "Id": "4658060304221877827",
+      "Description": "Ramp to Smith Street (Northbound) - Closed due to road construction",
+      "Severity": 2,
+      "Location": "Arundel",
+      "Type": "construction",
+      "LengthMeters": 530,
+      "FunctionalClass": 3,
+      "Latitude": -27.95946,
+      "Longitude": 153.34714,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "citybound",
+      "Summary": null,
+      "JunctionTraversability": "intermediateClosedEdgeOpen",
+      "SegmentRefs": [
+       "$0:365891631:$1:919366268#-0.06683..1",
+       "$0:365891631:$1:919366348#+0..0.96169"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -27.95946,
+        "Lng": 153.34714
+       },
+       {
+        "Lat": -27.9599,
+        "Lng": 153.34799
+       },
+       {
+        "Lat": -27.96028,
+        "Lng": 153.34887
+       },
+       {
+        "Lat": -27.96037,
+        "Lng": 153.34918
+       },
+       {
+        "Lat": -27.9604,
+        "Lng": 153.34933
+       },
+       {
+        "Lat": -27.96042,
+        "Lng": 153.34964
+       },
+       {
+        "Lat": -27.96042,
+        "Lng": 153.34964
+       },
+       {
+        "Lat": -27.96035,
+        "Lng": 153.34995
+       },
+       {
+        "Lat": -27.96018,
+        "Lng": 153.35034
+       },
+       {
+        "Lat": -27.96007,
+        "Lng": 153.35049
+       },
+       {
+        "Lat": -27.95996,
+        "Lng": 153.35061
+       },
+       {
+        "Lat": -27.95977,
+        "Lng": 153.35075
+       },
+       {
+        "Lat": -27.95958,
+        "Lng": 153.35084
+       },
+       {
+        "Lat": -27.95928,
+        "Lng": 153.35089
+       },
+       {
+        "Lat": -27.95905,
+        "Lng": 153.35087
+       },
+       {
+        "Lat": -27.95867,
+        "Lng": 153.35078
+       }
+      ],
+      "RoadClosed": true,
+      "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "northbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -27.95946,
+    "Longitude": 153.34714,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   },
+   {
+    "RoadName": "SMITH STREET MOTORWAY (EASTBOUND)",
+    "Severity": 1,
+    "FunctionalClass": 3,
+    "TotalLengthMeters": 530,
+    "ImpactScore": 214.5,
+    "PrimaryType": "congestion",
+    "Description": "at a standstill",
+    "Incidents": [],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": null,
+    "Longitude": null,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": true,
+    "Detour": null,
+    "DelayMinutes": null
+   },
+   {
+    "RoadName": "West Burleigh Road",
+    "Severity": 2,
+    "FunctionalClass": 3,
+    "TotalLengthMeters": 463,
+    "ImpactScore": 204,
+    "PrimaryType": "construction",
+    "Description": "roadworks citybound",
+    "Incidents": [
+     {
+      "Id": "257213307739985816",
+      "Description": "Between West Burleigh Road and Starling Street - Road construction",
+      "Severity": 2,
+      "Location": "West Burleigh Rd",
+      "Type": "construction",
+      "LengthMeters": 253,
+      "FunctionalClass": 3,
+      "Latitude": -28.09839,
+      "Longitude": 153.44255,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "citybound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365891607:$1:221651991#+0.00876..1",
+       "$0:365891607:$1:215421744#+0..1",
+       "$0:365891607:$1:215510356#+0..1",
+       "$0:365891607:$1:532106094#+0..1"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -28.09839,
+        "Lng": 153.44255
+       },
+       {
+        "Lat": -28.09817,
+        "Lng": 153.44269
+       },
+       {
+        "Lat": -28.09793,
+        "Lng": 153.4428
+       },
+       {
+        "Lat": -28.09793,
+        "Lng": 153.4428
+       },
+       {
+        "Lat": -28.09765,
+        "Lng": 153.44288
+       },
+       {
+        "Lat": -28.09765,
+        "Lng": 153.44288
+       },
+       {
+        "Lat": -28.09743,
+        "Lng": 153.44293
+       },
+       {
+        "Lat": -28.09743,
+        "Lng": 153.44293
+       },
+       {
+        "Lat": -28.09724,
+        "Lng": 153.44296
+       },
+       {
+        "Lat": -28.09703,
+        "Lng": 153.44299
+       },
+       {
+        "Lat": -28.09703,
+        "Lng": 153.44299
+       },
+       {
+        "Lat": -28.09683,
+        "Lng": 153.44302
+       },
+       {
+        "Lat": -28.09683,
+        "Lng": 153.44302
+       },
+       {
+        "Lat": -28.09655,
+        "Lng": 153.44305
+       },
+       {
+        "Lat": -28.09655,
+        "Lng": 153.44305
+       },
+       {
+        "Lat": -28.09618,
+        "Lng": 153.44308
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-13T20:00:45+00:00"
+     },
+     {
+      "Id": "2968917451392187410",
+      "Description": "Between Starling Street and West Burleigh Road - Road construction",
+      "Severity": 2,
+      "Location": "West Burleigh Rd",
+      "Type": "construction",
+      "LengthMeters": 210,
+      "FunctionalClass": 3,
+      "Latitude": -28.09621,
+      "Longitude": 153.44324,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "outbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365891607:$1:216718824#-0.51996..1",
+       "$0:365891607:$1:215836393#-0..1",
+       "$0:365891607:$1:216343844#-0..1"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -28.09621,
+        "Lng": 153.44324
+       },
+       {
+        "Lat": -28.09657,
+        "Lng": 153.44322
+       },
+       {
+        "Lat": -28.09657,
+        "Lng": 153.44322
+       },
+       {
+        "Lat": -28.09688,
+        "Lng": 153.44319
+       },
+       {
+        "Lat": -28.09749,
+        "Lng": 153.44308
+       },
+       {
+        "Lat": -28.09749,
+        "Lng": 153.44308
+       },
+       {
+        "Lat": -28.09774,
+        "Lng": 153.44302
+       },
+       {
+        "Lat": -28.09774,
+        "Lng": 153.44302
+       },
+       {
+        "Lat": -28.09807,
+        "Lng": 153.4429
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-13T20:00:45+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "citybound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -28.09839,
+    "Longitude": 153.44255,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 3,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": 3
+   },
+   {
+    "RoadName": "Nerang Broadbeach Road",
+    "Severity": 2,
+    "FunctionalClass": 3,
+    "TotalLengthMeters": 21,
+    "ImpactScore": 187.93331576840353,
+    "PrimaryType": "construction",
+    "Description": "roadworks",
+    "Incidents": [
+     {
+      "Id": "1607752202539222916",
+      "Description": "At Burleigh Road - Road construction",
+      "Severity": 2,
+      "Location": "Nerang Broadbeach Rd",
+      "Type": "construction",
+      "LengthMeters": 21,
+      "FunctionalClass": 3,
+      "Latitude": -28.0352,
+      "Longitude": 153.40858,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365891633:$1:215836413#-0..0.95238"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -28.0352,
+        "Lng": 153.40858
+       },
+       {
+        "Lat": -28.03527,
+        "Lng": 153.40878
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-26T23:50:25+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -28.0352,
+    "Longitude": 153.40858,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   },
+   {
+    "RoadName": "Jupiters Casino Road",
+    "Severity": 2,
+    "FunctionalClass": 3,
+    "TotalLengthMeters": 51,
+    "ImpactScore": 137.07570176097937,
+    "PrimaryType": "congestion",
+    "Description": "heavy congestion",
+    "Incidents": [],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": null,
+    "Longitude": null,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": null,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": null
+   },
+   {
+    "RoadName": "Napper Road",
+    "Severity": 3,
+    "FunctionalClass": 4,
+    "TotalLengthMeters": 350,
+    "ImpactScore": 135,
+    "PrimaryType": "construction",
+    "Description": "roadworks northbound",
+    "Incidents": [
+     {
+      "Id": "982614817695257762",
+      "Description": "At Greenacre Drive - Road construction",
+      "Severity": 3,
+      "Location": "Napper Rd",
+      "Type": "construction",
+      "LengthMeters": 350,
+      "FunctionalClass": 4,
+      "Latitude": -27.95134,
+      "Longitude": 153.34657,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": "northbound",
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365891716:$1:220980918#-0..0.97431"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -27.95134,
+        "Lng": 153.34657
+       },
+       {
+        "Lat": -27.9511,
+        "Lng": 153.34662
+       },
+       {
+        "Lat": -27.9511,
+        "Lng": 153.34662
+       },
+       {
+        "Lat": -27.95097,
+        "Lng": 153.34661
+       },
+       {
+        "Lat": -27.95078,
+        "Lng": 153.34656
+       },
+       {
+        "Lat": -27.9506,
+        "Lng": 153.34648
+       },
+       {
+        "Lat": -27.95025,
+        "Lng": 153.3463
+       },
+       {
+        "Lat": -27.95,
+        "Lng": 153.34617
+       },
+       {
+        "Lat": -27.94977,
+        "Lng": 153.34609
+       },
+       {
+        "Lat": -27.94936,
+        "Lng": 153.34612
+       },
+       {
+        "Lat": -27.94936,
+        "Lng": 153.34612
+       },
+       {
+        "Lat": -27.94903,
+        "Lng": 153.34631
+       },
+       {
+        "Lat": -27.94903,
+        "Lng": 153.34631
+       },
+       {
+        "Lat": -27.94876,
+        "Lng": 153.34669
+       },
+       {
+        "Lat": -27.94876,
+        "Lng": 153.34669
+       },
+       {
+        "Lat": -27.94859,
+        "Lng": 153.34694
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-07T16:43:12+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": "northbound",
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -27.95134,
+    "Longitude": 153.34657,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 1,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": 1
+   },
+   {
+    "RoadName": "Markeri Street",
+    "Severity": 3,
+    "FunctionalClass": 4,
+    "TotalLengthMeters": 20,
+    "ImpactScore": 127.80617997398389,
+    "PrimaryType": "construction",
+    "Description": "roadworks",
+    "Incidents": [
+     {
+      "Id": "3630922883205558863",
+      "Description": "At Burleigh Road - Road construction",
+      "Severity": 3,
+      "Location": "Markeri St",
+      "Type": "construction",
+      "LengthMeters": 20,
+      "FunctionalClass": 4,
+      "Latitude": -28.04836,
+      "Longitude": 153.40703,
+      "IsNew": false,
+      "DataTimestampUtc": null,
+      "Direction": null,
+      "Summary": null,
+      "JunctionTraversability": null,
+      "SegmentRefs": [
+       "$0:365891611:$1:216725743#+0..1"
+      ],
+      "Comment": null,
+      "Shape": [
+       {
+        "Lat": -28.04836,
+        "Lng": 153.40703
+       },
+       {
+        "Lat": -28.0483,
+        "Lng": 153.40722
+       }
+      ],
+      "RoadClosed": false,
+      "EntryTimeUtc": "2026-07-26T23:50:25+00:00"
+     }
+    ],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": -28.04836,
+    "Longitude": 153.40703,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 1,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": 1
+   },
+   {
+    "RoadName": "Nerang-Broadbeach Road",
+    "Severity": 3,
+    "FunctionalClass": 3,
+    "TotalLengthMeters": 498,
+    "ImpactScore": 125,
+    "PrimaryType": "congestion",
+    "Description": "slow-moving",
+    "Incidents": [],
+    "Suburb": null,
+    "Direction": null,
+    "Extent": null,
+    "DriveTimeMinutes": null,
+    "NormalDriveTimeMinutes": null,
+    "Latitude": null,
+    "Longitude": null,
+    "StartPoint": null,
+    "EndPoint": null,
+    "JamTendency": null,
+    "FlowDelayMinutes": 1,
+    "PriorityBoosted": false,
+    "Detour": null,
+    "DelayMinutes": 1
+   }
+  ],
+  "MonitoredRoutes": [],
+  "GoodRunRoads": [
+   "Burleigh Road",
+   "Pacific Highway",
+   "STEWART ROAD",
+   "Cobaki Parkway",
+   "Gooding Drive",
+   "Hope Island Road"
+  ],
+  "FlowPool": [
+   {
+    "RoadName": "Burleigh Road",
+    "JamFactor": 3.5,
+    "LengthMeters": 8252,
+    "IsWeighted": true,
+    "FunctionalClass": 3,
+    "Score": 57.5,
+    "PriorityBoosted": true
+   },
+   {
+    "RoadName": "Pacific Highway",
+    "JamFactor": 1.2,
+    "LengthMeters": 4379,
+    "IsWeighted": false,
+    "FunctionalClass": 2,
+    "Score": 52.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "STEWART ROAD",
+    "JamFactor": 1.7,
+    "LengthMeters": 13629,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Cobaki Parkway",
+    "JamFactor": 0.3,
+    "LengthMeters": 10941,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Gooding Drive",
+    "JamFactor": 1.1,
+    "LengthMeters": 9496,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Hope Island Road",
+    "JamFactor": 2.8,
+    "LengthMeters": 7303,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Helensvale Road",
+    "JamFactor": 1.2,
+    "LengthMeters": 7182,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Labrador - Carrara Road",
+    "JamFactor": 2.2,
+    "LengthMeters": 5218,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Robina Parkway",
+    "JamFactor": 0.2,
+    "LengthMeters": 5208,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Galleon Way",
+    "JamFactor": 0.9,
+    "LengthMeters": 4962,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Regency Place",
+    "JamFactor": 1.8,
+    "LengthMeters": 4589,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Reedy Creek Road",
+    "JamFactor": 3.3,
+    "LengthMeters": 4516,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Evers Street",
+    "JamFactor": 1.1,
+    "LengthMeters": 4160,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Crescent Avenue",
+    "JamFactor": 3,
+    "LengthMeters": 4048,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Tsipura Drive",
+    "JamFactor": 0.9,
+    "LengthMeters": 3998,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   }
+  ],
+  "Weather": {
+   "Conditions": "Clear. Refreshingly cool.",
+   "TemperatureC": 15,
+   "WindDescription": null,
+   "PrecipitationProbabilityPercent": 66,
+   "Alerts": [],
+   "Outlook": "reaching 24 degrees later today; tomorrow sprinkles late. afternoon clouds. cool, around 24 degrees",
+   "IsForecast": false,
+   "HasMajorAlert": false
+  },
+  "Fuel": {
+   "Summaries": [
+    {
+     "FuelType": "Unleaded 91",
+     "MinPrice": 1.922,
+     "AveragePrice": 2.03,
+     "StationCount": 49,
+     "LatestModifiedUtc": "2026-08-10T07:33:06+00:00",
+     "CheapestStationSuburb": "Southport"
+    },
+    {
+     "FuelType": "Diesel",
+     "MinPrice": 2.309,
+     "AveragePrice": 2.43,
+     "StationCount": 20,
+     "LatestModifiedUtc": "2026-08-10T07:33:05+00:00",
+     "CheapestStationSuburb": "Southport"
+    }
+   ],
+   "HasPrices": true
+  },
+  "IncidentChanges": null,
+  "Guidance": {
+   "Entries": [
+    {
+     "Id": "fe048837c889409ba1ce7997dcf55417",
+     "Scope": 1,
+     "ScopeId": "goldcoast",
+     "Type": 1,
+     "Text": "The M1 Pacific Motorway is the spine of the Coast — lead with M1 conditions between the Tugun bypass and the Logan Motorway, then the Gold Coast Highway and Smith Street Motorway.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for — a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+     "UpdatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "645e52b90299493a8dbde1205c6c657e",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "75fe175d471144b38bf23c24966dfb6f",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "7b012b9381e04e72be8211133f224188",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 4,
+     "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "Australian English with natural spoken contractions. Round the figures — say 'about ten minutes', never '10.3 minutes'. No police codes or insider jargon.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 3,
+     "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "f5e76bd5993c41edb637a7302f7d7479",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 2,
+     "Text": "Use common road names with the definite article: 'the M1', 'the M4', 'the CBD'. Use 'citybound' and 'outbound' for direction of travel.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    }
+   ],
+   "DroppedCount": 0,
+   "Count": 8,
+   "HasEntries": true
+  },
+  "FutureLessons": [],
+  "Bookends": null,
+  "FillerStatements": [],
+  "SharedRules": null,
+  "RoadFeelPalette": null,
+  "EditorialSettings": {
+   "Scope": 0,
+   "ScopeId": ""
+  },
+  "CuratedCorridorRoads": null,
+  "CuratedGoodRunRoads": null,
+  "ExcludedIncidentKeys": null,
+  "WriterPrompt": null,
+  "EditedIncidents": []
+ },
+ "Coverage": {
+  "Latitude": -27.99745,
+  "Longitude": 153.42575,
+  "RadiusKm": 21.947406157243254,
+  "ShapeType": "polygon",
+  "West": null,
+  "South": null,
+  "East": null,
+  "North": null,
+  "CorridorPoints": null,
+  "CorridorRadiusMeters": null,
+  "PolygonPoints": [
+   {
+    "Lat": -27.8265,
+    "Lng": 153.3296
+   },
+   {
+    "Lat": -27.871,
+    "Lng": 153.3527
+   },
+   {
+    "Lat": -27.9651,
+    "Lng": 153.4153
+   },
+   {
+    "Lat": -27.9991,
+    "Lng": 153.427
+   },
+   {
+    "Lat": -28.09,
+    "Lng": 153.4512
+   },
+   {
+    "Lat": -28.1684,
+    "Lng": 153.5374
+   },
+   {
+    "Lat": -28.075,
+    "Lng": 153.3641
+   },
+   {
+    "Lat": -27.9894,
+    "Lng": 153.3364
+   },
+   {
+    "Lat": -27.902,
+    "Lng": 153.3141
+   }
+  ]
+ },
+ "FullCorridorPool": [
+  {
+   "RoadName": "Bermuda Street",
+   "Severity": 1,
+   "FunctionalClass": 2,
+   "TotalLengthMeters": 3004,
+   "ImpactScore": 354.90000000000003,
+   "PrimaryType": "construction",
+   "Description": "roadworks outbound",
+   "Incidents": [
+    {
+     "Id": "1177663216436551379",
+     "Description": "Between Rudd Street and Markeri Street - Road construction",
+     "Severity": 1,
+     "Location": "Bermuda St",
+     "Type": "construction",
+     "LengthMeters": 1474,
+     "FunctionalClass": 2,
+     "Latitude": -28.03537,
+     "Longitude": 153.40878,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "outbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365891633:$1:216573317#-0..1",
+      "$0:365891633:$1:221049668#+0..1",
+      "$0:365891611:$1:878140925#-0..1",
+      "$0:365891611:$1:878140672#-0..1",
+      "$0:365891611:$1:216305651#-0..1",
+      "$0:365891611:$1:215431462#-0..1",
+      "$0:365891611:$1:219397242#-0..1",
+      "$0:365891611:$1:499313427#-0..1",
+      "$0:365891611:$1:736253651#-0..1",
+      "$0:365891611:$1:736253576#+0..1",
+      "$0:365891611:$1:221053258#-0..1",
+      "$0:365891611:$1:216445215#-0..1"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -28.03537,
+       "Lng": 153.40878
+      },
+      {
+       "Lat": -28.03609,
+       "Lng": 153.40874
+      },
+      {
+       "Lat": -28.03673,
+       "Lng": 153.40862
+      },
+      {
+       "Lat": -28.03872,
+       "Lng": 153.40822
+      },
+      {
+       "Lat": -28.04016,
+       "Lng": 153.4079
+      },
+      {
+       "Lat": -28.0407,
+       "Lng": 153.40779
+      },
+      {
+       "Lat": -28.04141,
+       "Lng": 153.40764
+      },
+      {
+       "Lat": -28.04203,
+       "Lng": 153.4075
+      },
+      {
+       "Lat": -28.04276,
+       "Lng": 153.40734
+      },
+      {
+       "Lat": -28.04358,
+       "Lng": 153.40717
+      },
+      {
+       "Lat": -28.04428,
+       "Lng": 153.40702
+      },
+      {
+       "Lat": -28.04558,
+       "Lng": 153.40677
+      },
+      {
+       "Lat": -28.04671,
+       "Lng": 153.40679
+      },
+      {
+       "Lat": -28.0471,
+       "Lng": 153.40687
+      },
+      {
+       "Lat": -28.04749,
+       "Lng": 153.40698
+      },
+      {
+       "Lat": -28.04844,
+       "Lng": 153.40726
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-26T23:50:25+00:00"
+    },
+    {
+     "Id": "1987025085350048286",
+     "Description": "Between Cottesloe Drive and Nerang-Broadbeach Road - Road construction",
+     "Severity": 1,
+     "Location": "Bermuda St",
+     "Type": "construction",
+     "LengthMeters": 1415,
+     "FunctionalClass": 2,
+     "Latitude": -28.04768,
+     "Longitude": 153.40684,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "citybound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365891611:$1:220676676#+0..1",
+      "$0:365891611:$1:247953051#+0..1",
+      "$0:365891611:$1:216868196#+0..1",
+      "$0:365891611:$1:221729095#+0..1",
+      "$0:365891633:$1:220456559#+0..1",
+      "$0:365891633:$1:216434419#+0..1",
+      "$0:365891633:$1:215982690#+0..1"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -28.04768,
+       "Lng": 153.40684
+      },
+      {
+       "Lat": -28.04714,
+       "Lng": 153.40669
+      },
+      {
+       "Lat": -28.04673,
+       "Lng": 153.40659
+      },
+      {
+       "Lat": -28.04471,
+       "Lng": 153.4064
+      },
+      {
+       "Lat": -28.04391,
+       "Lng": 153.40648
+      },
+      {
+       "Lat": -28.04329,
+       "Lng": 153.4066
+      },
+      {
+       "Lat": -28.04264,
+       "Lng": 153.40674
+      },
+      {
+       "Lat": -28.04094,
+       "Lng": 153.40711
+      },
+      {
+       "Lat": -28.03979,
+       "Lng": 153.40738
+      },
+      {
+       "Lat": -28.0392,
+       "Lng": 153.40752
+      },
+      {
+       "Lat": -28.03855,
+       "Lng": 153.40766
+      },
+      {
+       "Lat": -28.03732,
+       "Lng": 153.40802
+      },
+      {
+       "Lat": -28.03675,
+       "Lng": 153.40824
+      },
+      {
+       "Lat": -28.0361,
+       "Lng": 153.4085
+      },
+      {
+       "Lat": -28.0355,
+       "Lng": 153.40857
+      },
+      {
+       "Lat": -28.0352,
+       "Lng": 153.40858
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-26T23:50:25+00:00"
+    },
+    {
+     "Id": "933234267647994411",
+     "Description": "Road construction",
+     "Severity": 2,
+     "Location": "Bermuda St",
+     "Type": "construction",
+     "LengthMeters": 95,
+     "FunctionalClass": 3,
+     "Latitude": -28.03567,
+     "Longitude": 153.40969,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365891633:$1:221125671#+0.66922..1"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -28.03567,
+       "Lng": 153.40969
+      },
+      {
+       "Lat": -28.03554,
+       "Lng": 153.40921
+      },
+      {
+       "Lat": -28.03546,
+       "Lng": 153.40898
+      },
+      {
+       "Lat": -28.03537,
+       "Lng": 153.40878
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-26T23:50:25+00:00"
+    },
+    {
+     "Id": "3019816116034843735",
+     "Description": "At Burleigh Road - Road construction",
+     "Severity": 3,
+     "Location": "Bermuda St",
+     "Type": "construction",
+     "LengthMeters": 20,
+     "FunctionalClass": 4,
+     "Latitude": -28.04844,
+     "Longitude": 153.40726,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365891611:$1:216856432#-0..0.95"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -28.04844,
+       "Lng": 153.40726
+      },
+      {
+       "Lat": -28.0485,
+       "Lng": 153.40707
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-26T23:50:25+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "outbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -28.03537,
+   "Longitude": 153.40878,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  },
+  {
+   "RoadName": "Pacific Motorway",
+   "Severity": 3,
+   "FunctionalClass": 4,
+   "TotalLengthMeters": 661,
+   "ImpactScore": 234,
+   "PrimaryType": "roadClosure",
+   "Description": "road closure citybound",
+   "Incidents": [
+    {
+     "Id": "518191865332446184",
+     "Description": "Closed",
+     "Severity": 3,
+     "Location": "Pacific Mwy",
+     "Type": "roadClosure",
+     "LengthMeters": 608,
+     "FunctionalClass": 4,
+     "Latitude": -28.12729,
+     "Longitude": 153.46629,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "citybound",
+     "Summary": null,
+     "JunctionTraversability": "intermediateClosedEdgeOpen",
+     "SegmentRefs": [
+      "$0:365804266:$1:914510457#+0.01644..0.98331"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -28.12729,
+       "Lng": 153.46629
+      },
+      {
+       "Lat": -28.1272,
+       "Lng": 153.46616
+      },
+      {
+       "Lat": -28.12621,
+       "Lng": 153.46549
+      },
+      {
+       "Lat": -28.12564,
+       "Lng": 153.46512
+      },
+      {
+       "Lat": -28.12486,
+       "Lng": 153.46469
+      },
+      {
+       "Lat": -28.12456,
+       "Lng": 153.46454
+      },
+      {
+       "Lat": -28.12385,
+       "Lng": 153.46409
+      },
+      {
+       "Lat": -28.12277,
+       "Lng": 153.46322
+      },
+      {
+       "Lat": -28.12277,
+       "Lng": 153.46322
+      },
+      {
+       "Lat": -28.12264,
+       "Lng": 153.46306
+      }
+     ],
+     "RoadClosed": true,
+     "EntryTimeUtc": "2026-08-10T07:26:22+00:00"
+    },
+    {
+     "Id": "4579161672113484121",
+     "Description": "Closed",
+     "Severity": 3,
+     "Location": "Pacific Mwy",
+     "Type": "roadClosure",
+     "LengthMeters": 53,
+     "FunctionalClass": 4,
+     "Latitude": -28.12264,
+     "Longitude": 153.46306,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": "intermediateClosedEdgeOpen",
+     "SegmentRefs": [
+      "$0:365891648:$1:914510427#+0.18868..0.84692"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -28.12264,
+       "Lng": 153.46306
+      },
+      {
+       "Lat": -28.1226,
+       "Lng": 153.46303
+      },
+      {
+       "Lat": -28.12258,
+       "Lng": 153.46298
+      },
+      {
+       "Lat": -28.12255,
+       "Lng": 153.46282
+      },
+      {
+       "Lat": -28.12257,
+       "Lng": 153.46268
+      },
+      {
+       "Lat": -28.12262,
+       "Lng": 153.46257
+      }
+     ],
+     "RoadClosed": true,
+     "EntryTimeUtc": "2026-08-10T07:26:22+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "citybound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -28.12729,
+   "Longitude": 153.46629,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 4,
+   "PriorityBoosted": true,
+   "Detour": null,
+   "DelayMinutes": 4
+  },
+  {
+   "RoadName": "Arundel",
+   "Severity": 2,
+   "FunctionalClass": 3,
+   "TotalLengthMeters": 530,
+   "ImpactScore": 217.5,
+   "PrimaryType": "roadClosure",
+   "Description": "road closure northbound",
+   "Incidents": [
+    {
+     "Id": "4658060304221877827",
+     "Description": "Ramp to Smith Street (Northbound) - Closed due to road construction",
+     "Severity": 2,
+     "Location": "Arundel",
+     "Type": "construction",
+     "LengthMeters": 530,
+     "FunctionalClass": 3,
+     "Latitude": -27.95946,
+     "Longitude": 153.34714,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "citybound",
+     "Summary": null,
+     "JunctionTraversability": "intermediateClosedEdgeOpen",
+     "SegmentRefs": [
+      "$0:365891631:$1:919366268#-0.06683..1",
+      "$0:365891631:$1:919366348#+0..0.96169"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -27.95946,
+       "Lng": 153.34714
+      },
+      {
+       "Lat": -27.9599,
+       "Lng": 153.34799
+      },
+      {
+       "Lat": -27.96028,
+       "Lng": 153.34887
+      },
+      {
+       "Lat": -27.96037,
+       "Lng": 153.34918
+      },
+      {
+       "Lat": -27.9604,
+       "Lng": 153.34933
+      },
+      {
+       "Lat": -27.96042,
+       "Lng": 153.34964
+      },
+      {
+       "Lat": -27.96042,
+       "Lng": 153.34964
+      },
+      {
+       "Lat": -27.96035,
+       "Lng": 153.34995
+      },
+      {
+       "Lat": -27.96018,
+       "Lng": 153.35034
+      },
+      {
+       "Lat": -27.96007,
+       "Lng": 153.35049
+      },
+      {
+       "Lat": -27.95996,
+       "Lng": 153.35061
+      },
+      {
+       "Lat": -27.95977,
+       "Lng": 153.35075
+      },
+      {
+       "Lat": -27.95958,
+       "Lng": 153.35084
+      },
+      {
+       "Lat": -27.95928,
+       "Lng": 153.35089
+      },
+      {
+       "Lat": -27.95905,
+       "Lng": 153.35087
+      },
+      {
+       "Lat": -27.95867,
+       "Lng": 153.35078
+      }
+     ],
+     "RoadClosed": true,
+     "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "northbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -27.95946,
+   "Longitude": 153.34714,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  },
+  {
+   "RoadName": "SMITH STREET MOTORWAY (EASTBOUND)",
+   "Severity": 1,
+   "FunctionalClass": 3,
+   "TotalLengthMeters": 530,
+   "ImpactScore": 214.5,
+   "PrimaryType": "congestion",
+   "Description": "at a standstill",
+   "Incidents": [],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": null,
+   "Longitude": null,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": true,
+   "Detour": null,
+   "DelayMinutes": null
+  },
+  {
+   "RoadName": "West Burleigh Road",
+   "Severity": 2,
+   "FunctionalClass": 3,
+   "TotalLengthMeters": 463,
+   "ImpactScore": 204,
+   "PrimaryType": "construction",
+   "Description": "roadworks citybound",
+   "Incidents": [
+    {
+     "Id": "257213307739985816",
+     "Description": "Between West Burleigh Road and Starling Street - Road construction",
+     "Severity": 2,
+     "Location": "West Burleigh Rd",
+     "Type": "construction",
+     "LengthMeters": 253,
+     "FunctionalClass": 3,
+     "Latitude": -28.09839,
+     "Longitude": 153.44255,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "citybound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365891607:$1:221651991#+0.00876..1",
+      "$0:365891607:$1:215421744#+0..1",
+      "$0:365891607:$1:215510356#+0..1",
+      "$0:365891607:$1:532106094#+0..1"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -28.09839,
+       "Lng": 153.44255
+      },
+      {
+       "Lat": -28.09817,
+       "Lng": 153.44269
+      },
+      {
+       "Lat": -28.09793,
+       "Lng": 153.4428
+      },
+      {
+       "Lat": -28.09793,
+       "Lng": 153.4428
+      },
+      {
+       "Lat": -28.09765,
+       "Lng": 153.44288
+      },
+      {
+       "Lat": -28.09765,
+       "Lng": 153.44288
+      },
+      {
+       "Lat": -28.09743,
+       "Lng": 153.44293
+      },
+      {
+       "Lat": -28.09743,
+       "Lng": 153.44293
+      },
+      {
+       "Lat": -28.09724,
+       "Lng": 153.44296
+      },
+      {
+       "Lat": -28.09703,
+       "Lng": 153.44299
+      },
+      {
+       "Lat": -28.09703,
+       "Lng": 153.44299
+      },
+      {
+       "Lat": -28.09683,
+       "Lng": 153.44302
+      },
+      {
+       "Lat": -28.09683,
+       "Lng": 153.44302
+      },
+      {
+       "Lat": -28.09655,
+       "Lng": 153.44305
+      },
+      {
+       "Lat": -28.09655,
+       "Lng": 153.44305
+      },
+      {
+       "Lat": -28.09618,
+       "Lng": 153.44308
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-13T20:00:45+00:00"
+    },
+    {
+     "Id": "2968917451392187410",
+     "Description": "Between Starling Street and West Burleigh Road - Road construction",
+     "Severity": 2,
+     "Location": "West Burleigh Rd",
+     "Type": "construction",
+     "LengthMeters": 210,
+     "FunctionalClass": 3,
+     "Latitude": -28.09621,
+     "Longitude": 153.44324,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "outbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365891607:$1:216718824#-0.51996..1",
+      "$0:365891607:$1:215836393#-0..1",
+      "$0:365891607:$1:216343844#-0..1"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -28.09621,
+       "Lng": 153.44324
+      },
+      {
+       "Lat": -28.09657,
+       "Lng": 153.44322
+      },
+      {
+       "Lat": -28.09657,
+       "Lng": 153.44322
+      },
+      {
+       "Lat": -28.09688,
+       "Lng": 153.44319
+      },
+      {
+       "Lat": -28.09749,
+       "Lng": 153.44308
+      },
+      {
+       "Lat": -28.09749,
+       "Lng": 153.44308
+      },
+      {
+       "Lat": -28.09774,
+       "Lng": 153.44302
+      },
+      {
+       "Lat": -28.09774,
+       "Lng": 153.44302
+      },
+      {
+       "Lat": -28.09807,
+       "Lng": 153.4429
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-13T20:00:45+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "citybound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -28.09839,
+   "Longitude": 153.44255,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 3,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": 3
+  },
+  {
+   "RoadName": "Nerang Broadbeach Road",
+   "Severity": 2,
+   "FunctionalClass": 3,
+   "TotalLengthMeters": 21,
+   "ImpactScore": 187.93331576840353,
+   "PrimaryType": "construction",
+   "Description": "roadworks",
+   "Incidents": [
+    {
+     "Id": "1607752202539222916",
+     "Description": "At Burleigh Road - Road construction",
+     "Severity": 2,
+     "Location": "Nerang Broadbeach Rd",
+     "Type": "construction",
+     "LengthMeters": 21,
+     "FunctionalClass": 3,
+     "Latitude": -28.0352,
+     "Longitude": 153.40858,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365891633:$1:215836413#-0..0.95238"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -28.0352,
+       "Lng": 153.40858
+      },
+      {
+       "Lat": -28.03527,
+       "Lng": 153.40878
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-26T23:50:25+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -28.0352,
+   "Longitude": 153.40858,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  },
+  {
+   "RoadName": "Jupiters Casino Road",
+   "Severity": 2,
+   "FunctionalClass": 3,
+   "TotalLengthMeters": 51,
+   "ImpactScore": 137.07570176097937,
+   "PrimaryType": "congestion",
+   "Description": "heavy congestion",
+   "Incidents": [],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": null,
+   "Longitude": null,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": null,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": null
+  },
+  {
+   "RoadName": "Napper Road",
+   "Severity": 3,
+   "FunctionalClass": 4,
+   "TotalLengthMeters": 350,
+   "ImpactScore": 135,
+   "PrimaryType": "construction",
+   "Description": "roadworks northbound",
+   "Incidents": [
+    {
+     "Id": "982614817695257762",
+     "Description": "At Greenacre Drive - Road construction",
+     "Severity": 3,
+     "Location": "Napper Rd",
+     "Type": "construction",
+     "LengthMeters": 350,
+     "FunctionalClass": 4,
+     "Latitude": -27.95134,
+     "Longitude": 153.34657,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": "northbound",
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365891716:$1:220980918#-0..0.97431"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -27.95134,
+       "Lng": 153.34657
+      },
+      {
+       "Lat": -27.9511,
+       "Lng": 153.34662
+      },
+      {
+       "Lat": -27.9511,
+       "Lng": 153.34662
+      },
+      {
+       "Lat": -27.95097,
+       "Lng": 153.34661
+      },
+      {
+       "Lat": -27.95078,
+       "Lng": 153.34656
+      },
+      {
+       "Lat": -27.9506,
+       "Lng": 153.34648
+      },
+      {
+       "Lat": -27.95025,
+       "Lng": 153.3463
+      },
+      {
+       "Lat": -27.95,
+       "Lng": 153.34617
+      },
+      {
+       "Lat": -27.94977,
+       "Lng": 153.34609
+      },
+      {
+       "Lat": -27.94936,
+       "Lng": 153.34612
+      },
+      {
+       "Lat": -27.94936,
+       "Lng": 153.34612
+      },
+      {
+       "Lat": -27.94903,
+       "Lng": 153.34631
+      },
+      {
+       "Lat": -27.94903,
+       "Lng": 153.34631
+      },
+      {
+       "Lat": -27.94876,
+       "Lng": 153.34669
+      },
+      {
+       "Lat": -27.94876,
+       "Lng": 153.34669
+      },
+      {
+       "Lat": -27.94859,
+       "Lng": 153.34694
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-07T16:43:12+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": "northbound",
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -27.95134,
+   "Longitude": 153.34657,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 1,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": 1
+  },
+  {
+   "RoadName": "Markeri Street",
+   "Severity": 3,
+   "FunctionalClass": 4,
+   "TotalLengthMeters": 20,
+   "ImpactScore": 127.80617997398389,
+   "PrimaryType": "construction",
+   "Description": "roadworks",
+   "Incidents": [
+    {
+     "Id": "3630922883205558863",
+     "Description": "At Burleigh Road - Road construction",
+     "Severity": 3,
+     "Location": "Markeri St",
+     "Type": "construction",
+     "LengthMeters": 20,
+     "FunctionalClass": 4,
+     "Latitude": -28.04836,
+     "Longitude": 153.40703,
+     "IsNew": false,
+     "DataTimestampUtc": null,
+     "Direction": null,
+     "Summary": null,
+     "JunctionTraversability": null,
+     "SegmentRefs": [
+      "$0:365891611:$1:216725743#+0..1"
+     ],
+     "Comment": null,
+     "Shape": [
+      {
+       "Lat": -28.04836,
+       "Lng": 153.40703
+      },
+      {
+       "Lat": -28.0483,
+       "Lng": 153.40722
+      }
+     ],
+     "RoadClosed": false,
+     "EntryTimeUtc": "2026-07-26T23:50:25+00:00"
+    }
+   ],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": -28.04836,
+   "Longitude": 153.40703,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 1,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": 1
+  },
+  {
+   "RoadName": "Nerang-Broadbeach Road",
+   "Severity": 3,
+   "FunctionalClass": 3,
+   "TotalLengthMeters": 498,
+   "ImpactScore": 125,
+   "PrimaryType": "congestion",
+   "Description": "slow-moving",
+   "Incidents": [],
+   "Suburb": null,
+   "Direction": null,
+   "Extent": null,
+   "DriveTimeMinutes": null,
+   "NormalDriveTimeMinutes": null,
+   "Latitude": null,
+   "Longitude": null,
+   "StartPoint": null,
+   "EndPoint": null,
+   "JamTendency": null,
+   "FlowDelayMinutes": 1,
+   "PriorityBoosted": false,
+   "Detour": null,
+   "DelayMinutes": 1
+  }
+ ]
+}

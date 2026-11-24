@@ -1,0 +1,829 @@
+{
+ "voiceId": "XGZ4jNfM7INNpwHL5r87",
+ "voiceName": "Older Female Matt - AM - Gold/Regional AH",
+ "modelId": "eleven_v3",
+ "stability": 0.7,
+ "similarityBoost": 0.7,
+ "style": 0.0,
+ "speed": 0.97,
+ "paceBoostWpm": 16.0,
+ "total": 3,
+ "clean": 3,
+ "tokens": 149,
+ "bulletins": [
+  {
+   "jobId": "933031c64d674e748f42e432d703847e",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 21.2,
+   "fittedSec": 22,
+   "stretch": 0.96364,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "[brightly]The M8's at a standstill, with St Hillers Road also stopped solid. The M7's chockers outbound at Quakers Road. The Harbour Tunnel's got backed-up traffic southbound, while Parramatta Road's a slow patch. Roadworks and minor delays are affecting the Warringah Freeway at Brook Street, and Caroline Chisholm Drive's moving slowly.",
+   "features": {
+    "syl": 81,
+    "words": 50,
+    "ellipsis": 0,
+    "period": 4,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0.083,
+     "e": 0.166
+    },
+    {
+     "w": "M8's",
+     "s": 0.291,
+     "e": 0.748
+    },
+    {
+     "w": "at",
+     "s": 0.803,
+     "e": 0.914
+    },
+    {
+     "w": "a",
+     "s": 0.956,
+     "e": 0.997
+    },
+    {
+     "w": "standstill,",
+     "s": 1.08,
+     "e": 1.994
+    },
+    {
+     "w": "with",
+     "s": 2.011,
+     "e": 2.077
+    },
+    {
+     "w": "St",
+     "s": 2.119,
+     "e": 2.327
+    },
+    {
+     "w": "Hillers",
+     "s": 2.376,
+     "e": 2.742
+    },
+    {
+     "w": "Road",
+     "s": 2.808,
+     "e": 3.074
+    },
+    {
+     "w": "also",
+     "s": 3.207,
+     "e": 3.739
+    },
+    {
+     "w": "stopped",
+     "s": 3.801,
+     "e": 4.238
+    },
+    {
+     "w": "solid.",
+     "s": 4.307,
+     "e": 4.736
+    },
+    {
+     "w": "The",
+     "s": 4.882,
+     "e": 5.318
+    },
+    {
+     "w": "M7's",
+     "s": 5.401,
+     "e": 5.983
+    },
+    {
+     "w": "chockers",
+     "s": 6.038,
+     "e": 6.481
+    },
+    {
+     "w": "outbound",
+     "s": 6.555,
+     "e": 7.146
+    },
+    {
+     "w": "at",
+     "s": 7.229,
+     "e": 7.395
+    },
+    {
+     "w": "Quakers",
+     "s": 7.45,
+     "e": 7.894
+    },
+    {
+     "w": "Road.",
+     "s": 7.977,
+     "e": 8.725
+    },
+    {
+     "w": "The",
+     "s": 8.766,
+     "e": 8.891
+    },
+    {
+     "w": "Harbour",
+     "s": 8.922,
+     "e": 9.14
+    },
+    {
+     "w": "Tunnel's",
+     "s": 9.199,
+     "e": 9.639
+    },
+    {
+     "w": "got",
+     "s": 9.68,
+     "e": 9.805
+    },
+    {
+     "w": "backed-up",
+     "s": 9.864,
+     "e": 10.303
+    },
+    {
+     "w": "traffic",
+     "s": 10.366,
+     "e": 10.802
+    },
+    {
+     "w": "southbound,",
+     "s": 10.871,
+     "e": 11.799
+    },
+    {
+     "w": "while",
+     "s": 11.84,
+     "e": 12.048
+    },
+    {
+     "w": "Parramatta",
+     "s": 12.098,
+     "e": 12.63
+    },
+    {
+     "w": "Road's",
+     "s": 12.713,
+     "e": 13.128
+    },
+    {
+     "w": "a",
+     "s": 13.211,
+     "e": 13.295
+    },
+    {
+     "w": "slow",
+     "s": 13.344,
+     "e": 13.544
+    },
+    {
+     "w": "patch.",
+     "s": 13.627,
+     "e": 14.375
+    },
+    {
+     "w": "Roadworks",
+     "s": 14.474,
+     "e": 15.206
+    },
+    {
+     "w": "and",
+     "s": 15.247,
+     "e": 15.372
+    },
+    {
+     "w": "minor",
+     "s": 15.427,
+     "e": 15.704
+    },
+    {
+     "w": "delays",
+     "s": 15.787,
+     "e": 16.286
+    },
+    {
+     "w": "are",
+     "s": 16.327,
+     "e": 16.452
+    },
+    {
+     "w": "affecting",
+     "s": 16.494,
+     "e": 16.867
+    },
+    {
+     "w": "the",
+     "s": 16.909,
+     "e": 17.034
+    },
+    {
+     "w": "Warringah",
+     "s": 17.075,
+     "e": 17.449
+    },
+    {
+     "w": "Freeway",
+     "s": 17.491,
+     "e": 17.948
+    },
+    {
+     "w": "at",
+     "s": 18.003,
+     "e": 18.114
+    },
+    {
+     "w": "Brook",
+     "s": 18.169,
+     "e": 18.446
+    },
+    {
+     "w": "Street,",
+     "s": 18.494,
+     "e": 19.194
+    },
+    {
+     "w": "and",
+     "s": 19.215,
+     "e": 19.277
+    },
+    {
+     "w": "Caroline",
+     "s": 19.342,
+     "e": 19.859
+    },
+    {
+     "w": "Chisholm",
+     "s": 19.914,
+     "e": 20.482
+    },
+    {
+     "w": "Drive's",
+     "s": 20.516,
+     "e": 20.856
+    },
+    {
+     "w": "moving",
+     "s": 20.915,
+     "e": 21.271
+    },
+    {
+     "w": "slowly.",
+     "s": 21.354,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "b087fab94a9743bc9f693771b1d2e0f0",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 21.2,
+   "fittedSec": 22,
+   "stretch": 0.96364,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The Warringah Freeway's still CLOSED citybound at Brook Street for construction. Caroline Chisholm Drive's at a standstill. The M7's congestion at Kurrajong Road has traffic heavy. Banks Drive, Victoria Road and Parramatta Road are a bit slow. Pittwater Road's also got minor delays. [brightly]Partly sunny, 13 degrees!",
+   "features": {
+    "syl": 79,
+    "words": 47,
+    "ellipsis": 0,
+    "period": 6,
+    "comma": 2,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.082
+    },
+    {
+     "w": "Warringah",
+     "s": 0.124,
+     "e": 0.495
+    },
+    {
+     "w": "Freeway's",
+     "s": 0.536,
+     "e": 1.072
+    },
+    {
+     "w": "still",
+     "s": 1.113,
+     "e": 1.319
+    },
+    {
+     "w": "CLOSED",
+     "s": 1.413,
+     "e": 1.979
+    },
+    {
+     "w": "citybound",
+     "s": 2.061,
+     "e": 2.72
+    },
+    {
+     "w": "at",
+     "s": 2.748,
+     "e": 2.803
+    },
+    {
+     "w": "Brook",
+     "s": 2.858,
+     "e": 3.133
+    },
+    {
+     "w": "Street",
+     "s": 3.191,
+     "e": 3.545
+    },
+    {
+     "w": "for",
+     "s": 3.586,
+     "e": 3.71
+    },
+    {
+     "w": "construction.",
+     "s": 3.774,
+     "e": 4.988
+    },
+    {
+     "w": "Caroline",
+     "s": 5.038,
+     "e": 5.441
+    },
+    {
+     "w": "Chisholm",
+     "s": 5.496,
+     "e": 5.977
+    },
+    {
+     "w": "Drive's",
+     "s": 6.011,
+     "e": 6.265
+    },
+    {
+     "w": "at",
+     "s": 6.348,
+     "e": 6.513
+    },
+    {
+     "w": "a",
+     "s": 6.554,
+     "e": 6.595
+    },
+    {
+     "w": "standstill.",
+     "s": 6.65,
+     "e": 7.914
+    },
+    {
+     "w": "The",
+     "s": 7.935,
+     "e": 7.997
+    },
+    {
+     "w": "M7's",
+     "s": 8.079,
+     "e": 8.656
+    },
+    {
+     "w": "congestion",
+     "s": 8.716,
+     "e": 9.316
+    },
+    {
+     "w": "at",
+     "s": 9.343,
+     "e": 9.398
+    },
+    {
+     "w": "Kurrajong",
+     "s": 9.48,
+     "e": 10.057
+    },
+    {
+     "w": "Road",
+     "s": 10.14,
+     "e": 10.47
+    },
+    {
+     "w": "has",
+     "s": 10.531,
+     "e": 10.717
+    },
+    {
+     "w": "traffic",
+     "s": 10.768,
+     "e": 11.129
+    },
+    {
+     "w": "heavy.",
+     "s": 11.198,
+     "e": 11.624
+    },
+    {
+     "w": "Banks",
+     "s": 11.734,
+     "e": 12.283
+    },
+    {
+     "w": "Drive,",
+     "s": 12.352,
+     "e": 13.025
+    },
+    {
+     "w": "Victoria",
+     "s": 13.062,
+     "e": 13.355
+    },
+    {
+     "w": "Road",
+     "s": 13.437,
+     "e": 13.767
+    },
+    {
+     "w": "and",
+     "s": 13.85,
+     "e": 14.097
+    },
+    {
+     "w": "Parramatta",
+     "s": 14.163,
+     "e": 14.756
+    },
+    {
+     "w": "Road",
+     "s": 14.839,
+     "e": 15.169
+    },
+    {
+     "w": "are",
+     "s": 15.23,
+     "e": 15.416
+    },
+    {
+     "w": "a",
+     "s": 15.457,
+     "e": 15.498
+    },
+    {
+     "w": "bit",
+     "s": 15.56,
+     "e": 15.746
+    },
+    {
+     "w": "slow.",
+     "s": 15.828,
+     "e": 16.24
+    },
+    {
+     "w": "Pittwater",
+     "s": 16.372,
+     "e": 17.147
+    },
+    {
+     "w": "Road's",
+     "s": 17.197,
+     "e": 17.559
+    },
+    {
+     "w": "also",
+     "s": 17.625,
+     "e": 17.889
+    },
+    {
+     "w": "got",
+     "s": 17.972,
+     "e": 18.219
+    },
+    {
+     "w": "minor",
+     "s": 18.288,
+     "e": 18.631
+    },
+    {
+     "w": "delays.",
+     "s": 18.725,
+     "e": 19.579
+    },
+    {
+     "w": "Partly",
+     "s": 19.991,
+     "e": 20.197
+    },
+    {
+     "w": "sunny,",
+     "s": 20.266,
+     "e": 20.774
+    },
+    {
+     "w": "13",
+     "s": 20.82,
+     "e": 21.187
+    },
+    {
+     "w": "degrees!",
+     "s": 21.269,
+     "e": 22
+    }
+   ]
+  },
+  {
+   "jobId": "d6071563578f40b991d7403393d51f6c",
+   "market": "sydney",
+   "targetSec": 22.0,
+   "naturalSec": 20.7,
+   "fittedSec": 21.883,
+   "stretch": 0.94594,
+   "clean": true,
+   "excludedBecause": [],
+   "spokenText": "The M8's at a STANDSTILL, with the Sydney Harbour Tunnel and a couple more spots also stopped solid. Warringah Freeway's got construction at Brook Street. Parramatta Road and Stanmore Road have minor delays. Congestion on Westlink M7 has now cleared, and the Harbour Bridge is moving nicely! [brightly] Partly sunny, 13 degrees.",
+   "features": {
+    "syl": 80,
+    "words": 51,
+    "ellipsis": 0,
+    "period": 5,
+    "comma": 3,
+    "dash": 0,
+    "costlyTags": 0,
+    "tags": 1
+   },
+   "tokens": [
+    {
+     "w": "The",
+     "s": 0,
+     "e": 0.169
+    },
+    {
+     "w": "M8's",
+     "s": 0.253,
+     "e": 0.591
+    },
+    {
+     "w": "at",
+     "s": 0.676,
+     "e": 0.845
+    },
+    {
+     "w": "a",
+     "s": 0.929,
+     "e": 1.014
+    },
+    {
+     "w": "STANDSTILL,",
+     "s": 1.07,
+     "e": 1.774
+    },
+    {
+     "w": "with",
+     "s": 1.808,
+     "e": 1.943
+    },
+    {
+     "w": "the",
+     "s": 1.964,
+     "e": 2.027
+    },
+    {
+     "w": "Sydney",
+     "s": 2.083,
+     "e": 2.365
+    },
+    {
+     "w": "Harbour",
+     "s": 2.418,
+     "e": 2.788
+    },
+    {
+     "w": "Tunnel",
+     "s": 2.861,
+     "e": 3.295
+    },
+    {
+     "w": "and",
+     "s": 3.337,
+     "e": 3.464
+    },
+    {
+     "w": "a",
+     "s": 3.506,
+     "e": 3.548
+    },
+    {
+     "w": "couple",
+     "s": 3.597,
+     "e": 3.886
+    },
+    {
+     "w": "more",
+     "s": 3.937,
+     "e": 4.139
+    },
+    {
+     "w": "spots",
+     "s": 4.224,
+     "e": 4.646
+    },
+    {
+     "w": "also",
+     "s": 4.731,
+     "e": 5.069
+    },
+    {
+     "w": "stopped",
+     "s": 5.121,
+     "e": 5.491
+    },
+    {
+     "w": "solid.",
+     "s": 5.562,
+     "e": 6.336
+    },
+    {
+     "w": "Warringah",
+     "s": 6.42,
+     "e": 6.927
+    },
+    {
+     "w": "Freeway's",
+     "s": 6.969,
+     "e": 7.434
+    },
+    {
+     "w": "got",
+     "s": 7.476,
+     "e": 7.603
+    },
+    {
+     "w": "construction",
+     "s": 7.661,
+     "e": 8.363
+    },
+    {
+     "w": "at",
+     "s": 8.448,
+     "e": 8.617
+    },
+    {
+     "w": "Brook",
+     "s": 8.673,
+     "e": 8.954
+    },
+    {
+     "w": "Street.",
+     "s": 9.015,
+     "e": 9.461
+    },
+    {
+     "w": "Parramatta",
+     "s": 9.58,
+     "e": 10.391
+    },
+    {
+     "w": "Road",
+     "s": 10.458,
+     "e": 10.728
+    },
+    {
+     "w": "and",
+     "s": 10.771,
+     "e": 10.897
+    },
+    {
+     "w": "Stanmore",
+     "s": 10.982,
+     "e": 11.489
+    },
+    {
+     "w": "Road",
+     "s": 11.556,
+     "e": 11.827
+    },
+    {
+     "w": "have",
+     "s": 11.877,
+     "e": 12.08
+    },
+    {
+     "w": "minor",
+     "s": 12.136,
+     "e": 12.418
+    },
+    {
+     "w": "delays.",
+     "s": 12.502,
+     "e": 13.094
+    },
+    {
+     "w": "Congestion",
+     "s": 13.229,
+     "e": 14.107
+    },
+    {
+     "w": "on",
+     "s": 14.163,
+     "e": 14.276
+    },
+    {
+     "w": "Westlink",
+     "s": 14.344,
+     "e": 14.868
+    },
+    {
+     "w": "M",
+     "s": 14.994,
+     "e": 15.121
+    },
+    {
+     "w": "7",
+     "s": 15.192,
+     "e": 15.544
+    },
+    {
+     "w": "has",
+     "s": 15.628,
+     "e": 15.881
+    },
+    {
+     "w": "now",
+     "s": 15.945,
+     "e": 16.135
+    },
+    {
+     "w": "cleared,",
+     "s": 16.198,
+     "e": 17.064
+    },
+    {
+     "w": "and",
+     "s": 17.085,
+     "e": 17.149
+    },
+    {
+     "w": "the",
+     "s": 17.17,
+     "e": 17.233
+    },
+    {
+     "w": "Harbour",
+     "s": 17.275,
+     "e": 17.571
+    },
+    {
+     "w": "Bridge",
+     "s": 17.631,
+     "e": 17.993
+    },
+    {
+     "w": "is",
+     "s": 18.078,
+     "e": 18.247
+    },
+    {
+     "w": "moving",
+     "s": 18.307,
+     "e": 18.669
+    },
+    {
+     "w": "nicely!",
+     "s": 18.754,
+     "e": 19.345
+    },
+    {
+     "w": "Partly",
+     "s": 19.957,
+     "e": 20.11
+    },
+    {
+     "w": "sunny,",
+     "s": 20.18,
+     "e": 20.701
+    },
+    {
+     "w": "13",
+     "s": 20.739,
+     "e": 21.039
+    },
+    {
+     "w": "degrees.",
+     "s": 21.123,
+     "e": 21.883
+    }
+   ]
+  }
+ ]
+}

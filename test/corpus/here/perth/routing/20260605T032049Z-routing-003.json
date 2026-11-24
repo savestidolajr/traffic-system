@@ -1,0 +1,66 @@
+{
+  "Market": "perth",
+  "Endpoint": "routing",
+  "SessionId": "20260605T032049Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:50.9043362+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-31.855990,115.966680\u0026destination=-31.860480,115.801670\u0026departureTime=2026-06-05T03:20:50.7770960\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "routes": [
+        {
+          "id": "ccda8c00-aadd-4d28-968e-d28629037b7b",
+          "sections": [
+            {
+              "id": "dc2e82e5-bb5f-4137-b22e-a0d43fa7eaec",
+              "type": "vehicle",
+              "departure": {
+                "time": "2026-06-05T11:20:50\u002B08:00",
+                "place": {
+                  "type": "place",
+                  "location": {
+                    "lat": -31.85599,
+                    "lng": 115.96668
+                  },
+                  "originalLocation": {
+                    "lat": -31.85599,
+                    "lng": 115.96668
+                  }
+                }
+              },
+              "arrival": {
+                "time": "2026-06-05T11:38:35\u002B08:00",
+                "place": {
+                  "type": "place",
+                  "location": {
+                    "lat": -31.8604801,
+                    "lng": 115.80167
+                  },
+                  "originalLocation": {
+                    "lat": -31.8604801,
+                    "lng": 115.80167
+                  }
+                }
+              },
+              "summary": {
+                "duration": 1065,
+                "length": 17962,
+                "baseDuration": 1012,
+                "typicalDuration": 1092
+              },
+              "transport": {
+                "mode": "car"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

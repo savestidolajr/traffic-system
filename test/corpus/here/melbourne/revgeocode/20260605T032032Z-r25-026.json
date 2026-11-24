@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.0841704+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-38.01198,145.09065\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Station St, Aspendale VIC 3195, Australia",
+          "id": "here:af:streetsection:LWyg7XByQXsy43jPZl9.oC",
+          "resultType": "street",
+          "address": {
+            "label": "Station St, Aspendale VIC 3195, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Aspendale",
+            "street": "Station St",
+            "postalCode": "3195"
+          },
+          "position": {
+            "lat": -38.01198,
+            "lng": 145.09065
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 145.08991,
+            "south": -38.03418,
+            "east": 145.10645,
+            "north": -38.01184
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

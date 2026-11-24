@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.6265191+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69278,144.75004\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Banchory Ave, Hillside VIC 3037, Australia",
+          "id": "here:af:streetsection:3C9o-pEebzkJBwM5XSiKuD",
+          "resultType": "street",
+          "address": {
+            "label": "Banchory Ave, Hillside VIC 3037, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Hillside",
+            "street": "Banchory Ave",
+            "postalCode": "3037"
+          },
+          "position": {
+            "lat": -37.69278,
+            "lng": 144.75004
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 144.74338,
+            "south": -37.69278,
+            "east": 144.7503,
+            "north": -37.68851
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "Market": "goldcoast",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032051Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:52.5166622+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.11171,153.24473\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Pine Creek Rd, Numinbah Valley QLD 4211, Australia",
+          "id": "here:af:streetsection:zcVDOW03z76DCjYUgT997A",
+          "resultType": "street",
+          "address": {
+            "label": "Pine Creek Rd, Numinbah Valley QLD 4211, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Gold Coast",
+            "district": "Numinbah Valley",
+            "street": "Pine Creek Rd",
+            "postalCode": "4211"
+          },
+          "position": {
+            "lat": -28.11171,
+            "lng": 153.24473
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 153.24034,
+            "south": -28.12618,
+            "east": 153.25365,
+            "north": -28.10807
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,1385 @@
+{
+  "Label": "pm-cairns",
+  "Reason": "true sample wave 3 (afternoon): traffic\u002Bweather\u002Bfuel",
+  "SourceJobId": "3f418d5b62634fbd9b9bb2fc6fe930f8",
+  "OriginalScript": "The Kennedy Highway northbound has a road hazard at Myola Road, and drivers are backed up about ten kays. The Bruce Highway citybound is under construction with minor delays, and the Captain Cook Highway outbound is also under construction at Port Douglas Road. Aeroglen Drive northbound, Kamerunga Road eastbound and Foster Road are all under construction too. Cairns Western Arterial Road, Sheridan Street, Draper Street and Mulgrave Road are moving nicely.",
+  "CapturedAtUtc": "2026-07-10T04:18:53.98253+00:00",
+  "Snapshot": {
+    "TargetDurationSeconds": 30,
+    "Location": "cairns-4ca",
+    "City": null,
+    "MarketId": "cairns-4ca",
+    "Content": {
+      "Traffic": true,
+      "Weather": true,
+      "Fuel": true,
+      "HasAnySource": true
+    },
+    "Corridors": [
+      {
+        "RoadName": "Bruce Highway",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 526,
+        "ImpactScore": 254.8,
+        "PrimaryType": "construction",
+        "Description": "roadworks citybound",
+        "Incidents": [
+          {
+            "Id": "1613617159857615503",
+            "Description": "At Foster Road - Road construction",
+            "Severity": 1,
+            "Location": "Bruce Hwy",
+            "Type": "construction",
+            "LengthMeters": 503,
+            "FunctionalClass": 1,
+            "Latitude": -17.01804,
+            "Longitude": 145.74454,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:367132355:$1:215257787#\u002B0.5844..1",
+              "$0:367132354:$1:220973981#\u002B0..1",
+              "$0:367132354:$1:231527896#\u002B0..0.28331"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -17.01804,
+                "Lng": 145.74454
+              },
+              {
+                "Lat": -17.01775,
+                "Lng": 145.74446
+              },
+              {
+                "Lat": -17.01775,
+                "Lng": 145.74446
+              },
+              {
+                "Lat": -17.01745,
+                "Lng": 145.74439
+              },
+              {
+                "Lat": -17.01745,
+                "Lng": 145.74439
+              },
+              {
+                "Lat": -17.01722,
+                "Lng": 145.74434
+              },
+              {
+                "Lat": -17.01722,
+                "Lng": 145.74434
+              },
+              {
+                "Lat": -17.01691,
+                "Lng": 145.74429
+              },
+              {
+                "Lat": -17.01691,
+                "Lng": 145.74429
+              },
+              {
+                "Lat": -17.01646,
+                "Lng": 145.74425
+              },
+              {
+                "Lat": -17.01646,
+                "Lng": 145.74425
+              },
+              {
+                "Lat": -17.0158,
+                "Lng": 145.74423
+              },
+              {
+                "Lat": -17.0158,
+                "Lng": 145.74423
+              },
+              {
+                "Lat": -17.01381,
+                "Lng": 145.74419
+              },
+              {
+                "Lat": -17.01381,
+                "Lng": 145.74419
+              },
+              {
+                "Lat": -17.01353,
+                "Lng": 145.74419
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+          },
+          {
+            "Id": "1457300516770774815",
+            "Description": "Road construction",
+            "Severity": 3,
+            "Location": "Bruce Hwy",
+            "Type": "construction",
+            "LengthMeters": 23,
+            "FunctionalClass": 4,
+            "Latitude": -16.98762,
+            "Longitude": 145.74204,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:367132360:$1:216764092#\u002B0..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -16.98762,
+                "Lng": 145.74204
+              },
+              {
+                "Lat": -16.98759,
+                "Lng": 145.74182
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:51+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": "citybound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -17.01804,
+        "Longitude": 145.74454,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 3,
+        "PriorityBoosted": true,
+        "Detour": null,
+        "DelayMinutes": 3
+      },
+      {
+        "RoadName": "Kennedy Highway",
+        "Severity": 1,
+        "FunctionalClass": 2,
+        "TotalLengthMeters": 11717,
+        "ImpactScore": 215,
+        "PrimaryType": "roadHazard",
+        "Description": "hazard on road northbound",
+        "Incidents": [
+          {
+            "Id": "714947158505978264",
+            "Description": "At Captain Cook Highway - Road construction",
+            "Severity": 1,
+            "Location": "Kennedy Hwy",
+            "Type": "construction",
+            "LengthMeters": 5665,
+            "FunctionalClass": 2,
+            "Latitude": -16.83044,
+            "Longitude": 145.65995,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:367219736:$1:779318821#\u002B0.42686..1",
+              "$0:367219731:$1:503326090#-0..1",
+              "$0:367219731:$1:503574942#-0..1",
+              "$0:367219734:$1:503327347#-0..0.58907"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -16.83044,
+                "Lng": 145.65995
+              },
+              {
+                "Lat": -16.83216,
+                "Lng": 145.66368
+              },
+              {
+                "Lat": -16.83118,
+                "Lng": 145.6663
+              },
+              {
+                "Lat": -16.83163,
+                "Lng": 145.66904
+              },
+              {
+                "Lat": -16.83443,
+                "Lng": 145.6706
+              },
+              {
+                "Lat": -16.83805,
+                "Lng": 145.67265
+              },
+              {
+                "Lat": -16.84053,
+                "Lng": 145.67226
+              },
+              {
+                "Lat": -16.84342,
+                "Lng": 145.67326
+              },
+              {
+                "Lat": -16.84601,
+                "Lng": 145.67375
+              },
+              {
+                "Lat": -16.84726,
+                "Lng": 145.67643
+              },
+              {
+                "Lat": -16.84761,
+                "Lng": 145.68051
+              },
+              {
+                "Lat": -16.85049,
+                "Lng": 145.68408
+              },
+              {
+                "Lat": -16.85129,
+                "Lng": 145.68705
+              },
+              {
+                "Lat": -16.84975,
+                "Lng": 145.68477
+              },
+              {
+                "Lat": -16.84842,
+                "Lng": 145.68294
+              },
+              {
+                "Lat": -16.8458,
+                "Lng": 145.68284
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:51+00:00"
+          },
+          {
+            "Id": "2742343815084849821",
+            "Description": "At Myola Road - Road construction",
+            "Severity": 1,
+            "Location": "Kennedy Hwy",
+            "Type": "construction",
+            "LengthMeters": 5537,
+            "FunctionalClass": 2,
+            "Latitude": -16.84679,
+            "Longitude": 145.68302,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "outbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:367219734:$1:503327347#\u002B0.42231..1",
+              "$0:367219731:$1:503574942#\u002B0..1",
+              "$0:367219731:$1:503326090#\u002B0..1",
+              "$0:367219736:$1:779318821#-0..0.57283"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -16.84679,
+                "Lng": 145.68302
+              },
+              {
+                "Lat": -16.84859,
+                "Lng": 145.68391
+              },
+              {
+                "Lat": -16.85047,
+                "Lng": 145.68668
+              },
+              {
+                "Lat": -16.85063,
+                "Lng": 145.68626
+              },
+              {
+                "Lat": -16.84943,
+                "Lng": 145.68246
+              },
+              {
+                "Lat": -16.84759,
+                "Lng": 145.67971
+              },
+              {
+                "Lat": -16.84671,
+                "Lng": 145.67589
+              },
+              {
+                "Lat": -16.84572,
+                "Lng": 145.67334
+              },
+              {
+                "Lat": -16.84252,
+                "Lng": 145.67315
+              },
+              {
+                "Lat": -16.84006,
+                "Lng": 145.67222
+              },
+              {
+                "Lat": -16.83775,
+                "Lng": 145.67245
+              },
+              {
+                "Lat": -16.8342,
+                "Lng": 145.6705
+              },
+              {
+                "Lat": -16.83132,
+                "Lng": 145.66876
+              },
+              {
+                "Lat": -16.83144,
+                "Lng": 145.66611
+              },
+              {
+                "Lat": -16.83198,
+                "Lng": 145.66349
+              },
+              {
+                "Lat": -16.83044,
+                "Lng": 145.65995
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+          },
+          {
+            "Id": "342694560343702700",
+            "Description": "At Captain Cook Highway - Hazardous driving conditions",
+            "Severity": 1,
+            "Location": "Kennedy Hwy",
+            "Type": "roadHazard",
+            "LengthMeters": 268,
+            "FunctionalClass": 2,
+            "Latitude": -16.81684,
+            "Longitude": 145.63358,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "northbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:367219725:$1:221129749#\u002B0.35801..0.98732"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -16.81684,
+                "Lng": 145.63358
+              },
+              {
+                "Lat": -16.81669,
+                "Lng": 145.6337
+              },
+              {
+                "Lat": -16.81669,
+                "Lng": 145.6337
+              },
+              {
+                "Lat": -16.81629,
+                "Lng": 145.63402
+              },
+              {
+                "Lat": -16.81629,
+                "Lng": 145.63402
+              },
+              {
+                "Lat": -16.81541,
+                "Lng": 145.63473
+              },
+              {
+                "Lat": -16.81541,
+                "Lng": 145.63473
+              },
+              {
+                "Lat": -16.81517,
+                "Lng": 145.63492
+              },
+              {
+                "Lat": -16.81517,
+                "Lng": 145.63492
+              },
+              {
+                "Lat": -16.81492,
+                "Lng": 145.63512
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+          },
+          {
+            "Id": "1775085339156835523",
+            "Description": "At Myola Road - Hazardous driving conditions",
+            "Severity": 1,
+            "Location": "Kennedy Hwy",
+            "Type": "roadHazard",
+            "LengthMeters": 247,
+            "FunctionalClass": 2,
+            "Latitude": -16.81492,
+            "Longitude": 145.63512,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "southbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:367219725:$1:221129749#-0..0.62931"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -16.81492,
+                "Lng": 145.63512
+              },
+              {
+                "Lat": -16.81517,
+                "Lng": 145.63492
+              },
+              {
+                "Lat": -16.81517,
+                "Lng": 145.63492
+              },
+              {
+                "Lat": -16.81541,
+                "Lng": 145.63473
+              },
+              {
+                "Lat": -16.81541,
+                "Lng": 145.63473
+              },
+              {
+                "Lat": -16.81629,
+                "Lng": 145.63402
+              },
+              {
+                "Lat": -16.81629,
+                "Lng": 145.63402
+              },
+              {
+                "Lat": -16.81669,
+                "Lng": 145.6337
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": "northbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -16.81684,
+        "Longitude": 145.63358,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": null
+      },
+      {
+        "RoadName": "Captain Cook Highway",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 10946,
+        "ImpactScore": 176.8,
+        "PrimaryType": "construction",
+        "Description": "roadworks outbound",
+        "Incidents": [
+          {
+            "Id": "4053159635517200595",
+            "Description": "At Port Douglas Road - Road construction",
+            "Severity": 2,
+            "Location": "Captain Cook Hwy",
+            "Type": "construction",
+            "LengthMeters": 5473,
+            "FunctionalClass": 3,
+            "Latitude": -16.73864,
+            "Longitude": 145.66387,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "outbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:367219763:$1:221723711#\u002B0.98036..1",
+              "$0:367219769:$1:220763969#\u002B0..1",
+              "$0:367219768:$1:215615298#\u002B0..1",
+              "$0:367219768:$1:221723334#\u002B0..1",
+              "$0:367219768:$1:220902048#-0..1",
+              "$0:367219768:$1:218197746#\u002B0..0.79486"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -16.73864,
+                "Lng": 145.66387
+              },
+              {
+                "Lat": -16.73683,
+                "Lng": 145.66314
+              },
+              {
+                "Lat": -16.73564,
+                "Lng": 145.66097
+              },
+              {
+                "Lat": -16.73241,
+                "Lng": 145.65719
+              },
+              {
+                "Lat": -16.73054,
+                "Lng": 145.65541
+              },
+              {
+                "Lat": -16.73081,
+                "Lng": 145.65425
+              },
+              {
+                "Lat": -16.73083,
+                "Lng": 145.65186
+              },
+              {
+                "Lat": -16.72873,
+                "Lng": 145.64869
+              },
+              {
+                "Lat": -16.72337,
+                "Lng": 145.64357
+              },
+              {
+                "Lat": -16.72151,
+                "Lng": 145.64189
+              },
+              {
+                "Lat": -16.71715,
+                "Lng": 145.63856
+              },
+              {
+                "Lat": -16.71452,
+                "Lng": 145.63623
+              },
+              {
+                "Lat": -16.71222,
+                "Lng": 145.63441
+              },
+              {
+                "Lat": -16.71093,
+                "Lng": 145.63243
+              },
+              {
+                "Lat": -16.70804,
+                "Lng": 145.63035
+              },
+              {
+                "Lat": -16.70625,
+                "Lng": 145.62852
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+          },
+          {
+            "Id": "1850415870328724942",
+            "Description": "At McGregor Road - Road construction",
+            "Severity": 2,
+            "Location": "Captain Cook Hwy",
+            "Type": "construction",
+            "LengthMeters": 5473,
+            "FunctionalClass": 3,
+            "Latitude": -16.70625,
+            "Longitude": 145.62852,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:367219768:$1:218197746#-0.20797..1",
+              "$0:367219768:$1:220902048#\u002B0..1",
+              "$0:367219768:$1:221723334#-0..1",
+              "$0:367219768:$1:215615298#-0..1",
+              "$0:367219769:$1:220763969#-0..1",
+              "$0:367219763:$1:221723711#-0..0.02946"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -16.70625,
+                "Lng": 145.62852
+              },
+              {
+                "Lat": -16.70804,
+                "Lng": 145.63035
+              },
+              {
+                "Lat": -16.71093,
+                "Lng": 145.63243
+              },
+              {
+                "Lat": -16.71222,
+                "Lng": 145.63441
+              },
+              {
+                "Lat": -16.71452,
+                "Lng": 145.63623
+              },
+              {
+                "Lat": -16.71715,
+                "Lng": 145.63856
+              },
+              {
+                "Lat": -16.72151,
+                "Lng": 145.64189
+              },
+              {
+                "Lat": -16.72337,
+                "Lng": 145.64357
+              },
+              {
+                "Lat": -16.72873,
+                "Lng": 145.64869
+              },
+              {
+                "Lat": -16.73083,
+                "Lng": 145.65186
+              },
+              {
+                "Lat": -16.73081,
+                "Lng": 145.65425
+              },
+              {
+                "Lat": -16.73054,
+                "Lng": 145.65541
+              },
+              {
+                "Lat": -16.73241,
+                "Lng": 145.65719
+              },
+              {
+                "Lat": -16.73564,
+                "Lng": 145.66097
+              },
+              {
+                "Lat": -16.73683,
+                "Lng": 145.66314
+              },
+              {
+                "Lat": -16.73864,
+                "Lng": 145.66387
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": "outbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -16.73864,
+        "Longitude": 145.66387,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": true,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "Aeroglen Drive",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 2146,
+        "ImpactScore": 136,
+        "PrimaryType": "construction",
+        "Description": "roadworks northbound",
+        "Incidents": [
+          {
+            "Id": "105014325066955219",
+            "Description": "Road construction",
+            "Severity": 2,
+            "Location": "Aeroglen Dr",
+            "Type": "construction",
+            "LengthMeters": 1086,
+            "FunctionalClass": 3,
+            "Latitude": -16.88868,
+            "Longitude": 145.7505,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "northbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:367132395:$1:856010384#-0.49481..1",
+              "$0:367132395:$1:216469672#\u002B0..1",
+              "$0:367132395:$1:224703231#\u002B0..1",
+              "$0:367132395:$1:216224636#\u002B0..1",
+              "$0:367132394:$1:918897917#-0..0.05795"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -16.88868,
+                "Lng": 145.7505
+              },
+              {
+                "Lat": -16.88797,
+                "Lng": 145.75018
+              },
+              {
+                "Lat": -16.88774,
+                "Lng": 145.75003
+              },
+              {
+                "Lat": -16.88739,
+                "Lng": 145.74974
+              },
+              {
+                "Lat": -16.88722,
+                "Lng": 145.74956
+              },
+              {
+                "Lat": -16.88705,
+                "Lng": 145.74936
+              },
+              {
+                "Lat": -16.88632,
+                "Lng": 145.74841
+              },
+              {
+                "Lat": -16.88561,
+                "Lng": 145.74749
+              },
+              {
+                "Lat": -16.88527,
+                "Lng": 145.74706
+              },
+              {
+                "Lat": -16.88504,
+                "Lng": 145.74679
+              },
+              {
+                "Lat": -16.88453,
+                "Lng": 145.74637
+              },
+              {
+                "Lat": -16.88437,
+                "Lng": 145.74627
+              },
+              {
+                "Lat": -16.88385,
+                "Lng": 145.74604
+              },
+              {
+                "Lat": -16.88257,
+                "Lng": 145.74555
+              },
+              {
+                "Lat": -16.88161,
+                "Lng": 145.74521
+              },
+              {
+                "Lat": -16.88079,
+                "Lng": 145.74496
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:51+00:00"
+          },
+          {
+            "Id": "4241399146910732651",
+            "Description": "Road construction",
+            "Severity": 2,
+            "Location": "Aeroglen Dr",
+            "Type": "construction",
+            "LengthMeters": 1060,
+            "FunctionalClass": 3,
+            "Latitude": -16.87754,
+            "Longitude": 145.74269,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:367132394:$1:918897917#-0.35361..1",
+              "$0:367132394:$1:918901234#-0..1",
+              "$0:367132394:$1:216573183#-0..1",
+              "$0:367132394:$1:496615751#-0..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -16.87754,
+                "Lng": 145.74269
+              },
+              {
+                "Lat": -16.87621,
+                "Lng": 145.74132
+              },
+              {
+                "Lat": -16.8753,
+                "Lng": 145.74039
+              },
+              {
+                "Lat": -16.8752,
+                "Lng": 145.74024
+              },
+              {
+                "Lat": -16.8751,
+                "Lng": 145.74004
+              },
+              {
+                "Lat": -16.87502,
+                "Lng": 145.73976
+              },
+              {
+                "Lat": -16.87497,
+                "Lng": 145.73934
+              },
+              {
+                "Lat": -16.875,
+                "Lng": 145.73833
+              },
+              {
+                "Lat": -16.87502,
+                "Lng": 145.73791
+              },
+              {
+                "Lat": -16.87503,
+                "Lng": 145.73767
+              },
+              {
+                "Lat": -16.87512,
+                "Lng": 145.73557
+              },
+              {
+                "Lat": -16.87514,
+                "Lng": 145.7349
+              },
+              {
+                "Lat": -16.87515,
+                "Lng": 145.73457
+              },
+              {
+                "Lat": -16.87516,
+                "Lng": 145.73431
+              },
+              {
+                "Lat": -16.87518,
+                "Lng": 145.73399
+              },
+              {
+                "Lat": -16.8752,
+                "Lng": 145.73373
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": "northbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -16.88868,
+        "Longitude": 145.7505,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": null
+      },
+      {
+        "RoadName": "Kamerunga Road",
+        "Severity": 2,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 2586,
+        "ImpactScore": 130,
+        "PrimaryType": "construction",
+        "Description": "roadworks eastbound",
+        "Incidents": [
+          {
+            "Id": "1743170761469213741",
+            "Description": "Road construction",
+            "Severity": 2,
+            "Location": "Kamerunga Rd",
+            "Type": "construction",
+            "LengthMeters": 2586,
+            "FunctionalClass": 3,
+            "Latitude": -16.8752,
+            "Longitude": 145.73373,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "eastbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:367132394:$1:496615751#\u002B0..1",
+              "$0:367132394:$1:216573183#\u002B0..1",
+              "$0:367132394:$1:918901234#\u002B0..1",
+              "$0:367132394:$1:918897917#\u002B0..1",
+              "$0:367132395:$1:216224636#-0..1",
+              "$0:367132395:$1:224703231#-0..1",
+              "$0:367132395:$1:216469672#-0..1",
+              "$0:367132395:$1:856010384#\u002B0..0.50519"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -16.8752,
+                "Lng": 145.73373
+              },
+              {
+                "Lat": -16.87516,
+                "Lng": 145.73431
+              },
+              {
+                "Lat": -16.87514,
+                "Lng": 145.7349
+              },
+              {
+                "Lat": -16.87502,
+                "Lng": 145.73791
+              },
+              {
+                "Lat": -16.87497,
+                "Lng": 145.73934
+              },
+              {
+                "Lat": -16.8751,
+                "Lng": 145.74004
+              },
+              {
+                "Lat": -16.8755,
+                "Lng": 145.74062
+              },
+              {
+                "Lat": -16.87754,
+                "Lng": 145.74269
+              },
+              {
+                "Lat": -16.8793,
+                "Lng": 145.7443
+              },
+              {
+                "Lat": -16.88079,
+                "Lng": 145.74496
+              },
+              {
+                "Lat": -16.88257,
+                "Lng": 145.74555
+              },
+              {
+                "Lat": -16.88437,
+                "Lng": 145.74627
+              },
+              {
+                "Lat": -16.88527,
+                "Lng": 145.74706
+              },
+              {
+                "Lat": -16.88705,
+                "Lng": 145.74936
+              },
+              {
+                "Lat": -16.88774,
+                "Lng": 145.75003
+              },
+              {
+                "Lat": -16.88868,
+                "Lng": 145.7505
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": "eastbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -16.8752,
+        "Longitude": 145.73373,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": null
+      },
+      {
+        "RoadName": "Foster Road",
+        "Severity": 3,
+        "FunctionalClass": 4,
+        "TotalLengthMeters": 96,
+        "ImpactScore": 87.92908493215828,
+        "PrimaryType": "construction",
+        "Description": "roadworks",
+        "Incidents": [
+          {
+            "Id": "1232680173065140344",
+            "Description": "Road construction",
+            "Severity": 3,
+            "Location": "Foster Rd",
+            "Type": "construction",
+            "LengthMeters": 96,
+            "FunctionalClass": 4,
+            "Latitude": -16.98739,
+            "Longitude": 145.74094,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:367132360:$1:216209562#-0..1"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -16.98739,
+                "Lng": 145.74094
+              },
+              {
+                "Lat": -16.98746,
+                "Lng": 145.74185
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:42:52+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -16.98739,
+        "Longitude": 145.74094,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": null
+      }
+    ],
+    "MonitoredRoutes": [],
+    "GoodRunRoads": [
+      "Cairns Western Arterial Road",
+      "Sheridan Street",
+      "Draper Street",
+      "Mulgrave Road",
+      "Spence Street",
+      "Lake Street"
+    ],
+    "FlowPool": [
+      {
+        "RoadName": "Cairns Western Arterial Road",
+        "JamFactor": 1.5,
+        "LengthMeters": 10315,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 92.5,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Sheridan Street",
+        "JamFactor": 2.8,
+        "LengthMeters": 4279,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 92.5,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Draper Street",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 80,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Mulgrave Road",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 80,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Spence Street",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 45,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Lake Street",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 45,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Kenny Street",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 45,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Aumuller Street",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 45,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Redlynch Connector Road",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 45,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Gillies Highway",
+        "JamFactor": 1,
+        "LengthMeters": 71223,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "McGregor Road",
+        "JamFactor": 1.1,
+        "LengthMeters": 51281,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Myola Road",
+        "JamFactor": 0.9,
+        "LengthMeters": 46642,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Port Douglas Road",
+        "JamFactor": 0.7,
+        "LengthMeters": 45682,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Munro Street",
+        "JamFactor": 0.3,
+        "LengthMeters": 34857,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Anzac Avenue",
+        "JamFactor": 0.3,
+        "LengthMeters": 32619,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Boar Pocket Road",
+        "JamFactor": 0.4,
+        "LengthMeters": 30325,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Warner Road",
+        "JamFactor": 0.8,
+        "LengthMeters": 14047,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      }
+    ],
+    "Weather": {
+      "Conditions": "Sunny. Warm.",
+      "TemperatureC": 26,
+      "WindDescription": "fresh Southeast wind",
+      "PrecipitationProbabilityPercent": 24,
+      "Alerts": [],
+      "Outlook": "reaching 22 degrees later today; tomorrow increasing cloudiness. cool, around 23 degrees",
+      "HasMajorAlert": false
+    },
+    "Fuel": {
+      "Summaries": [
+        {
+          "FuelType": "Unleaded 91",
+          "MinPrice": 1.695,
+          "AveragePrice": 1.73,
+          "StationCount": 48,
+          "LatestModifiedUtc": "2026-07-10T03:33:06+00:00",
+          "CheapestStationSuburb": "Manoora"
+        },
+        {
+          "FuelType": "Diesel",
+          "MinPrice": 1.835,
+          "AveragePrice": 1.888,
+          "StationCount": 39,
+          "LatestModifiedUtc": "2026-07-10T03:33:06+00:00",
+          "CheapestStationSuburb": "Koah"
+        }
+      ],
+      "HasPrices": true
+    },
+    "IncidentChanges": null,
+    "Guidance": {
+      "Entries": [
+        {
+          "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for \u2014 a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "UpdatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "645e52b90299493a8dbde1205c6c657e",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "75fe175d471144b38bf23c24966dfb6f",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "7b012b9381e04e72be8211133f224188",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 4,
+          "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "Australian English with natural spoken contractions. Round the figures \u2014 say \u0027about ten minutes\u0027, never \u002710.3 minutes\u0027. No police codes or insider jargon.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 3,
+          "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "f5e76bd5993c41edb637a7302f7d7479",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 2,
+          "Text": "Use common road names with the definite article: \u0027the M1\u0027, \u0027the M4\u0027, \u0027the CBD\u0027. Use \u0027citybound\u0027 and \u0027outbound\u0027 for direction of travel.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        }
+      ],
+      "DroppedCount": 0,
+      "Count": 7,
+      "HasEntries": true
+    },
+    "MarketFeedback": []
+  }
+}

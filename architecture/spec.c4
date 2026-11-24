@@ -1,0 +1,111 @@
+specification {
+  color dropfile #fb923c
+  color dataviolet #a78bfa
+  // ── Element kinds ──
+  element actor {
+    notation "Person"
+    style { shape person }
+  }
+  element system {
+    notation "System"
+  }
+  element container {
+    notation "Container"
+  }
+  element service {
+    notation "Service"
+    style { shape component }
+  }
+  element webapp {
+    notation "Web Application"
+    style { shape browser }
+  }
+  element storage {
+    notation "Storage"
+    style { shape storage; color secondary }
+  }
+  element queue {
+    notation "Queue"
+    style { shape queue; color amber }
+  }
+  element external {
+    notation "External Service"
+    style { color muted }
+  }
+  element gateway {
+    notation "Security Gate"
+    style { shape component; color red }
+  }
+  element monitoring {
+    notation "Monitoring"
+    style { shape component; color amber }
+  }
+  element stage {
+    notation "Pipeline Stage"
+    style { shape rectangle; color slate }
+  }
+  element approval {
+    notation "Approval Gate"
+    style { shape component; color red }
+  }
+
+  // ── Relationship kinds ──
+  relationship async {
+    line dotted
+    color amber
+    multiple true
+  }
+  relationship sync {
+    technology "HTTPS"
+  }
+  relationship auth {
+    line dashed
+    color red
+  }
+  relationship delivers {
+    technology "Files REST"
+    color dropfile
+  }
+  relationship monitors {
+    line dotted
+    color amber
+  }
+  relationship data {
+    multiple true
+  }
+
+  // ── Tags ──
+  tag critical
+  tag security
+  tag hitl
+
+  // ── Deployment node kinds ──
+  deploymentNode environment {
+    notation "Environment"
+    style { color gray; opacity 20% }
+  }
+  deploymentNode region {
+    notation "Azure Region"
+    style { opacity 20% }
+  }
+  deploymentNode vnet {
+    notation "Virtual Network"
+    style { color blue; opacity 20% }
+  }
+  deploymentNode onprem {
+    notation "On-Premises"
+    style { color gray; opacity 20% }
+  }
+  deploymentNode resourceGroup {
+    notation "Resource Group"
+    style { opacity 20% }
+  }
+  deploymentNode subnet {
+    notation "Subnet"
+    style { color blue; opacity 20% }
+  }
+  deploymentNode internet {
+    notation "Internet / SaaS"
+    style { color muted; opacity 20% }
+  }
+}

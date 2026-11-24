@@ -1,0 +1,55 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032036Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:37.3387518+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.35959,152.95383\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "36 Boondooma Cct, Albany Creek QLD 4035, Australia",
+          "id": "here:af:streetsection:Ib7XZS3Y0NrB9HtLQ.GwkC:CggIBCDj0bSfARABGgIzNg",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "36 Boondooma Cct, Albany Creek QLD 4035, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Albany Creek",
+            "street": "Boondooma Cct",
+            "postalCode": "4035",
+            "houseNumber": "36"
+          },
+          "position": {
+            "lat": -27.35937,
+            "lng": 152.95389
+          },
+          "access": [
+            {
+              "lat": -27.35959,
+              "lng": 152.95384
+            }
+          ],
+          "distance": 1,
+          "mapView": {
+            "west": 152.95252,
+            "south": -27.3596,
+            "east": 152.95509,
+            "north": -27.35607
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

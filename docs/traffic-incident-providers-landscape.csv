@@ -1,0 +1,51 @@
+snapshot_date,incident_family,provider,provider_records,source_label,source_count,family_records,family_share_pct,raw_labels,observed_wording
+2026-08-20,Roadworks & maintenance,HERE,1099,construction,835,835,75.98,construction | Road construction | Construction work,Road construction | Construction work | Roadworks | Maintenance | Upgrades | Sewer Connection | Sign Installation | Junction Upgrade | Road Lighting Repairs | Lane closure in place | Lane closures and speed reduction in place | Closed due to road construction | Closed due to roadworks
+2026-08-20,Roadworks & maintenance,Live Traffic NSW,399,SCHEDULED ROADWORK,326,327,81.95,SCHEDULED ROADWORK | EMERGENCY ROADWORK,Maintenance | Resurfacing | Bridge work | Upgrade | Routine maintenance
+2026-08-20,Roadworks & maintenance,Live Traffic NSW,399,EMERGENCY ROADWORK,1,327,81.95,SCHEDULED ROADWORK | EMERGENCY ROADWORK,Maintenance | Resurfacing | Bridge work | Upgrade | Routine maintenance
+2026-08-20,Roadworks & maintenance,QLDTraffic,486,Roadworks,282,282,58.02,Roadworks,Planned roadworks
+2026-08-20,Roadworks & maintenance,Main Roads WA,260,Maintenance,139,247,95.00,Roadwork: Maintenance | Roadwork: Upgrades | Roadwork: Utility works | Roadwork: Resurfacing | Roadwork: PTA Works,Lane closures | Speed reduction | Traffic management in place | Intermittent lane closures
+2026-08-20,Roadworks & maintenance,Main Roads WA,260,Upgrades,66,247,95.00,Roadwork: Maintenance | Roadwork: Upgrades | Roadwork: Utility works | Roadwork: Resurfacing | Roadwork: PTA Works,Lane closures | Speed reduction | Traffic management in place | Intermittent lane closures
+2026-08-20,Roadworks & maintenance,Main Roads WA,260,Utility works,33,247,95.00,Roadwork: Maintenance | Roadwork: Upgrades | Roadwork: Utility works | Roadwork: Resurfacing | Roadwork: PTA Works,Lane closures | Speed reduction | Traffic management in place | Intermittent lane closures
+2026-08-20,Roadworks & maintenance,Main Roads WA,260,Resurfacing,6,247,95.00,Roadwork: Maintenance | Roadwork: Upgrades | Roadwork: Utility works | Roadwork: Resurfacing | Roadwork: PTA Works,Lane closures | Speed reduction | Traffic management in place | Intermittent lane closures
+2026-08-20,Roadworks & maintenance,Main Roads WA,260,PTA Works,3,247,95.00,Roadwork: Maintenance | Roadwork: Upgrades | Roadwork: Utility works | Roadwork: Resurfacing | Roadwork: PTA Works,Lane closures | Speed reduction | Traffic management in place | Intermittent lane closures
+2026-08-20,Roadworks & maintenance,Traffic SA,19,EMERGENCY WATERWORKS,4,4,21.05,EMERGENCY WATERWORKS,Urgent Waterworks | Emergency Waterworks
+2026-08-20,Road closures,HERE,1099,roadClosure,221,221,20.11,roadClosure | construction + ALERT-C 735,Closed | Road closed due to accidents | Closed due to roadworks
+2026-08-20,Road closures,Live Traffic NSW,399,ROAD_CLOSURE under CHANGED TRAFFIC CONDITIONS,14,14,3.51,ROAD_CLOSURE | CHANGED TRAFFIC CONDITIONS,due to an earlier incident | Planned Police operation
+2026-08-20,Road closures,QLDTraffic,486,embedded impact,,,,Road closed to all traffic | Road closed to through traffic,Closures: Road closed to all traffic | Closures: Road closed to through traffic
+2026-08-20,Road closures,Main Roads WA,260,embedded field,,,,ClosureType | Long term Road Closure,Lane closures | Various closures
+2026-08-20,Road closures,Traffic SA,19,embedded description,,,,ROAD_CLOSURE,Ferry Closed
+2026-08-20,Crashes & collisions,HERE,1099,accident,2,2,0.18,accident,Accident | Road closed due to accidents
+2026-08-20,Crashes & collisions,Live Traffic NSW,399,vehicle subcategory,,,,CRASH | 2 cars | Car | Semi-trailer,Crash | Collision
+2026-08-20,Crashes & collisions,QLDTraffic,486,Crash,2,2,0.41,Crash,Multi-vehicle | Single vehicle
+2026-08-20,Crashes & collisions,Main Roads WA,260,Road Crash,1,1,0.38,Road Crash,All lanes open
+2026-08-20,Crashes & collisions,TasALERT,10,Crash / Collision,1,1,10.00,Crash / Collision,Crash / Collision
+2026-08-20,Breakdowns & stopped vehicles,HERE,1099,disabledVehicle,17,17,1.55,disabledVehicle,Broken down vehicle | Left lane blocked
+2026-08-20,Breakdowns & stopped vehicles,Live Traffic NSW,399,BREAKDOWN,1,1,0.25,BREAKDOWN,Truck
+2026-08-20,Breakdowns & stopped vehicles,QLDTraffic,486,Stationary vehicle,3,3,0.62,Stationary vehicle,No blockage: None
+2026-08-20,Breakdowns & stopped vehicles,Main Roads WA,260,Break Down / Tow Away,6,7,2.69,Incident: Break Down / Tow Away | Incident: Vehicle In Emergency Bay,Left Emergency Lane Blocked | Left Lane(s) Blocked | Centre Lane(s) Blocked | Emergency Stopping Bay (SF)
+2026-08-20,Breakdowns & stopped vehicles,Main Roads WA,260,Vehicle In Emergency Bay,1,7,2.69,Incident: Break Down / Tow Away | Incident: Vehicle In Emergency Bay,Left Emergency Lane Blocked | Left Lane(s) Blocked | Centre Lane(s) Blocked | Emergency Stopping Bay (SF)
+2026-08-20,Hazards & road conditions,HERE,1099,roadHazard,17,17,1.55,roadHazard | other,Road surface in poor condition | Traffic lights not working | Hazardous driving conditions | Closed due to flooding
+2026-08-20,Hazards & road conditions,Live Traffic NSW,399,HAZARD,21,48,12.03,HAZARD | ADVERSE WEATHER | TRAFFIC LIGHTS FLASHING YELLOW,Road damage | Water over road | Traffic lights flashing yellow
+2026-08-20,Hazards & road conditions,Live Traffic NSW,399,ADVERSE WEATHER,27,48,12.03,HAZARD | ADVERSE WEATHER | TRAFFIC LIGHTS FLASHING YELLOW,Road damage | Water over road | Traffic lights flashing yellow
+2026-08-20,Hazards & road conditions,QLDTraffic,486,Hazard,168,168,34.57,Hazard,Adverse driving conditions | Road damage | Bridge or culvert damaged | Stationary vehicle | Fire
+2026-08-20,Hazards & road conditions,Main Roads WA,260,Pothole / Road Surface Damage,2,4,1.54,Pothole / Road Surface Damage | Debris / Trees / Lost Loads | Vehicle In Emergency Bay,All Lanes Open | Emergency Stopping Bay (SF)
+2026-08-20,Hazards & road conditions,Main Roads WA,260,Debris / Trees / Lost Loads,1,4,1.54,Pothole / Road Surface Damage | Debris / Trees / Lost Loads | Vehicle In Emergency Bay,All Lanes Open | Emergency Stopping Bay (SF)
+2026-08-20,Hazards & road conditions,Main Roads WA,260,Vehicle In Emergency Bay,1,4,1.54,Pothole / Road Surface Damage | Debris / Trees / Lost Loads | Vehicle In Emergency Bay,All Lanes Open | Emergency Stopping Bay (SF)
+2026-08-20,Hazards & road conditions,Traffic SA,19,INCIDENT,13,13,68.42,INCIDENT,Hazard | Debris On Road | Urgent Dept. For Infrastructure & Transport Works | Urgent Gas Works
+2026-08-20,Flooding & water over road,HERE,1099,hazard subtype,,,,roadHazard,Closed due to flooding
+2026-08-20,Flooding & water over road,Live Traffic NSW,399,ADVERSE WEATHER,27,27,6.77,ADVERSE WEATHER,Water over road
+2026-08-20,Flooding & water over road,QLDTraffic,486,Flooding,15,15,3.09,Flooding,Long-term flooding | Flash flooding
+2026-08-20,Flooding & water over road,Traffic SA,19,FLOODING,2,2,10.53,FLOODING,Flooding Water Over Road
+2026-08-20,Congestion & changed conditions,HERE,1099,congestion,6,6,0.55,congestion,Queuing traffic | Queuing traffic with average speeds 20 km/h
+2026-08-20,Congestion & changed conditions,Live Traffic NSW,399,CHANGED TRAFFIC CONDITIONS,20,20,5.01,CHANGED TRAFFIC CONDITIONS,due to an earlier incident | Oversize vehicle | Planned Police operation
+2026-08-20,Congestion & changed conditions,QLDTraffic,486,Congestion,2,2,0.41,Congestion,Recurring
+2026-08-20,Congestion & changed conditions,Main Roads WA,260,traffic condition field,,,,TrafficCondition,Traffic management in place | Delays expected
+2026-08-20,Special events & operations,HERE,1099,plannedEvent,1,1,0.09,plannedEvent,Major event
+2026-08-20,Special events & operations,Live Traffic NSW,399,CHANGED TRAFFIC CONDITIONS,3,3,0.75,Planned Police operation,Planned Police operation
+2026-08-20,Special events & operations,QLDTraffic,486,Special event,17,17,3.50,Special event,Road closed to all traffic | Road closed to through traffic
+2026-08-20,Special events & operations,TasALERT,10,Police Media / Operation,1,1,10.00,Police Media / Operation,Police Media / Operation
+2026-08-20,Ferry & service disruptions,Live Traffic NSW,399,FERRY OUT OF SERVICE,3,3,0.75,FERRY OUT OF SERVICE,Routine maintenance
+2026-08-20,Ferry & service disruptions,Traffic SA,19,INCIDENT,1,1,5.26,INCIDENT,Ferry Closed
+2026-08-20,Fire,QLDTraffic,486,Hazard,1,1,0.21,Fire,Fire
+2026-08-20,Fire,Main Roads WA,260,Vehicle Fire,2,2,0.77,Incident: Vehicle Fire,All Lanes Open
+2026-08-20,General / unclassified alert,TasALERT,10,General Alert,8,8,80.00,General Alert,Standard event description without nested attributes

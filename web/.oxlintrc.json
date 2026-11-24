@@ -1,0 +1,109 @@
+{
+  // Tailwind design-system conformance gate (oxlint + oxlint-tailwindcss).
+  //
+  // Deliberately scoped to the tailwindcss JS plugin only: `plugins: []` keeps
+  // oxlint's own rule sets off, so ESLint (eslint.config.js) remains the single
+  // owner of JS/TS/React linting and the two linters cannot disagree.
+  //
+  // The plugin compiles `entryPoint` (src/index.css, which @config-bridges
+  // tailwind.config.js) to build the REAL design system, so every verdict is
+  // deterministic and machine-independent — this is the layer underneath the
+  // screenshot/VLM harness in scripts/ux-audit.mjs.
+  //
+  // Two tiers, on purpose:
+  //   error — unambiguous, autofixable, verified against the compiled CSS.
+  //           `npm run lint:tw` must stay at zero; verify.sh gates on it.
+  //   warn  — lead generators that need adjudication against the compiled
+  //           stylesheet before you touch code (same reproduce-or-skip rule the
+  //           consistency digest follows). Never autofix these blind.
+  "$schema": "./node_modules/oxlint/configuration_schema.json",
+  "jsPlugins": ["oxlint-tailwindcss"],
+  "plugins": [],
+  "categories": {},
+  "ignorePatterns": [
+    "dist",
+    "dist-mock",
+    "audit",
+    "perf",
+    "node_modules",
+    "src/lib/api/mock/live-traffic.ts"
+  ],
+  "settings": {
+    "tailwindcss": {
+      "entryPoint": "src/index.css"
+    }
+  },
+  "rules": {
+    // ── Gate ─────────────────────────────────────────────────────────────
+    "tailwindcss/no-deprecated-classes": "error",
+    "tailwindcss/no-duplicate-classes": "error",
+    "tailwindcss/no-unnecessary-arbitrary-value": "error",
+    "tailwindcss/no-unnecessary-whitespace": "error",
+    // Zero hits at adoption — the colour-token discipline is already clean,
+    // so these are pure regression guards. `no-dark-without-light` is the
+    // static half of the dark-mode coverage the UX harness now captures.
+    "tailwindcss/no-hardcoded-colors": "error",
+    "tailwindcss/prefer-theme-tokens": "error",
+    "tailwindcss/no-dark-without-light": "error",
+    "tailwindcss/no-unknown-classes": [
+      "error",
+      {
+        // `group/name` and `peer/name` are valid v4 markers that emit no
+        // CSS of their own, so the design-system query reports them unknown.
+        "ignorePrefixes": ["group/", "peer/"],
+        // Defined in an inline <style> in GuidancePage.tsx (scrollbar hiding).
+        "allowlist": ["tab-strip-scroll"]
+      }
+    ],
+    // Opacity on a text colour blends the token toward the surface, so the
+    // contrast ratio only ever falls. Whether that matters depends entirely
+    // on how much headroom the token has, so this is measured, not assumed:
+    //
+    //   token                  base      opacity is safe down to
+    //   foreground / card- / popover- / accent-foreground
+    //                          16.7:1    /60 light, /50 dark  → allowed
+    //   muted-foreground       5.4:1     /95 light, NONE dark → banned
+    //   secondary-foreground   5.4:1     /95 light            → banned
+    //
+    // `text-muted-foreground/60` (2.57:1) shipped on 50 elements. The two
+    // banned tokens have no usable headroom; the others keep theirs.
+    "tailwindcss/no-restricted-classes": [
+      "error",
+      {
+        "patterns": [
+          {
+            "pattern": "text-(muted-foreground|secondary-foreground|warning|success|info|destructive|rejected|primary|processing|status-[a-zA-Z]+)(-on-tint)?/\\d+$",
+            "message": "no contrast headroom for opacity — the semantic ramp is solved to the 4.5:1 floor, so any alpha drops it below AA (measured: muted-foreground/60 = 2.57:1, warning/80 = 4.38:1). Use the plain token, or text-muted-foreground-subtle / text-<token>-on-tint"
+          }
+        ]
+      }
+    ],
+
+    // ── Leads (adjudicate, do not autofix) ───────────────────────────────
+    "tailwindcss/no-conflicting-classes": [
+      "warn",
+      {
+        "allow": [
+          // `tailwindcss-animate` (v3 plugin, bridged via @config) emits its
+          // animation-duration override AFTER `.animate-in`/`.animate-out` in
+          // the generated stylesheet, so `duration-*` wins and the pair works.
+          // Verified in dist-mock CSS: .animate-in @93476 (150ms) then
+          // .duration-300 @95005 (300ms). The plugin models the opposite order.
+          ["animate-(in|out)$", "duration-\\d+$"],
+          // Skip link: `focus:not-sr-only` resets position to static and
+          // `focus:fixed` deliberately re-overrides it. Load-bearing.
+          ["^focus:not-sr-only$", "^focus:fixed$"]
+        ]
+      }
+    ],
+    "tailwindcss/prefer-scale-token": ["warn", { "step": 1 }],
+
+    // ── Off ──────────────────────────────────────────────────────────────
+    // 11 of 12 findings at adoption were false positives. `cn()` is
+    // twMerge(clsx(...)), so a caller passing `focus:text-destructive`
+    // alongside `text-destructive` is neutralising the *primitive's* own
+    // `focus:text-accent-foreground` — necessary, and invisible to a rule that
+    // only sees one class string. Re-enable if cn() ever stops merging.
+    "tailwindcss/no-contradicting-variants": "off"
+  }
+}

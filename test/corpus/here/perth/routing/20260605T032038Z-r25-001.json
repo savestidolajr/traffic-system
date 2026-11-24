@@ -1,0 +1,73 @@
+{
+  "Market": "perth",
+  "Endpoint": "routing",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:40.0204137+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-31.861690,115.944940\u0026destination=-31.862080,115.964820\u0026departureTime=2026-06-05T03:20:39.9088883\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "routes": [
+        {
+          "id": "40bc4ec1-1c6b-4699-855d-4349d9e179be",
+          "sections": [
+            {
+              "id": "2f3335a8-f14e-4dbd-bf52-3d5e475349c6",
+              "type": "vehicle",
+              "departure": {
+                "time": "2026-06-05T11:20:39\u002B08:00",
+                "place": {
+                  "type": "place",
+                  "location": {
+                    "lat": -31.8616901,
+                    "lng": 115.94494
+                  },
+                  "originalLocation": {
+                    "lat": -31.8616901,
+                    "lng": 115.94494
+                  }
+                }
+              },
+              "arrival": {
+                "time": "2026-06-05T11:32:03\u002B08:00",
+                "place": {
+                  "type": "place",
+                  "location": {
+                    "lat": -31.8620801,
+                    "lng": 115.9648199
+                  },
+                  "originalLocation": {
+                    "lat": -31.8620801,
+                    "lng": 115.9648199
+                  }
+                }
+              },
+              "summary": {
+                "duration": 684,
+                "length": 8815,
+                "baseDuration": 603,
+                "typicalDuration": 666
+              },
+              "notices": [
+                {
+                  "title": "Violated road that is blocked, due to a traffic incident, \u0060avoid[areas]\u0060, or \u0060avoid[segments]\u0060.",
+                  "code": "violatedBlockedRoad",
+                  "severity": "critical"
+                }
+              ],
+              "transport": {
+                "mode": "car"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 3,
+  "formula": "secondsAtSpeedOne = voice.scale * sum(shape[k] * spokenReadFeature[k]); predictedSeconds = secondsAtSpeedOne / voice.speed",
+  "fittedFrom": "stage A: 11869 measured word alignments over 185 distinct syntheses, pooled across voices, each alignment normalised by its own mean token cost so no absolute duration is read; stage B: one origin-constrained scale per voice over 167 clean bulletins from test/corpus/duration/dataset-v2.json. Leave-one-out: MAE 0.857s, p90 1.75s, bias -0.03s (scripts/duration-model-bakeoff.py, candidate L).",
+  "shape": {
+    "syllable1Sec": 0.161356,
+    "syllable2Sec": 0.205113,
+    "syllable3Sec": 0.253884,
+    "syllable4PlusSec": 0.314055,
+    "extraSyllableSec": 0.024263,
+    "periodSec": 0.832724,
+    "commaSec": 0.568894,
+    "perCharSec": 0.135732,
+    "alphanumericSec": 0.416571,
+    "longWordCharSec": -0.032767,
+    "perDigitSec": 0.316503
+  },
+  "voices": [
+    {
+      "voiceId": "EF2rFRNHqbfaMctIvS2k",
+      "voiceName": "Male Sarah - AM - KIIS/Regional HOT AC",
+      "modelId": "eleven_v3",
+      "speed": 0.97,
+      "paceBoostWpm": 0.0,
+      "samples": 46,
+      "scale": 0.399971,
+      "residualSdSec": 0.9679
+    },
+    {
+      "voiceId": "yngV6X6u07ThpMteV50h",
+      "voiceName": "Young Female Sarah - PM - KIIS/Regional HOT AC",
+      "modelId": "eleven_v3",
+      "speed": 0.97,
+      "paceBoostWpm": 0.0,
+      "samples": 25,
+      "scale": 0.400324,
+      "residualSdSec": 0.8158
+    },
+    {
+      "voiceId": "EF2rFRNHqbfaMctIvS2k",
+      "voiceName": "Dolly Male Young",
+      "modelId": "eleven_v3",
+      "speed": 1.0,
+      "paceBoostWpm": 40.0,
+      "samples": 23,
+      "scale": 0.428206,
+      "residualSdSec": 1.457
+    },
+    {
+      "voiceId": "081vkDcbgbIsSiFEYxT0",
+      "voiceName": "Dolly (original)",
+      "modelId": "eleven_v3",
+      "speed": 1.0,
+      "paceBoostWpm": 0.0,
+      "samples": 22,
+      "scale": 0.417958,
+      "residualSdSec": 1.0372
+    },
+    {
+      "voiceId": "EF2rFRNHqbfaMctIvS2k",
+      "voiceName": "Dolly Male Young Faster",
+      "modelId": "eleven_v3",
+      "speed": 0.97,
+      "paceBoostWpm": 60.0,
+      "samples": 16,
+      "scale": 0.405654,
+      "residualSdSec": 1.475
+    },
+    {
+      "voiceId": "iKMw2nMnODCnVgY4VQbS",
+      "voiceName": "Dolly Female Young",
+      "modelId": "eleven_v3",
+      "speed": 1.0,
+      "paceBoostWpm": 0.0,
+      "samples": 14,
+      "scale": 0.421239,
+      "residualSdSec": 0.9036
+    },
+    {
+      "voiceId": "a1SQPk93LAMHsGM41p6S",
+      "voiceName": "Jeffrey (original)",
+      "modelId": "eleven_multilingual_v2",
+      "speed": 0.97,
+      "paceBoostWpm": 0.0,
+      "samples": 12,
+      "scale": 0.357076,
+      "residualSdSec": 0.9876
+    },
+    {
+      "voiceId": "yngV6X6u07ThpMteV50h",
+      "voiceName": "ARN Sarah - Younger Female",
+      "modelId": "eleven_v3",
+      "speed": 0.97,
+      "paceBoostWpm": 20.0,
+      "samples": 9,
+      "scale": 0.428819,
+      "residualSdSec": 1.72
+    }
+  ]
+}

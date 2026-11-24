@@ -1,0 +1,47 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032041Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:41.8280047+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.8743,138.57992\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Freight Terminal Access Rd, Regency Park SA 5010, Australia",
+          "id": "here:af:streetsection:xQXFuPwzm.RhQLNXnD7pHD",
+          "resultType": "street",
+          "address": {
+            "label": "Freight Terminal Access Rd, Regency Park SA 5010, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "SA",
+            "state": "South Australia",
+            "city": "Adelaide",
+            "district": "Regency Park",
+            "street": "Freight Terminal Access Rd",
+            "postalCode": "5010"
+          },
+          "position": {
+            "lat": -34.8743,
+            "lng": 138.57992
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 138.57635,
+            "south": -34.8743,
+            "east": 138.57993,
+            "north": -34.86877
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

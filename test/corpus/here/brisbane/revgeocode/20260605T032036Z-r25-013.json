@@ -1,0 +1,47 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032036Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:37.4471773+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.26128,153.02093\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Cairns Rd, Griffin QLD 4503, Australia",
+          "id": "here:af:streetsection:hd0zUVe51lxnsJJ2q6mlDB",
+          "resultType": "street",
+          "address": {
+            "label": "Cairns Rd, Griffin QLD 4503, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Griffin",
+            "street": "Cairns Rd",
+            "postalCode": "4503"
+          },
+          "position": {
+            "lat": -27.26128,
+            "lng": 153.02093
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 153.02079,
+            "south": -27.26478,
+            "east": 153.02217,
+            "north": -27.26124
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

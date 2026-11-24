@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:35.7050687+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.74252,144.91938\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "87 Woodland St, Essendon VIC 3040, Australia",
+          "id": "here:af:streetsection:KtMSgf4W.XJHEvXO-OeU8D:CggIBCCame2gARABGgI4Nw",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "87 Woodland St, Essendon VIC 3040, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Essendon",
+            "street": "Woodland St",
+            "postalCode": "3040",
+            "houseNumber": "87"
+          },
+          "position": {
+            "lat": -37.74274,
+            "lng": 144.91946
+          },
+          "access": [
+            {
+              "lat": -37.74252,
+              "lng": 144.91938
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 144.90815,
+            "south": -37.74473,
+            "east": 144.93339,
+            "north": -37.74133
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

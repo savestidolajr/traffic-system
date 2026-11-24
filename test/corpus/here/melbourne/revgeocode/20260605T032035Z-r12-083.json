@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.4534233+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.80115,144.98861\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "63 Dight St, Collingwood VIC 3066, Australia",
+          "id": "here:af:streetsection:r8zNZv0u5a58tY9ldOcJOD:CggIBCDnw4ygARABGgI2Mw",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "63 Dight St, Collingwood VIC 3066, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Collingwood",
+            "street": "Dight St",
+            "postalCode": "3066",
+            "houseNumber": "63"
+          },
+          "position": {
+            "lat": -37.80118,
+            "lng": 144.98787
+          },
+          "access": [
+            {
+              "lat": -37.80118,
+              "lng": 144.98861
+            }
+          ],
+          "distance": 3,
+          "mapView": {
+            "west": 144.98828,
+            "south": -37.80386,
+            "east": 144.98895,
+            "north": -37.79944
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

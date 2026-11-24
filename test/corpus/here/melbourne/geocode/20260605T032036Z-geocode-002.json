@@ -1,0 +1,122 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "geocode",
+  "SessionId": "20260605T032036Z-geocode",
+  "CapturedAtUtc": "2026-06-05T03:20:36.8630064+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=3AW\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Calle 3A W, La Concepci\u00F3n, Panam\u00E1",
+          "id": "here:af:streetsection:0O8XWMONlc8HLLVOSDTVDC",
+          "resultType": "street",
+          "address": {
+            "label": "Calle 3A W, La Concepci\u00F3n, Panam\u00E1",
+            "countryCode": "PAN",
+            "countryName": "Panam\u00E1",
+            "stateCode": "PA-4",
+            "state": "Chiriqu\u00ED",
+            "county": "Bugaba",
+            "city": "La Concepci\u00F3n",
+            "district": "La Concepci\u00F3n",
+            "street": "Calle 3A W"
+          },
+          "position": {
+            "lat": 8.5184,
+            "lng": -82.6232
+          },
+          "mapView": {
+            "west": -82.62332,
+            "south": 8.51744,
+            "east": -82.62288,
+            "north": 8.52162
+          },
+          "scoring": {
+            "queryScore": 0.99,
+            "fieldScore": {
+              "streets": [
+                0.9
+              ]
+            }
+          }
+        },
+        {
+          "title": "Carrera 3A W, 201050 Chimichagua, Colombia",
+          "id": "here:af:streetsection:npsFeIp2dcdCmcqrTVbNXA",
+          "resultType": "street",
+          "address": {
+            "label": "Carrera 3A W, 201050 Chimichagua, Colombia",
+            "countryCode": "COL",
+            "countryName": "Colombia",
+            "countyCode": "CE",
+            "county": "Cesar",
+            "city": "Chimichagua",
+            "district": "Chimichagua",
+            "street": "Carrera 3A W",
+            "postalCode": "201050"
+          },
+          "position": {
+            "lat": 9.25063,
+            "lng": -73.81479
+          },
+          "mapView": {
+            "west": -73.81494,
+            "south": 9.25046,
+            "east": -73.81463,
+            "north": 9.25079
+          },
+          "scoring": {
+            "queryScore": 0.99,
+            "fieldScore": {
+              "streets": [
+                0.9
+              ]
+            }
+          }
+        },
+        {
+          "title": "Carrera 3AW, 410001 Neiva, Colombia",
+          "id": "here:af:streetsection:wjoeOPw8NGt4Ovi2ZAYN-A",
+          "resultType": "street",
+          "address": {
+            "label": "Carrera 3AW, 410001 Neiva, Colombia",
+            "countryCode": "COL",
+            "countryName": "Colombia",
+            "countyCode": "HU",
+            "county": "Huila",
+            "city": "Neiva",
+            "district": "Comuna 1 Noroccidental",
+            "street": "Carrera 3AW",
+            "postalCode": "410001"
+          },
+          "position": {
+            "lat": 2.94696,
+            "lng": -75.30039
+          },
+          "mapView": {
+            "west": -75.30049,
+            "south": 2.94676,
+            "east": -75.30029,
+            "north": 2.94717
+          },
+          "scoring": {
+            "queryScore": 0.99,
+            "fieldScore": {
+              "streets": [
+                0.9
+              ]
+            }
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

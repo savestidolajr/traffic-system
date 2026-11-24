@@ -1,0 +1,172 @@
+import * as React from 'react'
+import { type DialogProps } from '@radix-ui/react-dialog'
+import { Command as CommandPrimitive } from 'cmdk'
+import { Search } from 'lucide-react'
+
+import { cn } from '@/lib/utils'
+import { Dialog, DialogContent, DialogTitle } from '@/components/ui/dialog'
+
+function Command({
+    className,
+    ref,
+    ...props
+}: React.ComponentPropsWithRef<typeof CommandPrimitive>) {
+    return (
+        <CommandPrimitive
+            ref={ref}
+            className={cn(
+                'flex h-full w-full flex-col overflow-hidden rounded-md bg-popover text-popover-foreground',
+                className
+            )}
+            {...props}
+        />
+    )
+}
+
+const CommandDialog = ({ children, ...props }: DialogProps) => {
+    return (
+        <Dialog {...props}>
+            <DialogContent className="overflow-hidden p-0 shadow-lg">
+                {/* Inside DialogContent, not beside it. Outside, Radix renders
+                    this heading into the app root rather than the portal — so
+                    it sat in the document on EVERY page, outside any landmark
+                    (axe `region`, 20/20 pages) and outside the dialog it is
+                    supposed to name. */}
+                <DialogTitle className="sr-only">Command Palette</DialogTitle>
+                <Command className="[&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground [&_[cmdk-group]:not([hidden])_~[cmdk-group]]:pt-0 [&_[cmdk-group]]:px-2 [&_[cmdk-input-wrapper]_svg]:h-5 [&_[cmdk-input-wrapper]_svg]:w-5 [&_[cmdk-input]]:h-12 [&_[cmdk-item]]:px-2 [&_[cmdk-item]]:py-3 [&_[cmdk-item]_svg]:h-5 [&_[cmdk-item]_svg]:w-5">
+                    {children}
+                </Command>
+            </DialogContent>
+        </Dialog>
+    )
+}
+
+function CommandInput({
+    className,
+    ref,
+    ...props
+}: React.ComponentPropsWithRef<typeof CommandPrimitive.Input>) {
+    return (
+        <div className="flex items-center border-b px-3" cmdk-input-wrapper="">
+            <Search className="mr-2 h-4 w-4 shrink-0 opacity-50 dark:opacity-80" />
+            <CommandPrimitive.Input
+                ref={ref}
+                className={cn(
+                    'flex h-11 w-full rounded-md bg-transparent py-3 text-sm outline-none placeholder:text-muted-foreground disabled:cursor-not-allowed disabled:opacity-50',
+                    className
+                )}
+                {...props}
+            />
+        </div>
+    )
+}
+
+function CommandList({
+    className,
+    ref,
+    ...props
+}: React.ComponentPropsWithRef<typeof CommandPrimitive.List>) {
+    return (
+        <CommandPrimitive.List
+            ref={ref}
+            className={cn(
+                'max-h-75 overflow-y-auto overflow-x-hidden',
+                className
+            )}
+            {...props}
+        />
+    )
+}
+
+function CommandEmpty({
+    ref,
+    ...props
+}: React.ComponentPropsWithRef<typeof CommandPrimitive.Empty>) {
+    return (
+        <CommandPrimitive.Empty
+            ref={ref}
+            className="py-6 text-center text-sm"
+            {...props}
+        />
+    )
+}
+
+function CommandGroup({
+    className,
+    ref,
+    ...props
+}: React.ComponentPropsWithRef<typeof CommandPrimitive.Group>) {
+    return (
+        <CommandPrimitive.Group
+            ref={ref}
+            className={cn(
+                'overflow-hidden p-1 text-foreground [&_[cmdk-group-heading]]:px-2 [&_[cmdk-group-heading]]:py-1.5 [&_[cmdk-group-heading]]:text-xs [&_[cmdk-group-heading]]:font-medium [&_[cmdk-group-heading]]:text-muted-foreground',
+                className
+            )}
+            {...props}
+        />
+    )
+}
+
+function CommandSeparator({
+    className,
+    ref,
+    ...props
+}: React.ComponentPropsWithRef<typeof CommandPrimitive.Separator>) {
+    return (
+        <CommandPrimitive.Separator
+            ref={ref}
+            className={cn('-mx-1 h-px bg-border', className)}
+            {...props}
+        />
+    )
+}
+
+function CommandItem({
+    className,
+    ref,
+    ...props
+}: React.ComponentPropsWithRef<typeof CommandPrimitive.Item>) {
+    // cmdk >=1 always emits `data-disabled`, as "false" when the item is
+    // enabled. Matching on the attribute's PRESENCE therefore killed
+    // pointer-events on EVERY item, so no cmdk list could be clicked with a
+    // mouse - including the global palette. Match the value, not the attribute.
+    return (
+        <CommandPrimitive.Item
+            ref={ref}
+            className={cn(
+                'relative flex cursor-default select-none items-center rounded-sm px-2 py-1.5 text-sm outline-none aria-selected:bg-accent aria-selected:text-accent-foreground data-[disabled=true]:pointer-events-none data-[disabled=true]:opacity-50',
+                className
+            )}
+            {...props}
+        />
+    )
+}
+
+const CommandShortcut = ({
+    className,
+    ...props
+}: React.HTMLAttributes<HTMLSpanElement>) => {
+    return (
+        <span
+            className={cn(
+                'ml-auto text-xs tracking-widest text-muted-foreground',
+                className
+            )}
+            {...props}
+        />
+    )
+}
+CommandShortcut.displayName = 'CommandShortcut'
+
+export {
+    Command,
+    CommandDialog,
+    CommandInput,
+    CommandList,
+    CommandEmpty,
+    CommandGroup,
+    CommandItem,
+    CommandShortcut,
+    CommandSeparator,
+}

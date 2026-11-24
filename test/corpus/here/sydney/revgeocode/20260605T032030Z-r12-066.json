@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032030Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:31.5250214+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.88959,151.12182\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "14 Carlisle St, Ashfield NSW 2131, Australia",
+          "id": "here:af:streetsection:u2PjbHMEFJgm92Ab9m7xHB:CggIBCCq8fCdARABGgIxNA",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "14 Carlisle St, Ashfield NSW 2131, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Ashfield",
+            "street": "Carlisle St",
+            "postalCode": "2131",
+            "houseNumber": "14"
+          },
+          "position": {
+            "lat": -33.88958,
+            "lng": 151.12157
+          },
+          "access": [
+            {
+              "lat": -33.88956,
+              "lng": 151.12124
+            }
+          ],
+          "distance": 23,
+          "mapView": {
+            "west": 151.12111,
+            "south": -33.89166,
+            "east": 151.12127,
+            "north": -33.88901
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

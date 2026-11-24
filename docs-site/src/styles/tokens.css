@@ -1,0 +1,100 @@
+/* ARN documentation site — design tokens.
+ * Every colour and every font in arn.css references a name from this file.
+ * Nothing here is inlined at point of use.
+ */
+
+:root {
+    /* ── Type ─────────────────────────────────────────────────────────────
+       Two families. Geist carries display and body; Geist Mono is the
+       outlier, and it appears in exactly two roles: the wordmark and code.
+       Both are self-hosted, because this site also ships as an offline
+       bundle with no network. */
+    --font-display: 'Geist Variable', ui-sans-serif, system-ui, sans-serif;
+    --font-body: 'Geist Variable', ui-sans-serif, system-ui, sans-serif;
+    --font-outlier: 'Geist Mono Variable', ui-monospace, monospace;
+
+    /* Major-third scale (1.25) from a 16px body. */
+    --text-2xs: 0.694rem;
+    --text-xs: 0.8rem;
+    --text-sm: 0.875rem;
+    --text-base: 1rem;
+    --text-md: 1.125rem;
+    --text-lg: 1.375rem;
+    --text-xl: 1.75rem;
+    --text-2xl: 2.1875rem;
+    --text-3xl: 2.75rem;
+    --text-display: clamp(2.5rem, 4.5vw + 0.75rem, 4.25rem);
+
+    --tracking-display: -0.032em;
+    --tracking-tight: -0.018em;
+    --tracking-label: 0.09em;
+
+    /* ── Space ────────────────────────────────────────────────────────────
+       4pt base, named by role. */
+    --space-3xs: 0.125rem;
+    --space-2xs: 0.25rem;
+    --space-xs: 0.5rem;
+    --space-sm: 0.75rem;
+    --space-md: 1rem;
+    --space-lg: 1.5rem;
+    --space-xl: 2.5rem;
+    --space-2xl: 4rem;
+    --space-3xl: 6rem;
+    --space-4xl: 9rem;
+
+    /* ── Line ─────────────────────────────────────────────────────────── */
+    --rule-hair: 1px;
+    --radius-sm: 4px;
+    --radius-md: 6px;
+    --radius-pill: 999px;
+
+    /* ── Motion ───────────────────────────────────────────────────────────
+       Three named easings, two durations. The page is composed rather than
+       revealed, so nothing here animates on scroll. */
+    --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
+    --ease-in: cubic-bezier(0.7, 0, 0.84, 0);
+    --ease-in-out: cubic-bezier(0.87, 0, 0.13, 1);
+    --dur-instant: 90ms;
+    --dur-short: 160ms;
+
+    /* ── Depth ───────────────────────────────────────────────────────── */
+    --z-base: 1;
+    --z-raised: 10;
+    --z-sticky: 200;
+}
+
+/* ── Colour ───────────────────────────────────────────────────────────────
+   Cool engineered neutrals with one signal accent. The accent is ARN's
+   purple, which the project already owned; it is a brand anchor, not a
+   decoration, so it appears on links, focus rings and the current-page
+   marker and nowhere else. Neutrals are tinted toward the accent hue rather
+   than pure grey, and paper is never #fff or #000. */
+:root {
+    --hue: 271;
+
+    --color-paper: oklch(20.5% 0.008 var(--hue));
+    --color-paper-2: oklch(24% 0.01 var(--hue));
+    --color-paper-3: oklch(28% 0.012 var(--hue));
+    --color-ink: oklch(96% 0.004 var(--hue));
+    --color-ink-2: oklch(78% 0.008 var(--hue));
+    --color-ink-3: oklch(63% 0.01 var(--hue));
+    --color-line: oklch(33% 0.012 var(--hue));
+    --color-line-2: oklch(42% 0.014 var(--hue));
+    --color-accent: oklch(72% 0.15 var(--hue));
+    --color-accent-ink: oklch(20.5% 0.008 var(--hue));
+    --color-focus: oklch(80% 0.14 var(--hue));
+}
+
+:root[data-theme='light'] {
+    --color-paper: oklch(98.6% 0.005 var(--hue));
+    --color-paper-2: oklch(96.5% 0.005 var(--hue));
+    --color-paper-3: oklch(94% 0.007 var(--hue));
+    --color-ink: oklch(21% 0.012 var(--hue));
+    --color-ink-2: oklch(40% 0.012 var(--hue));
+    --color-ink-3: oklch(53% 0.012 var(--hue));
+    --color-line: oklch(90% 0.007 var(--hue));
+    --color-line-2: oklch(82% 0.01 var(--hue));
+    --color-accent: oklch(47% 0.19 var(--hue));
+    --color-accent-ink: oklch(99% 0.002 var(--hue));
+    --color-focus: oklch(47% 0.19 var(--hue));
+}

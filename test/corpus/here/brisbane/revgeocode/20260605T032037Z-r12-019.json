@@ -1,0 +1,55 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032037Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:37.9087168+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.55173,153.02556\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "79 Henson Rd, Salisbury QLD 4107, Australia",
+          "id": "here:af:streetsection:i0pFKmRhQtyih9oW0rDVAC:CggIBCDko7mfARABGgI3OQ",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "79 Henson Rd, Salisbury QLD 4107, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Salisbury",
+            "street": "Henson Rd",
+            "postalCode": "4107",
+            "houseNumber": "79"
+          },
+          "position": {
+            "lat": -27.55197,
+            "lng": 153.02571
+          },
+          "access": [
+            {
+              "lat": -27.55176,
+              "lng": 153.02575
+            }
+          ],
+          "distance": 19,
+          "mapView": {
+            "west": 153.02245,
+            "south": -27.55407,
+            "east": 153.04124,
+            "north": -27.55131
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

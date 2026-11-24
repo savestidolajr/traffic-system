@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.4674249+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.95482,115.9994\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Milner Rd, High Wycombe WA 6057, Australia",
+          "id": "here:af:streetsection:iNRio8aOF1HbLfvjIEBh7A",
+          "resultType": "street",
+          "address": {
+            "label": "Milner Rd, High Wycombe WA 6057, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "High Wycombe",
+            "street": "Milner Rd",
+            "postalCode": "6057"
+          },
+          "position": {
+            "lat": -31.95482,
+            "lng": 115.9994
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.99186,
+            "south": -31.96129,
+            "east": 116.00379,
+            "north": -31.95123
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

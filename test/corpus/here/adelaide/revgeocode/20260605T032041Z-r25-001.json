@@ -1,0 +1,47 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032041Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:41.6080808+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.94648,138.5691\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Beauchamp St, Kurralta Park SA 5037, Australia",
+          "id": "here:af:streetsection:oW6lFeuOn.0nDTe29Gfr1D",
+          "resultType": "street",
+          "address": {
+            "label": "Beauchamp St, Kurralta Park SA 5037, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "SA",
+            "state": "South Australia",
+            "city": "Adelaide",
+            "district": "Kurralta Park",
+            "street": "Beauchamp St",
+            "postalCode": "5037"
+          },
+          "position": {
+            "lat": -34.94648,
+            "lng": 138.5691
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 138.5691,
+            "south": -34.95251,
+            "east": 138.56988,
+            "north": -34.94648
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.1020106+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.03628,115.75583\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Stirling Hwy, North Fremantle WA 6159, Australia",
+          "id": "here:af:streetsection:31lAkJVZMlo435Z2yMwJmB",
+          "resultType": "street",
+          "address": {
+            "label": "Stirling Hwy, North Fremantle WA 6159, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "North Fremantle",
+            "street": "Stirling Hwy",
+            "postalCode": "6159"
+          },
+          "position": {
+            "lat": -32.03628,
+            "lng": 115.75583
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.75228,
+            "south": -32.0377,
+            "east": 115.75759,
+            "north": -32.02135
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

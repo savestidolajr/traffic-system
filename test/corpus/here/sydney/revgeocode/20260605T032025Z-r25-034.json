@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.696101+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.03655,151.07062\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "181 Oak Rd S, Kirrawee NSW 2232, Australia",
+          "id": "here:af:streetsection:xL-G49YPjewubCHrFXhLFC:CggIBCD597yeARABGgMxODE",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "181 Oak Rd S, Kirrawee NSW 2232, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Kirrawee",
+            "street": "Oak Rd S",
+            "postalCode": "2232",
+            "houseNumber": "181"
+          },
+          "position": {
+            "lat": -34.03652,
+            "lng": 151.07033
+          },
+          "access": [
+            {
+              "lat": -34.03656,
+              "lng": 151.07062
+            }
+          ],
+          "distance": 1,
+          "mapView": {
+            "west": 151.07,
+            "south": -34.03957,
+            "east": 151.0708,
+            "north": -34.03572
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

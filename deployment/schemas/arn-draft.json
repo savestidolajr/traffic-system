@@ -1,0 +1,52 @@
+{
+  "name": "arn_draft_menu",
+  "strict": true,
+  "schema": {
+    "type": "object",
+    "additionalProperties": false,
+    "required": [
+      "items"
+    ],
+    "properties": {
+      "items": {
+        "type": "array",
+        "description": "The bulletin, in read order: one entry per fact worth voicing, each carrying one finished spoken sentence. The fitter may drop whole entries but never reorders them.",
+        "items": {
+          "type": "object",
+          "additionalProperties": false,
+          "required": [
+            "category",
+            "evidenceIds",
+            "text"
+          ],
+          "properties": {
+            "category": {
+              "type": "string",
+              "description": "What kind of item this is.",
+              "enum": [
+                "closure",
+                "incident",
+                "congestion",
+                "works",
+                "general_flow",
+                "weather",
+                "fuel"
+              ]
+            },
+            "evidenceIds": {
+              "type": "array",
+              "description": "The bracketed evidence ids this sentence asserts, exactly as supplied. Every road NAMED in the sentence must have its ids cited here. Never the group heading above them.",
+              "items": {
+                "type": "string"
+              }
+            },
+            "text": {
+              "type": "string",
+              "description": "One finished spoken sentence for this fact. Not alternatives, not phrasings at different lengths."
+            }
+          }
+        }
+      }
+    }
+  }
+}

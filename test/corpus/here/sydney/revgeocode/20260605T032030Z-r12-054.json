@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032030Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:31.1153135+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.86612,151.12193\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "11 Bevin Ave, Five Dock NSW 2046, Australia",
+          "id": "here:af:streetsection:eJoaYj4QqOv-.4tPZKg6LD:CggIBCD8m6GeARABGgIxMQ",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "11 Bevin Ave, Five Dock NSW 2046, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Five Dock",
+            "street": "Bevin Ave",
+            "postalCode": "2046",
+            "houseNumber": "11"
+          },
+          "position": {
+            "lat": -33.86645,
+            "lng": 151.12177
+          },
+          "access": [
+            {
+              "lat": -33.86612,
+              "lng": 151.12193
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 151.12082,
+            "south": -33.86629,
+            "east": 151.12296,
+            "north": -33.86588
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

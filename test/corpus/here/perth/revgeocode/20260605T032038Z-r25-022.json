@@ -1,0 +1,55 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.3590661+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.01515,115.76983\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "132 Wellington St, Mosman Park WA 6012, Australia",
+          "id": "here:af:streetsection:GICAQXrpeiZToXMahIdW1C:CggIBCDH1OmhARABGgMxMzI",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "132 Wellington St, Mosman Park WA 6012, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Mosman Park",
+            "street": "Wellington St",
+            "postalCode": "6012",
+            "houseNumber": "132"
+          },
+          "position": {
+            "lat": -32.01539,
+            "lng": 115.76989
+          },
+          "access": [
+            {
+              "lat": -32.01515,
+              "lng": 115.76989
+            }
+          ],
+          "distance": 6,
+          "mapView": {
+            "west": 115.75522,
+            "south": -32.01654,
+            "east": 115.77831,
+            "north": -32.01454
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

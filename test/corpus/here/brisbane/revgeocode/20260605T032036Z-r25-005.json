@@ -1,0 +1,47 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032036Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:37.2340064+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.64729,153.15216\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Pacific Mtwy, Slacks Creek QLD 4127, Australia",
+          "id": "here:af:streetsection:bnVNgP5xBAkytHlW4xf6.C",
+          "resultType": "street",
+          "address": {
+            "label": "Pacific Mtwy, Slacks Creek QLD 4127, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Slacks Creek",
+            "street": "Pacific Mtwy",
+            "postalCode": "4127"
+          },
+          "position": {
+            "lat": -27.64729,
+            "lng": 153.15216
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 153.12413,
+            "south": -27.65548,
+            "east": 153.16434,
+            "north": -27.61612
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

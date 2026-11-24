@@ -1,0 +1,88 @@
+{
+  "label": "sydney-76f4f8d0",
+  "market": "sydney",
+  "sourceJobId": "76f4f8d074e74cf19b27bba3d041a8bf",
+  "sourceCapture": "job-diagnostics/76f4f8d074e74cf19b27bba3d041a8bf/llm_calls/105629.544-Draft-attempt1.json",
+  "promptSha": null,
+  "items": [
+    {
+      "category": "works",
+      "evidenceIds": [
+        "r1:direction",
+        "r1:detail",
+        "r1:location:0",
+        "r1:suburb",
+        "r1:delayMinutes"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Northbound roadworks on Church Street near the M4 in Granville are adding five minutes."
+        },
+        {
+          "style": "standard",
+          "text": "Roadworks northbound on Church Street near the M4 Western Motorway in Granville are adding five minutes."
+        }
+      ]
+    },
+    {
+      "category": "incident",
+      "evidenceIds": [
+        "r5:detail",
+        "r5:vehicleDetail:0",
+        "r5:impact",
+        "r5:suburb"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "A crash involving two cars is blocking Old Northern Road in Castle Hill."
+        },
+        {
+          "style": "standard",
+          "text": "Two cars have crashed, blocking Old Northern Road in Castle Hill."
+        }
+      ]
+    },
+    {
+      "category": "incident",
+      "evidenceIds": [
+        "r4:detail",
+        "r4:vehicleDetail:0",
+        "r4:impact",
+        "r4:suburb"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "A broken-down car is causing a brief hold-up on James Ruse Drive in Parramatta."
+        },
+        {
+          "style": "standard",
+          "text": "A broken-down car is causing a brief delay on James Ruse Drive in Parramatta."
+        },
+        {
+          "style": "continuation",
+          "text": "And there's another breakdown causing a brief hold-up on James Ruse Drive in Parramatta."
+        }
+      ]
+    },
+    {
+      "category": "weather",
+      "evidenceIds": [
+        "weather:condition",
+        "weather:temperature"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Clear skies, 18 degrees."
+        },
+        {
+          "style": "standard",
+          "text": "Clear skies across Sydney, with temperatures at 18 degrees."
+        }
+      ]
+    }
+  ]
+}

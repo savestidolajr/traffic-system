@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.2358797+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.80239,144.94871\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "7 Queensberry Pl, North Melbourne VIC 3051, Australia",
+          "id": "here:af:streetsection:9RNu8LknpvMQguPNp7CnID:CggIBCD4iPCgARABGgE3",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "7 Queensberry Pl, North Melbourne VIC 3051, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "North Melbourne",
+            "street": "Queensberry Pl",
+            "postalCode": "3051",
+            "houseNumber": "7"
+          },
+          "position": {
+            "lat": -37.80248,
+            "lng": 144.94884
+          },
+          "access": [
+            {
+              "lat": -37.80246,
+              "lng": 144.9487
+            }
+          ],
+          "distance": 8,
+          "mapView": {
+            "west": 144.94859,
+            "south": -37.80294,
+            "east": 144.94876,
+            "north": -37.80219
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

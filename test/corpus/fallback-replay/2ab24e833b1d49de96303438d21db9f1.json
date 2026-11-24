@@ -1,0 +1,283 @@
+{
+ "JobId": "2ab24e833b1d49de96303438d21db9f1",
+ "Market": "portlincoln",
+ "Station": "portlincoln",
+ "CapturedAtUtc": "2026-07-02T01:24:03.905076+00:00",
+ "DevOutcome": {
+  "Status": "FallbackUsed",
+  "FallbackKind": "filler cart.",
+  "Attempts": 4,
+  "TargetWordsSeq": [
+   91,
+   88,
+   88,
+   91
+  ],
+  "SynthWordsSeq": [
+   21,
+   82,
+   77,
+   75
+  ],
+  "NaturalSecSeq": [
+   7.4,
+   27.7,
+   24.6,
+   26.2
+  ],
+  "BestNaturalSec": 27.7,
+  "ReviewFeedbackCount": 3,
+  "SynthFailures": []
+ },
+ "Fidelity": {
+  "IncidentsRecovered": 0,
+  "IncidentsSynthesized": 0,
+  "WeatherSource": "off",
+  "FuelSource": "off",
+  "GoodRunsAndFlowPoolLost": false,
+  "StationConfigSource": "live-station-config"
+ },
+ "VoiceConfig": {
+  "Provider": "ElevenLabs",
+  "VoiceId": "oKDz3nEzNfwKIVvUwPs0",
+  "VoiceName": "ARN Hudson",
+  "Model": "eleven_v3",
+  "Settings": null,
+  "PaceBoostWpm": 0
+ },
+ "Snapshot": {
+  "TargetDurationSeconds": 30,
+  "Location": "portlincoln",
+  "City": "portlincoln",
+  "MarketId": "portlincoln",
+  "Content": {
+   "Traffic": true,
+   "Weather": false,
+   "Fuel": false,
+   "HasAnySource": true
+  },
+  "Corridors": [],
+  "MonitoredRoutes": [],
+  "GoodRunRoads": [
+   "Bishop Street",
+   "White Flat Road",
+   "Hallet Place",
+   "Pine Freezers Road",
+   "New West Road",
+   "Flinders Highway"
+  ],
+  "FlowPool": [
+   {
+    "RoadName": "Bishop Street",
+    "JamFactor": 1,
+    "LengthMeters": 16438,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "White Flat Road",
+    "JamFactor": 0.4,
+    "LengthMeters": 16309,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Hallet Place",
+    "JamFactor": 2.4,
+    "LengthMeters": 9413,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Pine Freezers Road",
+    "JamFactor": 2.1,
+    "LengthMeters": 9292,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "New West Road",
+    "JamFactor": 2,
+    "LengthMeters": 7723,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Flinders Highway",
+    "JamFactor": 1,
+    "LengthMeters": 7542,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Lincoln Highway",
+    "JamFactor": 2,
+    "LengthMeters": 247,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 41.96348476629833,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Lewis Street",
+    "JamFactor": 1.6,
+    "LengthMeters": 235,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 41.855339311358684,
+    "PriorityBoosted": false
+   }
+  ],
+  "Weather": null,
+  "Fuel": null,
+  "IncidentChanges": null,
+  "Guidance": {
+   "Entries": [
+    {
+     "Id": "645e52b90299493a8dbde1205c6c657e",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:40:21.286082+00:00",
+     "UpdatedAtUtc": "2026-06-30T04:40:21.286082+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover only the three or four most significant items for a 30-second read. Close with a short safety sign-off.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "75fe175d471144b38bf23c24966dfb6f",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:39:29.324454+00:00",
+     "UpdatedAtUtc": "2026-06-30T04:39:29.324454+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "7b012b9381e04e72be8211133f224188",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 4,
+     "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:57.082974+00:00",
+     "UpdatedAtUtc": "2026-06-25T23:45:57.082974+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "Australian English with natural spoken contractions. Round the figures — say 'about ten minutes', never '10.3 minutes'. No police codes or insider jargon.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:56.924571+00:00",
+     "UpdatedAtUtc": "2026-06-25T23:45:56.924571+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 3,
+     "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "f5e76bd5993c41edb637a7302f7d7479",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 2,
+     "Text": "Use common road names with the definite article: 'the M1', 'the M4', 'the CBD'. Use 'citybound' and 'outbound' for direction of travel.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    }
+   ],
+   "DroppedCount": 0
+  },
+  "Bookends": null,
+  "FillerStatements": [
+   {
+    "Id": "9b93cec5332548759afc92951045b6f2",
+    "Text": "Please stay alert out there and stick to the speed limit.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "b34bd184a8b546c3909e544cedb475b9",
+    "Text": "School zones carry reduced speed limits on every school day — worth slowing down for.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "e62ee34a460f4df3b861969a1aec3cd9",
+    "Text": "A reminder that speed restrictions apply through the signed roadworks zones — take it easy through the cones.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "c22030786db8481ca2130fce6a665aff",
+    "Text": "The Lincoln Highway remains the only sealed road connecting Port Lincoln to the rest of the Eyre Peninsula.",
+    "Enabled": true,
+    "Availability": null
+   },
+   {
+    "Id": "083683bed71c4b80aa6ab80c69898477",
+    "Text": "It's a long stretch of highway between towns out here — pull over for a break if you're feeling fatigued.",
+    "Enabled": true,
+    "Availability": null
+   }
+  ],
+  "MarketFeedback": []
+ },
+ "Coverage": {
+  "Latitude": -34.72193,
+  "Longitude": 135.85802,
+  "RadiusKm": 5
+ },
+ "FullCorridorPool": []
+}

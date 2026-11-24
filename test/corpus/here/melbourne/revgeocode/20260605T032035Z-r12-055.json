@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:35.7052425+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81964,145.01002\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Whites Pl, Richmond VIC 3121, Australia",
+          "id": "here:af:streetsection:L6gG-CSvxCrWmj3RzHTTHC",
+          "resultType": "street",
+          "address": {
+            "label": "Whites Pl, Richmond VIC 3121, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Richmond",
+            "street": "Whites Pl",
+            "postalCode": "3121"
+          },
+          "position": {
+            "lat": -37.81964,
+            "lng": 145.01002
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 145.01002,
+            "south": -37.81964,
+            "east": 145.0101,
+            "north": -37.81915
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

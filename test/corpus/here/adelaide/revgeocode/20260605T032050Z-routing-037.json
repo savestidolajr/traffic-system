@@ -1,0 +1,47 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032050Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:51.319694+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.82469,138.78161\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "North East Rd, Inglewood SA 5133, Australia",
+          "id": "here:af:streetsection:Ns1lWr1N9HxSL3aXti.Q4B",
+          "resultType": "street",
+          "address": {
+            "label": "North East Rd, Inglewood SA 5133, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "SA",
+            "state": "South Australia",
+            "city": "Inglewood",
+            "district": "Inglewood",
+            "street": "North East Rd",
+            "postalCode": "5133"
+          },
+          "position": {
+            "lat": -34.82469,
+            "lng": 138.78161
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 138.77956,
+            "south": -34.82556,
+            "east": 138.80098,
+            "north": -34.81761
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

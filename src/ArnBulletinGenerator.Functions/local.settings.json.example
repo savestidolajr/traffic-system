@@ -1,0 +1,21 @@
+{
+  "IsEncrypted": false,
+  "Values": {
+    "FUNCTIONS_WORKER_RUNTIME": "dotnet-isolated",
+    "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+    "AadClientId": "00000000-0000-0000-0000-000000000000",
+    "Auth__DevFallbackRole": "Admin",
+    "Providers__OutputProvider": "Console",
+    "Providers__ExternalProviderMode": "Fake",
+    "Storage__AccountName": "devstoreaccount1",
+    "Storage__ContainerName": "broadcasts",
+    "AiSettings__AzureAI__Endpoint": "https://fake.invalid",
+    "AiSettings__AzureAI__Model": "fake-model",
+    "AiSettings__AzureAI__ApiKey": "fake",
+    "AiSettings__ElevenLabs__ApiKey": "fake",
+    "Here__ApiKey": "fake",
+    "Webhook__Enabled": "false",
+    "Zetta__Enabled": "false",
+    "AuditExport__Enabled": "false"
+  }
+}

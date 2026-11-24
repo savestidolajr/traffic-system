@@ -1,0 +1,1052 @@
+{
+  "Label": "pm-sydney",
+  "Reason": "true sample wave 3 (afternoon): traffic\u002Bweather\u002Bfuel",
+  "SourceJobId": "43815f4866e54cc2a4b0ff0c4da05fd2",
+  "OriginalScript": "The Great Western Highway is at a standstill, and the Warringah Freeway northbound is closed at Brook Street and the ramp to Falcon Street is closed for construction. Acacia Avenue is also at a standstill. The Sydney Harbour Tunnel southbound has construction between the Domain Tunnel and the Harbour Tunnel toll plaza, with about five kays affected. The M2 westbound is slow at Windsor Road, and The Boulevarde, Macquarie Street, Parramatta Road, Dacey Avenue and Chapel Road are all a touch slow.",
+  "CapturedAtUtc": "2026-07-10T04:18:19.048156+00:00",
+  "Snapshot": {
+    "TargetDurationSeconds": 30,
+    "Location": "sydney",
+    "City": null,
+    "MarketId": "sydney",
+    "Content": {
+      "Traffic": true,
+      "Weather": true,
+      "Fuel": true,
+      "HasAnySource": true
+    },
+    "Corridors": [
+      {
+        "RoadName": "Warringah Freeway",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 399,
+        "ImpactScore": 286,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure northbound",
+        "Incidents": [
+          {
+            "Id": "1295632020740419627",
+            "Description": "At Brook Street - Road construction",
+            "Severity": 1,
+            "Location": "Warringah Fwy",
+            "Type": "construction",
+            "LengthMeters": 122,
+            "FunctionalClass": 1,
+            "Latitude": -33.82257,
+            "Longitude": 151.20616,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": null,
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365362849:$1:919126779#-0.37825..0.50511"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.82257,
+                "Lng": 151.20616
+              },
+              {
+                "Lat": -33.82273,
+                "Lng": 151.20638
+              },
+              {
+                "Lat": -33.82298,
+                "Lng": 151.20677
+              },
+              {
+                "Lat": -33.8231,
+                "Lng": 151.20698
+              },
+              {
+                "Lat": -33.82322,
+                "Lng": 151.20723
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:43:19+00:00"
+          },
+          {
+            "Id": "2783990790558095366",
+            "Description": "Ramp to Falcon Street - Closed",
+            "Severity": 1,
+            "Location": "Warringah Fwy",
+            "Type": "roadClosure",
+            "LengthMeters": 277,
+            "FunctionalClass": 1,
+            "Latitude": -33.83208,
+            "Longitude": 151.21234,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "northbound",
+            "Summary": null,
+            "JunctionTraversability": "intermediateClosedEdgeOpen",
+            "SegmentRefs": [
+              "$0:365362849:$1:916657059#\u002B0..1",
+              "$0:365362849:$1:883074946#\u002B0..0.86278"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.83208,
+                "Lng": 151.21234
+              },
+              {
+                "Lat": -33.8319,
+                "Lng": 151.21239
+              },
+              {
+                "Lat": -33.83179,
+                "Lng": 151.21244
+              },
+              {
+                "Lat": -33.83116,
+                "Lng": 151.21278
+              },
+              {
+                "Lat": -33.83116,
+                "Lng": 151.21278
+              },
+              {
+                "Lat": -33.83064,
+                "Lng": 151.21298
+              },
+              {
+                "Lat": -33.83034,
+                "Lng": 151.21307
+              },
+              {
+                "Lat": -33.83034,
+                "Lng": 151.21307
+              },
+              {
+                "Lat": -33.82992,
+                "Lng": 151.21314
+              },
+              {
+                "Lat": -33.82992,
+                "Lng": 151.21314
+              },
+              {
+                "Lat": -33.8297,
+                "Lng": 151.21317
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-07-07T16:43:12+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": "northbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -33.83208,
+        "Longitude": 151.21234,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 1,
+        "PriorityBoosted": true,
+        "Detour": null,
+        "DelayMinutes": 1
+      },
+      {
+        "RoadName": "Parramatta Road",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 806,
+        "ImpactScore": 214.5,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": true,
+        "Detour": null,
+        "DelayMinutes": 2
+      },
+      {
+        "RoadName": "Sydney Harbour Tunnel",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 4608,
+        "ImpactScore": 196,
+        "PrimaryType": "construction",
+        "Description": "roadworks southbound",
+        "Incidents": [
+          {
+            "Id": "1122763239942930903",
+            "Description": "Between HT Toll Plaza - North Sydney and Cahill Expressway - Construction work",
+            "Severity": 1,
+            "Location": "Sydney Harbour Tunnel",
+            "Type": "construction",
+            "LengthMeters": 2326,
+            "FunctionalClass": 1,
+            "Latitude": -33.84157,
+            "Longitude": 151.21075,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "southbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365362849:$1:918404342#\u002B0.30434..0.97217"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.84157,
+                "Lng": 151.21075
+              },
+              {
+                "Lat": -33.84364,
+                "Lng": 151.21133
+              },
+              {
+                "Lat": -33.84558,
+                "Lng": 151.21194
+              },
+              {
+                "Lat": -33.84615,
+                "Lng": 151.21224
+              },
+              {
+                "Lat": -33.84653,
+                "Lng": 151.21254
+              },
+              {
+                "Lat": -33.8476,
+                "Lng": 151.21293
+              },
+              {
+                "Lat": -33.84845,
+                "Lng": 151.21317
+              },
+              {
+                "Lat": -33.84963,
+                "Lng": 151.21332
+              },
+              {
+                "Lat": -33.85464,
+                "Lng": 151.21357
+              },
+              {
+                "Lat": -33.85843,
+                "Lng": 151.21376
+              },
+              {
+                "Lat": -33.85865,
+                "Lng": 151.2138
+              },
+              {
+                "Lat": -33.85908,
+                "Lng": 151.21387
+              },
+              {
+                "Lat": -33.86102,
+                "Lng": 151.21388
+              },
+              {
+                "Lat": -33.86159,
+                "Lng": 151.21385
+              },
+              {
+                "Lat": -33.86179,
+                "Lng": 151.21384
+              },
+              {
+                "Lat": -33.86215,
+                "Lng": 151.21382
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-08T19:54:25+00:00"
+          },
+          {
+            "Id": "524019938419928882",
+            "Description": "Between Domain Tunnel and HT Toll Plaza - North Sydney - Construction work",
+            "Severity": 1,
+            "Location": "Sydney Harbour Tunnel",
+            "Type": "construction",
+            "LengthMeters": 2282,
+            "FunctionalClass": 1,
+            "Latitude": -33.86175,
+            "Longitude": 151.2137,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "northbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365362849:$1:919620234#-0.03743..0.69665"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.86175,
+                "Lng": 151.2137
+              },
+              {
+                "Lat": -33.86111,
+                "Lng": 151.21369
+              },
+              {
+                "Lat": -33.86035,
+                "Lng": 151.21368
+              },
+              {
+                "Lat": -33.85902,
+                "Lng": 151.21364
+              },
+              {
+                "Lat": -33.85882,
+                "Lng": 151.21364
+              },
+              {
+                "Lat": -33.85838,
+                "Lng": 151.21362
+              },
+              {
+                "Lat": -33.85108,
+                "Lng": 151.21327
+              },
+              {
+                "Lat": -33.84923,
+                "Lng": 151.21316
+              },
+              {
+                "Lat": -33.84791,
+                "Lng": 151.21275
+              },
+              {
+                "Lat": -33.84735,
+                "Lng": 151.21253
+              },
+              {
+                "Lat": -33.8465,
+                "Lng": 151.21221
+              },
+              {
+                "Lat": -33.84494,
+                "Lng": 151.21159
+              },
+              {
+                "Lat": -33.84379,
+                "Lng": 151.21105
+              },
+              {
+                "Lat": -33.84273,
+                "Lng": 151.21072
+              },
+              {
+                "Lat": -33.84209,
+                "Lng": 151.21048
+              },
+              {
+                "Lat": -33.84159,
+                "Lng": 151.2103
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-08T19:58:25+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": "southbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -33.84157,
+        "Longitude": 151.21075,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": null
+      },
+      {
+        "RoadName": "M2",
+        "Severity": 1,
+        "FunctionalClass": 1,
+        "TotalLengthMeters": 599,
+        "ImpactScore": 190,
+        "PrimaryType": "construction",
+        "Description": "roadworks westbound",
+        "Incidents": [
+          {
+            "Id": "3502670641248607976",
+            "Description": "At Windsor Road - Road construction",
+            "Severity": 1,
+            "Location": "M2 Hills Mwy",
+            "Type": "construction",
+            "LengthMeters": 599,
+            "FunctionalClass": 1,
+            "Latitude": -33.7657,
+            "Longitude": 151.01198,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "westbound",
+            "Summary": null,
+            "JunctionTraversability": null,
+            "SegmentRefs": [
+              "$0:365362154:$1:224328913#-0.63817..0.88156"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -33.7657,
+                "Lng": 151.01198
+              },
+              {
+                "Lat": -33.76592,
+                "Lng": 151.01122
+              },
+              {
+                "Lat": -33.76617,
+                "Lng": 151.01024
+              },
+              {
+                "Lat": -33.76632,
+                "Lng": 151.00958
+              },
+              {
+                "Lat": -33.76639,
+                "Lng": 151.00918
+              },
+              {
+                "Lat": -33.76639,
+                "Lng": 151.00918
+              },
+              {
+                "Lat": -33.7665,
+                "Lng": 151.00848
+              },
+              {
+                "Lat": -33.7665,
+                "Lng": 151.00848
+              },
+              {
+                "Lat": -33.76663,
+                "Lng": 151.00751
+              },
+              {
+                "Lat": -33.76663,
+                "Lng": 151.00751
+              },
+              {
+                "Lat": -33.76673,
+                "Lng": 151.00671
+              },
+              {
+                "Lat": -33.76673,
+                "Lng": 151.00671
+              },
+              {
+                "Lat": -33.76681,
+                "Lng": 151.00608
+              },
+              {
+                "Lat": -33.76681,
+                "Lng": 151.00608
+              },
+              {
+                "Lat": -33.76687,
+                "Lng": 151.00559
+              }
+            ],
+            "RoadClosed": false,
+            "EntryTimeUtc": "2026-07-07T16:43:13+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": "westbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -33.7657,
+        "Longitude": 151.01198,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 3,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 3
+      },
+      {
+        "RoadName": "Acacia Avenue",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 1272,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 9,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 9
+      },
+      {
+        "RoadName": "Great Western Highway",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 3606,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 7,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 7
+      },
+      {
+        "RoadName": "The Boulevarde",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 523,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 3,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 3
+      },
+      {
+        "RoadName": "Dacey Avenue",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 757,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 2
+      },
+      {
+        "RoadName": "Macquarie Street",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 1227,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 3,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 3
+      },
+      {
+        "RoadName": "Chapel Road",
+        "Severity": 1,
+        "FunctionalClass": 3,
+        "TotalLengthMeters": 817,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "Incidents": [],
+        "Suburb": null,
+        "Direction": null,
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": 2,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": 2
+      }
+    ],
+    "MonitoredRoutes": [
+      {
+        "Name": "the M4 from Parramatta to the city",
+        "Origin": {
+          "Lat": -33.8148,
+          "Lng": 151.0017
+        },
+        "Destination": {
+          "Lat": -33.8688,
+          "Lng": 151.2093
+        },
+        "DriveTimeMinutes": 27,
+        "NormalDriveTimeMinutes": 27,
+        "DistanceKm": 25.368,
+        "DelayMinutes": 0
+      },
+      {
+        "Name": "the Warringah Freeway into the city",
+        "Origin": {
+          "Lat": -33.8,
+          "Lng": 151.21
+        },
+        "Destination": {
+          "Lat": -33.8688,
+          "Lng": 151.2093
+        },
+        "DriveTimeMinutes": 15,
+        "NormalDriveTimeMinutes": 15,
+        "DistanceKm": 9.244,
+        "DelayMinutes": 0
+      }
+    ],
+    "GoodRunRoads": [
+      "Sydney Harbour Bridge",
+      "M4 Western Motorway",
+      "M5 South West Motorway",
+      "Anzac Bridge",
+      "Eastern Distributor",
+      "Victoria Road"
+    ],
+    "FlowPool": [
+      {
+        "RoadName": "Sydney Harbour Bridge",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 140,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "M4 Western Motorway",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 140,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "M5 South West Motorway",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 80,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Anzac Bridge",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 80,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Eastern Distributor",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 80,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "Victoria Road",
+        "JamFactor": 0,
+        "LengthMeters": 0,
+        "IsWeighted": true,
+        "FunctionalClass": 3,
+        "Score": 45,
+        "PriorityBoosted": true
+      },
+      {
+        "RoadName": "M7 Westlink",
+        "JamFactor": 3.6,
+        "LengthMeters": 17694,
+        "IsWeighted": false,
+        "FunctionalClass": 1,
+        "Score": 62.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "M2 Motorway",
+        "JamFactor": 3.1,
+        "LengthMeters": 13939,
+        "IsWeighted": false,
+        "FunctionalClass": 1,
+        "Score": 62.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Pacific Highway",
+        "JamFactor": 3.7,
+        "LengthMeters": 18414,
+        "IsWeighted": false,
+        "FunctionalClass": 2,
+        "Score": 52.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Elizabeth Drive",
+        "JamFactor": 3.8,
+        "LengthMeters": 36007,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "The Northern Road",
+        "JamFactor": 1.8,
+        "LengthMeters": 27627,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Windsor Road",
+        "JamFactor": 3.4,
+        "LengthMeters": 17248,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Campbelltown Road",
+        "JamFactor": 2.1,
+        "LengthMeters": 16826,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Carrington Road",
+        "JamFactor": 2.7,
+        "LengthMeters": 15909,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Cumberland Highway",
+        "JamFactor": 1.6,
+        "LengthMeters": 15458,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Schwebel Lane",
+        "JamFactor": 0.3,
+        "LengthMeters": 14670,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Macarthur Drive",
+        "JamFactor": 0.5,
+        "LengthMeters": 14450,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "New Illawarra Road",
+        "JamFactor": 2.3,
+        "LengthMeters": 14187,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Raby Road",
+        "JamFactor": 2.7,
+        "LengthMeters": 13954,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Cobbitty Road",
+        "JamFactor": 1.6,
+        "LengthMeters": 13829,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      }
+    ],
+    "Weather": {
+      "Conditions": "Low clouds. Cool.",
+      "TemperatureC": 10.72,
+      "WindDescription": null,
+      "PrecipitationProbabilityPercent": 50,
+      "Alerts": [],
+      "Outlook": "reaching 16 degrees later today; tomorrow broken clouds. mild, around 18 degrees",
+      "HasMajorAlert": false
+    },
+    "Fuel": {
+      "Summaries": [
+        {
+          "FuelType": "Unleaded 91",
+          "MinPrice": 1.543,
+          "AveragePrice": 1.643,
+          "StationCount": 45,
+          "LatestModifiedUtc": "2026-07-10T03:31:06+00:00",
+          "CheapestStationSuburb": "Greystanes"
+        },
+        {
+          "FuelType": "Diesel",
+          "MinPrice": 1.769,
+          "AveragePrice": 1.832,
+          "StationCount": 24,
+          "LatestModifiedUtc": "2026-07-10T03:31:06+00:00",
+          "CheapestStationSuburb": "Rosehill"
+        }
+      ],
+      "HasPrices": true
+    },
+    "IncidentChanges": null,
+    "Guidance": {
+      "Entries": [
+        {
+          "Id": "c2ac34c44e0144c49e83e77c53aad18a",
+          "Scope": 1,
+          "ScopeId": "sydney",
+          "Type": 2,
+          "Text": "Sydney names: \u0027the Harbour Bridge\u0027, \u0027the Harbour Tunnel\u0027, \u0027the M4\u0027, \u0027the M5\u0027, \u0027WestConnex\u0027, \u0027the Warringah Freeway\u0027, \u0027the Eastern Distributor\u0027, \u0027the Anzac Bridge\u0027.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for \u2014 a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "UpdatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "645e52b90299493a8dbde1205c6c657e",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "75fe175d471144b38bf23c24966dfb6f",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "7b012b9381e04e72be8211133f224188",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 4,
+          "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "Australian English with natural spoken contractions. Round the figures \u2014 say \u0027about ten minutes\u0027, never \u002710.3 minutes\u0027. No police codes or insider jargon.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 3,
+          "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "f5e76bd5993c41edb637a7302f7d7479",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 2,
+          "Text": "Use common road names with the definite article: \u0027the M1\u0027, \u0027the M4\u0027, \u0027the CBD\u0027. Use \u0027citybound\u0027 and \u0027outbound\u0027 for direction of travel.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        }
+      ],
+      "DroppedCount": 0,
+      "Count": 8,
+      "HasEntries": true
+    },
+    "MarketFeedback": [
+      {
+        "Market": "sydney",
+        "JobId": "9565c268400547e98c9d9fa316044d59",
+        "Category": "Rejected by operator",
+        "Feedback": "e2e regression check - done",
+        "CreatedAtUtc": "2026-07-06T01:45:52.4093897Z"
+      },
+      {
+        "Market": "sydney",
+        "JobId": "fa72c466b0fe40679f5b34e65c74063d",
+        "Category": "Rejected by operator",
+        "Feedback": "e2e sweep - reject suppression test",
+        "CreatedAtUtc": "2026-07-06T00:23:56.9048846Z"
+      },
+      {
+        "Market": "sydney",
+        "JobId": "a0f8a9c4001e4dcaafd956110c299779",
+        "Category": "Rejected to fallback by operator",
+        "Feedback": "QT: reject-to-fallback",
+        "CreatedAtUtc": "2026-07-05T11:28:33.836392Z"
+      },
+      {
+        "Market": "sydney",
+        "JobId": "74e15e15c85c47b5b855f1f8a7cd189f",
+        "Category": "ContentError",
+        "Feedback": "QT: edited-script through FULL regenerate (AI path)",
+        "CreatedAtUtc": "2026-07-05T11:19:37.8097024Z"
+      },
+      {
+        "Market": "sydney",
+        "JobId": "74e15e15c85c47b5b855f1f8a7cd189f",
+        "Category": "ContentError",
+        "Feedback": "QT: edited-script retry test",
+        "CreatedAtUtc": "2026-07-05T11:19:03.4503836Z"
+      },
+      {
+        "Market": "sydney",
+        "JobId": "28c7cbde7d9e495ba7e23c8ab2e11bf3",
+        "Category": "ContentError",
+        "Feedback": "Notification-path verification test - not a real editorial rejection",
+        "CreatedAtUtc": "2026-07-05T08:41:34.8025581Z"
+      },
+      {
+        "Market": "sydney",
+        "JobId": "026280016f6843c8ba251c95b2171745",
+        "Category": "Script error",
+        "Feedback": "VERIFY: too long, trim secondary roads",
+        "CreatedAtUtc": "2026-06-23T07:36:06.9317572Z"
+      }
+    ]
+  }
+}

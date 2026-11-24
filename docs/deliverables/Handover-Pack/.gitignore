@@ -1,0 +1,5 @@
+# Build output of scripts/package-docs-offline.sh, regenerated at pack
+# finalisation from the current documentation site. Committing a multi-megabyte
+# zip would rot: the copy in the repository would drift from the site it was
+# built from, which is exactly the failure the build-time pipeline avoids.
+arn-documentation-offline.zip

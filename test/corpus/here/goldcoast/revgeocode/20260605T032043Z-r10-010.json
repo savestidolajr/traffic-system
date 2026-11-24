@@ -1,0 +1,53 @@
+{
+  "Market": "goldcoast",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032043Z-r10",
+  "CapturedAtUtc": "2026-06-05T03:20:44.3249732+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.95334,153.34614\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "PR Parkwood Station",
+          "id": "here:pds:place:036r7j0c-ccef4fdf8c7b364b184f7282444c0286",
+          "resultType": "place",
+          "address": {
+            "label": "PR Parkwood Station, Arundel QLD 4214, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Gold Coast",
+            "district": "Arundel",
+            "postalCode": "4214"
+          },
+          "position": {
+            "lat": -27.95335,
+            "lng": 153.34687
+          },
+          "access": [
+            {
+              "lat": -27.95328,
+              "lng": 153.347
+            }
+          ],
+          "distance": 72,
+          "categories": [
+            {
+              "id": "800-8500-0179",
+              "name": "Park and Ride or Fly",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

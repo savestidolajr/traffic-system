@@ -1,0 +1,437 @@
+{
+  "Label": "fresh-mildura",
+  "Reason": "true sample wave 2: traffic\u002Bweather\u002Bfuel, 03:53",
+  "SourceJobId": "56435bcc08ca4d32945ce10436e467f2",
+  "OriginalScript": "Walker Road outbound is closed. In Mildura, Werrimull North Road, Tapaulin Road, Fletchers Lake Road and Benetook Avenue are moving nicely, with Werrimull North Road and Tapaulin Road looking good through town. Passing clouds and six degrees. Cheapest unleaded is one dollar sixty-three in Mildura, and diesel is one dollar seventy-seven there too. It\u0027s a long stretch of highway between towns out here \u2014 pull over for a break if you\u0027re feeling fatigued.",
+  "CapturedAtUtc": "2026-07-10T03:53:29.10327+00:00",
+  "Snapshot": {
+    "TargetDurationSeconds": 30,
+    "Location": "mildura",
+    "City": null,
+    "MarketId": "mildura",
+    "Content": {
+      "Traffic": true,
+      "Weather": true,
+      "Fuel": true,
+      "HasAnySource": true
+    },
+    "Corridors": [
+      {
+        "RoadName": "Walker Road",
+        "Severity": 3,
+        "FunctionalClass": 5,
+        "TotalLengthMeters": 7010,
+        "ImpactScore": 100,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure outbound",
+        "Incidents": [
+          {
+            "Id": "4582107454787213418",
+            "Description": "Closed",
+            "Severity": 3,
+            "Location": "Walker Rd",
+            "Type": "roadClosure",
+            "LengthMeters": 3505,
+            "FunctionalClass": 5,
+            "Latitude": -34.18493,
+            "Longitude": 141.95585,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "outbound",
+            "Summary": null,
+            "JunctionTraversability": "intermediateClosedEdgeOpen",
+            "SegmentRefs": [
+              "$0:365145551:$1:216034517#-0.00285..0.98606"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.18493,
+                "Lng": 141.95585
+              },
+              {
+                "Lat": -34.1881,
+                "Lng": 141.95213
+              },
+              {
+                "Lat": -34.20731,
+                "Lng": 141.92945
+              },
+              {
+                "Lat": -34.20746,
+                "Lng": 141.92927
+              },
+              {
+                "Lat": -34.20751,
+                "Lng": 141.92909
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-07-07T16:43:22+00:00"
+          },
+          {
+            "Id": "4078239842755471383",
+            "Description": "Closed",
+            "Severity": 3,
+            "Location": "Walker Rd",
+            "Type": "roadClosure",
+            "LengthMeters": 3505,
+            "FunctionalClass": 5,
+            "Latitude": -34.20751,
+            "Longitude": 141.92909,
+            "IsNew": false,
+            "DataTimestampUtc": null,
+            "Direction": "citybound",
+            "Summary": null,
+            "JunctionTraversability": "intermediateClosedEdgeOpen",
+            "SegmentRefs": [
+              "$0:365145551:$1:216034517#\u002B0.01398..0.99719"
+            ],
+            "Comment": null,
+            "Shape": [
+              {
+                "Lat": -34.20751,
+                "Lng": 141.92909
+              },
+              {
+                "Lat": -34.20746,
+                "Lng": 141.92927
+              },
+              {
+                "Lat": -34.20731,
+                "Lng": 141.92945
+              },
+              {
+                "Lat": -34.1881,
+                "Lng": 141.95213
+              },
+              {
+                "Lat": -34.18493,
+                "Lng": 141.95585
+              }
+            ],
+            "RoadClosed": true,
+            "EntryTimeUtc": "2026-07-07T16:43:21+00:00"
+          }
+        ],
+        "Suburb": null,
+        "Direction": "outbound",
+        "Extent": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "Latitude": -34.18493,
+        "Longitude": 141.95585,
+        "StartPoint": null,
+        "EndPoint": null,
+        "JamTendency": null,
+        "FlowDelayMinutes": null,
+        "PriorityBoosted": false,
+        "Detour": null,
+        "DelayMinutes": null
+      }
+    ],
+    "MonitoredRoutes": [],
+    "GoodRunRoads": [
+      "Werrimull North Road",
+      "Tapaulin Road",
+      "Fletchers Lake Road",
+      "Benetook Avenue",
+      "Paschendael Avenue",
+      "Brownport Road"
+    ],
+    "FlowPool": [
+      {
+        "RoadName": "Werrimull North Road",
+        "JamFactor": 0.2,
+        "LengthMeters": 82560,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Tapaulin Road",
+        "JamFactor": 0.2,
+        "LengthMeters": 77997,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Fletchers Lake Road",
+        "JamFactor": 0.6,
+        "LengthMeters": 77029,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Benetook Avenue",
+        "JamFactor": 1,
+        "LengthMeters": 55804,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Paschendael Avenue",
+        "JamFactor": 0.7,
+        "LengthMeters": 53678,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Brownport Road",
+        "JamFactor": 0.6,
+        "LengthMeters": 52681,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Silver City Highway",
+        "JamFactor": 0.7,
+        "LengthMeters": 52287,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Wentworth Street",
+        "JamFactor": 0.6,
+        "LengthMeters": 51180,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Boonoonar Road",
+        "JamFactor": 0.3,
+        "LengthMeters": 46819,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Calder Highway",
+        "JamFactor": 2.3,
+        "LengthMeters": 40730,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Wamberra Road",
+        "JamFactor": 0.9,
+        "LengthMeters": 34533,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Murray Valley Highway",
+        "JamFactor": 0.3,
+        "LengthMeters": 33530,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Kulkyne Way",
+        "JamFactor": 0.8,
+        "LengthMeters": 30626,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Tooperoopna Road",
+        "JamFactor": 0.8,
+        "LengthMeters": 25767,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Hattah-Robinvale Road",
+        "JamFactor": 0.4,
+        "LengthMeters": 25670,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Woomera Avenue",
+        "JamFactor": 0,
+        "LengthMeters": 22970,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Sturt Highway",
+        "JamFactor": 0.9,
+        "LengthMeters": 19841,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "River Avenue",
+        "JamFactor": 0.6,
+        "LengthMeters": 15683,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      }
+    ],
+    "Weather": {
+      "Conditions": "Passing clouds. Quite cool.",
+      "TemperatureC": 6.5,
+      "WindDescription": null,
+      "PrecipitationProbabilityPercent": 1,
+      "Alerts": [],
+      "Outlook": "reaching 17 degrees later today; tomorrow sprinkles late. cloudy. mild, around 18 degrees",
+      "HasMajorAlert": false
+    },
+    "Fuel": {
+      "Summaries": [
+        {
+          "FuelType": "Unleaded 91",
+          "MinPrice": 1.633,
+          "AveragePrice": 1.726,
+          "StationCount": 25,
+          "LatestModifiedUtc": "2026-07-10T03:31:05+00:00",
+          "CheapestStationSuburb": "Mildura"
+        },
+        {
+          "FuelType": "Diesel",
+          "MinPrice": 1.775,
+          "AveragePrice": 1.901,
+          "StationCount": 19,
+          "LatestModifiedUtc": "2026-07-10T03:31:05+00:00",
+          "CheapestStationSuburb": "Mildura"
+        }
+      ],
+      "HasPrices": true
+    },
+    "IncidentChanges": null,
+    "Guidance": {
+      "Entries": [
+        {
+          "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover as many named, real items as the slot word target calls for \u2014 a listener paid with dead air for a fact you were given and did not voice. Do not stop at three or four when more grounded roads are available; the slot capacity and word target already set the ceiling. Close with a short safety sign-off.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "UpdatedAtUtc": "2026-07-08T02:17:04.3391028Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "645e52b90299493a8dbde1205c6c657e",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "UpdatedAtUtc": "2026-06-30T04:40:21.2860826Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "75fe175d471144b38bf23c24966dfb6f",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 1,
+          "Text": "no breath\u0027s in voice",
+          "Enabled": true,
+          "CreatedBy": "unknown",
+          "CreatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "UpdatedAtUtc": "2026-06-30T04:39:29.3244546Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "7b012b9381e04e72be8211133f224188",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 4,
+          "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:57.0829744Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 0,
+          "Text": "Australian English with natural spoken contractions. Round the figures \u2014 say \u0027about ten minutes\u0027, never \u002710.3 minutes\u0027. No police codes or insider jargon.",
+          "Enabled": true,
+          "CreatedBy": "operator@arn.com.au",
+          "CreatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "UpdatedAtUtc": "2026-06-25T23:45:56.9245717Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 3,
+          "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        },
+        {
+          "Id": "f5e76bd5993c41edb637a7302f7d7479",
+          "Scope": 0,
+          "ScopeId": "",
+          "Type": 2,
+          "Text": "Use common road names with the definite article: \u0027the M1\u0027, \u0027the M4\u0027, \u0027the CBD\u0027. Use \u0027citybound\u0027 and \u0027outbound\u0027 for direction of travel.",
+          "Enabled": true,
+          "CreatedBy": "seed:arn-data",
+          "CreatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "UpdatedAtUtc": "2026-06-19T04:11:48.86574Z",
+          "Source": "manual",
+          "ReviewAfterUtc": null
+        }
+      ],
+      "DroppedCount": 0,
+      "Count": 7,
+      "HasEntries": true
+    },
+    "MarketFeedback": []
+  }
+}

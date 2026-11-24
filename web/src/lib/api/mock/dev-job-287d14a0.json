@@ -1,0 +1,1600 @@
+{
+  "Audio": {
+    "Data": {
+      "Format": "wav",
+      "SampleRateHz": 44100,
+      "DurationSec": 30,
+      "Url": "jobs/287d14a0b2484f10938b5f62b755d2cb/audio"
+    },
+    "MeasuredDurationSec": 30,
+    "DeltaSec": 0,
+    "WordTimings": [
+      {
+        "Word": "South",
+        "StartSec": 0,
+        "EndSec": 0.218
+      },
+      {
+        "Word": "Road's",
+        "StartSec": 0.262,
+        "EndSec": 0.583
+      },
+      {
+        "Word": "closed.",
+        "StartSec": 0.655,
+        "EndSec": 1.165
+      },
+      {
+        "Word": "Marion",
+        "StartSec": 1.217,
+        "EndSec": 1.529
+      },
+      {
+        "Word": "Road's",
+        "StartSec": 1.587,
+        "EndSec": 1.893
+      },
+      {
+        "Word": "at",
+        "StartSec": 1.918,
+        "EndSec": 1.966
+      },
+      {
+        "Word": "a",
+        "StartSec": 2.039,
+        "EndSec": 2.112
+      },
+      {
+        "Word": "standstill",
+        "StartSec": 2.173,
+        "EndSec": 2.694
+      },
+      {
+        "Word": "with",
+        "StartSec": 2.723,
+        "EndSec": 2.84
+      },
+      {
+        "Word": "a",
+        "StartSec": 2.876,
+        "EndSec": 2.913
+      },
+      {
+        "Word": "queue",
+        "StartSec": 2.961,
+        "EndSec": 3.204
+      },
+      {
+        "Word": "back",
+        "StartSec": 3.248,
+        "EndSec": 3.422
+      },
+      {
+        "Word": "about",
+        "StartSec": 3.483,
+        "EndSec": 3.786
+      },
+      {
+        "Word": "two",
+        "StartSec": 3.823,
+        "EndSec": 3.932
+      },
+      {
+        "Word": "kays.",
+        "StartSec": 4.041,
+        "EndSec": 4.879
+      },
+      {
+        "Word": "Anzac",
+        "StartSec": 4.927,
+        "EndSec": 5.243
+      },
+      {
+        "Word": "Highway",
+        "StartSec": 5.288,
+        "EndSec": 5.607
+      },
+      {
+        "Word": "and",
+        "StartSec": 5.625,
+        "EndSec": 5.68
+      },
+      {
+        "Word": "Cross",
+        "StartSec": 5.741,
+        "EndSec": 6.044
+      },
+      {
+        "Word": "Road",
+        "StartSec": 6.087,
+        "EndSec": 6.262
+      },
+      {
+        "Word": "are",
+        "StartSec": 6.299,
+        "EndSec": 6.408
+      },
+      {
+        "Word": "a",
+        "StartSec": 6.444,
+        "EndSec": 6.481
+      },
+      {
+        "Word": "bit",
+        "StartSec": 6.517,
+        "EndSec": 6.626
+      },
+      {
+        "Word": "slow,",
+        "StartSec": 6.699,
+        "EndSec": 7.282
+      },
+      {
+        "Word": "while",
+        "StartSec": 7.306,
+        "EndSec": 7.427
+      },
+      {
+        "Word": "Grenfell",
+        "StartSec": 7.485,
+        "EndSec": 7.864
+      },
+      {
+        "Word": "Road's",
+        "StartSec": 7.908,
+        "EndSec": 8.228
+      },
+      {
+        "Word": "got",
+        "StartSec": 8.246,
+        "EndSec": 8.301
+      },
+      {
+        "Word": "a",
+        "StartSec": 8.337,
+        "EndSec": 8.374
+      },
+      {
+        "Word": "queue",
+        "StartSec": 8.422,
+        "EndSec": 8.665
+      },
+      {
+        "Word": "of",
+        "StartSec": 8.713,
+        "EndSec": 8.811
+      },
+      {
+        "Word": "about",
+        "StartSec": 8.847,
+        "EndSec": 9.029
+      },
+      {
+        "Word": "a",
+        "StartSec": 9.066,
+        "EndSec": 9.102
+      },
+      {
+        "Word": "kay.",
+        "StartSec": 9.193,
+        "EndSec": 9.83
+      },
+      {
+        "Word": "Hancock",
+        "StartSec": 9.894,
+        "EndSec": 10.34
+      },
+      {
+        "Word": "Road",
+        "StartSec": 10.413,
+        "EndSec": 10.704
+      },
+      {
+        "Word": "and",
+        "StartSec": 10.722,
+        "EndSec": 10.777
+      },
+      {
+        "Word": "a",
+        "StartSec": 10.85,
+        "EndSec": 10.922
+      },
+      {
+        "Word": "couple",
+        "StartSec": 10.964,
+        "EndSec": 11.214
+      },
+      {
+        "Word": "more",
+        "StartSec": 11.257,
+        "EndSec": 11.432
+      },
+      {
+        "Word": "spots",
+        "StartSec": 11.493,
+        "EndSec": 11.796
+      },
+      {
+        "Word": "have",
+        "StartSec": 11.84,
+        "EndSec": 12.015
+      },
+      {
+        "Word": "short",
+        "StartSec": 12.051,
+        "EndSec": 12.233
+      },
+      {
+        "Word": "queues,",
+        "StartSec": 12.296,
+        "EndSec": 12.961
+      },
+      {
+        "Word": "and",
+        "StartSec": 12.979,
+        "EndSec": 13.034
+      },
+      {
+        "Word": "Mooringe",
+        "StartSec": 13.082,
+        "EndSec": 13.617
+      },
+      {
+        "Word": "Avenue's",
+        "StartSec": 13.647,
+        "EndSec": 13.908
+      },
+      {
+        "Word": "moving",
+        "StartSec": 13.96,
+        "EndSec": 14.272
+      },
+      {
+        "Word": "slowly.",
+        "StartSec": 14.355,
+        "EndSec": 14.927
+      },
+      {
+        "Word": "The",
+        "StartSec": 15.036,
+        "EndSec": 15.364
+      },
+      {
+        "Word": "South",
+        "StartSec": 15.412,
+        "EndSec": 15.655
+      },
+      {
+        "Word": "Eastern",
+        "StartSec": 15.692,
+        "EndSec": 15.947
+      },
+      {
+        "Word": "Freeway",
+        "StartSec": 16.001,
+        "EndSec": 16.456
+      },
+      {
+        "Word": "and",
+        "StartSec": 16.493,
+        "EndSec": 16.602
+      },
+      {
+        "Word": "North-South",
+        "StartSec": 16.65,
+        "EndSec": 17.184
+      },
+      {
+        "Word": "Motorway",
+        "StartSec": 17.233,
+        "EndSec": 17.621
+      },
+      {
+        "Word": "are",
+        "StartSec": 17.658,
+        "EndSec": 17.767
+      },
+      {
+        "Word": "moving",
+        "StartSec": 17.809,
+        "EndSec": 18.058
+      },
+      {
+        "Word": "nicely.",
+        "StartSec": 18.141,
+        "EndSec": 18.714
+      },
+      {
+        "Word": "It's",
+        "StartSec": 18.884,
+        "EndSec": 19.296
+      },
+      {
+        "Word": "clear",
+        "StartSec": 19.344,
+        "EndSec": 19.587
+      },
+      {
+        "Word": "on",
+        "StartSec": 19.636,
+        "EndSec": 19.733
+      },
+      {
+        "Word": "the",
+        "StartSec": 19.751,
+        "EndSec": 19.806
+      },
+      {
+        "Word": "Southern",
+        "StartSec": 19.846,
+        "EndSec": 20.17
+      },
+      {
+        "Word": "Expressway",
+        "StartSec": 20.225,
+        "EndSec": 20.825
+      },
+      {
+        "Word": "and",
+        "StartSec": 20.862,
+        "EndSec": 20.971
+      },
+      {
+        "Word": "Port",
+        "StartSec": 21.029,
+        "EndSec": 21.262
+      },
+      {
+        "Word": "Wakefield",
+        "StartSec": 21.32,
+        "EndSec": 21.699
+      },
+      {
+        "Word": "Road.",
+        "StartSec": 21.772,
+        "EndSec": 22.136
+      },
+      {
+        "Word": "Clear",
+        "StartSec": 22.233,
+        "EndSec": 22.718
+      },
+      {
+        "Word": "skies,",
+        "StartSec": 22.803,
+        "EndSec": 23.374
+      },
+      {
+        "Word": "nine",
+        "StartSec": 23.417,
+        "EndSec": 23.592
+      },
+      {
+        "Word": "degrees.",
+        "StartSec": 23.665,
+        "EndSec": 24.248
+      },
+      {
+        "Word": "Unleaded's",
+        "StartSec": 24.418,
+        "EndSec": 25.049
+      },
+      {
+        "Word": "cheapest",
+        "StartSec": 25.097,
+        "EndSec": 25.485
+      },
+      {
+        "Word": "at",
+        "StartSec": 25.534,
+        "EndSec": 25.631
+      },
+      {
+        "Word": "one",
+        "StartSec": 25.686,
+        "EndSec": 25.85
+      },
+      {
+        "Word": "sixty-three",
+        "StartSec": 25.91,
+        "EndSec": 26.432
+      },
+      {
+        "Word": "in",
+        "StartSec": 26.505,
+        "EndSec": 26.65
+      },
+      {
+        "Word": "Kilburn,",
+        "StartSec": 26.705,
+        "EndSec": 27.451
+      },
+      {
+        "Word": "with",
+        "StartSec": 27.481,
+        "EndSec": 27.597
+      },
+      {
+        "Word": "diesel",
+        "StartSec": 27.649,
+        "EndSec": 27.961
+      },
+      {
+        "Word": "there",
+        "StartSec": 27.986,
+        "EndSec": 28.107
+      },
+      {
+        "Word": "too",
+        "StartSec": 28.198,
+        "EndSec": 28.471
+      },
+      {
+        "Word": "at",
+        "StartSec": 28.519,
+        "EndSec": 28.617
+      },
+      {
+        "Word": "one",
+        "StartSec": 28.671,
+        "EndSec": 28.835
+      },
+      {
+        "Word": "ninety-four.",
+        "StartSec": 28.887,
+        "EndSec": 30
+      }
+    ]
+  },
+  "Script": {
+    "Data": {
+      "Version": 0,
+      "Text": "South Road's closed. Marion Road's at a standstill with a queue back about two kays. Anzac Highway and Cross Road are a bit slow, while Grenfell Road's got a queue of about a kay. Hancock Road and a couple more spots have short queues, and Mooringe Avenue's moving slowly. The South Eastern Freeway and North-South Motorway are moving nicely. It's clear on the Southern Expressway and Port Wakefield Road. Clear skies, nine degrees. Unleaded's cheapest at one sixty-three in Kilburn, with diesel there too at one ninety-four.",
+      "EstimatedDurationSec": 0,
+      "Sentences": [
+        {
+          "Text": "South Road's closed.",
+          "CorridorKeys": ["South Road"]
+        },
+        {
+          "Text": "Marion Road's at a standstill with a queue back about two kays.",
+          "CorridorKeys": ["Marion Road"]
+        },
+        {
+          "Text": "Anzac Highway and Cross Road are a bit slow, while Grenfell Road's got a queue of about a kay.",
+          "CorridorKeys": ["Anzac Highway", "Grenfell Road", "Cross Road"]
+        },
+        {
+          "Text": "Hancock Road and a couple more spots have short queues, and Mooringe Avenue's moving slowly.",
+          "CorridorKeys": ["Hancock Road", "Mooringe Avenue"]
+        },
+        {
+          "Text": "The South Eastern Freeway and North-South Motorway are moving nicely.",
+          "CorridorKeys": []
+        },
+        {
+          "Text": "It's clear on the Southern Expressway and Port Wakefield Road.",
+          "CorridorKeys": []
+        },
+        {
+          "Text": "Clear skies, nine degrees.",
+          "CorridorKeys": []
+        },
+        {
+          "Text": "Unleaded's cheapest at one sixty-three in Kilburn, with diesel there too at one ninety-four.",
+          "CorridorKeys": []
+        }
+      ],
+      "TaggedText": null,
+      "DeliveryStyleId": null,
+      "DeliveryStyleVersion": null
+    }
+  },
+  "SelectedIncidents": [
+    {
+      "Key": "3624917756381612354",
+      "Priority": 1,
+      "Headline": "roadClosure on South Rd",
+      "Detail": "At Ashwin Parade - Closed",
+      "FunctionalClass": 1,
+      "LengthMeters": 134,
+      "Latitude": -34.9154,
+      "Longitude": 138.56624,
+      "IsNew": false,
+      "Shape": [
+        {
+          "Lat": -34.9154,
+          "Lng": 138.56624
+        },
+        {
+          "Lat": -34.91513,
+          "Lng": 138.56606
+        },
+        {
+          "Lat": -34.91513,
+          "Lng": 138.56606
+        },
+        {
+          "Lat": -34.91485,
+          "Lng": 138.56587
+        },
+        {
+          "Lat": -34.91485,
+          "Lng": 138.56587
+        },
+        {
+          "Lat": -34.91472,
+          "Lng": 138.56579
+        },
+        {
+          "Lat": -34.91472,
+          "Lng": 138.56579
+        },
+        {
+          "Lat": -34.91463,
+          "Lng": 138.56572
+        },
+        {
+          "Lat": -34.91463,
+          "Lng": 138.56572
+        },
+        {
+          "Lat": -34.91432,
+          "Lng": 138.5656
+        }
+      ],
+      "Direction": null,
+      "LaneDetail": null,
+      "Comment": null,
+      "RoadClosed": true,
+      "EntryTimeUtc": "2026-07-20T12:16:11+00:00"
+    }
+  ],
+  "Traffic": {
+    "FetchedAt": "2026-07-20T14:15:09.7574160Z",
+    "Bbox": [
+      138.25836525114516, -35.16025113187208, 138.97003474885486,
+      -34.576348868127916
+    ],
+    "Incidents": [
+      {
+        "Key": "3624917756381612354",
+        "Priority": 1,
+        "Headline": "roadClosure on South Rd",
+        "Detail": "At Ashwin Parade - Closed",
+        "FunctionalClass": 1,
+        "LengthMeters": 134,
+        "Latitude": -34.9154,
+        "Longitude": 138.56624,
+        "IsNew": false,
+        "Shape": [
+          {
+            "Lat": -34.9154,
+            "Lng": 138.56624
+          },
+          {
+            "Lat": -34.91513,
+            "Lng": 138.56606
+          },
+          {
+            "Lat": -34.91513,
+            "Lng": 138.56606
+          },
+          {
+            "Lat": -34.91485,
+            "Lng": 138.56587
+          },
+          {
+            "Lat": -34.91485,
+            "Lng": 138.56587
+          },
+          {
+            "Lat": -34.91472,
+            "Lng": 138.56579
+          },
+          {
+            "Lat": -34.91472,
+            "Lng": 138.56579
+          },
+          {
+            "Lat": -34.91463,
+            "Lng": 138.56572
+          },
+          {
+            "Lat": -34.91463,
+            "Lng": 138.56572
+          },
+          {
+            "Lat": -34.91432,
+            "Lng": 138.5656
+          }
+        ],
+        "Direction": null,
+        "LaneDetail": null,
+        "Comment": null,
+        "RoadClosed": true,
+        "EntryTimeUtc": "2026-07-20T12:16:11+00:00"
+      },
+      {
+        "Key": "2209458189654313809",
+        "Priority": 2,
+        "Headline": "roadHazard on Grange Rd",
+        "Detail": "At South Road - Incidents",
+        "FunctionalClass": 3,
+        "LengthMeters": 69,
+        "Latitude": -34.90421,
+        "Longitude": 138.55616,
+        "IsNew": false,
+        "Shape": [
+          {
+            "Lat": -34.90421,
+            "Lng": 138.55616
+          },
+          {
+            "Lat": -34.90417,
+            "Lng": 138.55692
+          }
+        ],
+        "Direction": null,
+        "LaneDetail": null,
+        "Comment": "Maintenance Works,Urgent Dept. For Infrastructure & Transport Works",
+        "RoadClosed": false,
+        "EntryTimeUtc": "2026-07-20T14:13:21+00:00"
+      },
+      {
+        "Key": "1141416475615298896",
+        "Priority": 3,
+        "Headline": "roadClosure on Melbourne St",
+        "Detail": "Between Sir Edwin Smith Avenue and Jerningham Street - Closed",
+        "FunctionalClass": 4,
+        "LengthMeters": 453,
+        "Latitude": -34.91048,
+        "Longitude": 138.60129,
+        "IsNew": false,
+        "Shape": [
+          {
+            "Lat": -34.91048,
+            "Lng": 138.60129
+          },
+          {
+            "Lat": -34.91037,
+            "Lng": 138.60137
+          },
+          {
+            "Lat": -34.91027,
+            "Lng": 138.60149
+          },
+          {
+            "Lat": -34.91017,
+            "Lng": 138.60165
+          },
+          {
+            "Lat": -34.91017,
+            "Lng": 138.60165
+          },
+          {
+            "Lat": -34.91002,
+            "Lng": 138.60193
+          },
+          {
+            "Lat": -34.90982,
+            "Lng": 138.60229
+          },
+          {
+            "Lat": -34.90982,
+            "Lng": 138.60229
+          },
+          {
+            "Lat": -34.90964,
+            "Lng": 138.60262
+          },
+          {
+            "Lat": -34.90922,
+            "Lng": 138.60337
+          },
+          {
+            "Lat": -34.90922,
+            "Lng": 138.60337
+          },
+          {
+            "Lat": -34.9089,
+            "Lng": 138.60395
+          },
+          {
+            "Lat": -34.90873,
+            "Lng": 138.60426
+          },
+          {
+            "Lat": -34.90873,
+            "Lng": 138.60426
+          },
+          {
+            "Lat": -34.90819,
+            "Lng": 138.60523
+          },
+          {
+            "Lat": -34.90812,
+            "Lng": 138.60537
+          }
+        ],
+        "Direction": "citybound",
+        "LaneDetail": null,
+        "Comment": null,
+        "RoadClosed": true,
+        "EntryTimeUtc": "2026-07-20T09:10:10+00:00"
+      },
+      {
+        "Key": "372156780055676360",
+        "Priority": 4,
+        "Headline": "roadClosure on Deacon Ave",
+        "Detail": "Closed",
+        "FunctionalClass": 5,
+        "LengthMeters": 445,
+        "Latitude": -34.94086,
+        "Longitude": 138.56829,
+        "IsNew": false,
+        "Shape": [
+          {
+            "Lat": -34.94086,
+            "Lng": 138.56829
+          },
+          {
+            "Lat": -34.93928,
+            "Lng": 138.5693
+          },
+          {
+            "Lat": -34.93928,
+            "Lng": 138.5693
+          },
+          {
+            "Lat": -34.93919,
+            "Lng": 138.56939
+          },
+          {
+            "Lat": -34.93919,
+            "Lng": 138.56939
+          },
+          {
+            "Lat": -34.93812,
+            "Lng": 138.57008
+          },
+          {
+            "Lat": -34.93812,
+            "Lng": 138.57008
+          },
+          {
+            "Lat": -34.93782,
+            "Lng": 138.57028
+          },
+          {
+            "Lat": -34.93782,
+            "Lng": 138.57028
+          },
+          {
+            "Lat": -34.93773,
+            "Lng": 138.57028
+          },
+          {
+            "Lat": -34.93732,
+            "Lng": 138.57055
+          }
+        ],
+        "Direction": "citybound",
+        "LaneDetail": null,
+        "Comment": null,
+        "RoadClosed": true,
+        "EntryTimeUtc": "2026-07-20T02:08:09+00:00"
+      },
+      {
+        "Key": "3830288355643785154",
+        "Priority": 4,
+        "Headline": "roadClosure on McArthur Ave",
+        "Detail": "Closed",
+        "FunctionalClass": 5,
+        "LengthMeters": 59,
+        "Latitude": -34.94907,
+        "Longitude": 138.56333,
+        "IsNew": false,
+        "Shape": [
+          {
+            "Lat": -34.94907,
+            "Lng": 138.56333
+          },
+          {
+            "Lat": -34.94896,
+            "Lng": 138.56312
+          },
+          {
+            "Lat": -34.94896,
+            "Lng": 138.56312
+          },
+          {
+            "Lat": -34.94892,
+            "Lng": 138.56305
+          },
+          {
+            "Lat": -34.94892,
+            "Lng": 138.56305
+          },
+          {
+            "Lat": -34.94887,
+            "Lng": 138.56296
+          },
+          {
+            "Lat": -34.94887,
+            "Lng": 138.56296
+          },
+          {
+            "Lat": -34.94876,
+            "Lng": 138.56282
+          }
+        ],
+        "Direction": null,
+        "LaneDetail": null,
+        "Comment": null,
+        "RoadClosed": true,
+        "EntryTimeUtc": "2026-07-20T06:22:10+00:00"
+      }
+    ],
+    "Corridors": [
+      {
+        "RoadName": "Anzac Highway",
+        "Severity": 1,
+        "ImpactScore": 214.5,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "IncidentCount": 0,
+        "TotalLengthKm": 0.5,
+        "Rank": 1,
+        "IsSelected": true,
+        "FunctionalClass": 3,
+        "Direction": null,
+        "Suburb": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "DelayMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "IncidentKeys": [],
+        "PriorityBoosted": true,
+        "Magnitude": "Minor"
+      },
+      {
+        "RoadName": "South Road",
+        "Severity": 1,
+        "ImpactScore": 201.2710479836481,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure",
+        "IncidentCount": 1,
+        "TotalLengthKm": 0.1,
+        "Rank": 2,
+        "IsSelected": true,
+        "FunctionalClass": 1,
+        "Direction": null,
+        "Suburb": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "DelayMinutes": 1,
+        "Latitude": null,
+        "Longitude": null,
+        "IncidentKeys": ["3624917756381612354"],
+        "PriorityBoosted": false,
+        "Magnitude": "Major"
+      },
+      {
+        "RoadName": "Marion Road",
+        "Severity": 1,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "IncidentCount": 0,
+        "TotalLengthKm": 1.8,
+        "Rank": 3,
+        "IsSelected": true,
+        "FunctionalClass": 3,
+        "Direction": null,
+        "Suburb": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "DelayMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "IncidentKeys": [],
+        "PriorityBoosted": false,
+        "Magnitude": "Moderate"
+      },
+      {
+        "RoadName": "Grenfell Road",
+        "Severity": 1,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "IncidentCount": 0,
+        "TotalLengthKm": 1.2,
+        "Rank": 4,
+        "IsSelected": true,
+        "FunctionalClass": 3,
+        "Direction": null,
+        "Suburb": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "DelayMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "IncidentKeys": [],
+        "PriorityBoosted": false,
+        "Magnitude": "Minor"
+      },
+      {
+        "RoadName": "Hancock Road",
+        "Severity": 1,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "IncidentCount": 0,
+        "TotalLengthKm": 0.7,
+        "Rank": 5,
+        "IsSelected": true,
+        "FunctionalClass": 3,
+        "Direction": null,
+        "Suburb": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "DelayMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "IncidentKeys": [],
+        "PriorityBoosted": false,
+        "Magnitude": "Minor"
+      },
+      {
+        "RoadName": "Golden Grove Road",
+        "Severity": 1,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "IncidentCount": 0,
+        "TotalLengthKm": 0.7,
+        "Rank": 6,
+        "IsSelected": true,
+        "FunctionalClass": 3,
+        "Direction": null,
+        "Suburb": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "DelayMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "IncidentKeys": [],
+        "PriorityBoosted": false,
+        "Magnitude": "Minor"
+      },
+      {
+        "RoadName": "Cross Road",
+        "Severity": 1,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "IncidentCount": 0,
+        "TotalLengthKm": 0.5,
+        "Rank": 7,
+        "IsSelected": true,
+        "FunctionalClass": 3,
+        "Direction": null,
+        "Suburb": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "DelayMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "IncidentKeys": [],
+        "PriorityBoosted": false,
+        "Magnitude": "Minor"
+      },
+      {
+        "RoadName": "Ashwin Parade",
+        "Severity": 1,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "IncidentCount": 0,
+        "TotalLengthKm": 0.7,
+        "Rank": 8,
+        "IsSelected": true,
+        "FunctionalClass": 3,
+        "Direction": null,
+        "Suburb": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "DelayMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "IncidentKeys": [],
+        "PriorityBoosted": false,
+        "Magnitude": "Minor"
+      },
+      {
+        "RoadName": "Mooringe Avenue",
+        "Severity": 1,
+        "ImpactScore": 165,
+        "PrimaryType": "congestion",
+        "Description": "at a standstill",
+        "IncidentCount": 0,
+        "TotalLengthKm": 0.5,
+        "Rank": 9,
+        "IsSelected": true,
+        "FunctionalClass": 3,
+        "Direction": null,
+        "Suburb": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "DelayMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "IncidentKeys": [],
+        "PriorityBoosted": false,
+        "Magnitude": "Minor"
+      },
+      {
+        "RoadName": "Grange Road",
+        "Severity": 2,
+        "ImpactScore": 138.38849090737256,
+        "PrimaryType": "roadHazard",
+        "Description": "hazard on road",
+        "IncidentCount": 1,
+        "TotalLengthKm": 0.1,
+        "Rank": 10,
+        "IsSelected": false,
+        "FunctionalClass": 3,
+        "Direction": null,
+        "Suburb": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "DelayMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "IncidentKeys": ["2209458189654313809"],
+        "PriorityBoosted": false,
+        "Magnitude": "Minor"
+      },
+      {
+        "RoadName": "Melbourne Street",
+        "Severity": 3,
+        "ImpactScore": 105,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure citybound",
+        "IncidentCount": 1,
+        "TotalLengthKm": 0.5,
+        "Rank": 11,
+        "IsSelected": false,
+        "FunctionalClass": 4,
+        "Direction": "citybound",
+        "Suburb": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "DelayMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "IncidentKeys": ["1141416475615298896"],
+        "PriorityBoosted": false,
+        "Magnitude": "Minor"
+      },
+      {
+        "RoadName": "Deacon Avenue",
+        "Severity": 4,
+        "ImpactScore": 65,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure citybound",
+        "IncidentCount": 1,
+        "TotalLengthKm": 0.4,
+        "Rank": 12,
+        "IsSelected": false,
+        "FunctionalClass": 5,
+        "Direction": "citybound",
+        "Suburb": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "DelayMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "IncidentKeys": ["372156780055676360"],
+        "PriorityBoosted": false,
+        "Magnitude": "Minor"
+      },
+      {
+        "RoadName": "McArthur Avenue",
+        "Severity": 4,
+        "ImpactScore": 57.70852011642144,
+        "PrimaryType": "roadClosure",
+        "Description": "road closure",
+        "IncidentCount": 1,
+        "TotalLengthKm": 0.1,
+        "Rank": 13,
+        "IsSelected": false,
+        "FunctionalClass": 5,
+        "Direction": null,
+        "Suburb": null,
+        "DriveTimeMinutes": null,
+        "NormalDriveTimeMinutes": null,
+        "DelayMinutes": null,
+        "Latitude": null,
+        "Longitude": null,
+        "IncidentKeys": ["3830288355643785154"],
+        "PriorityBoosted": false,
+        "Magnitude": "Minor"
+      }
+    ],
+    "FlowRoads": [
+      {
+        "RoadName": "South Eastern Freeway",
+        "JamFactor": 0,
+        "LengthKm": 0,
+        "IsWeighted": true,
+        "IsSelected": true,
+        "Score": 140,
+        "PriorityBoosted": true,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Port Wakefield Road",
+        "JamFactor": 0.8,
+        "LengthKm": 21.2,
+        "IsWeighted": true,
+        "IsSelected": true,
+        "Score": 92.5,
+        "PriorityBoosted": true,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "North-South Motorway",
+        "JamFactor": 0,
+        "LengthKm": 0,
+        "IsWeighted": true,
+        "IsSelected": true,
+        "Score": 80,
+        "PriorityBoosted": true,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Southern Expressway",
+        "JamFactor": 0,
+        "LengthKm": 0,
+        "IsWeighted": true,
+        "IsSelected": true,
+        "Score": 80,
+        "PriorityBoosted": true,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Curtis Road",
+        "JamFactor": 0.4,
+        "LengthKm": 24.9,
+        "IsWeighted": false,
+        "IsSelected": true,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Northern Expressway",
+        "JamFactor": 0.1,
+        "LengthKm": 24.8,
+        "IsWeighted": false,
+        "IsSelected": true,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Bolivar Road",
+        "JamFactor": 0.7,
+        "LengthKm": 22.4,
+        "IsWeighted": false,
+        "IsSelected": false,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Angle Vale Road",
+        "JamFactor": 0.3,
+        "LengthKm": 22.1,
+        "IsWeighted": false,
+        "IsSelected": false,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Salisbury Highway",
+        "JamFactor": 1.2,
+        "LengthKm": 21.7,
+        "IsWeighted": false,
+        "IsSelected": false,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Heaslip Road",
+        "JamFactor": 0.5,
+        "LengthKm": 20.6,
+        "IsWeighted": false,
+        "IsSelected": false,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Waterloo Corner Road",
+        "JamFactor": 0.6,
+        "LengthKm": 15.9,
+        "IsWeighted": false,
+        "IsSelected": false,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Coulls Road",
+        "JamFactor": 0,
+        "LengthKm": 13.9,
+        "IsWeighted": false,
+        "IsSelected": false,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Main North Road",
+        "JamFactor": 3.5,
+        "LengthKm": 13.3,
+        "IsWeighted": false,
+        "IsSelected": false,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Grand Junction Road",
+        "JamFactor": 1.1,
+        "LengthKm": 13,
+        "IsWeighted": false,
+        "IsSelected": false,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Mcintyre Road",
+        "JamFactor": 0.3,
+        "LengthKm": 12.7,
+        "IsWeighted": false,
+        "IsSelected": false,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Montague Road",
+        "JamFactor": 1.4,
+        "LengthKm": 12.6,
+        "IsWeighted": false,
+        "IsSelected": false,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Torrens Hill Road",
+        "JamFactor": 0,
+        "LengthKm": 12.4,
+        "IsWeighted": false,
+        "IsSelected": false,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "North East Road",
+        "JamFactor": 2.6,
+        "LengthKm": 11,
+        "IsWeighted": false,
+        "IsSelected": false,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      },
+      {
+        "RoadName": "Two Wells Road",
+        "JamFactor": 0.3,
+        "LengthKm": 11,
+        "IsWeighted": false,
+        "IsSelected": false,
+        "Score": 42.5,
+        "PriorityBoosted": false,
+        "FunctionalClass": 3
+      }
+    ]
+  },
+  "JobId": "287d14a0b2484f10938b5f62b755d2cb",
+  "Station": "KIIS 102.3",
+  "Market": "adelaide",
+  "TargetDurationSec": 30,
+  "CreatedAt": "2026-07-20T14:15:03.0128099Z",
+  "LastUpdatedAt": "2026-07-20T14:16:00.2809624Z",
+  "Input": {
+    "BulletinType": "traffic",
+    "TimeWindow": {
+      "From": "2026-07-20T14:18:00.0000000Z",
+      "To": "2026-07-20T14:15:00.0000000Z"
+    },
+    "Branding": {
+      "StationTag": "KIIS 102.3",
+      "SignOff": ""
+    },
+    "Voice": {
+      "Provider": "",
+      "VoiceId": "081vkDcbgbIsSiFEYxT0",
+      "VoiceName": "Dolly Traffic - v3",
+      "Model": "eleven_v3",
+      "Settings": {
+        "Speed": 1,
+        "Stability": 0.5,
+        "SimilarityBoost": 0.7,
+        "Style": 0,
+        "UseSpeakerBoost": false
+      }
+    }
+  },
+  "Logs": [
+    {
+      "At": "2026-07-20T14:15:03.0379268Z",
+      "Level": 0,
+      "Message": "Starting orchestration"
+    },
+    {
+      "At": "2026-07-20T14:15:03.0901152Z",
+      "Level": 0,
+      "Message": "Fetching traffic..."
+    },
+    {
+      "At": "2026-07-20T14:15:04.9412008Z",
+      "Level": 0,
+      "Message": "Weather fetched: Clear. Cool., 9°C"
+    },
+    {
+      "At": "2026-07-20T14:15:05.3051844Z",
+      "Level": 0,
+      "Message": "Fuel prices fetched: 2 fuel type(s)"
+    },
+    {
+      "At": "2026-07-20T14:15:07.8613819Z",
+      "Level": 0,
+      "Message": "Traffic fetched: 13 corridor(s), 5 incident(s) in 4702ms"
+    },
+    {
+      "At": "2026-07-20T14:15:09.6893921Z",
+      "Level": 0,
+      "Message": "Incident changes: 1 new, 0 updated, 0 cleared"
+    },
+    {
+      "At": "2026-07-20T14:15:09.8294210Z",
+      "Level": 0,
+      "Message": "Traffic fetched."
+    },
+    {
+      "At": "2026-07-20T14:15:09.9053265Z",
+      "Level": 0,
+      "Message": "Generation attempt 1/4: target 76 words..."
+    },
+    {
+      "At": "2026-07-20T14:15:13.2853909Z",
+      "Level": 0,
+      "Message": "Script generated in 3313ms"
+    },
+    {
+      "At": "2026-07-20T14:15:13.3613802Z",
+      "Level": 0,
+      "Message": "Review-refine attempt 1/2: reviewing script..."
+    },
+    {
+      "At": "2026-07-20T14:15:15.5214466Z",
+      "Level": 0,
+      "Message": "Script approved by review (attempt 1)"
+    },
+    {
+      "At": "2026-07-20T14:15:15.5505162Z",
+      "Level": 0,
+      "Message": "Post-LLM deterministic repair applied (roll-call): 88 -> 87 words."
+    },
+    {
+      "At": "2026-07-20T14:15:17.7268436Z",
+      "Level": 0,
+      "Message": "AI safety review passed"
+    },
+    {
+      "At": "2026-07-20T14:15:17.7973729Z",
+      "Level": 0,
+      "Message": "Synthesizing audio (87 words, target 30s)..."
+    },
+    {
+      "At": "2026-07-20T14:15:33.7933601Z",
+      "Level": 0,
+      "Message": "Audio filled to slot: 33.0s natural read fitted to 30.0s (15974ms)"
+    },
+    {
+      "At": "2026-07-20T14:15:33.8141431Z",
+      "Level": 0,
+      "Message": "Script generated successfully"
+    },
+    {
+      "At": "2026-07-20T14:15:33.8562725Z",
+      "Level": 0,
+      "Message": "Audio finalized at 30.0s (target 30s)"
+    },
+    {
+      "At": "2026-07-20T14:15:33.8767948Z",
+      "Level": 0,
+      "Message": "Saving broadcast audio..."
+    },
+    {
+      "At": "2026-07-20T14:15:33.9559963Z",
+      "Level": 0,
+      "Message": "Audio saved as broadcast_20260720_141533_287d14a0b2484f10938b5f62b755d2cb.wav in 55ms"
+    },
+    {
+      "At": "2026-07-20T14:15:35.8371349Z",
+      "Level": 0,
+      "Message": "Broadcast ready — 30.0s duration, awaiting approval"
+    },
+    {
+      "At": "2026-07-20T14:15:35.8681392Z",
+      "Level": 0,
+      "Message": "Audio pre-review: transcript matches the script (100 % of significant words heard)."
+    },
+    {
+      "At": "2026-07-20T14:16:00.2807571Z",
+      "Level": 1,
+      "Message": "Job escalated: playout imminent — inside the escalation window"
+    }
+  ],
+  "StatusHistory": [
+    {
+      "Status": "REQUESTED",
+      "At": "2026-07-20T14:15:03.0128099Z",
+      "By": "system",
+      "Note": ""
+    },
+    {
+      "Status": "HERE_FETCHED",
+      "At": "2026-07-20T14:15:03.0901141Z",
+      "By": "system",
+      "Note": "Fetching traffic..."
+    },
+    {
+      "Status": "INCIDENTS_SELECTED",
+      "At": "2026-07-20T14:15:09.8294197Z",
+      "By": "system",
+      "Note": "Traffic fetched."
+    },
+    {
+      "Status": "SCRIPT_READY",
+      "At": "2026-07-20T14:15:33.8141407Z",
+      "By": "system",
+      "Note": "Script generated successfully"
+    },
+    {
+      "Status": "WAITING_APPROVAL",
+      "At": "2026-07-20T14:15:35.8059199Z",
+      "By": "system",
+      "Note": ""
+    }
+  ],
+  "Status": "WAITING_APPROVAL",
+  "Content": {
+    "Traffic": true,
+    "Weather": true,
+    "Fuel": true
+  },
+  "Weather": {
+    "Conditions": "Clear. Cool.",
+    "TemperatureC": 9,
+    "WindDescription": null,
+    "PrecipitationProbabilityPercent": 0,
+    "Alerts": []
+  },
+  "Fuel": {
+    "Summaries": [
+      {
+        "FuelType": "Unleaded 91",
+        "MinPrice": 1.627,
+        "AveragePrice": 1.702,
+        "StationCount": 49,
+        "LatestModifiedUtc": "2026-07-20T13:28:03+00:00"
+      },
+      {
+        "FuelType": "Diesel",
+        "MinPrice": 1.939,
+        "AveragePrice": 2.035,
+        "StationCount": 11,
+        "LatestModifiedUtc": "2026-07-20T13:28:03+00:00"
+      }
+    ]
+  },
+  "GoodRuns": [
+    "South Eastern Freeway",
+    "Port Wakefield Road",
+    "North-South Motorway",
+    "Southern Expressway",
+    "Curtis Road",
+    "Northern Expressway"
+  ],
+  "Coverage": {
+    "Latitude": -34.8683,
+    "Longitude": 138.6142,
+    "RadiusKm": 32.5,
+    "ShapeType": "polygon",
+    "West": null,
+    "South": null,
+    "East": null,
+    "North": null,
+    "CorridorPoints": null,
+    "CorridorRadiusMeters": null,
+    "PolygonPoints": [
+      {
+        "Lat": -34.5976,
+        "Lng": 138.7491
+      },
+      {
+        "Lat": -34.8248,
+        "Lng": 138.719
+      },
+      {
+        "Lat": -34.9056,
+        "Lng": 138.6755
+      },
+      {
+        "Lat": -35.0206,
+        "Lng": 138.6114
+      },
+      {
+        "Lat": -35.0762,
+        "Lng": 138.5939
+      },
+      {
+        "Lat": -35.139,
+        "Lng": 138.4793
+      },
+      {
+        "Lat": -34.9783,
+        "Lng": 138.52
+      },
+      {
+        "Lat": -34.9197,
+        "Lng": 138.4943
+      },
+      {
+        "Lat": -34.8279,
+        "Lng": 138.5007
+      },
+      {
+        "Lat": -34.7225,
+        "Lng": 138.6687
+      }
+    ]
+  },
+  "PronunciationDictionaryId": "dwXR2iNFlnWmSuR0n6Ml",
+  "EditingGuidance": {
+    "TargetWordCount": 70,
+    "MinWordCount": 70,
+    "MaxWordCount": 80,
+    "WordsPerMinute": 140.5,
+    "TargetDurationSeconds": 30
+  },
+  "PreReview": {
+    "MatchRatio": 0.92,
+    "SuspectWords": ["Mooringe", "Grenfell"],
+    "NumberMismatches": []
+  }
+}

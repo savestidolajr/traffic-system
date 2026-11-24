@@ -1,0 +1,167 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "stories"
+  ],
+  "properties": {
+    "stories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "storyId",
+          "eventIds",
+          "requiredFacts",
+          "optionalFacts",
+          "relationship",
+          "members",
+          "role",
+          "priority"
+        ],
+        "properties": {
+          "storyId": {
+            "type": "string",
+            "minLength": 1
+          },
+          "eventIds": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minItems": 1
+          },
+          "requiredFacts": {
+            "type": "array",
+            "items": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "optionalFacts": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "evidenceIds",
+                "estimatedWords",
+                "priority"
+              ],
+              "properties": {
+                "evidenceIds": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "minItems": 1
+                },
+                "estimatedWords": {
+                  "type": "integer",
+                  "minimum": 0
+                },
+                "priority": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100
+                }
+              }
+            }
+          },
+          "relationship": {
+            "type": [
+              "string",
+              "null"
+            ]
+          },
+          "members": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": [
+                "memberId",
+                "eventId",
+                "requiredFacts",
+                "optionalFacts",
+                "priority"
+              ],
+              "properties": {
+                "memberId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "eventId": {
+                  "type": "string",
+                  "minLength": 1
+                },
+                "requiredFacts": {
+                  "type": "array",
+                  "items": {
+                    "type": "string",
+                    "minLength": 1
+                  }
+                },
+                "optionalFacts": {
+                  "type": "array",
+                  "items": {
+                    "type": "object",
+                    "additionalProperties": false,
+                    "required": [
+                      "evidenceIds",
+                      "estimatedWords",
+                      "priority"
+                    ],
+                    "properties": {
+                      "evidenceIds": {
+                        "type": "array",
+                        "items": {
+                          "type": "string",
+                          "minLength": 1
+                        },
+                        "minItems": 1
+                      },
+                      "estimatedWords": {
+                        "type": "integer",
+                        "minimum": 0
+                      },
+                      "priority": {
+                        "type": "integer",
+                        "minimum": 0,
+                        "maximum": 100
+                      }
+                    }
+                  }
+                },
+                "priority": {
+                  "type": "integer",
+                  "minimum": 0,
+                  "maximum": 100
+                }
+              }
+            }
+          },
+          "role": {
+            "type": "string",
+            "enum": [
+              "lead",
+              "traffic",
+              "group",
+              "weather",
+              "fuel"
+            ]
+          },
+          "priority": {
+            "type": "integer",
+            "minimum": 0,
+            "maximum": 100
+          }
+        }
+      }
+    }
+  }
+}

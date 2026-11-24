@@ -1,0 +1,175 @@
+# Platform Architecture — presentation render. SDD Figure 1 replacement.
+#
+# Companion to the `platform-architecture` LikeC4 element view (views.c4).
+# All ids are logical model FQNs; render.py validates them on every export.
+#
+#   * Dashboard and the Functions hub share y=420 -> straight API line
+#   * Functions, the Playout Drop Share, and Zetta share y=420 -> one
+#     straight delivery corridor split at the drop share: Functions writes
+#     (managed identity, `data` class) on the left leg; Zetta autoloads and
+#     deletes (AD DS SMB, `delivery` class) on the right leg. Neither side
+#     reaches into the other's network -- the drop share is the only thing
+#     they both touch.
+#   * Playout Drop Share (arn.playoutDrop) sits inside the arn boundary at
+#     x=1200 (icon spans 1168-1232), well clear of the right border at
+#     x=1310 -- it is a platform component, not an external system
+#   * Functions is a 340x120 box; 10 edges attach to it, spaced >=15px apart
+#     per side (right side: y=390 logicApp, y=420 drop-share write, y=480
+#     bottom-right corner for the rerouted appInsights leg)
+#   * appInsights leg exits the box's bottom-right corner (1060,480) and
+#     jogs right at y=520 -- below the drop-share node's label band -- so
+#     it clears the delivery corridor before dropping into the bottom row
+#   * Edges never exit through a node's below-icon label: actors/Entra exit
+#     side edges; sources route below the Dashboard label block (y>=520)
+
+output: platform-architecture
+canvas: [1660, 1000]
+
+styles:
+  containers:
+    boundary: { fill: "#F8FAFC", stroke: "#94A3B8", sw: 1.5, rx: 10, dash: "7 5" }
+  edges:
+    flow: { color: "#2563EB", width: 3 }
+    delivery: { color: "#F97316", width: 3 }
+    auth: { color: "#EF4444", width: 2.5 }
+    data: { color: "#7C3AED", width: 2 }
+    muted: { color: "#94A3B8", width: 2 }
+
+texts:
+  - { text: "Platform Architecture", at: [40, 38], size: 20, weight: "700", anchor: start }
+  - { text: "Arn AI Traffic Bulletin Platform — components, data flows, and trust boundary",
+      at: [40, 60], size: 12, color: "#64748B", anchor: start }
+
+containers:
+  - id: arn
+    style: boundary
+    rect: [430, 195, 880, 750]
+    labels:
+      - { text: "ARN Traffic Bulletin Platform", at: [450, 938], size: 14, color: "#475569", anchor: start, weight: "700" }
+
+edges:
+  # auth — Entra exits side edges (label below stays clear)
+  - from: entra
+    to: arn.dashboard
+    class: auth
+    points: [[658, 150], [480, 150], [480, 388]]
+    label: { text: "Easy Auth", at: [565, 138], size: 11 }
+  - from: entra
+    to: arn.functions
+    class: auth
+    points: [[722, 150], [890, 150], [890, 360]]
+
+  # actors — exit right edges, funnel into the dashboard
+  - from: operator
+    to: arn.dashboard
+    class: muted
+    points: [[272, 140], [330, 140], [330, 415], [448, 415]]
+    label: { text: "review / approve", at: [338, 300], size: 11, anchor: start }
+  - from: admin
+    to: arn.dashboard
+    class: muted
+    points: [[432, 140], [460, 140], [460, 388]]
+    label: { text: "schedules", at: [452, 330], size: 11, anchor: end }
+
+  # primary flow
+  - from: arn.dashboard
+    to: arn.functions
+    class: flow
+    points: [[512, 420], [720, 420]]
+    label: { text: "API calls", at: [615, 408] }
+  - from: arn.functions
+    to: arn.playoutDrop
+    class: data
+    points: [[1060, 420], [1168, 420]]
+    label: { text: "writes audio", at: [1114, 408], size: 11 }
+  - from: zetta
+    to: arn.playoutDrop
+    class: delivery
+    points: [[1448, 420], [1232, 420]]
+    label: { text: "autoloads (AD DS SMB)", at: [1324, 408], size: 11 }
+
+  # external sources — routed below the Dashboard label block
+  - from: arn.functions
+    to: here
+    class: muted
+    points: [[720, 460], [630, 460], [630, 520], [192, 520]]
+    label: { text: "traffic incidents", at: [340, 508], size: 11 }
+  - from: arn.functions
+    to: elevenlabs
+    class: muted
+    points: [[720, 476], [650, 476], [650, 640], [192, 640]]
+    label: { text: "voice synthesis", at: [340, 628], size: 11 }
+
+  # notifications
+  - from: arn.functions
+    to: arn.logicApp
+    class: muted
+    points: [[1060, 390], [1150, 390], [1150, 250], [1208, 250]]
+    label: { text: "webhook", at: [1158, 320], size: 11, anchor: start }
+  - from: arn.logicApp
+    to: teams
+    class: muted
+    points: [[1272, 250], [1448, 250]]
+    label: { text: "Adaptive Card", at: [1357, 239], size: 11 }
+
+  # data + monitoring (managed identity)
+  - from: arn.functions
+    to: arn.storageAccount
+    class: data
+    points: [[740, 480], [740, 818]]
+  - from: arn.functions
+    to: arn.keyVault
+    class: data
+    points: [[890, 480], [890, 818]]
+    label: { text: "Managed Identity", at: [902, 660], size: 11, anchor: start }
+  - from: arn.functions
+    to: arn.aiServices
+    class: data
+    points: [[1040, 480], [1040, 818]]
+  - from: arn.functions
+    to: arn.appInsights
+    class: muted
+    points: [[1060, 480], [1060, 520], [1180, 520], [1180, 818]]
+    label: { text: "telemetry", at: [1120, 508], size: 11 }
+
+nodes:
+  # actors + identity (outside boundary)
+  - { id: operator, at: [240, 140], icon: person }
+  - { id: admin, at: [400, 140], icon: person }
+  - { id: entra, at: [690, 140], icon: entra, label: "Microsoft Entra ID" }
+
+  # external sources (left)
+  - { id: here, at: [160, 520], icon: here }
+  - { id: elevenlabs, at: [160, 640], icon: eleven }
+
+  # platform (inside boundary)
+  - { id: arn.dashboard, at: [480, 420], icon: dashboard, label: "Operator Dashboard",
+      sublabel: "web application" }
+  - { id: arn.functions, at: [890, 420], box: [340, 120], stroke: "#0078D4", sw: 2.5,
+      fill: "#EFF6FF", size: 16,
+      label: "Azure Functions",
+      sublabel: "scheduling · generation · safety checks · API" }
+  - { id: arn.playoutDrop, at: [1200, 420], icon: storage, label: "Playout Drop Share",
+      sublabel: "share: informationbulletins" }
+  - { id: arn.logicApp, at: [1240, 250], icon: logic-app, label: "Logic App" }
+  - { id: arn.storageAccount, at: [740, 850], icon: storage, label: "Azure Storage",
+      sublabel: "tables · blobs · queues" }
+  - { id: arn.keyVault, at: [890, 850], icon: keyvault, label: "Key Vault" }
+  - { id: arn.aiServices, at: [1040, 850], icon: ai, label: "Azure AI Foundry",
+      sublabel: "generation · safety" }
+  - { id: arn.appInsights, at: [1180, 850], icon: app-insights, label: "Monitoring",
+      sublabel: "9 alerts · 1 dashboard" }
+
+  # delivery targets (outside boundary, right)
+  - { id: zetta, at: [1480, 420], icon: zetta, label: "Zetta Playout",
+      sublabel: "on-prem" }
+  - { id: teams, at: [1480, 250], icon: teams, label: "Teams" }
+
+legend:
+  at: [430, 975]
+  items:
+    - ["operator flow", flow]
+    - ["Zetta playout", delivery]
+    - ["Easy Auth", auth]
+    - ["Managed Identity data", data]
+    - ["HTTPS / webhook", muted]

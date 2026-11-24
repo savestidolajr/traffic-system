@@ -1,0 +1,55 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.7959684+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.06368,115.80141\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "11 Crab Tree Mews, O\u0027Connor WA 6163, Australia",
+          "id": "here:af:streetsection:jHNE2HgHATXG039E.bjX6D:CggIBCCvkaLRAhABGgIxMQ",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "11 Crab Tree Mews, O\u0027Connor WA 6163, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "O\u0027Connor",
+            "street": "Crab Tree Mews",
+            "postalCode": "6163",
+            "houseNumber": "11"
+          },
+          "position": {
+            "lat": -32.06356,
+            "lng": 115.80123
+          },
+          "access": [
+            {
+              "lat": -32.06362,
+              "lng": 115.80144
+            }
+          ],
+          "distance": 7,
+          "mapView": {
+            "west": 115.80141,
+            "south": -32.06368,
+            "east": 115.80231,
+            "north": -32.06317
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

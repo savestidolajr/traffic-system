@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032047Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:48.3196634+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69512,145.09253\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Greensborough Byp, Greensborough VIC 3088, Australia",
+          "id": "here:af:streetsection:.JeNcmd-gj1qjGmKD9sdcA",
+          "resultType": "street",
+          "address": {
+            "label": "Greensborough Byp, Greensborough VIC 3088, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Greensborough",
+            "street": "Greensborough Byp",
+            "postalCode": "3088"
+          },
+          "position": {
+            "lat": -37.69512,
+            "lng": 145.09253
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 145.08952,
+            "south": -37.70389,
+            "east": 145.09335,
+            "north": -37.69397
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

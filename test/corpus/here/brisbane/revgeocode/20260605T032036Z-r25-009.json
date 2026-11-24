@@ -1,0 +1,55 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032036Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:37.3395133+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.5999,153.13554\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "9 Edgeware Dr, Rochedale South QLD 4123, Australia",
+          "id": "here:af:streetsection:3z.9SrSy0ncqBrR26mQEfD:CggIBCDsrrKfARABGgE5",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "9 Edgeware Dr, Rochedale South QLD 4123, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Rochedale South",
+            "street": "Edgeware Dr",
+            "postalCode": "4123",
+            "houseNumber": "9"
+          },
+          "position": {
+            "lat": -27.59973,
+            "lng": 153.1355
+          },
+          "access": [
+            {
+              "lat": -27.59989,
+              "lng": 153.13547
+            }
+          ],
+          "distance": 7,
+          "mapView": {
+            "west": 153.13366,
+            "south": -27.6001,
+            "east": 153.1363,
+            "north": -27.59977
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

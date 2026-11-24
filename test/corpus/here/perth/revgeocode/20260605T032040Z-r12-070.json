@@ -1,0 +1,55 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032040Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:40.8854647+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.90469,115.91972\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "25 Wright St, Bayswater WA 6053, Australia",
+          "id": "here:af:streetsection:U7ED5NlqKMQ3F7FD2-BNfC:CggIBCChwdKhARABGgIyNQ",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "25 Wright St, Bayswater WA 6053, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Bayswater",
+            "street": "Wright St",
+            "postalCode": "6053",
+            "houseNumber": "25"
+          },
+          "position": {
+            "lat": -31.90495,
+            "lng": 115.9197
+          },
+          "access": [
+            {
+              "lat": -31.90498,
+              "lng": 115.91989
+            }
+          ],
+          "distance": 29,
+          "mapView": {
+            "west": 115.91974,
+            "south": -31.90845,
+            "east": 115.92062,
+            "north": -31.90473
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

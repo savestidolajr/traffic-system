@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.4672103+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.12641,115.88558\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Fairview Way, Treeby WA 6164, Australia",
+          "id": "here:af:streetsection:S45PfmPnhMpdeREvJ.UqMD",
+          "resultType": "street",
+          "address": {
+            "label": "Fairview Way, Treeby WA 6164, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Treeby",
+            "street": "Fairview Way",
+            "postalCode": "6164"
+          },
+          "position": {
+            "lat": -32.12641,
+            "lng": 115.88558
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.88533,
+            "south": -32.12989,
+            "east": 115.8905,
+            "north": -32.12579
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

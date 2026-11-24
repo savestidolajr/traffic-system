@@ -1,0 +1,132 @@
+{
+  "label": "cairns-4ca-e1ad0a8d",
+  "market": "cairns-4ca",
+  "sourceJobId": "e1ad0a8d6ce7464ebaefd083765ef760",
+  "sourceCapture": "job-diagnostics/e1ad0a8d6ce7464ebaefd083765ef760/llm_calls/024814.946-Draft-attempt1.json",
+  "promptSha": null,
+  "items": [
+    {
+      "category": "congestion",
+      "evidenceIds": [
+        "r7:delayMinutes"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Toogood Road is adding about five minutes."
+        },
+        {
+          "style": "standard",
+          "text": "Toogood Road is adding about five minutes to the trip."
+        }
+      ]
+    },
+    {
+      "category": "works",
+      "evidenceIds": [
+        "r1:suburb",
+        "r1:direction",
+        "r1:location:0",
+        "r1:detail",
+        "r2:suburb",
+        "r2:detail"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Northbound roadworks are slowing the Bruce Highway at Foster Road in Edmonton, with more works in Gordonvale."
+        },
+        {
+          "style": "standard",
+          "text": "Northbound roadworks are slowing the Bruce Highway at Foster Road in Edmonton. More works are reported in Gordonvale."
+        }
+      ]
+    },
+    {
+      "category": "works",
+      "evidenceIds": [
+        "r3:suburb",
+        "r3:direction",
+        "r3:detail",
+        "r4:suburb",
+        "r4:direction",
+        "r4:detail"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Northbound roadworks are also slowing the Captain Cook Highway through Aeroglen and Cairns North."
+        },
+        {
+          "style": "standard",
+          "text": "There's also a slower run through northbound roadworks on the Captain Cook Highway in Aeroglen and Cairns North."
+        },
+        {
+          "style": "continuation",
+          "text": "There's also northbound roadworks on the Captain Cook Highway through Aeroglen and Cairns North."
+        }
+      ]
+    },
+    {
+      "category": "works",
+      "evidenceIds": [
+        "r6:suburb",
+        "r6:incident:0",
+        "r6:impact",
+        "r5:suburb",
+        "r5:incident:0",
+        "r5:detail"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Work zones are reported on Mulgrave Road in Earlville and the Kennedy Highway in Kuranda."
+        },
+        {
+          "style": "standard",
+          "text": "Further work zones are reported on Mulgrave Road in Earlville and the Kennedy Highway in Kuranda."
+        },
+        {
+          "style": "continuation",
+          "text": "Further work zones are reported on Mulgrave Road in Earlville and the Kennedy Highway in Kuranda."
+        }
+      ]
+    },
+    {
+      "category": "weather",
+      "evidenceIds": [
+        "weather:condition",
+        "weather:temperature"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Sunny, 27 degrees."
+        },
+        {
+          "style": "standard",
+          "text": "Sunny skies, 27 degrees."
+        }
+      ]
+    },
+    {
+      "category": "fuel",
+      "evidenceIds": [
+        "fuel:Unleaded 91:price",
+        "fuel:Unleaded 91:suburb",
+        "fuel:Diesel:price",
+        "fuel:Diesel:suburb"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "In Manoora, unleaded 91 is $1.98. Diesel is $2.40."
+        },
+        {
+          "style": "standard",
+          "text": "Unleaded 91 is $1.98 in Manoora. Diesel is $2.40."
+        }
+      ]
+    }
+  ]
+}

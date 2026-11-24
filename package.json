@@ -1,0 +1,19 @@
+{
+  "name": "arn-bulletin-generator",
+  "private": true,
+  "scripts": {
+    "local": "mkdir -p logs && bun x concurrently --names \"AZURITE,BACKEND,FRONTEND\" --prefix-colors \"green,blue,magenta\" \"bun run azurite\" \"bun run local:backend\" \"bun run local:frontend\" | tee logs/local-run.log",
+    "azurite": "mkdir -p ./.azurite && rm -rf ./.azurite/__blobstorage__ ./.azurite/__azurite_db_blob__.json ./.azurite/__azurite_db_blob_extent__.json && bun x azurite --silent --location ./.azurite --skipApiVersionCheck",
+    "local:backend": "cd src/ArnBulletinGenerator.Functions && func start",
+    "local:frontend": "cd web && bun dev",
+    "e2e:backend": "bash scripts/e2e-backend.sh",
+    "e2e:web": "cd web && npm run e2e",
+    "e2e:external-smoke": "bash scripts/e2e-external-smoke.sh",
+    "e2e": "bun x concurrently --names \"backend,web\" --prefix-colors \"blue,magenta\" \"bun run e2e:backend\" \"bun run e2e:web\"",
+    "e2e:serial": "bun run e2e:backend && bun run e2e:web",
+    "prepare": "bash scripts/install-hooks.sh || true"
+  },
+  "devDependencies": {
+    "shadcn": "^3.8.4"
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032040Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:40.4345002+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.89383,115.80255\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Cedric St, Innaloo WA 6018, Australia",
+          "id": "here:af:streetsection:T0P8myNYR2uOeEEzsZuGaB",
+          "resultType": "street",
+          "address": {
+            "label": "Cedric St, Innaloo WA 6018, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Innaloo",
+            "street": "Cedric St",
+            "postalCode": "6018"
+          },
+          "position": {
+            "lat": -31.89383,
+            "lng": 115.80255
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.79616,
+            "south": -31.89444,
+            "east": 115.80376,
+            "north": -31.8933
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

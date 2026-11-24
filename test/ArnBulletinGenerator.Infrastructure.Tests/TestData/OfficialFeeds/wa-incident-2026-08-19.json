@@ -1,0 +1,40 @@
+{
+  "features": [
+    {
+      "attributes": {
+        "OBJECTID": 9001,
+        "Id": 270001,
+        "Location": "Great Eastern Hwy at Welshpool Rd - Crash",
+        "TrafficImpact": "Left lane blocked. Exercise extreme caution.",
+        "IncidentType": "Road Crash",
+        "ClosureType": "Lane closure",
+        "publishExternally": "Yes",
+        "TrafficCondition": "Left Lane Blocked",
+        "EntryDate": "19/08/2026 12:37:24",
+        "UpdateDateTime": "19/08/2026 12:40:24",
+        "Road": "Great Eastern Hwy",
+        "IncidentLevel": "Level 2",
+        "Suburb": "Welshpool"
+      },
+      "geometry": { "x": 115.9500, "y": -31.9900 }
+    },
+    {
+      "attributes": {
+        "OBJECTID": 9002,
+        "Id": 270002,
+        "Location": "Albany Hwy - Unpublished hazard",
+        "TrafficImpact": "Do not surface",
+        "IncidentType": "Hazard",
+        "ClosureType": "",
+        "publishExternally": "No",
+        "TrafficCondition": "Unknown",
+        "EntryDate": "19/08/2026 12:37:24",
+        "UpdateDateTime": "19/08/2026 12:40:24",
+        "Road": "Albany Hwy",
+        "IncidentLevel": "Level 1",
+        "Suburb": "Cannington"
+      },
+      "geometry": { "x": 115.9500, "y": -31.9900 }
+    }
+  ]
+}

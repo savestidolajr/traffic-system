@@ -1,0 +1,70 @@
+{
+  "schemaVersion": 1,
+  "purpose": "Reads we judged NOT good enough to air, each pinned to the deterministic gate that must catch its defect. Every entry is a real observed generation, not a hypothetical. Append to this file the moment a subpar read is identified; never delete an entry, and never relax a gate to make one pass.",
+  "whyThisIsSeparateFromCorpusRegressions": "test/corpus/regressions/ holds full replay fixtures with a traffic snapshot, so exercising one costs live LLM and TTS calls and cannot run on every build. These entries are pure text plus an expected verdict, so they run in milliseconds on every build and act as a ratchet: once a shape is caught it can never silently come back.",
+  "entries": [
+    {
+      "id": "sydney-one-road-roll-call-2026-08-23",
+      "market": "sydney",
+      "sourceJobId": "8b895081e0F24d2bb60ee61b05390ade",
+      "observedUtc": "2026-08-23",
+      "defect": "SIX consecutive one-road sentences. Each is individually well formed and the read fits its slot exactly, which is why no duration or style gate objected. It still airs as a database read-out rather than a bulletin, and it is the shape ARN called out directly.",
+      "rule": "Cognitive Load Rule and Structural Cadence, prompts/agents/arn-draft.md: at most two clean secondary sentences, then sweep the remainder into ONE phrase naming the strongest roads.",
+      "expectedGate": "SentenceShapeDetector",
+      "text": "Now looking over Sydney. Victoria Road is crawling, adding about 10 minutes. Arthur Street is heavy. Park Avenue is backed up. Rohini Street is a touch slower. Bay Street has a slight queue. Albert Avenue is a little slower. The M1 Eastern Distributor is briefly slower. Sunny, 16 degrees.",
+      "gateNote": "SecondaryItemCapDetector is the pipeline's repair for this shape but it needs context.Corridors to identify road names, so it cannot run against text alone. The SHAPE is detectable context-free, so that is the gate a text-only corpus asserts. The repair still belongs to SecondaryItemCapDetector."
+    },
+    {
+      "id": "cairns-compound-runon-2026-08-23",
+      "market": "cairns-4ca",
+      "sourceJobId": "f7e429ba",
+      "observedUtc": "2026-08-23",
+      "defect": "A forty-word compound sentence carrying three separate roads and joined with a SEMICOLON, which has no spoken equivalent. It also buries a multi-vehicle accident mid-sentence behind a work zone. The slot-fit selector actively preferred this phrasing because it filled the slot well, and nothing in the objective priced sentence shape.",
+      "rule": "Cognitive Load Rule, prompts/agents/arn-draft.md: a driver at 80 km/h cannot parse complex run-on sentences. Keep sentences short, crisp and direct, under 15-18 words, one thought per sentence.",
+      "expectedGate": "SentenceShapeDetector",
+      "text": "Mulgrave Road's a bit slow in Earlville between Toogood Road and Mccoombe Street. The Bruce Highway's got a short work zone at Gillies Highway in Gordonvale, and there's a multi-vehicle accident on Reservoir Road in Manoora; the Kennedy Highway's also slow at Myola Road in Kuranda. Mostly cloudy in Cairns, with temperatures on 21 degrees."
+    },
+    {
+      "id": "melbourne-repeated-opening-frame-2026-08-23",
+      "market": "melbourne",
+      "sourceJobId": "caaeb8a8fb984ec899ccc735a8bb5d5e",
+      "observedUtc": "2026-08-23",
+      "defect": "Two consecutive sentences opening on the same frame, \"A breakdown ... A breakdown ...\". Two breakdowns in one bulletin is normal and correct; announcing them as two unrelated events is what reads as templated. A presenter links the second to the first.",
+      "rule": "Vary the Palette, prompts/agents/arn-draft.md: never reuse the same phrasing twice in a bulletin. A run of identically-worded items reads like a machine.",
+      "expectedGate": "SentenceShapeDetector",
+      "text": "A breakdown on CityLink at Yarra Boulevard in Burnley has traffic crawling. A breakdown has eastbound traffic backed up on the Western Freeway at Leakes Road. The Eastern Freeway through Clifton Hill has a slight queue around roadworks. Cloudy, 14 degrees."
+    },
+    {
+      "id": "canberra-unsourced-relation-2026-08-23",
+      "market": "canberra",
+      "sourceJobId": "not-provided",
+      "observedUtc": "2026-08-23",
+      "defect": "The read turns two separate roadClosure records into one eastbound closure and implies a point-to-point span. The evidence names London Cct with Petrie Plaza and Northbourne Avenue as separate corridors, but it does not state the eastbound direction, that either location is a point closure, or that the two locations bound one segment.",
+      "rule": "Relations Need Evidence Too, prompts/agents/arn-draft.md: assert between/at/direction only when the supplied data states the relation; use neutral phrasing when it is unknown.",
+      "expectedGate": "none-yet",
+      "text": "London Circuit is closed eastbound, with closures at Petrie Plaza and Northbourne Avenue",
+      "gateNote": "No deterministic gate currently catches an unsourced relation between supplied facts. Keep this entry recorded as an ungated debt item until a relation-grounding detector exists; never force-fit it to an unrelated gate."
+    },
+    {
+      "id": "gold-coast-repeated-event-2026-08-23",
+      "market": "gold-coast",
+      "sourceJobId": "not-provided",
+      "observedUtc": "2026-08-23",
+      "defect": "Four closure sentences repeat the same supplied event, the Gold Coast Marathon, three times and add \"the event\" once. The facts are grounded, but the cause is restated instead of grouping the roads into one sentence.",
+      "rule": "Shared causes and events, prompts/agents/arn-draft.md: group two or more supplied items sharing an explicit cause or event into one sentence at any severity, and state that cause or event once.",
+      "expectedGate": "RepeatedCauseDetector",
+      "text": "Outbound Gold Coast Highway is closed between Nerang-Broadbeach Road and Heron Avenue for the Gold Coast Marathon. It is adding three minutes. Margaret Avenue is closed outbound between Nerang-Broadbeach Road and Markeri Street for the Gold Coast Marathon. Marine Parade is closed westbound at Scarborough Street North for the event. Fern Street is closed citybound at Surfers Paradise Boulevard for the Gold Coast Marathon."
+    },
+    {
+      "id": "cairns-repeated-fuel-suburb-2026-08-24",
+      "market": "cairns-4ca",
+      "sourceJobId": "not-provided",
+      "observedUtc": "2026-08-24",
+      "defect": "Live pilot read from Star 102.7 Cairns names the shared cheapest-fuel suburb twice in one sentence. The facts and prices are correct, but repeating the suburb makes the fuel line sound mechanically assembled.",
+      "rule": "Fuel wording note, prompts/agents/arn-draft.md: when prices share a suburb, name it once naturally in a combined sentence; do not repeat the suburb mechanically or drop it.",
+      "expectedGate": "RepeatedFuelSuburbDetector",
+      "text": "Cheapest unleaded is a dollar ninety-eight at Manoora, while diesel is two dollars forty in Manoora.",
+      "gateNote": "The detector is scoped to ContentSourceSignals.IsFuelLine and removes only later at/in Manoora phrases, leaving the first location mention and all traffic sentences untouched."
+    }
+  ]
+}

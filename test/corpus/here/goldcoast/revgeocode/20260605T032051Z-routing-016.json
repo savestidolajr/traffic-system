@@ -1,0 +1,47 @@
+{
+  "Market": "goldcoast",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032051Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:52.3119121+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.01499,153.38197\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Nerang Broadbeach Rd, Carrara QLD 4211, Australia",
+          "id": "here:af:streetsection:Vc0Sdgom5CpBtmHaC2YRkD",
+          "resultType": "street",
+          "address": {
+            "label": "Nerang Broadbeach Rd, Carrara QLD 4211, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Gold Coast",
+            "district": "Carrara",
+            "street": "Nerang Broadbeach Rd",
+            "postalCode": "4211"
+          },
+          "position": {
+            "lat": -28.01499,
+            "lng": 153.38197
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 153.36228,
+            "south": -28.03109,
+            "east": 153.38648,
+            "north": -28.00457
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

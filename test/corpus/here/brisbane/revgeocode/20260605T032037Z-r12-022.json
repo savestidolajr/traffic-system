@@ -1,0 +1,55 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032037Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:37.9119304+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.56292,153.00717\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "110 Ashover Rd, Archerfield QLD 4108, Australia",
+          "id": "here:af:streetsection:Gt95YwvcTs55BhYwH35RoD:CggIBCDe-JvOAxABGgMxMTA",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "110 Ashover Rd, Archerfield QLD 4108, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Archerfield",
+            "street": "Ashover Rd",
+            "postalCode": "4108",
+            "houseNumber": "110"
+          },
+          "position": {
+            "lat": -27.5628,
+            "lng": 153.0076
+          },
+          "access": [
+            {
+              "lat": -27.56279,
+              "lng": 153.00751
+            }
+          ],
+          "distance": 36,
+          "mapView": {
+            "west": 153.00661,
+            "south": -27.566,
+            "east": 153.00781,
+            "north": -27.56102
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

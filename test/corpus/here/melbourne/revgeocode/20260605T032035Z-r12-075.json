@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.2358939+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.78733,145.00296\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "36 Dwyer St, Clifton Hill VIC 3068, Australia",
+          "id": "here:af:streetsection:SWHjRlvKQDF86SEMYP8-cC:CggIBCDvzqqgARABGgIzNg",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "36 Dwyer St, Clifton Hill VIC 3068, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Clifton Hill",
+            "street": "Dwyer St",
+            "postalCode": "3068",
+            "houseNumber": "36"
+          },
+          "position": {
+            "lat": -37.78729,
+            "lng": 145.00328
+          },
+          "access": [
+            {
+              "lat": -37.78735,
+              "lng": 145.00297
+            }
+          ],
+          "distance": 2,
+          "mapView": {
+            "west": 145.00173,
+            "south": -37.78933,
+            "east": 145.00314,
+            "north": -37.78508
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

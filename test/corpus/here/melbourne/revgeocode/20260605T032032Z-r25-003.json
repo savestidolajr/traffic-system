@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:33.1640883+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.69068,144.9722\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Western Ring Rd, Campbellfield VIC 3061, Australia",
+          "id": "here:af:streetsection:08WDc-b6cTW-zZVK968oVC",
+          "resultType": "street",
+          "address": {
+            "label": "Western Ring Rd, Campbellfield VIC 3061, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Campbellfield",
+            "street": "Western Ring Rd",
+            "postalCode": "3061"
+          },
+          "position": {
+            "lat": -37.69068,
+            "lng": 144.9722
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 144.97041,
+            "south": -37.69096,
+            "east": 144.9725,
+            "north": -37.69065
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.9025715+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.92945,115.77229\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Bimbimbie Ln, City Beach WA 6015, Australia",
+          "id": "here:af:streetsection:9yVERjhsgbImfNUaqX0JtB",
+          "resultType": "street",
+          "address": {
+            "label": "Bimbimbie Ln, City Beach WA 6015, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "City Beach",
+            "street": "Bimbimbie Ln",
+            "postalCode": "6015"
+          },
+          "position": {
+            "lat": -31.92945,
+            "lng": 115.77229
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.77229,
+            "south": -31.92998,
+            "east": 115.77231,
+            "north": -31.92945
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

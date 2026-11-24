@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.2900967+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.71573,144.71748\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "47 Krateron St, Fraser Rise VIC 3336, Australia",
+          "id": "here:af:streetsection:65W4B1LImyV2DNSaazBJyD:CggIBCCR_52lAxABGgI0Nw",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "47 Krateron St, Fraser Rise VIC 3336, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Fraser Rise",
+            "street": "Krateron St",
+            "postalCode": "3336",
+            "houseNumber": "47"
+          },
+          "position": {
+            "lat": -37.71611,
+            "lng": 144.71715
+          },
+          "access": [
+            {
+              "lat": -37.71573,
+              "lng": 144.71748
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 144.71748,
+            "south": -37.71573,
+            "east": 144.71774,
+            "north": -37.71442
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

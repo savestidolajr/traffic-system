@@ -1,0 +1,49 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "type": "object",
+  "additionalProperties": false,
+  "required": [
+    "stories"
+  ],
+  "properties": {
+    "stories": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": [
+          "storyId",
+          "subject",
+          "eventIds",
+          "whyItMatters",
+          "condition"
+        ],
+        "properties": {
+          "storyId": {
+            "type": "string",
+            "description": "Stable slug for the story, e.g. james-congdon-closure."
+          },
+          "subject": {
+            "type": "string",
+            "description": "What the story is about, as a label rather than a sentence."
+          },
+          "eventIds": {
+            "type": "array",
+            "description": "Every source event this story covers. Each event belongs to exactly one story.",
+            "items": {
+              "type": "string"
+            }
+          },
+          "whyItMatters": {
+            "type": "string",
+            "description": "Editorial reasoning about importance. Never evidence, never voiced."
+          },
+          "condition": {
+            "type": "string",
+            "description": "How these roads are behaving, in YOUR OWN WORDS, for the qualitative state only — how a driver would experience the run. Your colleague may voice this. Never put a figure in it: drive times, delays and distances travel as facts and are checked against the source. Say nothing here when the facts already carry it, and use DIFFERENT wording from every other story in your answer."
+          }
+        }
+      }
+    }
+  }
+}

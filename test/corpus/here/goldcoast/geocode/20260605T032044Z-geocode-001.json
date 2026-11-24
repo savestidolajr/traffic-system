@@ -1,0 +1,52 @@
+{
+  "Market": "goldcoast",
+  "Endpoint": "geocode",
+  "SessionId": "20260605T032044Z-geocode",
+  "CapturedAtUtc": "2026-06-05T03:20:44.4349646+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=goldcoast%2C Australia\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Gold Coast, QLD 4217, Australia",
+          "id": "here:cm:namedplace:1469259957",
+          "resultType": "locality",
+          "localityType": "city",
+          "address": {
+            "label": "Gold Coast, QLD 4217, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Gold Coast",
+            "postalCode": "4217"
+          },
+          "position": {
+            "lat": -28.00195,
+            "lng": 153.42856
+          },
+          "mapView": {
+            "west": 152.94779,
+            "south": -28.35784,
+            "east": 153.55184,
+            "north": -27.69258
+          },
+          "scoring": {
+            "queryScore": 1.0,
+            "fieldScore": {
+              "country": 1.0,
+              "city": 1.0
+            }
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

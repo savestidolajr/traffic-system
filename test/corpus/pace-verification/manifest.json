@@ -1,0 +1,22 @@
+{
+ "cairns-4ca": {
+  "segments": 6,
+  "sourceUpdated": "2026-08-28T13:58:42Z"
+ },
+ "sydney": {
+  "segments": 1153,
+  "sourceUpdated": "2026-08-28T13:58:47Z"
+ },
+ "melbourne": {
+  "segments": 2145,
+  "sourceUpdated": "2026-08-28T13:58:45Z"
+ },
+ "brisbane": {
+  "segments": 536,
+  "sourceUpdated": "2026-08-28T13:59:09Z"
+ },
+ "mildura": {
+  "segments": 0,
+  "sourceUpdated": "2026-08-28T13:59:47Z"
+ }
+}

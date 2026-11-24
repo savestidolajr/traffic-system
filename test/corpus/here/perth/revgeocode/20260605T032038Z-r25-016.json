@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.2497816+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.89436,115.80055\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Ellen Stirling Blvd, Innaloo WA 6018, Australia",
+          "id": "here:af:streetsection:AYZ-ZX1s3jipfhBW1ILKtC",
+          "resultType": "street",
+          "address": {
+            "label": "Ellen Stirling Blvd, Innaloo WA 6018, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Innaloo",
+            "street": "Ellen Stirling Blvd",
+            "postalCode": "6018"
+          },
+          "position": {
+            "lat": -31.89436,
+            "lng": 115.80055
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.79996,
+            "south": -31.90331,
+            "east": 115.8032,
+            "north": -31.89423
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,17 @@
+<Solution>
+  <Project Path="src/ArnBulletinGenerator.Application/ArnBulletinGenerator.Application.csproj" />
+  <Project Path="src/ArnBulletinGenerator.Domain/ArnBulletinGenerator.Domain.csproj" />
+  <Project Path="src/ArnBulletinGenerator.Infrastructure/ArnBulletinGenerator.Infrastructure.csproj" />
+  <Project Path="src/ArnBulletinGenerator.Functions/ArnBulletinGenerator.Functions.csproj" />
+  <Project Path="src/ArnBulletinGenerator.Workflow/ArnBulletinGenerator.Workflow.csproj" />
+  <Project Path="src/ArnBulletinGenerator.Workflow.Hosting/ArnBulletinGenerator.Workflow.Hosting.csproj" />
+  <Project Path="test/ArnBulletinGenerator.Application.Tests/ArnBulletinGenerator.Application.Tests.csproj" />
+  <Project Path="test/ArnBulletinGenerator.ArchitectureTests/ArnBulletinGenerator.ArchitectureTests.csproj" />
+  <Project Path="test/ArnBulletinGenerator.Domain.Tests/ArnBulletinGenerator.Domain.Tests.csproj" />
+  <Project Path="test/ArnBulletinGenerator.E2E.Tests/ArnBulletinGenerator.E2E.Tests.csproj" />
+  <Project Path="test/ArnBulletinGenerator.ExternalSmoke.Tests/ArnBulletinGenerator.ExternalSmoke.Tests.csproj" />
+  <Project Path="test/ArnBulletinGenerator.Functions.Tests/ArnBulletinGenerator.Functions.Tests.csproj" />
+  <Project Path="test/ArnBulletinGenerator.Infrastructure.Tests/ArnBulletinGenerator.Infrastructure.Tests.csproj" />
+  <Project Path="test/ArnBulletinGenerator.Workflow.Tests/ArnBulletinGenerator.Workflow.Tests.csproj" />
+  <Project Path="test/ArnBulletinGenerator.Workflow.LiveTests/ArnBulletinGenerator.Workflow.LiveTests.csproj" />
+</Solution>

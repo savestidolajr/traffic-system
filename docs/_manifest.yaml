@@ -1,0 +1,2181 @@
+# Arn Documentation Manifest
+# Generated from live Markdown docs. Do not edit by hand.
+# Agents should match title/description/tags/aliases/common_queries/related_code against the task, then read only relevant files.
+# Regenerate with: ./scripts/docs.py generate
+
+- title: "Codemap — Architecture"
+  description: "High-level system architecture, Clean Architecture layer relationships, data flow diagrams, deployment architecture, and external system integrations for the Arn traffic bulletin platform"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-08-24
+  review_after: 2026-11-01
+  volatility: "low"
+  source_of_truth: "Source tree analysis of src/, web/, deployment/, docs/CODEMAPS/FILES.md"
+  file: "docs/CODEMAPS/ARCHITECTURE.md"
+  tags:
+    - "codemap"
+    - "architecture"
+    - "clean architecture"
+    - "data flow"
+    - "deployment"
+  aliases:
+    - "architecture codemap"
+    - "system overview"
+    - "architecture map"
+  verified_by:
+    - "manual source tree analysis"
+    - "./scripts/docs.py check"
+  related_code:
+    - "src/"
+    - "web/"
+    - "deployment/"
+    - "docs/CODEMAPS/MODULES.md"
+    - "docs/CODEMAPS/FILES.md"
+  common_queries:
+    - "How does the system architecture work?"
+    - "What are the Clean Architecture layers?"
+    - "How do data flow through the system?"
+    - "What external systems does Arn integrate with?"
+  see_also:
+    - "docs/canonical/architecture.md"
+    - "docs/operations/solution-overview.md"
+    - "docs/CODEMAPS/MODULES.md"
+    - "docs/CODEMAPS/FILES.md"
+
+- title: "Codemap — Files"
+  description: "Comprehensive directory structure and file-purpose reference for the entire Arn codebase: backend C# projects, frontend React app, Bicep IaC, test projects, documentation, and scripts"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-03
+  review_after: 2026-09-26
+  volatility: "low"
+  source_of_truth: "Filesystem scan of the Arn repository root"
+  file: "docs/CODEMAPS/FILES.md"
+  tags:
+    - "codemap"
+    - "files"
+    - "directory structure"
+    - "reference"
+  aliases:
+    - "file codemap"
+    - "file map"
+    - "directory listing"
+    - "file purposes"
+  verified_by:
+    - "manual filesystem scan"
+    - "./scripts/docs.py check"
+    - "./scripts/docs.py codemap 2026-08-12 reported the generated tables already current against git ls-files"
+  related_code:
+    - "docs/CODEMAPS/ARCHITECTURE.md"
+    - "docs/CODEMAPS/MODULES.md"
+  common_queries:
+    - "What does this file do?"
+    - "What files are in a given directory?"
+    - "Where is something defined in the codebase?"
+    - "What is the directory structure of the project?"
+  see_also:
+    - "docs/CODEMAPS/ARCHITECTURE.md"
+    - "docs/CODEMAPS/MODULES.md"
+
+- title: "Codemap — Modules"
+  description: "Module descriptions, public APIs, dependencies, exports, and usage examples for every project in the Arn codebase: backend layers, frontend, deployment IaC, and documentation"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-08-24
+  review_after: 2026-11-01
+  volatility: "low"
+  source_of_truth: "Source tree analysis of src/, web/, deployment/, docs/CODEMAPS/FILES.md"
+  file: "docs/CODEMAPS/MODULES.md"
+  tags:
+    - "codemap"
+    - "modules"
+    - "API"
+    - "dependencies"
+    - "exports"
+  aliases:
+    - "module codemap"
+    - "module map"
+    - "public APIs"
+    - "project dependencies"
+  verified_by:
+    - "manual source tree analysis"
+    - "./scripts/docs.py check"
+  related_code:
+    - "docs/CODEMAPS/ARCHITECTURE.md"
+    - "docs/CODEMAPS/FILES.md"
+    - "src/"
+    - "web/"
+    - "deployment/"
+  common_queries:
+    - "What are the main modules and their dependencies?"
+    - "What public APIs does each project expose?"
+    - "How do I register DI for a module?"
+    - "Which module implements a given domain interface?"
+  see_also:
+    - "docs/CODEMAPS/ARCHITECTURE.md"
+    - "docs/CODEMAPS/FILES.md"
+    - "docs/canonical/architecture.md"
+
+- title: "Platform Architecture"
+  description: "How the ARN Information Bulletin Platform runs, integrates with external services and protects operational data"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "The production codebase and its deployed configuration"
+  file: "docs/canonical/architecture.md"
+  tags:
+    - "architecture"
+    - "azure"
+    - "productionisation"
+    - "traffic-bulletins"
+  aliases:
+    - "architecture"
+    - "clean architecture"
+    - "system design"
+    - "azure functions architecture"
+  verified_by:
+    - "manual source review"
+  common_queries:
+    - "What is the current Arn architecture?"
+    - "Which backend layers make up the platform?"
+    - "Where should architecture changes be documented?"
+  see_also:
+    - "docs/operations/solution-structure.md"
+
+- title: "Decision Log"
+  description: "Durable technical decisions with context, rationale, consequences, and status"
+  purpose: "decision-log"
+  status: "current"
+  last_verified: 2026-08-31
+  review_after: 2026-09-19
+  volatility: "low"
+  source_of_truth: "Accepted decision entries recorded in this file"
+  file: "docs/canonical/decisions.md"
+  tags:
+    - "decisions"
+    - "adr"
+    - "rationale"
+  aliases:
+    - "decisions"
+    - "ADR"
+    - "decision log"
+    - "rationale"
+  verified_by:
+    - "manual decision-log review"
+    - "./scripts/docs.py check"
+  related_code:
+    - "AGENTS.md"
+    - "CONTRIBUTING.md"
+    - "scripts/docs.py"
+  common_queries:
+    - "Why did Arn choose this implementation approach?"
+    - "Where are durable decisions recorded?"
+    - "What decisions affect future agents?"
+  see_also:
+    - "CONTRIBUTING.md"
+    - "docs/operations/solution-overview.md"
+
+- title: "Client Deliverables"
+  description: "Separates ARN-facing handoff artifacts from internal canonical, working, reference, and generated documentation."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-04
+  review_after: 2026-12-04
+  volatility: "medium"
+  source_of_truth: "docs/deliverables/"
+  file: "docs/deliverables/README.md"
+  tags:
+    - "deliverables"
+    - "client-facing"
+    - "stage-gate-2"
+  aliases:
+    - "deliverables"
+    - "client artifacts"
+  verified_by:
+    - "manual review 2026-09-04: each listed deliverable file checked present; audience table reworded for ARN readers"
+  common_queries:
+    - "Where are ARN-facing deliverables stored?"
+    - "What is the difference between internal docs and client deliverables?"
+    - "Which documents can be sent to ARN?"
+  see_also:
+    - "docs/operations/solution-overview.md"
+
+- title: "SDD Deliverable Package"
+  description: "Isolated ARN-facing Solution Design Document package for Stage Gate 2 review and sign-off."
+  purpose: "reference"
+  status: "stale"
+  last_verified: 2026-07-24
+  review_after: 2026-08-07
+  volatility: "high"
+  source_of_truth: "docs/deliverables/SDD/ARN-Traffic-Bulletin-Platform-Solution-Design-Document.typ"
+  file: "docs/deliverables/SDD/README.md"
+  tags:
+    - "deliverables"
+    - "solution-design"
+    - "stage-gate-2"
+    - "client-facing"
+  aliases:
+    - "SDD package"
+    - "ARN SG2 package"
+    - "client SDD"
+  verified_by:
+    - "typst compile; python3 scripts/docs.py check; re-verified 2026-07-24 (point-in-time SG2 deliverable, unchanged)"
+  common_queries:
+    - "Where is the ARN-facing SDD package?"
+    - "Which file should be sent to ARN for SG2 review?"
+    - "What assets are included in the SDD deliverable package?"
+  see_also:
+    - "docs/canonical/architecture.md"
+
+- title: "ARN Information Bulletin Platform — Azure Cost Estimate"
+  description: "Full production-solution Azure cost estimate (DEV + TEST + PROD) built via the official Azure Pricing Calculator, exported programmatically"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-03
+  review_after: 2026-12-03
+  volatility: "medium"
+  source_of_truth: "Azure Pricing Calculator export (ExportedEstimate-ARN-full-solution.xlsx)"
+  file: "docs/deliverables/cost-estimate/arn-azure-cost-estimate.md"
+  tags:
+    - "deliverables"
+    - "cost-estimate"
+    - "azure"
+    - "finance"
+  aliases:
+    - "cost estimate"
+    - "azure cost estimate"
+    - "run cost projection"
+  verified_by:
+    - "Native Azure Pricing Calculator export, 2026-06-25"
+  common_queries:
+    - "What will this solution cost on Azure?"
+    - "Where is the Azure cost estimate for ARN?"
+  see_also:
+    - "docs/operations/run-costs.md"
+
+- title: "Handover Acceptance"
+  description: "What accepting the handover means, what the signatories confirm and where the signature record lives."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-11-27
+  volatility: "medium"
+  source_of_truth: "ARN's controlled operational records"
+  file: "docs/operations/acceptance.md"
+  tags:
+    - "handover"
+    - "governance"
+    - "acceptance"
+  aliases:
+    - "acceptance"
+    - "sign off"
+    - "what am I signing"
+    - "handover acceptance"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "What does accepting the handover mean?"
+    - "Who signs the handover?"
+    - "What are the acceptance conditions?"
+  see_also:
+    - "docs/operations/open-items.md"
+    - "docs/operations/support-model.md"
+    - "docs/operations/as-built.md"
+    - "docs/operations/runbook.md"
+
+- title: "Accounts and Access"
+  description: "Role-based ownership for the Azure subscription, identity services, deployment controls, vendor accounts and operational endpoints used by the ARN Information Bulletin Platform."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-03
+  review_after: 2026-10-03
+  volatility: "medium"
+  source_of_truth: "Azure subscription, Microsoft Entra ID, Azure DevOps and vendor account ownership records"
+  file: "docs/operations/access-and-accounts.md"
+  tags:
+    - "operations"
+    - "access"
+    - "identity"
+    - "accounts"
+  aliases:
+    - "access and accounts"
+    - "account inventory"
+    - "access ownership"
+  verified_by:
+    - "Environment access review"
+    - "2026-09-03: runtime secret inventory corrected against the development vault; recorded that the test and production vaults refuse workstation callers so rotation must run from inside the virtual network"
+  common_queries:
+    - "Which ARN role owns each platform asset?"
+    - "What access must ARN assign?"
+    - "What breaks when an owner is missing?"
+    - "What are the console URLs?"
+  see_also:
+    - "docs/operations/as-built.md"
+    - "docs/operations/dependencies.md"
+    - "docs/operations/disaster-recovery.md"
+    - "docs/operations/support-model.md"
+
+- title: "As-Built: Deployed Environments"
+  description: "The deployed ARN Information Bulletin Platform across development, test and production, including resource inventory, hostnames, network topology and identity model."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-11-17
+  volatility: "high"
+  source_of_truth: "Azure resource inventory, environment health checks and platform configuration"
+  file: "docs/operations/as-built.md"
+  tags:
+    - "operations"
+    - "as-built"
+    - "inventory"
+    - "environments"
+    - "deployment"
+  aliases:
+    - "as-built"
+    - "environment inventory"
+    - "deployed resources"
+    - "what is deployed"
+  verified_by:
+    - "Azure resource inventory"
+    - "Environment health and smoke checks"
+  common_queries:
+    - "What is deployed in each environment?"
+    - "What are the environment URLs?"
+    - "How do the environments differ?"
+  see_also:
+    - "docs/operations/runbook.md"
+    - "docs/operations/notifications.md"
+    - "docs/operations/disaster-recovery.md"
+
+- title: "Monitoring Dashboard Guide"
+  description: "How ARN support engineers reach Azure Monitor workbooks, interpret health signals, and respond to alert rules"
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-02
+  review_after: 2026-12-04
+  volatility: "medium"
+  source_of_truth: "Azure Monitor workbooks, alert rules, Log Analytics, and this guide"
+  file: "docs/operations/dashboard-guide.md"
+  tags:
+    - "operations"
+    - "monitoring"
+    - "dashboards"
+    - "azure-monitor"
+    - "slo"
+    - "kql"
+    - "telemetry"
+    - "alerts"
+  aliases:
+    - "dashboard guide"
+    - "monitoring guide"
+    - "Azure Monitor workbook guide"
+  verified_by:
+    - "Azure Portal workbook and alert inventory"
+    - "SLO and first-response procedures"
+    - "Health endpoint response contract"
+    - "Every published query executed against the development Application Insights resource, 2026-08-05"
+    - "Telemetry catalogue read from the metrics implementation and confirmed against emitted event names"
+  common_queries:
+    - "Where are the ARN monitoring dashboards?"
+    - "What does a healthy dashboard look like?"
+    - "Which alert fired and what does it mean?"
+    - "How do I read the health endpoint?"
+    - "What should I check first when a dashboard looks wrong?"
+    - "How do I trace one bulletin through the logs?"
+    - "Which log queries should I run when a bulletin goes wrong?"
+    - "What telemetry does the platform emit?"
+    - "Why does grouping by station return nothing?"
+  see_also:
+    - "docs/operations/slo.md"
+    - "docs/operations/runbook.md"
+    - "docs/operations/support-model.md"
+
+- title: "Defect Register"
+  description: "The register ARN records acceptance and integration findings in: observable behaviour, condition, workaround and severity."
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-03
+  review_after: 2026-11-17
+  volatility: "high"
+  source_of_truth: "Observed platform behaviour and acceptance testing records"
+  file: "docs/operations/defect-log.md"
+  tags:
+    - "operations"
+    - "acceptance"
+    - "testing"
+    - "integration"
+    - "defects"
+  aliases:
+    - "defect register"
+    - "defect log"
+    - "acceptance findings"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "What defects remain open?"
+    - "How do I record a new defect?"
+  see_also:
+    - "docs/operations/uat-plan.md"
+    - "docs/operations/uat-scenario-sheet.md"
+    - "docs/operations/integration-test-plan.md"
+    - "docs/operations/known-limitations.md"
+
+- title: "The Delivery Pipeline"
+  description: "How a change reaches an environment: the build and release stages, the gates and approvals, and how to read a failed run"
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-03
+  review_after: 2026-12-03
+  volatility: "medium"
+  source_of_truth: "azure-pipelines.yml and the stage templates in deployment/pipelines/"
+  file: "docs/operations/delivery-pipeline.md"
+  tags:
+    - "developer"
+    - "ci-cd"
+    - "pipeline"
+    - "deployment"
+    - "azure-devops"
+  aliases:
+    - "pipeline"
+    - "ci/cd"
+    - "build pipeline"
+    - "release pipeline"
+    - "azure devops pipeline"
+  verified_by:
+    - "Stage graph, compile-time target contract, gates and jobs read from azure-pipelines.yml and deployment/pipelines/, 2026-09-03"
+  related_code:
+    - "azure-pipelines.yml"
+    - "deployment/pipelines/"
+  common_queries:
+    - "How does a change reach production?"
+    - "What runs in CI?"
+    - "Why did the pipeline not deploy?"
+    - "How do I roll back?"
+  see_also:
+    - "docs/operations/solution-structure.md"
+    - "docs/operations/local-development.md"
+    - "docs/operations/runbook.md"
+
+- title: "External Service Dependencies"
+  description: "The external services used by the ARN Information Bulletin Platform, their operational effect, credential location, rotation path and ARN owner."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-11-01
+  volatility: "medium"
+  source_of_truth: "Azure resource inventory, Key Vault configuration and service ownership records"
+  file: "docs/operations/dependencies.md"
+  tags:
+    - "operations"
+    - "dependencies"
+    - "vendors"
+  aliases:
+    - "external dependencies"
+    - "vendors"
+    - "third party services"
+    - "what breaks if"
+  verified_by:
+    - "Environment dependency review"
+  common_queries:
+    - "What happens if HERE goes down?"
+    - "Where is the ElevenLabs key stored?"
+    - "Who escalates a vendor outage?"
+  see_also:
+    - "docs/operations/runbook.md"
+    - "docs/operations/support-model.md"
+    - "docs/operations/known-limitations.md"
+
+- title: "Why the Platform Works This Way"
+  description: "The design choices that shape how the platform must be operated, and the reasoning behind each."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "The deployed platform"
+  file: "docs/operations/design-decisions.md"
+  tags:
+    - "architecture"
+    - "decisions"
+  aliases:
+    - "why"
+    - "design decisions"
+    - "rationale"
+    - "why single region"
+    - "why human approval"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "Why does a person have to approve every bulletin?"
+    - "Why is there only one region?"
+    - "Why these vendors?"
+  see_also:
+    - "docs/operations/solution-overview.md"
+    - "docs/operations/known-limitations.md"
+    - "docs/operations/dependencies.md"
+
+- title: "Disaster Recovery"
+  description: "Current recovery position, resilience limits, data protection and the actions required to establish regional recovery for the ARN Information Bulletin Platform."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2027-02-01
+  volatility: "low"
+  source_of_truth: "Azure resource inventory, storage protection settings and environment recovery controls"
+  file: "docs/operations/disaster-recovery.md"
+  tags:
+    - "operations"
+    - "dr"
+    - "disaster-recovery"
+    - "high-availability"
+  aliases:
+    - "disaster recovery"
+    - "DR"
+  verified_by:
+    - "Azure resource and storage protection review"
+  common_queries:
+    - "What happens if Australia East goes down?"
+    - "How does ARN restore the platform?"
+  see_also:
+    - "docs/operations/as-built.md"
+    - "docs/operations/runbook.md"
+    - "docs/operations/known-limitations.md"
+
+- title: "End-to-End Testing"
+  description: "Runbook for deterministic backend and frontend E2E tests plus gated external-provider smoke checks"
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "scripts/e2e-backend.sh, scripts/e2e-external-smoke.sh, Playwright config, E2E test projects"
+  file: "docs/operations/e2e-testing.md"
+  tags:
+    - "operations"
+    - "e2e"
+    - "testing"
+    - "ci"
+  aliases:
+    - "e2e testing"
+    - "end-to-end tests"
+    - "playwright tests"
+    - "backend e2e"
+  verified_by:
+    - "./scripts/docs.py check"
+    - "re-verified 2026-07-24: npm run e2e/e2e:backend/e2e:serial commands and scripts/e2e-backend.sh still match scripts/verify.sh"
+  related_code:
+    - "scripts/e2e-backend.sh"
+    - "scripts/e2e-external-smoke.sh"
+    - "test/ArnBulletinGenerator.E2E.Tests"
+    - "web/e2e"
+    - "web/playwright.config.ts"
+    - "test/ArnBulletinGenerator.ExternalSmoke.Tests"
+  common_queries:
+    - "How do I run Arn E2E tests?"
+    - "How do fake external providers work?"
+    - "How do I run provider contract smoke tests?"
+  see_also:
+    - "test/ArnBulletinGenerator.E2E.Tests/RouteCoverage.md"
+    - "web/e2e/RouteCoverage.md"
+
+- title: "Frequently Asked Questions"
+  description: "Short answers to the questions operators and support engineers ask most, each pointing at the page that covers it in depth."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-11-27
+  volatility: "medium"
+  source_of_truth: "Published operations procedures and live console behaviour"
+  file: "docs/operations/faq.md"
+  tags:
+    - "operations"
+    - "faq"
+    - "support"
+  aliases:
+    - "faq"
+    - "frequently asked questions"
+    - "common questions"
+    - "how do I"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "Why did this bulletin fall back?"
+    - "How do I fix a mispronounced road name?"
+    - "Why can I not sign in?"
+  see_also:
+    - "docs/operations/operator-guide.md"
+    - "docs/operations/runbook.md"
+    - "docs/operations/glossary.md"
+
+- title: "Your First Day Owning This Platform"
+  description: "An ordered checklist for day one of owning the platform: what to confirm, in what order, and who to call."
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-11-27
+  volatility: "medium"
+  source_of_truth: "Published operations procedures, live console behaviour and current environment posture"
+  file: "docs/operations/first-day.md"
+  tags:
+    - "operations"
+    - "checklist"
+  aliases:
+    - "first day"
+    - "day one"
+    - "what do I do first"
+    - "taking ownership"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "What do I check on my first day?"
+    - "How do I know the alerts work?"
+    - "Who do I call if something breaks?"
+  see_also:
+    - "docs/operations/access-and-accounts.md"
+    - "docs/operations/support-model.md"
+    - "docs/operations/runbook.md"
+
+- title: "First-Time Sign-In"
+  description: "Zero-context walkthrough for an ARN content-team participant signing into the operator console for the first time."
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "high"
+  source_of_truth: "The deployed ARN console addresses and the access controls for each environment"
+  file: "docs/operations/first-time-sign-in.md"
+  tags:
+    - "operations"
+    - "onboarding"
+    - "authentication"
+    - "uat"
+    - "entra"
+  aliases:
+    - "first time sign in"
+    - "console sign-in"
+    - "participant login"
+    - "ARN console onboarding"
+  verified_by:
+    - "Reader-facing verification of the published ARN console addresses and sign-in flow"
+    - "ARN-managed device verification"
+  common_queries:
+    - "How does an ARN participant sign into the console?"
+    - "Why do I see no app access after signing in?"
+  see_also:
+    - "docs/operations/as-built.md"
+    - "docs/operations/uat-plan.md"
+    - "docs/reference/per-station-configuration.md"
+
+- title: "Glossary"
+  description: "Definitions for every platform term the rest of the documentation assumes you already know."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "The platform code and the documents each term is defined in"
+  file: "docs/operations/glossary.md"
+  tags:
+    - "handover"
+    - "reference"
+    - "glossary"
+  aliases:
+    - "glossary"
+    - "what does this term mean"
+    - "definitions"
+    - "terminology"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "What is standby audio?"
+    - "What is a clear road?"
+    - "What does jam factor mean?"
+  see_also:
+    - "docs/operations/platform-overview.md"
+    - "docs/operations/operator-guide.md"
+
+- title: "Integration Testing"
+  description: "Integration cases for the external services that support bulletin generation, review, audio synthesis, notifications, identity and Zetta playout."
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "The external service integration cases and the deployed test environment"
+  file: "docs/operations/integration-test-plan.md"
+  tags:
+    - "operations"
+    - "testing"
+    - "integration"
+    - "zetta"
+    - "here"
+    - "elevenlabs"
+    - "teams"
+  aliases:
+    - "integration testing"
+    - "integration test plan"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "What integration tests does ARN run?"
+    - "How is the Zetta leg tested?"
+  see_also:
+    - "docs/operations/uat-plan.md"
+    - "docs/operations/defect-log.md"
+    - "docs/operations/runbook.md"
+
+- title: "Known Limitations"
+  description: "Operational constraints and missing capabilities that ARN must account for when running the platform."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-04
+  review_after: 2026-12-02
+  volatility: "medium"
+  source_of_truth: "The deployed platform and current operational records"
+  file: "docs/operations/known-limitations.md"
+  tags:
+    - "operations"
+    - "limitations"
+    - "handover"
+  aliases:
+    - "known limitations"
+    - "what it cannot do"
+    - "constraints"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "Does the platform fail over to another region?"
+    - "What is not covered by backup?"
+    - "Are there known defects at handover?"
+  see_also:
+    - "docs/operations/disaster-recovery.md"
+    - "docs/operations/defect-log.md"
+    - "docs/operations/support-model.md"
+
+- title: "Load and Performance Testing (Backend)"
+  description: "The backend/system load-test harness under test/load/: scenarios, auth model, cost controls, repeatable execution, and measured baselines. Frontend perf is covered separately in performance-testing.md"
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "test/load/*, docs/operations/slo.md, and this repeatable execution runbook"
+  file: "docs/operations/load-testing.md"
+  tags:
+    - "operations"
+    - "load-testing"
+    - "performance"
+    - "k6"
+    - "slo"
+    - "testing"
+  aliases:
+    - "load testing"
+    - "performance testing backend"
+    - "k6"
+    - "pipeline burst"
+  verified_by:
+    - "Harness command and scenarios reviewed against test/load/ on 2026-09-01"
+    - "Measured dev and TEST baselines retained below for comparison"
+  common_queries:
+    - "How do I load test the backend?"
+    - "How do we validate the 4-minute generation SLO?"
+    - "What does a load-test run cost?"
+    - "Why can't I load test the Test environment API?"
+  see_also:
+    - "docs/operations/performance-testing.md"
+    - "docs/operations/slo.md"
+    - "docs/operations/e2e-testing.md"
+
+- title: "Local Development"
+  description: "Commands and setup steps for building, testing, and running the ARN Information Bulletin Platform locally"
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-04
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "Current repository scripts, project files, and local app configuration"
+  file: "docs/operations/local-development.md"
+  tags:
+    - "operations"
+    - "local-development"
+    - "commands"
+  aliases:
+    - "local setup"
+    - "developer workflow"
+    - "build commands"
+    - "test commands"
+  verified_by:
+    - "./scripts/verify.sh"
+    - "./scripts/verify.sh --full"
+    - "./scripts/docs.py check"
+    - "manual command review"
+  related_code:
+    - "package.json"
+    - "web/package.json"
+    - "ArnBulletinGenerator.slnx"
+    - "scripts/verify.sh"
+    - "scripts/docs.py"
+    - "src/ArnBulletinGenerator.Functions/"
+    - "src/ArnBulletinGenerator.Functions/local.settings.json.example"
+    - "scripts/e2e-backend.sh"
+  common_queries:
+    - "How do I run Arn locally?"
+    - "Which build and test commands should I use?"
+    - "How do I validate documentation changes?"
+  see_also:
+    - "docs/operations/solution-structure.md"
+
+- title: "Manual Environment Steps Register"
+  description: "Canonical register of manual and out-of-band steps required to stand up or maintain an Arn environment, including verification and silent invalidation rules"
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-08-27
+  review_after: 2026-10-26
+  volatility: "high"
+  source_of_truth: "deployment/README.md, docs/operations/as-built.md, docs/operations/runbook.md, docs/operations/access-and-accounts.md, docs/operations/notifications.md,"
+  file: "docs/operations/manual-steps.md"
+  tags:
+    - "operations"
+    - "manual steps"
+    - "deployment"
+    - "provisioning"
+  aliases:
+    - "manual steps"
+    - "manual deployment register"
+    - "out-of-band steps"
+  verified_by:
+    - "source-document review 2026-07-28"
+    - "./scripts/docs.py check"
+    - "Live spot-check 2026-08-12: the SWA RBAC overlay row reproduced (test/prod redirect to /.auth/login/aad, dev serves the built-in provider), ADO pipeline 108 resolved a queued run, the playout drop account ibpauetststaftp01 exists in IBP-AUE-TST-RSG-STA01, and the dev Key Vault carries SIX secrets, not the five documented: `AadClientSecret` is absent (dev never populates it) and an orphaned `webhookEndpointUrl` remains alongside its replacement `Webhook--EndpointUrl`"
+  related_code:
+    - "deployment/"
+    - "azure-pipelines.yml"
+    - "deployment/scripts/"
+  common_queries:
+    - "What manual steps must be repeated when creating or maintaining an Arn environment?"
+  see_also:
+    - "docs/operations/runbook.md"
+    - "docs/operations/as-built.md"
+    - "deployment/README.md"
+    - "docs/operations/access-and-accounts.md"
+    - "docs/operations/notifications.md"
+
+- title: "Teams Notifications"
+  description: "How the platform delivers review and failure notifications to Microsoft Teams, how to reauthorise the connection, and how to diagnose missing cards"
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-04
+  review_after: 2026-11-27
+  volatility: "medium"
+  source_of_truth: "Azure Portal Logic Apps, Teams API connections, Function App settings, and this page"
+  file: "docs/operations/notifications.md"
+  tags:
+    - "operations"
+    - "notifications"
+    - "teams"
+    - "logic-app"
+    - "webhook"
+    - "runbook"
+  aliases:
+    - "notifications"
+    - "teams cards"
+    - "approval notifications"
+    - "webhook notifications"
+  verified_by:
+    - "Azure Portal connection and workflow status"
+    - "Operational notification procedure"
+  common_queries:
+    - "How do Teams notifications work?"
+    - "How do I set up notifications in a new environment?"
+    - "Why did a notification not arrive?"
+    - "How do I reauthorise the Teams connection?"
+  see_also:
+    - "docs/operations/runbook.md"
+    - "docs/operations/as-built.md"
+
+- title: "Where the Platform Depends on ARN"
+  description: "Where platform behaviour depends on ARN-held access, ARN-owned scheduling or an ARN address, with the role, timing and consequence for each."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-04
+  review_after: 2026-12-02
+  volatility: "medium"
+  source_of_truth: "The deployed feed configuration and the playout delivery boundary"
+  file: "docs/operations/open-items.md"
+  tags:
+    - "handover"
+    - "governance"
+    - "actions"
+  aliases:
+    - "open items"
+    - "ARN actions"
+    - "what does ARN need to do"
+    - "outstanding items"
+  verified_by:
+    - "Reviewed against the delivered scope"
+  common_queries:
+    - "What does ARN still need to do?"
+    - "Who owns the outstanding items?"
+    - "What is blocking go-live?"
+
+- title: "Operator Guide"
+  description: "Practical guide for ARN content operators who review, approve and manage daily bulletins"
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-11-27
+  volatility: "medium"
+  source_of_truth: "Console labels, bulletin review workflow and support procedures"
+  file: "docs/operations/operator-guide.md"
+  tags:
+    - "operations"
+    - "operators"
+    - "handover"
+    - "bulletins"
+    - "review"
+  aliases:
+    - "operator guide"
+    - "content-team guide"
+    - "bulletin operator guide"
+  verified_by:
+    - "Console labels and operator workflow reviewed"
+    - "Review, fallback and escalation behaviour reviewed"
+    - "Station settings and wording controls reviewed"
+  common_queries:
+    - "How do I review and approve a bulletin?"
+    - "What will listeners hear if I reject a bulletin?"
+    - "How do I fix a suspect pronunciation?"
+    - "Which console setting changes the next bulletin?"
+    - "When should I escalate an issue?"
+  see_also:
+    - "docs/operations/uat-plan.md"
+    - "docs/operations/runbook.md"
+    - "docs/operations/support-model.md"
+    - "docs/reference/prompt-iteration-guide.md"
+    - "docs/reference/per-station-configuration.md"
+    - "docs/operations/first-day.md"
+
+- title: "Performance Testing"
+  description: "How to test Arn's UI performance: local Lighthouse regression harness (cold-load + runtime/JS-jank probe) and live-deployed-environment waterfall diagnosis"
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "web/scripts/perf-audit.mjs, web/scripts/perf-runtime.mjs, web/perf/, azure-pipelines.yml, and live console profiling"
+  file: "docs/operations/performance-testing.md"
+  tags:
+    - "operations"
+    - "performance"
+    - "testing"
+    - "lighthouse"
+    - "ci"
+  aliases:
+    - "performance testing"
+    - "perf audit"
+    - "lighthouse"
+    - "web vitals"
+    - "perf budgets"
+  verified_by:
+    - "npm run perf and npm run perf:runtime local smoke procedures"
+    - "Live console waterfall diagnosis procedure reviewed 2026-09-01"
+  related_code:
+    - "web/scripts/perf-audit.mjs"
+    - "web/scripts/perf-runtime.mjs"
+    - "web/scripts/ux-audit.mjs"
+    - "web/src/hooks/use-second-tick.ts"
+    - "web/src/components/ui/aceternity/aurora-hero.tsx"
+    - "web/src/components/ui/aceternity/aurora-wash.tsx"
+    - "web/vite.config.ts"
+    - "azure-pipelines.yml"
+    - "deployment/modules/static-web-app.bicep"
+    - "src/ArnBulletinGenerator.Functions/Triggers/Http/BroadcastHttpTrigger.cs"
+    - "src/ArnBulletinGenerator.Functions/Triggers/Queues/BroadcastQueueTrigger.cs"
+    - "web/src/features/jobs/api/job-hooks.ts"
+    - "web/src/pages/OnAirPage.tsx"
+  common_queries:
+    - "How do I performance test the UI?"
+    - "Why is the deployed dev app slow?"
+    - "Why does the JS/animations feel laggy?"
+    - "What are the Lighthouse performance budgets?"
+    - "How do I profile a CSS animation for jank?"
+  see_also:
+    - "docs/operations/e2e-testing.md"
+
+- title: "What This Platform Does"
+  description: "Read this first: what a traffic bulletin is, where the data comes from, who approves it, and what reaches air."
+  purpose: "overview"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "docs/canonical/architecture.md and the deployed platform"
+  file: "docs/operations/platform-overview.md"
+  tags:
+    - "handover"
+    - "overview"
+    - "operations"
+  aliases:
+    - "what does this platform do"
+    - "platform overview"
+    - "how does it work"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "What does this platform actually do?"
+    - "Where does the traffic data come from?"
+    - "Who approves a bulletin before it airs?"
+  see_also:
+    - "docs/canonical/architecture.md"
+    - "docs/operations/operator-guide.md"
+    - "docs/operations/glossary.md"
+
+- title: "Proven Capacity and Performance"
+  description: "The load the platform has been measured at, the response times it achieves, and the limits it has been tested to."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "Recorded load-test output and the bulletin records for each measured run"
+  file: "docs/operations/proven-capacity.md"
+  tags:
+    - "performance"
+    - "capacity"
+    - "assurance"
+  aliases:
+    - "capacity"
+    - "performance"
+    - "load"
+    - "how many stations"
+    - "scale"
+  verified_by:
+    - "Retained k6 output for the health and console-read scenarios"
+    - "Bulletin records for the scheduler-tick timings"
+  common_queries:
+    - "How many stations can it handle?"
+    - "How fast is a bulletin produced?"
+    - "Has it been load tested?"
+  see_also:
+    - "docs/operations/slo.md"
+    - "docs/operations/known-limitations.md"
+    - "docs/operations/dashboard-guide.md"
+
+- title: "Command Quick Reference"
+  description: "Executable Azure CLI and KQL checks for health, alerts, releases, park and resume, secret rotation, and service-level measurements"
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-11-01
+  volatility: "medium"
+  source_of_truth: "Azure Portal resources, Azure Monitor, and this quick reference"
+  file: "docs/operations/quick-reference.md"
+  tags:
+    - "operations"
+    - "runbook"
+    - "commands"
+    - "kql"
+  aliases:
+    - "quick reference"
+    - "commands"
+    - "cheat sheet"
+    - "kql"
+    - "curl health"
+  verified_by:
+    - "Operational procedure"
+  common_queries:
+    - "How do I check platform health?"
+    - "How do I park an environment?"
+    - "What is the recent-errors query?"
+  see_also:
+    - "docs/operations/runbook.md"
+    - "docs/operations/dashboard-guide.md"
+
+- title: "Run Costs: Steady-State Envelope"
+  description: "Measured Azure run costs by environment, the cost shape of running or parking an environment, vendor commercial arrangements and practical cost controls."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-04
+  review_after: 2026-11-27
+  volatility: "medium"
+  source_of_truth: "Azure Cost Management and environment operations records"
+  file: "docs/operations/run-costs.md"
+  tags:
+    - "operations"
+    - "cost"
+    - "azure"
+    - "budget"
+  aliases:
+    - "run costs"
+    - "cost envelope"
+    - "azure costs"
+    - "steady-state costs"
+  verified_by:
+    - "Cost Management actual-cost query"
+    - "Environment state review"
+  common_queries:
+    - "What does the platform cost to run?"
+    - "What does a parked environment cost?"
+    - "What vendor spend sits outside Azure?"
+    - "How do I reduce run costs?"
+  see_also:
+    - "docs/operations/runbook.md"
+    - "docs/operations/as-built.md"
+
+- title: "Operations Runbook"
+  description: "Incident response, Azure health checks, release handling, park and resume procedures, secret rotation, and audit retrieval for the ARN Information Bulletin Platform"
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-03
+  review_after: 2026-10-03
+  volatility: "medium"
+  source_of_truth: "Azure Portal resources, Azure Monitor rules, and this runbook"
+  file: "docs/operations/runbook.md"
+  tags:
+    - "operations"
+    - "runbook"
+    - "alerts"
+    - "incident-response"
+    - "on-call"
+  aliases:
+    - "runbook"
+    - "ops runbook"
+    - "on-call guide"
+    - "incident response"
+  verified_by:
+    - "Azure resource inventory and operational procedure"
+    - "2026-09-03: secret rotation table reconciled against the live vaults. OfficialFeeds--QldApiKey and Here--MapApiKey do not exist yet and are marked as creation steps; AiSettings--AzureAI--ApiKey exists but is inert and must stay empty so managed-identity auth is preserved"
+  common_queries:
+    - "An alert fired. What do I do?"
+    - "How do I deploy or roll back?"
+    - "How do I rotate a secret?"
+    - "A bulletin did not air. Why?"
+    - "How do I retrieve audit evidence?"
+  see_also:
+    - "docs/operations/as-built.md"
+    - "docs/operations/notifications.md"
+    - "docs/operations/disaster-recovery.md"
+    - "docs/operations/slo.md"
+
+- title: "SLIs and SLOs"
+  description: "Service-level indicators, objectives, targets, and executable KQL for the ARN Information Bulletin Platform"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-04
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "The service-level targets and the Log Analytics queries on this page"
+  file: "docs/operations/slo.md"
+  tags:
+    - "slo"
+    - "sli"
+    - "monitoring"
+    - "observability"
+  aliases:
+    - "slo"
+    - "sli"
+    - "service level objectives"
+  verified_by:
+    - "Operational KQL procedure"
+  common_queries:
+    - "What are the SLOs for ARN?"
+    - "How do I measure broadcast success?"
+    - "Which KQL drives the dashboards?"
+  see_also:
+    - "docs/canonical/architecture.md"
+    - "docs/operations/disaster-recovery.md"
+    - "docs/operations/dashboard-guide.md"
+
+- title: "Solution Overview"
+  description: "How the platform is put together, what each part is responsible for, and the boundaries of what it does."
+  purpose: "overview"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "The deployed platform"
+  file: "docs/operations/solution-overview.md"
+  tags:
+    - "architecture"
+    - "overview"
+  aliases:
+    - "solution overview"
+    - "how is it built"
+    - "system design"
+    - "architecture summary"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "How is the platform put together?"
+    - "What is each component responsible for?"
+    - "What is in and out of scope?"
+  see_also:
+    - "docs/canonical/architecture.md"
+    - "docs/reference/architecture-diagrams.md"
+    - "docs/operations/known-limitations.md"
+
+- title: "How the Code Is Organised"
+  description: "The six backend projects, the dependency rules between them, where the console code lives, and which tests enforce the boundaries"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "The source tree and the architecture tests in test/ArnBulletinGenerator.ArchitectureTests"
+  file: "docs/operations/solution-structure.md"
+  tags:
+    - "developer"
+    - "architecture"
+    - "codebase"
+    - "clean-architecture"
+    - "tests"
+  aliases:
+    - "solution structure"
+    - "code layout"
+    - "project structure"
+    - "layers"
+  verified_by:
+    - "Source tree read against docs/CODEMAPS/ARCHITECTURE.md and MODULES.md, 2026-09-01"
+    - "Layer rules read from test/ArnBulletinGenerator.ArchitectureTests"
+  related_code:
+    - "src/"
+    - "web/src/"
+    - "test/"
+  common_queries:
+    - "How is the code organised?"
+    - "Which project should I change?"
+    - "What are the layer rules?"
+    - "Where do the tests live?"
+  see_also:
+    - "docs/operations/local-development.md"
+    - "docs/operations/delivery-pipeline.md"
+    - "docs/canonical/architecture.md"
+
+- title: "Support Model"
+  description: "Three support tiers, vendor escalation paths, contact ownership and the operating workload for the ARN Information Bulletin Platform."
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-11-27
+  volatility: "medium"
+  source_of_truth: "The support roles, escalation paths and operating workload"
+  file: "docs/operations/support-model.md"
+  tags:
+    - "operations"
+    - "support"
+    - "escalation"
+    - "handover"
+  aliases:
+    - "support model"
+    - "escalation matrix"
+    - "support contacts"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "Who do I contact when something breaks?"
+    - "What can operators fix themselves?"
+    - "Who covers broadcast hours?"
+  see_also:
+    - "docs/operations/runbook.md"
+    - "docs/operations/access-and-accounts.md"
+    - "docs/operations/dependencies.md"
+    - "docs/operations/known-limitations.md"
+
+- title: "Acceptance Testing"
+  description: "Acceptance testing scope, participant roles, entry and exit criteria, and scenarios for ARN operators using the test environment."
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-02
+  volatility: "medium"
+  source_of_truth: "The acceptance scenarios and the deployed test environment"
+  file: "docs/operations/uat-plan.md"
+  tags:
+    - "operations"
+    - "acceptance"
+    - "testing"
+    - "test-environment"
+  aliases:
+    - "acceptance testing"
+    - "acceptance test plan"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "What does acceptance testing cover?"
+    - "What do acceptance participants do?"
+    - "Is the test environment ready for acceptance testing?"
+  see_also:
+    - "docs/operations/uat-scenario-sheet.md"
+    - "docs/operations/integration-test-plan.md"
+    - "docs/operations/runbook.md"
+
+- title: "Acceptance Scenario Template"
+  description: "Reusable template for recording acceptance scenarios, outcomes and evidence for the ARN Information Bulletin Platform."
+  purpose: "runbook"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "high"
+  source_of_truth: "The acceptance scenarios and their recorded outcomes"
+  file: "docs/operations/uat-scenario-sheet.md"
+  tags:
+    - "operations"
+    - "acceptance"
+    - "testing"
+    - "evidence"
+  aliases:
+    - "acceptance test record"
+    - "acceptance scenario sheet"
+    - "acceptance evidence"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "How do I record an acceptance scenario result?"
+    - "What evidence is required for acceptance testing?"
+  see_also:
+    - "docs/operations/uat-plan.md"
+    - "docs/operations/defect-log.md"
+    - "docs/operations/first-time-sign-in.md"
+
+- title: "Activity / Change Audit Log"
+  description: "Cross-cutting middleware-based audit trail of admin/operator config changes: what it captures, the resource table, RBAC, retention, and known gaps"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-02
+  review_after: 2026-11-07
+  volatility: "medium"
+  source_of_truth: "src/ArnBulletinGenerator.Functions/Middleware/ActivityLoggingMiddleware.cs, ActivityPathResolver.cs, ActivityHttpTrigger.cs, ActivityAuditQueueTrigger.cs; src/ArnBulletinGenerator.Infrastructure/Persistence/TableStorageActivityLogRepository.cs"
+  file: "docs/reference/activity-audit-log.md"
+  tags:
+    - "activity"
+    - "audit"
+    - "compliance"
+    - "middleware"
+    - "rbac"
+  aliases:
+    - "activity log"
+    - "change audit"
+    - "who changed"
+    - "audit trail"
+  verified_by:
+    - "./scripts/docs.py check"
+  related_code:
+    - "src/ArnBulletinGenerator.Functions/Middleware/ActivityLoggingMiddleware.cs"
+    - "src/ArnBulletinGenerator.Functions/Middleware/ActivityPathResolver.cs"
+    - "src/ArnBulletinGenerator.Functions/Triggers/Http/ActivityHttpTrigger.cs"
+    - "src/ArnBulletinGenerator.Infrastructure/Persistence/TableStorageActivityLogRepository.cs"
+    - "src/ArnBulletinGenerator.Functions/Triggers/Queues/ActivityAuditQueueTrigger.cs"
+    - "src/ArnBulletinGenerator.Functions/Triggers/Queues/ActivityAuditPoisonQueueTrigger.cs"
+    - "src/ArnBulletinGenerator.Domain/Contracts/Messages/ActivityAuditMessage.cs"
+    - "web/src/features/activity"
+    - "web/src/pages/ActivityPage.tsx"
+  common_queries:
+    - "How do I see who changed a station's config"
+    - "What does the activity log capture"
+    - "How is a change to VoiceProfileId or priority roads audited"
+    - "Why does Voice have version history but Stations doesn't"
+    - "Should every admin page show change history"
+  see_also:
+    - "docs/canonical/decisions.md"
+    - "docs/reference/per-station-configuration.md"
+
+- title: "Architecture Diagrams"
+  description: "Seven architecture figures showing the platform's boundaries, runtime flow, security and operating connections."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-01
+  review_after: 2026-12-01
+  volatility: "medium"
+  source_of_truth: "The seven published architecture figures and their reader-facing descriptions"
+  file: "docs/reference/architecture-diagrams.md"
+  tags:
+    - "architecture"
+    - "diagrams"
+    - "reference"
+  aliases:
+    - "architecture diagrams"
+    - "figures"
+    - "system diagram"
+    - "network diagram"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "What does the system look like?"
+    - "Where is the network topology diagram?"
+    - "How does a bulletin flow through the system?"
+  see_also:
+    - "docs/canonical/architecture.md"
+
+- title: "ARN Brand Guidelines (UI reference)"
+  description: "ARN branding the operator UI must follow — colours, typography, logo/Light Portal, iconography, and design principles distilled from the ARN Brand Guidelines for application to the Arn operator dashboard"
+  purpose: "reference"
+  status: "stale"
+  last_verified: 2026-07-17
+  review_after: 2026-09-01
+  volatility: "low"
+  source_of_truth: "ARN Brand Guidelines (brand creative guidelines), archived at docs/reference/assets/ARN_Brand_Guidelines.pdf"
+  file: "docs/reference/arn-brand-guidelines.md"
+  tags:
+    - "brand"
+    - "ui"
+    - "design"
+    - "frontend"
+    - "branding"
+  aliases:
+    - "ARN brand"
+    - "brand guidelines"
+    - "ARN colours"
+    - "ARN typography"
+  verified_by:
+    - "read from ARN Brand Guidelines PDF (2026-06-02)"
+    - "web/src/index.css and web/tailwind.config.js (2026-07-17)"
+  common_queries:
+    - "What colours and fonts should the UI use?"
+    - "What is ARN Purple?"
+    - "How do we brand the operator dashboard for ARN?"
+  see_also:
+    - "docs/operations/solution-overview.md"
+    - "docs/reference/assets/ARN_Brand_Guidelines.pdf"
+
+- title: "ARN Voice Candidate Demos (trained ElevenLabs voices)"
+  description: "Four ARN-produced demo renders of ONE shared generated Sydney traffic+weather bulletin script, each voiced with a different ElevenLabs trained voice (Original MVO, Younger FVO, Younger MVO, plus one unlabelled render). A voice-selection A/B reel of our OWN pipeline output — NOT ATN on-air ground truth. Audio committed under assets/voice-candidates/."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-26
+  review_after: 2026-09-26
+  volatility: "low"
+  source_of_truth: "Four ARN-produced MP3 renders (Adobe Audition 25.6 Windows, dated 2026-06-25) of one shared generated Sydney traffic+weather script, voiced with ElevenLabs trained voices; supplied via Downloads, committed 2026-06-26 under docs/reference/assets/voice-candidates/"
+  file: "docs/reference/arn-voice-candidate-demos.md"
+  tags:
+    - "voice"
+    - "elevenlabs"
+    - "voice-candidates"
+    - "voice-selection"
+    - "audio"
+    - "samples"
+  aliases:
+    - "voice candidate demos"
+    - "voice demos"
+    - "trained voice samples"
+    - "elevenlabs voice candidates"
+    - "voice ab reel"
+  verified_by:
+    - "faster-whisper medium.en transcription of all four files confirming an identical shared script, 2026-06-26"
+    - "ffprobe XMP/CreatorTool metadata inspection (Adobe Audition 25.6, dated 2026-06-25), 2026-06-26"
+  common_queries:
+    - "what do our candidate voices sound like"
+    - "which trained voices is ARN considering"
+    - "voice demo a b comparison"
+    - "where are the elevenlabs voice candidate renders"
+  see_also:
+    - "docs/reference/atn-bulletin-style-samples.md"
+
+- title: "ATN Expanded Ads-Removed Audio Corpus — 2026-07-03"
+  description: "Machine transcripts and manifest pointer for 97 ARN-supplied ads-removed ATN airchecks: KIIS 101.1 Melbourne and Gold/WSFM 101.7 Sydney."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-07-03
+  review_after: 2026-09-30
+  volatility: "low"
+  source_of_truth: "ARN-supplied Downloads zips: KIIS 1011 [MELB-Ads removed].zip and Gold 1017 [SYD-Ads removed].zip, downloaded 2026-07-03"
+  file: "docs/reference/atn-audio-corpus/2026-07-03-ads-removed-transcripts.md"
+  tags:
+    - "atn"
+    - "corpus"
+    - "audio"
+    - "transcription"
+    - "style"
+    - "samples"
+  aliases:
+    - "expanded ATN corpus"
+    - "ads removed ATN audio"
+    - "KIIS 101.1 corpus"
+    - "WSFM 101.7 corpus"
+  verified_by:
+    - "zip inventory + SHA-256 manifest generation, 2026-07-03"
+    - "faster-whisper small.en transcription, 2026-07-03"
+  common_queries:
+    - "what is in the expanded ATN audio corpus"
+    - "what do ads-removed KIIS Melbourne ATN reads say"
+    - "what do ads-removed WSFM Sydney ATN reads say"
+  see_also:
+    - "docs/reference/atn-bulletin-style-samples.md"
+    - "docs/reference/atn-audio-corpus/2026-07-03-ads-removed-manifest.csv"
+
+- title: "Sanitised ATN Traffic Bulletin Samples"
+  description: "All four ARN-supplied ATN sample corpora with sponsor reads, station wrappers, and PII stripped; traffic copy only, the ground-truth style reference for prompt tuning and bulletin evals"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-07-16
+  review_after: 2026-10-16
+  volatility: "low"
+  source_of_truth: "ARN-supplied ATN sample corpora (sanitised)"
+  file: "docs/reference/atn-bulletin-samples-sanitised.md"
+  tags:
+    - "reference"
+    - "atn"
+    - "style"
+    - "corpus"
+    - "ground-truth"
+  aliases:
+    - "atn samples"
+    - "atn corpus"
+  verified_by:
+    - "Compiled from the four ARN-supplied corpora; sanitisation reviewed at import"
+  common_queries:
+    - "What do real ATN bulletins sound like?"
+    - "Where is the ATN style ground truth?"
+
+- title: "ATN Bulletin Style Samples (ARN-provided)"
+  description: "Transcripts of real ATN traffic bulletins: 12 metro reads from the PoC (Traffic_Examples.zip, 28 Jan 2026), 9 regional/rural reads (25 Jun 2026), 62 written network-roundup reads (TRAFFIC DRIBBLE.docx, 30 Jun 2026), and 97 ads-removed Sydney/Melbourne airchecks (3 Jul 2026), with style analysis and a gap assessment against our generated scripts"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-07-03
+  review_after: 2026-09-30
+  volatility: "low"
+  source_of_truth: "Traffic_Examples.zip (ARN, 28 Jan 2026) — 12 metro MP3s under ATN_Examples/; 9 regional/rural MP3s (ARN, 25 Jun 2026): Gympie, Ipswich, Darwin, Nowra, Murray Bridge, Ballarat, Wollongong, Sunshine Coast, Townsville; TRAFFIC DRIBBLE.docx (ARN, 30 Jun 2026) — 62 written network-roundup reads across the 7 metro markets; KIIS 1011 [MELB-Ads removed].zip + Gold 1017 [SYD-Ads removed].zip (ARN, 3 Jul 2026) — 97 ads-removed full-day station airchecks with tracked manifest/transcripts under docs/reference/atn-audio-corpus/"
+  file: "docs/reference/atn-bulletin-style-samples.md"
+  tags:
+    - "style"
+    - "script-generation"
+    - "atn"
+    - "samples"
+  aliases:
+    - "atn samples"
+    - "bulletin transcripts"
+    - "style reference"
+    - "traffic examples"
+  verified_by:
+    - "whisper-base transcription, 2026-06-10 (metro)"
+    - "whisper small.en + medium.en transcription + AU road/place hand-correction, 2026-06-25 (regional)"
+    - "TRAFFIC DRIBBLE.docx ingest + market classification (sign-off + place gazetteer), 2026-06-30 (network roundup)"
+    - "zip inventory + SHA-256 manifest + faster-whisper small.en transcription, 2026-07-03 (ads-removed expanded corpus)"
+  common_queries:
+    - "what do real ARN bulletins sound like"
+    - "atn style reference"
+    - "how should generated scripts sound"
+    - "are our scripts on-style"
+
+- title: "ATN Severity-to-Phrasing Palette"
+  description: "Deterministic mapping from HERE data categories (jam factor bands, closure/crash/roadworks types) to the phrasing real ATN traffic copy uses, extracted from all 180 sanitised ATN samples; used as prompt-injection examples for the draft/polish agents"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-07-16
+  review_after: 2026-09-16
+  volatility: "low"
+  source_of_truth: "docs/reference/atn-bulletin-samples-sanitised.md (180 sanitised ATN samples)"
+  file: "docs/reference/atn-severity-phrasing-palette.md"
+  tags:
+    - "reference"
+    - "atn"
+    - "style"
+    - "phrasing"
+    - "prompts"
+  aliases:
+    - "severity palette"
+    - "phrasing palette"
+  verified_by:
+    - "Extracted programmatically from all 180 sanitised ATN samples"
+  common_queries:
+    - "What words does ATN use for heavy congestion?"
+    - "How should severity map to on-air phrasing?"
+
+- title: "ARN Azure Naming Convention"
+  description: "ARN's confirmed Azure naming convention for the Information Bulletin Platform (IBP): IBP-AUE-{ENV}-{TYPE}-APP01, resource group layout, action groups, DLs, cost alerting, and the open items still with ARN's technology lead."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-19
+  review_after: 2026-09-09
+  volatility: "low"
+  source_of_truth: "IBP-AzureNamingConvention(Production).csv v2 (ARN Technology Lead, 11 Jun 2026) + Teams call decision 11 Jun (keep APP01 segment, 'go with what's in the doco')"
+  file: "docs/reference/azure-naming-convention.md"
+  tags:
+    - "azure"
+    - "naming"
+    - "infrastructure"
+    - "environments"
+    - "convention"
+  aliases:
+    - "ARN Azure Naming Convention"
+    - "IBP Naming Convention"
+  verified_by:
+    - "IBP-AzureNamingConvention(Production).csv (ARN Technology Lead, received 10 Jun, revised 11 Jun 2026)"
+    - "Teams call (delivery team and ARN technology lead) 11 Jun 2026 — APP01 segment retained, PEP RG rolled into NTW01"
+  related_code:
+    - "deployment/main.bicep"
+    - "deployment/main.dev.bicepparam"
+  common_queries:
+    - "What is ARN's Azure naming convention?"
+    - "What will the dev/test/prod resource groups be named?"
+    - "What resource type codes does ARN use?"
+    - "What are the IBP action groups and cost alert thresholds?"
+  see_also:
+    - "deployment/main.bicep"
+    - "docs/canonical/decisions.md"
+
+- title: "Bulletin Requirements Corpus"
+  description: "The single accumulated source of truth for what a good Arn traffic bulletin is — every requirement, rule, ATN-style target, and lesson learned from ARN feedback (BFN/WALK3) and every pipeline iteration. Written so a prompt author or a workflow-lab experiment can make ONE agent aware of everything the current pipeline only enforces downstream via deterministic gates and the refine loop."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-08-10
+  review_after: 2026-09-30
+  volatility: "medium"
+  source_of_truth: "Synthesis of prompts/*.md, the 13 deterministic gates in Domain/Services + Application/Validation, ARN editorial feedback (BFN-001..022, WALK3-001..010), and the ATN corpus fingerprints in docs/reference/atn-bulletin-style-samples.md. Provenance cited inline."
+  file: "docs/reference/bulletin-requirements-corpus.md"
+  tags:
+    - "script-generation"
+    - "requirements"
+    - "atn"
+    - "style"
+    - "prompt-engineering"
+    - "corpus"
+  aliases:
+    - "bulletin requirements"
+    - "what good looks like"
+    - "bulletin rules corpus"
+    - "everything the draft must consider"
+  verified_by:
+    - "Direct read of prompts/*.md and the 13 gates in src/ArnBulletinGenerator.Domain/Services + Application/Validation, 2026-07-09"
+    - "ARN feedback docs BFN-001..022 (2026-07-01) and WALK3-001..010; ATN fingerprints in docs/reference/atn-bulletin-style-samples.md"
+  common_queries:
+    - "what must a bulletin consider"
+    - "what rules is the draft judged on"
+    - "how should an ARN bulletin sound"
+    - "what does the draft agent not know"
+    - "everything we've learned about bulletin quality"
+  see_also:
+    - "docs/reference/atn-bulletin-style-samples.md"
+    - "prompts/system.md"
+    - "prompts/draft.md"
+
+- title: "Delivery Device Map — What Measurably Changes an ElevenLabs v3 Read"
+  description: "Measured effect of every text-level delivery device on an ElevenLabs v3 station voice: 50 devices and 364 generations tested against an 8-run unchanged control with Welch t-tests. Establishes the audibility rule (a device is audible only if it inserts non-speech, shifts pitch, or changes duration), the confirmed-working tag list, the tag-placement rule, and the ceiling of text-only delivery control."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-08-05
+  review_after: 2026-09-04
+  volatility: "medium"
+  source_of_truth: "Measurement run 2026-08-05 against the deployed dev voice; raw dataset delivery-device-map.json"
+  file: "docs/reference/delivery-device-map.md"
+  tags:
+    - "delivery"
+    - "audio-tags"
+    - "elevenlabs"
+    - "measurement"
+    - "prompt"
+    - "voice"
+  aliases:
+    - "audio tag map"
+    - "tag effectiveness"
+    - "delivery devices"
+  verified_by:
+    - "364 generations"
+    - "Welch t-test vs 8-run control; operator ear-confirmation of 23 devices"
+  related_code:
+    - "prompts/delivery-writer.md"
+    - "web/src/features/delivery/cues.ts"
+    - "src/ArnBulletinGenerator.Domain/Models/DeliveryStyle.cs"
+  common_queries:
+    - "Which ElevenLabs audio tags actually work?"
+    - "Why does the delivery style have no audible effect?"
+    - "Where should an audio tag be placed in the script?"
+
+- title: "Foundry role agents"
+  description: "How Arn pipeline roles route through Foundry prompt agents or the raw model, including the conversational workflow agents, Content Rewrite, and where their prompts and reasoning effort come from"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-08-30
+  review_after: 2026-09-18
+  volatility: "medium"
+  source_of_truth: "AzureAIOptions.AgentNameFor + ResponsesTransport.DispatchLlmAsync (code); prompts/ (instructions); deployment/scripts/provision-foundry-agents.sh (Safety/Director) + deployment/scripts/provision-workflow-agents.sh (workflow agents) + check-foundry-agent-drift.sh (deployment parity)"
+  file: "docs/reference/foundry-role-agents.md"
+  tags:
+    - "foundry"
+    - "agents"
+    - "llm"
+    - "pipeline"
+    - "transparency"
+  aliases:
+    - "role agents"
+    - "foundry agents"
+    - "agent routing"
+  verified_by:
+    - "Source review of AzureAIOptions, ResponsesTransport, and both provisioning scripts 2026-08-30"
+    - "Live dev Foundry agent inventory and app-setting verification 2026-08-30"
+  common_queries:
+    - "Which pipeline roles call a Foundry agent vs the raw model?"
+    - "Where is the source of truth for the safety agent prompt?"
+    - "Which role agents does the provisioner manage?"
+
+- title: "HERE staleness landscape — quantified across 7 markets vs official sources (2026-08-17)"
+  description: "Measurement study backing the Wave-3 corroboration decision: window-class distribution, closure staleness, 12-hour persistence, bidirectional official-feed corroboration (NSW+QLD), the entry-freshness re-entry loophole, and flow self-contradiction rates."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-08-17
+  review_after: 2026-09-16
+  volatility: "medium"
+  source_of_truth: "Live HERE Traffic API v7 + Live Traffic NSW open feeds + QLDTraffic GeoJSON API, captured 2026-08-17T05:55Z"
+  file: "docs/reference/here-staleness-landscape-quantified-across-7-markets-vs-official-sources-2026-08-17.md"
+  tags:
+    - "here"
+    - "data-quality"
+    - "staleness"
+    - "corroboration"
+    - "measurement"
+  aliases:
+    - "HERE staleness landscape — quantified across 7 markets vs official sources (2026-08-17)"
+  verified_by:
+    - "manual review"
+  common_queries:
+    - "When should I read HERE staleness landscape — quantified across 7 markets vs official sources (2026-08-17)?"
+
+- title: "Job Table Storage Schema"
+  description: "The radioJobs Azure Table Storage row contract (JobEntity) for non-C# consumers: partition/row key scheme, every column's .NET type/nullability/JSON-vs-scalar shape, the six-column gzip-compression contract with its gz: sentinel and 30,000-char cap, source-fetch diagnostics, ETag/ConcurrencyFingerprint semantics, and the drop-on-incompressible-oversize caveat. Read by the Python harvest/eval tooling that parses these columns directly."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-02
+  review_after: 2026-10-31
+  volatility: "medium"
+  source_of_truth: "src/ArnBulletinGenerator.Infrastructure/Persistence/JobEntity.cs, JobEntityMapper.cs, TableStorageJobRepository.cs"
+  file: "docs/reference/job-table-schema.md"
+  tags:
+    - "persistence"
+    - "table-storage"
+    - "schema"
+    - "jobs"
+    - "python-tooling"
+  aliases:
+    - "job entity schema"
+    - "radioJobs table schema"
+    - "JobEntity columns"
+    - "job storage columns"
+  verified_by:
+    - "manual source review"
+    - "./scripts/docs.py check"
+    - "test/ArnBulletinGenerator.Infrastructure.Tests/Persistence/JobTableSchemaDocTests.cs"
+  common_queries:
+    - "What columns does the radioJobs table have?"
+    - "How is a compressed JobEntity column decoded?"
+    - "What is the ConcurrencyFingerprint used for?"
+
+- title: "Station Settings"
+  description: "The settings an operator or administrator can use to control a station's voice, delivery, pronunciation, content, roads, editorial rules, schedule and licence area"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-02
+  review_after: 2026-11-27
+  volatility: "medium"
+  source_of_truth: "Console station, voice, delivery, pronunciation and bulletin-rule settings"
+  file: "docs/reference/per-station-configuration.md"
+  tags:
+    - "configuration"
+    - "schedules"
+    - "delivery-style"
+    - "pronunciation"
+    - "guidance"
+    - "safety"
+    - "content-sources"
+    - "per-station"
+  aliases:
+    - "station settings"
+    - "station configuration"
+    - "voice, delivery and pronunciation settings"
+    - "bulletin settings"
+  verified_by:
+    - "Console labels and station setting behaviour reviewed"
+    - "Version history and next-bulletin behaviour reviewed"
+    - "Operational examples checked against the station settings screens"
+  common_queries:
+    - "What settings can be changed for a station?"
+    - "Which station setting changes the next bulletin?"
+    - "How do voice, delivery and pronunciation settings work?"
+    - "How does a station choose its content and priority roads?"
+    - "How can bulletin wording change without a code change?"
+  see_also:
+    - "docs/canonical/architecture.md"
+    - "docs/reference/prompt-iteration-guide.md"
+    - "docs/operations/operator-guide.md"
+
+- title: "Playout Delivery Defect Classes"
+  description: "The five recurring defect classes behind the 2026-08-11 dead-air findings: a status that changed while the file did not move, a stale revision passed to a guarded call, a promise nothing keeps, a null that disables a safety net, and an action the UI offers that the domain refuses. Each with the audited instances, what was fixed, and what remains open."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-08-12
+  review_after: 2026-09-10
+  volatility: "medium"
+  source_of_truth: "Source audit of src/ and web/src on 2026-08-11, plus deployed containment verification on 2026-08-12"
+  file: "docs/reference/playout-delivery-defect-classes.md"
+  tags:
+    - "delivery"
+    - "playout"
+    - "fallback"
+    - "audit"
+    - "dead-air"
+  aliases:
+    - "dead air classes"
+    - "delivery defect classes"
+    - "why did the slot air nothing"
+  verified_by:
+    - "five read-only source audits, one per class"
+    - "dev verification: sha256(drop file) == sha256(chosen audio) across five delivery paths"
+    - "test verification: publish completed with delivery disabled before audio download or writer invocation"
+  related_code:
+    - "src/ArnBulletinGenerator.Application/Jobs/JobService.cs"
+    - "src/ArnBulletinGenerator.Application/Scheduling/JobWatchdog.cs"
+    - "src/ArnBulletinGenerator.Application/Broadcasting/BroadcastOrchestrator.cs"
+    - "web/src/features/onair/lib/air-plan.ts"
+  common_queries:
+    - "Why did a covered slot air nothing?"
+    - "Which paths deliver audio to playout?"
+    - "What does an ad-hoc bulletin not get?"
+    - "Why did approve not send the bulletin?"
+
+- title: "Changing What Bulletins Say"
+  description: "How to change bulletin wording through Bulletin rules, preview a station writer-prompt edit, choose the right scope and confirm the result on air"
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-09-02
+  review_after: 2026-11-28
+  volatility: "medium"
+  source_of_truth: "Console guidance, station writer-prompt and bulletin review controls"
+  file: "docs/reference/prompt-iteration-guide.md"
+  tags:
+    - "reference"
+    - "quality"
+    - "guidance"
+    - "writer-prompt"
+    - "handover"
+  aliases:
+    - "changing bulletin wording"
+    - "bulletin style guide"
+    - "quality changes"
+  verified_by:
+    - "Current Bulletin rules station picker and Writer prompt workflow reviewed"
+    - "Preview and version-history behaviour reviewed"
+    - "Station-specific scope and next-bulletin behaviour reviewed"
+  common_queries:
+    - "How do I change how bulletins are written?"
+    - "Do I need a developer to change the tone?"
+    - "How do I preview a wording change before it airs?"
+    - "What is the difference between guidance and writer-prompt sections?"
+  see_also:
+    - "docs/operations/operator-guide.md"
+    - "docs/reference/per-station-configuration.md"
+
+- title: "ARN Pronunciation Guides — Index"
+  description: "Index of the per-market place-name pronunciation guides that seed each ARN station's ElevenLabs eleven_v3 alias pronunciation dictionary."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-26
+  review_after: 2026-09-24
+  volatility: "low"
+  source_of_truth: "Per-market guides in this directory; web research cited per entry; respellings auditioned in the ElevenLabs studio before air"
+  file: "docs/reference/pronunciation/README.md"
+  tags:
+    - "pronunciation"
+    - "reference"
+    - "tts"
+    - "index"
+  aliases:
+    - "pronunciation guides"
+    - "place name pronunciation"
+    - "pronunciation dictionary research"
+  verified_by:
+    - "web research (sources cited per entry in each market guide)"
+    - "orchestrator spot-check verification (2026-06-26)"
+  common_queries:
+    - "Where is the researched pronunciation data for each ARN market?"
+    - "What suburb and road respellings should a market's pronunciation dictionary contain?"
+    - "How do we decide ElevenLabs alias respellings for a station?"
+  see_also:
+    - "docs/reference/pronunciation/sydney.md"
+    - "docs/reference/pronunciation/melbourne.md"
+    - "docs/reference/per-station-configuration.md"
+
+- title: "Adelaide (KIIS 102.3) Pronunciation Guide"
+  description: "Locally-correct pronunciations and ElevenLabs alias respellings for Greater Adelaide suburbs, roads and landmarks used in the KIIS 102.3 ARN traffic bulletin."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-26
+  review_after: 2026-09-24
+  volatility: "low"
+  source_of_truth: "Web research cited per entry; respellings auditioned in the ElevenLabs studio before air"
+  file: "docs/reference/pronunciation/adelaide.md"
+  tags:
+    - "pronunciation"
+    - "adelaide"
+    - "sa"
+    - "reference"
+    - "tts"
+  aliases:
+    - "adelaide pronunciation"
+    - "kiis 102.3 place names"
+    - "south australia road pronunciation"
+  verified_by:
+    - "web research (sources cited per entry)"
+    - "orchestrator spot-check verification"
+  common_queries:
+    - "How do you pronounce an Adelaide suburb on air?"
+    - "What alias respelling does the Adelaide bulletin use for a road name?"
+
+- title: "Brisbane (KIIS 97.3) Pronunciation Guide"
+  description: "Locally-correct pronunciations and ElevenLabs alias respellings for Greater Brisbane suburbs, roads and landmarks used in the KIIS 97.3 ARN traffic bulletin."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-26
+  review_after: 2026-09-24
+  volatility: "low"
+  source_of_truth: "Web research cited per entry; respellings auditioned in the ElevenLabs studio before air"
+  file: "docs/reference/pronunciation/brisbane.md"
+  tags:
+    - "pronunciation"
+    - "brisbane"
+    - "qld"
+    - "reference"
+    - "tts"
+  aliases:
+    - "brisbane pronunciation"
+    - "kiis 97.3 place names"
+    - "queensland road pronunciation"
+  verified_by:
+    - "web research (sources cited per entry)"
+    - "orchestrator spot-check verification"
+  common_queries:
+    - "How do you pronounce a Brisbane suburb on air?"
+    - "What alias respelling does the Brisbane bulletin use for a road name?"
+
+- title: "Darwin (Hot 100) Pronunciation Guide"
+  description: "Locally-correct pronunciations and ElevenLabs alias respellings for Darwin and Palmerston suburbs, roads and landmarks used in the Hot 100 ARN traffic bulletin."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-26
+  review_after: 2026-09-24
+  volatility: "low"
+  source_of_truth: "Web research cited per entry; respellings auditioned in the ElevenLabs studio before air"
+  file: "docs/reference/pronunciation/darwin.md"
+  tags:
+    - "pronunciation"
+    - "darwin"
+    - "nt"
+    - "reference"
+    - "tts"
+  aliases:
+    - "darwin pronunciation"
+    - "hot 100 place names"
+    - "northern territory road pronunciation"
+  verified_by:
+    - "web research (sources cited per entry)"
+    - "orchestrator spot-check verification"
+  common_queries:
+    - "How do you pronounce a Darwin suburb on air?"
+    - "What alias respelling does the Darwin bulletin use for a road name?"
+
+- title: "Gold Coast (Hot Tomato 102.9) Pronunciation Guide"
+  description: "Locally-correct pronunciations and ElevenLabs alias respellings for Gold Coast suburbs, roads and landmarks used in the Hot Tomato 102.9 ARN traffic bulletin."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-26
+  review_after: 2026-09-24
+  volatility: "low"
+  source_of_truth: "Web research cited per entry; respellings auditioned in the ElevenLabs studio before air"
+  file: "docs/reference/pronunciation/goldcoast.md"
+  tags:
+    - "pronunciation"
+    - "goldcoast"
+    - "qld"
+    - "reference"
+    - "tts"
+  aliases:
+    - "gold coast pronunciation"
+    - "hot tomato 102.9 place names"
+    - "gold coast road pronunciation"
+  verified_by:
+    - "web research (sources cited per entry)"
+    - "orchestrator spot-check verification"
+  common_queries:
+    - "How do you pronounce a Gold Coast suburb on air?"
+    - "What alias respelling does the Gold Coast bulletin use for a road name?"
+
+- title: "Melbourne (KIIS 101.1) Pronunciation Guide"
+  description: "Locally-correct pronunciations and ElevenLabs alias respellings for Greater Melbourne suburbs, roads and landmarks used in the KIIS 101.1 ARN traffic bulletin."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-26
+  review_after: 2026-09-24
+  volatility: "low"
+  source_of_truth: "Web research cited per entry; respellings auditioned in the ElevenLabs studio before air"
+  file: "docs/reference/pronunciation/melbourne.md"
+  tags:
+    - "pronunciation"
+    - "melbourne"
+    - "vic"
+    - "reference"
+    - "tts"
+  aliases:
+    - "melbourne pronunciation"
+    - "kiis 101.1 place names"
+    - "victoria road pronunciation"
+  verified_by:
+    - "web research (sources cited per entry)"
+    - "orchestrator spot-check verification"
+  common_queries:
+    - "How do you pronounce a Melbourne suburb on air?"
+    - "What alias respelling does the Melbourne bulletin use for a road name?"
+
+- title: "Mildura (River 1467) Pronunciation Guide"
+  description: "Locally-correct pronunciations and ElevenLabs alias respellings for Mildura and Sunraysia suburbs, roads and landmarks used in the River 1467 ARN traffic bulletin."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-26
+  review_after: 2026-09-24
+  volatility: "low"
+  source_of_truth: "Web research cited per entry; respellings auditioned in the ElevenLabs studio before air"
+  file: "docs/reference/pronunciation/mildura.md"
+  tags:
+    - "pronunciation"
+    - "mildura"
+    - "vic"
+    - "reference"
+    - "tts"
+  aliases:
+    - "mildura pronunciation"
+    - "river 1467 place names"
+    - "sunraysia road pronunciation"
+  verified_by:
+    - "web research (sources cited per entry)"
+    - "orchestrator spot-check verification"
+  common_queries:
+    - "How do you pronounce a Mildura/Sunraysia locality on air?"
+    - "What alias respelling does the Mildura bulletin use for a road name?"
+
+- title: "Perth (Gold 96FM) Pronunciation Guide"
+  description: "Locally-correct pronunciations and ElevenLabs alias respellings for Greater Perth suburbs, roads and landmarks used in the Gold 96FM ARN traffic bulletin."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-26
+  review_after: 2026-09-24
+  volatility: "low"
+  source_of_truth: "Web research cited per entry; respellings auditioned in the ElevenLabs studio before air"
+  file: "docs/reference/pronunciation/perth.md"
+  tags:
+    - "pronunciation"
+    - "perth"
+    - "wa"
+    - "reference"
+    - "tts"
+  aliases:
+    - "perth pronunciation"
+    - "gold 96fm place names"
+    - "western australia road pronunciation"
+  verified_by:
+    - "web research (sources cited per entry)"
+    - "orchestrator spot-check verification"
+  common_queries:
+    - "How do you pronounce a Perth suburb on air?"
+    - "What alias respelling does the Perth bulletin use for a road name?"
+
+- title: "Port Augusta (5AU 97.9) Pronunciation Guide"
+  description: "Locally-correct pronunciations and ElevenLabs alias respellings for Port Augusta and upper Spencer Gulf localities, roads and landmarks used in the 5AU 97.9 ARN traffic bulletin."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-26
+  review_after: 2026-09-24
+  volatility: "low"
+  source_of_truth: "Web research cited per entry; respellings auditioned in the ElevenLabs studio before air"
+  file: "docs/reference/pronunciation/portaugusta.md"
+  tags:
+    - "pronunciation"
+    - "portaugusta"
+    - "sa"
+    - "reference"
+    - "tts"
+  aliases:
+    - "port augusta pronunciation"
+    - "5au place names"
+    - "flinders ranges road pronunciation"
+  verified_by:
+    - "web research (sources cited per entry)"
+    - "orchestrator spot-check verification"
+  common_queries:
+    - "How do you pronounce a Port Augusta / Flinders locality on air?"
+    - "What alias respelling does the Port Augusta bulletin use for a place name?"
+
+- title: "Port Lincoln (Magic FM 89.9) Pronunciation Guide"
+  description: "Locally-correct pronunciations and ElevenLabs alias respellings for Port Lincoln and Eyre Peninsula localities, roads and landmarks used in the Magic FM 89.9 ARN traffic bulletin."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-26
+  review_after: 2026-09-24
+  volatility: "low"
+  source_of_truth: "Web research cited per entry; respellings auditioned in the ElevenLabs studio before air"
+  file: "docs/reference/pronunciation/portlincoln.md"
+  tags:
+    - "pronunciation"
+    - "portlincoln"
+    - "sa"
+    - "reference"
+    - "tts"
+  aliases:
+    - "port lincoln pronunciation"
+    - "magic fm 89.9 place names"
+    - "eyre peninsula road pronunciation"
+  verified_by:
+    - "web research (sources cited per entry)"
+    - "orchestrator spot-check verification"
+  common_queries:
+    - "How do you pronounce an Eyre Peninsula locality on air?"
+    - "What alias respelling does the Port Lincoln bulletin use for a place name?"
+
+- title: "Queenstown (7XS 92.1) Pronunciation Guide"
+  description: "Locally-correct pronunciations and ElevenLabs alias respellings for Queenstown and West Coast Tasmania localities, roads and landmarks used in the 7XS 92.1 ARN traffic bulletin."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-26
+  review_after: 2026-09-24
+  volatility: "low"
+  source_of_truth: "Web research cited per entry; respellings auditioned in the ElevenLabs studio before air"
+  file: "docs/reference/pronunciation/queenstown.md"
+  tags:
+    - "pronunciation"
+    - "queenstown"
+    - "tas"
+    - "reference"
+    - "tts"
+  aliases:
+    - "queenstown tasmania pronunciation"
+    - "7xs place names"
+    - "west coast tasmania road pronunciation"
+  verified_by:
+    - "web research (sources cited per entry)"
+    - "orchestrator spot-check verification"
+  common_queries:
+    - "How do you pronounce a West Coast Tasmania locality on air?"
+    - "What alias respelling does the Queenstown bulletin use for a place name?"
+
+- title: "Sydney (KIIS 90s SYD) Pronunciation Guide"
+  description: "Locally-correct pronunciations and ElevenLabs alias respellings for Greater Sydney suburbs, roads and landmarks used in the KIIS 90s SYD traffic bulletin."
+  purpose: "reference"
+  status: "current"
+  last_verified: 2026-06-26
+  review_after: 2026-09-24
+  volatility: "low"
+  source_of_truth: "Web research cited per entry; respellings auditioned in the ElevenLabs studio before air"
+  file: "docs/reference/pronunciation/sydney.md"
+  tags:
+    - "pronunciation"
+    - "sydney"
+    - "nsw"
+    - "reference"
+    - "tts"
+  aliases:
+    - "sydney pronunciation"
+    - "kiis 90s syd place names"
+    - "nsw road pronunciation"
+  verified_by:
+    - "web research (sources cited per entry)"
+    - "orchestrator spot-check verification"
+  common_queries:
+    - "How do you pronounce a Sydney suburb on air?"
+    - "What alias respelling does the Sydney bulletin use for a road name?"

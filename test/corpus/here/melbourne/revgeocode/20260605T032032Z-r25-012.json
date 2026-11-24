@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:33.573409+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.98259,145.03356\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "97 Reserve Rd, Beaumaris VIC 3193, Australia",
+          "id": "here:af:streetsection:oa2tz5pwG4e8-NkbLAIQkB:CggIBCDjotqgARABGgI5Nw",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "97 Reserve Rd, Beaumaris VIC 3193, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Beaumaris",
+            "street": "Reserve Rd",
+            "postalCode": "3193",
+            "houseNumber": "97"
+          },
+          "position": {
+            "lat": -37.98256,
+            "lng": 145.03324
+          },
+          "access": [
+            {
+              "lat": -37.98259,
+              "lng": 145.03356
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 145.03151,
+            "south": -37.99307,
+            "east": 145.03584,
+            "north": -37.97124
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

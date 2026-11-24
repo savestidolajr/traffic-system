@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:35.9972319+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.79197,144.99034\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "191 Gold St, Clifton Hill VIC 3068, Australia",
+          "id": "here:af:streetsection:HyW7O-h-4-brVKB.z9kGiC:CggIBCCtwpugARABGgMxOTE",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "191 Gold St, Clifton Hill VIC 3068, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Clifton Hill",
+            "street": "Gold St",
+            "postalCode": "3068",
+            "houseNumber": "191"
+          },
+          "position": {
+            "lat": -37.79209,
+            "lng": 144.99011
+          },
+          "access": [
+            {
+              "lat": -37.79211,
+              "lng": 144.99032
+            }
+          ],
+          "distance": 16,
+          "mapView": {
+            "west": 144.99001,
+            "south": -37.79417,
+            "east": 144.99083,
+            "north": -37.78877
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

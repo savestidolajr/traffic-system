@@ -1,0 +1,98 @@
+{
+  "label": "sydney-d41fb7d4",
+  "market": "sydney",
+  "sourceJobId": "d41fb7d4d1e748a8aecf42e9c6fd7e83",
+  "sourceCapture": "job-diagnostics/d41fb7d4d1e748a8aecf42e9c6fd7e83/llm_calls/060842.003-Draft-attempt1.json",
+  "promptSha": null,
+  "items": [
+    {
+      "category": "congestion",
+      "evidenceIds": [
+        "r5:delayMinutes"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Parramatta Road is backed up, adding six minutes."
+        },
+        {
+          "style": "standard",
+          "text": "Parramatta Road is seeing a slower run, adding about six minutes."
+        }
+      ]
+    },
+    {
+      "category": "closure",
+      "evidenceIds": [
+        "r7:detail",
+        "r7:direction",
+        "r7:suburb"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Sir Reginald Ansett Drive is closed northbound in Mascot."
+        },
+        {
+          "style": "standard",
+          "text": "Northbound Sir Reginald Ansett Drive is closed through Mascot."
+        }
+      ]
+    },
+    {
+      "category": "closure",
+      "evidenceIds": [
+        "r3:detail",
+        "r3:suburb"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "There's another closure on Mamre Road in Orchard Hills."
+        },
+        {
+          "style": "standard",
+          "text": "There's also a closure affecting Mamre Road in Orchard Hills."
+        },
+        {
+          "style": "continuation",
+          "text": "And there's another closure on Mamre Road in Orchard Hills."
+        }
+      ]
+    },
+    {
+      "category": "weather",
+      "evidenceIds": [
+        "weather:condition",
+        "weather:temperature"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Sunny, 16 degrees."
+        },
+        {
+          "style": "standard",
+          "text": "Sunny skies, with temperatures at 16 degrees."
+        }
+      ]
+    },
+    {
+      "category": "general_flow",
+      "evidenceIds": [
+        "goodrun:M4 Service Centre",
+        "goodrun:M5 South Western Motorway"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Clear at the M4 Service Centre and on the M5 South Western Motorway."
+        },
+        {
+          "style": "standard",
+          "text": "It's a clear run at the M4 Service Centre and along the M5 South Western Motorway."
+        }
+      ]
+    }
+  ]
+}

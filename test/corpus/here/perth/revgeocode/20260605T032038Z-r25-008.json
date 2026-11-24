@@ -1,0 +1,55 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:38.9736579+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.73351,115.81729\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "125L Caporn St, Mariginiup WA 6078, Australia",
+          "id": "here:af:streetsection:9SBmadWrXLo1jHGA9KS3ZC:CggIBCDgvaDEARABGgQxMjVM",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "125L Caporn St, Mariginiup WA 6078, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Mariginiup",
+            "street": "Caporn St",
+            "postalCode": "6078",
+            "houseNumber": "125L"
+          },
+          "position": {
+            "lat": -31.73103,
+            "lng": 115.81704
+          },
+          "access": [
+            {
+              "lat": -31.73351,
+              "lng": 115.81704
+            }
+          ],
+          "distance": 24,
+          "mapView": {
+            "west": 115.80446,
+            "south": -31.73359,
+            "east": 115.82918,
+            "north": -31.733
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

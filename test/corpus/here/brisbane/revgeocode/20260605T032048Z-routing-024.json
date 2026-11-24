@@ -1,0 +1,47 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032048Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:49.5598394+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.59774,152.94645\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Centenary Cycleway, Richlands QLD 4077, Australia",
+          "id": "here:af:streetsection:B4Eo7VVx2nUYtTjkXGZMKA",
+          "resultType": "street",
+          "address": {
+            "label": "Centenary Cycleway, Richlands QLD 4077, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Richlands",
+            "street": "Centenary Cycleway",
+            "postalCode": "4077"
+          },
+          "position": {
+            "lat": -27.59774,
+            "lng": 152.94645
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 152.94402,
+            "south": -27.6039,
+            "east": 152.94983,
+            "north": -27.5816
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

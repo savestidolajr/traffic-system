@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032040Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:40.6388979+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.95086,115.98681\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Grogan Rd, High Wycombe WA 6057, Australia",
+          "id": "here:af:streetsection:1KUESVmx2IZTVSjV4FhUKC",
+          "resultType": "street",
+          "address": {
+            "label": "Grogan Rd, High Wycombe WA 6057, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "High Wycombe",
+            "street": "Grogan Rd",
+            "postalCode": "6057"
+          },
+          "position": {
+            "lat": -31.95086,
+            "lng": 115.98681
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.98679,
+            "south": -31.95105,
+            "east": 115.9883,
+            "north": -31.95086
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032048Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:49.7189633+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.60008,153.08309\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Warrigal Rd, Runcorn QLD 4113, Australia",
+          "id": "here:af:streetsection:Q56vsjGxx.fc1jBmrJeFOD",
+          "resultType": "street",
+          "address": {
+            "label": "Warrigal Rd, Runcorn QLD 4113, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Runcorn",
+            "street": "Warrigal Rd",
+            "postalCode": "4113"
+          },
+          "position": {
+            "lat": -27.60008,
+            "lng": 153.08309
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 153.08309,
+            "south": -27.60008,
+            "east": 153.09071,
+            "north": -27.58732
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

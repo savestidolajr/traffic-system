@@ -1,0 +1,73 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "routing",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.6452254+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://router.hereapi.com/v8/routes?transportMode=car\u0026origin=-37.741440,144.909880\u0026destination=-37.742520,144.919380\u0026departureTime=2026-06-05T03:20:36.4555007\u002B00:00\u0026return=summary,typicalDuration\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "routes": [
+        {
+          "id": "27829d4a-ce34-471a-aa38-43deb9af65a2",
+          "sections": [
+            {
+              "id": "72c9bb19-d6b3-4fd7-b4b5-78749d8e47d7",
+              "type": "vehicle",
+              "departure": {
+                "time": "2026-06-05T13:20:36\u002B10:00",
+                "place": {
+                  "type": "place",
+                  "location": {
+                    "lat": -37.7414401,
+                    "lng": 144.9098799
+                  },
+                  "originalLocation": {
+                    "lat": -37.7414401,
+                    "lng": 144.9098799
+                  }
+                }
+              },
+              "arrival": {
+                "time": "2026-06-05T13:26:22\u002B10:00",
+                "place": {
+                  "type": "place",
+                  "location": {
+                    "lat": -37.74252,
+                    "lng": 144.91938
+                  },
+                  "originalLocation": {
+                    "lat": -37.74252,
+                    "lng": 144.91938
+                  }
+                }
+              },
+              "summary": {
+                "duration": 346,
+                "length": 2602,
+                "baseDuration": 271,
+                "typicalDuration": 342
+              },
+              "notices": [
+                {
+                  "title": "Violated road that is blocked, due to a traffic incident, \u0060avoid[areas]\u0060, or \u0060avoid[segments]\u0060.",
+                  "code": "violatedBlockedRoad",
+                  "severity": "critical"
+                }
+              ],
+              "transport": {
+                "mode": "car"
+              }
+            }
+          ]
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

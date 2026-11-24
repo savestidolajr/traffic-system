@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.2892894+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.80804,145.07112\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "77 Gordon St, Balwyn VIC 3103, Australia",
+          "id": "here:af:streetsection:o0vUmvoq7m-y.wHzcITSpA:CggIBCDH-6KgARABGgI3Nw",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "77 Gordon St, Balwyn VIC 3103, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Balwyn",
+            "street": "Gordon St",
+            "postalCode": "3103",
+            "houseNumber": "77"
+          },
+          "position": {
+            "lat": -37.80787,
+            "lng": 145.07117
+          },
+          "access": [
+            {
+              "lat": -37.80804,
+              "lng": 145.07113
+            }
+          ],
+          "distance": 1,
+          "mapView": {
+            "west": 145.06145,
+            "south": -37.80935,
+            "east": 145.08202,
+            "north": -37.80644
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

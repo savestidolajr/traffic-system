@@ -1,0 +1,55 @@
+{
+  "Market": "adelaide",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032041Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:42.5149314+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-34.87896,138.68431\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "28 Papagni Ave, Newton SA 5074, Australia",
+          "id": "here:af:streetsection:ifxG9EqsK9fHaNmvwv4B.A:CggIBCCj96ShARABGgIyOA",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "28 Papagni Ave, Newton SA 5074, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "SA",
+            "state": "South Australia",
+            "city": "Adelaide",
+            "district": "Newton",
+            "street": "Papagni Ave",
+            "postalCode": "5074",
+            "houseNumber": "28"
+          },
+          "position": {
+            "lat": -34.87932,
+            "lng": 138.6842
+          },
+          "access": [
+            {
+              "lat": -34.87897,
+              "lng": 138.68416
+            }
+          ],
+          "distance": 14,
+          "mapView": {
+            "west": 138.68021,
+            "south": -34.8792,
+            "east": 138.68494,
+            "north": -34.87896
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.3649177+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94688,115.93946\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "28 Belvidere St, Belmont WA 6104, Australia",
+          "id": "here:af:streetsection:EanDvKHkhC.eDxa9J9sbaA:CggIBCCRwOmhARABGgIyOA",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "28 Belvidere St, Belmont WA 6104, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Belmont",
+            "street": "Belvidere St",
+            "postalCode": "6104",
+            "houseNumber": "28"
+          },
+          "position": {
+            "lat": -31.94715,
+            "lng": 115.93967
+          },
+          "access": [
+            {
+              "lat": -31.94693,
+              "lng": 115.93941
+            }
+          ],
+          "distance": 7,
+          "mapView": {
+            "west": 115.93697,
+            "south": -31.94902,
+            "east": 115.94198,
+            "north": -31.94473
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

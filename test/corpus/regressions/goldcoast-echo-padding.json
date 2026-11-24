@@ -1,0 +1,203 @@
+{
+  "Label": "goldcoast-echo-padding",
+  "Reason": "All-clear read, 0 corridors: the under-slot expand refine restated the same four good-run roads three times (100 words for a 30s slot). Reported by Ben, 2026-08-03.",
+  "SourceJobId": "fa754637c1b442748551adb42fa7e41c",
+  "OriginalScript": "No major delays across the Gold Coast overnight \u2014 Gooding Drive and Markeri Street are moving nicely, with a clear run along Burleigh Road. Benowa Road\u0027s looking good as well. Across these key Gold Coast routes, traffic is keeping a steady pace, with no dramas reported on Gooding Drive, Markeri Street, Burleigh Road or Benowa Road. It\u0027s a straightforward run for motorists using those roads overnight, with the network looking good and no major hold-ups to report.",
+  "CapturedAtUtc": "2026-08-03T04:39:53.81843+00:00",
+  "Snapshot": {
+    "TargetDurationSeconds": 30,
+    "Location": "Gold Coast",
+    "City": null,
+    "MarketId": "goldcoast",
+    "Content": {
+      "Traffic": true,
+      "Weather": false,
+      "Fuel": false,
+      "HasAnySource": true
+    },
+    "Corridors": [],
+    "MonitoredRoutes": [],
+    "GoodRunRoads": [
+      "Gooding Drive",
+      "Markeri Street",
+      "Burleigh Road",
+      "Benowa Road",
+      "Cotlew Street",
+      "Queen Street"
+    ],
+    "FlowPool": [
+      {
+        "RoadName": "Gooding Drive",
+        "JamFactor": 0,
+        "LengthMeters": 4704,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Markeri Street",
+        "JamFactor": 0.6,
+        "LengthMeters": 4231,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Burleigh Road",
+        "JamFactor": 1.8,
+        "LengthMeters": 3607,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Benowa Road",
+        "JamFactor": 1.5,
+        "LengthMeters": 2537,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Cotlew Street",
+        "JamFactor": 0.9,
+        "LengthMeters": 2337,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Queen Street",
+        "JamFactor": 2,
+        "LengthMeters": 2309,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Garden Grove",
+        "JamFactor": 0,
+        "LengthMeters": 2273,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Nerang-Broadbeach Road",
+        "JamFactor": 0,
+        "LengthMeters": 2265,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Nielsens Road",
+        "JamFactor": 0,
+        "LengthMeters": 2130,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Ashmore Road",
+        "JamFactor": 0.1,
+        "LengthMeters": 2052,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Heeb Street",
+        "JamFactor": 0,
+        "LengthMeters": 1885,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Surfers Paradise Boulevard",
+        "JamFactor": 0.6,
+        "LengthMeters": 1724,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Fremar Street",
+        "JamFactor": 0,
+        "LengthMeters": 1702,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Nind Street",
+        "JamFactor": 0.7,
+        "LengthMeters": 1587,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Via Roma",
+        "JamFactor": 1.5,
+        "LengthMeters": 1452,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Birmingham Road",
+        "JamFactor": 0,
+        "LengthMeters": 1346,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Boomerang Crescent",
+        "JamFactor": 0.4,
+        "LengthMeters": 1290,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      },
+      {
+        "RoadName": "Santa Cruz Boulevard",
+        "JamFactor": 0.4,
+        "LengthMeters": 1283,
+        "IsWeighted": false,
+        "FunctionalClass": 3,
+        "Score": 42.5,
+        "PriorityBoosted": false
+      }
+    ],
+    "Weather": null,
+    "Fuel": null,
+    "IncidentChanges": null,
+    "Guidance": {
+      "Entries": [],
+      "DroppedCount": 0,
+      "Count": 0,
+      "HasEntries": false
+    },
+    "MarketFeedback": []
+  }
+}

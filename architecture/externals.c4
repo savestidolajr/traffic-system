@@ -1,0 +1,38 @@
+// ══════════════════════════════════════════════════════════════
+// External services — third-party and Microsoft dependencies
+// ══════════════════════════════════════════════════════════════
+
+model {
+
+  here = external "HERE Maps" {
+    summary "Live traffic incidents, geocoding, routing; console basemap tiles and address search"
+    technology "HTTPS + API Key"
+  }
+
+  elevenlabs = external "ElevenLabs" {
+    summary "Text-to-speech audio synthesis"
+    technology "HTTPS + API Key"
+    style { color sky }
+  }
+
+  teams = external "Microsoft Teams" {
+    summary "Operator notification channel"
+    technology "Adaptive Cards"
+    icon tech:microsoft-teams
+    style { color indigo }
+  }
+
+  entra = external "Microsoft Entra ID" {
+    #security
+    summary "Authentication and role assignment"
+    technology "OAuth 2.0 / OIDC"
+    icon azure:entra-id-protection
+    style { color red }
+  }
+
+  zetta = external "Zetta Playout" {
+    summary "On-premises broadcast playout system"
+    technology "SMB/CIFS port 445"
+    style { color gray }
+  }
+}

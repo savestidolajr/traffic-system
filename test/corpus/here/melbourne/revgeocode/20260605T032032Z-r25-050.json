@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.6266416+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.64296,145.02665\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "1 Melba St, Epping VIC 3076, Australia",
+          "id": "here:af:streetsection:DUD05Gi-.yynQsHSq8Q0mC:CggIBCCiz-6fARABGgEx",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "1 Melba St, Epping VIC 3076, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Epping",
+            "street": "Melba St",
+            "postalCode": "3076",
+            "houseNumber": "1"
+          },
+          "position": {
+            "lat": -37.64312,
+            "lng": 145.02693
+          },
+          "access": [
+            {
+              "lat": -37.64291,
+              "lng": 145.02685
+            }
+          ],
+          "distance": 18,
+          "mapView": {
+            "west": 145.02665,
+            "south": -37.64296,
+            "east": 145.0277,
+            "north": -37.64271
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

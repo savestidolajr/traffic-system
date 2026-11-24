@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.1020046+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.03684,115.75412\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Tydeman Rd, North Fremantle WA 6159, Australia",
+          "id": "here:af:streetsection:48q2DUQTNq0-0MFa3oWuVD",
+          "resultType": "street",
+          "address": {
+            "label": "Tydeman Rd, North Fremantle WA 6159, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "North Fremantle",
+            "street": "Tydeman Rd",
+            "postalCode": "6159"
+          },
+          "position": {
+            "lat": -32.03684,
+            "lng": 115.75412
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.7457,
+            "south": -32.03744,
+            "east": 115.75583,
+            "north": -32.03535
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

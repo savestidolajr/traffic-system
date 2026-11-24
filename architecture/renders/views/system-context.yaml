@@ -1,0 +1,101 @@
+# System Context — presentation render replacing the LikeC4 auto-layout export.
+#
+# Companion to the `system-context` LikeC4 view in views.c4. All node and edge
+# ids are model FQNs; render.py validates them against the exported model.
+#
+# Layout plan (paper):
+#   * Top row: Operator, Admin, and Microsoft Entra ID share y=150.
+#   * The platform is one prominent box centred at [800, 380].
+#   * Bottom row: HERE, ElevenLabs, Microsoft Teams, and Zetta share y=700.
+#   * Top icons use right-side labels, so their bottom edges are clear for
+#     vertical attachments at x=480, 800, and 1120.
+#   * The platform bottom has four vertical dependency corridors at x=260,
+#     640, 1020, and 1380; each drops directly to its target icon with no
+#     crossings or intermediate nodes.
+
+output: system-context
+canvas: [1600, 900]
+
+styles:
+  edges:
+    people: { color: "#64748B", width: 2.5 }
+    external: { color: "#0EA5E9", width: 2.5 }
+    delivery: { color: "#F97316", width: 3 }
+    platform: { color: "#0078D4", width: 3 }
+
+texts:
+  - { text: "System Context", at: [40, 38], size: 20, weight: "700", anchor: start }
+  - { text: "This shows who uses the platform and what it depends on.",
+      at: [40, 60], size: 12, color: "#64748B", anchor: start }
+
+edges:
+  # People and identity use the clear bottom edge of their right-labelled icons.
+  - from: operator
+    to: arn
+    class: people
+    points: [[480, 182], [480, 300]]
+    label: { text: "reviews and approves bulletins", at: [488, 245], size: 11, anchor: start }
+  - from: admin
+    to: arn
+    class: people
+    points: [[800, 182], [800, 300]]
+    label: { text: "manages schedules and triggers", at: [808, 245], size: 11, anchor: start }
+  - from: entra
+    to: arn
+    class: external
+    points: [[1120, 182], [1120, 300]]
+    label: { text: "signs in operators", at: [1128, 245], size: 11, anchor: start }
+
+  # External dependencies leave the platform's bottom border and drop straight
+  # through empty corridors to the top border of each icon.
+  - from: arn
+    to: here
+    class: external
+    points: [[260, 460], [260, 668]]
+    label: { text: "fetches traffic conditions", at: [268, 565], size: 11, anchor: start }
+  - from: arn
+    to: elevenlabs
+    class: external
+    points: [[640, 460], [640, 668]]
+    label: { text: "synthesises the station voice", at: [648, 565], size: 11, anchor: start }
+  - from: arn
+    to: teams
+    class: external
+    points: [[1020, 460], [1020, 668]]
+    label: { text: "posts operator notifications", at: [1028, 565], size: 11, anchor: start }
+  - from: arn
+    to: zetta
+    class: delivery
+    points: [[1380, 460], [1380, 668]]
+    label: { text: "delivers approved audio", at: [1388, 565], size: 11, anchor: start }
+
+nodes:
+  # People and identity at the top; right labels keep the bottom attachment free.
+  - { id: operator, at: [480, 150], icon: person, sublabel: "ARN content team", label_pos: right }
+  - { id: admin, at: [800, 150], icon: person, sublabel: "ARN administrator", label_pos: right }
+  - { id: entra, at: [1120, 150], icon: entra, label: "Microsoft Entra ID",
+      sublabel: "sign-in and role assignment", label_pos: right }
+
+  # The platform is intentionally the only central node.
+  - { id: arn, at: [800, 380], box: [1200, 160], fill: "#EFF6FF",
+      stroke: "#0078D4", sw: 3, size: 17,
+      label: "ARN Traffic Bulletin Platform",
+      sublabel: "traffic data · bulletin generation · broadcast audio" }
+
+  # External systems along the bottom row.
+  - { id: here, at: [260, 700], icon: here, label: "HERE",
+      sublabel: "live traffic incidents and road conditions" }
+  - { id: elevenlabs, at: [640, 700], icon: eleven, label: "ElevenLabs",
+      sublabel: "station voice synthesis" }
+  - { id: teams, at: [1020, 700], icon: teams, label: "Microsoft Teams",
+      sublabel: "operator notifications" }
+  - { id: zetta, at: [1380, 700], icon: zetta, label: "Zetta Playout",
+      sublabel: "on-premises broadcast playout" }
+
+legend:
+  at: [240, 850]
+  items:
+    - ["ARN platform", platform]
+    - ["people and roles", people]
+    - ["external services", external]
+    - ["Zetta playout", delivery]

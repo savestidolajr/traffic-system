@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032040Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:40.4344662+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.94198,115.93905\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Epsom Ave, Redcliffe WA 6104, Australia",
+          "id": "here:af:streetsection:AefkyQvagZtce9Ys.-T5sB",
+          "resultType": "street",
+          "address": {
+            "label": "Epsom Ave, Redcliffe WA 6104, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Redcliffe",
+            "street": "Epsom Ave",
+            "postalCode": "6104"
+          },
+          "position": {
+            "lat": -31.94206,
+            "lng": 115.93908
+          },
+          "distance": 9,
+          "mapView": {
+            "west": 115.93332,
+            "south": -31.955,
+            "east": 115.95413,
+            "north": -31.93722
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

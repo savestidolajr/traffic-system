@@ -1,0 +1,10 @@
+{
+  "slug": "sydney-peak",
+  "voiceId": "CwhRBWXzGAHq8TQ4Fs17",
+  "modelId": "eleven_v3",
+  "outputFormat": "pcm_24000",
+  "durationSeconds": 25.109,
+  "charCount": 392,
+  "script": "Big one to start \u2014 the Warringah Freeway\u0027s closed and it\u0027s copping heavy delays right through the approaches. If you\u0027re coming off there, Church Street is crawling with congestion, backed up and slow. Walker Street\u0027s also shut but only a minor hold-up. Further out, Sommerville Road has a cluster of incidents and queues about half a kilometre back, so expect stop-start through that stretch.",
+  "audioFile": "sydney-peak.wav"
+}

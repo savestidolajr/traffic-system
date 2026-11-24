@@ -1,0 +1,55 @@
+{
+  "Market": "goldcoast",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032043Z-r10",
+  "CapturedAtUtc": "2026-06-05T03:20:44.3254635+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.08317,153.44779\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "1816 Gold Coast Hwy, Burleigh Heads QLD 4220, Australia",
+          "id": "here:af:streetsection:qj-ybTzEZaACsnp8ReXqED:CggIBCD6hYqfARABGgQxODE2",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "1816 Gold Coast Hwy, Burleigh Heads QLD 4220, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Gold Coast",
+            "district": "Burleigh Heads",
+            "street": "Gold Coast Hwy",
+            "postalCode": "4220",
+            "houseNumber": "1816"
+          },
+          "position": {
+            "lat": -28.08314,
+            "lng": 153.4475
+          },
+          "access": [
+            {
+              "lat": -28.08307,
+              "lng": 153.44775
+            }
+          ],
+          "distance": 12,
+          "mapView": {
+            "west": 153.44652,
+            "south": -28.09728,
+            "east": 153.45595,
+            "north": -28.07973
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

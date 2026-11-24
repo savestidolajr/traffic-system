@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.3447421+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.80105,144.98793\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "28 Emerald St, Collingwood VIC 3066, Australia",
+          "id": "here:af:streetsection:cip4PcFjSaxcCkk9tTDdGC:CggIBCCF2I6gARABGgIyOA",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "28 Emerald St, Collingwood VIC 3066, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Collingwood",
+            "street": "Emerald St",
+            "postalCode": "3066",
+            "houseNumber": "28"
+          },
+          "position": {
+            "lat": -37.80122,
+            "lng": 144.98787
+          },
+          "access": [
+            {
+              "lat": -37.80105,
+              "lng": 144.98793
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 144.98793,
+            "south": -37.80105,
+            "east": 144.98809,
+            "north": -37.80025
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

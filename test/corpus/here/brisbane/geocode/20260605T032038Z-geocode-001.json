@@ -1,0 +1,52 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "geocode",
+  "SessionId": "20260605T032038Z-geocode",
+  "CapturedAtUtc": "2026-06-05T03:20:38.2833199+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=brisbane%2C Australia\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Brisbane, QLD 4000, Australia",
+          "id": "here:cm:namedplace:1469259095",
+          "resultType": "locality",
+          "localityType": "city",
+          "address": {
+            "label": "Brisbane, QLD 4000, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "postalCode": "4000"
+          },
+          "position": {
+            "lat": -27.46844,
+            "lng": 153.02334
+          },
+          "mapView": {
+            "west": 152.51168,
+            "south": -27.93864,
+            "east": 153.5467,
+            "north": -27.08298
+          },
+          "scoring": {
+            "queryScore": 1.0,
+            "fieldScore": {
+              "country": 1.0,
+              "city": 1.0
+            }
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

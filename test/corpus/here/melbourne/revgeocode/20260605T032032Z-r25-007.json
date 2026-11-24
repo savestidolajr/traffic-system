@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:33.3679813+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.7162,144.93361\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Rhodes Pde, Pascoe Vale VIC 3044, Australia",
+          "id": "here:af:streetsection:9X-NYB6QpKFC3rguBceh1D",
+          "resultType": "street",
+          "address": {
+            "label": "Rhodes Pde, Pascoe Vale VIC 3044, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Pascoe Vale",
+            "street": "Rhodes Pde",
+            "postalCode": "3044"
+          },
+          "position": {
+            "lat": -37.7162,
+            "lng": 144.93361
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 144.92909,
+            "south": -37.7162,
+            "east": 144.93361,
+            "north": -37.71567
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

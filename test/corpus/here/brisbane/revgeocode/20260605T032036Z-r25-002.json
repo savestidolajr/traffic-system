@@ -1,0 +1,54 @@
+{
+  "Market": "brisbane",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032036Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:37.2296738+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-27.45085,153.0206\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Victoria Park Golf Course",
+          "id": "here:pds:place:036r7hgf-66adf1cb423547d6a5b875b3cf7d9651",
+          "resultType": "place",
+          "address": {
+            "label": "Victoria Park Golf Course, Gilchrist Ave, Herston QLD 4006, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Brisbane",
+            "district": "Herston",
+            "street": "Gilchrist Ave",
+            "postalCode": "4006"
+          },
+          "position": {
+            "lat": -27.45069,
+            "lng": 153.02133
+          },
+          "access": [
+            {
+              "lat": -27.45036,
+              "lng": 153.02167
+            }
+          ],
+          "distance": 74,
+          "categories": [
+            {
+              "id": "800-8600-0193",
+              "name": "Golf Course",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "AzureWebJobsStorage": "UseDevelopmentStorage=true",
+  "AadClientId": "00000000-0000-0000-0000-000000000000",
+  "Auth__DevFallbackRole": "Admin",
+  "Providers": { "OutputProvider": "Console", "ExternalProviderMode": "Fake" },
+  "Storage": { "AccountName": "devstoreaccount1", "ContainerName": "broadcasts" },
+  "Broadcast": { "FillerCartAudioUrl": "https://fake.invalid/filler-cart.wav", "FillerCartScript": "" },
+  "AiSettings": {
+    "AzureAI": { "Endpoint": "https://fake.invalid", "Model": "fake-model", "ApiKey": "fake" },
+    "ElevenLabs": { "ApiKey": "fake", "ModelId": "eleven_v3", "BaseUrl": "https://fake.invalid", "OutputFormat": "pcm_44100", "TimeoutSeconds": 5, "UseTimestampsEndpoint": false }
+  },
+  "Here": { "ApiKey": "fake", "TrafficBaseUrl": "https://fake.invalid", "GeocodingBaseUrl": "https://fake.invalid", "RoutingBaseUrl": "https://fake.invalid" },
+  "Webhook": { "Enabled": false, "EndpointUrl": "", "OpsConsoleBaseUrl": "" },
+  "Zetta": { "Enabled": false },
+  "AuditExport": { "Enabled": true, "ContainerName": "audit-exports" }
+}

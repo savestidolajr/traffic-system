@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Traffic incident vocabulary explorer</title>
+<style>
+/* Standalone explorer page: dark editorial palette, cyan accent, faceted layout. */
+:root {
+  --color-canvas: oklch(17% 0.025 245);
+  --color-surface: oklch(21% 0.03 245);
+  --color-surface-raised: oklch(25% 0.035 245);
+  --color-surface-soft: oklch(19% 0.025 245);
+  --color-rule: oklch(34% 0.035 245);
+  --color-rule-soft: oklch(28% 0.03 245);
+  --color-ink: oklch(94% 0.018 235);
+  --color-muted: oklch(72% 0.025 235);
+  --color-faint: oklch(57% 0.03 235);
+  --color-accent: oklch(78% 0.14 205);
+  --color-accent-strong: oklch(86% 0.15 205);
+  --color-accent-soft: oklch(28% 0.08 210);
+  --color-green: oklch(78% 0.14 150);
+  --color-orange: oklch(82% 0.14 75);
+  --color-red: oklch(75% 0.16 25);
+  --color-purple: oklch(78% 0.13 305);
+  --font-display: "Arial Narrow", "Avenir Next Condensed", "Segoe UI", sans-serif;
+  --font-body: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  --font-mono: "SFMono-Regular", Consolas, "Liberation Mono", monospace;
+  --space-1: 0.25rem;
+  --space-2: 0.5rem;
+  --space-3: 0.75rem;
+  --space-4: 1rem;
+  --space-5: 1.25rem;
+  --space-6: 1.5rem;
+  --space-8: 2rem;
+  --space-10: 2.5rem;
+  --radius-sm: 0.35rem;
+  --radius-md: 0.65rem;
+  --radius-lg: 1rem;
+  --ease-out: cubic-bezier(0.2, 0.8, 0.2, 1);
+  --dur-fast: 140ms;
+  --dur-med: 220ms;
+}
+* { box-sizing: border-box; }
+html, body { overflow-x: clip; }
+body {
+  margin: 0;
+  min-width: 320px;
+  background: var(--color-canvas);
+  color: var(--color-ink);
+  font: 0.95rem/1.55 var(--font-body);
+}
+button, input { font: inherit; }
+button { color: inherit; }
+button:focus-visible, input:focus-visible { outline: 2px solid var(--color-accent-strong); outline-offset: 3px; }
+.shell { max-width: 1380px; margin: 0 auto; padding: var(--space-6) clamp(1rem, 3vw, 3rem) var(--space-8); }
+.masthead { display: flex; justify-content: space-between; gap: var(--space-8); align-items: end; padding-bottom: var(--space-5); border-bottom: 1px solid var(--color-rule); }
+.eyebrow { margin: 0 0 var(--space-2); color: var(--color-accent); font: 600 0.68rem/1.2 var(--font-mono); letter-spacing: 0.1em; text-transform: uppercase; }
+h1, h2, h3, p { margin-top: 0; }
+h1 { margin-bottom: var(--space-2); color: var(--color-ink); font: 700 clamp(2rem, 4vw, 3.4rem)/0.96 var(--font-display); letter-spacing: -0.045em; }
+.lede { max-width: 650px; margin: 0; color: var(--color-muted); font-size: 0.95rem; }
+.snapshot { flex: 0 0 auto; margin: 0; color: var(--color-faint); font: 0.72rem var(--font-mono); white-space: nowrap; }
+.snapshot strong { color: var(--color-ink); font-weight: 600; }
+.snapshot span { padding: 0 var(--space-1); color: var(--color-rule); }
+.workspace { padding-top: var(--space-5); }
+.toolbar { display: flex; flex-wrap: wrap; gap: var(--space-3); align-items: center; padding-bottom: var(--space-5); border-bottom: 1px solid var(--color-rule); }
+.search { width: min(300px, 100%); padding: 0.6rem 0.75rem; border: 1px solid var(--color-rule); border-radius: var(--radius-sm); background: var(--color-surface); color: var(--color-ink); }
+.search::placeholder { color: var(--color-faint); }
+.toolbar-label { color: var(--color-faint); font: 0.68rem var(--font-mono); letter-spacing: 0.08em; text-transform: uppercase; }
+.provider-list { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+.provider-filter, .reset { padding: 0.45rem 0.6rem; border: 1px solid var(--color-rule); border-radius: var(--radius-sm); background: transparent; color: var(--color-muted); cursor: pointer; font-size: 0.78rem; }
+.provider-filter:hover, .reset:hover { border-color: var(--color-accent); color: var(--color-ink); }
+.provider-filter[aria-pressed="true"] { border-color: var(--color-accent); background: var(--color-accent-soft); color: var(--color-accent-strong); }
+.provider-filter .filter-count { margin-left: 0.25rem; color: var(--color-faint); font: 0.68rem var(--font-mono); }
+.reset { margin-left: auto; color: var(--color-accent); }
+.explorer-head { display: flex; justify-content: space-between; gap: var(--space-4); align-items: baseline; padding: var(--space-5) 0 var(--space-3); }
+.explorer-head h2 { margin: 0; font-size: 1.45rem; letter-spacing: -0.03em; }
+.explorer-head h2 span { color: var(--color-faint); font: 0.75rem var(--font-mono); }
+.explorer-head p { margin: 0; color: var(--color-faint); font-size: 0.8rem; }
+.incident-grid { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: var(--space-2); }
+.incident-card { min-width: 0; padding: var(--space-4); border: 1px solid var(--color-rule); border-radius: var(--radius-md); background: var(--color-surface); text-align: left; cursor: pointer; transition: border-color var(--dur-fast) var(--ease-out), background var(--dur-fast) var(--ease-out), transform var(--dur-fast) var(--ease-out); }
+.incident-card:hover, .incident-card[aria-selected="true"] { border-color: var(--color-accent); background: var(--color-surface-raised); }
+.incident-card:active { transform: translateY(1px); }
+.card-top { display: flex; justify-content: space-between; gap: var(--space-3); align-items: start; }
+.card-top h3 { margin: 0; color: var(--color-ink); font-size: 0.95rem; }
+.card-arrow { color: var(--color-accent); font-size: 0.95rem; }
+.card-meta { display: flex; justify-content: space-between; gap: var(--space-3); margin-top: var(--space-3); color: var(--color-faint); font: 0.68rem var(--font-mono); }
+.provider-pips { display: flex; gap: 3px; margin-top: var(--space-3); }
+.provider-pips span { flex: 1; height: 3px; border-radius: 99px; background: var(--color-rule); }
+.provider-pips span.present { background: var(--color-accent); }
+.detail-panel { margin-top: var(--space-5); border: 1px solid var(--color-rule); border-radius: var(--radius-md); background: var(--color-surface-soft); scroll-margin-top: var(--space-4); }
+.detail-header { display: flex; justify-content: space-between; gap: var(--space-5); align-items: baseline; padding: var(--space-5); border-bottom: 1px solid var(--color-rule); }
+.detail-header h2 { margin: 0 0 var(--space-1); font-size: 1.45rem; letter-spacing: -0.035em; }
+.detail-header p { max-width: 680px; margin: 0; color: var(--color-muted); font-size: 0.82rem; }
+.detail-badge { flex: 0 0 auto; color: var(--color-accent); font: 0.7rem var(--font-mono); white-space: nowrap; }
+.detail-grid { display: grid; grid-template-columns: minmax(0, 1.55fr) minmax(230px, 0.85fr); gap: 0; }
+.detail-section { padding: var(--space-5); }
+.detail-section + .detail-section { border-left: 1px solid var(--color-rule); }
+.detail-section h3 { margin-bottom: var(--space-3); color: var(--color-faint); font-size: 0.68rem; letter-spacing: 0.08em; text-transform: uppercase; }
+.provider-row { padding: var(--space-3) 0; border-top: 1px solid var(--color-rule-soft); }
+.provider-row:first-child { padding-top: 0; border-top: 0; }
+.provider-row:last-child { padding-bottom: 0; }
+.provider-row-head { display: flex; justify-content: space-between; gap: var(--space-3); align-items: baseline; }
+.provider-name { color: var(--color-ink); font-weight: 700; }
+.provider-count { color: var(--color-green); font: 0.7rem var(--font-mono); white-space: nowrap; }
+.frequency { display: grid; grid-template-columns: minmax(0, 1fr) auto; gap: var(--space-2); align-items: center; margin-top: var(--space-2); }
+.frequency-bar { height: 4px; overflow: hidden; border-radius: 99px; background: var(--color-rule); }
+.frequency-bar i { display: block; height: 100%; border-radius: inherit; background: var(--color-accent); }
+.frequency small { color: var(--color-faint); font: 0.68rem var(--font-mono); }
+.raw-labels { display: flex; flex-wrap: wrap; gap: var(--space-1); margin-top: var(--space-2); }
+.raw-label, .descriptor { display: inline-block; padding: 0.2rem 0.35rem; border: 1px solid var(--color-rule); border-radius: var(--radius-sm); color: var(--color-muted); font: 0.68rem/1.25 var(--font-mono); }
+.raw-label { color: var(--color-purple); }
+.descriptor-list { display: flex; flex-wrap: wrap; gap: var(--space-1); }
+.descriptor { border-color: var(--color-rule-soft); color: var(--color-muted); font-family: var(--font-body); }
+.empty-detail { color: var(--color-faint); font-size: 0.74rem; }
+.empty { grid-column: 1 / -1; padding: var(--space-6); border: 1px dashed var(--color-rule); border-radius: var(--radius-md); color: var(--color-muted); text-align: center; }
+.method { margin: var(--space-4) 0 0; color: var(--color-faint); font-size: 0.72rem; }
+footer { margin-top: var(--space-6); padding-top: var(--space-4); border-top: 1px solid var(--color-rule); color: var(--color-faint); font-size: 0.7rem; }
+@media (max-width: 900px) {
+  .masthead { display: block; }
+  .snapshot { display: block; margin-top: var(--space-4); }
+  .incident-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+}
+@media (max-width: 620px) {
+  .shell { padding-top: var(--space-5); }
+  .snapshot { white-space: normal; }
+  .explorer-head, .detail-header { display: block; }
+  .explorer-head p { margin-top: var(--space-1); }
+  .detail-badge { display: block; margin-top: var(--space-2); }
+  .incident-grid, .detail-grid { grid-template-columns: 1fr; }
+  .detail-section + .detail-section { border-top: 1px solid var(--color-rule); border-left: 0; }
+}
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+}
+</style>
+</head>
+<body>
+<div class="shell">
+  <header class="masthead">
+    <div>
+      <p class="eyebrow">Traffic incident inventory</p>
+      <h1>Incident families by provider</h1>
+      <p class="lede">Compare the source labels, frequency and wording behind each incident family.</p>
+    </div>
+    <p class="snapshot"><strong>20 Aug 2026</strong><span>·</span>7 providers<span>·</span>2,273 records<span>·</span>11 families</p>
+  </header>
+
+  <main class="workspace">
+    <section class="explorer" aria-labelledby="explorer-title">
+      <div class="toolbar">
+        <input class="search" id="search" type="search" placeholder="Search labels or wording" autocomplete="off">
+        <span class="toolbar-label">Providers</span>
+        <div class="provider-list" id="provider-filters"></div>
+        <button class="reset" id="reset" type="button">All</button>
+      </div>
+      <div class="explorer-head">
+        <h2 id="explorer-title">Unique families <span id="result-count">11</span></h2>
+        <p id="explorer-summary">Select a family for detail.</p>
+      </div>
+      <div class="incident-grid" id="incident-grid"></div>
+      <section class="detail-panel" id="detail-panel" aria-live="polite"></section>
+      <p class="method">Counts are snapshot records. Embedded signals are shown without double-counting.</p>
+    </section>
+  </main>
+  <footer>Arn · Traffic provider vocabulary · 20 Aug 2026</footer>
+</div>
+<script>
+const providers = [
+  { id: 'here', name: 'HERE', records: 1099, note: 'Traffic API v7' },
+  { id: 'nsw', name: 'Live Traffic NSW', records: 399, note: 'TfNSW GeoJSON' },
+  { id: 'qld', name: 'QLDTraffic', records: 486, note: 'TMR GeoJSON v2' },
+  { id: 'wa', name: 'Main Roads WA', records: 260, note: 'ArcGIS TravelInformation' },
+  { id: 'sa', name: 'Traffic SA', records: 19, note: 'DIT ArcGIS REST' },
+  { id: 'tas', name: 'TasALERT', records: 10, note: 'Tasmania Police RSS' },
+  { id: 'vic', name: 'VicTraffic', records: 0, note: 'KeyID pending' }
+];
+
+const incidents = [
+  {
+    id: 'roadworks', name: 'Roadworks & maintenance', short: 'Planned or active works, upgrades and utility activity.',
+    signal: 'Roadworks are the dominant standing inventory. The same family ranges from a generic construction point to a long corridor work zone or a full closure.',
+    providers: {
+      here: { total: 835, rows: [['construction', 835]], raw: ['construction', 'Road construction', 'Construction work'], descriptors: ['Road construction', 'Construction work', 'Roadworks', 'Maintenance', 'Upgrades', 'Sewer Connection', 'Sign Installation', 'Junction Upgrade', 'Road Lighting Repairs', 'Lane closure in place', 'Lane closures and speed reduction in place', 'Closed due to road construction', 'Closed due to roadworks'], note: 'The structured type is often construction, but the human-facing fields vary: At <road> - Road construction; Between <road> and <road> - Construction work; closed routes; maintenance, upgrades, utilities and lighting comments. ALERT-C 500, 520, 701, 703, 704, 735, 746, 803. Code 735 can hide a closure inside construction.' },
+      nsw: { total: 327, rows: [['SCHEDULED ROADWORK', 326], ['EMERGENCY ROADWORK', 1]], raw: ['SCHEDULED ROADWORK', 'EMERGENCY ROADWORK'], descriptors: ['Maintenance', 'Resurfacing', 'Bridge work', 'Upgrade', 'Routine maintenance'], note: 'Roadwork records also expose ROAD_CLOSURE (321) and LANE_CLOSURE (1) as closure types.' },
+      qld: { total: 282, rows: [['Roadworks', 282]], raw: ['Roadworks'], descriptors: ['Planned roadworks'], note: 'Impact fields include Lane or lanes reduced (149), All lanes affected (69), and Road closed to all traffic (29).' },
+      wa: { total: 247, rows: [['Maintenance', 139], ['Upgrades', 66], ['Utility works', 33], ['Resurfacing', 6], ['PTA Works', 3]], raw: ['Roadwork: Maintenance', 'Roadwork: Upgrades', 'Roadwork: Utility works', 'Roadwork: Resurfacing', 'Roadwork: PTA Works'], descriptors: ['Lane closures', 'Speed reduction', 'Traffic management in place', 'Intermittent lane closures'], note: 'The source splits roadworks by work programme rather than one generic incident type.' },
+      sa: { total: 4, rows: [['EMERGENCY WATERWORKS', 4]], raw: ['EMERGENCY WATERWORKS'], descriptors: ['Urgent Waterworks', 'Emergency Waterworks'], note: 'SA exposes urgent works as a top-level event family.' }
+    }
+  },
+  {
+    id: 'closure', name: 'Road closures', short: 'A road, lane or route is unavailable to traffic.',
+    signal: 'Closure is often an impact, not the provider’s headline type. Look inside the raw description and impact fields before deciding what can be said on air.',
+    providers: {
+      here: { total: 221, rows: [['roadClosure', 221]], raw: ['roadClosure', 'construction + ALERT-C 735'], descriptors: ['Closed', 'Road closed due to accidents', 'Closed due to roadworks'], note: 'HERE also hides closure semantics inside construction records, especially ALERT-C 735.' },
+      nsw: { total: 14, rows: [['ROAD_CLOSURE under CHANGED TRAFFIC CONDITIONS', 14]], raw: ['ROAD_CLOSURE', 'CHANGED TRAFFIC CONDITIONS'], descriptors: ['due to an earlier incident', 'Planned Police operation'], note: 'This is the distinct closure signal outside the roadwork rows; scheduled roadworks carry their own closure types.' },
+      qld: { total: null, rows: [['embedded impact', null]], raw: ['Road closed to all traffic', 'Road closed to through traffic'], descriptors: ['Closures: Road closed to all traffic', 'Closures: Road closed to through traffic'], note: 'QLD reports closure through impact fields on Roadworks, Hazard, Flooding and Special event records rather than a separate top-level class.' },
+      wa: { total: null, rows: [['embedded field', null]], raw: ['ClosureType', 'Long term Road Closure'], descriptors: ['Lane closures', 'Various closures'], note: 'The snapshot table exposes closures as structured work/condition attributes, not a distinct counted row.' },
+      sa: { total: null, rows: [['embedded description', null]], raw: ['ROAD_CLOSURE'], descriptors: ['Ferry Closed'], note: 'No separate closure row was present in the active SA sample.' }
+    }
+  },
+  {
+    id: 'crash', name: 'Crashes & collisions', short: 'A collision, accident or crash involving one or more vehicles.',
+    signal: 'Crashes are named directly by most authorities but arrive with different granularity: event type, vehicle count, collision wording or prose only.',
+    providers: {
+      here: { total: 2, rows: [['accident', 2]], raw: ['accident'], descriptors: ['Accident', 'Road closed due to accidents'], note: 'ALERT-C examples include 201, 240 and 646.' },
+      nsw: { total: null, rows: [['vehicle subcategory', null]], raw: ['CRASH', '2 cars', 'Car', 'Semi-trailer'], descriptors: ['Crash', 'Collision'], note: 'The provider snapshot did not retain a distinct top-level crash count in the summary table.' },
+      qld: { total: 2, rows: [['Crash', 2]], raw: ['Crash'], descriptors: ['Multi-vehicle', 'Single vehicle'], note: 'Impact fields distinguish All lanes blocked and One lane blocked.' },
+      wa: { total: 1, rows: [['Road Crash', 1]], raw: ['Road Crash'], descriptors: ['All lanes open'], note: 'WA uses a plain incident label.' },
+      tas: { total: 1, rows: [['Crash / Collision', 1]], raw: ['Crash / Collision'], descriptors: ['Crash / Collision'], note: 'TasALERT publishes a standard event description rather than nested fields.' }
+    }
+  },
+  {
+    id: 'breakdown', name: 'Breakdowns & stopped vehicles', short: 'A disabled, broken-down or stationary vehicle affecting the road.',
+    signal: 'The same roadside situation can be a vehicle incident, a hazard or a location-specific emergency-bay event depending on the provider schema.',
+    providers: {
+      here: { total: 17, rows: [['disabledVehicle', 17]], raw: ['disabledVehicle'], descriptors: ['Broken down vehicle', 'Left lane blocked'], note: 'ALERT-C codes include 211, 326, 500 and 642.' },
+      nsw: { total: 1, rows: [['BREAKDOWN', 1]], raw: ['BREAKDOWN'], descriptors: ['Truck'], note: 'The observed sample contains one breakdown record.' },
+      qld: { total: 3, rows: [['Stationary vehicle', 3]], raw: ['Stationary vehicle'], descriptors: ['No blockage: None'], note: 'QLD groups stopped vehicles under Hazard.' },
+      wa: { total: 7, rows: [['Break Down / Tow Away', 6], ['Vehicle In Emergency Bay', 1]], raw: ['Incident: Break Down / Tow Away', 'Incident: Vehicle In Emergency Bay'], descriptors: ['Left Emergency Lane Blocked', 'Left Lane(s) Blocked', 'Centre Lane(s) Blocked', 'Emergency Stopping Bay (SF)'], note: 'WA separates towing activity from the emergency-bay location.' }
+    }
+  },
+  {
+    id: 'hazard', name: 'Hazards & road conditions', short: 'A non-crash obstruction, damaged surface or unsafe driving condition.',
+    signal: 'Hazard is the broadest bucket. It contains weather, road damage, debris, traffic-light faults and other conditions that do not share one stable upstream label.',
+    providers: {
+      here: { total: 17, rows: [['roadHazard', 17]], raw: ['roadHazard', 'other'], descriptors: ['Road surface in poor condition', 'Traffic lights not working', 'Hazardous driving conditions', 'Closed due to flooding'], note: 'ALERT-C codes include 520, 916, 938, 1001 and 1804.' },
+      nsw: { total: 48, rows: [['HAZARD', 21], ['ADVERSE WEATHER', 27]], raw: ['HAZARD', 'ADVERSE WEATHER', 'TRAFFIC LIGHTS FLASHING YELLOW'], descriptors: ['Road damage', 'Water over road', 'Traffic lights flashing yellow'], note: 'CHANGED TRAFFIC CONDITIONS (20) is kept separate because it can describe closures and operations.' },
+      qld: { total: 168, rows: [['Hazard', 168]], raw: ['Hazard'], descriptors: ['Adverse driving conditions', 'Road damage', 'Bridge or culvert damaged', 'Stationary vehicle', 'Fire'], note: 'The QLD hazard family carries structured lane and closure impacts.' },
+      wa: { total: 4, rows: [['Pothole / Road Surface Damage', 2], ['Debris / Trees / Lost Loads', 1], ['Vehicle In Emergency Bay', 1]], raw: ['Pothole / Road Surface Damage', 'Debris / Trees / Lost Loads', 'Vehicle In Emergency Bay'], descriptors: ['All Lanes Open', 'Emergency Stopping Bay (SF)'], note: 'WA exposes specific hazard nouns instead of a generic hazard enum.' },
+      sa: { total: 13, rows: [['INCIDENT', 13]], raw: ['INCIDENT'], descriptors: ['Hazard', 'Debris On Road', 'Urgent Dept. For Infrastructure & Transport Works', 'Urgent Gas Works'], note: 'SA’s generic INCIDENT row contains several distinct operational descriptions.' }
+    }
+  },
+  {
+    id: 'flooding', name: 'Flooding & water over road', short: 'Standing, flash or long-term water affecting a route.',
+    signal: 'Flooding is explicit in QLD and SA, but appears as adverse weather, hazard prose or a road closure in other feeds.',
+    providers: {
+      here: { total: null, rows: [['hazard subtype', null]], raw: ['roadHazard'], descriptors: ['Closed due to flooding'], note: 'HERE does not publish a separate flooding top-level row in this sample.' },
+      nsw: { total: 27, rows: [['ADVERSE WEATHER', 27]], raw: ['ADVERSE WEATHER'], descriptors: ['Water over road'], note: 'Water over road is the observed NSW subcategory.' },
+      qld: { total: 15, rows: [['Flooding', 15]], raw: ['Flooding'], descriptors: ['Long-term flooding', 'Flash flooding'], note: 'Impact fields include all lanes affected and road closed to all traffic.' },
+      sa: { total: 2, rows: [['FLOODING', 2]], raw: ['FLOODING'], descriptors: ['Flooding Water Over Road'], note: 'SA uses an explicit event type and description.' }
+    }
+  },
+  {
+    id: 'congestion', name: 'Congestion & changed conditions', short: 'Queueing, recurring congestion or changed traffic conditions without a discrete crash.',
+    signal: 'Congestion is sparse as an incident row because HERE flow data also describes congestion outside this incident inventory.',
+    providers: {
+      here: { total: 6, rows: [['congestion', 6]], raw: ['congestion'], descriptors: ['Queuing traffic', 'Queuing traffic with average speeds 20 km/h'], note: 'ALERT-C 138 in the incident feed.' },
+      nsw: { total: 20, rows: [['CHANGED TRAFFIC CONDITIONS', 20]], raw: ['CHANGED TRAFFIC CONDITIONS'], descriptors: ['due to an earlier incident', 'Oversize vehicle', 'Planned Police operation'], note: 'The same source type can include closure and operational changes.' },
+      qld: { total: 2, rows: [['Congestion', 2]], raw: ['Congestion'], descriptors: ['Recurring'], note: 'Both observed records have No blockage: None.' },
+      wa: { total: null, rows: [['traffic condition field', null]], raw: ['TrafficCondition'], descriptors: ['Traffic management in place', 'Delays expected'], note: 'WA exposes queue/condition information as attributes on incidents and works.' }
+    }
+  },
+  {
+    id: 'event', name: 'Special events & operations', short: 'Planned events, police operations and other scheduled disruptions.',
+    signal: 'Events are usually not “incidents” in the emergency sense, but they change the road network and need the same normalisation path.',
+    providers: {
+      here: { total: 1, rows: [['plannedEvent', 1]], raw: ['plannedEvent'], descriptors: ['Major event'], note: 'ALERT-C 1501.' },
+      nsw: { total: 3, rows: [['CHANGED TRAFFIC CONDITIONS', 3]], raw: ['Planned Police operation'], descriptors: ['Planned Police operation'], note: 'Kept inside the NSW changed-conditions feed type.' },
+      qld: { total: 17, rows: [['Special event', 17]], raw: ['Special event'], descriptors: ['Road closed to all traffic', 'Road closed to through traffic'], note: 'QLD events often carry closure impacts.' },
+      tas: { total: 1, rows: [['Police Media / Operation', 1]], raw: ['Police Media / Operation'], descriptors: ['Police Media / Operation'], note: 'TasALERT’s standard event description has no nested attributes.' }
+    }
+  },
+  {
+    id: 'ferry', name: 'Ferry & service disruptions', short: 'A ferry or transport service is unavailable or closed.',
+    signal: 'Service disruptions sit beside road incidents in authority feeds and may still be relevant to a local traffic read.',
+    providers: {
+      nsw: { total: 3, rows: [['FERRY OUT OF SERVICE', 3]], raw: ['FERRY OUT OF SERVICE'], descriptors: ['Routine maintenance'], note: 'The feed marks these as ROAD_CLOSURE events.' },
+      sa: { total: 1, rows: [['INCIDENT', 1]], raw: ['INCIDENT'], descriptors: ['Ferry Closed'], note: 'SA carries ferry closure under its generic INCIDENT type.' }
+    }
+  },
+  {
+    id: 'fire', name: 'Fire', short: 'A vehicle, roadside or broader fire event affecting travel.',
+    signal: 'Fire appears as a dedicated source label in some states and as a hazard or generic incident elsewhere.',
+    providers: {
+      qld: { total: 1, rows: [['Hazard', 1]], raw: ['Fire'], descriptors: ['Fire'], note: 'QLD nests Fire under Hazard.' },
+      wa: { total: 2, rows: [['Vehicle Fire', 2]], raw: ['Incident: Vehicle Fire'], descriptors: ['All Lanes Open'], note: 'WA exposes vehicle fire as a distinct incident label.' }
+    }
+  },
+  {
+    id: 'general', name: 'General / unclassified alert', short: 'A provider alert with useful prose but no more specific structured class.',
+    signal: 'This is the safety net: retain the event and its prose while the crosswalk learns a more precise mapping.',
+    providers: {
+      tas: { total: 8, rows: [['General Alert', 8]], raw: ['General Alert'], descriptors: ['Standard event description without nested attributes'], note: 'TasALERT publishes a general event shape for most of the sample.' }
+    }
+  }
+];
+
+const state = { selected: 'roadworks', search: '', providers: new Set(providers.map(provider => provider.id)) };
+const providerFilters = document.querySelector('#provider-filters');
+const grid = document.querySelector('#incident-grid');
+const detail = document.querySelector('#detail-panel');
+const search = document.querySelector('#search');
+const resultCount = document.querySelector('#result-count');
+const summary = document.querySelector('#explorer-summary');
+const esc = value => String(value).replace(/[&<>"']/g, char => ({ '&':'&amp;', '<':'&lt;', '>':'&gt;', '"':'&quot;', "'":'&#39;' }[char]));
+const number = value => value === null ? '—' : value.toLocaleString('en-AU');
+const selectedProviders = () => providers.filter(provider => state.providers.has(provider.id));
+const matchingIncidents = () => incidents.filter(incident => {
+  const haystack = JSON.stringify(incident).toLowerCase();
+  const searchMatch = !state.search || haystack.includes(state.search);
+  const providerMatch = selectedProviders().some(provider => incident.providers[provider.id]);
+  return searchMatch && providerMatch;
+});
+const providerTotal = incident => selectedProviders().reduce((sum, provider) => sum + (incident.providers[provider.id]?.total || 0), 0);
+
+function renderProviderFilters() {
+  providerFilters.innerHTML = providers.map(provider => `<button type="button" class="provider-filter" data-provider="${provider.id}" aria-pressed="${state.providers.has(provider.id)}">${esc(provider.name)} <span class="filter-count">${number(provider.records)}</span></button>`).join('');
+  providerFilters.querySelectorAll('button').forEach(button => button.addEventListener('click', () => {
+    const id = button.dataset.provider;
+    if (state.providers.has(id)) state.providers.delete(id); else state.providers.add(id);
+    render();
+  }));
+}
+function renderCards() {
+  const visible = matchingIncidents();
+  resultCount.textContent = visible.length;
+  if (!visible.length) {
+    grid.innerHTML = '<div class="empty">No matches. Try another search or provider.</div>';
+    return;
+  }
+  grid.innerHTML = visible.map(incident => {
+    const count = providerTotal(incident);
+    const providerCount = providers.filter(provider => incident.providers[provider.id]).length;
+    return `<button type="button" class="incident-card" data-incident="${incident.id}" aria-selected="${state.selected === incident.id}">
+      <span class="card-top"><h3>${esc(incident.name)}</h3><span class="card-arrow" aria-hidden="true">↗</span></span>
+      <span class="card-meta"><span>${number(count)} rows</span><span>${providerCount} providers</span></span>
+      <span class="provider-pips" aria-label="Provider coverage">${providers.map(provider => `<span class="${incident.providers[provider.id] ? 'present' : ''}" title="${esc(provider.name)}"></span>`).join('')}</span>
+    </button>`;
+  }).join('');
+  grid.querySelectorAll('.incident-card').forEach(card => card.addEventListener('click', () => {
+    state.selected = card.dataset.incident;
+    render();
+    detail.scrollIntoView({ behavior: 'smooth', block: 'start' });
+  }));
+}
+function renderDetail() {
+  const incident = incidents.find(item => item.id === state.selected) || incidents[0];
+  const rows = selectedProviders().filter(provider => incident.providers[provider.id]);
+  const max = Math.max(...rows.map(provider => incident.providers[provider.id].total || 0), 1);
+  detail.innerHTML = `<div class="detail-header"><div><h2>${esc(incident.name)}</h2><p>${esc(incident.short)}</p></div><span class="detail-badge">${rows.length} providers</span></div>
+    <div class="detail-grid"><div class="detail-section"><h3>Source labels</h3>${rows.length ? rows.map(provider => {
+      const data = incident.providers[provider.id];
+      return `<article class="provider-row"><div class="provider-row-head"><span class="provider-name">${esc(provider.name)}</span><span class="provider-count">${data.total === null ? 'embedded' : `${number(data.total)} records`}</span></div>${data.total !== null ? `<div class="frequency"><div class="frequency-bar"><i style="width:${Math.max(2, ((data.total / max) * 100).toFixed(1))}%"></i></div><small>${((data.total / provider.records) * 100).toFixed(2)}%</small></div>` : ''}<div class="raw-labels">${data.raw.map(label => `<span class="raw-label">${esc(label)}</span>`).join('')}</div></article>`;
+    }).join('') : '<p class="empty-detail">No selected provider publishes this family.</p>'}</div>
+    <div class="detail-section"><h3>Observed wording</h3><div class="descriptor-list">${[...new Set(rows.flatMap(provider => incident.providers[provider.id].descriptors))].map(descriptor => `<span class="descriptor">${esc(descriptor)}</span>`).join('') || '<span class="empty-detail">No wording captured.</span>'}</div></div></div>`;
+}
+function render() {
+  const visible = matchingIncidents();
+  if (visible.length && !visible.some(incident => incident.id === state.selected)) state.selected = visible[0].id;
+  renderProviderFilters();
+  renderCards();
+  renderDetail();
+  summary.textContent = visible.length === incidents.length ? 'Select a family for detail.' : `${visible.length} ${visible.length === 1 ? 'family' : 'families'}`;
+}
+search.addEventListener('input', event => { state.search = event.target.value.trim().toLowerCase(); render(); });
+document.querySelector('#reset').addEventListener('click', () => {
+  state.search = ''; state.providers = new Set(providers.map(provider => provider.id)); search.value = ''; render();
+});
+render();
+</script>
+</body>
+</html>

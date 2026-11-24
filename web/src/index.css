@@ -1,0 +1,316 @@
+/* Tailwind 4. The design tokens, keyframes and animations still live in the
+   JS config (tailwind.config.js) — `@config` bridges it into v4 so the whole
+   token system is unchanged. PostCSS plugin is `@tailwindcss/postcss`. */
+@import 'tailwindcss' source(none);
+@config '../tailwind.config.js';
+
+/* `source(none)` is load-bearing. v4 auto-detects sources from the PROJECT
+   ROOT; the legacy `content` array in the bridged config does not narrow that,
+   and a bare `@source` only widens it. Its .gitignore skip did not save us
+   either: the ignore rules live in the REPO-root .gitignore as `web/audit/`,
+   which the scanner rooted at `web/` never matches.
+
+   Measured 2026-07-27, and it ran both ways. `text-warning/80` shipped as a
+   real rule because `docs/DESIGN-SYSTEM.md` NAMES it — as a class it forbids.
+   Worse, `web/audit/data/*.html` are captured page snapshots, so the UX audit
+   was feeding classes back into the artefact it measures: the bundle grew each
+   run, and a class deleted from source stayed compiled for as long as a stale
+   snapshot mentioned it. 23 selectors (~3 kB) were phantoms; none was used by
+   any component. Keep this list to real markup. */
+@source '../index.html';
+@source './**/*.{ts,tsx}';
+
+@font-face {
+    font-family: 'Archivo';
+    src: url('./assets/fonts/archivo-semibold-bold.woff2') format('woff2');
+    font-style: normal;
+    font-weight: 600 700;
+    font-stretch: 100%;
+    font-display: swap;
+}
+
+@layer base {
+    :root {
+        /* ── Surface hierarchy ── */
+        --background: 220 14% 96%;
+        --foreground: 224 71% 4%;
+        --card: 0 0% 100%;
+        --card-foreground: 224 71% 4%;
+        --popover: 0 0% 100%;
+        --popover-foreground: 224 71% 4%;
+
+        /* ── Brand ── */
+        --primary: 265 74% 47%;
+        --primary-foreground: 0 0% 100%;
+
+        /* ── Neutral interactive ── */
+        --secondary: 220 14% 96%;
+        --secondary-foreground: 220 10% 38%;
+        --muted: 220 14% 96%;
+        --muted-foreground: 220 10% 38%;
+        /* The second neutral step, replacing `text-muted-foreground/60`.
+           43% is the LIGHTEST value that still clears 4.5:1 on every light
+           surface (background, card, accent) — so it reads as de-emphasised
+           without being unreadable, which the opacity form never managed. */
+        --muted-foreground-subtle: 220 10% 43%;
+        --accent: 220 14% 92%;
+        --accent-foreground: 224 71% 4%;
+
+        /* ── Semantic ──
+           Lightness here is solved, not chosen. Each of these is used BOTH as
+           text on a 10-20% tint of itself (`text-warning` on `bg-warning/10`)
+           and as a fill under white (`bg-warning text-warning-foreground`), and
+           the values inherited from the dark theme failed WCAG AA in both
+           directions on light surfaces — `--warning` scored 1.69:1 as text and
+           2.13:1 under white. Each value below is the LIGHTEST that clears
+           4.5:1 across {background, card} x {plain, /10, /12, /15, /20}, so the
+           hue and saturation are untouched and the shift is the minimum the
+           standard allows. They land on Tailwind's own 800-level text steps
+           (amber-800, emerald-800, red-800, sky-800), which is the same answer
+           reached from the other direction.
+           `.dark` keeps the vivid values — they pass there already. */
+        --destructive: 0 72% 39%;
+        --destructive-foreground: 0 0% 100%;
+        --success: 152 76% 23%;
+        --success-foreground: 0 0% 100%;
+        --warning: 38 92% 25%;
+        --warning-foreground: 0 0% 100%;
+        --processing: 265 74% 47%;
+        /* already 4.96:1 — unchanged */
+        --processing-foreground: 0 0% 100%;
+        --rejected: 0 72% 39%;
+        --rejected-foreground: 0 0% 100%;
+        --info: 200 98% 28%;
+        --info-foreground: 0 0% 100%;
+
+        /* ── Chip foregrounds (`text-x-on-tint` on `bg-x/10`) ──
+           A tinted chip needs a DIFFERENT value from the same colour used as a
+           fill, and the two pull in opposite directions on a dark background:
+           chip text must be lighter than the tint, a fill must be dark enough
+           for white. One token cannot do both — measured, `--primary` in dark
+           is 5.83:1 under white but only 2.76:1 as chip text.
+           In LIGHT these equal the base above (already solved for both roles);
+           only the dark side diverges, so `text-primary-on-tint` is a safe
+           swap everywhere the chip pattern appears. */
+        --destructive-on-tint: 0 72% 39%;
+        --rejected-on-tint: 0 72% 39%;
+        --primary-on-tint: 265 74% 47%;
+        --processing-on-tint: 265 74% 47%;
+        --status-requested-on-tint: 220 14% 38%;
+        --status-incidents-on-tint: 262 83% 52%;
+        --status-script-ready-on-tint: 271 91% 46%;
+        --status-audio-ready-on-tint: 280 67% 44%;
+        --status-rejected-on-tint: 0 72% 39%;
+        --status-failed-on-tint: 0 72% 39%;
+
+        /* ── Chrome ── */
+        --border: 220 13% 91%;
+        --input: 220 13% 91%;
+        --ring: 265 74% 47%;
+
+        /* ── Sidebar ── */
+        --sidebar-background: 0 0% 98%;
+        --sidebar-foreground: 240 5.3% 26.1%;
+        --sidebar-primary: 240 5.9% 10%;
+        --sidebar-primary-foreground: 0 0% 98%;
+        --sidebar-accent: 240 4.8% 95.9%;
+        --sidebar-accent-foreground: 240 5.9% 10%;
+        --sidebar-border: 220 13% 91%;
+
+        /* ── Status ──
+           Same solve as the semantic ramp above: every one of these renders as
+           a pill (`text-status-x` on `bg-status-x/10`) in the queue, the history
+           table and the job canvas, and the inherited values failed AA on light
+           surfaces (fallback 2.09:1, waiting 1.69:1). Lightest value clearing
+           4.5:1 on {background, card} x {plain, /10, /12, /15, /20}. */
+        --status-requested: 220 14% 38%;
+        --status-here-fetched: 200 98% 28%;
+        --status-incidents: 262 83% 52%;
+        --status-script-ready: 271 91% 46%;
+        --status-audio-ready: 280 67% 44%;
+        --status-waiting: 38 92% 25%;
+        --status-approved: 152 76% 23%;
+        --status-rejected: 0 72% 39%;
+        --status-published: 152 76% 23%;
+        --status-fallback: 25 95% 30%;
+        --status-failed: 0 72% 39%;
+
+        /* ── Overlay ── */
+        --overlay: 0 0% 0%;
+
+        /* ── Glassmorphism ── */
+        --glass-background: 0 0% 100%;
+        --glass-blur: 10px;
+
+        /* ── Radius ── */
+        --radius: 0.5rem;
+        --radius-sm: 0.25rem;
+        --radius-md: 0.375rem;
+        --radius-lg: 0.5rem;
+        --radius-xl: 0.75rem;
+        --sidebar-ring: 265 80% 60%;
+    }
+
+    .dark {
+        /* ── Surface hierarchy (navy-tinted for depth — Linear/GitHub inspired) ── */
+        --surface-1: 222 28% 6%;
+        /* Deep navy base */
+        --surface-2: 220 24% 10%;
+        /* Card / popover elevation */
+        --surface-3: 218 20% 14%;
+        /* Secondary / muted zones */
+        --surface-4: 216 16% 18%;
+        /* Accent / hover states */
+
+        --background: var(--surface-1);
+        --foreground: 210 40% 98%;
+        /* Cool-white text with blue cast */
+        --card: var(--surface-2);
+        --card-foreground: 210 40% 98%;
+        --popover: var(--surface-2);
+        --popover-foreground: 210 40% 98%;
+
+        /* ── Brand (ARN purple — vivid on navy) ── */
+        --primary: 265 80% 56%;
+        --primary-foreground: 0 0% 100%;
+
+        /* ── Neutral interactive ── */
+        --secondary: var(--surface-3);
+        --secondary-foreground: 210 25% 86%;
+        --muted: var(--surface-3);
+        /* 59%, not 57%: at 57% this fails AA (4.22:1) on --surface-4, the
+           accent/hover surface — so muted text became unreadable exactly when
+           the operator hovered the row it was in. 59% clears every surface
+           (worst 4.54:1) and is visually indistinguishable. */
+        --muted-foreground: 215 16% 59%;
+        /* Blue-gray secondary — alive, not flat */
+        /* Dark has no headroom for a second, dimmer neutral: anything below
+           59% fails on --surface-4. So the subtle step EQUALS the base here and
+           de-emphasis in dark comes from size/weight, not colour. The token
+           still exists so `text-muted-foreground-subtle` is theme-safe. */
+        --muted-foreground-subtle: 215 16% 59%;
+        --accent: var(--surface-4);
+        --accent-foreground: 210 40% 98%;
+
+        /* ── Semantic (vibrant on navy backgrounds) ── */
+        --destructive: 0 72% 51%;
+        --destructive-foreground: 0 0% 100%;
+        --success: 142 71% 45%;
+        /* Near-black, not white: the dark fill is bright, so white on it is
+           2.30:1. The light theme keeps white because its
+           fill is dark. A fill/foreground pair has to be solved per theme. */
+        --success-foreground: 224 71% 4%;
+        --warning: 38 92% 50%;
+        /* Near-black, not white: the dark fill is bright, so white on it is
+           2.13:1. The light theme keeps white because its
+           fill is dark. A fill/foreground pair has to be solved per theme. */
+        --warning-foreground: 224 71% 4%;
+        --processing: 265 80% 60%;
+        --processing-foreground: 0 0% 100%;
+        --rejected: 0 72% 51%;
+        --rejected-foreground: 0 0% 100%;
+        --info: 199 89% 48%;
+        /* Near-black, not white: the dark fill is bright, so white on it is
+           2.86:1. The light theme keeps white because its
+           fill is dark. A fill/foreground pair has to be solved per theme. */
+        --info-foreground: 224 71% 4%;
+
+        /* ── Chrome (tinted borders — visible yet subtle) ── */
+        --border: 218 14% 22%;
+        --input: 218 14% 22%;
+        --ring: 265 80% 56%;
+
+        /* ── Sidebar (deepest layer for hierarchy) ── */
+        --sidebar-background: 224 32% 5%;
+        --sidebar-foreground: 210 25% 86%;
+        --sidebar-primary: 265 80% 56%;
+        --sidebar-primary-foreground: 0 0% 100%;
+        --sidebar-accent: 216 16% 18%;
+        --sidebar-accent-foreground: 210 25% 86%;
+        --sidebar-border: 218 14% 22%;
+
+        /* ── Status colors (tuned for navy backdrop vibrancy) ── */
+        --status-requested: 215 30% 55%;
+        --status-here-fetched: 199 89% 55%;
+        --status-incidents: 262 70% 65%;
+        --status-script-ready: 271 76% 63%;
+        --status-audio-ready: 280 60% 60%;
+        --status-waiting: 38 85% 60%;
+        --status-approved: 142 71% 45%;
+        --status-rejected: 0 72% 55%;
+        --status-published: 142 71% 45%;
+        --status-fallback: 25 85% 60%;
+        --status-failed: 0 72% 55%;
+
+        /* ── Chip foregrounds — see the light block for the reasoning.
+           These are the lightest-passing values for text on a 10-15% tint of
+           themselves over --surface-1/2 (worst case 4.52:1). The fill values
+           above are deliberately unchanged: white-on-fill still needs them. */
+        --destructive-on-tint: 0 72% 75%;
+        --rejected-on-tint: 0 72% 75%;
+        --primary-on-tint: 265 80% 78%;
+        --processing-on-tint: 265 80% 78%;
+        --status-requested-on-tint: 215 30% 69%;
+        --status-incidents-on-tint: 262 70% 77%;
+        --status-script-ready-on-tint: 271 76% 77%;
+        --status-audio-ready-on-tint: 280 60% 74%;
+        --status-rejected-on-tint: 0 72% 75%;
+        --status-failed-on-tint: 0 72% 75%;
+
+        /* ── Overlay ── */
+        --overlay: 222 28% 3%;
+
+        /* ── Glassmorphism (tinted glass) ── */
+        --glass-background: 222 28% 6%;
+    }
+
+    /* Reserve the scrollbar's width whether or not it's showing, on every
+       scrollable region in the app (the shell's #main-content, per-page
+       workspaces like OnAirPage's review section, and any bounded list —
+       html/body themselves never scroll here, the shell is a fixed h-dvh
+       flex tree with inner overflow-y-auto regions doing the scrolling).
+       Without this, switching between two views of different content
+       height toggles that region's scrollbar and reflows everything
+       inside it — e.g. a sticky tab bar visibly shifting sideways when
+       the Review vs Config & audit tab is taller/shorter than the other.
+
+       A horizontal-only scroller must NOT use these classes: the reserved
+       gutter becomes permanent dead space on its right edge. Use
+       `overflow-x-auto` instead (see `components/ui/table.tsx`), which is
+       not matched here and so reserves nothing. */
+    .overflow-y-auto,
+    .overflow-auto {
+        scrollbar-gutter: stable;
+    }
+
+    * {
+        @apply border-border;
+        -webkit-font-smoothing: antialiased;
+        -moz-osx-font-smoothing: grayscale;
+    }
+
+    body {
+        @apply bg-background text-foreground;
+        font-feature-settings:
+            'rlig' 1,
+            'calt' 1;
+    }
+
+    a:focus-visible,
+    button:focus-visible,
+    [role='button']:focus-visible,
+    [tabindex]:focus-visible {
+        @apply outline-none ring-2 ring-ring ring-offset-2 ring-offset-background;
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+        *,
+        *::before,
+        *::after {
+            animation-duration: 0.01ms !important;
+            animation-iteration-count: 1 !important;
+            transition-duration: 0.01ms !important;
+            scroll-behavior: auto !important;
+        }
+    }
+}

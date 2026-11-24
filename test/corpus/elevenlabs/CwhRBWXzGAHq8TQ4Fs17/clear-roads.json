@@ -1,0 +1,10 @@
+{
+  "slug": "clear-roads",
+  "voiceId": "CwhRBWXzGAHq8TQ4Fs17",
+  "modelId": "eleven_v3",
+  "outputFormat": "pcm_24000",
+  "durationSeconds": 9.748,
+  "charCount": 147,
+  "script": "Good news this morning \u2014 roads are running clear right across the network, no crashes or closures to report, so an easy run wherever you\u0027re headed.",
+  "audioFile": "clear-roads.wav"
+}

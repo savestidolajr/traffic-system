@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032040Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:41.0144987+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.96459,115.95159\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Guilfoyle Grn, Cloverdale WA 6105, Australia",
+          "id": "here:af:streetsection:2tiuVhhHQXVNu4oBeqPxcB",
+          "resultType": "street",
+          "address": {
+            "label": "Guilfoyle Grn, Cloverdale WA 6105, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Cloverdale",
+            "street": "Guilfoyle Grn",
+            "postalCode": "6105"
+          },
+          "position": {
+            "lat": -31.96459,
+            "lng": 115.95159
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.95124,
+            "south": -31.96629,
+            "east": 115.95284,
+            "north": -31.9634
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

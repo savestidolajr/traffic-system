@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.1054452+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.7918,144.9886\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "421 Wellington St, Clifton Hill VIC 3068, Australia",
+          "id": "here:af:streetsection:6xIT4-TGVmEubLe3TLN2fB:CggIBCCQ0K-gARABGgM0MjE",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "421 Wellington St, Clifton Hill VIC 3068, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Clifton Hill",
+            "street": "Wellington St",
+            "postalCode": "3068",
+            "houseNumber": "421"
+          },
+          "position": {
+            "lat": -37.79176,
+            "lng": 144.98839
+          },
+          "access": [
+            {
+              "lat": -37.79178,
+              "lng": 144.9886
+            }
+          ],
+          "distance": 2,
+          "mapView": {
+            "west": 144.98818,
+            "south": -37.79436,
+            "east": 144.98895,
+            "north": -37.78955
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

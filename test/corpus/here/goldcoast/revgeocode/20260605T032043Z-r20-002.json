@@ -1,0 +1,47 @@
+{
+  "Market": "goldcoast",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032043Z-r20",
+  "CapturedAtUtc": "2026-06-05T03:20:43.6080633+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-28.12729,153.46629\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Pacific Mtwy, Elanora QLD 4221, Australia",
+          "id": "here:af:streetsection:mnKd1RKO75MRlDCYo4xRcA",
+          "resultType": "street",
+          "address": {
+            "label": "Pacific Mtwy, Elanora QLD 4221, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "QLD",
+            "state": "Queensland",
+            "city": "Gold Coast",
+            "district": "Elanora",
+            "street": "Pacific Mtwy",
+            "postalCode": "4221"
+          },
+          "position": {
+            "lat": -28.12729,
+            "lng": 153.46629
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 153.44265,
+            "south": -28.13537,
+            "east": 153.47134,
+            "north": -28.11455
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

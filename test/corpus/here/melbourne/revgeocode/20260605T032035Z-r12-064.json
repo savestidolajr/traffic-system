@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:35.9974195+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.87807,145.00357\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "81 St Georges Rd, Elsternwick VIC 3185, Australia",
+          "id": "here:af:streetsection:pXhVOqmsZwButQvzjb9QpD:CggIBCCm8pKgARABGgI4MQ",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "81 St Georges Rd, Elsternwick VIC 3185, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Elsternwick",
+            "street": "St Georges Rd",
+            "postalCode": "3185",
+            "houseNumber": "81"
+          },
+          "position": {
+            "lat": -37.87799,
+            "lng": 145.00378
+          },
+          "access": [
+            {
+              "lat": -37.87809,
+              "lng": 145.00377
+            }
+          ],
+          "distance": 18,
+          "mapView": {
+            "west": 145.00281,
+            "south": -37.88453,
+            "east": 145.00419,
+            "north": -37.87767
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

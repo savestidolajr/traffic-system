@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net10.0</TargetFramework>
+    <IsPackable>false</IsPackable>
+    <NoWarn>$(NoWarn);OPENAI001</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="coverlet.collector" />
+    <PackageReference Include="Shouldly" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.EnvironmentVariables" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Json" />
+    <PackageReference Include="Microsoft.NET.Test.Sdk" />
+    <PackageReference Include="NSubstitute" />
+    <PackageReference Include="WireMock.Net" />
+    <!-- Direct pin: WireMock.Net 2.6.0 transitively pulls Scriban.Signed 7.0.6
+         (GHSA-24c8-4792-22hx, High DoS). 7.2.0 is the patched version; remove
+         this pin once WireMock.Net ships with a fixed Scriban. -->
+    <PackageReference Include="Scriban.Signed" />
+    <PackageReference Include="xunit" />
+    <PackageReference Include="xunit.runner.visualstudio" />
+    <PackageReference Include="OpenAI" />
+  </ItemGroup>
+
+  <!-- Configuration is loaded from appsettings.json/appsettings.Development.json and env vars -->
+
+  <ItemGroup>
+    <Using Include="Xunit" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Live-captured HERE payloads (2026-08-17) backing the golden parser corpus. -->
+    <Content Include="TestData\HereGolden\*.json" CopyToOutputDirectory="PreserveNewest" />
+    <Content Include="TestData\OfficialFeeds\*.json" CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\ArnBulletinGenerator.Infrastructure\ArnBulletinGenerator.Infrastructure.csproj" />
+    <ProjectReference Include="..\..\src\ArnBulletinGenerator.Domain\ArnBulletinGenerator.Domain.csproj" />
+    <ProjectReference Include="..\..\src\ArnBulletinGenerator.Application\ArnBulletinGenerator.Application.csproj" />
+  </ItemGroup>
+
+</Project>

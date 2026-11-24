@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.0844206+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.93629,145.06137\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Chesterville Rd, Moorabbin VIC 3189, Australia",
+          "id": "here:af:streetsection:jIcIVq4HGjCDzvnYZsSihD",
+          "resultType": "street",
+          "address": {
+            "label": "Chesterville Rd, Moorabbin VIC 3189, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Moorabbin",
+            "street": "Chesterville Rd",
+            "postalCode": "3189"
+          },
+          "position": {
+            "lat": -37.93632,
+            "lng": 145.06136
+          },
+          "distance": 3,
+          "mapView": {
+            "west": 145.05905,
+            "south": -37.94756,
+            "east": 145.06136,
+            "north": -37.93632
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

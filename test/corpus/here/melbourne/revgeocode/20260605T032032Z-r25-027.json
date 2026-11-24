@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.084185+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.7367,144.9565\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "122 Ohea St, Coburg VIC 3058, Australia",
+          "id": "here:af:streetsection:QJ4KX.rmN52l6ROYzzALLB:CggIBCDGypagARABGgMxMjI",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "122 Ohea St, Coburg VIC 3058, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Coburg",
+            "street": "Ohea St",
+            "postalCode": "3058",
+            "houseNumber": "122"
+          },
+          "position": {
+            "lat": -37.73656,
+            "lng": 144.95659
+          },
+          "access": [
+            {
+              "lat": -37.73671,
+              "lng": 144.95656
+            }
+          ],
+          "distance": 5,
+          "mapView": {
+            "west": 144.94942,
+            "south": -37.73775,
+            "east": 144.96695,
+            "north": -37.73603
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

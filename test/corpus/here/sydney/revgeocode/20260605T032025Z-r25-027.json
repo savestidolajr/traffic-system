@@ -1,0 +1,54 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032025Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:29.5865584+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.91371,151.15077\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Lil Crafters",
+          "id": "here:pds:place:036d408k-e764afade6010c4d7c3b54fcf429017c",
+          "resultType": "place",
+          "address": {
+            "label": "Lil Crafters, Herb Greedy Pl, Marrickville NSW 2204, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Marrickville",
+            "street": "Herb Greedy Pl",
+            "postalCode": "2204"
+          },
+          "position": {
+            "lat": -33.91346,
+            "lng": 151.1506
+          },
+          "access": [
+            {
+              "lat": -33.91371,
+              "lng": 151.15077
+            }
+          ],
+          "distance": 0,
+          "categories": [
+            {
+              "id": "800-8200-0361",
+              "name": "Fine Arts",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

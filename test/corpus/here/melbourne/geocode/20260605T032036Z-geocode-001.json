@@ -1,0 +1,52 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "geocode",
+  "SessionId": "20260605T032036Z-geocode",
+  "CapturedAtUtc": "2026-06-05T03:20:36.7535526+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=melbourne%2C Australia\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Melbourne, VIC 3004, Australia",
+          "id": "here:cm:namedplace:1469261839",
+          "resultType": "locality",
+          "localityType": "city",
+          "address": {
+            "label": "Melbourne, VIC 3004, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "postalCode": "3004"
+          },
+          "position": {
+            "lat": -37.81736,
+            "lng": 144.96755
+          },
+          "mapView": {
+            "west": 144.5531,
+            "south": -38.22504,
+            "east": 145.54978,
+            "north": -37.50209
+          },
+          "scoring": {
+            "queryScore": 1.0,
+            "fieldScore": {
+              "country": 1.0,
+              "city": 1.0
+            }
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,52 @@
+{
+  "Market": "sydney",
+  "Endpoint": "geocode",
+  "SessionId": "20260605T032031Z-geocode",
+  "CapturedAtUtc": "2026-06-05T03:20:31.9344824+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/geocode?q=sydney%2C Australia\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Sydney, NSW 2000, Australia",
+          "id": "here:cm:namedplace:1469266800",
+          "resultType": "locality",
+          "localityType": "city",
+          "address": {
+            "label": "Sydney, NSW 2000, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "postalCode": "2000"
+          },
+          "position": {
+            "lat": -33.87073,
+            "lng": 151.20788
+          },
+          "mapView": {
+            "west": 150.63963,
+            "south": -34.18961,
+            "east": 151.3439,
+            "north": -33.57799
+          },
+          "scoring": {
+            "queryScore": 1.0,
+            "fieldScore": {
+              "country": 1.0,
+              "city": 1.0
+            }
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

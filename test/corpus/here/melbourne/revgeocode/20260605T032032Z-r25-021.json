@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:33.8798044+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.73677,144.95722\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "103 Ohea St, Coburg VIC 3058, Australia",
+          "id": "here:af:streetsection:QJ4KX.rmN52l6ROYzzALLB:CggIBCCVj-ifARABGgMxMDM",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "103 Ohea St, Coburg VIC 3058, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Coburg",
+            "street": "Ohea St",
+            "postalCode": "3058",
+            "houseNumber": "103"
+          },
+          "position": {
+            "lat": -37.73696,
+            "lng": 144.95716
+          },
+          "access": [
+            {
+              "lat": -37.73677,
+              "lng": 144.95722
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 144.94942,
+            "south": -37.73775,
+            "east": 144.96695,
+            "north": -37.73603
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

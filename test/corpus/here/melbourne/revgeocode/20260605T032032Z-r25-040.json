@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.4059513+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.72056,144.72623\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "872 Taylors Rd, Fraser Rise VIC 3336, Australia",
+          "id": "here:af:streetsection:hlY0izWU.DQRXjzrvMda9A:CggIBCDyyZTRAhABGgM4NzI",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "872 Taylors Rd, Fraser Rise VIC 3336, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Fraser Rise",
+            "street": "Taylors Rd",
+            "postalCode": "3336",
+            "houseNumber": "872"
+          },
+          "position": {
+            "lat": -37.71972,
+            "lng": 144.72645
+          },
+          "access": [
+            {
+              "lat": -37.72056,
+              "lng": 144.72621
+            }
+          ],
+          "distance": 2,
+          "mapView": {
+            "west": 144.71579,
+            "south": -37.72118,
+            "east": 144.7291,
+            "north": -37.71934
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

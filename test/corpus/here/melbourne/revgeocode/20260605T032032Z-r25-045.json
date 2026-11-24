@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.5180747+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.75302,144.83522\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "83 Balfour Ave, Sunshine North VIC 3020, Australia",
+          "id": "here:af:streetsection:ZK6FO.6niSUGkgjpYK-d0A:CggIBCCv09yfARABGgI4Mw",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "83 Balfour Ave, Sunshine North VIC 3020, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Sunshine North",
+            "street": "Balfour Ave",
+            "postalCode": "3020",
+            "houseNumber": "83"
+          },
+          "position": {
+            "lat": -37.75319,
+            "lng": 144.83534
+          },
+          "access": [
+            {
+              "lat": -37.75303,
+              "lng": 144.83536
+            }
+          ],
+          "distance": 12,
+          "mapView": {
+            "west": 144.83297,
+            "south": -37.75356,
+            "east": 144.84007,
+            "north": -37.75277
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

@@ -1,0 +1,47 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032038Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:39.5825155+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-32.12562,115.91198\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Berlin Ln, Piara Waters WA 6112, Australia",
+          "id": "here:af:streetsection:Cupn0gfGyZALtVZT3ObkdD",
+          "resultType": "street",
+          "address": {
+            "label": "Berlin Ln, Piara Waters WA 6112, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "Piara Waters",
+            "street": "Berlin Ln",
+            "postalCode": "6112"
+          },
+          "position": {
+            "lat": -32.12562,
+            "lng": 115.91198
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 115.91198,
+            "south": -32.12689,
+            "east": 115.91354,
+            "north": -32.12562
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

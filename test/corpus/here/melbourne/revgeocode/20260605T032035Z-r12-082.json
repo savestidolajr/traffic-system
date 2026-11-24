@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032035Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:36.4534234+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.81039,144.96887\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Cohen Pl, Melbourne VIC 3000, Australia",
+          "id": "here:af:streetsection:JFCLKh7fUkX4rRiENsjfmA",
+          "resultType": "street",
+          "address": {
+            "label": "Cohen Pl, Melbourne VIC 3000, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Melbourne",
+            "street": "Cohen Pl",
+            "postalCode": "3000"
+          },
+          "position": {
+            "lat": -37.81039,
+            "lng": 144.96887
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 144.96887,
+            "south": -37.81133,
+            "east": 144.96931,
+            "north": -37.81039
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

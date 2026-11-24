@@ -1,0 +1,117 @@
+# Bulletin Job State Machine — standalone presentation render.
+#
+# SOURCE OF TRUTH (keep in sync — this diagram is NOT model-validated):
+#   * States: JobStatus enum, src/ArnBulletinGenerator.Domain/Models/Job.cs
+#   * Fallback policy: SDD §3 step 8 / §9.4 (reuse last same-day bulletin,
+#     else generic filler cart)
+#   * Audit: every transition appends a StatusHistoryEntry (Job.cs)
+#
+# This is a code-grounded diagram, not an architecture-model diagram, so nodes
+# are literal (no FQNs). When JobStatus changes, update this spec in the same
+# change — there is no automated drift gate for it.
+#
+# Layout invariants:
+#   * Generation pipeline left-to-right inside the dashed group (y=230)
+#   * Review/delivery row right-to-left underneath (y=420), ending at Published
+#   * Exceptions at the bottom; regenerate loop returns along y=560 to x=170
+#
+# There is deliberately NO "Delivered" state. One existed in the enum but was never
+# assigned: publish writes the file and the job ends at Published. Zetta returns no
+# receipt, and because the file is overwritten per station, its disappearance
+# identifies the station's latest publish rather than a specific bulletin. Removed
+# 2026-07-31 - see docs/canonical/decisions.md.
+
+output: bulletin-state-machine
+canvas: [1560, 860]
+
+styles:
+  containers:
+    group: { fill: "#F8FAFC", stroke: "#94A3B8", sw: 1.5, rx: 10, dash: "7 5" }
+  edges:
+    flow: { color: "#2563EB", width: 2.5 }
+    review: { color: "#16A34A", width: 2.5 }
+    reject: { color: "#EF4444", width: 2 }
+    fallback: { color: "#F97316", width: 2, dash: "6 4" }
+
+texts:
+  - { text: "Bulletin Lifecycle", at: [40, 38], size: 20, weight: "700", anchor: start }
+  - { text: "Every state a bulletin passes through, from scheduled trigger to air, including the review, rejection and standby-audio paths",
+      at: [40, 60], size: 12, color: "#64748B", anchor: start }
+  - { text: "Every change of state is recorded against the bulletin with the identity that caused it and a timestamp, so the full history is auditable.",
+      at: [40, 820], size: 11, color: "#64748B", anchor: start, style: italic }
+
+containers:
+  - style: group
+    rect: [70, 150, 1330, 130]
+    labels:
+      - { text: "Automated generation, no operator involvement", at: [90, 177], size: 13, color: "#475569", anchor: start, weight: "600" }
+
+edges:
+  # generation chain
+  - { class: flow, points: [[255, 230], [305, 230]] }
+  - { class: flow, points: [[475, 230], [525, 230]] }
+  - { class: flow, points: [[695, 230], [745, 230]] }
+  - { class: flow, points: [[915, 230], [965, 230]] }
+  - { class: flow, points: [[1135, 230], [1185, 230]] }
+
+  # into review
+  - class: flow
+    points: [[1270, 254], [1270, 396]]
+    label: { text: "notify operators (Teams)", at: [1282, 330], size: 11, anchor: start }
+
+  # review / delivery (right to left)
+  - class: review
+    points: [[1185, 420], [1125, 420]]
+    label: { text: "operator approves", at: [1155, 462], size: 10 }
+  - { class: review, points: [[955, 420], [895, 420]] }
+
+  # rejection + regeneration loop
+  - class: reject
+    points: [[1290, 444], [1290, 536]]
+    label: { text: "operator rejects / expires unapproved", at: [1282, 495], size: 10, anchor: end }
+  - class: reject
+    points: [[1185, 560], [170, 560], [170, 254]]
+    label: { text: "regenerate with operator feedback", at: [660, 548], size: 11 }
+
+  # failure + fallback
+  - class: fallback
+    points: [[1400, 215], [1460, 215], [1460, 676]]
+    label: { text: "any stage fails", at: [1452, 300], size: 10, anchor: end }
+  - class: fallback
+    points: [[1375, 700], [1000, 700]]
+  - class: fallback
+    points: [[1355, 438], [1390, 438], [1390, 640], [880, 640], [880, 676]]
+    label: { text: "review deadline expires", at: [1135, 628], size: 10 }
+
+nodes:
+  # automated generation (inside group)
+  - { at: [170, 230],  box: [170, 48], label: "Scheduled" }
+  - { at: [390, 230],  box: [170, 48], label: "Traffic pulled", sublabel: "live conditions" }
+  - { at: [610, 230],  box: [170, 48], label: "Content chosen" }
+  - { at: [830, 230],  box: [170, 48], label: "Script written", sublabel: "drafted, reviewed, checked" }
+  - { at: [1050, 230], box: [170, 48], label: "Audio recorded" }
+  - { at: [1270, 230], box: [170, 48], label: "Audio checked", sublabel: "read back against the script" }
+
+  # review + delivery
+  - { at: [1270, 420], box: [170, 48], fill: "#FEF3C7", stroke: "#D97706",
+      label: "Waiting approval", sublabel: "an operator must decide" }
+  - { at: [1040, 420], box: [170, 48], fill: "#F0FDF4", stroke: "#16A34A",
+      label: "Approved", sublabel: "approver recorded" }
+  - { at: [810, 420],  box: [170, 48], fill: "#F0FDF4", stroke: "#16A34A",
+      label: "Published", sublabel: "written to the playout drop" }
+
+  # exceptions
+  - { at: [1270, 560], box: [170, 48], fill: "#FEF2F2", stroke: "#EF4444",
+      label: "Rejected", sublabel: "reason + feedback" }
+  - { at: [1460, 700], box: [170, 48], fill: "#FEF2F2", stroke: "#EF4444",
+      label: "Failed" }
+  - { at: [880, 700],  box: [240, 48], fill: "#FFF7ED", stroke: "#F59E0B",
+      label: "Standby audio used", sublabel: "last good bulletin, else the standby cart" }
+
+legend:
+  at: [75, 780]
+  items:
+    - ["generation", flow]
+    - ["approval / delivery", review]
+    - ["rejection", reject]
+    - ["standby audio (dead-air protection)", fallback]

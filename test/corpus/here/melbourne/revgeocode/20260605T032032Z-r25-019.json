@@ -1,0 +1,55 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:33.6851103+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.6792,145.01503\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "196 Station St, Thomastown VIC 3074, Australia",
+          "id": "here:af:streetsection:dQwlB-GGBAysGcmaumGGEC:CggIBCCwgeagARABGgMxOTY",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "196 Station St, Thomastown VIC 3074, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Thomastown",
+            "street": "Station St",
+            "postalCode": "3074",
+            "houseNumber": "196"
+          },
+          "position": {
+            "lat": -37.67916,
+            "lng": 145.01521
+          },
+          "access": [
+            {
+              "lat": -37.67914,
+              "lng": 145.01504
+            }
+          ],
+          "distance": 7,
+          "mapView": {
+            "west": 145.01445,
+            "south": -37.68223,
+            "east": 145.01542,
+            "north": -37.67485
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

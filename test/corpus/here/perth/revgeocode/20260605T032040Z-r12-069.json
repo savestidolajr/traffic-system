@@ -1,0 +1,54 @@
+{
+  "Market": "perth",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032040Z-r12",
+  "CapturedAtUtc": "2026-06-05T03:20:40.8852729+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-31.95672,115.87836\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "St. Bartholomew\u0027s Church",
+          "id": "here:pds:place:036qd66h-1105d0861737ce16e175b9856ade6337",
+          "resultType": "place",
+          "address": {
+            "label": "St. Bartholomew\u0027s Church, Bronte St, East Perth WA 6004, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "WA",
+            "state": "Western Australia",
+            "city": "Perth",
+            "district": "East Perth",
+            "street": "Bronte St",
+            "postalCode": "6004"
+          },
+          "position": {
+            "lat": -31.95614,
+            "lng": 115.87864
+          },
+          "access": [
+            {
+              "lat": -31.95673,
+              "lng": 115.87838
+            }
+          ],
+          "distance": 2,
+          "categories": [
+            {
+              "id": "300-3200-0030",
+              "name": "Church",
+              "primary": true
+            }
+          ]
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

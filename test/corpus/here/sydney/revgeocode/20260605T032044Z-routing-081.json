@@ -1,0 +1,55 @@
+{
+  "Market": "sydney",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032044Z-routing",
+  "CapturedAtUtc": "2026-06-05T03:20:46.5278868+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-33.83121,151.08641\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "1 Mary St, Rhodes NSW 2138, Australia",
+          "id": "here:af:streetsection:Zh-w9o45Q6cmsGMX1gQx3B:CggIBCCwr-KdARABGgEx",
+          "resultType": "houseNumber",
+          "houseNumberType": "PA",
+          "address": {
+            "label": "1 Mary St, Rhodes NSW 2138, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "NSW",
+            "state": "New South Wales",
+            "city": "Sydney",
+            "district": "Rhodes",
+            "street": "Mary St",
+            "postalCode": "2138",
+            "houseNumber": "1"
+          },
+          "position": {
+            "lat": -33.83174,
+            "lng": 151.08636
+          },
+          "access": [
+            {
+              "lat": -33.83121,
+              "lng": 151.08641
+            }
+          ],
+          "distance": 0,
+          "mapView": {
+            "west": 151.08397,
+            "south": -33.83231,
+            "east": 151.08935,
+            "north": -33.83085
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

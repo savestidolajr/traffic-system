@@ -1,0 +1,47 @@
+{
+  "Market": "melbourne",
+  "Endpoint": "revgeocode",
+  "SessionId": "20260605T032032Z-r25",
+  "CapturedAtUtc": "2026-06-05T03:20:34.0842185+00:00",
+  "Request": {
+    "Method": "GET",
+    "Uri": "https://geocode.search.hereapi.com/v1/revgeocode?at=-37.87968,145.16183\u0026lang=en-US\u0026apiKey=***",
+    "Body": null
+  },
+  "Response": {
+    "Status": 200,
+    "MediaType": "application/json",
+    "Body": {
+      "items": [
+        {
+          "title": "Coleman Pde, Glen Waverley VIC 3150, Australia",
+          "id": "here:af:streetsection:HlgBsX.BMKA5P4G4jbI4ZC",
+          "resultType": "street",
+          "address": {
+            "label": "Coleman Pde, Glen Waverley VIC 3150, Australia",
+            "countryCode": "AUS",
+            "countryName": "Australia",
+            "stateCode": "VIC",
+            "state": "Victoria",
+            "city": "Melbourne",
+            "district": "Glen Waverley",
+            "street": "Coleman Pde",
+            "postalCode": "3150"
+          },
+          "position": {
+            "lat": -37.87968,
+            "lng": 145.16183
+          },
+          "distance": 0,
+          "mapView": {
+            "west": 145.14758,
+            "south": -37.88062,
+            "east": 145.16556,
+            "north": -37.87622
+          }
+        }
+      ]
+    },
+    "RawBody": null
+  }
+}

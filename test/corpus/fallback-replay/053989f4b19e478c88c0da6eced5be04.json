@@ -1,0 +1,345 @@
+{
+ "JobId": "053989f4b19e478c88c0da6eced5be04",
+ "Market": "Port Lincoln Drive Traffic",
+ "Station": "Port Lincoln Drive Traffic",
+ "CapturedAtUtc": "2026-07-03T03:49:58.712699+00:00",
+ "DevOutcome": {
+  "Status": "FallbackUsed",
+  "FallbackKind": "filler cart.",
+  "Attempts": 4,
+  "TargetWordsSeq": [
+   86,
+   84,
+   70,
+   77
+  ],
+  "SynthWordsSeq": [
+   27,
+   null,
+   56,
+   46
+  ],
+  "NaturalSecSeq": [
+   9.8,
+   null,
+   19.9,
+   16.2
+  ],
+  "BestNaturalSec": 19.9,
+  "ReviewFeedbackCount": 2,
+  "SynthFailures": []
+ },
+ "Fidelity": {
+  "IncidentsRecovered": 0,
+  "IncidentsSynthesized": 0,
+  "WeatherSource": "off",
+  "FuelSource": "off",
+  "GoodRunsAndFlowPoolLost": false
+ },
+ "VoiceConfig": {
+  "Provider": "elevenlabs",
+  "VoiceId": "oKDz3nEzNfwKIVvUwPs0",
+  "VoiceName": "ARN Hudson",
+  "Model": "eleven_multilingual_v2",
+  "Settings": {
+   "Stability": 0.45,
+   "SimilarityBoost": 0.9,
+   "Style": 0.15,
+   "UseSpeakerBoost": true,
+   "Speed": 1
+  },
+  "PaceBoostWpm": 0
+ },
+ "Snapshot": {
+  "TargetDurationSeconds": 30,
+  "Location": "Port Lincoln Drive Traffic",
+  "City": "Port Lincoln Drive Traffic",
+  "MarketId": "port lincoln drive traffic",
+  "Content": {
+   "Traffic": true,
+   "Weather": false,
+   "Fuel": false,
+   "HasAnySource": true
+  },
+  "Corridors": [],
+  "MonitoredRoutes": [],
+  "GoodRunRoads": [
+   "South Terrace",
+   "Beach Road",
+   "Bratten Way",
+   "White Flat Road",
+   "Robins Road",
+   "Hall Street"
+  ],
+  "FlowPool": [
+   {
+    "RoadName": "South Terrace",
+    "JamFactor": 0.5,
+    "LengthMeters": 66096,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Beach Road",
+    "JamFactor": 1,
+    "LengthMeters": 65949,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Bratten Way",
+    "JamFactor": 1,
+    "LengthMeters": 48595,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "White Flat Road",
+    "JamFactor": 0.7,
+    "LengthMeters": 45536,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Robins Road",
+    "JamFactor": 0.9,
+    "LengthMeters": 44924,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Hall Street",
+    "JamFactor": 2.2,
+    "LengthMeters": 41684,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Flinders Highway",
+    "JamFactor": 1.5,
+    "LengthMeters": 41413,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Maurice Street",
+    "JamFactor": 1.2,
+    "LengthMeters": 38215,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Birdseye Highway North",
+    "JamFactor": 0.3,
+    "LengthMeters": 34905,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Sheringa Beach Rd",
+    "JamFactor": 0.7,
+    "LengthMeters": 33864,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Main Street - Lipson",
+    "JamFactor": 0.9,
+    "LengthMeters": 32716,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Port Neill Access Road",
+    "JamFactor": 0.7,
+    "LengthMeters": 27084,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Wangary",
+    "JamFactor": 1.2,
+    "LengthMeters": 24757,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Coffin Bay Road",
+    "JamFactor": 1.5,
+    "LengthMeters": 19348,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Tod Highway",
+    "JamFactor": 1.5,
+    "LengthMeters": 19219,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Houstan Lane",
+    "JamFactor": 1.6,
+    "LengthMeters": 18963,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Bishop Street",
+    "JamFactor": 0.6,
+    "LengthMeters": 16309,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   },
+   {
+    "RoadName": "Pine Freezers Road",
+    "JamFactor": 1.1,
+    "LengthMeters": 11996,
+    "IsWeighted": false,
+    "FunctionalClass": 3,
+    "Score": 42.5,
+    "PriorityBoosted": false
+   }
+  ],
+  "Weather": null,
+  "Fuel": null,
+  "IncidentChanges": null,
+  "Guidance": {
+   "Entries": [
+    {
+     "Id": "645e52b90299493a8dbde1205c6c657e",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:40:21.286082+00:00",
+     "UpdatedAtUtc": "2026-06-30T04:40:21.286082+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "677eb8ef3d2b4ccfbde396291a30ca2a",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "Lead with the incident causing the longest delay or affecting the most drivers. Cover only the three or four most significant items for a 30-second read. Close with a short safety sign-off.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "75fe175d471144b38bf23c24966dfb6f",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 1,
+     "Text": "no breath's in voice",
+     "Enabled": true,
+     "CreatedBy": "unknown",
+     "CreatedAtUtc": "2026-06-30T04:39:29.324454+00:00",
+     "UpdatedAtUtc": "2026-06-30T04:39:29.324454+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "7b012b9381e04e72be8211133f224188",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 4,
+     "Text": "Read as a professional Australian radio traffic reporter: brisk, confident and conversational. Lead with the single worst delay, use present tense and active voice, and keep sentences short enough to read cleanly on air.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:57.082974+00:00",
+     "UpdatedAtUtc": "2026-06-25T23:45:57.082974+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "9ab57286efe14b498b52121bfbdcd3e5",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 0,
+     "Text": "Australian English with natural spoken contractions. Round the figures — say 'about ten minutes', never '10.3 minutes'. No police codes or insider jargon.",
+     "Enabled": true,
+     "CreatedBy": "operator@arn.com.au",
+     "CreatedAtUtc": "2026-06-25T23:45:56.924571+00:00",
+     "UpdatedAtUtc": "2026-06-25T23:45:56.924571+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "a222a7b2aab34de6a0abbb5d7231f535",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 3,
+     "Text": "Never use alarmist or sensational framing. Do not speculate on the cause of an incident or assign blame to anyone involved.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    },
+    {
+     "Id": "f5e76bd5993c41edb637a7302f7d7479",
+     "Scope": 0,
+     "ScopeId": "",
+     "Type": 2,
+     "Text": "Use common road names with the definite article: 'the M1', 'the M4', 'the CBD'. Use 'citybound' and 'outbound' for direction of travel.",
+     "Enabled": true,
+     "CreatedBy": "seed:arn-data",
+     "CreatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "UpdatedAtUtc": "2026-06-19T04:11:48.865740+00:00",
+     "Source": "manual",
+     "ReviewAfterUtc": null
+    }
+   ],
+   "DroppedCount": 0
+  },
+  "MarketFeedback": []
+ },
+ "Coverage": {
+  "Latitude": -34.175,
+  "Longitude": 135.74707031250003,
+  "RadiusKm": 194.60894116150126
+ },
+ "FullCorridorPool": []
+}

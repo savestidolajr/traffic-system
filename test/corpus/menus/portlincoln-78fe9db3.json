@@ -1,0 +1,83 @@
+{
+  "label": "portlincoln-78fe9db3",
+  "market": "portlincoln",
+  "sourceJobId": "78fe9db3eaac477fa70f0ea7c001f2ea",
+  "sourceCapture": "job-diagnostics/78fe9db3eaac477fa70f0ea7c001f2ea/llm_calls/084753.228-Draft-attempt1.json",
+  "promptSha": null,
+  "items": [
+    {
+      "category": "closure",
+      "evidenceIds": [
+        "r1:suburb",
+        "r1:incident:0",
+        "r1:detail",
+        "r1:sourceDetail:0"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Railway Place in Port Lincoln is closed for asphalt works."
+        },
+        {
+          "style": "standard",
+          "text": "Asphalt works have closed Railway Place in Port Lincoln."
+        }
+      ]
+    },
+    {
+      "category": "general_flow",
+      "evidenceIds": [
+        "goodrun:Tod Highway",
+        "goodrun:Port Kenny Road",
+        "goodrun:Stringers Highway",
+        "goodrun:Sectus Tanks Road"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Tod Highway, Port Kenny Road, Stringers Highway and Sectus Tanks Road are all clear."
+        },
+        {
+          "style": "standard",
+          "text": "Traffic is clear on Tod Highway, Port Kenny Road, Stringers Highway and Sectus Tanks Road."
+        }
+      ]
+    },
+    {
+      "category": "weather",
+      "evidenceIds": [
+        "weather:condition",
+        "weather:temperature"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "Cloudy, 13 degrees."
+        },
+        {
+          "style": "standard",
+          "text": "Cloudy skies, with the temperature at 13 degrees."
+        }
+      ]
+    },
+    {
+      "category": "fuel",
+      "evidenceIds": [
+        "fuel:Unleaded 91:price",
+        "fuel:Unleaded 91:suburb",
+        "fuel:Diesel:price",
+        "fuel:Diesel:suburb"
+      ],
+      "variants": [
+        {
+          "style": "concise",
+          "text": "In Cummins, unleaded 91 is $2.18 and diesel is $2.50."
+        },
+        {
+          "style": "standard",
+          "text": "Fuel in Cummins, unleaded 91 is $2.18, while diesel is $2.50."
+        }
+      ]
+    }
+  ]
+}
